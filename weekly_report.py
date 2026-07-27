@@ -387,10 +387,13 @@ def build_report(data):
                 "date": it["date"].strftime("%Y-%m-%d") if it["date"] else "",
             })
         dg = gemini_digest(topic, rows)
+        secs = (dg.get("sections") if dg else []) or []
+        for s in secs:                                   # 存乾淨版（去 AI 尾端雜字）
+            s["body"] = clean_body(s.get("body", ""))
         topics.append({
             "topic": topic,
             "gist": (dg.get("gist") if dg else "") or "",
-            "sections": (dg.get("sections") if dg else []) or [],
+            "sections": secs,
             "items": items,
             "sources": {"queries": QUERIES.get(topic, []), "feeds": FEEDS.get(topic, [])},
         })
@@ -422,6 +425,13 @@ def snippet(tp, limit=48):
     return (txt[:limit] + "…") if len(txt) > limit else txt
 
 
+def clean_body(text):
+    """去掉 AI 偶爾多吐的尾端雜字（如 Check. / ``` / 說明性收尾）。"""
+    t = (text or "").strip()
+    t = re.sub(r"\s*(check\.?|done\.?|完成。?|```+)\s*$", "", t, flags=re.IGNORECASE)
+    return t.strip()
+
+
 def render_article(topic, sections, items):
     """摘要內文的 [[編號]] 轉引用上標；參考來源列出本週『全部』項目（編號 = 項目序號）。
     AI 是讀全部新聞寫的，故全部即參考來源，不再另分精選/全展開。"""
@@ -437,7 +447,7 @@ def render_article(topic, sections, items):
     body_parts = []                                  # 左欄：情勢文
     for sec in sections:
         body_parts.append(f'<h4>{html.escape(sec.get("heading", ""))}</h4>')
-        body = re.sub(r"\[\[(\d+)\]\]", repl, html.escape(sec.get("body", "")))
+        body = re.sub(r"\[\[(\d+)\]\]", repl, html.escape(clean_body(sec.get("body", ""))))
         paras = [p.strip() for p in re.split(r"\n{2,}", body) if p.strip()]
         body_parts.append('<div class="body">' + "".join(f"<p>{p}</p>" for p in paras) + "</div>")
     refs = ['<div class="refs"><span class="kicker">References · 參考來源'
