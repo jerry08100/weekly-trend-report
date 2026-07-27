@@ -38,6 +38,11 @@ FOCUS = {
     "AI / 企業應用": "聚焦『台灣企業的 AI 應用』：可用的新工具、企業導入 AI Agent 提升工作效率的趨勢與案例。"
                      "少談國際大廠模型軍備競賽等宏觀新聞。",
 }
+# KICKER：主題 -> 英文 mono 標籤（雙語層級，質感來源）。
+KICKER = {
+    "永續 / 企業實務": "SUSTAINABILITY · CORPORATE PRACTICE",
+    "AI / 企業應用": "AI · ENTERPRISE ADOPTION",
+}
 
 DAYS = 7                       # 抓幾天內
 CAP = 30                       # 每主題最多留幾則
@@ -213,52 +218,105 @@ def gemini_digest(topic, rows):
 
 
 CSS = """
-body{font-family:"Segoe UI","Microsoft JhengHei",sans-serif;max-width:1120px;margin:0 auto;padding:24px;color:#1a1a1a;line-height:1.6}
+:root{
+  --paper:#F4F2EA; --card:#FBFAF4; --ink:#1E2A24; --ink-2:#5E6B62;
+  --line:#DCE0D4; --line-2:#E9EBE1; --green:#2F5D4F; --green-deep:#223B33;
+  --green-soft:#E7EEE7; --accent:#B0682B; --accent-soft:#F0E3D2;
+  --mono:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+}
+*{box-sizing:border-box}
+body{font-family:"Segoe UI","Microsoft JhengHei","PingFang TC",sans-serif;margin:0;
+  padding:0;color:var(--ink);background:var(--paper);line-height:1.75;font-size:17px;
+  -webkit-font-smoothing:antialiased}
 a{color:inherit}
-.report{max-width:820px;margin:0 auto}
-.layout{display:flex;gap:28px;align-items:flex-start}
-.side{flex:0 0 232px;position:sticky;top:16px;font-size:13px;border-right:1px solid #eee;padding-right:16px;max-height:calc(100vh - 32px);overflow:auto}
-.side-title{font-weight:700;color:#2563eb;margin-bottom:10px}
-.side-title a{text-decoration:none}
-.wk.active{background:#eff6ff;border-radius:4px}
-.wk.active .wk-d::before{content:"▸ "}
-.srcpanel{position:fixed;top:14px;right:14px;z-index:30;font-size:13px}
-.srcpanel>summary{list-style:none;cursor:pointer;background:#2563eb;color:#fff;padding:6px 13px;border-radius:6px;box-shadow:0 2px 8px rgba(37,99,235,.3)}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--accent);font-weight:600}
+/* ── 版面骨架 ── */
+.layout{display:flex;gap:0;align-items:stretch;min-height:100vh}
+.side{flex:0 0 288px;position:sticky;top:0;align-self:flex-start;height:100vh;overflow:auto;
+  background:var(--green-deep);color:#D7E0D6;padding:30px 24px}
+.main{flex:1 1 auto;min-width:0;padding:40px clamp(28px,5vw,80px)}
+.report{max-width:940px;margin:0 auto;padding:36px 28px}
+@media(max-width:760px){.layout{flex-direction:column}.side{flex:none;width:100%;height:auto;
+  position:static;padding:22px}.main{padding:28px 22px}}
+/* ── 側欄 ── */
+.side-title{margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.14)}
+.side-title a{text-decoration:none;display:block}
+.side-title .brand{font-size:20px;font-weight:800;color:#fff;letter-spacing:.02em;margin-top:6px}
+.side .kicker{color:#9DBBA6}
+.grp{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:#8FB09A;margin:22px 0 8px;display:flex;align-items:center;gap:7px}
+.grp::before{content:"";width:6px;height:6px;background:var(--accent);border-radius:50%;flex:none}
+.wk{display:block;text-decoration:none;padding:9px 10px;margin:0 -10px;border-radius:7px;
+  transition:background .15s}
+.wk:hover{background:rgba(255,255,255,.06)}
+.wk:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.wk.active{background:rgba(176,104,43,.18)}
+.wk-d{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:#EAD9C2;font-weight:600}
+.wk.active .wk-d{color:var(--accent)}
+.wk-s{display:block;color:#A7B6AA;font-size:12.5px;line-height:1.5;margin-top:3px}
+/* ── 報頭 ── */
+.masthead{margin-bottom:8px}
+.masthead h1{font-size:clamp(30px,4vw,44px);font-weight:800;letter-spacing:-.01em;
+  line-height:1.08;margin:8px 0 0}
+.masthead .issue{font-family:var(--mono);font-size:13px;letter-spacing:.1em;color:var(--ink-2);
+  margin-top:12px}
+.rule{height:2px;background:var(--ink);margin:20px 0 4px}
+/* ── 主題區塊 ── */
+.section{margin-top:52px}
+.section h2{font-size:clamp(22px,2.4vw,30px);font-weight:800;letter-spacing:-.01em;
+  margin:6px 0 0;line-height:1.15}
+.section h2 .count{font-family:var(--mono);font-size:14px;font-weight:600;color:var(--ink-2);
+  letter-spacing:.02em;margin-left:10px}
+.section .hairline{height:1px;background:var(--line);margin:14px 0 22px}
+h4{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--green);margin:26px 0 10px;font-weight:700}
+.body{font-size:18px;color:var(--ink);line-height:1.95;text-align:justify;max-width:760px}
+.body p{margin:0 0 14px}
+sup{line-height:0}
+sup a{font-family:var(--mono);font-size:11px;color:var(--accent);text-decoration:none;
+  font-weight:700;padding:0 1px}
+sup a:hover{text-decoration:underline}
+/* ── 參考來源 ── */
+.refs{margin-top:26px;padding-top:18px;border-top:1px solid var(--line)}
+.refs .kicker{display:block;margin-bottom:12px}
+.refs ol{list-style:none;counter-reset:r;padding:0;margin:0}
+.refs li{counter-increment:r;position:relative;padding:9px 0 9px 40px;font-size:15px;
+  color:var(--ink-2);border-bottom:1px solid var(--line-2);line-height:1.5}
+.refs li::before{content:counter(r);position:absolute;left:0;top:9px;width:26px;text-align:center;
+  font-family:var(--mono);font-size:12px;font-weight:700;color:var(--accent)}
+.refs a{color:var(--ink);text-decoration:none;font-weight:600}
+.refs a:hover{color:var(--green);text-decoration:underline}
+.refs .src{color:var(--ink-2);font-weight:400;font-family:var(--mono);font-size:12px}
+/* ── 純清單（無 AI 時）── */
+.item{padding:9px 0;font-size:15px;border-bottom:1px solid var(--line-2)}
+.item a{color:var(--ink);text-decoration:none;font-weight:600}
+.item a:hover{color:var(--green)}
+.item .date{color:var(--ink-2);font-family:var(--mono);font-size:12px;margin-left:8px}
+.note{color:var(--ink-2);font-size:15px}
+/* ── 資料來源面板 ── */
+.srcpanel{position:fixed;top:18px;right:18px;z-index:30;font-size:14px}
+.srcpanel>summary{list-style:none;cursor:pointer;background:var(--card);color:var(--green);
+  border:1px solid var(--line);padding:8px 15px;border-radius:999px;font-weight:600;
+  box-shadow:0 6px 18px rgba(34,59,51,.10);display:flex;align-items:center;gap:7px}
 .srcpanel>summary::-webkit-details-marker{display:none}
-.sp-body{position:absolute;right:0;margin-top:8px;width:min(340px,86vw);max-height:72vh;overflow:auto;background:#fff;border:1px solid #ddd;border-radius:8px;box-shadow:0 8px 28px rgba(0,0,0,.14);padding:14px}
-.sp-topic{font-weight:700;color:#2563eb;margin:10px 0 4px}
+.srcpanel>summary::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.srcpanel[open]>summary{color:var(--ink)}
+.srcpanel>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sp-body{position:absolute;right:0;margin-top:10px;width:min(400px,88vw);max-height:74vh;
+  overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:12px;
+  box-shadow:0 18px 44px rgba(34,59,51,.16);padding:18px}
+.sp-topic{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--green);font-weight:700;margin:16px 0 6px}
 .sp-topic:first-child{margin-top:0}
-.s-row{margin:5px 0 0 2px;color:#555;line-height:1.7}
-.s-row a{color:#2563eb;text-decoration:none;word-break:break-all}
-.grp{font-weight:600;color:#374151;margin:14px 0 4px;border-bottom:1px solid #e5e7eb;padding-bottom:3px}
-.wk{display:block;text-decoration:none;padding:6px 0;border-bottom:1px dashed #eee}
-.wk-d{display:block;color:#2563eb;font-weight:600}
-.wk-s{display:block;color:#6b7280;font-size:12px;line-height:1.4}
-.main{flex:1 1 auto;min-width:0}
-@media(max-width:680px){.layout{flex-direction:column}.side{flex:none;width:100%;position:static;border-right:none;border-bottom:1px solid #eee;padding-right:0;max-height:none}}
-h1{font-size:24px;border-bottom:3px solid #2563eb;padding-bottom:8px}
-h2{font-size:19px;margin-top:36px;color:#2563eb;border-bottom:1px solid #e5e7eb;padding-bottom:6px}
-h4{font-size:16px;color:#374151;margin:22px 0 6px}
-.body{font-size:15px;color:#222;text-align:justify}
-.body p{margin:8px 0}
-sup a{color:#2563eb;text-decoration:none;font-weight:600}
-.refs{margin-top:16px;font-size:13px;color:#444}
-.refs ol{padding-left:22px;margin:6px 0}
-.refs li{margin:4px 0}
-.refs a{color:#374151;text-decoration:none}
-.refs a:hover{color:#2563eb;text-decoration:underline}
-.src{color:#9ca3af}
-.item{padding:6px 0;font-size:13px}
-.item a{color:#4b5563;text-decoration:none}
-.item a:hover{color:#2563eb}
-.date{color:#9ca3af;font-size:12px;margin-left:6px}
-.note{color:#555;font-size:14px}
-details{margin-top:14px}
-summary{cursor:pointer;color:#6b7280;font-size:13px}
-.archive{margin-top:36px;border-top:1px solid #eee;padding-top:16px;font-size:14px}
-.archive a{color:#2563eb;text-decoration:none}
-.archive li{margin:4px 0}
-.meta{color:#999;font-size:12px;margin-top:32px;border-top:1px solid #eee;padding-top:12px}
+.s-row{margin:5px 0 0;color:var(--ink-2);line-height:1.7;font-size:13.5px}
+.s-row b{color:var(--ink);font-weight:600}
+.s-row a{color:var(--green);text-decoration:none;word-break:break-all}
+.s-row a:hover{text-decoration:underline}
+/* ── 頁尾 ── */
+.meta{color:var(--ink-2);font-size:12.5px;margin-top:44px;padding-top:16px;
+  border-top:1px solid var(--line);font-family:var(--mono);letter-spacing:.02em;line-height:1.7}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
 """
 
 
@@ -331,7 +389,8 @@ def render_article(topic, sections, items):
         body = re.sub(r"\[\[(\d+)\]\]", repl, html.escape(sec.get("body", "")))
         paras = [p.strip() for p in re.split(r"\n{2,}", body) if p.strip()]
         out.append('<div class="body">' + "".join(f"<p>{p}</p>" for p in paras) + "</div>")
-    out.append(f'<div class="refs"><strong>參考來源（本週全部 {len(items)} 則）</strong><ol>')
+    out.append('<div class="refs"><span class="kicker">References · 參考來源'
+               f'（本週全部 {len(items)} 則）</span><ol>')
     for n, it in enumerate(items, 1):
         out.append(f'<li id="ref-{tk}-{n}"><a href="{html.escape(it["link"])}" '
                    f'target="_blank">{html.escape(it["title"])}</a> '
@@ -360,18 +419,29 @@ def render_sources_panel(report):
         blocks.append("".join(rows))
     if not blocks:
         return ""
-    return ('<details class="srcpanel"><summary>📋 資料來源</summary>'
+    return ('<details class="srcpanel"><summary>資料來源</summary>'
             '<div class="sp-body">' + "".join(blocks) + '</div></details>')
 
 
 def render_report_body(report):
     """單份周報的內文（不含 <html> 外殼），供存檔頁、首頁、email 共用。"""
-    parts = [f'<h1>📊 趨勢周報 <span class="src">{report["generated_at"]}</span></h1>']
+    parts = ['<header class="masthead">'
+             '<div class="kicker">Weekly Intelligence Briefing</div>'
+             '<h1>趨勢周報</h1>'
+             f'<div class="issue">ISSUE {report["date"]} · 產業情勢週報</div>'
+             '</header><div class="rule"></div>']
     for tp in report["topics"]:
         items = tp["items"]
-        parts.append(f'<h2 id="{tkey(tp["topic"])}">{html.escape(tp["topic"])}（{len(items)} 則）</h2>')
+        tk = tkey(tp["topic"])
+        kick = KICKER.get(tp["topic"], "")
+        parts.append(f'<section class="section" id="{tk}">')
+        if kick:
+            parts.append(f'<div class="kicker">{html.escape(kick)}</div>')
+        parts.append(f'<h2>{html.escape(tp["topic"])}'
+                     f'<span class="count">{len(items)} 則</span></h2>'
+                     '<div class="hairline"></div>')
         if not items:
-            parts.append('<p class="note">本週無新資料。</p>')
+            parts.append('<p class="note">本週無相關動態。</p></section>')
             continue
         if tp["sections"]:                           # 有 AI：摘要 + 全部項目當參考來源
             parts.append(render_article(tp["topic"], tp["sections"], items))
@@ -380,8 +450,9 @@ def render_report_body(report):
                 parts.append(f'''<div class="item">
 <a href="{html.escape(it["link"])}" target="_blank">{html.escape(it["title"])}</a>
 <span class="date">{html.escape(it["source"])} {it["date"]}</span></div>''')
-    parts.append(f'<p class="meta">自動產生於 {report["generated_at"]} · '
-                 '資料來源：Google News RSS 等公開來源 · AI 整理僅供參考，引用請以原文為準</p>')
+        parts.append('</section>')
+    parts.append(f'<p class="meta">自動產生於 {report["generated_at"]}　·　'
+                 '資料來源 Google News RSS 等公開來源　·　AI 整理僅供參考，引用請以原文為準</p>')
     return "\n".join(parts)
 
 
@@ -409,8 +480,10 @@ def build_sidebar(reports, order, base, active_date=None):
         for tp in rep["topics"]:
             groups.setdefault(tp["topic"], [])
             groups[tp["topic"]].append((rep["date"], snippet(tp), tkey(tp["topic"])))
+    home = (base or "../") + "index.html"
     side = ['<aside class="side"><div class="side-title">'
-            '<a href="' + (base or "../") + 'index.html">📚 趨勢周報</a></div>']
+            f'<a href="{home}"><span class="kicker">Archive · 歷史</span>'
+            '<span class="brand">趨勢周報</span></a></div>']
     ordered = [x for x in order if x in groups] + [x for x in groups if x not in order]
     for t in ordered:
         side.append(f'<div class="grp">{html.escape(t)}</div>')

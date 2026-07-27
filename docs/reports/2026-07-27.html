@@ -1,74 +1,143 @@
 <!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>趨勢周報 2026-07-27</title><style>
-body{font-family:"Segoe UI","Microsoft JhengHei",sans-serif;max-width:1120px;margin:0 auto;padding:24px;color:#1a1a1a;line-height:1.6}
+:root{
+  --paper:#F4F2EA; --card:#FBFAF4; --ink:#1E2A24; --ink-2:#5E6B62;
+  --line:#DCE0D4; --line-2:#E9EBE1; --green:#2F5D4F; --green-deep:#223B33;
+  --green-soft:#E7EEE7; --accent:#B0682B; --accent-soft:#F0E3D2;
+  --mono:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+}
+*{box-sizing:border-box}
+body{font-family:"Segoe UI","Microsoft JhengHei","PingFang TC",sans-serif;margin:0;
+  padding:0;color:var(--ink);background:var(--paper);line-height:1.75;font-size:17px;
+  -webkit-font-smoothing:antialiased}
 a{color:inherit}
-.report{max-width:820px;margin:0 auto}
-.layout{display:flex;gap:28px;align-items:flex-start}
-.side{flex:0 0 232px;position:sticky;top:16px;font-size:13px;border-right:1px solid #eee;padding-right:16px;max-height:calc(100vh - 32px);overflow:auto}
-.side-title{font-weight:700;color:#2563eb;margin-bottom:10px}
-.side-title a{text-decoration:none}
-.wk.active{background:#eff6ff;border-radius:4px}
-.wk.active .wk-d::before{content:"▸ "}
-.srcpanel{position:fixed;top:14px;right:14px;z-index:30;font-size:13px}
-.srcpanel>summary{list-style:none;cursor:pointer;background:#2563eb;color:#fff;padding:6px 13px;border-radius:6px;box-shadow:0 2px 8px rgba(37,99,235,.3)}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--accent);font-weight:600}
+/* ── 版面骨架 ── */
+.layout{display:flex;gap:0;align-items:stretch;min-height:100vh}
+.side{flex:0 0 288px;position:sticky;top:0;align-self:flex-start;height:100vh;overflow:auto;
+  background:var(--green-deep);color:#D7E0D6;padding:30px 24px}
+.main{flex:1 1 auto;min-width:0;padding:40px clamp(28px,5vw,80px)}
+.report{max-width:940px;margin:0 auto;padding:36px 28px}
+@media(max-width:760px){.layout{flex-direction:column}.side{flex:none;width:100%;height:auto;
+  position:static;padding:22px}.main{padding:28px 22px}}
+/* ── 側欄 ── */
+.side-title{margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.14)}
+.side-title a{text-decoration:none;display:block}
+.side-title .brand{font-size:20px;font-weight:800;color:#fff;letter-spacing:.02em;margin-top:6px}
+.side .kicker{color:#9DBBA6}
+.grp{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:#8FB09A;margin:22px 0 8px;display:flex;align-items:center;gap:7px}
+.grp::before{content:"";width:6px;height:6px;background:var(--accent);border-radius:50%;flex:none}
+.wk{display:block;text-decoration:none;padding:9px 10px;margin:0 -10px;border-radius:7px;
+  transition:background .15s}
+.wk:hover{background:rgba(255,255,255,.06)}
+.wk:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.wk.active{background:rgba(176,104,43,.18)}
+.wk-d{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:#EAD9C2;font-weight:600}
+.wk.active .wk-d{color:var(--accent)}
+.wk-s{display:block;color:#A7B6AA;font-size:12.5px;line-height:1.5;margin-top:3px}
+/* ── 報頭 ── */
+.masthead{margin-bottom:8px}
+.masthead h1{font-size:clamp(30px,4vw,44px);font-weight:800;letter-spacing:-.01em;
+  line-height:1.08;margin:8px 0 0}
+.masthead .issue{font-family:var(--mono);font-size:13px;letter-spacing:.1em;color:var(--ink-2);
+  margin-top:12px}
+.rule{height:2px;background:var(--ink);margin:20px 0 4px}
+/* ── 主題區塊 ── */
+.section{margin-top:52px}
+.section h2{font-size:clamp(22px,2.4vw,30px);font-weight:800;letter-spacing:-.01em;
+  margin:6px 0 0;line-height:1.15}
+.section h2 .count{font-family:var(--mono);font-size:14px;font-weight:600;color:var(--ink-2);
+  letter-spacing:.02em;margin-left:10px}
+.section .hairline{height:1px;background:var(--line);margin:14px 0 22px}
+h4{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--green);margin:26px 0 10px;font-weight:700}
+.body{font-size:18px;color:var(--ink);line-height:1.95;text-align:justify;max-width:760px}
+.body p{margin:0 0 14px}
+sup{line-height:0}
+sup a{font-family:var(--mono);font-size:11px;color:var(--accent);text-decoration:none;
+  font-weight:700;padding:0 1px}
+sup a:hover{text-decoration:underline}
+/* ── 參考來源 ── */
+.refs{margin-top:26px;padding-top:18px;border-top:1px solid var(--line)}
+.refs .kicker{display:block;margin-bottom:12px}
+.refs ol{list-style:none;counter-reset:r;padding:0;margin:0}
+.refs li{counter-increment:r;position:relative;padding:9px 0 9px 40px;font-size:15px;
+  color:var(--ink-2);border-bottom:1px solid var(--line-2);line-height:1.5}
+.refs li::before{content:counter(r);position:absolute;left:0;top:9px;width:26px;text-align:center;
+  font-family:var(--mono);font-size:12px;font-weight:700;color:var(--accent)}
+.refs a{color:var(--ink);text-decoration:none;font-weight:600}
+.refs a:hover{color:var(--green);text-decoration:underline}
+.refs .src{color:var(--ink-2);font-weight:400;font-family:var(--mono);font-size:12px}
+/* ── 純清單（無 AI 時）── */
+.item{padding:9px 0;font-size:15px;border-bottom:1px solid var(--line-2)}
+.item a{color:var(--ink);text-decoration:none;font-weight:600}
+.item a:hover{color:var(--green)}
+.item .date{color:var(--ink-2);font-family:var(--mono);font-size:12px;margin-left:8px}
+.note{color:var(--ink-2);font-size:15px}
+/* ── 資料來源面板 ── */
+.srcpanel{position:fixed;top:18px;right:18px;z-index:30;font-size:14px}
+.srcpanel>summary{list-style:none;cursor:pointer;background:var(--card);color:var(--green);
+  border:1px solid var(--line);padding:8px 15px;border-radius:999px;font-weight:600;
+  box-shadow:0 6px 18px rgba(34,59,51,.10);display:flex;align-items:center;gap:7px}
 .srcpanel>summary::-webkit-details-marker{display:none}
-.sp-body{position:absolute;right:0;margin-top:8px;width:min(340px,86vw);max-height:72vh;overflow:auto;background:#fff;border:1px solid #ddd;border-radius:8px;box-shadow:0 8px 28px rgba(0,0,0,.14);padding:14px}
-.sp-topic{font-weight:700;color:#2563eb;margin:10px 0 4px}
+.srcpanel>summary::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.srcpanel[open]>summary{color:var(--ink)}
+.srcpanel>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sp-body{position:absolute;right:0;margin-top:10px;width:min(400px,88vw);max-height:74vh;
+  overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:12px;
+  box-shadow:0 18px 44px rgba(34,59,51,.16);padding:18px}
+.sp-topic{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--green);font-weight:700;margin:16px 0 6px}
 .sp-topic:first-child{margin-top:0}
-.s-row{margin:5px 0 0 2px;color:#555;line-height:1.7}
-.s-row a{color:#2563eb;text-decoration:none;word-break:break-all}
-.grp{font-weight:600;color:#374151;margin:14px 0 4px;border-bottom:1px solid #e5e7eb;padding-bottom:3px}
-.wk{display:block;text-decoration:none;padding:6px 0;border-bottom:1px dashed #eee}
-.wk-d{display:block;color:#2563eb;font-weight:600}
-.wk-s{display:block;color:#6b7280;font-size:12px;line-height:1.4}
-.main{flex:1 1 auto;min-width:0}
-@media(max-width:680px){.layout{flex-direction:column}.side{flex:none;width:100%;position:static;border-right:none;border-bottom:1px solid #eee;padding-right:0;max-height:none}}
-h1{font-size:24px;border-bottom:3px solid #2563eb;padding-bottom:8px}
-h2{font-size:19px;margin-top:36px;color:#2563eb;border-bottom:1px solid #e5e7eb;padding-bottom:6px}
-h4{font-size:16px;color:#374151;margin:22px 0 6px}
-.body{font-size:15px;color:#222;text-align:justify}
-.body p{margin:8px 0}
-sup a{color:#2563eb;text-decoration:none;font-weight:600}
-.refs{margin-top:16px;font-size:13px;color:#444}
-.refs ol{padding-left:22px;margin:6px 0}
-.refs li{margin:4px 0}
-.refs a{color:#374151;text-decoration:none}
-.refs a:hover{color:#2563eb;text-decoration:underline}
-.src{color:#9ca3af}
-.item{padding:6px 0;font-size:13px}
-.item a{color:#4b5563;text-decoration:none}
-.item a:hover{color:#2563eb}
-.date{color:#9ca3af;font-size:12px;margin-left:6px}
-.note{color:#555;font-size:14px}
-details{margin-top:14px}
-summary{cursor:pointer;color:#6b7280;font-size:13px}
-.archive{margin-top:36px;border-top:1px solid #eee;padding-top:16px;font-size:14px}
-.archive a{color:#2563eb;text-decoration:none}
-.archive li{margin:4px 0}
-.meta{color:#999;font-size:12px;margin-top:32px;border-top:1px solid #eee;padding-top:12px}
+.s-row{margin:5px 0 0;color:var(--ink-2);line-height:1.7;font-size:13.5px}
+.s-row b{color:var(--ink);font-weight:600}
+.s-row a{color:var(--green);text-decoration:none;word-break:break-all}
+.s-row a:hover{text-decoration:underline}
+/* ── 頁尾 ── */
+.meta{color:var(--ink-2);font-size:12.5px;margin-top:44px;padding-top:16px;
+  border-top:1px solid var(--line);font-family:var(--mono);letter-spacing:.02em;line-height:1.7}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style></head><body>
-<details class="srcpanel"><summary>📋 資料來源</summary><div class="sp-body"><div class="sp-topic">AI / 企業應用</div><div class="s-row"><b>Google News 關鍵字</b>：企業 導入 AI Agent 生產力、AI 工具 企業 應用 台灣、生成式 AI 企業 導入 效率</div><div class="sp-topic">永續 / 企業實務</div><div class="s-row"><b>Google News 關鍵字</b>：ISO 14064 溫室氣體盤查 企業、企業 淨零 碳盤查 轉型、碳足跡 查證 永續 顧問 服務、永續 顧問 公司 新服務、碳盤查 查證 機構 台灣、ESG 服務 平台 新產品 上線</div><div class="s-row"><b>直連 RSS</b>：<a href="https://esg.gvm.com.tw/rss" target="_blank">https://esg.gvm.com.tw/rss</a></div></div></details>
+<details class="srcpanel"><summary>資料來源</summary><div class="sp-body"><div class="sp-topic">永續 / 企業實務</div><div class="s-row"><b>Google News 關鍵字</b>：ISO 14064 溫室氣體盤查 企業、企業 淨零 碳盤查 轉型、碳足跡 查證 永續 顧問 服務、永續 顧問 公司 新服務、碳盤查 查證 機構 台灣、ESG 服務 平台 新產品 上線</div><div class="s-row"><b>直連 RSS</b>：<a href="https://esg.gvm.com.tw/rss" target="_blank">https://esg.gvm.com.tw/rss</a></div><div class="sp-topic">AI / 企業應用</div><div class="s-row"><b>Google News 關鍵字</b>：企業 導入 AI Agent 生產力、AI 工具 企業 應用 台灣、生成式 AI 企業 導入 效率</div></div></details>
 <div class="layout">
-<aside class="side"><div class="side-title"><a href="../index.html">📚 趨勢周報</a></div><div class="grp">AI / 企業應用</div><a class="wk active" href="2026-07-27.html#AI"><span class="wk-d">2026-07-27</span><span class="wk-s">本週企業AI應用發展逐漸從前端技術導入深化至核心業務流程。隨著AIAgent深入企業…</span></a><div class="grp">永續 / 企業實務</div><a class="wk active" href="2026-07-27.html#t723366843"><span class="wk-d">2026-07-27</span><span class="wk-s">本週國內企業永續與碳管理動態數量相對較少，焦點主要集中於政府部門與大專院校在淨零人才…</span></a></aside>
-<main class="main"><h1>📊 趨勢周報 <span class="src">2026-07-27 13:21</span></h1>
-<h2 id="AI">AI / 企業應用（5 則）</h2>
+<aside class="side"><div class="side-title"><a href="../index.html"><span class="kicker">Archive · 歷史</span><span class="brand">趨勢周報</span></a></div><div class="grp">永續 / 企業實務</div><a class="wk active" href="2026-07-27.html#t723366843"><span class="wk-d">2026-07-27</span><span class="wk-s">本週台灣在地永續轉型與碳管理規範迎來關鍵進展。環境部預告碳費新規，針對納管對象首度給…</span></a><div class="grp">AI / 企業應用</div><a class="wk active" href="2026-07-27.html#AI"><span class="wk-d">2026-07-27</span><span class="wk-s">隨著AI技術深度滲透，台灣企業對AI的應用已從早期實驗階段轉走向實質效益落地。資策會…</span></a></aside>
+<main class="main"><header class="masthead"><div class="kicker">Weekly Intelligence Briefing</div><h1>趨勢周報</h1><div class="issue">ISSUE 2026-07-27 · 產業情勢週報</div></header><div class="rule"></div>
+<section class="section" id="t723366843">
+<div class="kicker">SUSTAINABILITY · CORPORATE PRACTICE</div>
+<h2>永續 / 企業實務<span class="count">12 則</span></h2><div class="hairline"></div>
 <h4>本週情勢</h4>
-<div class="body"><p>本週企業 AI 應用發展逐漸從前端技術導入深化至核心業務流程。隨著 AI Agent 深入企業運作，資策會 MIC 指出企業在導入過程中常面臨效率瓶頸，需從業務流程重塑、人才轉型與治理體系等面向提出相應解方<sup><a href="#ref-AI-4">[4]</a></sup>。此一現象不單發生於台灣，鄰近的日本企業亦將 AI 應用重心轉向具體成果創造，但同時有逾四成企業面臨專業人才短缺的挑戰，顯見人才與治理已成為亞洲企業推動 AI 轉型的共同課題<sup><a href="#ref-AI-3">[3]</a></sup>。另一方面，在資安與開發工具實踐上，軟體開發及資安防護自動化成為台灣企業提升生產力的關鍵著力點。亞利安科技正式代理 AIFT 旗下的 Vulcan AI 安全平台，提供企業強化 AI 應用資安防護的新選擇<sup><a href="#ref-AI-1">[1]</a></sup>；叡揚資訊則透過 Mend.io 體驗營，協助企業在 AI 時代打造無痛合規的 AppSec 應用程式安全流程<sup><a href="#ref-AI-5">[5]</a></sup>。此外，國際廠商如甲骨文亦在其 Fusion Applications 中進一步整合 AI 工具，輔助企業加速應用開發效率<sup><a href="#ref-AI-2">[2]</a></sup>。整體而言，企業導入 AI 已由單純的概念驗證，邁向結合資安防護與流程治理的深水區。</p></div>
-<div class="refs"><strong>參考來源（本週全部 5 則）</strong><ol>
+<div class="body"><p>本週台灣在地永續轉型與碳管理規範迎來關鍵進展。環境部預告碳費新規，針對納管對象首度給予緩衝期，但舊案減碳效益僅算10%<sup><a href="#ref-t723366843-9">[9]</a></sup>，迫使企業必須重新釐清內部減碳專案之盤查效益與策略配置。同時，賴清德總統於第八次氣候委員會提出氣候韌性三大戰略<sup><a href="#ref-t723366843-3">[3]</a></sup>，確立國家轉型方向。面對國際規範演進，SBTi 2.0新制發布並宣告於2028全面改採新標準<sup><a href="#ref-t723366843-11">[11]</a></sup>，提醒企業永續長需提早調整減碳目標與查證對接機制。在服務與人才端，學界與機構積極補足淨零量能，如東華大學與臺科大合作辦理稽核員訓練及iPAS總複習<sup><a href="#ref-t723366843-12">[12]</a></sup>，加速淨零稽核人才培育；雲嘉南分署亦推動中小企業精準減碳<sup><a href="#ref-t723366843-4">[4]</a></sup>，協助在地廠商建構基礎碳管理能力。企業實務層面，南山人壽推出熱傷害保單<sup><a href="#ref-t723366843-2">[2]</a></sup>，展現ESG社會效益創新；部分企業則導入POE科學優化工作環境<sup><a href="#ref-t723366843-10">[10]</a></sup>，並思考AI副作用等新型ESG議題<sup><a href="#ref-t723366843-1">[1]</a></sup>，顯示永續轉型已深化至日常營運。</p></div>
+<div class="refs"><span class="kicker">References · 參考來源（本週全部 12 則）</span><ol>
+<li id="ref-t723366843-1"><a href="https://esg.gvm.com.tw/article/121936" target="_blank">永續轉型必修課10〉未來值得投入的三個ESG領域：社會基礎建設、AI副作用、人際疏離感</a> <span class="src"> 2026-07-25</span></li>
+<li id="ref-t723366843-2"><a href="https://esg.gvm.com.tw/article/122087" target="_blank">別讓長者困在「隱形烤箱」！南山首張熱傷害保單台南開跑，3.2萬弱勢免費投保</a> <span class="src"> 2026-07-24</span></li>
+<li id="ref-t723366843-3"><a href="https://esg.gvm.com.tw/article/122067" target="_blank">ESG每週必讀》迎戰高溫豪雨！第八次氣候委員會登場，賴清德提氣候韌性三大戰略</a> <span class="src"> 2026-07-24</span></li>
+<li id="ref-t723366843-4"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9HZFluWU1sdHM2X2NtRzBNS3ZhM0RWb29sLXJsdVdkaWo1dXM3NFFhaWdTck5FSFhRNmUzc0xZSGdBR0FPTFdrUHVxSEtIcUlqTF92ZmlR?oc=5" target="_blank">掌握碳管理關鍵！雲嘉南分署助攻中小企業精準減碳</a> <span class="src">中央社 CNA 2026-07-24</span></li>
+<li id="ref-t723366843-5"><a href="https://esg.gvm.com.tw/article/122137" target="_blank">拒絕殘酷運送！寵物運輸新規：犬貓「禁裝紙箱」，違者開罰</a> <span class="src"> 2026-07-24</span></li>
+<li id="ref-t723366843-6"><a href="https://esg.gvm.com.tw/article/122018" target="_blank">破解用電焦慮！寧德時代「鈉電池」正式量產，儲能迎來鋰鈉共治新局</a> <span class="src"> 2026-07-23</span></li>
+<li id="ref-t723366843-7"><a href="https://esg.gvm.com.tw/article/121972" target="_blank">打敗東京、新加坡！德國2000人小農村，為何被封為全球最聰明城市？</a> <span class="src"> 2026-07-23</span></li>
+<li id="ref-t723366843-8"><a href="https://esg.gvm.com.tw/article/121911" target="_blank">ESG國際快訊》比謀殺案致命10倍的隱形殺手！熱浪正催生現實版《寄生上流》</a> <span class="src"> 2026-07-23</span></li>
+<li id="ref-t723366843-9"><a href="https://esg.gvm.com.tw/article/122035" target="_blank">ESG台灣快訊》碳費新規預告！首度納管增緩衝期，舊案減碳效益僅算10%</a> <span class="src"> 2026-07-23</span></li>
+<li id="ref-t723366843-10"><a href="https://esg.gvm.com.tw/article/121848" target="_blank">您在這裡工作，舒適嗎？用POE科學揪出辦公室裡的隱形痛點</a> <span class="src"> 2026-07-22</span></li>
+<li id="ref-t723366843-11"><a href="https://esg.gvm.com.tw/article/121806" target="_blank">企業永續長注意！SBTi 2.0新制發布，2028全面改採新標準</a> <span class="src"> 2026-07-22</span></li>
+<li id="ref-t723366843-12"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE82S3VaWTUzaUdnWFgxeEc5SlhqZjhxTDA1bkI5dGxtTEhObEFWRm5pNDZUWWJZQ1FOZ3RyT1hja0Jra2JtajlOenNsZ1hZNWxIcWd3RmJR?oc=5" target="_blank">東華大學與臺科大培育淨零人才 辦理稽核員訓練及iPAS總複習</a> <span class="src">中央社 CNA 2026-07-21</span></li>
+</ol></div>
+</section>
+<section class="section" id="AI">
+<div class="kicker">AI · ENTERPRISE ADOPTION</div>
+<h2>AI / 企業應用<span class="count">5 則</span></h2><div class="hairline"></div>
+<h4>本週情勢</h4>
+<div class="body"><p>隨著 AI 技術深度滲透，台灣企業對 AI 的應用已從早期實驗階段轉走向實質效益落地。資策會 MIC 觀測指出，AI Agent 已逐步進入企業核心流程，但在落地過程中卻面臨效率瓶頸，亟需從作業流程調整、人才培育與資安治理三大維度突破<sup><a href="#ref-AI-4">[4]</a></sup>。此一發展軌跡與鄰近的日本市場相呼應，日本企業目前的 AI 應用重心亦全面轉向創造成果，但有超過四成企業深受人才短缺困擾<sup><a href="#ref-AI-3">[3]</a></sup>，顯示出軟實力與人才是企業推動 AI 轉型時普遍面臨的關鍵課題。 為了協助企業無痛導入 AI 工具並確保安全，本土與外商軟體服務業者正加速部署開發與安全解決方案。在應用開發端，甲骨文將 AI 工具整合至 Fusion Applications 中，協助企業簡化應用開發<sup><a href="#ref-AI-2">[2]</a></sup>。而在資安防護與合規維度，叡揚資訊推動 Mend.io 體驗營，協助企業打造 AI 時代的無痛合規 AppSec 流程<sup><a href="#ref-AI-5">[5]</a></sup>；亞利安科技則代理 AIFT 旗下的 Vulcan AI 安全平台，防護企業 AI 環境<sup><a href="#ref-AI-1">[1]</a></sup>。整體而言，本週動態凸顯出企業導入 AI 時，工具自動化與資安合規管理已成為實現高效營運不可或缺的雙引擎。</p></div>
+<div class="refs"><span class="kicker">References · 參考來源（本週全部 5 則）</span><ol>
 <li id="ref-AI-1"><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE1LeHlrZ184VTd6Nmw3V2NKOXhQV0dJNnNna1lJUlF1VmJnV2p2LXA2NUxSWkhqZDlESnJYRlU5akZfNmROeG1SZlZjOA?oc=5" target="_blank">亞利安科技正式代理 AIFT旗下Vulcan AI 安全平台</a> <span class="src">iThome 2026-07-26</span></li>
 <li id="ref-AI-2"><a href="https://news.google.com/rss/articles/CBMivgJBVV95cUxNVmZQUkc5M3hmQ01qN2ZiZUFBZkhfMy1hX1FSUVNrMTRuSGVhVVhoZ2I0bTl0MElEaGJrUkJRRDBLLTNEdG1DbkRhTFBpZHFiRVN0TThMaXVYcElkUHFpQm5UTU9WeHdyekgyQ0lMRERlXzd6OWQ0dk01aHhXQ1BrRlFqZEdVVWpyUDFvUkdEaTV5eXJjemtuRm5iQmtQalI1MHM0Z2tzUHQ4aHozakR1Ry04TzdVcEdmNXZ2bWJqNFpSYzNOR3ZCbU90Ti1OdVpFZng0VzBuSlpsZmFuemF0Z19xc25pazV6NkU4bkl3bXZxRlFuVUw3V2ZrbEx5ZEZkZ3JtdWVrMU5iTjRRVHRoWkpJQVJseXZKV1NBcnFQRG1tVXEyRS1hVHpzNnliR241YzF4VlByWWhZYjZGQ3c?oc=5" target="_blank">甲骨文 Fusion Applications 整合 AI 工具 助企業應用開發</a> <span class="src">行銷人 2026-07-23</span></li>
 <li id="ref-AI-3"><a href="https://news.google.com/rss/articles/CBMi9wJBVV95cUxNTFltcE1YaFh0TmtyelN5a3NjeHdvQV9BSEJwQ1N4dmZhN2pMT0NKWnVDQjRTcURPS01sakVfZkVuLWlmeEk3M0V4Y2hHSWdYNGxncTdwQU1QTERHcXRiNEdkZ2VnaFN1cVZ1Z2RsQU5LMEo4NmJ6alY5LUZEUFkzNlNHZWY2WUc2M3I5MW8xQVhWRDZnREZZQmdKWDd2LVVabzRjZzdaZVBFc18xSHI1SVZNbVBBdU83QWVsRFBCWHZCYlNSalRCdnpBNkgxQTZkNG14bXF0NENYN2RTbi1kM3BMQ2FIV3dkN3FTN2phNGxFMWNFa2QtcU1UTHdiaS1tbUtnMTRkUTBvSUtqc0J6U05INHFJeGJrNWhtb2dBOU4wLVNmbDFwbHdXOUZnSU1nYmZWb05SMjNiT3YtM3dGc1JpWE4tMUx2bEE2S3FoLVJzZHk0MG82RFYwYzRNNDRNa0pjR1ZjLU95aHpDcndyb2dFLXdjZFE?oc=5" target="_blank">日本企業AI應用重心轉向創造成果 逾四成面臨人才短缺挑戰</a> <span class="src">Life 生活網 2026-07-23</span></li>
 <li id="ref-AI-4"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFAxdUF1VkNjNU9fS2dQc3ZwNXVybWZYZlVxcDhuMWZ5LTc4ZVNqWEV2TnFtVTBsWW14Um1kcEJYbzhsSXVmbE5PUENTbFFIQTBQMVJaUHF3?oc=5" target="_blank">AI Agent 已進入企業核心流程，為何反而遇到效率瓶頸？資策會產業情報研究所主任韓揚銘揭流程、人才與治理解方</a> <span class="src">LINE TODAY 2026-07-21</span></li>
 <li id="ref-AI-5"><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9uMGJ1UVY3Z3JGYVlpVWN1SmstUURzNjdqaWpCcjFSV3pOczVjYWxfUGdzSlpHa3J1X2VhZTZ1UnhuTEZ5TFZkajgwcmJxWnJ6azZwWXVGWEh1QQ?oc=5" target="_blank">叡揚資訊 Mend.io 實機體驗營 打造AI時代無痛合規AppSec流程</a> <span class="src">中央社 CNA 2026-07-21</span></li>
 </ol></div>
-<h2 id="t723366843">永續 / 企業實務（2 則）</h2>
-<h4>本週情勢</h4>
-<div class="body"><p>本週國內企業永續與碳管理動態數量相對較少，焦點主要集中於政府部門與大專院校在淨零人才培育與中小企業實務轉型上的基礎佈局。在企業面對碳盤查與減碳壓力日益增加的背景下，勞動部勞動力發展署雲嘉南分署積極協助區域內中小企業掌握碳管理關鍵技術，藉此推動精準減碳實務<sup><a href="#ref-t723366843-1">[1]</a></sup>。這顯示政府資源正逐步向基層產業傾斜，試圖補足中小企業在永續轉型初期缺乏專業知識與技術支援的短板。除了政府輔導機制外，學術界亦加速串聯資源，東華大學與臺科大本週合作辦理碳稽核員訓練及iPAS總複習課程<sup><a href="#ref-t723366843-2">[2]</a></sup>。此舉反映出市場對具備 ISO 規範檢驗與查證能力的專業稽核人才需求孔急，透過大專院校扎根培育並結合國家級證照輔導，有助於為產業注入標準化查核與碳管理能量。整體而言，雖然本週同業顧問或查證機構的新服務動態較少，但產官學界在人才育成與基礎能力建構上的動作，正為企業後續落實碳盤查與查證鋪路<sup><a href="#ref-t723366843-1">[1]</a></sup><sup><a href="#ref-t723366843-2">[2]</a></sup>。</p></div>
-<div class="refs"><strong>參考來源（本週全部 2 則）</strong><ol>
-<li id="ref-t723366843-1"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9HZFluWU1sdHM2X2NtRzBNS3ZhM0RWb29sLXJsdVdkaWo1dXM3NFFhaWdTck5FSFhRNmUzc0xZSGdBR0FPTFdrUHVxSEtIcUlqTF92ZmlR?oc=5" target="_blank">掌握碳管理關鍵！雲嘉南分署助攻中小企業精準減碳</a> <span class="src">中央社 CNA 2026-07-24</span></li>
-<li id="ref-t723366843-2"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE82S3VaWTUzaUdnWFgxeEc5SlhqZjhxTDA1bkI5dGxtTEhObEFWRm5pNDZUWWJZQ1FOZ3RyT1hja0Jra2JtajlOenNsZ1hZNWxIcWd3RmJR?oc=5" target="_blank">東華大學與臺科大培育淨零人才 辦理稽核員訓練及iPAS總複習</a> <span class="src">中央社 CNA 2026-07-21</span></li>
-</ol></div>
-<p class="meta">自動產生於 2026-07-27 13:21 · 資料來源：Google News RSS 等公開來源 · AI 整理僅供參考，引用請以原文為準</p></main>
+</section>
+<p class="meta">自動產生於 2026-07-27 13:28　·　資料來源 Google News RSS 等公開來源　·　AI 整理僅供參考，引用請以原文為準</p></main>
 </div>
 </body></html>

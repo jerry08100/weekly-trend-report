@@ -1,14 +1,110 @@
 {
   "date": "2026-07-27",
-  "generated_at": "2026-07-27 13:21",
-  "total": 7,
+  "generated_at": "2026-07-27 13:28",
+  "total": 17,
   "topics": [
+    {
+      "topic": "永續 / 企業實務",
+      "sections": [
+        {
+          "heading": "本週情勢",
+          "body": "本週台灣在地永續轉型與碳管理規範迎來關鍵進展。環境部預告碳費新規，針對納管對象首度給予緩衝期，但舊案減碳效益僅算10%[[8]]，迫使企業必須重新釐清內部減碳專案之盤查效益與策略配置。同時，賴清德總統於第八次氣候委員會提出氣候韌性三大戰略[[2]]，確立國家轉型方向。面對國際規範演進，SBTi 2.0新制發布並宣告於2028全面改採新標準[[10]]，提醒企業永續長需提早調整減碳目標與查證對接機制。在服務與人才端，學界與機構積極補足淨零量能，如東華大學與臺科大合作辦理稽核員訓練及iPAS總複習[[11]]，加速淨零稽核人才培育；雲嘉南分署亦推動中小企業精準減碳[[3]]，協助在地廠商建構基礎碳管理能力。企業實務層面，南山人壽推出熱傷害保單[[1]]，展現ESG社會效益創新；部分企業則導入POE科學優化工作環境[[9]]，並思考AI副作用等新型ESG議題[[0]]，顯示永續轉型已深化至日常營運。"
+        }
+      ],
+      "items": [
+        {
+          "title": "永續轉型必修課10〉未來值得投入的三個ESG領域：社會基礎建設、AI副作用、人際疏離感",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/121936",
+          "date": "2026-07-25"
+        },
+        {
+          "title": "別讓長者困在「隱形烤箱」！南山首張熱傷害保單台南開跑，3.2萬弱勢免費投保",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/122087",
+          "date": "2026-07-24"
+        },
+        {
+          "title": "ESG每週必讀》迎戰高溫豪雨！第八次氣候委員會登場，賴清德提氣候韌性三大戰略",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/122067",
+          "date": "2026-07-24"
+        },
+        {
+          "title": "掌握碳管理關鍵！雲嘉南分署助攻中小企業精準減碳",
+          "source": "中央社 CNA",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9HZFluWU1sdHM2X2NtRzBNS3ZhM0RWb29sLXJsdVdkaWo1dXM3NFFhaWdTck5FSFhRNmUzc0xZSGdBR0FPTFdrUHVxSEtIcUlqTF92ZmlR?oc=5",
+          "date": "2026-07-24"
+        },
+        {
+          "title": "拒絕殘酷運送！寵物運輸新規：犬貓「禁裝紙箱」，違者開罰",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/122137",
+          "date": "2026-07-24"
+        },
+        {
+          "title": "破解用電焦慮！寧德時代「鈉電池」正式量產，儲能迎來鋰鈉共治新局",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/122018",
+          "date": "2026-07-23"
+        },
+        {
+          "title": "打敗東京、新加坡！德國2000人小農村，為何被封為全球最聰明城市？",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/121972",
+          "date": "2026-07-23"
+        },
+        {
+          "title": "ESG國際快訊》比謀殺案致命10倍的隱形殺手！熱浪正催生現實版《寄生上流》",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/121911",
+          "date": "2026-07-23"
+        },
+        {
+          "title": "ESG台灣快訊》碳費新規預告！首度納管增緩衝期，舊案減碳效益僅算10%",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/122035",
+          "date": "2026-07-23"
+        },
+        {
+          "title": "您在這裡工作，舒適嗎？用POE科學揪出辦公室裡的隱形痛點",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/121848",
+          "date": "2026-07-22"
+        },
+        {
+          "title": "企業永續長注意！SBTi 2.0新制發布，2028全面改採新標準",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/121806",
+          "date": "2026-07-22"
+        },
+        {
+          "title": "東華大學與臺科大培育淨零人才 辦理稽核員訓練及iPAS總複習",
+          "source": "中央社 CNA",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE82S3VaWTUzaUdnWFgxeEc5SlhqZjhxTDA1bkI5dGxtTEhObEFWRm5pNDZUWWJZQ1FOZ3RyT1hja0Jra2JtajlOenNsZ1hZNWxIcWd3RmJR?oc=5",
+          "date": "2026-07-21"
+        }
+      ],
+      "sources": {
+        "queries": [
+          "ISO 14064 溫室氣體盤查 企業",
+          "企業 淨零 碳盤查 轉型",
+          "碳足跡 查證 永續 顧問 服務",
+          "永續 顧問 公司 新服務",
+          "碳盤查 查證 機構 台灣",
+          "ESG 服務 平台 新產品 上線"
+        ],
+        "feeds": [
+          "https://esg.gvm.com.tw/rss"
+        ]
+      }
+    },
     {
       "topic": "AI / 企業應用",
       "sections": [
         {
           "heading": "本週情勢",
-          "body": "本週企業 AI 應用發展逐漸從前端技術導入深化至核心業務流程。隨著 AI Agent 深入企業運作，資策會 MIC 指出企業在導入過程中常面臨效率瓶頸，需從業務流程重塑、人才轉型與治理體系等面向提出相應解方[[3]]。此一現象不單發生於台灣，鄰近的日本企業亦將 AI 應用重心轉向具體成果創造，但同時有逾四成企業面臨專業人才短缺的挑戰，顯見人才與治理已成為亞洲企業推動 AI 轉型的共同課題[[2]]。另一方面，在資安與開發工具實踐上，軟體開發及資安防護自動化成為台灣企業提升生產力的關鍵著力點。亞利安科技正式代理 AIFT 旗下的 Vulcan AI 安全平台，提供企業強化 AI 應用資安防護的新選擇[[0]]；叡揚資訊則透過 Mend.io 體驗營，協助企業在 AI 時代打造無痛合規的 AppSec 應用程式安全流程[[4]]。此外，國際廠商如甲骨文亦在其 Fusion Applications 中進一步整合 AI 工具，輔助企業加速應用開發效率[[1]]。整體而言，企業導入 AI 已由單純的概念驗證，邁向結合資安防護與流程治理的深水區。"
+          "body": "隨著 AI 技術深度滲透，台灣企業對 AI 的應用已從早期實驗階段轉走向實質效益落地。資策會 MIC 觀測指出，AI Agent 已逐步進入企業核心流程，但在落地過程中卻面臨效率瓶頸，亟需從作業流程調整、人才培育與資安治理三大維度突破[[3]]。此一發展軌跡與鄰近的日本市場相呼應，日本企業目前的 AI 應用重心亦全面轉向創造成果，但有超過四成企業深受人才短缺困擾[[2]]，顯示出軟實力與人才是企業推動 AI 轉型時普遍面臨的關鍵課題。 為了協助企業無痛導入 AI 工具並確保安全，本土與外商軟體服務業者正加速部署開發與安全解決方案。在應用開發端，甲骨文將 AI 工具整合至 Fusion Applications 中，協助企業簡化應用開發[[1]]。而在資安防護與合規維度，叡揚資訊推動 Mend.io 體驗營，協助企業打造 AI 時代的無痛合規 AppSec 流程[[4]]；亞利安科技則代理 AIFT 旗下的 Vulcan AI 安全平台，防護企業 AI 環境[[0]]。整體而言，本週動態凸顯出企業導入 AI 時，工具自動化與資安合規管理已成為實現高效營運不可或缺的雙引擎。"
         }
       ],
       "items": [
@@ -50,42 +146,6 @@
           "生成式 AI 企業 導入 效率"
         ],
         "feeds": []
-      }
-    },
-    {
-      "topic": "永續 / 企業實務",
-      "sections": [
-        {
-          "heading": "本週情勢",
-          "body": "本週國內企業永續與碳管理動態數量相對較少，焦點主要集中於政府部門與大專院校在淨零人才培育與中小企業實務轉型上的基礎佈局。在企業面對碳盤查與減碳壓力日益增加的背景下，勞動部勞動力發展署雲嘉南分署積極協助區域內中小企業掌握碳管理關鍵技術，藉此推動精準減碳實務[[0]]。這顯示政府資源正逐步向基層產業傾斜，試圖補足中小企業在永續轉型初期缺乏專業知識與技術支援的短板。除了政府輔導機制外，學術界亦加速串聯資源，東華大學與臺科大本週合作辦理碳稽核員訓練及iPAS總複習課程[[1]]。此舉反映出市場對具備 ISO 規範檢驗與查證能力的專業稽核人才需求孔急，透過大專院校扎根培育並結合國家級證照輔導，有助於為產業注入標準化查核與碳管理能量。整體而言，雖然本週同業顧問或查證機構的新服務動態較少，但產官學界在人才育成與基礎能力建構上的動作，正為企業後續落實碳盤查與查證鋪路[[0]][[1]]。"
-        }
-      ],
-      "items": [
-        {
-          "title": "掌握碳管理關鍵！雲嘉南分署助攻中小企業精準減碳",
-          "source": "中央社 CNA",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9HZFluWU1sdHM2X2NtRzBNS3ZhM0RWb29sLXJsdVdkaWo1dXM3NFFhaWdTck5FSFhRNmUzc0xZSGdBR0FPTFdrUHVxSEtIcUlqTF92ZmlR?oc=5",
-          "date": "2026-07-24"
-        },
-        {
-          "title": "東華大學與臺科大培育淨零人才 辦理稽核員訓練及iPAS總複習",
-          "source": "中央社 CNA",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE82S3VaWTUzaUdnWFgxeEc5SlhqZjhxTDA1bkI5dGxtTEhObEFWRm5pNDZUWWJZQ1FOZ3RyT1hja0Jra2JtajlOenNsZ1hZNWxIcWd3RmJR?oc=5",
-          "date": "2026-07-21"
-        }
-      ],
-      "sources": {
-        "queries": [
-          "ISO 14064 溫室氣體盤查 企業",
-          "企業 淨零 碳盤查 轉型",
-          "碳足跡 查證 永續 顧問 服務",
-          "永續 顧問 公司 新服務",
-          "碳盤查 查證 機構 台灣",
-          "ESG 服務 平台 新產品 上線"
-        ],
-        "feeds": [
-          "https://esg.gvm.com.tw/rss"
-        ]
       }
     }
   ]
