@@ -217,113 +217,152 @@ def gemini_digest(topic, rows):
         return None
 
 
-CSS = """
-:root{
-  --paper:#F4F2EA; --card:#FBFAF4; --ink:#1E2A24; --ink-2:#5E6B62;
-  --line:#DCE0D4; --line-2:#E9EBE1; --green:#2F5D4F; --green-deep:#223B33;
-  --green-soft:#E7EEE7; --accent:#B0682B; --accent-soft:#F0E3D2;
-  --mono:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+# ── 三個純色主題（solid，不用漸層）。切換改 ACTIVE_THEME 或跑 --theme=NAME。──
+THEMES = {
+    "forest": {  # 森林綠 · 暖米白 · 銅金
+        "paper": "#F4F2EA", "card": "#FBFAF4", "ink": "#1E2A24", "ink2": "#5E6B62",
+        "line": "#DCE0D4", "line2": "#E9EBE1", "brand": "#2F5D4F",
+        "accent": "#B0682B", "shadow": "34,59,51",
+        "side_bg": "#223B33", "side_fg": "#D7E0D6", "side_fg2": "#A7B6AA",
+        "side_line": "rgba(255,255,255,.14)", "side_active": "rgba(176,104,43,.20)",
+        "side_date": "#EAD9C2", "side_grp": "#8FB09A", "side_brand": "#FFFFFF",
+    },
+    "navy": {  # 藏青 · 冷灰 · 琥珀（財經顧問感）
+        "paper": "#F1F4F8", "card": "#FBFCFE", "ink": "#1B2432", "ink2": "#586477",
+        "line": "#D5DCE6", "line2": "#E6EAF1", "brand": "#234E7D",
+        "accent": "#C0892E", "shadow": "27,43,68",
+        "side_bg": "#1B2B44", "side_fg": "#D3DCEA", "side_fg2": "#9FACC2",
+        "side_line": "rgba(255,255,255,.14)", "side_active": "rgba(192,137,46,.22)",
+        "side_date": "#ECDCBB", "side_grp": "#93A6C4", "side_brand": "#FFFFFF",
+    },
+    "graphite": {  # 石墨中性 · 暖灰 · 松綠（極簡單色）
+        "paper": "#F3F3F0", "card": "#FBFBF9", "ink": "#23231F", "ink2": "#63635C",
+        "line": "#DEDDD7", "line2": "#EAE9E3", "brand": "#3A3A34",
+        "accent": "#1F7A6B", "shadow": "35,35,31",
+        "side_bg": "#2A2A24", "side_fg": "#DAD9D2", "side_fg2": "#A6A59C",
+        "side_line": "rgba(255,255,255,.13)", "side_active": "rgba(31,122,107,.24)",
+        "side_date": "#CFE3DE", "side_grp": "#9E9D93", "side_brand": "#FFFFFF",
+    },
 }
+ACTIVE_THEME = "navy"
+
+STATIC_CSS = """
 *{box-sizing:border-box}
 body{font-family:"Segoe UI","Microsoft JhengHei","PingFang TC",sans-serif;margin:0;
-  padding:0;color:var(--ink);background:var(--paper);line-height:1.75;font-size:17px;
+  padding:0;color:var(--ink);background:var(--paper);line-height:1.75;font-size:18px;
   -webkit-font-smoothing:antialiased}
 a{color:inherit}
-.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+.kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;
   color:var(--accent);font-weight:600}
 /* ── 版面骨架 ── */
 .layout{display:flex;gap:0;align-items:stretch;min-height:100vh}
-.side{flex:0 0 288px;position:sticky;top:0;align-self:flex-start;height:100vh;overflow:auto;
-  background:var(--green-deep);color:#D7E0D6;padding:30px 24px}
-.main{flex:1 1 auto;min-width:0;padding:40px clamp(28px,5vw,80px)}
-.report{max-width:940px;margin:0 auto;padding:36px 28px}
+.side{flex:0 0 296px;position:sticky;top:0;align-self:flex-start;height:100vh;overflow:auto;
+  background:var(--side-bg);color:var(--side-fg);padding:32px 26px}
+.main{flex:1 1 auto;min-width:0;padding:44px clamp(30px,4vw,64px)}
+.report{max-width:960px;margin:0 auto;padding:36px 28px}
 @media(max-width:760px){.layout{flex-direction:column}.side{flex:none;width:100%;height:auto;
   position:static;padding:22px}.main{padding:28px 22px}}
 /* ── 側欄 ── */
-.side-title{margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.14)}
+.side-title{margin-bottom:24px;padding-bottom:18px;border-bottom:1px solid var(--side-line)}
 .side-title a{text-decoration:none;display:block}
-.side-title .brand{font-size:20px;font-weight:800;color:#fff;letter-spacing:.02em;margin-top:6px}
-.side .kicker{color:#9DBBA6}
+.side-title .brand{font-size:22px;font-weight:800;color:var(--side-brand);letter-spacing:.02em;margin-top:7px}
+.side .kicker{color:var(--side-grp)}
 .grp{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
-  color:#8FB09A;margin:22px 0 8px;display:flex;align-items:center;gap:7px}
+  color:var(--side-grp);margin:24px 0 8px;display:flex;align-items:center;gap:7px}
 .grp::before{content:"";width:6px;height:6px;background:var(--accent);border-radius:50%;flex:none}
-.wk{display:block;text-decoration:none;padding:9px 10px;margin:0 -10px;border-radius:7px;
+.wk{display:block;text-decoration:none;padding:10px 11px;margin:0 -11px;border-radius:7px;
   transition:background .15s}
 .wk:hover{background:rgba(255,255,255,.06)}
 .wk:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
-.wk.active{background:rgba(176,104,43,.18)}
-.wk-d{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:#EAD9C2;font-weight:600}
+.wk.active{background:var(--side-active)}
+.wk-d{display:block;font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;color:var(--side-date);font-weight:600}
 .wk.active .wk-d{color:var(--accent)}
-.wk-s{display:block;color:#A7B6AA;font-size:12.5px;line-height:1.5;margin-top:3px}
+.wk-s{display:block;color:var(--side-fg2);font-size:13px;line-height:1.5;margin-top:3px}
 /* ── 報頭 ── */
 .masthead{margin-bottom:8px}
-.masthead h1{font-size:clamp(30px,4vw,44px);font-weight:800;letter-spacing:-.01em;
+.masthead h1{font-size:clamp(32px,4vw,46px);font-weight:800;letter-spacing:-.01em;
   line-height:1.08;margin:8px 0 0}
-.masthead .issue{font-family:var(--mono);font-size:13px;letter-spacing:.1em;color:var(--ink-2);
+.masthead .issue{font-family:var(--mono);font-size:13px;letter-spacing:.1em;color:var(--ink2);
   margin-top:12px}
-.rule{height:2px;background:var(--ink);margin:20px 0 4px}
+.rule{height:2px;background:var(--ink);margin:22px 0 4px}
 /* ── 主題區塊 ── */
-.section{margin-top:52px}
-.section h2{font-size:clamp(22px,2.4vw,30px);font-weight:800;letter-spacing:-.01em;
+.section{margin-top:56px}
+.section h2{font-size:clamp(24px,2.4vw,32px);font-weight:800;letter-spacing:-.01em;
   margin:6px 0 0;line-height:1.15}
-.section h2 .count{font-family:var(--mono);font-size:14px;font-weight:600;color:var(--ink-2);
+.section h2 .count{font-family:var(--mono);font-size:15px;font-weight:600;color:var(--ink2);
   letter-spacing:.02em;margin-left:10px}
-.section .hairline{height:1px;background:var(--line);margin:14px 0 22px}
+.section .hairline{height:1px;background:var(--line);margin:14px 0 24px}
+/* ── 兩欄：左情勢文、右參考來源 ── */
+.cols{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:48px;align-items:start}
+@media(max-width:1080px){.cols{grid-template-columns:1fr;gap:0}}
 h4{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--green);margin:26px 0 10px;font-weight:700}
-.body{font-size:18px;color:var(--ink);line-height:1.95;text-align:justify;max-width:760px}
-.body p{margin:0 0 14px}
+  color:var(--brand);margin:0 0 12px;font-weight:700}
+.body{font-size:19px;color:var(--ink);line-height:1.98;text-align:justify}
+.body p{margin:0 0 16px}
 sup{line-height:0}
-sup a{font-family:var(--mono);font-size:11px;color:var(--accent);text-decoration:none;
+sup a{font-family:var(--mono);font-size:11.5px;color:var(--accent);text-decoration:none;
   font-weight:700;padding:0 1px}
 sup a:hover{text-decoration:underline}
-/* ── 參考來源 ── */
-.refs{margin-top:26px;padding-top:18px;border-top:1px solid var(--line)}
-.refs .kicker{display:block;margin-bottom:12px}
+/* ── 參考來源（右欄）── */
+.col-refs{position:sticky;top:24px}
+@media(max-width:1080px){.col-refs{position:static;margin-top:28px}}
+.refs .kicker{display:block;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
 .refs ol{list-style:none;counter-reset:r;padding:0;margin:0}
-.refs li{counter-increment:r;position:relative;padding:9px 0 9px 40px;font-size:15px;
-  color:var(--ink-2);border-bottom:1px solid var(--line-2);line-height:1.5}
-.refs li::before{content:counter(r);position:absolute;left:0;top:9px;width:26px;text-align:center;
+.refs li{counter-increment:r;position:relative;padding:10px 0 10px 38px;font-size:14.5px;
+  color:var(--ink2);border-bottom:1px solid var(--line2);line-height:1.5}
+.refs li::before{content:counter(r);position:absolute;left:0;top:10px;width:24px;text-align:center;
   font-family:var(--mono);font-size:12px;font-weight:700;color:var(--accent)}
 .refs a{color:var(--ink);text-decoration:none;font-weight:600}
-.refs a:hover{color:var(--green);text-decoration:underline}
-.refs .src{color:var(--ink-2);font-weight:400;font-family:var(--mono);font-size:12px}
+.refs a:hover{color:var(--brand);text-decoration:underline}
+.refs .src{display:block;color:var(--ink2);font-weight:400;font-family:var(--mono);font-size:11.5px;margin-top:2px}
 /* ── 純清單（無 AI 時）── */
-.item{padding:9px 0;font-size:15px;border-bottom:1px solid var(--line-2)}
+.item{padding:10px 0;font-size:16px;border-bottom:1px solid var(--line2)}
 .item a{color:var(--ink);text-decoration:none;font-weight:600}
-.item a:hover{color:var(--green)}
-.item .date{color:var(--ink-2);font-family:var(--mono);font-size:12px;margin-left:8px}
-.note{color:var(--ink-2);font-size:15px}
+.item a:hover{color:var(--brand)}
+.item .date{color:var(--ink2);font-family:var(--mono);font-size:12px;margin-left:8px}
+.note{color:var(--ink2);font-size:16px}
 /* ── 資料來源面板 ── */
 .srcpanel{position:fixed;top:18px;right:18px;z-index:30;font-size:14px}
-.srcpanel>summary{list-style:none;cursor:pointer;background:var(--card);color:var(--green);
-  border:1px solid var(--line);padding:8px 15px;border-radius:999px;font-weight:600;
-  box-shadow:0 6px 18px rgba(34,59,51,.10);display:flex;align-items:center;gap:7px}
+.srcpanel>summary{list-style:none;cursor:pointer;background:var(--card);color:var(--brand);
+  border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-weight:600;
+  box-shadow:0 6px 18px rgba(var(--shadow),.12);display:flex;align-items:center;gap:7px}
 .srcpanel>summary::-webkit-details-marker{display:none}
 .srcpanel>summary::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent)}
 .srcpanel[open]>summary{color:var(--ink)}
 .srcpanel>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .sp-body{position:absolute;right:0;margin-top:10px;width:min(400px,88vw);max-height:74vh;
   overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:12px;
-  box-shadow:0 18px 44px rgba(34,59,51,.16);padding:18px}
+  box-shadow:0 18px 44px rgba(var(--shadow),.16);padding:18px}
 .sp-topic{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--green);font-weight:700;margin:16px 0 6px}
+  color:var(--brand);font-weight:700;margin:16px 0 6px}
 .sp-topic:first-child{margin-top:0}
-.s-row{margin:5px 0 0;color:var(--ink-2);line-height:1.7;font-size:13.5px}
+.s-row{margin:5px 0 0;color:var(--ink2);line-height:1.7;font-size:13.5px}
 .s-row b{color:var(--ink);font-weight:600}
-.s-row a{color:var(--green);text-decoration:none;word-break:break-all}
+.s-row a{color:var(--brand);text-decoration:none;word-break:break-all}
 .s-row a:hover{text-decoration:underline}
 /* ── 頁尾 ── */
-.meta{color:var(--ink-2);font-size:12.5px;margin-top:44px;padding-top:16px;
+.meta{color:var(--ink2);font-size:12.5px;margin-top:48px;padding-top:16px;
   border-top:1px solid var(--line);font-family:var(--mono);letter-spacing:.02em;line-height:1.7}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 """
 
 
-def page(title, inner):
+def build_css(theme_name=None):
+    t = THEMES.get(theme_name or ACTIVE_THEME, THEMES["forest"])
+    root = (":root{"
+            f'--paper:{t["paper"]};--card:{t["card"]};--ink:{t["ink"]};--ink2:{t["ink2"]};'
+            f'--line:{t["line"]};--line2:{t["line2"]};--brand:{t["brand"]};--accent:{t["accent"]};'
+            f'--shadow:{t["shadow"]};--side-bg:{t["side_bg"]};--side-fg:{t["side_fg"]};'
+            f'--side-fg2:{t["side_fg2"]};--side-line:{t["side_line"]};--side-active:{t["side_active"]};'
+            f'--side-date:{t["side_date"]};--side-grp:{t["side_grp"]};--side-brand:{t["side_brand"]};'
+            '--mono:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;}')
+    return root + STATIC_CSS
+
+
+def page(title, inner, theme=None):
     return (f'<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">\n'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">\n'
-            f'<title>{html.escape(title)}</title><style>{CSS}</style></head><body>\n'
+            f'<title>{html.escape(title)}</title><style>{build_css(theme)}</style></head><body>\n'
             f'{inner}\n</body></html>')
 
 
@@ -383,20 +422,21 @@ def render_article(topic, sections, items):
         n = i + 1                                    # 編號 = 項目序號（對齊下方清單）
         return f'<sup><a href="#ref-{tk}-{n}">[{n}]</a></sup>'
 
-    out = []
+    body_parts = []                                  # 左欄：情勢文
     for sec in sections:
-        out.append(f'<h4>{html.escape(sec.get("heading", ""))}</h4>')
+        body_parts.append(f'<h4>{html.escape(sec.get("heading", ""))}</h4>')
         body = re.sub(r"\[\[(\d+)\]\]", repl, html.escape(sec.get("body", "")))
         paras = [p.strip() for p in re.split(r"\n{2,}", body) if p.strip()]
-        out.append('<div class="body">' + "".join(f"<p>{p}</p>" for p in paras) + "</div>")
-    out.append('<div class="refs"><span class="kicker">References · 參考來源'
-               f'（本週全部 {len(items)} 則）</span><ol>')
+        body_parts.append('<div class="body">' + "".join(f"<p>{p}</p>" for p in paras) + "</div>")
+    refs = ['<div class="refs"><span class="kicker">References · 參考來源'
+            f'（{len(items)} 則）</span><ol>']            # 右欄：全部來源
     for n, it in enumerate(items, 1):
-        out.append(f'<li id="ref-{tk}-{n}"><a href="{html.escape(it["link"])}" '
-                   f'target="_blank">{html.escape(it["title"])}</a> '
-                   f'<span class="src">{html.escape(it["source"])} {it["date"]}</span></li>')
-    out.append('</ol></div>')
-    return "\n".join(out)
+        refs.append(f'<li id="ref-{tk}-{n}"><a href="{html.escape(it["link"])}" '
+                    f'target="_blank">{html.escape(it["title"])}</a>'
+                    f'<span class="src">{html.escape(it["source"])} {it["date"]}</span></li>')
+    refs.append('</ol></div>')
+    return (f'<div class="cols"><div class="col-body">{"".join(body_parts)}</div>'
+            f'<aside class="col-refs">{"".join(refs)}</aside></div>')
 
 
 def render_sources_panel(report):
@@ -497,11 +537,11 @@ def build_sidebar(reports, order, base, active_date=None):
     return "".join(side)
 
 
-def compose_page(report, sidebar_html):
+def compose_page(report, sidebar_html, theme=None):
     """側欄 + 右上角資料來源按鈕 + 該份周報全文，組成完整頁。"""
     inner = (f'{render_sources_panel(report)}\n<div class="layout">\n{sidebar_html}\n'
              f'<main class="main">{render_report_body(report)}</main>\n</div>')
-    return page(f'趨勢周報 {report["date"]}', inner)
+    return page(f'趨勢周報 {report["date"]}', inner, theme)
 
 
 def send_mail(html_body, report):
@@ -532,38 +572,45 @@ def send_mail(html_body, report):
     print(f"[mail] 已寄至 {to}")
 
 
-def main():
-    data, log = collect()
-    print("\n".join(log))
-    report = build_report(data)
-
-    site = os.path.join(OUT_DIR, "docs")
-    reps = os.path.join(site, "reports")
-    os.makedirs(reps, exist_ok=True)
-    d = report["date"]
-    # 1) 本週結構化資料（未來 AI RAG 讀這個）
-    with open(os.path.join(reps, f"{d}.json"), "w", encoding="utf-8") as f:
-        json.dump(report, f, ensure_ascii=False, indent=2)
-
-    # 2) 讀齊所有週（含本週），主題順序依最新一份
+def rebuild_site(site):
+    """用現成的 reports/*.json 重畫整個網站（首頁 + 每週存檔頁）。不抓新聞、不呼叫 AI。"""
     reports = load_all_reports(site)
-    order = [tp["topic"] for tp in report["topics"]]
-
-    # 3) 重建每一週的存檔頁（掛常駐側欄，連結用同目錄相對路徑）
-    for rep in reports:
+    if not reports:
+        print("[render] 沒有任何 reports/*.json，先正常跑一次產資料")
+        return
+    order = [tp["topic"] for tp in reports[0]["topics"]]      # 主題順序依最新一份
+    reps = os.path.join(site, "reports")
+    for rep in reports:                                      # 每週存檔頁（同目錄相對連結）
         side = build_sidebar(reports, order, base="", active_date=rep["date"])
         with open(os.path.join(reps, f'{rep["date"]}.html'), "w", encoding="utf-8") as f:
             f.write(compose_page(rep, side))
-
-    # 4) 首頁 = 側欄 + 最新一週（側欄連結指向 reports/）
-    idx_side = build_sidebar(reports, order, base="reports/", active_date=d)
+    idx_side = build_sidebar(reports, order, base="reports/", active_date=reports[0]["date"])
     with open(os.path.join(site, "index.html"), "w", encoding="utf-8") as f:
-        f.write(compose_page(report, idx_side))
-    print(f"\n共 {report['total']} 則 -> {site}")
+        f.write(compose_page(reports[0], idx_side))
+    print(f"[render] 重畫 {len(reports)} 週 -> {site}")
 
-    # 5) 寄信（email 用無側欄的窄欄版，信箱排版才穩）
+
+def main():
+    site = os.path.join(OUT_DIR, "docs")
+    os.makedirs(os.path.join(site, "reports"), exist_ok=True)
+
+    # --render-only：只用舊 JSON 重畫（改樣式/版面用，秒出、零 API）
+    if "--render-only" in sys.argv:
+        rebuild_site(site)
+        return site
+
+    data, log = collect()
+    print("\n".join(log))
+    report = build_report(data)
+    d = report["date"]
+    with open(os.path.join(site, "reports", f"{d}.json"), "w", encoding="utf-8") as f:
+        json.dump(report, f, ensure_ascii=False, indent=2)   # 結構化資料（未來 AI RAG 讀這個）
+
+    rebuild_site(site)                                        # 重畫全站
+    print(f"共 {report['total']} 則")
+
     mail_html = page(f"趨勢周報 {d}", f'<div class="report">{render_report_body(report)}</div>')
-    send_mail(mail_html, report)
+    send_mail(mail_html, report)                             # 寄無側欄窄欄版
     return site
 
 
