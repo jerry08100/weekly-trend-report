@@ -43,6 +43,13 @@ KICKER = {
     "永續 / 企業實務": "SUSTAINABILITY · CORPORATE PRACTICE",
     "AI / 企業應用": "AI · ENTERPRISE ADOPTION",
 }
+# PEERS：觀察名單（主管很在意「同業有做」）。每主題會針對名單額外查詢並強制產「同業動態」節。
+PEERS = ["USPACE", "台塑", "中油", "肯譯", "機場快線", "銀行業", "車商", "產險業"]
+# 各主題給觀察名單加的查詢字尾（決定往哪個面向抓該對象的動態）。
+PEER_SUFFIX = {
+    "永續 / 企業實務": "永續 淨零 碳",
+    "AI / 企業應用": "AI 數位轉型",
+}
 
 DAYS = 7                       # 抓幾天內
 CAP = 30                       # 每主題最多留幾則
@@ -118,7 +125,10 @@ def collect():
     result, log = {}, []
     topics = set(QUERIES) | set(FEEDS)
     for topic in topics:
-        urls = [gnews_url(q) for q in QUERIES.get(topic, [])] + FEEDS.get(topic, [])
+        peer_q = [f"{p} {PEER_SUFFIX.get(topic, '')}".strip() for p in PEERS]  # 觀察名單針對性查詢
+        urls = ([gnews_url(q) for q in QUERIES.get(topic, [])]
+                + [gnews_url(q) for q in peer_q]
+                + FEEDS.get(topic, []))
         rows, seen = [], set()
         for u in urls:
             label = u if u.startswith("http") else u
@@ -172,8 +182,10 @@ def gemini_digest(topic, rows):
         + "請用繁體中文輸出：\n"
         "1. gist：3~5 個關鍵詞（用「、」分隔），一眼概括本週該主題在講什麼，給側欄導覽用。"
         "例如「碳費新規、SBTi 2.0、淨零人才」。\n"
-        "2. sections：分 3~4 個小節，各給有意義的 heading（例如「政策與法規」「同業動態」「產業趨勢」「企業實務」，"
-        "依實際內容命名，別硬湊）。\n"
+        "2. sections：分 3~4 個小節，各給有意義的 heading（例如「政策與法規」「產業趨勢」「企業實務」）。"
+        f"其中『必須』有一節 heading 設為「同業動態」，專門講這份觀察名單做了什麼：{'、'.join(PEERS)}。"
+        "有相關新聞就點名『哪個對象做了什麼具體動作』並附引用；名單中沒出現在本週新聞的對象就不用提，"
+        "若整份都沒有名單相關動態，該節就據實寫「本週觀察名單無明顯相關動作」。這節是主管最看重的，寫具體。\n"
         "3. 每個小節 body 約 150~230 字連貫段落（不要條列），全篇合計約 600~900 字，把左欄寫得充實。\n"
         "4. 內容要有深度：不只描述新聞，還要補充相關『產業背景知識』（法規要點、標準內涵、盤查/查證常識），"
         "並著重解讀『同業動態』（其他永續顧問／碳查證機構／ESG 服務業者／AI 服務商在做什麼、代表什麼趨勢）——這是主管最看重的。\n"

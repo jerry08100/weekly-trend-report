@@ -1,31 +1,43 @@
 {
   "date": "2026-07-27",
-  "generated_at": "2026-07-27 13:46",
-  "total": 7,
+  "generated_at": "2026-07-27 14:08",
+  "total": 25,
   "topics": [
     {
       "topic": "AI / 企業應用",
-      "gist": "AI Agent瓶頸、應用程式安全、軟體開發整合、AI人才缺口",
+      "gist": "AI Agent流程整合、產險AI監理、AppSec資安合規、CAIO設立趨勢",
       "sections": [
         {
-          "heading": "AI Agent 導入核心流程的瓶頸與解方",
-          "body": "現在不少台灣企業開始把 AI Agent（智慧代理人，也就是能自己理解目標並自動執行複雜任務的 AI）導入業務核心，但卻發現整體效率沒有想像中高[[3]]。資策會 MIC 分析指出，主要是因為企業舊有的工作流程沒跟著調整，再加上缺乏相應的管理體制與跨領域人才[[3]]。這現象不只發生在台灣，像日本企業將 AI 重心轉向追求實際營運成果時，也面臨類似狀況[[2]]。產業要打破這個瓶頸，重點不是一味買最新的 AI 模型，而是要重新檢視內部作業流程，建立好資料治理與權限控管機制，讓 AI 能在安全且透明的架構下真正幫員工分擔工作。"
+          "heading": "AI Agent 落地與轉型瓶頸",
+          "body": "現在越來越多台灣企業嘗試導入 AI Agent（人工智慧代理人，指能自主思考並執行複雜任務的 AI 工具）來處理核心業務。不過資策會指出，許多企業導入後反而卡關，主因是舊流程沒重構，加上欠缺跨領域人才與治理規範 [[6]]。為了順利推動變革，全球企業開始爭相設立 CAIO（最高 AI 長）來統籌策略 [[7]]。如果公司只是硬塞工具給員工，沒配套調整流程，反而容易讓員工產生適應倦怠 [[8]]。"
         },
         {
-          "heading": "軟體開發與資安合規的 AI 化浪潮",
-          "body": "隨著企業大量開發 AI 應用，系統安全與開發效率成了最大課題。像是甲骨文就在 Fusion Applications 中整合 AI 工具，幫助企業加速應用程式開發[[1]]。同時，AppSec（應用程式安全，簡單說就是確保軟體在開發到上線過程中沒有資安漏洞的防護機制）也變得非常關鍵。資訊服務業者紛紛出手，例如叡揚資訊推廣 Mend.io 打造合規的 AppSec 流程[[4]]，亞利安科技也代理了 AIFT 的 Vulcan AI 安全平台[[0]]。這代表同業與服務商不只在賣 AI 工具，更在幫企業解決導入 AI 後衍生的資安與合規風險，協助客戶在追求效率時不會踩到資安紅線。"
+          "heading": "企業開發與 AppSec 自動化防護",
+          "body": "當 AI 被大量用來寫程式與開發應用，資安防護也必須跟著升級。叡揚資訊近期推廣 Mend.io，幫企業打造無痛合規的 AppSec（應用程式安全，指在軟體開發全流程中加入資安檢查）機制 [[9]]。亞利安科技也引進 AIFT 的 Vulcan AI 安全平台，補足企業 AI 應用的安全缺口 [[1]]。同時甲骨文把 AI 直接整合進 Fusion 系統，大幅降低開發門檻 [[3]]。這些趨勢說明，AI 應用要走得快，資安與自動化工具必須先鋪好路。"
         },
         {
-          "heading": "AI 人才缺口與企業轉型應對",
-          "body": "企業導入 AI 的最大痛點之一依然是人才。調查顯示日本有超過四成企業在推進 AI 應用時遇到人才不足的挑戰[[2]]。在台灣，企業同樣缺乏懂業務又懂 AI 應用的複合型人才[[3]]。解決這個問題有兩個方向：第一是運用現成的企業級 AI 平台，減低技術門檻，讓一般員工也能輕鬆使用 AI 工具[[1]]；第二是建立內部訓練機制，配合標準化的資安與開發流程[[4]]。對企業來說，與其砸重金挖角頂尖 AI 專家，不如加速培訓現有員工配合自動化工具，才能長期且穩定地發揮 AI 的最大價值。"
+          "heading": "同業動態",
+          "body": "在觀察名單中，本週以金融保險業的政策與應用動作最為明確。金管會正式宣布將從保險監理的三大方向著手，鼓勵產險業與保險業加速 AI 數位轉型，並落實全齡金融服務 [[5]]。這代表主管機關開始提供更清晰的監理架構，讓業者能在合規前提下，把 AI 用在核保、理賠與客服流程。至於觀察名單中的 USPACE、台塑、中油、肯譯、機場快線、銀行業與車商，本週新聞中則無明顯相關動作。"
         }
       ],
       "items": [
+        {
+          "title": "日企數位轉型陷長年困境 BluePort與TDA結盟助推AI應用",
+          "source": "理財周刊",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1YYVRoMU9QOWFCaW5WeWFQT2pBeTRVRk10dF9rNENNQnRfM19ibU5ZbzNTZWw2dl9OSk9FSFBhYXExRjZSdkdGZWdaMXRGbkdkeGFxMlRQZzl2bW9UY0sxZDlCNnZlSGlDWFowWWtlVQ?oc=5",
+          "date": "2026-07-27"
+        },
         {
           "title": "亞利安科技正式代理 AIFT旗下Vulcan AI 安全平台",
           "source": "iThome",
           "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1LeHlrZ184VTd6Nmw3V2NKOXhQV0dJNnNna1lJUlF1VmJnV2p2LXA2NUxSWkhqZDlESnJYRlU5akZfNmROeG1SZlZjOA?oc=5",
           "date": "2026-07-26"
+        },
+        {
+          "title": "賴瑞隆提出三大贏家策略：高雄不只做AI房東，更要成為股東",
+          "source": "今傳媒 JNEWS",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1FZkNpaWpQZ01Sai1rQTBGUWEyRWZBbDZRWFpYSnRKeXJ6SkRJWlE5QnMwYm9mUTlxNHVuUmxwcUthbFZaYnF6TzRNZVkxenM1QXfSAVJBVV95cUxNRWZDaWlqUGdNUmota0EwRlFhMkVmQWw2UVhaWEp0SnlyekpESVpROUJzMGJvZlE5cTR1blJscHFLYWxWWmJxek80TWVZMXpzNUF3?oc=5",
+          "date": "2026-07-24"
         },
         {
           "title": "甲骨文 Fusion Applications 整合 AI 工具 助企業應用開發",
@@ -40,9 +52,27 @@
           "date": "2026-07-23"
         },
         {
+          "title": "金管會揭保險監理3方向推AI轉型與全齡金融| 產經",
+          "source": "中央社 CNA",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBNeHRaWGhEQURyUjVNcHBvT3hIWXlXRkR6LUpabW1tVS1HUHBTLVBSbzF3a2o3enNjSng1dnlCT29GdTFKbUhzMHhNd1A2OFJlcXZuUFNvYV9UMnFwSXc?oc=5",
+          "date": "2026-07-22"
+        },
+        {
           "title": "AI Agent 已進入企業核心流程，為何反而遇到效率瓶頸？資策會產業情報研究所主任韓揚銘揭流程、人才與治理解方",
           "source": "LINE TODAY",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAxdUF1VkNjNU9fS2dQc3ZwNXVybWZYZlVxcDhuMWZ5LTc4ZVNqWEV2TnFtVTBsWW14Um1kcEJYbzhsSXVmbE5PUENTbFFIQTBQMVJaUHF3?oc=5",
+          "date": "2026-07-21"
+        },
+        {
+          "title": "Google、台積電都沒設AI 長，全球企業為何爭相設立？CAIO 工作日常、權責與存在價值完整解析",
+          "source": "未來商務",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE55QmlrUWZHSl9SelZiSjRHM0ZsaDNvX2c2aVJMS08zc3h5QVNMbkwzU3FJbE85LVdEN1NZQ2dEWWVWLWtGTXc1S3BabTEwOHhWSThsOA?oc=5",
+          "date": "2026-07-21"
+        },
+        {
+          "title": "泰國企業導入AI加速 員工倦怠感反升高 | 中央廣播電臺",
+          "source": "LINE TODAY",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBFRVNhMFUzR0lCZEhsTHdVQ2dVN0lZTVF1bzg2ZDY1ZkptSndlNkhvWUNWSGV0Vy1xd0V3ZVBNZFN2Tkx6S3JGZ3BPMjJtZHFhLWtLVUdn?oc=5",
           "date": "2026-07-21"
         },
         {
@@ -63,27 +93,105 @@
     },
     {
       "topic": "永續 / 企業實務",
-      "gist": "淨零人才培訓、iPAS證照、中小企業減碳、碳盤查查證",
+      "gist": "碳費新規、SBTi 2.0、淨零人才培育、同業ESG動態",
       "sections": [
         {
-          "heading": "淨零人才培訓與證照熱潮",
-          "body": "現在企業面臨碳焦慮，最缺的就是懂碳的人才。這幾年政府推動 iPAS 淨零碳規劃師證照，也就是國家級的淨零專業能力檢定，吸引大量大專院校與法人機構爭相開課。像東華大學與臺科大就合作辦理 ISO 內部稽核員訓練與 iPAS 總複習班[[1]]。對企業來說，光是做完碳盤查還不夠，內部必須要有懂 ISO 14064-1（組織溫室氣體盤查標準）的稽核人員，才能定期檢查數據品質。培訓機構與顧問公司也看準這波剛性需求，紛紛從傳統輔導專案延伸到考照培訓，把培育內部專家變成標準服務項目。"
+          "heading": "政策與法規趨勢",
+          "body": "本週永續圈最重要的兩件大事，就是碳費新規預告與 SBTi 2.0 的發布。SBTi 是科學基礎減量目標倡議，簡單說就是國際公認審查企業減碳目標是否符合巴黎協定目標的權威機構。SBTi 2.0 預計 2028 年全面採行新標準[[13]]，要求企業提供更透明的供應鏈數據。國內方面，環境部預告碳費新規，首度納管並提供緩衝期，但舊案減碳效益折抵僅算 10%[[9]]。這代表企業不能再幻想拿過去的專案輕鬆抵銷，必須回歸扎實的 ISO 14064-1 溫室氣體盤查，釐清範疇一到範疇三的排放邊界並進行查證，配合政府氣候韌性戰略落實減碳[[3]]。"
         },
         {
-          "heading": "中小企業實務落地的挑戰",
-          "body": "對供應鏈大廠來說，碳盤查只是多編預算；但對資源有限的中小企業而言，卻是生存壓力。面對買方要求，中小企業常遇到不知從何查起、數據算不準的困境。政府機關如勞動部雲嘉南分署也開始投入資源，開課協助中小企業掌握碳管理關鍵技能[[0]]。在執行面上，企業實務的第一步是確立組織邊界與排查排放源，把廠房內直接燃燒的燃料（範疇一）與買來的電力（範疇二）釐清。唯有先掌握精確的盤查數據，後續的減碳目標與設備更新才不會偏離方向，真正做到精準減碳[[0]]。"
+          "heading": "同業動態",
+          "body": "在我們的重點觀察名單中，台塑企業本週展現推動綠能教育的具體動作，攜手虎尾科大與虎尾高中辦理科學探索營，將綠能與永續觀念扎根於在地學子[[10]][[11]]。保險業方面，南山人壽因應極端氣候，推出全台首張熱傷害保單，免費提供弱勢族群對抗高溫風險[[2]]，展現社會面向的永續實踐。至於 USPACE、中油、肯譯、機場快線、車商與產險業等其他觀察對象，本週新聞無明顯相關動作。整體來看，同業動態逐漸從單純碳盤查，延伸至氣候適應與綠能人才培育。"
         },
         {
-          "heading": "永續顧問與服務業者的同業動態",
-          "body": "觀察同業動態，永續顧問與 ESG 服務業者的競爭正快速轉型。過去顧問公司只靠寫報告書或人工算碳盤查就能獲利，但現在市場正在走向數位化。越來越多顧問業者與 AI 系統商結盟，推出雲端碳管理工具，搶攻自動化盤查市場。同時，因為第三方查證機構能量有限，企業若沒有提前訓練內部稽核員[[1]]並整理好佐證資料，常會卡在等待查證的階段。這讓領先的顧問業者改變策略，改以『數位系統＋人才代訓＋協助查證』的一站式服務，來提升客戶黏著度與市場競爭力。"
+          "heading": "企業轉型與人才培育",
+          "body": "企業要推動碳盤查與轉型，最缺的就是專業人才與實務工具。勞動部雲嘉南分署本週推動輔導機制，協助中小企業精準進行碳管理[[4]]；學界方面，東華與臺科大積極辦理 ISO 碳稽核員訓練，並輔導考取 iPAS 證照[[14]]。iPAS 是經濟部推動的淨零碳規劃管理師認證，已成為企業徵才與評估內部永續能力的標準。在企業職場實務上，也有業者透過 POE（建築後評估）改善辦公室健康度與能耗[[12]]；連苗栗拱天宮都進行碳權註銷結合低碳旅遊[[0]]，顯示永續實務已多點開花。"
         }
       ],
       "items": [
+        {
+          "title": "苗栗推3條低碳遊程 白沙屯拱天宮取得碳權註銷",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMiugJBVV95cUxPQlR4OE9TSDJUeWRhTEVETi11YkIyNlVGRnNaVVF1Wmo1SlNuZHNTSFBiSm1BMTdBX1Y3TnY4ckxWYkRxR201S1h1SjBhdnNsVXdSYndxM2tLNzNGU1FBVy1jcWVIcFNiR09nSG8zcGhXc1hDSGczQlZTNjJ2TGZfa3d5TUowLWc4MVJTWHl5T2ZzTGxEZ2RFRFpCVzE1eXJaQUU1RkQ4SUVpZmlaQ2JjV2pTWGVSeGxXaTR5bzZXQ3REblc3bWhNY3V4MDQ5dldHWUs4ODktLVUxZ2NjRms0X0JOSTlJb3lBWUpEOWNCVnhKSzFPTTNSTjE3ems4RE9iZ21uSDhUSi1VSVpTclpEbGpYWE9OZVRDOWRvM1gzOEx6QUw0bVZyN0dqVnZ1eGx2QXF5dlFvdGxtQQ?oc=5",
+          "date": "2026-07-25"
+        },
+        {
+          "title": "永續轉型必修課10〉未來值得投入的三個ESG領域：社會基礎建設、AI副作用、人際疏離感",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/121936",
+          "date": "2026-07-25"
+        },
+        {
+          "title": "別讓長者困在「隱形烤箱」！南山首張熱傷害保單台南開跑，3.2萬弱勢免費投保",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/122087",
+          "date": "2026-07-24"
+        },
+        {
+          "title": "ESG每週必讀》迎戰高溫豪雨！第八次氣候委員會登場，賴清德提氣候韌性三大戰略",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/122067",
+          "date": "2026-07-24"
+        },
         {
           "title": "掌握碳管理關鍵！雲嘉南分署助攻中小企業精準減碳",
           "source": "中央社 CNA",
           "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9HZFluWU1sdHM2X2NtRzBNS3ZhM0RWb29sLXJsdVdkaWo1dXM3NFFhaWdTck5FSFhRNmUzc0xZSGdBR0FPTFdrUHVxSEtIcUlqTF92ZmlR?oc=5",
           "date": "2026-07-24"
+        },
+        {
+          "title": "拒絕殘酷運送！寵物運輸新規：犬貓「禁裝紙箱」，違者開罰",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/122137",
+          "date": "2026-07-24"
+        },
+        {
+          "title": "破解用電焦慮！寧德時代「鈉電池」正式量產，儲能迎來鋰鈉共治新局",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/122018",
+          "date": "2026-07-23"
+        },
+        {
+          "title": "打敗東京、新加坡！德國2000人小農村，為何被封為全球最聰明城市？",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/121972",
+          "date": "2026-07-23"
+        },
+        {
+          "title": "ESG國際快訊》比謀殺案致命10倍的隱形殺手！熱浪正催生現實版《寄生上流》",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/121911",
+          "date": "2026-07-23"
+        },
+        {
+          "title": "ESG台灣快訊》碳費新規預告！首度納管增緩衝期，舊案減碳效益僅算10%",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/122035",
+          "date": "2026-07-23"
+        },
+        {
+          "title": "台塑企業攜手虎尾科大、虎尾高中辦Formosa科學探索營 啟發雲林學子綠能永續視野",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB2akZSeW5iYjg3X2phT1RGZE8tWXJTVXZ0NW0tSXRmclBqa2VabmlacnpHUzgwMGh3Uk9NSkJKRF9Gc2dGLTMzM1ctQkNlem9iX0E?oc=5",
+          "date": "2026-07-23"
+        },
+        {
+          "title": "從玩科學到學永續！台塑攜手虎科大辦探索營 培育綠能小尖兵",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE13S29lMHFCcU5TQUZYQ2JUNXVSeDhoOE9nNGRmeW5Gb1UtSmZHUnVjUGxKSURYdjUwYXJra3RCNUdIbmlrSVdQZ052bGw1TzF2Zmc?oc=5",
+          "date": "2026-07-22"
+        },
+        {
+          "title": "您在這裡工作，舒適嗎？用POE科學揪出辦公室裡的隱形痛點",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/121848",
+          "date": "2026-07-22"
+        },
+        {
+          "title": "企業永續長注意！SBTi 2.0新制發布，2028全面改採新標準",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/121806",
+          "date": "2026-07-22"
         },
         {
           "title": "東華大學與臺科大培育淨零人才 辦理稽核員訓練及iPAS總複習",
