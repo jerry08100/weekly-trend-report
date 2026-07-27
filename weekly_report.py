@@ -169,13 +169,18 @@ def gemini_digest(topic, rows):
     prompt = (
         f"你是資深產業分析師。下面是本週「{topic}」的新聞清單（每則附編號）。\n\n"
         + (f"【聚焦方向】{focus}\n\n" if focus else "")
-        + "請用繁體中文寫本週情勢回顧，要求：\n"
-        "1. 只輸出 1 個小節，heading 設為「本週情勢」。\n"
-        "2. body 約 300~450 字，分 2~3 段連貫文字（不要條列），涵蓋最貼合上述聚焦方向的 5~8 個動態，"
-        "點出各動態的背景與意義，其餘（尤其國際宏觀新聞）略過。\n"
-        "3. 有分析、有觀點，不要只是把標題串起來的流水帳；讀者想深入會自己點連結。\n"
-        "4. 在提到具體事件/法規/數據處，於該句尾用 [[編號]] 標引用來源，可多個如 [[3]][[7]]；編號即下方新聞編號。\n"
-        "5. 只根據提供的標題撰寫，不要杜撰未提及的事實或數字。若清單內容與聚焦方向落差大，就據實寫本週相關動態較少。\n\n"
+        + "請用繁體中文輸出：\n"
+        "1. gist：3~5 個關鍵詞（用「、」分隔），一眼概括本週該主題在講什麼，給側欄導覽用。"
+        "例如「碳費新規、SBTi 2.0、淨零人才」。\n"
+        "2. sections：分 3~4 個小節，各給有意義的 heading（例如「政策與法規」「同業動態」「產業趨勢」「企業實務」，"
+        "依實際內容命名，別硬湊）。\n"
+        "3. 每個小節 body 約 150~230 字連貫段落（不要條列），全篇合計約 600~900 字，把左欄寫得充實。\n"
+        "4. 內容要有深度：不只描述新聞，還要補充相關『產業背景知識』（法規要點、標準內涵、盤查/查證常識），"
+        "並著重解讀『同業動態』（其他永續顧問／碳查證機構／ESG 服務業者／AI 服務商在做什麼、代表什麼趨勢）——這是主管最看重的。\n"
+        "5. 有分析、有觀點，串出脈絡，不要流水帳；讀者想深入會自己點連結。\n"
+        "6. 在提到具體事件/法規/數據處，於該句尾用 [[編號]] 標引用來源，可多個如 [[3]][[7]]；編號即下方新聞編號。\n"
+        "7. 產業背景知識可用你的既有常識補充，但『具體事件、公司、數字』只能根據提供的標題，不得杜撰。"
+        "若清單相關動態少，就把該主題的產業背景與同業趨勢講得更完整來補足篇幅。\n\n"
         "新聞清單：\n" + "\n".join(lines)
     )
     body = {
@@ -185,6 +190,7 @@ def gemini_digest(topic, rows):
             "responseSchema": {
                 "type": "object",
                 "properties": {
+                    "gist": {"type": "string"},
                     "sections": {
                         "type": "array",
                         "items": {
@@ -197,7 +203,7 @@ def gemini_digest(topic, rows):
                         },
                     },
                 },
-                "required": ["sections"],
+                "required": ["gist", "sections"],
             },
         },
     }
@@ -380,6 +386,7 @@ def build_report(data):
         dg = gemini_digest(topic, rows)
         topics.append({
             "topic": topic,
+            "gist": (dg.get("gist") if dg else "") or "",
             "sections": (dg.get("sections") if dg else []) or [],
             "items": items,
             "sources": {"queries": QUERIES.get(topic, []), "feeds": FEEDS.get(topic, [])},
@@ -398,8 +405,10 @@ def tkey(topic):
     return latin or ("t" + str(zlib.crc32(topic.encode("utf-8"))))
 
 
-def snippet(tp, limit=42):
-    """該主題該週的一句摘要：優先取 AI 情勢文首段，否則取第一則標題。"""
+def snippet(tp, limit=48):
+    """側欄導覽用：優先 AI 給的關鍵詞 gist，否則退回情勢文首段/首則標題。"""
+    if tp.get("gist"):
+        return tp["gist"].strip()
     if tp.get("sections"):
         txt = re.sub(r"\[\[\d+\]\]", "", tp["sections"][0].get("body", ""))
     elif tp.get("items"):

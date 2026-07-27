@@ -1,14 +1,81 @@
 {
   "date": "2026-07-27",
-  "generated_at": "2026-07-27 13:28",
+  "generated_at": "2026-07-27 13:41",
   "total": 17,
   "topics": [
     {
-      "topic": "永續 / 企業實務",
+      "topic": "AI / 企業應用",
+      "gist": "AI Agent落地、流程治理瓶頸、AppSec合規開發、AI資安防禦",
       "sections": [
         {
-          "heading": "本週情勢",
-          "body": "本週台灣在地永續轉型與碳管理規範迎來關鍵進展。環境部預告碳費新規，針對納管對象首度給予緩衝期，但舊案減碳效益僅算10%[[8]]，迫使企業必須重新釐清內部減碳專案之盤查效益與策略配置。同時，賴清德總統於第八次氣候委員會提出氣候韌性三大戰略[[2]]，確立國家轉型方向。面對國際規範演進，SBTi 2.0新制發布並宣告於2028全面改採新標準[[10]]，提醒企業永續長需提早調整減碳目標與查證對接機制。在服務與人才端，學界與機構積極補足淨零量能，如東華大學與臺科大合作辦理稽核員訓練及iPAS總複習[[11]]，加速淨零稽核人才培育；雲嘉南分署亦推動中小企業精準減碳[[3]]，協助在地廠商建構基礎碳管理能力。企業實務層面，南山人壽推出熱傷害保單[[1]]，展現ESG社會效益創新；部分企業則導入POE科學優化工作環境[[9]]，並思考AI副作用等新型ESG議題[[0]]，顯示永續轉型已深化至日常營運。"
+          "heading": "AI Agent 深入企業核心與流程治理瓶頸",
+          "body": "隨著生成式 AI 技術成熟，企業部署 AI 的思維已從早期工具試用轉向深植核心業務流程，AI Agent 的自主決策與自動化能力成為提升營運效率的焦點[[3]]。然而，資策會 MIC 分析指出，當 AI Agent 進入核心流程後，企業常因既有業務流程未重塑、缺乏跨部門資料治理及內部人才斷層，反而陷入效率瓶頸[[3]]。此現象在鄰近的日本市場亦顯現，日企應用重心已轉向追求實質商業成果，但過半企業正面臨嚴重人才短缺挑戰[[2]]。對台灣企業而言，導入 AI 不僅是軟體採購，更是一場涉及組織流程再造與人力技能轉型的營運變革。"
+        },
+        {
+          "heading": "開發安全與無痛合規成為 AI 落地關鍵",
+          "body": "在企業端推動 AI 應用的同時，開發端的程式碼安全與法規合規性成為不可忽視的門檻。不論是國際大廠甲骨文在其 Fusion Applications 中全面整合 AI 工具以協助企業加速應用開發[[1]]，或是本土軟體服務商的實踐，皆顯示出自動化開發工具已成趨勢。然而，AI 輔助開發可能衍生開源程式碼漏洞與智慧財產權合規風險，資安資訊服務業者如叡揚資訊引進 Mend.io 並舉辦體驗營，協助企業建立無痛合規的 AppSec 流程[[4]]。這代表永續經營與資安防禦已被納入 AI 軟體生命週期，企業必須在追求開發速度與法令遵循之間取得平衡。"
+        },
+        {
+          "heading": "資安服務商佈局 AI 安全平台生態系",
+          "body": "隨著 AI 模型的廣泛調用，企業對生成式 AI 輸出的合規性、資料防洩漏及對抗性攻擊的防護需求急遽上升。為因應新型態資安風險，國內資訊代理商紛紛補強 AI 資安產品線，例如亞利安科技代理 AIFT 旗下的 Vulcan AI 安全平台[[0]]。這反映出同業與資安服務商的戰略轉移：從過去單純提供雲端運算與模型建置，升級為提供涵蓋 AI 模型審計、資安防禦與應用檢測的整體解決方案。對於欲大規模導入 AI Agent 的企業而言，選用具備完善防護機制的平台，將是降低合規成本與維護客戶信任的決定性關鍵。"
+        }
+      ],
+      "items": [
+        {
+          "title": "亞利安科技正式代理 AIFT旗下Vulcan AI 安全平台",
+          "source": "iThome",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1LeHlrZ184VTd6Nmw3V2NKOXhQV0dJNnNna1lJUlF1VmJnV2p2LXA2NUxSWkhqZDlESnJYRlU5akZfNmROeG1SZlZjOA?oc=5",
+          "date": "2026-07-26"
+        },
+        {
+          "title": "甲骨文 Fusion Applications 整合 AI 工具 助企業應用開發",
+          "source": "行銷人",
+          "link": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNVmZQUkc5M3hmQ01qN2ZiZUFBZkhfMy1hX1FSUVNrMTRuSGVhVVhoZ2I0bTl0MElEaGJrUkJRRDBLLTNEdG1DbkRhTFBpZHFiRVN0TThMaXVYcElkUHFpQm5UTU9WeHdyekgyQ0lMRERlXzd6OWQ0dk01aHhXQ1BrRlFqZEdVVWpyUDFvUkdEaTV5eXJjemtuRm5iQmtQalI1MHM0Z2tzUHQ4aHozakR1Ry04TzdVcEdmNXZ2bWJqNFpSYzNOR3ZCbU90Ti1OdVpFZng0VzBuSlpsZmFuemF0Z19xc25pazV6NkU4bkl3bXZxRlFuVUw3V2ZrbEx5ZEZkZ3JtdWVrMU5iTjRRVHRoWkpJQVJseXZKV1NBcnFQRG1tVXEyRS1hVHpzNnliR241YzF4VlByWWhZYjZGQ3c?oc=5",
+          "date": "2026-07-23"
+        },
+        {
+          "title": "日本企業AI應用重心轉向創造成果 逾四成面臨人才短缺挑戰",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxNTFltcE1YaFh0TmtyelN5a3NjeHdvQV9BSEJwQ1N4dmZhN2pMT0NKWnVDQjRTcURPS01sakVfZkVuLWlmeEk3M0V4Y2hHSWdYNGxncTdwQU1QTERHcXRiNEdkZ2VnaFN1cVZ1Z2RsQU5LMEo4NmJ6alY5LUZEUFkzNlNHZWY2WUc2M3I5MW8xQVhWRDZnREZZQmdKWDd2LVVabzRjZzdaZVBFc18xSHI1SVZNbVBBdU83QWVsRFBCWHZCYlNSalRCdnpBNkgxQTZkNG14bXF0NENYN2RTbi1kM3BMQ2FIV3dkN3FTN2phNGxFMWNFa2QtcU1UTHdiaS1tbUtnMTRkUTBvSUtqc0J6U05INHFJeGJrNWhtb2dBOU4wLVNmbDFwbHdXOUZnSU1nYmZWb05SMjNiT3YtM3dGc1JpWE4tMUx2bEE2S3FoLVJzZHk0MG82RFYwYzRNNDRNa0pjR1ZjLU95aHpDcndyb2dFLXdjZFE?oc=5",
+          "date": "2026-07-23"
+        },
+        {
+          "title": "AI Agent 已進入企業核心流程，為何反而遇到效率瓶頸？資策會產業情報研究所主任韓揚銘揭流程、人才與治理解方",
+          "source": "LINE TODAY",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAxdUF1VkNjNU9fS2dQc3ZwNXVybWZYZlVxcDhuMWZ5LTc4ZVNqWEV2TnFtVTBsWW14Um1kcEJYbzhsSXVmbE5PUENTbFFIQTBQMVJaUHF3?oc=5",
+          "date": "2026-07-21"
+        },
+        {
+          "title": "叡揚資訊 Mend.io 實機體驗營 打造AI時代無痛合規AppSec流程",
+          "source": "中央社 CNA",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9uMGJ1UVY3Z3JGYVlpVWN1SmstUURzNjdqaWpCcjFSV3pOczVjYWxfUGdzSlpHa3J1X2VhZTZ1UnhuTEZ5TFZkajgwcmJxWnJ6azZwWXVGWEh1QQ?oc=5",
+          "date": "2026-07-21"
+        }
+      ],
+      "sources": {
+        "queries": [
+          "企業 導入 AI Agent 生產力",
+          "AI 工具 企業 應用 台灣",
+          "生成式 AI 企業 導入 效率"
+        ],
+        "feeds": []
+      }
+    },
+    {
+      "topic": "永續 / 企業實務",
+      "gist": "碳費新規、SBTi 2.0、淨零人才培訓、企業轉型實務",
+      "sections": [
+        {
+          "heading": "政策法規與碳減量權益",
+          "body": "台灣碳費機制漸趨明朗，環境部預告碳費新規，針對首度納管企業給予緩衝期，但特別規定舊案減碳效益僅能折算10%[[8]]，這對提早佈局減碳的企業造成衝擊，亦促使企業須儘速調整碳盤查與減量策略。政府與相關機構亦積極深化氣候韌性政策，包含國家級氣候委員會提出的三大戰略[[2]]。在國際標準方面，SBTi 2.0新制正式發布，預計2028年全面改採新標準[[10]]，這意味著企業在設定範疇一至範疇三減碳目標時，必須導入更嚴謹的範疇三範疇界定與價值鏈減碳實踐，對供應鏈碳盤查與減碳數據的精準度要求大幅提高。"
+        },
+        {
+          "heading": "同業動態與人才服務佈局",
+          "body": "隨著國內外碳管制機制升級，ESG服務機構與法人機構積極插旗碳管理與人才培訓市場。勞動部雲嘉南分署開辦輔導計畫，協助中小企業進行溫室氣體盤查與精準減碳[[3]]，反映出政府與永續顧問資源正加速向中小企業下沈。同時，學術與專業機構如東華大學與臺科大亦串聯資源，針對溫室氣體內部稽核員訓練及經濟部iPAS淨零碳規劃師證照進行總複習培訓[[11]]。這顯示市場對於具備ISO 14064-1盤查與ISO 14067碳足跡計算能量的人才需求暴增，ESG服務業者與培訓機構正全面搶佔淨零培訓與稽核輔導的市場先機。"
+        },
+        {
+          "heading": "企業轉型實務與ESG新領域",
+          "body": "企業在永續實踐上正從單純的碳減量延伸至更廣泛的社會與環境韌性。例如南山人壽發行首張熱傷害保單並提供弱勢免費投保[[1]]，展現金融業結合氣候變遷風險與社會公益的商品創新；企業在內部管理上也透過POE（建築使用後評估）科學管理促進辦公舒適度與幸福職場環境[[9]]。專家指出，未來企業值得投入的永續領域將包含社會基礎建設、AI副作用因應以及人際疏離感調節等構面[[0]]。在能源轉型硬實力上，寧德時代鈉電池量產亦帶動儲能技術革新[[5]]，企業須多軌並進以因應極端氣候[[7]]與轉型衝擊。"
         }
       ],
       "items": [
@@ -97,55 +164,6 @@
         "feeds": [
           "https://esg.gvm.com.tw/rss"
         ]
-      }
-    },
-    {
-      "topic": "AI / 企業應用",
-      "sections": [
-        {
-          "heading": "本週情勢",
-          "body": "隨著 AI 技術深度滲透，台灣企業對 AI 的應用已從早期實驗階段轉走向實質效益落地。資策會 MIC 觀測指出，AI Agent 已逐步進入企業核心流程，但在落地過程中卻面臨效率瓶頸，亟需從作業流程調整、人才培育與資安治理三大維度突破[[3]]。此一發展軌跡與鄰近的日本市場相呼應，日本企業目前的 AI 應用重心亦全面轉向創造成果，但有超過四成企業深受人才短缺困擾[[2]]，顯示出軟實力與人才是企業推動 AI 轉型時普遍面臨的關鍵課題。 為了協助企業無痛導入 AI 工具並確保安全，本土與外商軟體服務業者正加速部署開發與安全解決方案。在應用開發端，甲骨文將 AI 工具整合至 Fusion Applications 中，協助企業簡化應用開發[[1]]。而在資安防護與合規維度，叡揚資訊推動 Mend.io 體驗營，協助企業打造 AI 時代的無痛合規 AppSec 流程[[4]]；亞利安科技則代理 AIFT 旗下的 Vulcan AI 安全平台，防護企業 AI 環境[[0]]。整體而言，本週動態凸顯出企業導入 AI 時，工具自動化與資安合規管理已成為實現高效營運不可或缺的雙引擎。"
-        }
-      ],
-      "items": [
-        {
-          "title": "亞利安科技正式代理 AIFT旗下Vulcan AI 安全平台",
-          "source": "iThome",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1LeHlrZ184VTd6Nmw3V2NKOXhQV0dJNnNna1lJUlF1VmJnV2p2LXA2NUxSWkhqZDlESnJYRlU5akZfNmROeG1SZlZjOA?oc=5",
-          "date": "2026-07-26"
-        },
-        {
-          "title": "甲骨文 Fusion Applications 整合 AI 工具 助企業應用開發",
-          "source": "行銷人",
-          "link": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNVmZQUkc5M3hmQ01qN2ZiZUFBZkhfMy1hX1FSUVNrMTRuSGVhVVhoZ2I0bTl0MElEaGJrUkJRRDBLLTNEdG1DbkRhTFBpZHFiRVN0TThMaXVYcElkUHFpQm5UTU9WeHdyekgyQ0lMRERlXzd6OWQ0dk01aHhXQ1BrRlFqZEdVVWpyUDFvUkdEaTV5eXJjemtuRm5iQmtQalI1MHM0Z2tzUHQ4aHozakR1Ry04TzdVcEdmNXZ2bWJqNFpSYzNOR3ZCbU90Ti1OdVpFZng0VzBuSlpsZmFuemF0Z19xc25pazV6NkU4bkl3bXZxRlFuVUw3V2ZrbEx5ZEZkZ3JtdWVrMU5iTjRRVHRoWkpJQVJseXZKV1NBcnFQRG1tVXEyRS1hVHpzNnliR241YzF4VlByWWhZYjZGQ3c?oc=5",
-          "date": "2026-07-23"
-        },
-        {
-          "title": "日本企業AI應用重心轉向創造成果 逾四成面臨人才短缺挑戰",
-          "source": "Life 生活網",
-          "link": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxNTFltcE1YaFh0TmtyelN5a3NjeHdvQV9BSEJwQ1N4dmZhN2pMT0NKWnVDQjRTcURPS01sakVfZkVuLWlmeEk3M0V4Y2hHSWdYNGxncTdwQU1QTERHcXRiNEdkZ2VnaFN1cVZ1Z2RsQU5LMEo4NmJ6alY5LUZEUFkzNlNHZWY2WUc2M3I5MW8xQVhWRDZnREZZQmdKWDd2LVVabzRjZzdaZVBFc18xSHI1SVZNbVBBdU83QWVsRFBCWHZCYlNSalRCdnpBNkgxQTZkNG14bXF0NENYN2RTbi1kM3BMQ2FIV3dkN3FTN2phNGxFMWNFa2QtcU1UTHdiaS1tbUtnMTRkUTBvSUtqc0J6U05INHFJeGJrNWhtb2dBOU4wLVNmbDFwbHdXOUZnSU1nYmZWb05SMjNiT3YtM3dGc1JpWE4tMUx2bEE2S3FoLVJzZHk0MG82RFYwYzRNNDRNa0pjR1ZjLU95aHpDcndyb2dFLXdjZFE?oc=5",
-          "date": "2026-07-23"
-        },
-        {
-          "title": "AI Agent 已進入企業核心流程，為何反而遇到效率瓶頸？資策會產業情報研究所主任韓揚銘揭流程、人才與治理解方",
-          "source": "LINE TODAY",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAxdUF1VkNjNU9fS2dQc3ZwNXVybWZYZlVxcDhuMWZ5LTc4ZVNqWEV2TnFtVTBsWW14Um1kcEJYbzhsSXVmbE5PUENTbFFIQTBQMVJaUHF3?oc=5",
-          "date": "2026-07-21"
-        },
-        {
-          "title": "叡揚資訊 Mend.io 實機體驗營 打造AI時代無痛合規AppSec流程",
-          "source": "中央社 CNA",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9uMGJ1UVY3Z3JGYVlpVWN1SmstUURzNjdqaWpCcjFSV3pOczVjYWxfUGdzSlpHa3J1X2VhZTZ1UnhuTEZ5TFZkajgwcmJxWnJ6azZwWXVGWEh1QQ?oc=5",
-          "date": "2026-07-21"
-        }
-      ],
-      "sources": {
-        "queries": [
-          "企業 導入 AI Agent 生產力",
-          "AI 工具 企業 應用 台灣",
-          "生成式 AI 企業 導入 效率"
-        ],
-        "feeds": []
       }
     }
   ]
