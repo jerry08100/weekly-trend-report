@@ -160,11 +160,11 @@ def gemini_digest(topic, rows):
     prompt = (
         f"你是資深產業分析師。下面是本週「{topic}」的新聞清單（每則附編號）。\n\n"
         + (f"【聚焦方向】{focus}\n\n" if focus else "")
-        + "請用繁體中文寫一段「一分鐘看懂本週情勢」的濃縮精華，要求：\n"
-        "1. 只輸出 1 個小節，heading 設為「一分鐘看懂本週情勢」。\n"
-        "2. body 約 120~180 字，連貫一段文字（不要條列），只點出最貼合上述聚焦方向的 3~5 個動態，"
-        "其餘（尤其國際宏觀新聞）略過。\n"
-        "3. 讀者想深入會自己點連結，所以文字要精煉、給大局，不要逐則流水帳。\n"
+        + "請用繁體中文寫本週情勢回顧，要求：\n"
+        "1. 只輸出 1 個小節，heading 設為「本週情勢」。\n"
+        "2. body 約 300~450 字，分 2~3 段連貫文字（不要條列），涵蓋最貼合上述聚焦方向的 5~8 個動態，"
+        "點出各動態的背景與意義，其餘（尤其國際宏觀新聞）略過。\n"
+        "3. 有分析、有觀點，不要只是把標題串起來的流水帳；讀者想深入會自己點連結。\n"
         "4. 在提到具體事件/法規/數據處，於該句尾用 [[編號]] 標引用來源，可多個如 [[3]][[7]]；編號即下方新聞編號。\n"
         "5. 只根據提供的標題撰寫，不要杜撰未提及的事實或數字。若清單內容與聚焦方向落差大，就據實寫本週相關動態較少。\n\n"
         "新聞清單：\n" + "\n".join(lines)
@@ -208,93 +208,137 @@ def gemini_digest(topic, rows):
         return None
 
 
-def build_html(data):
-    now = datetime.now().strftime("%Y-%m-%d %H:%M")
-    parts = [f"""<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>趨勢周報 {now}</title><style>
-body{{font-family:"Segoe UI","Microsoft JhengHei",sans-serif;max-width:820px;margin:0 auto;padding:24px;color:#1a1a1a;line-height:1.6}}
-h1{{font-size:24px;border-bottom:3px solid #2563eb;padding-bottom:8px}}
-h2{{font-size:19px;margin-top:36px;color:#2563eb;border-bottom:1px solid #e5e7eb;padding-bottom:6px}}
-h3{{font-size:15px;color:#374151;margin:20px 0 8px}}
-h4{{font-size:16px;color:#374151;margin:22px 0 6px}}
-.body{{font-size:15px;color:#222;text-align:justify}}
-.body p{{margin:8px 0}}
-sup a{{color:#2563eb;text-decoration:none;font-weight:600}}
-.refs{{margin-top:16px;font-size:13px;color:#444}}
-.refs ol{{padding-left:22px;margin:6px 0}}
-.refs li{{margin:4px 0}}
-.refs a{{color:#374151;text-decoration:none}}
-.refs a:hover{{color:#2563eb;text-decoration:underline}}
-.src{{color:#9ca3af}}
-.item{{padding:6px 0;font-size:13px}}
-.item a{{color:#4b5563;text-decoration:none}}
-.item a:hover{{color:#2563eb}}
-.date{{color:#9ca3af;font-size:12px;margin-left:6px}}
-.note{{color:#555;font-size:14px}}
-details{{margin-top:14px}}
-summary{{cursor:pointer;color:#6b7280;font-size:13px}}
-.meta{{color:#999;font-size:12px;margin-top:32px;border-top:1px solid #eee;padding-top:12px}}
-</style></head><body>
-<h1>📊 趨勢周報 <span class="src">{now}</span></h1>"""]
+CSS = """
+body{font-family:"Segoe UI","Microsoft JhengHei",sans-serif;max-width:820px;margin:0 auto;padding:24px;color:#1a1a1a;line-height:1.6}
+a{color:inherit}
+h1{font-size:24px;border-bottom:3px solid #2563eb;padding-bottom:8px}
+h2{font-size:19px;margin-top:36px;color:#2563eb;border-bottom:1px solid #e5e7eb;padding-bottom:6px}
+h4{font-size:16px;color:#374151;margin:22px 0 6px}
+.body{font-size:15px;color:#222;text-align:justify}
+.body p{margin:8px 0}
+sup a{color:#2563eb;text-decoration:none;font-weight:600}
+.refs{margin-top:16px;font-size:13px;color:#444}
+.refs ol{padding-left:22px;margin:6px 0}
+.refs li{margin:4px 0}
+.refs a{color:#374151;text-decoration:none}
+.refs a:hover{color:#2563eb;text-decoration:underline}
+.src{color:#9ca3af}
+.item{padding:6px 0;font-size:13px}
+.item a{color:#4b5563;text-decoration:none}
+.item a:hover{color:#2563eb}
+.date{color:#9ca3af;font-size:12px;margin-left:6px}
+.note{color:#555;font-size:14px}
+details{margin-top:14px}
+summary{cursor:pointer;color:#6b7280;font-size:13px}
+.archive{margin-top:36px;border-top:1px solid #eee;padding-top:16px;font-size:14px}
+.archive a{color:#2563eb;text-decoration:none}
+.archive li{margin:4px 0}
+.meta{color:#999;font-size:12px;margin-top:32px;border-top:1px solid #eee;padding-top:12px}
+"""
+
+
+def page(title, inner):
+    return (f'<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">\n'
+            f'<meta name="viewport" content="width=device-width,initial-scale=1">\n'
+            f'<title>{html.escape(title)}</title><style>{CSS}</style></head><body>\n'
+            f'{inner}\n</body></html>')
+
+
+def build_report(data):
+    """跑 AI 摘要，組出結構化 report dict（同時給 HTML/JSON/未來 RAG 用）。"""
+    topics = []
     for topic, rows in data.items():
-        parts.append(f"<h2>{html.escape(topic)}（{len(rows)} 則）</h2>")
-        if not rows:
-            parts.append('<p class="note">本週無新資料。</p>')
-            continue
-        dg = gemini_digest(topic, rows)
-        if dg and dg.get("sections"):
-            parts.append(render_article(topic, dg["sections"], rows))
-            parts.append('<details><summary>展開本週全部 {} 則</summary>'.format(len(rows)))
-        for it in rows:                      # 完整清單（有 AI 時收在 details 內）
+        items = []
+        for it in rows:
             t, src = split_source(it["title"])
-            ds = it["date"].strftime("%m/%d") if it["date"] else ""
-            parts.append(f'''<div class="item">
-<a href="{html.escape(it["link"])}" target="_blank">{html.escape(t)}</a>
-<span class="date">{html.escape(src)} {ds}</span></div>''')
-        if dg and dg.get("sections"):
-            parts.append('</details>')
-    parts.append(f'<p class="meta">自動產生於 {now} · 資料來源：Google News RSS 等公開來源 · AI 整理僅供參考，引用請以原文為準</p></body></html>')
-    return "\n".join(parts)
+            items.append({
+                "title": t, "source": src, "link": it["link"],
+                "date": it["date"].strftime("%Y-%m-%d") if it["date"] else "",
+            })
+        dg = gemini_digest(topic, rows)
+        topics.append({
+            "topic": topic,
+            "sections": (dg.get("sections") if dg else []) or [],
+            "items": items,
+        })
+    return {
+        "date": datetime.now().strftime("%Y-%m-%d"),
+        "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "total": sum(len(v) for v in data.values()),
+        "topics": topics,
+    }
 
 
-def render_article(topic, sections, rows):
-    """把小節文字裡的 [[編號]] 轉成論文式引用上標，文末列參考來源。"""
+def render_article(topic, sections, items):
+    """把小節文字的 [[編號]] 轉成論文式引用上標，文末列參考來源。"""
     tkey = re.sub(r"[^a-zA-Z0-9]", "", topic)[:8] or "t"
-    order, num_of = [], {}                   # order: 引用順序的 row idx；num_of: idx -> 引用序號
+    order, num_of = [], {}
 
     def repl(m):
         i = int(m.group(1))
-        if not (0 <= i < len(rows)):
+        if not (0 <= i < len(items)):
             return ""
         if i not in num_of:
             order.append(i)
             num_of[i] = len(order)
-        n = num_of[i]
-        return f'<sup><a href="#ref-{tkey}-{n}">[{n}]</a></sup>'
+        return f'<sup><a href="#ref-{tkey}-{num_of[i]}">[{num_of[i]}]</a></sup>'
 
     out = []
     for sec in sections:
         out.append(f'<h4>{html.escape(sec.get("heading", ""))}</h4>')
-        body = html.escape(sec.get("body", ""))
-        body = re.sub(r"\[\[(\d+)\]\]", repl, body)      # 先跑 repl 累積引用順序
+        body = re.sub(r"\[\[(\d+)\]\]", repl, html.escape(sec.get("body", "")))
         paras = [p.strip() for p in re.split(r"\n{2,}", body) if p.strip()]
-        out.append('<div class="body">' +
-                   "".join(f"<p>{p}</p>" for p in paras) + "</div>")
+        out.append('<div class="body">' + "".join(f"<p>{p}</p>" for p in paras) + "</div>")
     if order:
         out.append('<div class="refs"><strong>參考來源</strong><ol>')
         for n, i in enumerate(order, 1):
-            it = rows[i]
-            t, src = split_source(it["title"])
-            ds = it["date"].strftime("%Y/%m/%d") if it["date"] else ""
+            it = items[i]
             out.append(f'<li id="ref-{tkey}-{n}"><a href="{html.escape(it["link"])}" '
-                       f'target="_blank">{html.escape(t)}</a> '
-                       f'<span class="src">{html.escape(src)} {ds}</span></li>')
+                       f'target="_blank">{html.escape(it["title"])}</a> '
+                       f'<span class="src">{html.escape(it["source"])} {it["date"]}</span></li>')
         out.append('</ol></div>')
     return "\n".join(out)
 
 
-def send_mail(html_body, total):
+def render_report_body(report):
+    """單份周報的內文（不含 <html> 外殼），供存檔頁、首頁、email 共用。"""
+    parts = [f'<h1>📊 趨勢周報 <span class="src">{report["generated_at"]}</span></h1>']
+    for tp in report["topics"]:
+        items = tp["items"]
+        parts.append(f'<h2>{html.escape(tp["topic"])}（{len(items)} 則）</h2>')
+        if not items:
+            parts.append('<p class="note">本週無新資料。</p>')
+            continue
+        has_ai = bool(tp["sections"])
+        if has_ai:
+            parts.append(render_article(tp["topic"], tp["sections"], items))
+            parts.append(f'<details><summary>展開本週全部 {len(items)} 則</summary>')
+        for it in items:
+            parts.append(f'''<div class="item">
+<a href="{html.escape(it["link"])}" target="_blank">{html.escape(it["title"])}</a>
+<span class="date">{html.escape(it["source"])} {it["date"]}</span></div>''')
+        if has_ai:
+            parts.append('</details>')
+    parts.append(f'<p class="meta">自動產生於 {report["generated_at"]} · '
+                 '資料來源：Google News RSS 等公開來源 · AI 整理僅供參考，引用請以原文為準</p>')
+    return "\n".join(parts)
+
+
+def build_index(site_dir, latest_report):
+    """首頁：最新周報全文 + 歷年存檔清單。掃 reports/*.json 取日期。"""
+    rep_dir = os.path.join(site_dir, "reports")
+    dates = sorted(
+        (f[:-5] for f in os.listdir(rep_dir) if f.endswith(".json")),
+        reverse=True) if os.path.isdir(rep_dir) else []
+    archive = ['<div class="archive"><strong>📚 歷史周報</strong><ul>']
+    for d in dates:
+        archive.append(f'<li><a href="reports/{d}.html">{d}</a></li>')
+    archive.append("</ul></div>")
+    inner = render_report_body(latest_report) + "\n" + "\n".join(archive)
+    return page(f'趨勢周報 {latest_report["date"]}', inner)
+
+
+def send_mail(html_body, report):
     """有設 env 就寄；沒設就跳過。Gmail SMTP -> 收件者(可 Outlook)。"""
     import smtplib
     from email.message import EmailMessage
@@ -304,12 +348,17 @@ def send_mail(html_body, total):
     if not (user and pw and to):
         print("[mail] 未設 GMAIL_USER/GMAIL_APP_PW/MAIL_TO，跳過寄信")
         return
+    site = os.environ.get("SITE_URL")        # 設了就在信末附網頁連結
+    body = html_body
+    if site:
+        body = body.replace("</body>",
+                            f'<p class="meta">線上看：<a href="{html.escape(site)}">{html.escape(site)}</a></p></body>')
     msg = EmailMessage()
-    msg["Subject"] = f"趨勢周報 {datetime.now():%Y-%m-%d}（{total} 則）"
+    msg["Subject"] = f"趨勢周報 {report['date']}（{report['total']} 則）"
     msg["From"] = user
     msg["To"] = to
     msg.set_content("此信為 HTML 格式，請用支援 HTML 的信箱檢視。")
-    msg.add_alternative(html_body, subtype="html")
+    msg.add_alternative(body, subtype="html")
     with smtplib.SMTP("smtp.gmail.com", 587) as s:
         s.starttls()
         s.login(user, pw)
@@ -318,17 +367,30 @@ def send_mail(html_body, total):
 
 
 def main():
+    import json
     data, log = collect()
     print("\n".join(log))
-    body = build_html(data)
-    total = sum(len(v) for v in data.values())
-    fname = "周報_" + datetime.now().strftime("%Y%m%d") + ".html"
-    path = os.path.join(OUT_DIR, fname)
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(body)
-    print(f"\n共 {total} 則 -> {path}")
-    send_mail(body, total)
-    return path
+    report = build_report(data)
+
+    site = os.path.join(OUT_DIR, "docs")
+    reps = os.path.join(site, "reports")
+    os.makedirs(reps, exist_ok=True)
+    d = report["date"]
+    # 1) 結構化資料（未來 AI RAG 讀這個）
+    with open(os.path.join(reps, f"{d}.json"), "w", encoding="utf-8") as f:
+        json.dump(report, f, ensure_ascii=False, indent=2)
+    # 2) 該週存檔頁
+    week_html = page(f"趨勢周報 {d}", render_report_body(report))
+    with open(os.path.join(reps, f"{d}.html"), "w", encoding="utf-8") as f:
+        f.write(week_html)
+    # 3) 首頁（最新 + 存檔清單）
+    index_html = build_index(site, report)
+    with open(os.path.join(site, "index.html"), "w", encoding="utf-8") as f:
+        f.write(index_html)
+    print(f"\n共 {report['total']} 則 -> {site}")
+    # 4) 寄信（寄該週存檔頁內容）
+    send_mail(week_html, report)
+    return site
 
 
 if __name__ == "__main__":
