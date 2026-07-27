@@ -1,0 +1,21 @@
+name: weekly-report
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'      # 每週一 00:00 UTC = 台北時間 08:00
+  workflow_dispatch:          # 允許在 Actions 頁手動按鈕觸發（測試用）
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 產周報並寄信
+        env:
+          GMAIL_USER:   ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PW: ${{ secrets.GMAIL_APP_PW }}
+          MAIL_TO:      ${{ secrets.MAIL_TO }}
+        run: python weekly_report.py
