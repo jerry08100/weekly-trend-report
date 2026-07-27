@@ -122,6 +122,70 @@ def collect():
     return result, log
 
 
+def split_source(title):
+    """Google News 標題常是「標題 - 媒體」，拆出乾淨標題與來源。"""
+    m = re.match(r"^(.*)\s[-–—]\s([^-–—]{1,20})$", title or "")
+    if m:
+        return m.group(1).strip(), m.group(2).strip()
+    return (title or "").strip(), ""
+
+
+def gemini_digest(topic, rows):
+    """呼叫 Gemini 產本週摘要。回 {overview, highlights:[{idx,note}]}；無 key 或失敗回 None。"""
+    key = os.environ.get("GEMINI_API_KEY")
+    if not key or not rows:
+        return None
+    lines = []
+    for i, it in enumerate(rows):
+        t, src = split_source(it["title"])
+        lines.append(f"[{i}] {t}" + (f"（{src}）" if src else ""))
+    prompt = (
+        f"你是產業趨勢分析師。以下是本週「{topic}」相關新聞標題（附編號）。\n"
+        "請用繁體中文：\n"
+        "1. overview：2~4 句總結本週該領域的重點趨勢。\n"
+        "2. highlights：挑最重要的 5~8 則，每則給該則的 idx 與一句話說明為何值得看。\n"
+        "只根據下列標題判斷，不要杜撰。\n\n" + "\n".join(lines)
+    )
+    body = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {
+            "responseMimeType": "application/json",
+            "responseSchema": {
+                "type": "object",
+                "properties": {
+                    "overview": {"type": "string"},
+                    "highlights": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "idx": {"type": "integer"},
+                                "note": {"type": "string"},
+                            },
+                            "required": ["idx", "note"],
+                        },
+                    },
+                },
+                "required": ["overview", "highlights"],
+            },
+        },
+    }
+    url = ("https://generativelanguage.googleapis.com/v1beta/models/"
+           "gemini-flash-latest:generateContent?key=" + key)
+    try:
+        import json
+        req = urllib.request.Request(
+            url, data=json.dumps(body).encode("utf-8"),
+            headers={"Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=60, context=_ctx) as r:
+            resp = json.loads(r.read())
+        text = resp["candidates"][0]["content"]["parts"][0]["text"]
+        return json.loads(text)
+    except Exception as e:
+        print(f"[ai] {topic} 摘要失敗，回退純清單 -> {type(e).__name__}: {e}")
+        return None
+
+
 def build_html(data):
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
     parts = [f"""<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8">
@@ -129,26 +193,54 @@ def build_html(data):
 <title>趨勢周報 {now}</title><style>
 body{{font-family:"Segoe UI","Microsoft JhengHei",sans-serif;max-width:820px;margin:0 auto;padding:24px;color:#1a1a1a;line-height:1.6}}
 h1{{font-size:24px;border-bottom:3px solid #2563eb;padding-bottom:8px}}
-h2{{font-size:19px;margin-top:32px;color:#2563eb}}
-.item{{padding:12px 0;border-bottom:1px solid #eee}}
-.item a{{font-weight:600;color:#111;text-decoration:none;font-size:16px}}
+h2{{font-size:19px;margin-top:36px;color:#2563eb;border-bottom:1px solid #e5e7eb;padding-bottom:6px}}
+h3{{font-size:15px;color:#374151;margin:20px 0 8px}}
+.overview{{background:#f0f6ff;border-left:4px solid #2563eb;padding:12px 16px;border-radius:6px;font-size:15px;color:#1e3a5f}}
+.hl{{padding:10px 0;border-bottom:1px solid #eee}}
+.hl a{{font-weight:600;color:#111;text-decoration:none;font-size:16px}}
+.hl a:hover{{color:#2563eb}}
+.src{{color:#9ca3af;font-size:12px;margin-left:6px}}
+.note{{color:#555;font-size:14px;margin-top:3px}}
+.item{{padding:7px 0;font-size:14px}}
+.item a{{color:#374151;text-decoration:none}}
 .item a:hover{{color:#2563eb}}
-.date{{color:#888;font-size:13px;margin-left:6px}}
-.sum{{color:#555;font-size:14px;margin-top:4px}}
-.meta{{color:#999;font-size:12px;margin-top:24px}}
+.date{{color:#9ca3af;font-size:12px;margin-left:6px}}
+details{{margin-top:12px}}
+summary{{cursor:pointer;color:#6b7280;font-size:13px}}
+.meta{{color:#999;font-size:12px;margin-top:32px;border-top:1px solid #eee;padding-top:12px}}
 </style></head><body>
-<h1>📊 趨勢周報 <span class="date">{now}</span></h1>"""]
+<h1>📊 趨勢周報 <span class="src">{now}</span></h1>"""]
     for topic, rows in data.items():
         parts.append(f"<h2>{html.escape(topic)}（{len(rows)} 則）</h2>")
         if not rows:
-            parts.append('<p class="sum">本週無新資料。</p>')
+            parts.append('<p class="note">本週無新資料。</p>')
+            continue
+        dg = gemini_digest(topic, rows)
+        if dg:
+            parts.append(f'<p class="overview">{html.escape(dg.get("overview", ""))}</p>')
+            parts.append("<h3>🔍 本週重點</h3>")
+            for h in dg.get("highlights", []):
+                i = h.get("idx")
+                if not isinstance(i, int) or not (0 <= i < len(rows)):
+                    continue
+                it = rows[i]
+                t, src = split_source(it["title"])
+                ds = it["date"].strftime("%m/%d") if it["date"] else ""
+                parts.append(f'''<div class="hl">
+<a href="{html.escape(it["link"])}" target="_blank">{html.escape(t)}</a>
+<span class="src">{html.escape(src)} {ds}</span>
+<div class="note">{html.escape(h.get("note", ""))}</div></div>''')
+            parts.append('<details><summary>展開全部 {} 則</summary>'.format(len(rows)))
+        # 完整清單（有 AI 時收在 details 內，無 AI 時直接列）
         for it in rows:
+            t, src = split_source(it["title"])
             ds = it["date"].strftime("%m/%d") if it["date"] else ""
             parts.append(f'''<div class="item">
-<a href="{html.escape(it["link"])}" target="_blank">{html.escape(it["title"])}</a>
-<span class="date">{ds}</span>
-<div class="sum">{html.escape(it["summary"])}</div></div>''')
-    parts.append(f'<p class="meta">自動產生於 {now} · 純本機測試資料版</p></body></html>')
+<a href="{html.escape(it["link"])}" target="_blank">{html.escape(t)}</a>
+<span class="date">{html.escape(src)} {ds}</span></div>''')
+        if dg:
+            parts.append('</details>')
+    parts.append(f'<p class="meta">自動產生於 {now} · 資料來源：Google News RSS 等公開來源 · AI 摘要僅供參考</p></body></html>')
     return "\n".join(parts)
 
 
