@@ -301,8 +301,10 @@ a{color:inherit}
 /* ── 兩欄：左情勢文、右參考來源 ── */
 .cols{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:48px;align-items:start}
 @media(max-width:1080px){.cols{grid-template-columns:1fr;gap:0}}
-h4{font-family:var(--mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--brand);margin:0 0 12px;font-weight:700}
+h4{font-size:22px;letter-spacing:0;color:var(--brand);margin:28px 0 12px;font-weight:800;
+  line-height:1.3;display:flex;align-items:center;gap:9px}
+h4::before{content:"";flex:none;width:5px;height:22px;background:var(--accent);border-radius:2px}
+.col-body>h4:first-child{margin-top:0}
 .body{font-size:19px;color:var(--ink);line-height:1.98;text-align:justify}
 .body p{margin:0 0 16px}
 sup{line-height:0}
