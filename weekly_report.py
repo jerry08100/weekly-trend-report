@@ -8,15 +8,31 @@ from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
 # ── 來源設定 ──
-# QUERIES：主題 -> 關鍵字清單，走 Google News RSS（繁中、永遠在線、免維護死連結）。想調主題改這裡。
+# QUERIES：主題 -> 關鍵字清單，走 Google News RSS（繁中、hl/gl=TW 偏台灣）。想調主題改這裡。
 QUERIES = {
-    "ESG / 永續": ["ESG 永續", "淨零 碳排", "永續報告 企業"],
-    "AI 趨勢 / 產品": ["AI 人工智慧 趨勢", "AI 產品 發表", "生成式AI 應用"],
+    "永續 / 企業實務": [
+        "ISO 14064 溫室氣體盤查 企業",
+        "企業 淨零 碳盤查 轉型",
+        "碳足跡 查證 永續 顧問 服務",
+        "永續 服務 台灣 企業",
+    ],
+    "AI / 企業應用": [
+        "企業 導入 AI Agent 生產力",
+        "AI 工具 企業 應用 台灣",
+        "生成式 AI 企業 導入 效率",
+    ],
 }
-# FEEDS：主題 -> 直連 RSS（補充深度來源）。無則留空。
+# FEEDS：主題 -> 直連 RSS（補充台灣深度來源）。無則留空。
 FEEDS = {
-    "ESG / 永續": ["https://esg.gvm.com.tw/rss"],                                    # ESG遠見
-    "AI 趨勢 / 產品": ["https://techcrunch.com/category/artificial-intelligence/feed/"],
+    "永續 / 企業實務": ["https://esg.gvm.com.tw/rss"],                                # ESG遠見（台灣）
+    "AI / 企業應用": [],
+}
+# FOCUS：主題 -> 給 AI 的聚焦提示，決定摘要口味。
+FOCUS = {
+    "永續 / 企業實務": "聚焦『台灣企業的執行面』：ISO 14064-1／GHG 盤查、碳盤查與查證、"
+                       "同業（永續顧問／服務業者）推出的新服務、企業轉型實務。少談國際宏觀情勢。",
+    "AI / 企業應用": "聚焦『台灣企業的 AI 應用』：可用的新工具、企業導入 AI Agent 提升工作效率的趨勢與案例。"
+                     "少談國際大廠模型軍備競賽等宏觀新聞。",
 }
 
 DAYS = 7                       # 抓幾天內
@@ -131,7 +147,8 @@ def split_source(title):
 
 
 def gemini_digest(topic, rows):
-    """呼叫 Gemini 產本週摘要。回 {overview, highlights:[{idx,note}]}；無 key 或失敗回 None。"""
+    """呼叫 Gemini 產本週回顧文。回 {sections:[{heading,body}]}，body 內含 [[編號]] 引用標記。
+    無 key 或失敗回 None。"""
     key = os.environ.get("GEMINI_API_KEY")
     if not key or not rows:
         return None
@@ -139,12 +156,18 @@ def gemini_digest(topic, rows):
     for i, it in enumerate(rows):
         t, src = split_source(it["title"])
         lines.append(f"[{i}] {t}" + (f"（{src}）" if src else ""))
+    focus = FOCUS.get(topic, "")
     prompt = (
-        f"你是產業趨勢分析師。以下是本週「{topic}」相關新聞標題（附編號）。\n"
-        "請用繁體中文：\n"
-        "1. overview：2~4 句總結本週該領域的重點趨勢。\n"
-        "2. highlights：挑最重要的 5~8 則，每則給該則的 idx 與一句話說明為何值得看。\n"
-        "只根據下列標題判斷，不要杜撰。\n\n" + "\n".join(lines)
+        f"你是資深產業分析師。下面是本週「{topic}」的新聞清單（每則附編號）。\n\n"
+        + (f"【聚焦方向】{focus}\n\n" if focus else "")
+        + "請用繁體中文寫一段「一分鐘看懂本週情勢」的濃縮精華，要求：\n"
+        "1. 只輸出 1 個小節，heading 設為「一分鐘看懂本週情勢」。\n"
+        "2. body 約 120~180 字，連貫一段文字（不要條列），只點出最貼合上述聚焦方向的 3~5 個動態，"
+        "其餘（尤其國際宏觀新聞）略過。\n"
+        "3. 讀者想深入會自己點連結，所以文字要精煉、給大局，不要逐則流水帳。\n"
+        "4. 在提到具體事件/法規/數據處，於該句尾用 [[編號]] 標引用來源，可多個如 [[3]][[7]]；編號即下方新聞編號。\n"
+        "5. 只根據提供的標題撰寫，不要杜撰未提及的事實或數字。若清單內容與聚焦方向落差大，就據實寫本週相關動態較少。\n\n"
+        "新聞清單：\n" + "\n".join(lines)
     )
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
@@ -153,20 +176,19 @@ def gemini_digest(topic, rows):
             "responseSchema": {
                 "type": "object",
                 "properties": {
-                    "overview": {"type": "string"},
-                    "highlights": {
+                    "sections": {
                         "type": "array",
                         "items": {
                             "type": "object",
                             "properties": {
-                                "idx": {"type": "integer"},
-                                "note": {"type": "string"},
+                                "heading": {"type": "string"},
+                                "body": {"type": "string"},
                             },
-                            "required": ["idx", "note"],
+                            "required": ["heading", "body"],
                         },
                     },
                 },
-                "required": ["overview", "highlights"],
+                "required": ["sections"],
             },
         },
     }
@@ -195,17 +217,22 @@ body{{font-family:"Segoe UI","Microsoft JhengHei",sans-serif;max-width:820px;mar
 h1{{font-size:24px;border-bottom:3px solid #2563eb;padding-bottom:8px}}
 h2{{font-size:19px;margin-top:36px;color:#2563eb;border-bottom:1px solid #e5e7eb;padding-bottom:6px}}
 h3{{font-size:15px;color:#374151;margin:20px 0 8px}}
-.overview{{background:#f0f6ff;border-left:4px solid #2563eb;padding:12px 16px;border-radius:6px;font-size:15px;color:#1e3a5f}}
-.hl{{padding:10px 0;border-bottom:1px solid #eee}}
-.hl a{{font-weight:600;color:#111;text-decoration:none;font-size:16px}}
-.hl a:hover{{color:#2563eb}}
-.src{{color:#9ca3af;font-size:12px;margin-left:6px}}
-.note{{color:#555;font-size:14px;margin-top:3px}}
-.item{{padding:7px 0;font-size:14px}}
-.item a{{color:#374151;text-decoration:none}}
+h4{{font-size:16px;color:#374151;margin:22px 0 6px}}
+.body{{font-size:15px;color:#222;text-align:justify}}
+.body p{{margin:8px 0}}
+sup a{{color:#2563eb;text-decoration:none;font-weight:600}}
+.refs{{margin-top:16px;font-size:13px;color:#444}}
+.refs ol{{padding-left:22px;margin:6px 0}}
+.refs li{{margin:4px 0}}
+.refs a{{color:#374151;text-decoration:none}}
+.refs a:hover{{color:#2563eb;text-decoration:underline}}
+.src{{color:#9ca3af}}
+.item{{padding:6px 0;font-size:13px}}
+.item a{{color:#4b5563;text-decoration:none}}
 .item a:hover{{color:#2563eb}}
 .date{{color:#9ca3af;font-size:12px;margin-left:6px}}
-details{{margin-top:12px}}
+.note{{color:#555;font-size:14px}}
+details{{margin-top:14px}}
 summary{{cursor:pointer;color:#6b7280;font-size:13px}}
 .meta{{color:#999;font-size:12px;margin-top:32px;border-top:1px solid #eee;padding-top:12px}}
 </style></head><body>
@@ -216,32 +243,55 @@ summary{{cursor:pointer;color:#6b7280;font-size:13px}}
             parts.append('<p class="note">本週無新資料。</p>')
             continue
         dg = gemini_digest(topic, rows)
-        if dg:
-            parts.append(f'<p class="overview">{html.escape(dg.get("overview", ""))}</p>')
-            parts.append("<h3>🔍 本週重點</h3>")
-            for h in dg.get("highlights", []):
-                i = h.get("idx")
-                if not isinstance(i, int) or not (0 <= i < len(rows)):
-                    continue
-                it = rows[i]
-                t, src = split_source(it["title"])
-                ds = it["date"].strftime("%m/%d") if it["date"] else ""
-                parts.append(f'''<div class="hl">
-<a href="{html.escape(it["link"])}" target="_blank">{html.escape(t)}</a>
-<span class="src">{html.escape(src)} {ds}</span>
-<div class="note">{html.escape(h.get("note", ""))}</div></div>''')
-            parts.append('<details><summary>展開全部 {} 則</summary>'.format(len(rows)))
-        # 完整清單（有 AI 時收在 details 內，無 AI 時直接列）
-        for it in rows:
+        if dg and dg.get("sections"):
+            parts.append(render_article(topic, dg["sections"], rows))
+            parts.append('<details><summary>展開本週全部 {} 則</summary>'.format(len(rows)))
+        for it in rows:                      # 完整清單（有 AI 時收在 details 內）
             t, src = split_source(it["title"])
             ds = it["date"].strftime("%m/%d") if it["date"] else ""
             parts.append(f'''<div class="item">
 <a href="{html.escape(it["link"])}" target="_blank">{html.escape(t)}</a>
 <span class="date">{html.escape(src)} {ds}</span></div>''')
-        if dg:
+        if dg and dg.get("sections"):
             parts.append('</details>')
-    parts.append(f'<p class="meta">自動產生於 {now} · 資料來源：Google News RSS 等公開來源 · AI 摘要僅供參考</p></body></html>')
+    parts.append(f'<p class="meta">自動產生於 {now} · 資料來源：Google News RSS 等公開來源 · AI 整理僅供參考，引用請以原文為準</p></body></html>')
     return "\n".join(parts)
+
+
+def render_article(topic, sections, rows):
+    """把小節文字裡的 [[編號]] 轉成論文式引用上標，文末列參考來源。"""
+    tkey = re.sub(r"[^a-zA-Z0-9]", "", topic)[:8] or "t"
+    order, num_of = [], {}                   # order: 引用順序的 row idx；num_of: idx -> 引用序號
+
+    def repl(m):
+        i = int(m.group(1))
+        if not (0 <= i < len(rows)):
+            return ""
+        if i not in num_of:
+            order.append(i)
+            num_of[i] = len(order)
+        n = num_of[i]
+        return f'<sup><a href="#ref-{tkey}-{n}">[{n}]</a></sup>'
+
+    out = []
+    for sec in sections:
+        out.append(f'<h4>{html.escape(sec.get("heading", ""))}</h4>')
+        body = html.escape(sec.get("body", ""))
+        body = re.sub(r"\[\[(\d+)\]\]", repl, body)      # 先跑 repl 累積引用順序
+        paras = [p.strip() for p in re.split(r"\n{2,}", body) if p.strip()]
+        out.append('<div class="body">' +
+                   "".join(f"<p>{p}</p>" for p in paras) + "</div>")
+    if order:
+        out.append('<div class="refs"><strong>參考來源</strong><ol>')
+        for n, i in enumerate(order, 1):
+            it = rows[i]
+            t, src = split_source(it["title"])
+            ds = it["date"].strftime("%Y/%m/%d") if it["date"] else ""
+            out.append(f'<li id="ref-{tkey}-{n}"><a href="{html.escape(it["link"])}" '
+                       f'target="_blank">{html.escape(t)}</a> '
+                       f'<span class="src">{html.escape(src)} {ds}</span></li>')
+        out.append('</ol></div>')
+    return "\n".join(out)
 
 
 def send_mail(html_body, total):
