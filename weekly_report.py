@@ -2,7 +2,7 @@
 """趨勢周報：抓 RSS -> 篩本週 -> 產 HTML 存檔。純 stdlib，免裝套件。
 執行： C:\\Users\\8803\\AppData\\Local\\Programs\\Python\\Python312\\python.exe weekly_report.py
 """
-import urllib.request, urllib.error, ssl, sys, os, html, re, urllib.parse
+import urllib.request, urllib.error, ssl, sys, os, html, re, urllib.parse, json, zlib
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
@@ -209,8 +209,18 @@ def gemini_digest(topic, rows):
 
 
 CSS = """
-body{font-family:"Segoe UI","Microsoft JhengHei",sans-serif;max-width:820px;margin:0 auto;padding:24px;color:#1a1a1a;line-height:1.6}
+body{font-family:"Segoe UI","Microsoft JhengHei",sans-serif;max-width:1120px;margin:0 auto;padding:24px;color:#1a1a1a;line-height:1.6}
 a{color:inherit}
+.report{max-width:820px;margin:0 auto}
+.layout{display:flex;gap:28px;align-items:flex-start}
+.side{flex:0 0 232px;position:sticky;top:16px;font-size:13px;border-right:1px solid #eee;padding-right:16px;max-height:calc(100vh - 32px);overflow:auto}
+.side-title{font-weight:700;color:#2563eb;margin-bottom:10px}
+.grp{font-weight:600;color:#374151;margin:14px 0 4px;border-bottom:1px solid #e5e7eb;padding-bottom:3px}
+.wk{display:block;text-decoration:none;padding:6px 0;border-bottom:1px dashed #eee}
+.wk-d{display:block;color:#2563eb;font-weight:600}
+.wk-s{display:block;color:#6b7280;font-size:12px;line-height:1.4}
+.main{flex:1 1 auto;min-width:0}
+@media(max-width:680px){.layout{flex-direction:column}.side{flex:none;width:100%;position:static;border-right:none;border-bottom:1px solid #eee;padding-right:0;max-height:none}}
 h1{font-size:24px;border-bottom:3px solid #2563eb;padding-bottom:8px}
 h2{font-size:19px;margin-top:36px;color:#2563eb;border-bottom:1px solid #e5e7eb;padding-bottom:6px}
 h4{font-size:16px;color:#374151;margin:22px 0 6px}
@@ -269,9 +279,27 @@ def build_report(data):
     }
 
 
+def tkey(topic):
+    """主題 -> 穩定的 HTML 錨點 id（crc32 跨進程穩定，避免中文）。"""
+    latin = re.sub(r"[^a-zA-Z0-9]", "", topic)[:8]
+    return latin or ("t" + str(zlib.crc32(topic.encode("utf-8"))))
+
+
+def snippet(tp, limit=42):
+    """該主題該週的一句摘要：優先取 AI 情勢文首段，否則取第一則標題。"""
+    if tp.get("sections"):
+        txt = re.sub(r"\[\[\d+\]\]", "", tp["sections"][0].get("body", ""))
+    elif tp.get("items"):
+        txt = tp["items"][0]["title"]
+    else:
+        txt = ""
+    txt = re.sub(r"\s+", "", txt).strip()
+    return (txt[:limit] + "…") if len(txt) > limit else txt
+
+
 def render_article(topic, sections, items):
     """把小節文字的 [[編號]] 轉成論文式引用上標，文末列參考來源。"""
-    tkey = re.sub(r"[^a-zA-Z0-9]", "", topic)[:8] or "t"
+    tk = tkey(topic)
     order, num_of = [], {}
 
     def repl(m):
@@ -281,7 +309,7 @@ def render_article(topic, sections, items):
         if i not in num_of:
             order.append(i)
             num_of[i] = len(order)
-        return f'<sup><a href="#ref-{tkey}-{num_of[i]}">[{num_of[i]}]</a></sup>'
+        return f'<sup><a href="#ref-{tk}-{num_of[i]}">[{num_of[i]}]</a></sup>'
 
     out = []
     for sec in sections:
@@ -293,7 +321,7 @@ def render_article(topic, sections, items):
         out.append('<div class="refs"><strong>參考來源</strong><ol>')
         for n, i in enumerate(order, 1):
             it = items[i]
-            out.append(f'<li id="ref-{tkey}-{n}"><a href="{html.escape(it["link"])}" '
+            out.append(f'<li id="ref-{tk}-{n}"><a href="{html.escape(it["link"])}" '
                        f'target="_blank">{html.escape(it["title"])}</a> '
                        f'<span class="src">{html.escape(it["source"])} {it["date"]}</span></li>')
         out.append('</ol></div>')
@@ -305,7 +333,7 @@ def render_report_body(report):
     parts = [f'<h1>📊 趨勢周報 <span class="src">{report["generated_at"]}</span></h1>']
     for tp in report["topics"]:
         items = tp["items"]
-        parts.append(f'<h2>{html.escape(tp["topic"])}（{len(items)} 則）</h2>')
+        parts.append(f'<h2 id="{tkey(tp["topic"])}">{html.escape(tp["topic"])}（{len(items)} 則）</h2>')
         if not items:
             parts.append('<p class="note">本週無新資料。</p>')
             continue
@@ -325,16 +353,38 @@ def render_report_body(report):
 
 
 def build_index(site_dir, latest_report):
-    """首頁：最新周報全文 + 歷年存檔清單。掃 reports/*.json 取日期。"""
+    """首頁：左側欄（歷史周報，依主題分組、每筆帶摘要）+ 右側最新周報全文。"""
     rep_dir = os.path.join(site_dir, "reports")
     dates = sorted(
         (f[:-5] for f in os.listdir(rep_dir) if f.endswith(".json")),
         reverse=True) if os.path.isdir(rep_dir) else []
-    archive = ['<div class="archive"><strong>📚 歷史周報</strong><ul>']
+    reports = []
     for d in dates:
-        archive.append(f'<li><a href="reports/{d}.html">{d}</a></li>')
-    archive.append("</ul></div>")
-    inner = render_report_body(latest_report) + "\n" + "\n".join(archive)
+        try:
+            with open(os.path.join(rep_dir, f"{d}.json"), encoding="utf-8") as f:
+                reports.append(json.load(f))
+        except Exception:
+            pass
+    # 依最新報告的主題順序分組
+    order = [tp["topic"] for tp in latest_report["topics"]]
+    groups = {t: [] for t in order}
+    for rep in reports:                              # 已依日期新到舊
+        for tp in rep["topics"]:
+            groups.setdefault(tp["topic"], [])
+            groups[tp["topic"]].append((rep["date"], snippet(tp), tkey(tp["topic"])))
+
+    side = ['<aside class="side"><div class="side-title">📚 歷史周報</div>']
+    for t in [x for x in order if x in groups] + [x for x in groups if x not in order]:
+        side.append(f'<div class="grp">{html.escape(t)}</div>')
+        for d, snip, tk in groups[t]:
+            side.append(
+                f'<a class="wk" href="reports/{d}.html#{tk}">'
+                f'<span class="wk-d">{d}</span>'
+                f'<span class="wk-s">{html.escape(snip)}</span></a>')
+    side.append("</aside>")
+
+    inner = (f'<div class="layout">\n{"".join(side)}\n'
+             f'<main class="main">{render_report_body(latest_report)}</main>\n</div>')
     return page(f'趨勢周報 {latest_report["date"]}', inner)
 
 
@@ -380,7 +430,7 @@ def main():
     with open(os.path.join(reps, f"{d}.json"), "w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2)
     # 2) 該週存檔頁
-    week_html = page(f"趨勢周報 {d}", render_report_body(report))
+    week_html = page(f"趨勢周報 {d}", f'<div class="report">{render_report_body(report)}</div>')
     with open(os.path.join(reps, f"{d}.html"), "w", encoding="utf-8") as f:
         f.write(week_html)
     # 3) 首頁（最新 + 存檔清單）
