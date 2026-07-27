@@ -537,7 +537,7 @@ def load_all_reports(site_dir):
 def build_sidebar(reports, order, base, active_date=None):
     """常駐左側欄：日期第一層、主題(AI/永續)第二層。base 控制連結相對路徑
     （首頁在 root 用 'reports/'，週頁在 reports/ 內用 ''）。"""
-    home = (base or "../") + "index.html"
+    home = "index.html" if base == "reports/" else "../index.html"  # 首頁在 root、週頁在 reports/
     side = ['<aside class="side"><div class="side-title">'
             f'<a href="{home}"><span class="kicker">Archive · 歷史</span>'
             '<span class="brand">趨勢周報</span></a></div>']
