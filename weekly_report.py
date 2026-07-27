@@ -14,7 +14,9 @@ QUERIES = {
         "ISO 14064 溫室氣體盤查 企業",
         "企業 淨零 碳盤查 轉型",
         "碳足跡 查證 永續 顧問 服務",
-        "永續 服務 台灣 企業",
+        "永續 顧問 公司 新服務",          # 同業動態
+        "碳盤查 查證 機構 台灣",          # 同業動態
+        "ESG 服務 平台 新產品 上線",      # 同業動態
     ],
     "AI / 企業應用": [
         "企業 導入 AI Agent 生產力",
@@ -29,8 +31,10 @@ FEEDS = {
 }
 # FOCUS：主題 -> 給 AI 的聚焦提示，決定摘要口味。
 FOCUS = {
-    "永續 / 企業實務": "聚焦『台灣企業的執行面』：ISO 14064-1／GHG 盤查、碳盤查與查證、"
-                       "同業（永續顧問／服務業者）推出的新服務、企業轉型實務。少談國際宏觀情勢。",
+    "永續 / 企業實務": "聚焦『台灣企業的執行面』與『同業動態』：ISO 14064-1／GHG 盤查、碳盤查與查證、"
+                       "企業轉型實務。特別加重同業（其他永續顧問／碳盤查查證機構／ESG 服務業者）"
+                       "推出的新服務、新產品、新合作——這是主管最關注的方向，若清單有相關項目請優先著墨。"
+                       "少談國際宏觀情勢。",
     "AI / 企業應用": "聚焦『台灣企業的 AI 應用』：可用的新工具、企業導入 AI Agent 提升工作效率的趨勢與案例。"
                      "少談國際大廠模型軍備競賽等宏觀新聞。",
 }
@@ -215,6 +219,13 @@ a{color:inherit}
 .layout{display:flex;gap:28px;align-items:flex-start}
 .side{flex:0 0 232px;position:sticky;top:16px;font-size:13px;border-right:1px solid #eee;padding-right:16px;max-height:calc(100vh - 32px);overflow:auto}
 .side-title{font-weight:700;color:#2563eb;margin-bottom:10px}
+.side-title a{text-decoration:none}
+.wk.active{background:#eff6ff;border-radius:4px}
+.wk.active .wk-d::before{content:"▸ "}
+.srcbox{margin:8px 0 4px;font-size:13px}
+.srcbox summary{color:#2563eb}
+.srcbox .s-row{margin:6px 0 0 4px;color:#555;line-height:1.7}
+.srcbox a{color:#2563eb;text-decoration:none;word-break:break-all}
 .grp{font-weight:600;color:#374151;margin:14px 0 4px;border-bottom:1px solid #e5e7eb;padding-bottom:3px}
 .wk{display:block;text-decoration:none;padding:6px 0;border-bottom:1px dashed #eee}
 .wk-d{display:block;color:#2563eb;font-weight:600}
@@ -270,6 +281,7 @@ def build_report(data):
             "topic": topic,
             "sections": (dg.get("sections") if dg else []) or [],
             "items": items,
+            "sources": {"queries": QUERIES.get(topic, []), "feeds": FEEDS.get(topic, [])},
         })
     return {
         "date": datetime.now().strftime("%Y-%m-%d"),
@@ -298,18 +310,16 @@ def snippet(tp, limit=42):
 
 
 def render_article(topic, sections, items):
-    """把小節文字的 [[編號]] 轉成論文式引用上標，文末列參考來源。"""
+    """摘要內文的 [[編號]] 轉引用上標；參考來源列出本週『全部』項目（編號 = 項目序號）。
+    AI 是讀全部新聞寫的，故全部即參考來源，不再另分精選/全展開。"""
     tk = tkey(topic)
-    order, num_of = [], {}
 
     def repl(m):
         i = int(m.group(1))
         if not (0 <= i < len(items)):
             return ""
-        if i not in num_of:
-            order.append(i)
-            num_of[i] = len(order)
-        return f'<sup><a href="#ref-{tk}-{num_of[i]}">[{num_of[i]}]</a></sup>'
+        n = i + 1                                    # 編號 = 項目序號（對齊下方清單）
+        return f'<sup><a href="#ref-{tk}-{n}">[{n}]</a></sup>'
 
     out = []
     for sec in sections:
@@ -317,15 +327,32 @@ def render_article(topic, sections, items):
         body = re.sub(r"\[\[(\d+)\]\]", repl, html.escape(sec.get("body", "")))
         paras = [p.strip() for p in re.split(r"\n{2,}", body) if p.strip()]
         out.append('<div class="body">' + "".join(f"<p>{p}</p>" for p in paras) + "</div>")
-    if order:
-        out.append('<div class="refs"><strong>參考來源</strong><ol>')
-        for n, i in enumerate(order, 1):
-            it = items[i]
-            out.append(f'<li id="ref-{tk}-{n}"><a href="{html.escape(it["link"])}" '
-                       f'target="_blank">{html.escape(it["title"])}</a> '
-                       f'<span class="src">{html.escape(it["source"])} {it["date"]}</span></li>')
-        out.append('</ol></div>')
+    out.append(f'<div class="refs"><strong>參考來源（本週全部 {len(items)} 則）</strong><ol>')
+    for n, it in enumerate(items, 1):
+        out.append(f'<li id="ref-{tk}-{n}"><a href="{html.escape(it["link"])}" '
+                   f'target="_blank">{html.escape(it["title"])}</a> '
+                   f'<span class="src">{html.escape(it["source"])} {it["date"]}</span></li>')
+    out.append('</ol></div>')
     return "\n".join(out)
+
+
+def render_sources(tp):
+    """『本區資料來源』按鈕：列出該主題抓的 Google News 關鍵字與直連 RSS。"""
+    src = tp.get("sources") or {"queries": QUERIES.get(tp["topic"], []),
+                                 "feeds": FEEDS.get(tp["topic"], [])}
+    queries, feeds = src.get("queries", []), src.get("feeds", [])
+    if not queries and not feeds:
+        return ""
+    rows = []
+    if queries:
+        kws = "、".join(html.escape(q) for q in queries)
+        rows.append(f'<div class="s-row"><b>Google News 關鍵字</b>：{kws}</div>')
+    if feeds:
+        links = "、".join(f'<a href="{html.escape(u)}" target="_blank">{html.escape(u)}</a>'
+                          for u in feeds)
+        rows.append(f'<div class="s-row"><b>直連 RSS</b>：{links}</div>')
+    return ('<details class="srcbox"><summary>📋 本區資料來源</summary>'
+            + "".join(rows) + '</details>')
 
 
 def render_report_body(report):
@@ -334,58 +361,66 @@ def render_report_body(report):
     for tp in report["topics"]:
         items = tp["items"]
         parts.append(f'<h2 id="{tkey(tp["topic"])}">{html.escape(tp["topic"])}（{len(items)} 則）</h2>')
+        parts.append(render_sources(tp))
         if not items:
             parts.append('<p class="note">本週無新資料。</p>')
             continue
-        has_ai = bool(tp["sections"])
-        if has_ai:
+        if tp["sections"]:                           # 有 AI：摘要 + 全部項目當參考來源
             parts.append(render_article(tp["topic"], tp["sections"], items))
-            parts.append(f'<details><summary>展開本週全部 {len(items)} 則</summary>')
-        for it in items:
-            parts.append(f'''<div class="item">
+        else:                                        # 無 AI：直接列全部
+            for it in items:
+                parts.append(f'''<div class="item">
 <a href="{html.escape(it["link"])}" target="_blank">{html.escape(it["title"])}</a>
 <span class="date">{html.escape(it["source"])} {it["date"]}</span></div>''')
-        if has_ai:
-            parts.append('</details>')
     parts.append(f'<p class="meta">自動產生於 {report["generated_at"]} · '
                  '資料來源：Google News RSS 等公開來源 · AI 整理僅供參考，引用請以原文為準</p>')
     return "\n".join(parts)
 
 
-def build_index(site_dir, latest_report):
-    """首頁：左側欄（歷史周報，依主題分組、每筆帶摘要）+ 右側最新周報全文。"""
+def load_all_reports(site_dir):
+    """讀 docs/reports/*.json，回傳依日期新到舊的 report list。"""
     rep_dir = os.path.join(site_dir, "reports")
     dates = sorted(
         (f[:-5] for f in os.listdir(rep_dir) if f.endswith(".json")),
         reverse=True) if os.path.isdir(rep_dir) else []
-    reports = []
+    out = []
     for d in dates:
         try:
             with open(os.path.join(rep_dir, f"{d}.json"), encoding="utf-8") as f:
-                reports.append(json.load(f))
+                out.append(json.load(f))
         except Exception:
             pass
-    # 依最新報告的主題順序分組
-    order = [tp["topic"] for tp in latest_report["topics"]]
+    return out
+
+
+def build_sidebar(reports, order, base, active_date=None):
+    """常駐左側欄：歷史周報依主題分組、每筆帶摘要。base 控制連結相對路徑
+    （首頁在 root 用 'reports/'，週頁在 reports/ 內用 ''）。"""
     groups = {t: [] for t in order}
     for rep in reports:                              # 已依日期新到舊
         for tp in rep["topics"]:
             groups.setdefault(tp["topic"], [])
             groups[tp["topic"]].append((rep["date"], snippet(tp), tkey(tp["topic"])))
-
-    side = ['<aside class="side"><div class="side-title">📚 歷史周報</div>']
-    for t in [x for x in order if x in groups] + [x for x in groups if x not in order]:
+    side = ['<aside class="side"><div class="side-title">'
+            '<a href="' + (base or "../") + 'index.html">📚 趨勢周報</a></div>']
+    ordered = [x for x in order if x in groups] + [x for x in groups if x not in order]
+    for t in ordered:
         side.append(f'<div class="grp">{html.escape(t)}</div>')
         for d, snip, tk in groups[t]:
+            cls = "wk active" if d == active_date else "wk"
             side.append(
-                f'<a class="wk" href="reports/{d}.html#{tk}">'
+                f'<a class="{cls}" href="{base}{d}.html#{tk}">'
                 f'<span class="wk-d">{d}</span>'
                 f'<span class="wk-s">{html.escape(snip)}</span></a>')
     side.append("</aside>")
+    return "".join(side)
 
-    inner = (f'<div class="layout">\n{"".join(side)}\n'
-             f'<main class="main">{render_report_body(latest_report)}</main>\n</div>')
-    return page(f'趨勢周報 {latest_report["date"]}', inner)
+
+def compose_page(report, sidebar_html):
+    """側欄 + 該份周報全文，組成完整頁。"""
+    inner = (f'<div class="layout">\n{sidebar_html}\n'
+             f'<main class="main">{render_report_body(report)}</main>\n</div>')
+    return page(f'趨勢周報 {report["date"]}', inner)
 
 
 def send_mail(html_body, report):
@@ -417,7 +452,6 @@ def send_mail(html_body, report):
 
 
 def main():
-    import json
     data, log = collect()
     print("\n".join(log))
     report = build_report(data)
@@ -426,20 +460,29 @@ def main():
     reps = os.path.join(site, "reports")
     os.makedirs(reps, exist_ok=True)
     d = report["date"]
-    # 1) 結構化資料（未來 AI RAG 讀這個）
+    # 1) 本週結構化資料（未來 AI RAG 讀這個）
     with open(os.path.join(reps, f"{d}.json"), "w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2)
-    # 2) 該週存檔頁
-    week_html = page(f"趨勢周報 {d}", f'<div class="report">{render_report_body(report)}</div>')
-    with open(os.path.join(reps, f"{d}.html"), "w", encoding="utf-8") as f:
-        f.write(week_html)
-    # 3) 首頁（最新 + 存檔清單）
-    index_html = build_index(site, report)
+
+    # 2) 讀齊所有週（含本週），主題順序依最新一份
+    reports = load_all_reports(site)
+    order = [tp["topic"] for tp in report["topics"]]
+
+    # 3) 重建每一週的存檔頁（掛常駐側欄，連結用同目錄相對路徑）
+    for rep in reports:
+        side = build_sidebar(reports, order, base="", active_date=rep["date"])
+        with open(os.path.join(reps, f'{rep["date"]}.html'), "w", encoding="utf-8") as f:
+            f.write(compose_page(rep, side))
+
+    # 4) 首頁 = 側欄 + 最新一週（側欄連結指向 reports/）
+    idx_side = build_sidebar(reports, order, base="reports/", active_date=d)
     with open(os.path.join(site, "index.html"), "w", encoding="utf-8") as f:
-        f.write(index_html)
+        f.write(compose_page(report, idx_side))
     print(f"\n共 {report['total']} 則 -> {site}")
-    # 4) 寄信（寄該週存檔頁內容）
-    send_mail(week_html, report)
+
+    # 5) 寄信（email 用無側欄的窄欄版，信箱排版才穩）
+    mail_html = page(f"趨勢周報 {d}", f'<div class="report">{render_report_body(report)}</div>')
+    send_mail(mail_html, report)
     return site
 
 
