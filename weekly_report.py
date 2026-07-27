@@ -222,10 +222,14 @@ a{color:inherit}
 .side-title a{text-decoration:none}
 .wk.active{background:#eff6ff;border-radius:4px}
 .wk.active .wk-d::before{content:"▸ "}
-.srcbox{margin:8px 0 4px;font-size:13px}
-.srcbox summary{color:#2563eb}
-.srcbox .s-row{margin:6px 0 0 4px;color:#555;line-height:1.7}
-.srcbox a{color:#2563eb;text-decoration:none;word-break:break-all}
+.srcpanel{position:fixed;top:14px;right:14px;z-index:30;font-size:13px}
+.srcpanel>summary{list-style:none;cursor:pointer;background:#2563eb;color:#fff;padding:6px 13px;border-radius:6px;box-shadow:0 2px 8px rgba(37,99,235,.3)}
+.srcpanel>summary::-webkit-details-marker{display:none}
+.sp-body{position:absolute;right:0;margin-top:8px;width:min(340px,86vw);max-height:72vh;overflow:auto;background:#fff;border:1px solid #ddd;border-radius:8px;box-shadow:0 8px 28px rgba(0,0,0,.14);padding:14px}
+.sp-topic{font-weight:700;color:#2563eb;margin:10px 0 4px}
+.sp-topic:first-child{margin-top:0}
+.s-row{margin:5px 0 0 2px;color:#555;line-height:1.7}
+.s-row a{color:#2563eb;text-decoration:none;word-break:break-all}
 .grp{font-weight:600;color:#374151;margin:14px 0 4px;border-bottom:1px solid #e5e7eb;padding-bottom:3px}
 .wk{display:block;text-decoration:none;padding:6px 0;border-bottom:1px dashed #eee}
 .wk-d{display:block;color:#2563eb;font-weight:600}
@@ -336,23 +340,28 @@ def render_article(topic, sections, items):
     return "\n".join(out)
 
 
-def render_sources(tp):
-    """『本區資料來源』按鈕：列出該主題抓的 Google News 關鍵字與直連 RSS。"""
-    src = tp.get("sources") or {"queries": QUERIES.get(tp["topic"], []),
-                                 "feeds": FEEDS.get(tp["topic"], [])}
-    queries, feeds = src.get("queries", []), src.get("feeds", [])
-    if not queries and not feeds:
+def render_sources_panel(report):
+    """右上角單一按鈕：展開看『所有主題』抓了哪些 Google News 關鍵字與直連 RSS。"""
+    blocks = []
+    for tp in report["topics"]:
+        src = tp.get("sources") or {"queries": QUERIES.get(tp["topic"], []),
+                                    "feeds": FEEDS.get(tp["topic"], [])}
+        queries, feeds = src.get("queries", []), src.get("feeds", [])
+        if not queries and not feeds:
+            continue
+        rows = [f'<div class="sp-topic">{html.escape(tp["topic"])}</div>']
+        if queries:
+            kws = "、".join(html.escape(q) for q in queries)
+            rows.append(f'<div class="s-row"><b>Google News 關鍵字</b>：{kws}</div>')
+        if feeds:
+            links = "、".join(f'<a href="{html.escape(u)}" target="_blank">{html.escape(u)}</a>'
+                              for u in feeds)
+            rows.append(f'<div class="s-row"><b>直連 RSS</b>：{links}</div>')
+        blocks.append("".join(rows))
+    if not blocks:
         return ""
-    rows = []
-    if queries:
-        kws = "、".join(html.escape(q) for q in queries)
-        rows.append(f'<div class="s-row"><b>Google News 關鍵字</b>：{kws}</div>')
-    if feeds:
-        links = "、".join(f'<a href="{html.escape(u)}" target="_blank">{html.escape(u)}</a>'
-                          for u in feeds)
-        rows.append(f'<div class="s-row"><b>直連 RSS</b>：{links}</div>')
-    return ('<details class="srcbox"><summary>📋 本區資料來源</summary>'
-            + "".join(rows) + '</details>')
+    return ('<details class="srcpanel"><summary>📋 資料來源</summary>'
+            '<div class="sp-body">' + "".join(blocks) + '</div></details>')
 
 
 def render_report_body(report):
@@ -361,7 +370,6 @@ def render_report_body(report):
     for tp in report["topics"]:
         items = tp["items"]
         parts.append(f'<h2 id="{tkey(tp["topic"])}">{html.escape(tp["topic"])}（{len(items)} 則）</h2>')
-        parts.append(render_sources(tp))
         if not items:
             parts.append('<p class="note">本週無新資料。</p>')
             continue
@@ -417,8 +425,8 @@ def build_sidebar(reports, order, base, active_date=None):
 
 
 def compose_page(report, sidebar_html):
-    """側欄 + 該份周報全文，組成完整頁。"""
-    inner = (f'<div class="layout">\n{sidebar_html}\n'
+    """側欄 + 右上角資料來源按鈕 + 該份周報全文，組成完整頁。"""
+    inner = (f'{render_sources_panel(report)}\n<div class="layout">\n{sidebar_html}\n'
              f'<main class="main">{render_report_body(report)}</main>\n</div>')
     return page(f'趨勢周報 {report["date"]}', inner)
 

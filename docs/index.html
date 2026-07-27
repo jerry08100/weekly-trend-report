@@ -10,10 +10,14 @@ a{color:inherit}
 .side-title a{text-decoration:none}
 .wk.active{background:#eff6ff;border-radius:4px}
 .wk.active .wk-d::before{content:"▸ "}
-.srcbox{margin:8px 0 4px;font-size:13px}
-.srcbox summary{color:#2563eb}
-.srcbox .s-row{margin:6px 0 0 4px;color:#555;line-height:1.7}
-.srcbox a{color:#2563eb;text-decoration:none;word-break:break-all}
+.srcpanel{position:fixed;top:14px;right:14px;z-index:30;font-size:13px}
+.srcpanel>summary{list-style:none;cursor:pointer;background:#2563eb;color:#fff;padding:6px 13px;border-radius:6px;box-shadow:0 2px 8px rgba(37,99,235,.3)}
+.srcpanel>summary::-webkit-details-marker{display:none}
+.sp-body{position:absolute;right:0;margin-top:8px;width:min(340px,86vw);max-height:72vh;overflow:auto;background:#fff;border:1px solid #ddd;border-radius:8px;box-shadow:0 8px 28px rgba(0,0,0,.14);padding:14px}
+.sp-topic{font-weight:700;color:#2563eb;margin:10px 0 4px}
+.sp-topic:first-child{margin-top:0}
+.s-row{margin:5px 0 0 2px;color:#555;line-height:1.7}
+.s-row a{color:#2563eb;text-decoration:none;word-break:break-all}
 .grp{font-weight:600;color:#374151;margin:14px 0 4px;border-bottom:1px solid #e5e7eb;padding-bottom:3px}
 .wk{display:block;text-decoration:none;padding:6px 0;border-bottom:1px dashed #eee}
 .wk-d{display:block;color:#2563eb;font-weight:600}
@@ -44,13 +48,13 @@ summary{cursor:pointer;color:#6b7280;font-size:13px}
 .archive li{margin:4px 0}
 .meta{color:#999;font-size:12px;margin-top:32px;border-top:1px solid #eee;padding-top:12px}
 </style></head><body>
+<details class="srcpanel"><summary>📋 資料來源</summary><div class="sp-body"><div class="sp-topic">AI / 企業應用</div><div class="s-row"><b>Google News 關鍵字</b>：企業 導入 AI Agent 生產力、AI 工具 企業 應用 台灣、生成式 AI 企業 導入 效率</div><div class="sp-topic">永續 / 企業實務</div><div class="s-row"><b>Google News 關鍵字</b>：ISO 14064 溫室氣體盤查 企業、企業 淨零 碳盤查 轉型、碳足跡 查證 永續 顧問 服務、永續 顧問 公司 新服務、碳盤查 查證 機構 台灣、ESG 服務 平台 新產品 上線</div><div class="s-row"><b>直連 RSS</b>：<a href="https://esg.gvm.com.tw/rss" target="_blank">https://esg.gvm.com.tw/rss</a></div></div></details>
 <div class="layout">
-<aside class="side"><div class="side-title"><a href="reports/index.html">📚 趨勢周報</a></div><div class="grp">AI / 企業應用</div><a class="wk active" href="reports/2026-07-27.html#AI"><span class="wk-d">2026-07-27</span><span class="wk-s">本週台灣企業AI應用動態顯示，生成式AI與AIAgent正加速由實驗階段邁向核心業務…</span></a><div class="grp">永續 / 企業實務</div><a class="wk active" href="reports/2026-07-27.html#t723366843"><span class="wk-d">2026-07-27</span><span class="wk-s">本週國內永續與碳管理動態數量相對較少，焦點主要集中於「中小企業減碳實務」與「淨零人才…</span></a></aside>
-<main class="main"><h1>📊 趨勢周報 <span class="src">2026-07-27 13:17</span></h1>
+<aside class="side"><div class="side-title"><a href="reports/index.html">📚 趨勢周報</a></div><div class="grp">AI / 企業應用</div><a class="wk active" href="reports/2026-07-27.html#AI"><span class="wk-d">2026-07-27</span><span class="wk-s">本週企業AI應用發展逐漸從前端技術導入深化至核心業務流程。隨著AIAgent深入企業…</span></a><div class="grp">永續 / 企業實務</div><a class="wk active" href="reports/2026-07-27.html#t723366843"><span class="wk-d">2026-07-27</span><span class="wk-s">本週國內企業永續與碳管理動態數量相對較少，焦點主要集中於政府部門與大專院校在淨零人才…</span></a></aside>
+<main class="main"><h1>📊 趨勢周報 <span class="src">2026-07-27 13:21</span></h1>
 <h2 id="AI">AI / 企業應用（5 則）</h2>
-<details class="srcbox"><summary>📋 本區資料來源</summary><div class="s-row"><b>Google News 關鍵字</b>：企業 導入 AI Agent 生產力、AI 工具 企業 應用 台灣、生成式 AI 企業 導入 效率</div></details>
 <h4>本週情勢</h4>
-<div class="body"><p>本週台灣企業 AI 應用動態顯示，生成式 AI 與 AI Agent 正加速由實驗階段邁向核心業務流程，然而落地過程中「導入瓶頸」與「資安治理」成為企業關注的首要課題。資策會產業情報研究所（MIC）指出，AI Agent 雖已進入企業核心流程，卻常因既有流程不匹配、人才技能落差與缺乏治理架構而面臨效率瓶頸，需從流程再造與制度設計著手解決 <sup><a href="#ref-AI-4">[4]</a></sup>。對此，在地資訊服務廠商積極提供解決方案，如叡揚資訊引進 Mend.io 舉辦實機體驗營，協助企業在 AI 時代打造無痛且合規的應用程式安全（AppSec）開發流程 <sup><a href="#ref-AI-5">[5]</a></sup>，展現出台灣市場致力於降低工具導入門檻的趨勢。除了開發與流程效益之外，AI 應用安全防護與工具整合亦是本週焦點。亞利安科技正式代理 AIFT 旗下的 Vulcan AI 安全平台 <sup><a href="#ref-AI-1">[1]</a></sup>，顯示台灣資安通路已開始布局企業端 AI 模型的安全治理與防禦機制。同時，國際大廠如甲骨文在 Fusion Applications 中整合 AI 工具以輔助企業應用開發 <sup><a href="#ref-AI-2">[2]</a></sup>，鄰國日本的企業 AI 應用重心亦轉向追求實質創造成果，但有超過四成企業正面臨人才短缺的挑戰 <sup><a href="#ref-AI-3">[3]</a></sup>。綜合來看，台灣企業在透過 AI Agent 與新工具提升營運效率時，必須同步克服人才短缺問題並建構完善的資安與治理框架，方能將技術投資真正轉化為永續的商業價值。</p></div>
+<div class="body"><p>本週企業 AI 應用發展逐漸從前端技術導入深化至核心業務流程。隨著 AI Agent 深入企業運作，資策會 MIC 指出企業在導入過程中常面臨效率瓶頸，需從業務流程重塑、人才轉型與治理體系等面向提出相應解方<sup><a href="#ref-AI-4">[4]</a></sup>。此一現象不單發生於台灣，鄰近的日本企業亦將 AI 應用重心轉向具體成果創造，但同時有逾四成企業面臨專業人才短缺的挑戰，顯見人才與治理已成為亞洲企業推動 AI 轉型的共同課題<sup><a href="#ref-AI-3">[3]</a></sup>。另一方面，在資安與開發工具實踐上，軟體開發及資安防護自動化成為台灣企業提升生產力的關鍵著力點。亞利安科技正式代理 AIFT 旗下的 Vulcan AI 安全平台，提供企業強化 AI 應用資安防護的新選擇<sup><a href="#ref-AI-1">[1]</a></sup>；叡揚資訊則透過 Mend.io 體驗營，協助企業在 AI 時代打造無痛合規的 AppSec 應用程式安全流程<sup><a href="#ref-AI-5">[5]</a></sup>。此外，國際廠商如甲骨文亦在其 Fusion Applications 中進一步整合 AI 工具，輔助企業加速應用開發效率<sup><a href="#ref-AI-2">[2]</a></sup>。整體而言，企業導入 AI 已由單純的概念驗證，邁向結合資安防護與流程治理的深水區。</p></div>
 <div class="refs"><strong>參考來源（本週全部 5 則）</strong><ol>
 <li id="ref-AI-1"><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE1LeHlrZ184VTd6Nmw3V2NKOXhQV0dJNnNna1lJUlF1VmJnV2p2LXA2NUxSWkhqZDlESnJYRlU5akZfNmROeG1SZlZjOA?oc=5" target="_blank">亞利安科技正式代理 AIFT旗下Vulcan AI 安全平台</a> <span class="src">iThome 2026-07-26</span></li>
 <li id="ref-AI-2"><a href="https://news.google.com/rss/articles/CBMivgJBVV95cUxNVmZQUkc5M3hmQ01qN2ZiZUFBZkhfMy1hX1FSUVNrMTRuSGVhVVhoZ2I0bTl0MElEaGJrUkJRRDBLLTNEdG1DbkRhTFBpZHFiRVN0TThMaXVYcElkUHFpQm5UTU9WeHdyekgyQ0lMRERlXzd6OWQ0dk01aHhXQ1BrRlFqZEdVVWpyUDFvUkdEaTV5eXJjemtuRm5iQmtQalI1MHM0Z2tzUHQ4aHozakR1Ry04TzdVcEdmNXZ2bWJqNFpSYzNOR3ZCbU90Ti1OdVpFZng0VzBuSlpsZmFuemF0Z19xc25pazV6NkU4bkl3bXZxRlFuVUw3V2ZrbEx5ZEZkZ3JtdWVrMU5iTjRRVHRoWkpJQVJseXZKV1NBcnFQRG1tVXEyRS1hVHpzNnliR241YzF4VlByWWhZYjZGQ3c?oc=5" target="_blank">甲骨文 Fusion Applications 整合 AI 工具 助企業應用開發</a> <span class="src">行銷人 2026-07-23</span></li>
@@ -59,13 +63,12 @@ summary{cursor:pointer;color:#6b7280;font-size:13px}
 <li id="ref-AI-5"><a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9uMGJ1UVY3Z3JGYVlpVWN1SmstUURzNjdqaWpCcjFSV3pOczVjYWxfUGdzSlpHa3J1X2VhZTZ1UnhuTEZ5TFZkajgwcmJxWnJ6azZwWXVGWEh1QQ?oc=5" target="_blank">叡揚資訊 Mend.io 實機體驗營 打造AI時代無痛合規AppSec流程</a> <span class="src">中央社 CNA 2026-07-21</span></li>
 </ol></div>
 <h2 id="t723366843">永續 / 企業實務（2 則）</h2>
-<details class="srcbox"><summary>📋 本區資料來源</summary><div class="s-row"><b>Google News 關鍵字</b>：ISO 14064 溫室氣體盤查 企業、企業 淨零 碳盤查 轉型、碳足跡 查證 永續 顧問 服務、永續 顧問 公司 新服務、碳盤查 查證 機構 台灣、ESG 服務 平台 新產品 上線</div><div class="s-row"><b>直連 RSS</b>：<a href="https://esg.gvm.com.tw/rss" target="_blank">https://esg.gvm.com.tw/rss</a></div></details>
 <h4>本週情勢</h4>
-<div class="body"><p>本週國內永續與碳管理動態數量相對較少，焦點主要集中於「中小企業減碳實務」與「淨零人才專業培訓」兩大執行面向。隨著供應鏈碳盤查壓力逐級傳遞，地方政府機構與學術單位正積極填補基層企業的技術缺口與專業人才斷層，展現由下而上的實務轉型推動力道。在政府輔導層面，勞動部勞動力發展署雲嘉南分署投入資源助攻中小企業，協助在地企業掌握關鍵碳管理觀念與精準減碳路徑<sup><a href="#ref-t723366843-1">[1]</a></sup>。這顯示出對於資源有限的中小企業而言，取得公部門的實務指導已成為推動企業內部碳盤查與減碳轉型的關鍵起手式。另一方面，在人才與查證服務供給端，學術界亦透過跨校合作擴大培育量能，例如東華大學與臺灣科技大學聯手開辦 ISO 稽核員訓練課程以及 iPAS 淨零碳規劃管理師總複習班<sup><a href="#ref-t723366843-2">[2]</a></sup>。此舉結合國際標準稽核能力與國內能力鑑定規範，反映出市場對具備 ISO 稽核實務與專業證照的淨零人才需求持續攀升，為台灣企業未來對接碳查證與盤查實務建構更堅實的人力資源基礎。</p></div>
+<div class="body"><p>本週國內企業永續與碳管理動態數量相對較少，焦點主要集中於政府部門與大專院校在淨零人才培育與中小企業實務轉型上的基礎佈局。在企業面對碳盤查與減碳壓力日益增加的背景下，勞動部勞動力發展署雲嘉南分署積極協助區域內中小企業掌握碳管理關鍵技術，藉此推動精準減碳實務<sup><a href="#ref-t723366843-1">[1]</a></sup>。這顯示政府資源正逐步向基層產業傾斜，試圖補足中小企業在永續轉型初期缺乏專業知識與技術支援的短板。除了政府輔導機制外，學術界亦加速串聯資源，東華大學與臺科大本週合作辦理碳稽核員訓練及iPAS總複習課程<sup><a href="#ref-t723366843-2">[2]</a></sup>。此舉反映出市場對具備 ISO 規範檢驗與查證能力的專業稽核人才需求孔急，透過大專院校扎根培育並結合國家級證照輔導，有助於為產業注入標準化查核與碳管理能量。整體而言，雖然本週同業顧問或查證機構的新服務動態較少，但產官學界在人才育成與基礎能力建構上的動作，正為企業後續落實碳盤查與查證鋪路<sup><a href="#ref-t723366843-1">[1]</a></sup><sup><a href="#ref-t723366843-2">[2]</a></sup>。</p></div>
 <div class="refs"><strong>參考來源（本週全部 2 則）</strong><ol>
 <li id="ref-t723366843-1"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE9HZFluWU1sdHM2X2NtRzBNS3ZhM0RWb29sLXJsdVdkaWo1dXM3NFFhaWdTck5FSFhRNmUzc0xZSGdBR0FPTFdrUHVxSEtIcUlqTF92ZmlR?oc=5" target="_blank">掌握碳管理關鍵！雲嘉南分署助攻中小企業精準減碳</a> <span class="src">中央社 CNA 2026-07-24</span></li>
 <li id="ref-t723366843-2"><a href="https://news.google.com/rss/articles/CBMiVkFVX3lxTE82S3VaWTUzaUdnWFgxeEc5SlhqZjhxTDA1bkI5dGxtTEhObEFWRm5pNDZUWWJZQ1FOZ3RyT1hja0Jra2JtajlOenNsZ1hZNWxIcWd3RmJR?oc=5" target="_blank">東華大學與臺科大培育淨零人才 辦理稽核員訓練及iPAS總複習</a> <span class="src">中央社 CNA 2026-07-21</span></li>
 </ol></div>
-<p class="meta">自動產生於 2026-07-27 13:17 · 資料來源：Google News RSS 等公開來源 · AI 整理僅供參考，引用請以原文為準</p></main>
+<p class="meta">自動產生於 2026-07-27 13:21 · 資料來源：Google News RSS 等公開來源 · AI 整理僅供參考，引用請以原文為準</p></main>
 </div>
 </body></html>
