@@ -15,7 +15,8 @@ jobs:
           python-version: '3.12'
       - name: 產周報並寄信
         env:
-          GMAIL_USER:   ${{ secrets.GMAIL_USER }}
-          GMAIL_APP_PW: ${{ secrets.GMAIL_APP_PW }}
-          MAIL_TO:      ${{ secrets.MAIL_TO }}
+          GMAIL_USER:     ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PW:   ${{ secrets.GMAIL_APP_PW }}
+          MAIL_TO:        ${{ secrets.MAIL_TO }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python weekly_report.py
