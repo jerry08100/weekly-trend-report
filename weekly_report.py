@@ -275,17 +275,16 @@ a{color:inherit}
 .side-title a{text-decoration:none;display:block}
 .side-title .brand{font-size:22px;font-weight:800;color:var(--side-brand);letter-spacing:.02em;margin-top:7px}
 .side .kicker{color:var(--side-grp)}
-.grp{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--side-grp);margin:24px 0 8px;display:flex;align-items:center;gap:7px}
-.grp::before{content:"";width:6px;height:6px;background:var(--accent);border-radius:50%;flex:none}
-.wk{display:block;text-decoration:none;padding:10px 11px;margin:0 -11px;border-radius:7px;
-  transition:background .15s}
+.day{font-family:var(--mono);font-size:14px;letter-spacing:.04em;color:var(--side-date);
+  font-weight:700;margin:24px 0 8px;display:flex;align-items:center;gap:8px}
+.day::before{content:"";width:7px;height:7px;background:var(--accent);border-radius:50%;flex:none}
+.day.active{color:var(--accent)}
+.wk{display:block;text-decoration:none;padding:8px 11px;margin:2px 0 2px 15px;border-radius:7px;
+  border-left:2px solid var(--side-line);transition:background .15s}
 .wk:hover{background:rgba(255,255,255,.06)}
 .wk:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
-.wk.active{background:var(--side-active)}
-.wk-d{display:block;font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;color:var(--side-date);font-weight:600}
-.wk.active .wk-d{color:var(--accent)}
-.wk-s{display:block;color:var(--side-fg2);font-size:13px;line-height:1.5;margin-top:3px}
+.wk-topic{display:block;font-size:14px;color:var(--side-fg);font-weight:600}
+.wk-s{display:block;color:var(--side-fg2);font-size:12.5px;line-height:1.5;margin-top:2px}
 /* ── 報頭 ── */
 .masthead{margin-bottom:8px}
 .masthead h1{font-size:clamp(32px,4vw,46px);font-weight:800;letter-spacing:-.01em;
@@ -526,26 +525,22 @@ def load_all_reports(site_dir):
 
 
 def build_sidebar(reports, order, base, active_date=None):
-    """常駐左側欄：歷史周報依主題分組、每筆帶摘要。base 控制連結相對路徑
+    """常駐左側欄：日期第一層、主題(AI/永續)第二層。base 控制連結相對路徑
     （首頁在 root 用 'reports/'，週頁在 reports/ 內用 ''）。"""
-    groups = {t: [] for t in order}
-    for rep in reports:                              # 已依日期新到舊
-        for tp in rep["topics"]:
-            groups.setdefault(tp["topic"], [])
-            groups[tp["topic"]].append((rep["date"], snippet(tp), tkey(tp["topic"])))
     home = (base or "../") + "index.html"
     side = ['<aside class="side"><div class="side-title">'
             f'<a href="{home}"><span class="kicker">Archive · 歷史</span>'
             '<span class="brand">趨勢周報</span></a></div>']
-    ordered = [x for x in order if x in groups] + [x for x in groups if x not in order]
-    for t in ordered:
-        side.append(f'<div class="grp">{html.escape(t)}</div>')
-        for d, snip, tk in groups[t]:
-            cls = "wk active" if d == active_date else "wk"
+    rank = {t: i for i, t in enumerate(order)}
+    for rep in reports:                              # 已依日期新到舊
+        d = rep["date"]
+        side.append(f'<div class="day{" active" if d == active_date else ""}">{d}</div>')
+        for tp in sorted(rep["topics"], key=lambda x: rank.get(x["topic"], 99)):
+            tk = tkey(tp["topic"])
             side.append(
-                f'<a class="{cls}" href="{base}{d}.html#{tk}">'
-                f'<span class="wk-d">{d}</span>'
-                f'<span class="wk-s">{html.escape(snip)}</span></a>')
+                f'<a class="wk" href="{base}{d}.html#{tk}">'
+                f'<span class="wk-topic">{html.escape(tp["topic"])}</span>'
+                f'<span class="wk-s">{html.escape(snippet(tp))}</span></a>')
     side.append("</aside>")
     return "".join(side)
 

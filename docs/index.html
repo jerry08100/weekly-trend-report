@@ -21,17 +21,16 @@ a{color:inherit}
 .side-title a{text-decoration:none;display:block}
 .side-title .brand{font-size:22px;font-weight:800;color:var(--side-brand);letter-spacing:.02em;margin-top:7px}
 .side .kicker{color:var(--side-grp)}
-.grp{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--side-grp);margin:24px 0 8px;display:flex;align-items:center;gap:7px}
-.grp::before{content:"";width:6px;height:6px;background:var(--accent);border-radius:50%;flex:none}
-.wk{display:block;text-decoration:none;padding:10px 11px;margin:0 -11px;border-radius:7px;
-  transition:background .15s}
+.day{font-family:var(--mono);font-size:14px;letter-spacing:.04em;color:var(--side-date);
+  font-weight:700;margin:24px 0 8px;display:flex;align-items:center;gap:8px}
+.day::before{content:"";width:7px;height:7px;background:var(--accent);border-radius:50%;flex:none}
+.day.active{color:var(--accent)}
+.wk{display:block;text-decoration:none;padding:8px 11px;margin:2px 0 2px 15px;border-radius:7px;
+  border-left:2px solid var(--side-line);transition:background .15s}
 .wk:hover{background:rgba(255,255,255,.06)}
 .wk:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
-.wk.active{background:var(--side-active)}
-.wk-d{display:block;font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;color:var(--side-date);font-weight:600}
-.wk.active .wk-d{color:var(--accent)}
-.wk-s{display:block;color:var(--side-fg2);font-size:13px;line-height:1.5;margin-top:3px}
+.wk-topic{display:block;font-size:14px;color:var(--side-fg);font-weight:600}
+.wk-s{display:block;color:var(--side-fg2);font-size:12.5px;line-height:1.5;margin-top:2px}
 /* ── 報頭 ── */
 .masthead{margin-bottom:8px}
 .masthead h1{font-size:clamp(32px,4vw,46px);font-weight:800;letter-spacing:-.01em;
@@ -103,7 +102,7 @@ sup a:hover{text-decoration:underline}
 </style></head><body>
 <details class="srcpanel"><summary>資料來源</summary><div class="sp-body"><div class="sp-topic">AI / 企業應用</div><div class="s-row"><b>Google News 關鍵字</b>：企業 導入 AI Agent 生產力、AI 工具 企業 應用 台灣、生成式 AI 企業 導入 效率</div><div class="sp-topic">永續 / 企業實務</div><div class="s-row"><b>Google News 關鍵字</b>：ISO 14064 溫室氣體盤查 企業、企業 淨零 碳盤查 轉型、碳足跡 查證 永續 顧問 服務、永續 顧問 公司 新服務、碳盤查 查證 機構 台灣、ESG 服務 平台 新產品 上線</div><div class="s-row"><b>直連 RSS</b>：<a href="https://esg.gvm.com.tw/rss" target="_blank">https://esg.gvm.com.tw/rss</a></div></div></details>
 <div class="layout">
-<aside class="side"><div class="side-title"><a href="reports/index.html"><span class="kicker">Archive · 歷史</span><span class="brand">趨勢周報</span></a></div><div class="grp">AI / 企業應用</div><a class="wk active" href="reports/2026-07-27.html#AI"><span class="wk-d">2026-07-27</span><span class="wk-s">AI Agent瓶頸、應用程式安全、軟體開發整合、AI人才缺口</span></a><div class="grp">永續 / 企業實務</div><a class="wk active" href="reports/2026-07-27.html#t723366843"><span class="wk-d">2026-07-27</span><span class="wk-s">淨零人才培訓、iPAS證照、中小企業減碳、碳盤查查證</span></a></aside>
+<aside class="side"><div class="side-title"><a href="reports/index.html"><span class="kicker">Archive · 歷史</span><span class="brand">趨勢周報</span></a></div><div class="day active">2026-07-27</div><a class="wk" href="reports/2026-07-27.html#AI"><span class="wk-topic">AI / 企業應用</span><span class="wk-s">AI Agent瓶頸、應用程式安全、軟體開發整合、AI人才缺口</span></a><a class="wk" href="reports/2026-07-27.html#t723366843"><span class="wk-topic">永續 / 企業實務</span><span class="wk-s">淨零人才培訓、iPAS證照、中小企業減碳、碳盤查查證</span></a></aside>
 <main class="main"><header class="masthead"><div class="kicker">Weekly Intelligence Briefing</div><h1>趨勢周報</h1><div class="issue">ISSUE 2026-07-27 · 產業情勢週報</div></header><div class="rule"></div>
 <section class="section" id="AI">
 <div class="kicker">AI · ENTERPRISE ADOPTION</div>
