@@ -1,0 +1,290 @@
+{
+  "date": "2026-07-28",
+  "generated_at": "2026-07-28 13:25",
+  "total": 32,
+  "topics": [
+    {
+      "topic": "政府補助 / 計畫",
+      "gist": "產業儲能補助、地方SBIR創新、特定工廠變更、AI數位轉型",
+      "sections": [
+        {
+          "heading": "綠能升級與地方創新補助",
+          "body": "經濟部為了推動能源轉型，近期推出產業儲能補助計畫，協助企業建置儲能系統並導入安全驗證機制，提高廠區用電穩定度與綠能效益[[7]]。儲能系統簡單說就是工廠的大型蓄電池，可以在尖峰用電時省電費、平時備用。另外，地方政府也持續釋出研發資源，像是新竹縣政府推動的地方型SBIR（地方產業創新研發計畫），專門補助中小企業進行新產品與技術開發，每家企業最高可獲得數百萬元補助，申請期限至7月15日截止[[8]]。對想轉型或升級的在地企業來說，這是很直接的資金補貼機會[[8]]。"
+        },
+        {
+          "heading": "特定工廠用地變更與人才培訓",
+          "body": "因應高階製造與AI產業的強勁需求，傳統工廠轉型需要合法土地。台中市政府近期輔導3家特定工廠完成用地計畫核定，幫助在地製造業取得合法用地，進而擴建智慧化產線與導入AI設備[[3]]。特定工廠是指依工廠管理輔導法輔導納管的未登記工廠，完成用地變更才能永續經營[[3]]。此外，桃分署也推出企業服務速可達，幫企業整合政府培訓與僱用獎助資源[[0]]；新竹職訓更與國際軟體大廠合作設立培訓中心，提供電腦輔助設計與製造等AI智慧製造人才課程[[9]]，協助產業補足轉型缺口。"
+        },
+        {
+          "heading": "數位升級與智慧財產權防務",
+          "body": "中小企業在導入AI數位轉型時，往往會遇到法律與技術門檻。台南市政府特別舉辦中小企業數位升級說明會，聚焦AI應用與著作權議題[[10]][[11]][[12]]。當企業利用生成式AI產生圖文時，可能面臨智慧財產權歸屬風險，因此政府除了宣導轉型工具，也同步提供風險防範觀點[[10]][[11]]。同時，高雄市也啟動產業創新展與跨業媒合會，打造AI跨合作平台[[1]][[5]]。企業應積極善用這些說明會與媒合資源，並可申請勞工每人每月最高1.15萬元相關補助，留意即將到期的申請期限[[2]]。"
+        }
+      ],
+      "items": [
+        {
+          "title": "桃分署推「企業服務速可達」 助企業運用政府資源創造營運新動能",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE13QV9WQjZSMGY0QThtVmdFcE9tV3lYbHNGQjVoTFdYRURyZjA4QzFSTHJqNmlPM29rT0k5V1hxTG5USzlZYzE0dEZCQ3Vuel84eUE?oc=5",
+          "date": "2026-07-27"
+        },
+        {
+          "title": "幸福經濟跨域啟航 高雄產業創新展打造AI跨業合作新平台",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9jY1lxQjMzYmk0OEo3SFlibHNxWko0dExOdXFMNjZ2Z202aVZwcXVDUklXeHI5NFRZWmVvV1RLLTM4OUhEbXFNbDlwUHc0TVhUblE?oc=5",
+          "date": "2026-07-27"
+        },
+        {
+          "title": "勞工快看！每月最高補助1.15萬 申請期限快到了 | EBC 東森新聞",
+          "source": "LINE TODAY",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9tOXVMQ21jU3pDNldjZUNPR3lIcnA0cWtBMFVMUlFwdm01NUlScnlncHBiSnZneGhwb3Yxd3hyblBKTDMwNzdUclN0U3pmcTh0dXNoLWtR?oc=5",
+          "date": "2026-07-27"
+        },
+        {
+          "title": "因應高階製造及AI產業需求 中市再輔導3家特定工廠用地計畫獲核定",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ISG9PUk5zbFl6QUhTeHhBa3djLVUxaWd3dXNNMzJVVUVPckJ0N2NCdG1SVXJTRWNkNTRZXzBYVEVhT0tMNkFYdWlITTlBemtMSVE?oc=5",
+          "date": "2026-07-27"
+        },
+        {
+          "title": "不只學AI！大葉大學培養企業最搶手跨域人才",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WUHlleE83S1prRGRSVk9kN19tOUI0eDhfYTRjQVM4dHpXUk8yNFpGT1IyQzZmY0lQSnNQWE9pRjZyazZvQTVVLUptN1NhMDMyemc?oc=5",
+          "date": "2026-07-27"
+        },
+        {
+          "title": "高雄打造幸福經濟新品牌 2026高雄城市幸福 經濟嘉年華暨產業創新展與跨業媒合會 正式啟動",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBjTTNDVGk3TmJEZFpIRThHZnFDbkR1M0JyN0dxTUpQbG5zTkdNQ1JDY1huTWxlYjlCTEhGRXZ2UDMtaC1uQnRWbERBXzk4Q2hVQWc?oc=5",
+          "date": "2026-07-25"
+        },
+        {
+          "title": "匈牙利將挹注5億歐元，發展太空及AI產業",
+          "source": "台視全球資訊網",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPTXcwQTdxb29fWnNwR0EtMEdIeDF3Q2VtVENyeGFUUHkyWTI4TWpXV3piZHliVlJQTXl3UW1HX2x3aVZ3bkRfUXduSVlQcFZKeVlxS2dXemdjTVo0WnBfS2RvcF9peGZjS2FlcXoyR0FMU3d4T211WkRwbmpkaU5OdnFMWUd1MnJZYm94S3dxRUdBZw?oc=5",
+          "date": "2026-07-24"
+        },
+        {
+          "title": "經濟部推動產業儲能補助 結合驗證機制提升安全品質",
+          "source": "bsmi.gov.tw",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9oc0pka1VoWk9XUjNXNWxaOEo2S3VQNjhXQUJKcWt2ZkVMM3V3eHNaeEZWeFBhYVN4cUlDbUE1Z05oVW5FdGI1SFFfZE90Z204WEhjMUhKejdJYjJPQVJpUlhldDA3dUp1OVNzaVNyZw?oc=5",
+          "date": "2026-07-24"
+        },
+        {
+          "title": "疫情趨緩竹縣地方型SBIR補助開跑 鼓勵企業開創新商機7/15申請截止 - 新竹縣政府-數位發展處",
+          "source": "",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5hYmpCbW5TaFR6eTBDX0hIcFZiZWJSU1FfLXBmaC1GQUZpc1ZTUnJ1dXo2UzRNQXNEVGItZTE3NVVZMmJxQjliNEFvR1h3MDlnelhpc1V4aEZvT2Jod3ZuYWJLN19Vek1DSFVoSw?oc=5",
+          "date": "2026-07-24"
+        },
+        {
+          "title": "迎戰AI智慧製造浪潮！ 新竹職訓攜手PTC成立CAD／CAE／CAM培訓中心- 生活新聞- PChome Online 新聞",
+          "source": "PChome Online 新聞",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQW5qeW9JTzM5emhlNkx3UVdmVlpBUEtQTy1ZR0FHX2tWb2RDMVBqTkRjSi0wTk1NSTd1LXRsNHljZ0xUaFJhNHBySk5YUFRTaGhXYTB5Q3haSXpmZVNBTXgzODdwUXhmaE43N3VVNlE4YXdtQnFEcHNfdnlDNkFoU2oySFAzdWVpUEtiMlVuUQ?oc=5",
+          "date": "2026-07-22"
+        },
+        {
+          "title": "南市助攻中小企業數位升級！AI著作權議題引企業熱烈迴響",
+          "source": "勁報",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWQm03MFdhcU4yZzVrRXRpMUlXTEV1SmJmYVE5d0xKLV9maU5LanZ6bmhBbnNZcEhPSC1CS2E4RHItb3NSTXg4UDhXbGJJQW50ZzVUU2VqR2czRl9JZE1mTw?oc=5",
+          "date": "2026-07-21"
+        },
+        {
+          "title": "南市府助攻中小企業數位升級說明會 聚焦人工智慧應用和著作權議題",
+          "source": "中華新聞雲／中華日報",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4zTXUzMmN4a3p5QVJPLXc5VVY2bnJpc2ZWbDl3N0RQT01YYTk1YWhtNmd0ZERtckFydkVqUS1nVmZaNzBLbnktMkR2c0ZLVHhVRXc?oc=5",
+          "date": "2026-07-21"
+        },
+        {
+          "title": "南市府助攻中小企業數位升級 AI著作權議題引企業熱烈迴響",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxOY0ROT3RiVXI2LTFDN1dIVVpGUEMybnBoLWZrSzZXd0k3WFAyeDBaRTdxWDhMSHY5bHR2aDMxTFo0N1JIWWN3LTYtVG5TcVJaWmNmNUdncE9taFpuS1Q1QXpneTMzQktrLWpfZ1lDVEtwbEFEaGZXeEZCbEVRV3d6N0x1NDB3RDRCWEhpQ1NzZjAtSVBLUmR6T1lxZ29qVEYta2RSMjRWaWpvUmxJTU1nZ1BmUDFheklzdm1XMlFMd1pjNXZKME4wMlJyNDhWU1JneG9fNFRNQXk4X1dzVzlaVlBuRWFydUNDakJlMW5KTldwZXdZNGFuRW51bWRSMFZGRTlZdjV0ZHhmSVJwSUp1b09pdFlVd3VKS3pZbHhxRmMxQm9XcHJsblVfZFFGd3o0R3ZFbVBLeFVlaDdSZWlUTVFlRDZKU0ZuM3kzWXV6eHNyREpOUG9YNm8tUEdHSmFLckk1YlItV3FLZ21rQWQ1NXZsNGNTdzQ?oc=5",
+          "date": "2026-07-21"
+        }
+      ],
+      "sources": {
+        "queries": [
+          "數位發展部 AI 補助 計畫",
+          "中小企業 數位轉型 補助 申請",
+          "淨零 減碳 補助 計畫 經濟部",
+          "產業 升級 補助 申請 企業",
+          "SBIR 政府 補助 計畫 公告"
+        ],
+        "feeds": []
+      }
+    },
+    {
+      "topic": "AI / 企業應用",
+      "gist": "AI Agent落地瓶頸、AI長設立趨勢、資安自動化、同業轉型動態",
+      "sections": [
+        {
+          "heading": "產業趨勢：AI Agent 落地瓶頸與 AI 長崛起",
+          "body": "最近許多企業開始引進 AI Agent，也就是能自動規劃並執行複雜任務的 AI 智慧代理，嘗試將它嵌入核心業務流程，但實務上卻面臨效率不如預期的瓶頸 [[12]]。資策會分析，主因在於傳統業務流程不夠彈性、員工缺乏操作 AI 的技能，以及企業缺少完善的治理機制 [[12]]。為了打破這個僵局，包含 Google 與台積電等指標大廠都開始設立「AI 長」（CAIO）[[13]]。AI 長主要負責制定企業整體 AI 策略、重新梳理作業流程並評估投資效益，確保 AI 技術能真正轉化為商業價值，成為推進企業變革的核心角色 [[13]]。"
+        },
+        {
+          "heading": "企業實務：防護升級與 AppSec 資安自動化",
+          "body": "隨著 AI 應用深化，開發安全也成為企業焦點。業界開始導入 AppSec（應用程式安全，指在程式開發初期就納入安全檢測）自動化工具，例如叡揚資訊推廣 Mend.io 平台，協助開發團隊自動化合規 [[11]]；亞利安科技則代理 Vulcan AI 平台，利用 AI 技術預先識別與處置安全漏洞 [[4]]。傳統資安靠人工排查往往耗時且容易遺漏，透過 AI 輔助自動掃描與分析，企業不僅能加快軟體上線速度，更能降低潛在的資安威脅，讓數位轉型過程更加穩定可靠 [[4]][[11]]。"
+        },
+        {
+          "heading": "同業動態",
+          "body": "觀察本週同業與相關產業動態，Uber 創辦人成立的新創 Atoms 成功募資十七億美元，準備強攻機器人 AI 領域 [[6]]；同時 Uber 外送業務也需因應台灣即將上路的外送專法 [[10]]。乘車服務方面，台灣大車隊副董事長分享了自身經營與轉型經驗 [[8]]。在保險與金融領域，金管會特別提出保險監理的三大方向，明確指引產險業與相關金融機構加速 AI 轉型，並結合全齡金融服務 [[9]]。本週名單中如 USPACE、台塑、中油、肯譯、機場快線、車商、大都會車隊等則無明顯相關動作。"
+        }
+      ],
+      "items": [
+        {
+          "title": "日本台灣形象展斬獲1.5億美元商機 台日合作延伸至AI數位轉型",
+          "source": "壹蘋新聞網",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBRYUxFX0JXQWZncWd2Xy1OeE8tNE5CZEVQQU9zcUhBNWVkLXhHSGExRnlzaTVlakdvWFRKZnktckxXN3NhZHUzZ3RPS1hHYXk1YjhMUzVuTXlhZDhnV2NkZk9JVlJZZU9RWjR4dEFaZUFudVBZU3FYMEJEN3dramc?oc=5",
+          "date": "2026-07-28"
+        },
+        {
+          "title": "日台形象展集結150台企斬獲1.5億美元商機 由半導體延伸至AI數位轉型",
+          "source": "Yahoo股市",
+          "link": "https://news.google.com/rss/articles/CBMiqwNBVV95cUxPV1lQM3BaS2hWcGkyMVRkWUMzQnBTdTVORnRVX3BvWW1ZZ1RGNnhrNG1QWXlMc2ZrY19hbURKVUlHblJqaDJLRWE0MmtXell0YWtrd3BaUXJwTkprVlNOcVV5NWxNSzdWOGJ6T1VzQUcwUXRVY1hTZnhhWVNPMExBSWpSZG4yX3poTHBNcFBidXQ5MG9IdzJqb2psaEhIQVF4VEJpUXExRFlNaDJBeEV6SGdXMWMzSTJuTUxRbXBObUl5VHdONVktTHFRclZPMUlnVW5OaEppeWg0WWJNR1dXQ2l1ZkZfanI5XzFyOElvYmt5Q0ZBYlROWXZlcU5ObGNwQVgydWdoa3N2V1RFOGNwVEZ4VEhxcXpzMVZYZ1VLR3M4V2lGa0x6Z3ctMndtSmdFdjVjRGl1QXNaT2N0cTFjaWVLbTRZMXkyS1pfM29TOVhSVERQNC1laFVaa3ZneENBQ2hlRnBUaV9qcGduZnJhY2U0cTFKUVNnbTNpR0wyTWdlTnp4VFdVUGhMa2Vxdy0wMzVWSUEwY0hhbURzWFBCRFAzWlVScGgtYnh3?oc=5",
+          "date": "2026-07-27"
+        },
+        {
+          "title": "日企數位轉型陷長年困境 BluePort與TDA結盟助推AI應用",
+          "source": "行銷人",
+          "link": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxOY2xwWnFvZGd3Q05oRTlIbWlqRkJ0NnlySFpVbDlyLUZhNHJYb0JJNm1rWjM3TzMwN09LbjFrdVVSejFybUlMQ2JYT09wcnR3YUctY1dUVUNjTTNVdDNGbHU5MU5uWkdFZWliVGNNSG9HMWh0Y0tXNDg4Q0RJeUlEMXNIYTVJR0dURnFqMkRtS252Q0poSTJJMzBOemFaTHRsWGR2QVdvM0FmU0ZSU1BuNVNORkRvcFRUTVItZGt6T0JZN2wyWWluaVNFdExjM3A2MVJNRlp0VDEyT3VIR1JwN294Z1Nld0hPZm1QQXRHaTI1QWJjQ2ZTckZzeENNMmVUYkZlWGVwQU5xZ3RnT0h4Tm9FaUQtcFMyUDJ1RFBRT0lpZkg2OVdnalNDUkVZNGotZHdlUThMQWg3cW5Sdm8xVmtCV1AzMUhORF9icEFRNWRyRy1iVFBNRUsxYmFlUQ?oc=5",
+          "date": "2026-07-27"
+        },
+        {
+          "title": "日企數位轉型陷長年困境 BluePort與TDA結盟助推AI應用",
+          "source": "理財周刊",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1YYVRoMU9QOWFCaW5WeWFQT2pBeTRVRk10dF9rNENNQnRfM19ibU5ZbzNTZWw2dl9OSk9FSFBhYXExRjZSdkdGZWdaMXRGbkdkeGFxMlRQZzl2bW9UY0sxZDlCNnZlSGlDWFowWWtlVQ?oc=5",
+          "date": "2026-07-27"
+        },
+        {
+          "title": "亞利安科技正式代理 AIFT旗下Vulcan AI 安全平台",
+          "source": "iThome",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1LeHlrZ184VTd6Nmw3V2NKOXhQV0dJNnNna1lJUlF1VmJnV2p2LXA2NUxSWkhqZDlESnJYRlU5akZfNmROeG1SZlZjOA?oc=5",
+          "date": "2026-07-26"
+        },
+        {
+          "title": "賴瑞隆提出三大贏家策略：高雄不只做AI房東，更要成為股東",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GNjZ5aW5pN1pySlNBNEpxWjVyTkRSUWVJUnJ5RkxMMld3YWVQb0dSUDhwSXo5N1JGWXU2aUlVLW1wNjlCcGppOTV1RW1CMWZGWXc?oc=5",
+          "date": "2026-07-24"
+        },
+        {
+          "title": "Uber創辦人克蘭尼克新創Atoms募資17億美元，強攻機器人AI領域",
+          "source": "PChome Online 新聞",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOV3J1QVkwcGRqY1lMUUJWcFlnYzFienVxRzFsY2FvbktGX196bHpHZ2V2WmFNeXFwRVVjYVlIYWR6X0VzRGd6STFrRXRrMkU4RnRTM3dDbkpXeVExX094ajJ6RnNWMlc1NWEybm1kM2VKd3RhTTBYUUFxQm95YWRiaXhBVmQyTFFyLUpCVg?oc=5",
+          "date": "2026-07-24"
+        },
+        {
+          "title": "日本企業AI應用重心轉向創造成果 逾四成面臨人才短缺挑戰",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxNTFltcE1YaFh0TmtyelN5a3NjeHdvQV9BSEJwQ1N4dmZhN2pMT0NKWnVDQjRTcURPS01sakVfZkVuLWlmeEk3M0V4Y2hHSWdYNGxncTdwQU1QTERHcXRiNEdkZ2VnaFN1cVZ1Z2RsQU5LMEo4NmJ6alY5LUZEUFkzNlNHZWY2WUc2M3I5MW8xQVhWRDZnREZZQmdKWDd2LVVabzRjZzdaZVBFc18xSHI1SVZNbVBBdU83QWVsRFBCWHZCYlNSalRCdnpBNkgxQTZkNG14bXF0NENYN2RTbi1kM3BMQ2FIV3dkN3FTN2phNGxFMWNFa2QtcU1UTHdiaS1tbUtnMTRkUTBvSUtqc0J6U05INHFJeGJrNWhtb2dBOU4wLVNmbDFwbHdXOUZnSU1nYmZWb05SMjNiT3YtM3dGc1JpWE4tMUx2bEE2S3FoLVJzZHk0MG82RFYwYzRNNDRNa0pjR1ZjLU95aHpDcndyb2dFLXdjZFE?oc=5",
+          "date": "2026-07-23"
+        },
+        {
+          "title": "出身貧困、國中畢業當女工，她逆襲成台灣大車隊副董：就算一手爛牌，也能打得漂亮",
+          "source": "天下雜誌",
+          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1ySzZyMXFrME9mM3BGWmFmbDIxT3Q4Rk5jWExfZlQyUDRjeVRnbHhBR3lwRGNaVkxUcnU0MTVjQkVsSFJSRmhvODZaNTlqUQ?oc=5",
+          "date": "2026-07-23"
+        },
+        {
+          "title": "金管會揭保險監理3方向推AI轉型與全齡金融| 產經",
+          "source": "中央社 CNA",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBNeHRaWGhEQURyUjVNcHBvT3hIWXlXRkR6LUpabW1tVS1HUHBTLVBSbzF3a2o3enNjSng1dnlCT29GdTFKbUhzMHhNd1A2OFJlcXZuUFNvYV9UMnFwSXc?oc=5",
+          "date": "2026-07-22"
+        },
+        {
+          "title": "外送專法7/21上路！Uber、foodpanda外送費會漲價嗎？消費者必知重點一次看",
+          "source": "經理人",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBuZldMWjZHdk93emNTMjdtcGczdWNEc3hhT19ud2dBQmhlbzFXMTFNbjVpeHZCclBpVzV3NDk1Vjk0UV9ycVBfZTlsRmVTT0JmMDVlLW90MjgyODRudXNsRg?oc=5",
+          "date": "2026-07-22"
+        },
+        {
+          "title": "叡揚資訊舉辦 Mend.io 實機體驗營 打造 AI 時代無痛合規 AppSec 流程",
+          "source": "iThome",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE8xelJQTEdUZDFGMFNiSHlqbDBPTTZJNTBYUG13TUpRNjRXSHF1Snhyb2lnZnA3S2JZcmZPWVh0UERVWXFTY2VlLU5QRQ?oc=5",
+          "date": "2026-07-21"
+        },
+        {
+          "title": "AI Agent 已進入企業核心流程，為何反而遇到效率瓶頸？資策會產業情報研究所主任韓揚銘揭流程、人才與治理解方",
+          "source": "LINE TODAY",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAxdUF1VkNjNU9fS2dQc3ZwNXVybWZYZlVxcDhuMWZ5LTc4ZVNqWEV2TnFtVTBsWW14Um1kcEJYbzhsSXVmbE5PUENTbFFIQTBQMVJaUHF3?oc=5",
+          "date": "2026-07-21"
+        },
+        {
+          "title": "Google、台積電都沒設AI 長，全球企業為何爭相設立？CAIO 工作日常、權責與存在價值完整解析",
+          "source": "未來商務",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE55QmlrUWZHSl9SelZiSjRHM0ZsaDNvX2c2aVJMS08zc3h5QVNMbkwzU3FJbE85LVdEN1NZQ2dEWWVWLWtGTXc1S3BabTEwOHhWSThsOA?oc=5",
+          "date": "2026-07-21"
+        }
+      ],
+      "sources": {
+        "queries": [
+          "企業 導入 AI Agent 生產力",
+          "AI 工具 企業 應用 台灣",
+          "生成式 AI 企業 導入 效率"
+        ],
+        "feeds": []
+      }
+    },
+    {
+      "topic": "永續 / 企業實務",
+      "gist": "溫室氣體盤查、永續人才培育、碳權註銷",
+      "sections": [
+        {
+          "heading": "溫室氣體盤查與人才建置",
+          "body": "現在企業面臨碳費徵收與供應鏈減碳壓力，做好溫室氣體（GHG）盤查是第一步。溫室氣體盤查簡單說就是算清楚公司一年排了多少二氧化碳等溫室氣體，通常會依照 ISO 14064-1 這套國際標準來執行。目前政府與公協會正積極開設培訓課程，像是有 14 家指標企業聯手參加上班族溫室氣體稽核專班[[4]]，官方雲嘉南分署也透過輔導機制協助中小企業掌握碳管理[[1]]。對企業來說，光會算碳還不夠，內部必須培養專業的溫室氣體稽核與管理人才，才能確保盤查數據符合第三方查證的要求，避免未來因為數據不實遭到罰款或被踢出供應鏈。"
+        },
+        {
+          "heading": "地方低碳轉型與碳權應用",
+          "body": "除了組織內部的碳盤查，地方政府與民間機構也開始嘗試多元的低碳轉型專案。例如苗栗縣推動低碳旅遊行程，白沙屯拱天宮更取得碳權註銷[[0]]。所謂碳權註銷，就是把買來的碳權在系統中登記塗銷，代表這些碳額度已經被拿來抵銷碳排放，不能再轉賣。雖然民間機構的碳權註銷多屬於自願性質，但展現了非營利組織參與減碳的決心。未來企業在規畫 ESG 或範疇三（供應鏈與營運相關的間接排放）減碳策略時，也可以參考這種將在地文化或旅遊結合碳權抵換的模式，提升永續品牌的附加價值。"
+        },
+        {
+          "heading": "同業動態",
+          "body": "在觀察名單中，台塑企業本週展現了在向下扎根與永續教育方面的佈局，攜手虎尾科技大學與虎尾高中，舉辦 Formosa 科學探索營，將綠能與永續觀念帶入雲林在地學子的教育中[[2]][[3]]。這種結合在地產學資源的永續向下扎根，有助於企業早期經營在地關係並培育未來的綠能人才。至於觀察名單中的 USPACE、中油、肯譯、機場快線、銀行業、車商、產險業、大都會車隊、台灣大車隊、順鋒機場接送、漢聲租車與 Uber 等對象，本週新聞清單中無明顯相關動作。"
+        }
+      ],
+      "items": [
+        {
+          "title": "苗栗推3條低碳遊程 白沙屯拱天宮取得碳權註銷",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMiugJBVV95cUxPQlR4OE9TSDJUeWRhTEVETi11YkIyNlVGRnNaVVF1Wmo1SlNuZHNTSFBiSm1BMTdBX1Y3TnY4ckxWYkRxR201S1h1SjBhdnNsVXdSYndxM2tLNzNGU1FBVy1jcWVIcFNiR09nSG8zcGhXc1hDSGczQlZTNjJ2TGZfa3d5TUowLWc4MVJTWHl5T2ZzTGxEZ2RFRFpCVzE1eXJaQUU1RkQ4SUVpZmlaQ2JjV2pTWGVSeGxXaTR5bzZXQ3REblc3bWhNY3V4MDQ5dldHWUs4ODktLVUxZ2NjRms0X0JOSTlJb3lBWUpEOWNCVnhKSzFPTTNSTjE3ems4RE9iZ21uSDhUSi1VSVpTclpEbGpYWE9OZVRDOWRvM1gzOEx6QUw0bVZyN0dqVnZ1eGx2QXF5dlFvdGxtQQ?oc=5",
+          "date": "2026-07-25"
+        },
+        {
+          "title": "掌握碳管理關鍵！雲嘉南分署助攻中小企業精準減碳",
+          "source": "中央社 CNA",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9HZFluWU1sdHM2X2NtRzBNS3ZhM0RWb29sLXJsdVdkaWo1dXM3NFFhaWdTck5FSFhRNmUzc0xZSGdBR0FPTFdrUHVxSEtIcUlqTF92ZmlR?oc=5",
+          "date": "2026-07-24"
+        },
+        {
+          "title": "台塑企業攜手虎尾科大、虎尾高中辦Formosa科學探索營 啟發雲林學子綠能永續視野",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB2akZSeW5iYjg3X2phT1RGZE8tWXJTVXZ0NW0tSXRmclBqa2VabmlacnpHUzgwMGh3Uk9NSkJKRF9Gc2dGLTMzM1ctQkNlem9iX0E?oc=5",
+          "date": "2026-07-23"
+        },
+        {
+          "title": "從玩科學到學永續！台塑攜手虎科大辦探索營 培育綠能小尖兵",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE13S29lMHFCcU5TQUZYQ2JUNXVSeDhoOE9nNGRmeW5Gb1UtSmZHUnVjUGxKSURYdjUwYXJra3RCNUdIbmlrSVdQZ052bGw1TzF2Zmc?oc=5",
+          "date": "2026-07-22"
+        },
+        {
+          "title": "14家指標企業聯手布局永續人才 GHG稽核專班開訓",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8xRnRxZGVjNG5OeGprZlNIeTY1TERiWWkweXhhVEg4SER1VXlhOWlEY0g5TXRyU2R3dnlrT3BWMkltTUpyZ1dhMEhVR2MyUG5WbUE?oc=5",
+          "date": "2026-07-21"
+        }
+      ],
+      "sources": {
+        "queries": [
+          "ISO 14064 溫室氣體盤查 企業",
+          "企業 淨零 碳盤查 轉型",
+          "碳足跡 查證 永續 顧問 服務",
+          "永續 顧問 公司 新服務",
+          "碳盤查 查證 機構 台灣",
+          "ESG 服務 平台 新產品 上線"
+        ],
+        "feeds": [
+          "https://esg.gvm.com.tw/rss"
+        ]
+      }
+    }
+  ]
+}
