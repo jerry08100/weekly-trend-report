@@ -63,6 +63,14 @@ PEER_SUFFIX = {
     "永續 / 企業實務": "永續 淨零 碳",
     "AI / 企業應用": "AI 數位轉型",
 }
+# GRANT_TOPICS：這些主題產「條列補助卡片」（部會/對象/金額/期限），不寫長文。
+GRANT_TOPICS = {"政府補助 / 計畫"}
+# TAB_LABEL：頂部分頁按鈕的短標籤。
+TAB_LABEL = {
+    "永續 / 企業實務": "永續",
+    "AI / 企業應用": "AI",
+    "政府補助 / 計畫": "補助",
+}
 
 DAYS = 7                       # 抓幾天內
 CAP = 30                       # 每主題最多留幾則
@@ -136,7 +144,7 @@ def norm(t):
 def collect():
     cutoff = datetime.now(timezone.utc) - timedelta(days=DAYS)
     result, log = {}, []
-    topics = set(QUERIES) | set(FEEDS)
+    topics = list(QUERIES) + [t for t in FEEDS if t not in QUERIES]  # 保持定義順序(永續→AI→補助)
     for topic in topics:
         peer_q = ([f"{p} {PEER_SUFFIX[topic]}".strip() for p in PEERS]  # 只有 PEER_SUFFIX 主題才查名單
                   if topic in PEER_SUFFIX else [])
@@ -190,28 +198,39 @@ def gemini_digest(topic, rows):
         t, src = split_source(it["title"])
         lines.append(f"[{i}] {t}" + (f"（{src}）" if src else ""))
     focus = FOCUS.get(topic, "")
-    prompt = (
-        f"你是資深產業分析師。下面是本週「{topic}」的新聞清單（每則附編號）。\n\n"
-        + (f"【聚焦方向】{focus}\n\n" if focus else "")
-        + "請用繁體中文輸出：\n"
-        "1. gist：3~5 個關鍵詞（用「、」分隔），一眼概括本週該主題在講什麼，給側欄導覽用。"
-        "例如「碳費新規、SBTi 2.0、淨零人才」。\n"
-        "2. sections：分 3~4 個小節，各給有意義的 heading（例如「政策與法規」「產業趨勢」「企業實務」）。\n"
-        + ("2b. 其中『必須』有一節 heading 設為「同業動態」，專門講這份觀察名單做了什麼："
-           f"{'、'.join(PEERS)}。有相關新聞就點名『哪個對象做了什麼具體動作』並附引用；"
-           "名單中沒出現在本週新聞的對象就不用提，若整份都沒有名單相關動態，"
-           "該節就據實寫「本週觀察名單無明顯相關動作」。這節是主管最看重的，寫具體。\n"
-           if topic in PEER_SUFFIX else "")
-        + "3. 每個小節 body 約 150~230 字連貫段落（不要條列），全篇合計約 600~900 字，把左欄寫得充實。\n"
-        "4. 內容要有深度：不只描述新聞，還要補充相關『產業背景知識』（法規要點、標準內涵、盤查/查證常識與實務）。\n"
-        "5. 有分析、有觀點，串出脈絡，不要流水帳；讀者想深入會自己點連結。\n"
-        "5b. 文字要白話、口語、好懂，像資深同事直接跟你講重點——不要文謅謅的書面腔、不要成語堆砌與冗長修飾。"
-        "專有名詞（如 SBTi、AppSec）第一次出現用一句白話解釋它是什麼。句子盡量短、直接。\n"
-        "6. 在提到具體事件/法規/數據處，於該句尾用 [[編號]] 標引用來源，可多個如 [[3]][[7]]；編號即下方新聞編號。\n"
-        "7. 產業背景知識可用你的既有常識補充，但『具體事件、公司、數字』只能根據提供的標題，不得杜撰。"
-        "若清單相關動態少，就把該主題的產業背景與同業趨勢講得更完整來補足篇幅。\n\n"
-        "新聞清單：\n" + "\n".join(lines)
-    )
+    head = (f"你是資深產業分析師。下面是本週「{topic}」的新聞清單（每則附編號）。\n\n"
+            + (f"【聚焦方向】{focus}\n\n" if focus else ""))
+    if topic in GRANT_TOPICS:
+        prompt = (head + "請用繁體中文輸出：\n"
+            "1. gist：3~5 個關鍵詞，概括本週補助重點（如「儲能補助、地方SBIR、數位轉型」）。\n"
+            "2. grants：把新聞裡的『政府補助／計畫』整理成條列，每個計畫一個物件，欄位：\n"
+            "   - agency：主辦部會或單位（如 經濟部、數位發展部、新竹縣政府）\n"
+            "   - program：計畫名稱\n"
+            "   - target：補助對象（哪類企業或條件；白話）\n"
+            "   - amount：補助金額或比例；新聞沒寫就填「詳見公告」\n"
+            "   - deadline：申請期限；沒寫就填「詳見公告」\n"
+            "   - idx：來源新聞編號（整數）\n"
+            "只根據下列新聞整理，不得杜撰計畫、金額或期限；不是補助計畫的新聞（純政策論述、評論）不要列。"
+            "本週若沒有可列的補助，grants 給空陣列。\n"
+            "3. sections 給空陣列。\n\n"
+            "新聞清單：\n" + "\n".join(lines))
+    else:
+        prompt = (head + "請用繁體中文輸出：\n"
+            "1. gist：3~5 個關鍵詞（用「、」分隔），一眼概括本週該主題在講什麼。\n"
+            "2. sections：分 3~4 個小節，各給有意義的 heading（例如「政策與法規」「產業趨勢」「企業實務」）。\n"
+            + ("2b. 其中『必須』有一節 heading 設為「同業動態」，專門講這份觀察名單做了什麼："
+               f"{'、'.join(PEERS)}。有相關新聞就點名『哪個對象做了什麼具體動作』並附引用；"
+               "名單中沒出現在本週新聞的對象就不用提，若整份都沒有名單相關動態，"
+               "該節就據實寫「本週觀察名單無明顯相關動作」。這節是主管最看重的，寫具體。\n"
+               if topic in PEER_SUFFIX else "")
+            + "3. 每個小節 body 約 150~230 字連貫段落（不要條列），全篇合計約 600~900 字。\n"
+            "4. 內容要有深度：補充相關『產業背景知識』（法規要點、標準內涵、盤查/查證常識與實務）。\n"
+            "5. 有分析、有觀點，串出脈絡，不要流水帳；讀者想深入會自己點連結。\n"
+            "5b. 文字要白話、口語、好懂，像資深同事直接跟你講重點——不要文謅謅的書面腔、不要成語堆砌與冗長修飾。"
+            "專有名詞（如 SBTi、AppSec）第一次出現用一句白話解釋。句子盡量短、直接。\n"
+            "6. 在提到具體事件/法規/數據處，於該句尾用 [[編號]] 標引用來源，可多個如 [[3]][[7]]；編號即下方新聞編號。\n"
+            "7. 產業背景知識可用你的既有常識補充，但『具體事件、公司、數字』只能根據提供的標題，不得杜撰。\n\n"
+            "新聞清單：\n" + "\n".join(lines))
     body = {
         "contents": [{"parts": [{"text": prompt}]}],
         "generationConfig": {
@@ -231,8 +250,23 @@ def gemini_digest(topic, rows):
                             "required": ["heading", "body"],
                         },
                     },
+                    "grants": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "agency": {"type": "string"},
+                                "program": {"type": "string"},
+                                "target": {"type": "string"},
+                                "amount": {"type": "string"},
+                                "deadline": {"type": "string"},
+                                "idx": {"type": "integer"},
+                            },
+                            "required": ["agency", "program", "target", "amount", "deadline", "idx"],
+                        },
+                    },
                 },
-                "required": ["gist", "sections"],
+                "required": ["gist"],
             },
         },
     }
@@ -319,6 +353,28 @@ a{color:inherit}
 .masthead .issue{font-family:var(--mono);font-size:13px;letter-spacing:.1em;color:var(--ink2);
   margin-top:12px}
 .rule{height:2px;background:var(--ink);margin:22px 0 4px}
+/* ── 分頁列 ── */
+.tabs{display:flex;gap:6px;margin:26px 0 4px;border-bottom:2px solid var(--line);flex-wrap:wrap}
+.tab{font-family:inherit;font-size:16px;font-weight:700;color:var(--ink2);background:none;border:0;
+  padding:11px 20px;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;
+  border-radius:7px 7px 0 0;transition:color .15s,background .15s}
+.tab:hover{color:var(--brand);background:var(--card)}
+.tab.active{color:var(--brand);border-bottom-color:var(--accent)}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.section.tabbed{display:none;margin-top:26px}
+.section.tabbed.active{display:block}
+/* ── 補助卡片 ── */
+.grants{display:flex;flex-direction:column;gap:14px}
+.grant{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
+  border-radius:10px;padding:16px 18px;box-shadow:0 4px 14px rgba(var(--shadow),.06)}
+.g-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.g-agency{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:var(--brand);font-weight:700}
+.g-src{font-family:var(--mono);font-size:12px;color:var(--accent);text-decoration:none;white-space:nowrap}
+.g-src:hover{text-decoration:underline}
+.g-name{font-size:18px;font-weight:800;color:var(--ink);margin:6px 0 12px;line-height:1.35}
+.g-meta{display:grid;grid-template-columns:1fr;gap:7px;font-size:15px;color:var(--ink2)}
+@media(min-width:560px){.g-meta{grid-template-columns:1fr 1fr}}
+.g-meta b{color:var(--brand);font-weight:600;margin-right:8px}
 /* ── 主題區塊 ── */
 .section{margin-top:56px}
 .section h2{font-size:clamp(24px,2.4vw,32px);font-weight:800;letter-spacing:-.01em;
@@ -421,6 +477,7 @@ def build_report(data):
             "topic": topic,
             "gist": (dg.get("gist") if dg else "") or "",
             "sections": secs,
+            "grants": (dg.get("grants") if dg else []) or [],
             "items": items,
             "sources": {"queries": QUERIES.get(topic, []), "feeds": FEEDS.get(topic, [])},
         })
@@ -477,15 +534,44 @@ def render_article(topic, sections, items):
         body = re.sub(r"\[\[(\d+)\]\]", repl, html.escape(clean_body(sec.get("body", ""))))
         paras = [p.strip() for p in re.split(r"\n{2,}", body) if p.strip()]
         body_parts.append('<div class="body">' + "".join(f"<p>{p}</p>" for p in paras) + "</div>")
-    refs = ['<div class="refs"><span class="kicker">References · 參考來源'
-            f'（{len(items)} 則）</span><ol>']            # 右欄：全部來源
-    for n, it in enumerate(items, 1):
-        refs.append(f'<li id="ref-{tk}-{n}"><a href="{html.escape(it["link"])}" '
-                    f'target="_blank">{html.escape(it["title"])}</a>'
-                    f'<span class="src">{html.escape(it["source"])} {it["date"]}</span></li>')
-    refs.append('</ol></div>')
     return (f'<div class="cols"><div class="col-body">{"".join(body_parts)}</div>'
-            f'<aside class="col-refs">{"".join(refs)}</aside></div>')
+            f'<aside class="col-refs">{build_refs(tk, items)}</aside></div>')
+
+
+def build_refs(tk, items):
+    """右欄參考來源清單（編號 = 項目序號，對齊內文 [n]）。"""
+    out = ['<div class="refs"><span class="kicker">References · 參考來源'
+           f'（{len(items)} 則）</span><ol>']
+    for n, it in enumerate(items, 1):
+        out.append(f'<li id="ref-{tk}-{n}"><a href="{html.escape(it["link"])}" '
+                   f'target="_blank">{html.escape(it["title"])}</a>'
+                   f'<span class="src">{html.escape(it["source"])} {it["date"]}</span></li>')
+    out.append('</ol></div>')
+    return "".join(out)
+
+
+def render_grants(topic, grants, items):
+    """補助主題：條列卡片（部會/計畫/對象/金額/期限），右欄仍附來源清單。"""
+    tk = tkey(topic)
+    cards = []
+    for g in grants:
+        i = g.get("idx")
+        link = items[i]["link"] if isinstance(i, int) and 0 <= i < len(items) else ""
+        cite = (f'<a class="g-src" href="{html.escape(link)}" target="_blank">來源 ↗</a>'
+                if link else "")
+        cards.append(
+            '<div class="grant">'
+            f'<div class="g-top"><span class="g-agency">{html.escape(g.get("agency",""))}</span>{cite}</div>'
+            f'<div class="g-name">{html.escape(g.get("program",""))}</div>'
+            '<div class="g-meta">'
+            f'<span><b>對象</b>{html.escape(g.get("target","") or "—")}</span>'
+            f'<span><b>補助</b>{html.escape(g.get("amount","") or "詳見公告")}</span>'
+            f'<span><b>期限</b>{html.escape(g.get("deadline","") or "詳見公告")}</span>'
+            '</div></div>')
+    left = ('<div class="grants">' + "".join(cards) + '</div>' if cards
+            else '<p class="note">本週沒有明確可條列的補助計畫。</p>')
+    return (f'<div class="cols"><div class="col-body">{left}</div>'
+            f'<aside class="col-refs">{build_refs(tk, items)}</aside></div>')
 
 
 def render_sources_panel(report):
@@ -512,36 +598,55 @@ def render_sources_panel(report):
             '<div class="sp-body">' + "".join(blocks) + '</div></details>')
 
 
-def render_report_body(report):
-    """單份周報的內文（不含 <html> 外殼），供存檔頁、首頁、email 共用。"""
+def render_report_body(report, tabs=False):
+    """單份周報內文。tabs=True 時頂部三分頁、一次顯示一個主題（網頁用）；
+    tabs=False 時全部展開（email 用，信箱不跑 JS）。"""
     parts = ['<header class="masthead">'
              '<div class="kicker">Weekly Intelligence Briefing</div>'
              '<h1>趨勢周報</h1>'
              f'<div class="issue">ISSUE {report["date"]} · 產業情勢週報</div>'
              '</header><div class="rule"></div>']
+    if tabs:                                          # 分頁列
+        btns = "".join(
+            f'<button class="tab" data-t="{tkey(tp["topic"])}">'
+            f'{html.escape(TAB_LABEL.get(tp["topic"], tp["topic"]))}</button>'
+            for tp in report["topics"])
+        parts.append(f'<nav class="tabs">{btns}</nav>')
     for tp in report["topics"]:
         items = tp["items"]
         tk = tkey(tp["topic"])
         kick = KICKER.get(tp["topic"], "")
-        parts.append(f'<section class="section" id="{tk}">')
+        cls = "section tabbed" if tabs else "section"
+        parts.append(f'<section class="{cls}" id="{tk}">')
         if kick:
             parts.append(f'<div class="kicker">{html.escape(kick)}</div>')
         parts.append(f'<h2>{html.escape(tp["topic"])}'
                      f'<span class="count">{len(items)} 則</span></h2>'
                      '<div class="hairline"></div>')
-        if not items:
-            parts.append('<p class="note">本週無相關動態。</p></section>')
-            continue
-        if tp["sections"]:                           # 有 AI：摘要 + 全部項目當參考來源
+        if tp.get("grants") or tp["topic"] in GRANT_TOPICS:   # 補助：條列卡片
+            parts.append(render_grants(tp["topic"], tp.get("grants", []), items))
+        elif tp["sections"]:                                  # 有 AI 長文
             parts.append(render_article(tp["topic"], tp["sections"], items))
-        else:                                        # 無 AI：直接列全部
+        elif items:                                           # 無 AI：直接列全部
             for it in items:
                 parts.append(f'''<div class="item">
 <a href="{html.escape(it["link"])}" target="_blank">{html.escape(it["title"])}</a>
 <span class="date">{html.escape(it["source"])} {it["date"]}</span></div>''')
+        else:
+            parts.append('<p class="note">本週無相關動態。</p>')
         parts.append('</section>')
     parts.append(f'<p class="meta">自動產生於 {report["generated_at"]}　·　'
                  '資料來源 Google News RSS 等公開來源　·　AI 整理僅供參考，引用請以原文為準</p>')
+    if tabs:                                          # 分頁切換 + 錨點深連結
+        parts.append(
+            "<script>(function(){var t=[].slice.call(document.querySelectorAll('.tab'));"
+            "function s(id){document.querySelectorAll('.section.tabbed').forEach(function(x){"
+            "x.classList.toggle('active',x.id===id)});t.forEach(function(b){"
+            "b.classList.toggle('active',b.dataset.t===id)});}"
+            "t.forEach(function(b){b.onclick=function(){s(b.dataset.t);"
+            "history.replaceState(null,'','#'+b.dataset.t)};});"
+            "var ids=t.map(function(b){return b.dataset.t;});var h=location.hash.slice(1);"
+            "s(ids.indexOf(h)>=0?h:ids[0]);})();</script>")
     return "\n".join(parts)
 
 
@@ -585,7 +690,7 @@ def build_sidebar(reports, order, base, active_date=None):
 def compose_page(report, sidebar_html, theme=None):
     """側欄 + 右上角資料來源按鈕 + 該份周報全文，組成完整頁。"""
     inner = (f'{render_sources_panel(report)}\n<div class="layout">\n{sidebar_html}\n'
-             f'<main class="main">{render_report_body(report)}</main>\n</div>')
+             f'<main class="main">{render_report_body(report, tabs=True)}</main>\n</div>')
     return page(f'趨勢周報 {report["date"]}', inner, theme)
 
 
