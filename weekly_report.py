@@ -725,8 +725,13 @@ def render_report_body(report, tabs=False):
         parts.append(f'<section class="{cls}" id="{tk}">')
         if kick:
             parts.append(f'<div class="kicker">{html.escape(kick)}</div>')
+        if tp["topic"] in GRANT_TOPICS:              # 補助：算實際顯示的計畫數(常態+未過期動態)
+            cnt = len(STANDING_GRANTS) + sum(
+                1 for g in (tp.get("grants") or []) if not deadline_passed(g.get("deadline", "")))
+        else:
+            cnt = len(items)
         parts.append(f'<h2>{html.escape(tp["topic"])}'
-                     f'<span class="count">{len(items)} 則</span></h2>'
+                     f'<span class="count">{cnt} 則</span></h2>'
                      '<div class="hairline"></div>')
         if tp.get("grants") or tp["topic"] in GRANT_TOPICS:   # 補助：條列卡片
             parts.append(render_grants(tp["topic"], tp.get("grants", []), items))
@@ -779,10 +784,9 @@ def build_sidebar(reports, order, base, active_date=None):
             f'<a href="{home}"><span class="kicker">Archive · 歷史</span>'
             '<span class="brand">趨勢周報</span></a></div>']
     rank = {t: i for i, t in enumerate(order)}
-    for rep in reports:                              # 已依日期新到舊；每個日期一列、點開展三類
+    for rep in reports:                              # 已依日期新到舊；每個日期一列、點開展三類（預設全收合）
         d = rep["date"]
-        op = " open" if d == active_date else ""     # 當前週預設展開，其餘收合
-        side.append(f'<details class="day-item"{op}><summary class="day">{d}</summary>')
+        side.append(f'<details class="day-item"><summary class="day">{d}</summary>')
         for tp in sorted(rep["topics"], key=lambda x: rank.get(x["topic"], 99)):
             tk = tkey(tp["topic"])
             side.append(
