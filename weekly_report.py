@@ -102,19 +102,24 @@ STANDING = {
         # 年度徵件的企業獎項（永續／AI／數位轉型）。徵件期間見各官網。
         {"agency": "台灣永續能源研究基金會 TAISE", "program": "TCSA 台灣企業永續獎（含 AI 賦能永續獎）",
          "target": "台灣企業、政府機關", "amount": "ESG 綜合／單項／報告書／傑出人士",
-         "status": "依年度徵件", "url": "https://tcsaward.org.tw/"},
+         "fee": "單項每項約 NT$12,600", "status": "每年約 11～1 月徵件（下屆見官網）",
+         "url": "https://tcsaward.org.tw/"},
         {"agency": "遠見雜誌", "program": "遠見 ESG 企業永續獎",
          "target": "企業（ESG 永續）", "amount": "榮譽獎項",
-         "status": "依年度徵件", "url": "https://event.gvm.com.tw/esg/"},
+         "fee": "每組約 NT$15,750", "status": "每年約上半年徵件（下屆見官網）",
+         "url": "https://event.gvm.com.tw/esg/"},
         {"agency": "天下雜誌", "program": "天下永續公民獎（ESG）",
          "target": "企業（ESG 永續）", "amount": "榮譽獎項",
-         "status": "依年度徵件", "url": "https://csr.cw.com.tw/esgaward/"},
+         "fee": "需報名費（見簡章）", "status": "每年約 5～7 月徵件（下屆見官網）",
+         "url": "https://csr.cw.com.tw/esgaward/"},
         {"agency": "哈佛商業評論 台灣", "program": "數位轉型鼎革獎",
          "target": "企業、醫療機構（數位轉型＋永續）", "amount": "榮譽獎項",
-         "status": "依年度徵件", "url": "https://event.hbrtaiwan.com/hbrdx/"},
+         "fee": "見官網簡章", "status": "每年約 3～6 月徵件（下屆見官網）",
+         "url": "https://event.hbrtaiwan.com/hbrdx/"},
         {"agency": "國家發展委員會", "program": "國家永續發展獎",
          "target": "企業、機關、團體、學校", "amount": "國家級榮譽",
-         "status": "依年度徵件", "url": "https://ncsdaward.ndc.gov.tw/"},
+         "fee": "免費（政府主辦）", "status": "依年度公告徵件（見官網）",
+         "url": "https://ncsdaward.ndc.gov.tw/"},
     ],
 }
 # TAB_LABEL：頂部分頁按鈕的短標籤。
@@ -688,11 +693,14 @@ def deadline_passed(text):
         return False
 
 
-def _grant_card(agency, program, target, amount, date_label, date_val, link, cite_label):
+def _grant_card(agency, program, target, amount, amount_label, date_label, date_val,
+                link, cite_label, fee=None):
     cite = (f'<a class="g-src" href="{html.escape(link)}" target="_blank">{cite_label} ↗</a>'
             if link else "")
     meta = (f'<span><b>對象</b>{html.escape(target or "—")}</span>'
-            f'<span><b>補助</b>{html.escape(amount or "—")}</span>')
+            f'<span><b>{amount_label}</b>{html.escape(amount or "—")}</span>')
+    if fee is not None:
+        meta += f'<span><b>報名費</b>{html.escape(fee or "見官網")}</span>'
     if date_label:
         meta += f'<span><b>{date_label}</b>{html.escape(date_val or "—")}</span>'
     return ('<div class="grant">'
@@ -712,10 +720,12 @@ def render_grants(topic, grants, items):
     news_head = "本週獎項動態" if award else "本週相關動態"
     news_date = "報名截止" if award else "期限"
 
+    amt_label = "獎勵" if award else "補助"
     out = [f'<h4>{std_head}</h4><p class="g-hint">{std_hint}</p><div class="grants">']
     for g in STANDING.get(topic, []):                   # 固定清單（官方連結，永遠顯示）
         out.append(_grant_card(g["agency"], g["program"], g["target"], g["amount"],
-                               "受理", g.get("status", ""), g["url"], cite))
+                               amt_label, "受理", g.get("status", ""), g["url"], cite,
+                               fee=g.get("fee") if award else None))
     out.append('</div>')
 
     news = []
@@ -725,7 +735,7 @@ def render_grants(topic, grants, items):
         i = g.get("idx")
         link = items[i]["link"] if isinstance(i, int) and 0 <= i < len(items) else ""
         news.append(_grant_card(g.get("agency", ""), g.get("program", ""), g.get("target", ""),
-                                g.get("amount", "").strip(), news_date,
+                                g.get("amount", "").strip(), amt_label, news_date,
                                 g.get("deadline", "").strip() or "詳見公告", link, "來源"))
     if news:
         out.append(f'<h4>{news_head}</h4><div class="grants">' + "".join(news) + '</div>')
