@@ -84,12 +84,8 @@ STANDING_GRANTS = [
     {"agency": "經濟部 產業發展署", "program": "產業升級創新平台輔導計畫（TIIP）",
      "target": "企業／產業聯盟（前瞻技術研發）", "amount": "依計畫審定",
      "status": "常態（至經費用罄）", "url": "https://eii.nat.gov.tw/tiip/"},
-    {"agency": "經濟部 產業發展署", "program": "以大帶小 製造業低碳及智慧化升級轉型補助",
-     "target": "製造業（含供應鏈中小企業）", "amount": "智慧化最高 2,000 萬、低碳化最高 3,000 萬",
-     "status": "依年度梯次（下梯見官網）", "url": "https://www.ida.gov.tw/"},
-    {"agency": "經濟部 產業發展署", "program": "中小型製造業 低碳及智慧化升級轉型個案補助（CITD）",
-     "target": "中小型製造業", "amount": "每家最高 300～500 萬（依員工數）",
-     "status": "依年度梯次（115 年度已截止 2/9，下梯見官網）", "url": "https://citd.cpc.tw/citdweb/"},
+    # 只放『現正開放、隨時可報名』的常態計畫；限時梯次(如 CITD/以大帶小)會過期，
+    # 改由「本週相關動態」在開放期間帶進來(附明確截止、過期自動濾)。
 ]
 # TAB_LABEL：頂部分頁按鈕的短標籤。
 TAB_LABEL = {
@@ -408,19 +404,16 @@ a{color:inherit}
 .side-title a{text-decoration:none;display:block}
 .side-title .brand{font-size:22px;font-weight:800;color:var(--side-brand);letter-spacing:.02em;margin-top:7px}
 .side .kicker{color:var(--side-grp)}
-.arc{margin-top:4px}
-.arc>summary{list-style:none;cursor:pointer;font-family:var(--mono);font-size:12px;letter-spacing:.12em;
-  text-transform:uppercase;color:var(--side-fg2);padding:8px 0;display:flex;align-items:center;gap:8px}
-.arc>summary::-webkit-details-marker{display:none}
-.arc>summary::before{content:"▸";color:var(--accent);transition:transform .15s}
-.arc[open]>summary::before{transform:rotate(90deg)}
-.arc>summary:hover{color:var(--side-fg)}
-.arc-list{margin-top:6px}
-.day{font-family:var(--mono);font-size:14px;letter-spacing:.04em;color:var(--side-date);
-  font-weight:700;margin:24px 0 8px;display:flex;align-items:center;gap:8px}
-.day::before{content:"";width:7px;height:7px;background:var(--accent);border-radius:50%;flex:none}
-.day.active{color:var(--accent)}
-.wk{display:block;text-decoration:none;padding:8px 11px;margin:2px 0 2px 15px;border-radius:7px;
+.day-item{border-bottom:1px solid var(--side-line)}
+.day-item>summary{list-style:none;cursor:pointer;font-family:var(--mono);font-size:14px;
+  letter-spacing:.04em;color:var(--side-date);font-weight:700;padding:12px 0;
+  display:flex;align-items:center;gap:9px}
+.day-item>summary::-webkit-details-marker{display:none}
+.day-item>summary::before{content:"▸";color:var(--accent);font-size:11px;transition:transform .15s}
+.day-item[open]>summary::before{transform:rotate(90deg)}
+.day-item[open]>summary{color:var(--accent)}
+.day-item>summary:hover{color:var(--side-fg)}
+.wk{display:block;text-decoration:none;padding:8px 11px;margin:2px 0 2px 16px;border-radius:7px;
   border-left:2px solid var(--side-line);transition:background .15s}
 .wk:hover{background:rgba(255,255,255,.06)}
 .wk:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
@@ -665,7 +658,7 @@ def _grant_card(agency, program, target, amount, date_label, date_val, link, cit
 def render_grants(topic, grants, items):
     """補助主題：常態可申請計畫（固定清單）+ 本週新聞動態（AI 抓、濾過期）。滿版。"""
     out = ['<h4>常態可申請計畫</h4>'
-           '<p class="g-hint">精確截止日以各計畫官方網站最新公告為準。</p>'
+           '<p class="g-hint">以下為現正開放、隨時可報名的計畫（無固定截止）；限時補助見下方「本週相關動態」。</p>'
            '<div class="grants">']
     for g in STANDING_GRANTS:                            # 常態清單（官方連結，永遠顯示）
         out.append(_grant_card(g["agency"], g["program"], g["target"], g["amount"],
@@ -784,19 +777,20 @@ def build_sidebar(reports, order, base, active_date=None):
     home = "index.html" if base == "reports/" else "../index.html"  # 首頁在 root、週頁在 reports/
     side = ['<aside class="side"><div class="side-title">'
             f'<a href="{home}"><span class="kicker">Archive · 歷史</span>'
-            '<span class="brand">趨勢周報</span></a></div>'
-            '<details class="arc"><summary>歷史周報清單</summary><div class="arc-list">']
+            '<span class="brand">趨勢周報</span></a></div>']
     rank = {t: i for i, t in enumerate(order)}
-    for rep in reports:                              # 已依日期新到舊
+    for rep in reports:                              # 已依日期新到舊；每個日期一列、點開展三類
         d = rep["date"]
-        side.append(f'<div class="day{" active" if d == active_date else ""}">{d}</div>')
+        op = " open" if d == active_date else ""     # 當前週預設展開，其餘收合
+        side.append(f'<details class="day-item"{op}><summary class="day">{d}</summary>')
         for tp in sorted(rep["topics"], key=lambda x: rank.get(x["topic"], 99)):
             tk = tkey(tp["topic"])
             side.append(
                 f'<a class="wk" href="{base}{d}.html#{tk}">'
                 f'<span class="wk-topic">{html.escape(tp["topic"])}</span>'
                 f'<span class="wk-s">{html.escape(snippet(tp))}</span></a>')
-    side.append("</div></details></aside>")
+        side.append("</details>")
+    side.append("</aside>")
     return "".join(side)
 
 
