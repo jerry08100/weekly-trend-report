@@ -30,6 +30,12 @@ QUERIES = {
         "研發 補助 SBIR 企業 受理 申請",
         "產業 升級 輔導 補助 開放申請 金額",
     ],
+    "企業獎項 / 競賽": [
+        "企業 永續獎 ESG獎 報名 徵件",
+        "AI 獎 企業 報名 徵選",
+        "數位轉型 獎 企業 報名",
+        "永續 獎項 徵件 開始 截止",
+    ],
 }
 # OFFICIAL_HTML：政府補助主題的官方入口（非新聞）。(清單頁, 網域, 內文連結樣式)。
 # 註：.gov.tw 站在 GitHub Actions(美國) 可能被擋，抓不到會自動略過、退回新聞查詢。
@@ -43,6 +49,7 @@ FEEDS = {
     "永續 / 企業實務": ["https://esg.gvm.com.tw/rss"],                                # ESG遠見（台灣）
     "AI / 企業應用": [],
     "政府補助 / 計畫": [],
+    "企業獎項 / 競賽": [],
 }
 # FOCUS：主題 -> 給 AI 的聚焦提示，決定摘要口味。
 FOCUS = {
@@ -55,12 +62,16 @@ FOCUS = {
     "政府補助 / 計畫": "聚焦『企業可申請、與 AI／數位轉型、永續淨零轉型、研發或產業升級相關』的政府補助與計畫。"
                        "每個點出——哪個部會、計畫名稱、補助對象、補助金額、申請期限。"
                        "排除國旅、農業、家戶節電、個人消費性等與企業轉型無關的補助。",
+    "企業獎項 / 競賽": "聚焦『企業可報名爭取的獎項／競賽』，主題為永續／ESG、AI、數位轉型。"
+                       "每個點出——主辦單位、獎項名稱、報名對象、獎勵或獎項類別、報名截止日。"
+                       "只列企業能報名的，排除個人獎、學生競賽、消費性抽獎。",
 }
 # KICKER：主題 -> 英文 mono 標籤（雙語層級，質感來源）。
 KICKER = {
     "永續 / 企業實務": "SUSTAINABILITY · CORPORATE PRACTICE",
     "AI / 企業應用": "AI · ENTERPRISE ADOPTION",
     "政府補助 / 計畫": "GOVERNMENT GRANTS · FUNDING PROGRAMS",
+    "企業獎項 / 競賽": "AWARDS · COMPETITIONS",
 }
 # PEERS：觀察名單（主管很在意「同業有做」）。只有列在 PEER_SUFFIX 的主題才查名單並強制「同業動態」節。
 PEERS = ["USPACE", "台塑", "中油", "肯譯", "機場快線", "銀行業", "車商", "產險業",
@@ -70,28 +81,48 @@ PEER_SUFFIX = {
     "永續 / 企業實務": "永續 淨零 碳",
     "AI / 企業應用": "AI 數位轉型",
 }
-# GRANT_TOPICS：這些主題產「條列補助卡片」（部會/對象/金額/期限），不寫長文。
-GRANT_TOPICS = {"政府補助 / 計畫"}
-# STANDING_GRANTS：常態可申請的企業轉型補助（官方連結已查證）。永遠顯示，不靠 AI。
-# 要增減計畫改這裡即可。
-STANDING_GRANTS = [
-    {"agency": "數位發展部 數位產業署", "program": "臺灣雲市集 TCloud 數位轉型點數",
-     "target": "中小微企業（採購雲端／數位工具）", "amount": "補助點數 3 萬元，抵最高 50% 費用",
-     "status": "常態", "url": "https://www.tcloud.gov.tw/"},
-    {"agency": "經濟部 中小及新創企業署", "program": "SBIR 小型企業創新研發計畫",
-     "target": "中小企業、新創（創新研發）", "amount": "依計畫類型，個案／跨域補助不等",
-     "status": "常態（隨到隨受理）", "url": "https://sbir.org.tw/"},
-    {"agency": "經濟部 產業發展署", "program": "產業升級創新平台輔導計畫（TIIP）",
-     "target": "企業／產業聯盟（前瞻技術研發）", "amount": "依計畫審定",
-     "status": "常態（至經費用罄）", "url": "https://eii.nat.gov.tw/tiip/"},
-    # 只放『現正開放、隨時可報名』的常態計畫；限時梯次(如 CITD/以大帶小)會過期，
-    # 改由「本週相關動態」在開放期間帶進來(附明確截止、過期自動濾)。
-]
+# GRANT_TOPICS：這些主題產「條列卡片」（不寫長文）。含政府補助與企業獎項。
+GRANT_TOPICS = {"政府補助 / 計畫", "企業獎項 / 競賽"}
+AWARD_TOPICS = {"企業獎項 / 競賽"}       # 卡片語意換成獎項（主辦/獎項/對象/獎勵/報名截止）
+# STANDING：主題 -> 固定卡片清單（已查證，永遠顯示、不靠 AI）。要增減改這裡。
+STANDING = {
+    "政府補助 / 計畫": [
+        # 只放『現正開放、隨時可報名』的常態計畫；限時梯次(CITD/以大帶小)會過期，走「本週相關動態」。
+        {"agency": "數位發展部 數位產業署", "program": "臺灣雲市集 TCloud 數位轉型點數",
+         "target": "中小微企業（採購雲端／數位工具）", "amount": "補助點數 3 萬元，抵最高 50% 費用",
+         "status": "常態", "url": "https://www.tcloud.gov.tw/"},
+        {"agency": "經濟部 中小及新創企業署", "program": "SBIR 小型企業創新研發計畫",
+         "target": "中小企業、新創（創新研發）", "amount": "依計畫類型，個案／跨域補助不等",
+         "status": "常態（隨到隨受理）", "url": "https://sbir.org.tw/"},
+        {"agency": "經濟部 產業發展署", "program": "產業升級創新平台輔導計畫（TIIP）",
+         "target": "企業／產業聯盟（前瞻技術研發）", "amount": "依計畫審定",
+         "status": "常態（至經費用罄）", "url": "https://eii.nat.gov.tw/tiip/"},
+    ],
+    "企業獎項 / 競賽": [
+        # 年度徵件的企業獎項（永續／AI／數位轉型）。徵件期間見各官網。
+        {"agency": "台灣永續能源研究基金會 TAISE", "program": "TCSA 台灣企業永續獎（含 AI 賦能永續獎）",
+         "target": "台灣企業、政府機關", "amount": "ESG 綜合／單項／報告書／傑出人士",
+         "status": "依年度徵件", "url": "https://tcsaward.org.tw/"},
+        {"agency": "遠見雜誌", "program": "遠見 ESG 企業永續獎",
+         "target": "企業（ESG 永續）", "amount": "榮譽獎項",
+         "status": "依年度徵件", "url": "https://event.gvm.com.tw/esg/"},
+        {"agency": "天下雜誌", "program": "天下永續公民獎（ESG）",
+         "target": "企業（ESG 永續）", "amount": "榮譽獎項",
+         "status": "依年度徵件", "url": "https://csr.cw.com.tw/esgaward/"},
+        {"agency": "哈佛商業評論 台灣", "program": "數位轉型鼎革獎",
+         "target": "企業、醫療機構（數位轉型＋永續）", "amount": "榮譽獎項",
+         "status": "依年度徵件", "url": "https://event.hbrtaiwan.com/hbrdx/"},
+        {"agency": "國家發展委員會", "program": "國家永續發展獎",
+         "target": "企業、機關、團體、學校", "amount": "國家級榮譽",
+         "status": "依年度徵件", "url": "https://ncsdaward.ndc.gov.tw/"},
+    ],
+}
 # TAB_LABEL：頂部分頁按鈕的短標籤。
 TAB_LABEL = {
     "永續 / 企業實務": "永續",
     "AI / 企業應用": "AI",
     "政府補助 / 計畫": "補助",
+    "企業獎項 / 競賽": "獎項",
 }
 
 DAYS = 7                       # 抓幾天內
@@ -257,7 +288,22 @@ def gemini_digest(topic, rows):
     focus = FOCUS.get(topic, "")
     head = (f"你是資深產業分析師。下面是本週「{topic}」的新聞清單（每則附編號）。\n\n"
             + (f"【聚焦方向】{focus}\n\n" if focus else ""))
-    if topic in GRANT_TOPICS:
+    if topic in AWARD_TOPICS:
+        prompt = (head + "請用繁體中文輸出：\n"
+            "1. gist：3~5 個關鍵詞，概括本週獎項重點（如「TCSA徵件、遠見ESG獎、AI獎」）。\n"
+            "2. grants：把新聞裡『企業可報名的獎項／競賽』整理成條列，每個獎項一個物件，欄位：\n"
+            "   - agency：主辦單位（如 TAISE、遠見雜誌、經濟部）\n"
+            "   - program：獎項／競賽名稱\n"
+            "   - target：報名對象（哪類企業）\n"
+            "   - amount：獎勵或獎項類別（如 榮譽獎項、獎金 XX 萬）；沒提就填空字串 \"\"\n"
+            "   - deadline：報名截止日，盡量寫成 YYYY-MM-DD；沒提就填空字串 \"\"\n"
+            "   - idx：來源新聞編號（整數）\n"
+            "【只列這類】企業可報名、主題為永續／ESG、AI、數位轉型的獎項或競賽。\n"
+            "【一律排除】個人獎、學生競賽、消費者抽獎、與企業無關的活動。\n"
+            "只根據下列來源，不得杜撰獎項或日期；已截止的不要列。本週若沒有符合的，grants 給空陣列。\n"
+            "3. sections 給空陣列。\n\n"
+            "新聞清單：\n" + "\n".join(lines))
+    elif topic in GRANT_TOPICS:
         prompt = (head + "請用繁體中文輸出：\n"
             "1. gist：3~5 個關鍵詞，概括本週補助重點（如「儲能補助、地方SBIR、數位轉型」）。\n"
             "2. grants：把新聞裡的『政府補助／計畫』整理成條列，每個計畫一個物件，欄位：\n"
@@ -656,13 +702,20 @@ def _grant_card(agency, program, target, amount, date_label, date_val, link, cit
 
 
 def render_grants(topic, grants, items):
-    """補助主題：常態可申請計畫（固定清單）+ 本週新聞動態（AI 抓、濾過期）。滿版。"""
-    out = ['<h4>常態可申請計畫</h4>'
-           '<p class="g-hint">以下為現正開放、隨時可報名的計畫（無固定截止）；限時補助見下方「本週相關動態」。</p>'
-           '<div class="grants">']
-    for g in STANDING_GRANTS:                            # 常態清單（官方連結，永遠顯示）
+    """卡片主題（補助／獎項）：固定清單 + 本週新聞動態（AI 抓、濾過期）。滿版。"""
+    award = topic in AWARD_TOPICS
+    std_head = "可報名獎項" if award else "常態可申請計畫"
+    std_hint = ("以下為年度徵件的企業獎項，實際徵件期間與報名方式見各獎項官網。"
+                if award else
+                "以下為現正開放、隨時可報名的計畫（無固定截止）；限時補助見下方「本週相關動態」。")
+    cite = "獎項官網" if award else "官方網站"
+    news_head = "本週獎項動態" if award else "本週相關動態"
+    news_date = "報名截止" if award else "期限"
+
+    out = [f'<h4>{std_head}</h4><p class="g-hint">{std_hint}</p><div class="grants">']
+    for g in STANDING.get(topic, []):                   # 固定清單（官方連結，永遠顯示）
         out.append(_grant_card(g["agency"], g["program"], g["target"], g["amount"],
-                               "受理", g.get("status", ""), g["url"], "官方網站"))
+                               "受理", g.get("status", ""), g["url"], cite))
     out.append('</div>')
 
     news = []
@@ -672,10 +725,10 @@ def render_grants(topic, grants, items):
         i = g.get("idx")
         link = items[i]["link"] if isinstance(i, int) and 0 <= i < len(items) else ""
         news.append(_grant_card(g.get("agency", ""), g.get("program", ""), g.get("target", ""),
-                                g.get("amount", "").strip(), "期限",
+                                g.get("amount", "").strip(), news_date,
                                 g.get("deadline", "").strip() or "詳見公告", link, "來源"))
     if news:
-        out.append('<h4>本週相關動態</h4><div class="grants">' + "".join(news) + '</div>')
+        out.append(f'<h4>{news_head}</h4><div class="grants">' + "".join(news) + '</div>')
     return "".join(out)
 
 
