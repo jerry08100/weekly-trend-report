@@ -2,7 +2,7 @@
 """趨勢周報：抓 RSS -> 篩本週 -> 產 HTML 存檔。純 stdlib，免裝套件。
 執行： C:\\Users\\8803\\AppData\\Local\\Programs\\Python\\Python312\\python.exe weekly_report.py
 """
-import urllib.request, urllib.error, ssl, sys, os, html, re, urllib.parse, json, zlib
+import urllib.request, urllib.error, ssl, sys, os, html, re, urllib.parse, json, zlib, time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
@@ -207,11 +207,12 @@ def gemini_digest(topic, rows):
             "   - agency：主辦部會或單位（如 經濟部、數位發展部、新竹縣政府）\n"
             "   - program：計畫名稱\n"
             "   - target：補助對象（哪類企業或條件；白話）\n"
-            "   - amount：補助金額或比例；新聞沒寫就填「詳見公告」\n"
-            "   - deadline：申請期限；沒寫就填「詳見公告」\n"
+            "   - amount：從新聞抓出的實際補助金額／比例／上限（例：最高 500 萬、補助 50%、每案 200 萬）。"
+            "新聞真的沒提到金額就填空字串 \"\"，不要填「詳見公告」之類的字。\n"
+            "   - deadline：申請截止日，盡量寫成 YYYY-MM-DD；新聞沒提就填空字串 \"\"。\n"
             "   - idx：來源新聞編號（整數）\n"
             "只根據下列新聞整理，不得杜撰計畫、金額或期限；不是補助計畫的新聞（純政策論述、評論）不要列。"
-            "本週若沒有可列的補助，grants 給空陣列。\n"
+            "新聞若明講該補助已截止／已結束，就不要列。本週若沒有可列的補助，grants 給空陣列。\n"
             "3. sections 給空陣列。\n\n"
             "新聞清單：\n" + "\n".join(lines))
     else:
@@ -272,18 +273,25 @@ def gemini_digest(topic, rows):
     }
     url = ("https://generativelanguage.googleapis.com/v1beta/models/"
            "gemini-flash-latest:generateContent?key=" + key)
-    try:
-        import json
-        req = urllib.request.Request(
-            url, data=json.dumps(body).encode("utf-8"),
-            headers={"Content-Type": "application/json"})
-        with urllib.request.urlopen(req, timeout=60, context=_ctx) as r:
-            resp = json.loads(r.read())
-        text = resp["candidates"][0]["content"]["parts"][0]["text"]
-        return json.loads(text)
-    except Exception as e:
-        print(f"[ai] {topic} 摘要失敗，回退純清單 -> {type(e).__name__}: {e}")
-        return None
+    data = json.dumps(body).encode("utf-8")
+    for attempt in range(3):                             # 5xx/429 暫時性錯誤重試
+        try:
+            req = urllib.request.Request(
+                url, data=data, headers={"Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=60, context=_ctx) as r:
+                resp = json.loads(r.read())
+            return json.loads(resp["candidates"][0]["content"]["parts"][0]["text"])
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 500, 502, 503, 504) and attempt < 2:
+                print(f"[ai] {topic} {e.code} 重試 {attempt+1}/2…")
+                time.sleep(4 * (attempt + 1))
+                continue
+            print(f"[ai] {topic} 摘要失敗 -> HTTP {e.code}")
+            return None
+        except Exception as e:
+            print(f"[ai] {topic} 摘要失敗 -> {type(e).__name__}: {e}")
+            return None
+    return None
 
 
 # ── 三個純色主題（solid，不用漸層）。切換改 ACTIVE_THEME 或跑 --theme=NAME。──
@@ -550,26 +558,48 @@ def build_refs(tk, items):
     return "".join(out)
 
 
+def deadline_passed(text):
+    """從期限字串抓日期，早於今天回 True（用來濾掉已截止的補助）。抓不到日期回 False（保留）。"""
+    s = (text or "").strip()
+    m = re.search(r"(\d{4})\s*[-/.年]\s*(\d{1,2})\s*[-/.月]\s*(\d{1,2})", s)
+    if m:
+        y, mo, dd = map(int, m.groups())
+    else:
+        m = re.search(r"(\d{1,2})\s*[/月]\s*(\d{1,2})", s)   # 無年份 -> 當今年
+        if not m:
+            return False
+        mo, dd = map(int, m.groups())
+        y = datetime.now().year
+    try:
+        return datetime(y, mo, dd).date() < datetime.now().date()
+    except ValueError:
+        return False
+
+
 def render_grants(topic, grants, items):
-    """補助主題：條列卡片（部會/計畫/對象/金額/期限），右欄仍附來源清單。"""
+    """補助主題：條列卡片（部會/計畫/對象/金額/期限），濾掉已過期，右欄附來源。"""
     tk = tkey(topic)
     cards = []
     for g in grants:
+        if deadline_passed(g.get("deadline", "")):       # 過期不列
+            continue
         i = g.get("idx")
         link = items[i]["link"] if isinstance(i, int) and 0 <= i < len(items) else ""
         cite = (f'<a class="g-src" href="{html.escape(link)}" target="_blank">來源 ↗</a>'
                 if link else "")
+        amount = html.escape(g.get("amount", "").strip() or "—")
+        deadline = html.escape(g.get("deadline", "").strip() or "—")
         cards.append(
             '<div class="grant">'
             f'<div class="g-top"><span class="g-agency">{html.escape(g.get("agency",""))}</span>{cite}</div>'
             f'<div class="g-name">{html.escape(g.get("program",""))}</div>'
             '<div class="g-meta">'
-            f'<span><b>對象</b>{html.escape(g.get("target","") or "—")}</span>'
-            f'<span><b>補助</b>{html.escape(g.get("amount","") or "詳見公告")}</span>'
-            f'<span><b>期限</b>{html.escape(g.get("deadline","") or "詳見公告")}</span>'
+            f'<span><b>對象</b>{html.escape(g.get("target","").strip() or "—")}</span>'
+            f'<span><b>補助</b>{amount}</span>'
+            f'<span><b>期限</b>{deadline}</span>'
             '</div></div>')
     left = ('<div class="grants">' + "".join(cards) + '</div>' if cards
-            else '<p class="note">本週沒有明確可條列的補助計畫。</p>')
+            else '<p class="note">本週沒有可列的補助計畫（或皆已過期）。</p>')
     return (f'<div class="cols"><div class="col-body">{left}</div>'
             f'<aside class="col-refs">{build_refs(tk, items)}</aside></div>')
 
