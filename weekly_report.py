@@ -24,12 +24,18 @@ QUERIES = {
         "生成式 AI 企業 導入 效率",
     ],
     "政府補助 / 計畫": [
-        "數位發展部 AI 補助 計畫 申請",
+        "企業 AI 轉型 補助 計畫 申請",
         "中小企業 數位轉型 補助 申請 期限",
-        "淨零 減碳 補助 計畫 經濟部 名額",
-        "產業 升級 補助 開放 申請 截止",
-        "SBIR 補助 計畫 公告 受理",
-        "政府 補助 企業 開放申請 金額 上限",   # 官方公告向：多含金額/期限
+        "淨零 永續 轉型 補助 企業 計畫",
+        "研發 補助 SBIR 企業 受理 申請",
+        "產業 升級 輔導 補助 開放申請 金額",
+    ],
+}
+# OFFICIAL_HTML：政府補助主題的官方入口（非新聞）。(清單頁, 網域, 內文連結樣式)。
+# 註：.gov.tw 站在 GitHub Actions(美國) 可能被擋，抓不到會自動略過、退回新聞查詢。
+OFFICIAL_HTML = {
+    "政府補助 / 計畫": [
+        ("https://www.sbir.org.tw/news", "https://www.sbir.org.tw", r"/news/main_content\?id=\d+"),
     ],
 }
 # FEEDS：主題 -> 直連 RSS（補充台灣深度來源）。無則留空。
@@ -46,9 +52,9 @@ FOCUS = {
                        "少談國際宏觀情勢。",
     "AI / 企業應用": "聚焦『台灣企業的 AI 應用』：可用的新工具、企業導入 AI Agent 提升工作效率的趨勢與案例。"
                      "少談國際大廠模型軍備競賽等宏觀新聞。",
-    "政府補助 / 計畫": "聚焦『企業可申請的政府補助與計畫』：整理近期公告或開放中的補助，"
-                       "每個都點出——哪個部會、計畫名稱、補助對象、補助重點或金額、申請期限。"
-                       "以台灣、與 AI 數位轉型／永續淨零／產業升級相關者優先。務實、可直接行動。",
+    "政府補助 / 計畫": "聚焦『企業可申請、與 AI／數位轉型、永續淨零轉型、研發或產業升級相關』的政府補助與計畫。"
+                       "每個點出——哪個部會、計畫名稱、補助對象、補助金額、申請期限。"
+                       "排除國旅、農業、家戶節電、個人消費性等與企業轉型無關的補助。",
 }
 # KICKER：主題 -> 英文 mono 標籤（雙語層級，質感來源）。
 KICKER = {
@@ -142,6 +148,26 @@ def norm(t):
     return re.sub(r"\s+", "", (t or "")).lower()[:40]   # 去空白+截頭當去重鍵
 
 
+def scrape_official(url, base, pat):
+    """從官方補助入口的清單頁抓內文連結（title, link），當作 items 餵給 AI。"""
+    noise = ("說明會", "推廣", "核定名單", "得獎", "名單", "工作坊", "座談",
+             "研討", "花絮", "公布", "成果", "頒獎", "課程", "研習")
+    txt = fetch(url).decode("utf-8", "ignore")
+    out, seen = [], set()
+    for a, t in re.findall(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', txt, re.S):
+        if not re.search(pat, a):
+            continue
+        title = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", "", t))).strip()
+        if len(title) < 6 or any(k in title for k in noise):   # 濾掉活動/名單類雜訊
+            continue
+        link = a if a.startswith("http") else base + a
+        if link in seen:
+            continue
+        seen.add(link)
+        out.append({"title": title, "link": link, "date": None, "summary": ""})
+    return out[:25]
+
+
 def collect():
     cutoff = datetime.now(timezone.utc) - timedelta(days=DAYS)
     result, log = {}, []
@@ -175,6 +201,21 @@ def collect():
                 rows.append(it)
                 kept += 1
             log.append(f"[ok]   {label[:60]} -> {kept} 則")
+        for url, base, pat in OFFICIAL_HTML.get(topic, []):   # 官方入口（.gov 站雲端可能被擋，失敗略過）
+            try:
+                offi = scrape_official(url, base, pat)
+            except Exception as e:
+                log.append(f"[skip] 官方 {url[:44]} -> {type(e).__name__}")
+                continue
+            kept = 0
+            for it in offi:
+                key = norm(it["title"])
+                if not key or key in seen:
+                    continue
+                seen.add(key)
+                rows.append(it)
+                kept += 1
+            log.append(f"[ok]   官方 {url[:44]} -> {kept} 則")
         rows.sort(key=lambda r: r["date"] or cutoff, reverse=True)
         result[topic] = rows[:CAP]
     return result, log
@@ -212,8 +253,11 @@ def gemini_digest(topic, rows):
             "新聞真的沒提到金額就填空字串 \"\"，不要填「詳見公告」之類的字。\n"
             "   - deadline：申請截止日，盡量寫成 YYYY-MM-DD；新聞沒提就填空字串 \"\"。\n"
             "   - idx：來源新聞編號（整數）\n"
-            "只根據下列新聞整理，不得杜撰計畫、金額或期限；不是補助計畫的新聞（純政策論述、評論）不要列。"
-            "新聞若明講該補助已截止／已結束，就不要列。本週若沒有可列的補助，grants 給空陣列。\n"
+            "【只列這類】企業可申請、且與『AI／數位轉型、永續淨零轉型、研發、產業升級』相關的補助（含地方政府對企業的數位/AI 升級補助）。"
+            "金額或期限抓不到沒關係，還是可以列（該欄留空即可）；重點是讓讀者知道有這個補助可申請。\n"
+            "【一律排除】國旅、觀光、農業、漁業、家戶節電/光電、個人消費性、獎金競賽等與企業轉型無關的補助。\n"
+            "只根據下列來源整理，不得杜撰計畫、金額或期限；不是補助計畫的（純政策論述、評論、說明會、核定名單）不要列。"
+            "已截止／已結束的不要列。本週若真的沒有符合的補助，grants 給空陣列。\n"
             "3. sections 給空陣列。\n\n"
             "新聞清單：\n" + "\n".join(lines))
     else:
