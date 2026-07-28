@@ -77,19 +77,19 @@ GRANT_TOPICS = {"政府補助 / 計畫"}
 STANDING_GRANTS = [
     {"agency": "數位發展部 數位產業署", "program": "臺灣雲市集 TCloud 數位轉型點數",
      "target": "中小微企業（採購雲端／數位工具）", "amount": "補助點數 3 萬元，抵最高 50% 費用",
-     "status": "常態受理（至經費用罄）", "url": "https://www.tcloud.gov.tw/"},
+     "status": "常態", "url": "https://www.tcloud.gov.tw/"},
     {"agency": "經濟部 中小及新創企業署", "program": "SBIR 小型企業創新研發計畫",
      "target": "中小企業、新創（創新研發）", "amount": "依計畫類型，個案／跨域補助不等",
-     "status": "隨到隨受理（線上申請）", "url": "https://sbir.org.tw/"},
+     "status": "常態（隨到隨受理）", "url": "https://sbir.org.tw/"},
     {"agency": "經濟部 產業發展署", "program": "產業升級創新平台輔導計畫（TIIP）",
      "target": "企業／產業聯盟（前瞻技術研發）", "amount": "依計畫審定",
-     "status": "依年度公告梯次", "url": "https://eii.nat.gov.tw/tiip/"},
+     "status": "常態（至經費用罄）", "url": "https://eii.nat.gov.tw/tiip/"},
     {"agency": "經濟部 產業發展署", "program": "以大帶小 製造業低碳及智慧化升級轉型補助",
      "target": "製造業（含供應鏈中小企業）", "amount": "智慧化最高 2,000 萬、低碳化最高 3,000 萬",
-     "status": "分梯次公告受理", "url": "https://service.moea.gov.tw/EE502/NewPortal/"},
-    {"agency": "經濟部 產業發展署", "program": "中小型製造業 低碳及智慧化升級轉型個案補助",
+     "status": "依年度梯次（下梯見官網）", "url": "https://www.ida.gov.tw/"},
+    {"agency": "經濟部 產業發展署", "program": "中小型製造業 低碳及智慧化升級轉型個案補助（CITD）",
      "target": "中小型製造業", "amount": "每家最高 300～500 萬（依員工數）",
-     "status": "分梯次公告受理", "url": "https://acic.cpc.tw/"},
+     "status": "依年度梯次（115 年度已截止 2/9，下梯見官網）", "url": "https://citd.cpc.tw/citdweb/"},
 ]
 # TAB_LABEL：頂部分頁按鈕的短標籤。
 TAB_LABEL = {
@@ -408,6 +408,14 @@ a{color:inherit}
 .side-title a{text-decoration:none;display:block}
 .side-title .brand{font-size:22px;font-weight:800;color:var(--side-brand);letter-spacing:.02em;margin-top:7px}
 .side .kicker{color:var(--side-grp)}
+.arc{margin-top:4px}
+.arc>summary{list-style:none;cursor:pointer;font-family:var(--mono);font-size:12px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--side-fg2);padding:8px 0;display:flex;align-items:center;gap:8px}
+.arc>summary::-webkit-details-marker{display:none}
+.arc>summary::before{content:"▸";color:var(--accent);transition:transform .15s}
+.arc[open]>summary::before{transform:rotate(90deg)}
+.arc>summary:hover{color:var(--side-fg)}
+.arc-list{margin-top:6px}
 .day{font-family:var(--mono);font-size:14px;letter-spacing:.04em;color:var(--side-date);
   font-weight:700;margin:24px 0 8px;display:flex;align-items:center;gap:8px}
 .day::before{content:"";width:7px;height:7px;background:var(--accent);border-radius:50%;flex:none}
@@ -776,7 +784,8 @@ def build_sidebar(reports, order, base, active_date=None):
     home = "index.html" if base == "reports/" else "../index.html"  # 首頁在 root、週頁在 reports/
     side = ['<aside class="side"><div class="side-title">'
             f'<a href="{home}"><span class="kicker">Archive · 歷史</span>'
-            '<span class="brand">趨勢周報</span></a></div>']
+            '<span class="brand">趨勢周報</span></a></div>'
+            '<details class="arc"><summary>歷史周報清單</summary><div class="arc-list">']
     rank = {t: i for i, t in enumerate(order)}
     for rep in reports:                              # 已依日期新到舊
         d = rep["date"]
@@ -787,7 +796,7 @@ def build_sidebar(reports, order, base, active_date=None):
                 f'<a class="wk" href="{base}{d}.html#{tk}">'
                 f'<span class="wk-topic">{html.escape(tp["topic"])}</span>'
                 f'<span class="wk-s">{html.escape(snippet(tp))}</span></a>')
-    side.append("</aside>")
+    side.append("</div></details></aside>")
     return "".join(side)
 
 
