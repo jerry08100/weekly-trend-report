@@ -24,11 +24,12 @@ QUERIES = {
         "生成式 AI 企業 導入 效率",
     ],
     "政府補助 / 計畫": [
-        "數位發展部 AI 補助 計畫",
-        "中小企業 數位轉型 補助 申請",
-        "淨零 減碳 補助 計畫 經濟部",
-        "產業 升級 補助 申請 企業",
-        "SBIR 政府 補助 計畫 公告",
+        "數位發展部 AI 補助 計畫 申請",
+        "中小企業 數位轉型 補助 申請 期限",
+        "淨零 減碳 補助 計畫 經濟部 名額",
+        "產業 升級 補助 開放 申請 截止",
+        "SBIR 補助 計畫 公告 受理",
+        "政府 補助 企業 開放申請 金額 上限",   # 官方公告向：多含金額/期限
     ],
 }
 # FEEDS：主題 -> 直連 RSS（補充台灣深度來源）。無則留空。
@@ -598,10 +599,9 @@ def render_grants(topic, grants, items):
             f'<span><b>補助</b>{amount}</span>'
             f'<span><b>期限</b>{deadline}</span>'
             '</div></div>')
-    left = ('<div class="grants">' + "".join(cards) + '</div>' if cards
-            else '<p class="note">本週沒有可列的補助計畫（或皆已過期）。</p>')
-    return (f'<div class="cols"><div class="col-body">{left}</div>'
-            f'<aside class="col-refs">{build_refs(tk, items)}</aside></div>')
+    if cards:                                            # 滿版，不列右邊參考來源
+        return '<div class="grants">' + "".join(cards) + '</div>'
+    return '<p class="note">本週沒有可列的補助計畫（或皆已過期）。</p>'
 
 
 def render_sources_panel(report):

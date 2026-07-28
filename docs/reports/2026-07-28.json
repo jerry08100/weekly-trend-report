@@ -1,23 +1,23 @@
 {
   "date": "2026-07-28",
-  "generated_at": "2026-07-28 13:50",
-  "total": 41,
+  "generated_at": "2026-07-28 13:59",
+  "total": 36,
   "topics": [
     {
       "topic": "永續 / 企業實務",
-      "gist": "碳費新規、GHG盤查稽核、企業永續人才、同業動態",
+      "gist": "碳費新規、GHG稽核、企業人才培育、氣候韌性",
       "sections": [
         {
-          "heading": "政策法規與碳管理趨勢",
-          "body": "政府近期預告碳費新規，首度納管並給予緩衝期，但舊案的減碳效益採計只剩一成[[11]]。這代表企業不能再靠過去舊有的減碳專案吃老本，得加快實質轉型速度。同時，政府提出氣候韌性戰略[[5]]，並透過雲嘉南分署幫中小企業做碳管理與減碳[[6]]。對台灣企業來說，做好 ISO 14064-1（這是一套國際標準，白話就是幫公司算清楚一年到底排了多少碳）已經是基本功。苗栗白沙屯拱天宮甚至完成碳權註銷[[3]]，也就是把買來的碳抵換額度宣告作廢，展示出連宗教團體都在落實低碳實務。"
+          "heading": "政策與碳費新規",
+          "body": "環境部最新預告碳費新規，針對舊案減碳效益僅採計10%並設有緩衝期[[11]]，同時國家氣候委員會也提出氣候韌性三大戰略[[5]]。碳費是政府針對排碳大戶依排放量徵收的費用，促使企業自主減碳。對台灣企業來說，面對制度轉型，第一步是搞懂ISO 14064-1等溫室氣體盤查標準，清楚掌握範疇一與範疇二的排放數據。雲嘉南分署也推出輔導方案協助中小企業精準減碳[[6]]，企業應儘速完成盤查與內部查證準備，降低未來碳代價衝擊。"
         },
         {
           "heading": "同業動態",
-          "body": "本週觀察名單中，台塑動態最明顯，他們攜手虎尾科大與虎尾高中舉辦科學探索營，從校園扎根綠能與永續教育[[12]][[13]]。保險與產險相關領域則有南山推出熱傷害保單，免費提供給台南的弱勢族群[[4]]，展現 ESG 中的社會關懷。至於觀察名單中的其他對象，包括 USPACE、中油、肯譯、機場快線、銀行業、車商、大都會車隊、台灣大車隊、順鋒機場接送、漢聲租車與 Uber，本週皆無明顯相關動作。同業大多還在觀望碳費子法的最終定案，後續服務布局值得密切留意。"
+          "body": "在重點觀察名單中，台塑企業本週展現積極動作，攜手虎尾科大與虎尾高中推動Formosa科學探索營，將綠能與永續觀念向下扎根[[12]][[13]]。至於名單中的其他對象如USPACE、中油、肯譯、機場快線、銀行業、車商、產險業、大都會車隊、台灣大車隊、順鋒機場接送、漢聲租車與Uber，本週新聞清單中無明顯相關動作。此外，業界關注的GHG（溫室氣體）人才培育方面，已有14家指標企業聯手開辦GHG稽核專班[[14]]，顯見各家同業正加速布局內部盤查與稽核量能。"
         },
         {
-          "heading": "企業人才與實務落地",
-          "body": "隨著碳盤查需求爆發，市場上最缺的就是懂查證的專業人才。本週有十四家指標企業聯手開辦 GHG（溫室氣體）稽核專班[[14]]，直接培養第一線盤查與內部稽核人力。企業如果光有永續報告書，卻沒有經由專業機構查驗數據，未來很容易被指控為綠洗（也就是假裝永續）。因此，培養內部稽核員並做好供應鏈碳盤查，已經是企業確保合規與接單優勢的必修課。此外，針對氣候風險的各項 ESG 轉型配套[[2]]，也正從單純的口號轉變成實務上的營運應變。"
+          "heading": "企業實務與轉型",
+          "body": "永續實務已從單純合規轉向多元營運結合。苗栗結合地方信仰，促成白沙屯拱天宮取得碳權並進行註銷，打造低碳旅遊範例[[3]]。保險業者南山則推出全台首張熱傷害保單，免費提供弱勢投保，將氣候風險應對與社會公益結合[[4]]。企業在推減碳時，除了依靠AI或新技術工具[[2]]，也要重視碳盤查與查證實務。只有把碳數據做準、建立透明的碳管理流程，才能在國際供應鏈要求與本土法規雙重壓力下建立長期競爭力。"
         }
       ],
       "grants": [],
@@ -129,19 +129,19 @@
     },
     {
       "topic": "AI / 企業應用",
-      "gist": "AI Agent落地、AppSec資安合規、同業AI轉型、CAIO新職位",
+      "gist": "AI Agent落地、企業AI長、資安AppSec合規、台日AI轉型合作",
       "sections": [
         {
-          "heading": "AI Agent 落地與治理挑戰",
-          "body": "許多台灣企業開始把 AI Agent（能自動執行複雜任務的 AI 代理人）引進核心流程，但隨之而來的是效率瓶頸與治理難題 [[11]]。根據資策會觀察，單純導入工具如果不調整內部流程、補足人才，反而會造成跨部門協調困難 [[11]]。為了有效管理 AI 策略，全球越來越多企業設立 CAIO（最高 AI 官，專責規劃科技藍圖與風險管控的高階主管）[[12]]。此外，日本體驗展與台日結盟也顯示，AI 數位轉型正成為跨國合作與企業突破長年困境的核心關鍵 [[0]][[1]][[2]][[6]]。"
-        },
-        {
-          "heading": "企業級 AI 工具與資安合規",
-          "body": "隨著 AI 開發速度加快，軟體資安與合規成為企業防禦重點。資安業者引進像 Vulcan AI 這類安全平台，幫助企業自動化監測系統弱點 [[3]]。同時，叡揚資訊推廣 AppSec（應用程式安全，指在軟體開發過程中保護系統免於攻擊的技術與流程），協助工程團隊無痛達成資安合規 [[10]]。在地方推動上，例如高雄市積極從單純的硬體出租角色轉變為產業投資者 [[4]]，打造完善的 AI 生態系，這對需要高度資安防護與轉型的在地企業提供了相當實質的支援與誘因。"
-        },
-        {
           "heading": "同業動態",
-          "body": "在本週觀察名單中，保險與金融領域迎來法規動向，金管會特別揭示了保險監理的三大方向，力推產險業與保險業者進行 AI 轉型，並打造全齡金融環境 [[8]]。在乘車與外送服務方面，Uber 創辦人成立的 AI 新創 Atoms 順利募資 17 億美元強攻機器人領域 [[5]]，而外送專法即將在 7 月 21 日上路，這將直接影響 Uber Eats 等外送平台的營運與費用計算 [[9]]。另外，報導也點名台灣大車隊，分享高層將一手爛牌翻盤的營運心路歷程 [[7]]。至於 USPACE、台塑、中油、肯譯、機場快線、銀行業、車商、大都會車隊、順鋒機場接送、漢聲租車等名單中的其他對象，本週則無明顯相關動作。"
+          "body": "本週觀察名單中，保險與產險業迎來政策利多，金管會揭示三大監理方向，鼓勵產業加速 AI 轉型與全齡金融服務[[8]]。平台業者方面，Uber 隨外送專法預計於 7 月 21 日上路，面臨運費與營運架構調整的考驗[[9]]。此外，台灣大車隊高層近期接受專訪，分享企業經營與個人翻轉的實務歷程[[7]]。至於 USPACE、台塑、中油等其他觀察對象，本週則無明顯相關動作。整體來看，服務與金融業正處於法規與技術轉型的交會點。"
+        },
+        {
+          "heading": "企業 AI 落地與人才轉型",
+          "body": "許多台灣企業開始把 AI Agent（也就是能自動執行任務與決策的 AI 代理人）導入核心流程，但資策會指出，大家很快就遇到流程不順、人才不足與治理難題[[11]]。日本也有超過四成企業面臨 AI 人才缺口，應用重心轉向追求實際效益[[6]]。為了帶領轉型，全球企業開始爭相設立 AI 長（CAIO，負責統籌企業 AI 策略與風險的高階主管）[[12]]。企業引進新工具時，必須先重塑內部流程與人才結構，才不會讓新技術白費。"
+        },
+        {
+          "heading": "資安合規與跨國數位合作",
+          "body": "企業推動數位轉型時，資安防衛也是重頭戲。叡揚資訊推廣 AppSec（應用程式安全，指在開發軟體時就同步檢查資安漏洞的機制），協助企業打造無痛合規流程[[10]]。亞利安科技則代理 Vulcan AI 平台，強化企業安全防線[[3]]。台日合作也正朝 AI 轉型延伸，日本台灣形象展促成 1.5 億美元商機[[0]]，亦有業者結盟協助日企打破轉型僵局[[1]][[2]]。企業唯有結合資安防護與跨國資源，才能順利讓 AI 落地發揮效益。"
         }
       ],
       "grants": [],
@@ -236,92 +236,70 @@
     },
     {
       "topic": "政府補助 / 計畫",
-      "gist": "產業儲能補助、地方SBIR、中小企業轉型",
+      "gist": "太陽光電補助、韌性農業補助、國旅補助",
       "sections": [],
       "grants": [
         {
-          "agency": "經濟部",
-          "program": "產業儲能補助",
-          "target": "規劃設置儲能系統之產業企業",
-          "amount": "",
+          "agency": "桃園市政府",
+          "program": "家戶太陽光電補助",
+          "target": "桃園市家戶與社區設備設置者",
+          "amount": "最高200萬元",
           "deadline": "",
-          "idx": 7
+          "idx": 0
         },
         {
-          "agency": "新竹縣政府",
-          "program": "地方型SBIR補助",
-          "target": "新竹縣轄內具創新研發能力之中小企業",
+          "agency": "屏東縣政府",
+          "program": "韌性農業雙補助（防護支柱、圍網防治）",
+          "target": "屏東縣農民與農業從業者",
           "amount": "",
           "deadline": "",
-          "idx": 8
+          "idx": 1
+        },
+        {
+          "agency": "交通部觀光署與各縣市政府",
+          "program": "國旅補助",
+          "target": "符合資格之國人與旅遊相關業者",
+          "amount": "最高10000元",
+          "deadline": "",
+          "idx": 5
         }
       ],
       "items": [
         {
-          "title": "桃分署推「企業服務速可達」 助企業運用政府資源創造營運新動能",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE13QV9WQjZSMGY0QThtVmdFcE9tV3lYbHNGQjVoTFdYRURyZjA4QzFSTHJqNmlPM29rT0k5V1hxTG5USzlZYzE0dEZCQ3Vuel84eUE?oc=5",
-          "date": "2026-07-27"
+          "title": "桃園家戶太陽光電補助開跑 汰舊換新與自用最高領200萬",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxOdTUyZGhPWHZxNzE5NlNwT2QtZHBfV2xBX3cyZmZtYmptSlo5Snd5bXE5S2NJSUZEdVB6LTd6WlNPUk9fU2RiQlRVNlppT0dBTEdNYkV6WXU0aldYUUJ6XzI2RTVaSC1FTEhQbjEzdDBKTFBVT0RWYjVpQ21qRTVuVGVzSHluOHA4bWF3aTlNRFNKeUk2NUtmZ1pPcTAyaHU4ZXBqNTJsTmlJdTRzVElBT1k5NkZhUXY4Ulk4djgzeEdHMjFRZ3BBNFBybzFQMkc1MkpscnpySVhnbndUN3JuaEVmLUdoeEhfaUJYRjYtb1dfUWowaFllamVQeWRsS09IMkxjenQxSHVTT0FTQTEyellUMUdJSk5jdkZsNUNJNTNzeVBTNm5mOUxXZjlqcllYblhtQkZBZGJyOGFobDBCZklaZjdNQ2FPUnRRVnV1NW5aZGNuQUhoVjU5Ymxfd3NV?oc=5",
+          "date": "2026-07-26"
         },
         {
-          "title": "幸福經濟跨域啟航 高雄產業創新展打造AI跨業合作新平台",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9jY1lxQjMzYmk0OEo3SFlibHNxWko0dExOdXFMNjZ2Z202aVZwcXVDUklXeHI5NFRZWmVvV1RLLTM4OUhEbXFNbDlwUHc0TVhUblE?oc=5",
-          "date": "2026-07-27"
+          "title": "屏東縣推「韌性農業雙補助」開放申請 防護支柱、圍網防治守護農民生計",
+          "source": "新媒體經紀人",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5rbEQ3UVFMamY3d0xzZXdGZDM1dUE1WkNzbjRrTmpsbUdyVmtHNVUzY0JTQjd4aDVFaFFrUUJDa2c1UlZEb2dVbkx6cWdRN2pjN0RveVk5dlF3Y2ZIbkZJSGIwSGNFVHVaS0NGVQ?oc=5",
+          "date": "2026-07-23"
         },
         {
-          "title": "勞工快看！每月最高補助1.15萬 申請期限快到了 | EBC 東森新聞",
-          "source": "LINE TODAY",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9tOXVMQ21jU3pDNldjZUNPR3lIcnA0cWtBMFVMUlFwdm01NUlScnlncHBiSnZneGhwb3Yxd3hyblBKTDMwNzdUclN0U3pmcTh0dXNoLWtR?oc=5",
-          "date": "2026-07-27"
-        },
-        {
-          "title": "因應高階製造及AI產業需求 中市再輔導3家特定工廠用地計畫獲核定",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ISG9PUk5zbFl6QUhTeHhBa3djLVUxaWd3dXNNMzJVVUVPckJ0N2NCdG1SVXJTRWNkNTRZXzBYVEVhT0tMNkFYdWlITTlBemtMSVE?oc=5",
-          "date": "2026-07-27"
-        },
-        {
-          "title": "不只學AI！大葉大學培養企業最搶手跨域人才",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WUHlleE83S1prRGRSVk9kN19tOUI0eDhfYTRjQVM4dHpXUk8yNFpGT1IyQzZmY0lQSnNQWE9pRjZyazZvQTVVLUptN1NhMDMyemc?oc=5",
-          "date": "2026-07-27"
-        },
-        {
-          "title": "高雄打造幸福經濟新品牌 2026高雄城市幸福 經濟嘉年華暨產業創新展與跨業媒合會 正式啟動",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBjTTNDVGk3TmJEZFpIRThHZnFDbkR1M0JyN0dxTUpQbG5zTkdNQ1JDY1huTWxlYjlCTEhGRXZ2UDMtaC1uQnRWbERBXzk4Q2hVQWc?oc=5",
-          "date": "2026-07-25"
-        },
-        {
-          "title": "匈牙利將挹注5億歐元，發展太空及AI產業",
-          "source": "台視全球資訊網",
-          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPTXcwQTdxb29fWnNwR0EtMEdIeDF3Q2VtVENyeGFUUHkyWTI4TWpXV3piZHliVlJQTXl3UW1HX2x3aVZ3bkRfUXduSVlQcFZKeVlxS2dXemdjTVo0WnBfS2RvcF9peGZjS2FlcXoyR0FMU3d4T211WkRwbmpkaU5OdnFMWUd1MnJZYm94S3dxRUdBZw?oc=5",
-          "date": "2026-07-24"
-        },
-        {
-          "title": "經濟部推動產業儲能補助 結合驗證機制提升安全品質",
-          "source": "bsmi.gov.tw",
-          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9oc0pka1VoWk9XUjNXNWxaOEo2S3VQNjhXQUJKcWt2ZkVMM3V3eHNaeEZWeFBhYVN4cUlDbUE1Z05oVW5FdGI1SFFfZE90Z204WEhjMUhKejdJYjJPQVJpUlhldDA3dUp1OVNzaVNyZw?oc=5",
-          "date": "2026-07-24"
-        },
-        {
-          "title": "疫情趨緩竹縣地方型SBIR補助開跑 鼓勵企業開創新商機7/15申請截止 - 新竹縣政府-數位發展處",
-          "source": "",
-          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5hYmpCbW5TaFR6eTBDX0hIcFZiZWJSU1FfLXBmaC1GQUZpc1ZTUnJ1dXo2UzRNQXNEVGItZTE3NVVZMmJxQjliNEFvR1h3MDlnelhpc1V4aEZvT2Jod3ZuYWJLN19Vek1DSFVoSw?oc=5",
-          "date": "2026-07-24"
-        },
-        {
-          "title": "迎戰AI智慧製造浪潮！ 新竹職訓攜手PTC成立CAD／CAE／CAM培訓中心- 生活新聞- PChome Online 新聞",
-          "source": "PChome Online 新聞",
-          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQW5qeW9JTzM5emhlNkx3UVdmVlpBUEtQTy1ZR0FHX2tWb2RDMVBqTkRjSi0wTk1NSTd1LXRsNHljZ0xUaFJhNHBySk5YUFRTaGhXYTB5Q3haSXpmZVNBTXgzODdwUXhmaE43N3VVNlE4YXdtQnFEcHNfdnlDNkFoU2oySFAzdWVpUEtiMlVuUQ?oc=5",
+          "title": "屏東縣推「韌性農業雙補助」即日開放申請 防護支柱、圍網防治守護農民生計",
+          "source": "波新聞",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBCR3R6N1otcVdaWUR6U09sQU10cVRiMXkybzVackhEcU56MzFpaC1zYzJIcktad3NVdHNPU1RZcHFmQXlOQlBsSFJZZV9ZYjd0UExBLUw1TDlTdmtwcVBfRjRlNA?oc=5",
           "date": "2026-07-22"
         },
         {
-          "title": "南市助攻中小企業數位升級！AI著作權議題引企業熱烈迴響",
-          "source": "勁報",
-          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWQm03MFdhcU4yZzVrRXRpMUlXTEV1SmJmYVE5d0xKLV9maU5LanZ6bmhBbnNZcEhPSC1CS2E4RHItb3NSTXg4UDhXbGJJQW50ZzVUU2VqR2czRl9JZE1mTw?oc=5",
-          "date": "2026-07-21"
+          "title": "屏東縣推「韌性農業雙補助」即日開放申請 防護支柱、圍網防治守護農民生計",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMihANBVV95cUxNTjRsYVRfOUVXUU50ampVSzBDN2NNR1N5LVFCTkJNT2xPSjV4dlRPTUExX3I5YlROYXh4RkpieWkwbFBwOW54d3VWc0NzcnJkaU5JU3hGaklOaEoxZjdyTnVWYkVGcXVaQTFrd1pEdWMwUURjUEM3RnVnMVVKTkp4MzdIejhaeGREVDhZZ3VnQ3hhN3hSZFJCOS0zYmdmQnYwMEFoS2dQOE5EU2tjMnlQYWQ4V1RuM1RfTXVBMENoYzBERlNTZmpDbUNBb2wzZ1ZyZksxY2VqVTk4MFh6b0dfWFJ2ZUVCZHNJLTlxdUY2TmhwX05rNk5vMXRIUE5MM25RRWg0WDd6Vk53WGcybXYtWXFPYTJHbWdTb1hhd2xNbEE1ZEpucDNTT2FSS2lvcTJiUEpCSUlqQWV2VlpFdGhtWjBlWE5ZR0M3bHRsaXBlS052dWZWWS1tSm1yc0h2R25zcHdkMTJzRll6WHJWNWpLQmEtOEFIOEp5RDZxbzdXbllBRlNW?oc=5",
+          "date": "2026-07-22"
+        },
+        {
+          "title": "屏東縣推「韌性農業雙補助」開放申請 防護支柱、圍網防治守護農民生計",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMihANBVV95cUxPM3BZb281dmFWclg3VTR5NFJFTzdkdXV4Tk12Uk9YQXVtR2tHenBIUGIwejQwVExVWGYzYXBiME44OWx0UDl1Y0xCTDU0a3gtNkJ0d3VtcHZ0VXl0MEFrQXVfc3loSWFPU2dkTE5nNnJLX09CNmctSld5c21KbWRVb3g3Q1I5TURxOG9QTGk5OHBScDdBWWxrRlNaNFJZMjkzeFRMMDZqSW5XZmNFekJTb0s1ZjhJR2FyOU9Dei11OFc5VHgzNDZoM3RTZnlBMDVFU3ZxSzBsekRROWc3NVVrZGhjc05UV3JvYTZQQzVvdlR1RG5nWHU0dTE3al9tWnhLd05LUXY5RndIdmJ3bWJwNEhCOHlyTl9seGtPMnVHWnR6YXlNUi1USmcwM3dNdmVBcFlxRU9ORlZuUzJwZkwwM0JOb2VYWFJNM3FqcHVGTlZQT1VFQnh4S1cxV1p2QWRpaC1OVXNiOTJhRjdJVTN0ZVdaWWtkSjF6M3NYMDN6cm1NcFJM?oc=5",
+          "date": "2026-07-22"
+        },
+        {
+          "title": "2026最新國旅補助來了！符合資格「最高領10000元」全台都能申請，資格限制、 各縣市加碼一次看",
+          "source": "風傳媒",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB2TlBJU2k4WXJZYUFTakVibUtDbnc5OGFhcGR3aGNGdUZNOFdVWTBCZk0xVm1MY2lINUxsRVlZUU00V2FGbE9tdVdtWW9mRFZn?oc=5",
+          "date": "2026-07-22"
         },
         {
           "title": "南市府助攻中小企業數位升級說明會 聚焦人工智慧應用和著作權議題",
@@ -331,18 +309,19 @@
         },
         {
           "title": "南市府助攻中小企業數位升級 AI著作權議題引企業熱烈迴響",
-          "source": "Life 生活網",
-          "link": "https://news.google.com/rss/articles/CBMi9wJBVV95cUxOY0ROT3RiVXI2LTFDN1dIVVpGUEMybnBoLWZrSzZXd0k3WFAyeDBaRTdxWDhMSHY5bHR2aDMxTFo0N1JIWWN3LTYtVG5TcVJaWmNmNUdncE9taFpuS1Q1QXpneTMzQktrLWpfZ1lDVEtwbEFEaGZXeEZCbEVRV3d6N0x1NDB3RDRCWEhpQ1NzZjAtSVBLUmR6T1lxZ29qVEYta2RSMjRWaWpvUmxJTU1nZ1BmUDFheklzdm1XMlFMd1pjNXZKME4wMlJyNDhWU1JneG9fNFRNQXk4X1dzVzlaVlBuRWFydUNDakJlMW5KTldwZXdZNGFuRW51bWRSMFZGRTlZdjV0ZHhmSVJwSUp1b09pdFlVd3VKS3pZbHhxRmMxQm9XcHJsblVfZFFGd3o0R3ZFbVBLeFVlaDdSZWlUTVFlRDZKU0ZuM3kzWXV6eHNyREpOUG9YNm8tUEdHSmFLckk1YlItV3FLZ21rQWQ1NXZsNGNTdzQ?oc=5",
+          "source": "Yahoo新聞",
+          "link": "https://news.google.com/rss/articles/CBMigwNBVV95cUxObV9VMTJVMlpseUdTdEY2R000RWFLdDJKT1Vjc3R2ZURZRi0yV1FFRl9wYnZfZlpscm9PS25GaVFXdWVSUmRMRXEtNWxqS0tOX1lvc25KekNPQ0FsN2RpRlhrN09rRnZESEktU3ZzNEJ3Z0N1QjdNWFMzOV9GYksyTUxPZ3RLLVdUUWI1NnV4YUd5X004Nk1nampiLWZMVU84ZnQ3ZmdjSXMxMFdOWklqNlZweFliTVNpeEhSOUlnZllWLThqWGhvRVRqb2VwcWtMVU0tTzN3ektDZGVHSDh5b05RRFFxZm9pOVVJbkdyX0tKeFZMTkxrUVZ4LXowUHpDMFpEQ19lWnc0UkV0eE0tWFh2ZVF3Zm9rQnNRcVQzWjZMMWZRYmZQVGhWd3RaNWNPWHF1bENYMXlNUV9QQi1qRUVtcE1iaDNfeTZITFdoUFN2WnBNSkdfOEtJOEZ1WWRhRlpta1d3ZjF6c0JwYXdfaGdJdjhZa0dRMHl6cUtMaERfZ3c?oc=5",
           "date": "2026-07-21"
         }
       ],
       "sources": {
         "queries": [
-          "數位發展部 AI 補助 計畫",
-          "中小企業 數位轉型 補助 申請",
-          "淨零 減碳 補助 計畫 經濟部",
-          "產業 升級 補助 申請 企業",
-          "SBIR 政府 補助 計畫 公告"
+          "數位發展部 AI 補助 計畫 申請",
+          "中小企業 數位轉型 補助 申請 期限",
+          "淨零 減碳 補助 計畫 經濟部 名額",
+          "產業 升級 補助 開放 申請 截止",
+          "SBIR 補助 計畫 公告 受理",
+          "政府 補助 企業 開放申請 金額 上限"
         ],
         "feeds": []
       }
