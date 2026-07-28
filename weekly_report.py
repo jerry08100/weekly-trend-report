@@ -853,20 +853,48 @@ def rebuild_site(site):
     print(f"[render] 重畫 {len(reports)} 週 -> {site}")
 
 
+def iso_week(dstr):
+    y, m, dd = map(int, dstr.split("-"))
+    return datetime(y, m, dd).isocalendar()[:2]              # (ISO 年, 週)
+
+
+def week_report_ok(site):
+    """本週(ISO週)是否已有『完整』週報：每個有新聞的非補助主題都有 AI 內容。"""
+    cur = datetime.now().isocalendar()[:2]
+    for rep in load_all_reports(site):
+        if iso_week(rep["date"]) != cur:
+            continue
+        ok = all(tp["topic"] in GRANT_TOPICS or tp.get("sections") or not tp["items"]
+                 for tp in rep["topics"])
+        if ok:
+            return True
+    return False
+
+
 def main():
     site = os.path.join(OUT_DIR, "docs")
-    os.makedirs(os.path.join(site, "reports"), exist_ok=True)
+    reps = os.path.join(site, "reports")
+    os.makedirs(reps, exist_ok=True)
 
     # --render-only：只用舊 JSON 重畫（改樣式/版面用，秒出、零 API）
     if "--render-only" in sys.argv:
         rebuild_site(site)
         return site
 
+    # 一週一份：本週已有完整週報就跳過（週一失敗，週二/三 cron 會補跑）。--force 可強制
+    if "--force" not in sys.argv and week_report_ok(site):
+        print("[skip] 本週已有完整週報，跳過本次執行")
+        return site
+
     data, log = collect()
     print("\n".join(log))
     report = build_report(data)
     d = report["date"]
-    with open(os.path.join(site, "reports", f"{d}.json"), "w", encoding="utf-8") as f:
+    for old in os.listdir(reps):                              # 清同週舊檔(如週一不完整版)，保一週一份
+        base = old.rsplit(".", 1)[0]
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}", base) and base != d and iso_week(base) == iso_week(d):
+            os.remove(os.path.join(reps, old))
+    with open(os.path.join(reps, f"{d}.json"), "w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2)   # 結構化資料（未來 AI RAG 讀這個）
 
     rebuild_site(site)                                        # 重畫全站
