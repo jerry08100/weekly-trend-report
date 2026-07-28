@@ -72,6 +72,25 @@ PEER_SUFFIX = {
 }
 # GRANT_TOPICS：這些主題產「條列補助卡片」（部會/對象/金額/期限），不寫長文。
 GRANT_TOPICS = {"政府補助 / 計畫"}
+# STANDING_GRANTS：常態可申請的企業轉型補助（官方連結已查證）。永遠顯示，不靠 AI。
+# 要增減計畫改這裡即可。
+STANDING_GRANTS = [
+    {"agency": "數位發展部 數位產業署", "program": "臺灣雲市集 TCloud 數位轉型點數",
+     "target": "中小微企業（採購雲端／數位工具）", "amount": "補助點數 3 萬元，抵最高 50% 費用",
+     "url": "https://www.tcloud.gov.tw/"},
+    {"agency": "經濟部 中小及新創企業署", "program": "SBIR 小型企業創新研發計畫",
+     "target": "中小企業、新創（創新研發）", "amount": "依計畫類型，個案／跨域補助不等",
+     "url": "https://sbir.org.tw/"},
+    {"agency": "經濟部 產業發展署", "program": "產業升級創新平台輔導計畫（TIIP）",
+     "target": "企業／產業聯盟（前瞻技術研發）", "amount": "依計畫審定",
+     "url": "https://eii.nat.gov.tw/tiip/"},
+    {"agency": "經濟部 產業發展署", "program": "以大帶小 製造業低碳及智慧化升級轉型補助",
+     "target": "製造業（含供應鏈中小企業）", "amount": "智慧化最高 2,000 萬、低碳化最高 3,000 萬",
+     "url": "https://service.moea.gov.tw/EE502/NewPortal/"},
+    {"agency": "經濟部 產業發展署", "program": "中小型製造業 低碳及智慧化升級轉型個案補助",
+     "target": "中小型製造業", "amount": "每家最高 300～500 萬（依員工數）",
+     "url": "https://acic.cpc.tw/"},
+]
 # TAB_LABEL：頂部分頁按鈕的短標籤。
 TAB_LABEL = {
     "永續 / 企業實務": "永續",
@@ -621,31 +640,39 @@ def deadline_passed(text):
         return False
 
 
+def _grant_card(agency, program, target, amount, deadline, link, cite_label):
+    cite = (f'<a class="g-src" href="{html.escape(link)}" target="_blank">{cite_label} ↗</a>'
+            if link else "")
+    meta = (f'<span><b>對象</b>{html.escape(target or "—")}</span>'
+            f'<span><b>補助</b>{html.escape(amount or "—")}</span>')
+    if deadline is not None:
+        meta += f'<span><b>期限</b>{html.escape(deadline or "—")}</span>'
+    return ('<div class="grant">'
+            f'<div class="g-top"><span class="g-agency">{html.escape(agency)}</span>{cite}</div>'
+            f'<div class="g-name">{html.escape(program)}</div>'
+            f'<div class="g-meta">{meta}</div></div>')
+
+
 def render_grants(topic, grants, items):
-    """補助主題：條列卡片（部會/計畫/對象/金額/期限），濾掉已過期，右欄附來源。"""
-    tk = tkey(topic)
-    cards = []
-    for g in grants:
-        if deadline_passed(g.get("deadline", "")):       # 過期不列
+    """補助主題：常態可申請計畫（固定清單）+ 本週新聞動態（AI 抓、濾過期）。滿版。"""
+    out = ['<h4>常態可申請計畫</h4><div class="grants">']
+    for g in STANDING_GRANTS:                            # 常態清單（官方連結，永遠顯示）
+        out.append(_grant_card(g["agency"], g["program"], g["target"], g["amount"],
+                               None, g["url"], "官方網站"))
+    out.append('</div>')
+
+    news = []
+    for g in grants or []:
+        if deadline_passed(g.get("deadline", "")):
             continue
         i = g.get("idx")
         link = items[i]["link"] if isinstance(i, int) and 0 <= i < len(items) else ""
-        cite = (f'<a class="g-src" href="{html.escape(link)}" target="_blank">來源 ↗</a>'
-                if link else "")
-        amount = html.escape(g.get("amount", "").strip() or "—")
-        deadline = html.escape(g.get("deadline", "").strip() or "—")
-        cards.append(
-            '<div class="grant">'
-            f'<div class="g-top"><span class="g-agency">{html.escape(g.get("agency",""))}</span>{cite}</div>'
-            f'<div class="g-name">{html.escape(g.get("program",""))}</div>'
-            '<div class="g-meta">'
-            f'<span><b>對象</b>{html.escape(g.get("target","").strip() or "—")}</span>'
-            f'<span><b>補助</b>{amount}</span>'
-            f'<span><b>期限</b>{deadline}</span>'
-            '</div></div>')
-    if cards:                                            # 滿版，不列右邊參考來源
-        return '<div class="grants">' + "".join(cards) + '</div>'
-    return '<p class="note">本週沒有可列的補助計畫（或皆已過期）。</p>'
+        news.append(_grant_card(g.get("agency", ""), g.get("program", ""), g.get("target", ""),
+                                g.get("amount", "").strip(), g.get("deadline", "").strip() or "詳見公告",
+                                link, "來源"))
+    if news:
+        out.append('<h4>本週相關動態</h4><div class="grants">' + "".join(news) + '</div>')
+    return "".join(out)
 
 
 def render_sources_panel(report):
