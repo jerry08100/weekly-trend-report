@@ -126,7 +126,10 @@ WATCH_HL = ([w for w in COMPETITORS + CLIENTS if len(w) >= 3 and w not in ("銀�
 # 新光產險…）。用「公司名長相」補抓——2~6 個中文字接上業別字尾。「銀行業」「產險業」這種
 # 沒有公司名前綴的通稱不會命中，不會誤標。
 INDUSTRY_TAIL = ("產物保險", "產險", "金控", "金融控股", "銀行", "車隊", "租車",
-                 "機場接送", "停車", "客運", "運輸")
+                 "機場接送", "停車", "客運", "運輸", "汽車")
+# 「XX汽車」樣式會誤中「電動汽車」「自駕汽車」這類技術詞——前綴是這些通用詞就不標。
+_GENERIC_PREFIX = {"電動", "自駕", "無人", "新能源", "燃油", "油電", "二手", "進口",
+                   "國產", "網路", "數位", "傳統", "智慧", "共享"}
 _WATCH_RE = re.compile(
     "|".join([re.escape(w) for w in sorted(WATCH_HL, key=len, reverse=True)]
              + [rf"[一-龥]{{2,6}}(?:{'|'.join(INDUSTRY_TAIL)})"]),
@@ -151,6 +154,8 @@ def _watch_repl(m):
     while len(name) > 2 and name[0] in _PARTICLES:
         lead += name[0]
         name = name[1:]
+    if name in _GENERIC_PREFIX:                          # 「電動汽車」是技術詞不是公司
+        return t
     return f'{lead}<mark class="watch">{name}{tail}</mark>'
 
 
@@ -1171,6 +1176,10 @@ def selftest():
     assert mark_watch("從澳洲聯邦銀行來看") == '從<mark class="watch">澳洲聯邦銀行</mark>來看'
     assert '<mark class="watch">和泰產險</mark>' in mark_watch("和泰產險推新保單"), "真公司名開頭字不可被剝"
     assert '<mark class="watch">國泰金控</mark>' in mark_watch("國泰金控導入AI"), "名單外金控也要標"
+    assert '<mark class="watch">裕隆汽車</mark>' in mark_watch("裕隆汽車開放參訪"), "車商也要標"
+    assert '<mark class="watch">和泰汽車</mark>' in mark_watch("和泰汽車導入AI")
+    assert mark_watch("電動汽車市場升溫") == "電動汽車市場升溫", "技術詞不是公司，不標"
+    assert mark_watch("數位銀行浪潮來襲") == "數位銀行浪潮來襲"
     assert mark_watch("車商大打折扣戰") == "車商大打折扣戰", "太通用的詞不該標"
     assert useful_summary("標題就是這一句話沒別的", "標題就是這一句話沒別的") == ""
     assert deadline_passed("2020-01-01") and not deadline_passed("2099-12-31")
