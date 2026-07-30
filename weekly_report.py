@@ -439,7 +439,7 @@ def collect():
                 key = norm(it["title"])
                 if not key or key in seen:
                     continue
-                seen.add(key)
+                seen[key] = it
                 rows.append(it)
                 kept += 1
             log.append(f"[ok]   官方 {url[:44]} -> {kept} 則")
