@@ -5,6 +5,7 @@
 import urllib.request, urllib.error, ssl, sys, os, html, re, urllib.parse, json, zlib, time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
+from difflib import SequenceMatcher
 from email.utils import parsedate_to_datetime
 
 # ── 來源設定 ──
@@ -44,12 +45,36 @@ OFFICIAL_HTML = {
         ("https://www.sbir.org.tw/news", "https://www.sbir.org.tw", r"/news/main_content\?id=\d+"),
     ],
 }
-# FEEDS：主題 -> 直連 RSS（補充台灣深度來源）。無則留空。
+# FEEDS：主題 -> 直連 RSS。真實媒體來源，比 Google News 多兩樣東西：完整摘要、真原文網址
+# （Google News 只給標題 + 跳轉連結）。2026-07-30 實測活著的；工商時報/數位時代/環境資訊中心/
+# CSRone/天下CSR/經濟部/國發會 皆 403 或 404，已排除。
 FEEDS = {
-    "永續 / 企業實務": ["https://esg.gvm.com.tw/rss"],                                # ESG遠見（台灣）
-    "AI / 企業應用": [],
-    "政府補助 / 計畫": [],
+    "永續 / 企業實務": [
+        "https://esg.gvm.com.tw/rss",                            # ESG遠見（主題站，不濾）
+        "https://money.udn.com/rssfeed/news/1001?ch=money",      # 經濟日報（綜合，靠關鍵字濾）
+        "https://feeds.feedburner.com/rsscna/finance",           # 中央社 財經
+    ],
+    "AI / 企業應用": [
+        "https://www.ithome.com.tw/rss",                         # iThome（企業 IT）
+        "https://technews.tw/feed/",                             # 科技新報
+        "https://www.inside.com.tw/feed/rss",                    # Inside
+        "https://feeds.feedburner.com/rsscna/technology",        # 中央社 科技
+    ],
+    "政府補助 / 計畫": ["https://money.udn.com/rssfeed/news/1001?ch=money"],
     "企業獎項 / 競賽": [],
+}
+# 所有來源（含 Google News 查詢結果）一律用主題關鍵字濾。原因實測：綜合型 RSS 會灌股市/EPS、
+# Google News 查詢會飄（「AI 工具 企業」撈回美股特報）、連 ESG遠見 這種主題站也發西班牙野火、
+# 東京短褲之類與企業實務無關的稿。寧可少而準。
+FEED_KEYWORDS = {
+    "永續 / 企業實務": ["永續", "ESG", "淨零", "減碳", "碳排", "碳費", "碳權", "碳盤查", "碳足跡",
+                        "溫室氣體", "盤查", "查證", "綠電", "再生能源", "循環經濟", "氣候變遷",
+                        "CBAM", "SBTi", "TCFD", "IFRS S1", "IFRS S2"],
+    "AI / 企業應用": ["AI", "人工智慧", "生成式", "大型語言模型", "LLM", "Agent", "智慧製造",
+                      "數位轉型", "自動化", "機器學習", "Copilot", "ChatGPT", "Gemini", "算力"],
+    "政府補助 / 計畫": ["補助", "獎補助", "計畫申請", "受理申請", "開放申請", "申請期限",
+                        "輔導計畫", "徵求提案", "SBIR", "TIIP", "轉型基金", "低利貸款"],
+    "企業獎項 / 競賽": ["徵件", "報名", "獎項", "評選", "選拔", "表揚"],
 }
 # FOCUS：主題 -> 給 AI 的聚焦提示，決定摘要口味。
 FOCUS = {
@@ -73,11 +98,68 @@ KICKER = {
     "政府補助 / 計畫": "GOVERNMENT GRANTS · FUNDING PROGRAMS",
     "企業獎項 / 競賽": "AWARDS · COMPETITIONS",
 }
-# PEERS：觀察名單（主管很在意「同業有做」）。只有列在 PEER_SUFFIX 的主題才查名單並強制「同業動態」節。
-PEERS = ["USPACE", "台塑", "中油", "肯譯", "機場快線", "銀行業", "車商", "產險業",
-         "大都會車隊", "台灣大車隊", "順鋒機場接送", "漢聲租車", "Uber"]
+# COMPETITORS：同業／競爭對手名單 -> 內文「同業動態」那節只寫這些。
+# CLIENTS：甲方客戶名單 -> 內文「客戶動態」那節只寫這些。
+# 兩份都會拿去查新聞、都會標紅。要增減直接改名單，程式自動查詢與標記。
+# 分法經使用者確認（2026-07-30）：機場接送／租車／車隊／停車服務＝同業，
+# 台塑／中油／金融業＝甲方客戶。
+COMPETITORS = ["USPACE", "機場快線", "大都會車隊", "台灣大車隊", "順鋒機場接送",
+               "漢聲租車", "Uber", "肯譯", "車商"]
+# 客戶端要的是「整個金融業」的 AI／永續動態（所有金控，不只富邦），用業別詞當查詢撈全體，
+# 具體公司名靠 INDUSTRY_TAIL 標紅（富邦金控、國泰金控、台新金控…都自動命中）。
+CLIENTS = ["台塑", "中油", "金控", "銀行", "產險"]
+CLIENT_DESC = ("台塑、中油，以及『整個金融業』——所有金控／銀行／產險業者"
+               "（不限名單，點名具體公司，如富邦金控、國泰金控、台新金控）")
+# ALIASES：同一家公司的其他寫法也要標紅。AI 有時會擴寫成全名（富邦產險 -> 富邦產物保險
+# 股份有限公司），沒列進來就標不到。
+ALIASES = {
+    "台塑": ["台灣塑膠", "台塑集團"],
+    "中油": ["台灣中油", "中國石油"],
+    "Uber": ["優步"],
+    "USPACE": ["優勢泊車"],
+}
+# WATCH_HL：內文/來源清單要標紅的對象 = 同業 + 客戶 + 別名。過短或太通用的詞不標
+# （「車商」「銀行業」「產險業」會誤標到無關句子），只標具體公司名。
+WATCH_HL = ([w for w in COMPETITORS + CLIENTS if len(w) >= 3 and w not in ("銀行業", "車商", "產險業")]
+            + [a for w in COMPETITORS + CLIENTS for a in ALIASES.get(w, [])])
+# 同類業者也標紅：名單只列得出已知對象，但新聞常出現名單外的同業／甲方（台新金控、裕隆、
+# 新光產險…）。用「公司名長相」補抓——2~6 個中文字接上業別字尾。「銀行業」「產險業」這種
+# 沒有公司名前綴的通稱不會命中，不會誤標。
+INDUSTRY_TAIL = ("產物保險", "產險", "金控", "金融控股", "銀行", "車隊", "租車",
+                 "機場接送", "停車", "客運", "運輸")
+_WATCH_RE = re.compile(
+    "|".join([re.escape(w) for w in sorted(WATCH_HL, key=len, reverse=True)]
+             + [rf"[一-龥]{{2,6}}(?:{'|'.join(INDUSTRY_TAIL)})"]),
+    re.IGNORECASE)
+
+
+_WATCH_SET = set(WATCH_HL)
+_PARTICLES = set("的了與和及並而從在對向由為跟讓也就仍已如據按含")
+
+
+def _watch_repl(m):
+    """業別字尾比對是貪婪的，會把前面的虛詞吃進來（「與新光金控」「從澳洲聯邦銀行」）。
+    名單精確命中不動；字尾命中的把開頭虛詞剝到 <mark> 外，公司名前綴至少保留 2 字
+    （保護「和泰產險」這類以虛詞字開頭的真公司名）。"""
+    t = m.group(0)
+    if t in _WATCH_SET:
+        return f'<mark class="watch">{t}</mark>'
+    tail = next((x for x in sorted(INDUSTRY_TAIL, key=len, reverse=True)
+                 if t.endswith(x)), "")
+    name = t[:len(t) - len(tail)]
+    lead = ""
+    while len(name) > 2 and name[0] in _PARTICLES:
+        lead += name[0]
+        name = name[1:]
+    return f'{lead}<mark class="watch">{name}{tail}</mark>'
+
+
+def mark_watch(frag):
+    """把同業／客戶（含同類業者）標紅。作用在『已 escape 且已轉好連結』的 HTML 片段上；
+    比對的都是公司名，不會出現在 href 屬性裡（錨點是 #ref-xxx-N），不會咬壞標籤。"""
+    return _WATCH_RE.sub(_watch_repl, frag)
 # 各主題給觀察名單加的查詢字尾（決定往哪個面向抓該對象的動態）。
-PEER_SUFFIX = {
+WATCH_SUFFIX = {
     "永續 / 企業實務": "永續 淨零 碳",
     "AI / 企業應用": "AI 數位轉型",
 }
@@ -132,6 +214,10 @@ TAB_LABEL = {
 
 DAYS = 7                       # 抓幾天內
 CAP = 30                       # 每主題最多留幾則
+SIM = 0.72                     # 標題相似度 >= 此值視為同事件（跨媒體合併）
+DIRECT_QUOTA = 12              # CAP 內保留給直連媒體的名額（它們才有摘要/正文，別被熱度擠掉）
+BODY_MAX = 6                   # 每主題最多抓幾篇原文正文餵 AI（只抓直連 RSS 的真實網址）
+BODY_CHARS = 700               # 每篇正文取前幾字
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 UA = "Mozilla/5.0 (weekly-report-bot)"
 _ctx = ssl.create_default_context()
@@ -139,9 +225,9 @@ _ctx.check_hostname = False
 _ctx.verify_mode = ssl.CERT_NONE   # ponytail: 關 SSL 驗證圖方便；正式對外服務別這樣
 
 
-def fetch(url):
+def fetch(url, timeout=20):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=20, context=_ctx) as r:
+    with urllib.request.urlopen(req, timeout=timeout, context=_ctx) as r:
         return r.read()
 
 
@@ -191,12 +277,87 @@ def parse_feed(xml_bytes):
 
 
 def gnews_url(q):
-    qs = urllib.parse.quote(q)
+    # when:{DAYS}d 是關鍵：不加的話 Google News 會塞回大量幾個月前的舊聞
+    # （實測窄查詢回 75~100 則裡本週內只有 0~1 則），本週新聞被舊聞擠光。
+    qs = urllib.parse.quote(f"{q} when:{DAYS}d")
     return f"https://news.google.com/rss/search?q={qs}&hl=zh-TW&gl=TW&ceid=TW:zh-Hant"
 
 
 def norm(t):
     return re.sub(r"\s+", "", (t or "")).lower()[:40]   # 去空白+截頭當去重鍵
+
+
+_KW_CACHE = {}
+
+
+def kw_hit(topic, text):
+    """綜合型 RSS 的主題關鍵字過濾。英數關鍵字要求詞界（避免 TAIWAN 命中 AI）。"""
+    kws = FEED_KEYWORDS.get(topic)
+    if not kws:
+        return True
+    rx = _KW_CACHE.get(topic)
+    if rx is None:
+        parts = [(rf"\b{re.escape(k)}\b" if k.isascii() else re.escape(k)) for k in kws]
+        rx = _KW_CACHE[topic] = re.compile("|".join(parts), re.IGNORECASE)
+    return bool(rx.search(text or ""))
+
+
+def dkey(title):
+    """去重比對用鍵：拆掉「- 媒體」尾巴、去標點空白。"""
+    t, _ = split_source(title)
+    return re.sub(r"[\s\W_]+", "", t).lower()
+
+
+def absorb(prev, it):
+    """把重複的那則併進既有那則：報導家數 +1、留較長摘要、優先留真實媒體網址。
+    同一篇文章常有 Google News 版（只有標題）與直連版（有摘要／可抓正文），要留直連版那份資料。"""
+    prev["dupes"] = prev.get("dupes", 1) + 1
+    if len(it.get("summary") or "") > len(prev.get("summary") or ""):
+        prev["summary"] = it["summary"]
+    if it.get("direct") and not prev.get("direct"):
+        prev["link"], prev["direct"] = it["link"], True
+
+
+def merge_same_event(rows):
+    """同事件跨媒體合併：標題相似度 >= SIM 視為同一則，留摘要最長者並記報導家數。
+    家數本身是熱度信號，會餵給 AI。
+    ponytail: O(n²) 比對，n 約 200 上限、字串 40 字內，跑一次不到 0.2 秒；n 破千再換 minhash。"""
+    kept = []
+    for it in rows:
+        k1 = dkey(it["title"])
+        for k in kept:
+            if SequenceMatcher(None, k1, k["_dk"]).ratio() >= SIM:
+                absorb(k, it)
+                break
+        else:
+            it["_dk"], it["dupes"] = k1, it.get("dupes", 1)
+            kept.append(it)
+    for k in kept:
+        k.pop("_dk", None)
+    return kept
+
+
+def useful_summary(title, summary, limit=280):
+    """RSS 摘要有時只是標題複述，那種丟掉，省 prompt 也避免誤導。"""
+    s = re.sub(r"\s+", " ", summary or "").strip()
+    if len(s) < 30:
+        return ""
+    if SequenceMatcher(None, dkey(s[:40]), dkey(title or "")[:40]).ratio() >= 0.85:
+        return ""
+    return s[:limit]
+
+
+def fetch_body(url):
+    """抓原文正文前幾段。通用做法：砍掉 script/nav 等，取夠長的 <p> 串起來。失敗回空字串。"""
+    try:
+        raw = fetch(url, timeout=10)
+    except Exception:
+        return ""
+    txt = raw.decode("utf-8", "ignore")
+    txt = re.sub(r"(?is)<(script|style|nav|header|footer|aside|figure)[^>]*>.*?</\1>", " ", txt)
+    paras = [strip_html(p, 400) for p in re.findall(r"(?is)<p[^>]*>(.*?)</p>", txt)]
+    paras = [p for p in paras if len(p) >= 40]          # 濾掉版權、標籤等短句
+    return " ".join(paras)[:BODY_CHARS]
 
 
 def scrape_official(url, base, pat):
@@ -224,34 +385,49 @@ def collect():
     result, log = {}, []
     topics = list(QUERIES) + [t for t in FEEDS if t not in QUERIES]  # 保持定義順序(永續→AI→補助)
     for topic in topics:
-        peer_q = ([f"{p} {PEER_SUFFIX[topic]}".strip() for p in PEERS]  # 只有 PEER_SUFFIX 主題才查名單
-                  if topic in PEER_SUFFIX else [])
+        watch_q = ([f"{p} {WATCH_SUFFIX[topic]}".strip() for p in COMPETITORS + CLIENTS]
+                  if topic in WATCH_SUFFIX else [])      # 只有 WATCH_SUFFIX 主題才查同業＋客戶名單
         urls = ([gnews_url(q) for q in QUERIES.get(topic, [])]
-                + [gnews_url(q) for q in peer_q]
+                + [gnews_url(q) for q in watch_q]
                 + FEEDS.get(topic, []))
-        rows, seen = [], set()
+        feedset = set(FEEDS.get(topic, []))             # 直連 RSS：真實網址、摘要有料
+        rows, seen = [], {}                             # seen: 去重鍵 -> 已收的那則（碰撞時併進去）
         for u in urls:
             label = u if u.startswith("http") else u
+            direct = u in feedset                       # 直連 RSS：有摘要、真原文網址（可抓正文）
             try:
                 items = parse_feed(fetch(u))
+                if not items and direct:                # 直連站偶發回空 feed（實測 ESG遠見中過一次）
+                    time.sleep(2)
+                    items = parse_feed(fetch(u))
             except Exception as e:
                 log.append(f"[skip] {label[:60]} -> {type(e).__name__}")
                 continue
-            kept = 0
+            kept = off_topic = 0
             for it in items:
                 dt = it["date"]
                 if dt is not None and dt.tzinfo is None:
                     dt = dt.replace(tzinfo=timezone.utc)
                 if dt is not None and dt < cutoff:      # 有日期且過期 -> 丟
                     continue
-                key = norm(it["title"])
-                if not key or key in seen:              # 去重（跨查詢重複很多）
+                if not kw_hit(topic, it["title"] + " " + it.get("summary", "")):
+                    off_topic += 1                      # 股市/EPS/國際生活稿等與主題無關的
                     continue
-                seen.add(key)
+                key = norm(it["title"])
+                if not key:
+                    continue
+                it["direct"] = direct
+                prev = seen.get(key)
+                if prev is not None:                    # 跨查詢/跨來源重複很多，併進既有那則
+                    absorb(prev, it)
+                    continue
                 it["date"] = dt
+                it["dupes"] = 1
+                seen[key] = it
                 rows.append(it)
                 kept += 1
-            log.append(f"[ok]   {label[:60]} -> {kept} 則")
+            log.append(f"[ok]   {label[:60]} -> {kept} 則"
+                       + (f"（濾掉離題 {off_topic}）" if off_topic else ""))
         for url, base, pat in OFFICIAL_HTML.get(topic, []):   # 官方入口（.gov 站雲端可能被擋，失敗略過）
             try:
                 offi = scrape_official(url, base, pat)
@@ -267,8 +443,27 @@ def collect():
                 rows.append(it)
                 kept += 1
             log.append(f"[ok]   官方 {url[:44]} -> {kept} 則")
-        rows.sort(key=lambda r: r["date"] or cutoff, reverse=True)
-        result[topic] = rows[:CAP]
+        before = len(rows)
+        rows = merge_same_event(rows)                   # 同事件跨媒體合併，額度留給真的不同的新聞
+        if before != len(rows):
+            log.append(f"[dedup] {topic} {before} -> {len(rows)} 則（同事件合併）")
+        rows.sort(key=lambda r: (r.get("dupes", 1), r["date"] or cutoff), reverse=True)
+        quota = [r for r in rows if r.get("direct")][:DIRECT_QUOTA]   # 直連媒體保底名額
+        qid = {id(r) for r in quota}
+        rows = (quota + [r for r in rows if id(r) not in qid])[:CAP]
+        got = 0                                         # 抓原文正文（只碰真實媒體網址，Google News 是跳轉頁不碰）
+        for it in rows:
+            if got >= BODY_MAX:
+                break
+            if not it.get("direct"):
+                continue
+            body = fetch_body(it["link"])
+            if body:
+                it["body"] = body
+                got += 1
+        if got:
+            log.append(f"[body] {topic} 取得 {got} 篇原文正文")
+        result[topic] = rows
     return result, log
 
 
@@ -289,9 +484,18 @@ def gemini_digest(topic, rows):
     lines = []
     for i, it in enumerate(rows):
         t, src = split_source(it["title"])
-        lines.append(f"[{i}] {t}" + (f"（{src}）" if src else ""))
+        n = it.get("dupes", 1)
+        head_line = f"[{i}] {t}" + (f"（{src}）" if src else "")
+        if n > 1:
+            head_line += f"〔{n} 家媒體報導〕"
+        lines.append(head_line)
+        detail = it.get("body") or useful_summary(it["title"], it.get("summary", ""))
+        if detail:
+            lines.append(f"    內容：{detail}")
     focus = FOCUS.get(topic, "")
-    head = (f"你是資深產業分析師。下面是本週「{topic}」的新聞清單（每則附編號）。\n\n"
+    head = (f"你是資深產業分析師。下面是本週「{topic}」的新聞清單（每則附編號）。\n"
+            "部分項目附「內容」（原文摘要或正文節錄），請優先依內容寫，不要只從標題推測；"
+            "標註〔N 家媒體報導〕代表多家跟進、是本週熱度較高的事件，值得多寫幾句。\n\n"
             + (f"【聚焦方向】{focus}\n\n" if focus else ""))
     if topic in AWARD_TOPICS:
         prompt = (head + "請用繁體中文輸出：\n"
@@ -329,12 +533,19 @@ def gemini_digest(topic, rows):
     else:
         prompt = (head + "請用繁體中文輸出：\n"
             "1. gist：3~5 個關鍵詞（用「、」分隔），一眼概括本週該主題在講什麼。\n"
-            "2. sections：分 3~4 個小節，各給有意義的 heading（例如「政策與法規」「產業趨勢」「企業實務」）。\n"
-            + ("2b. 其中『必須』有一節 heading 設為「同業動態」，專門講這份觀察名單做了什麼："
-               f"{'、'.join(PEERS)}。有相關新聞就點名『哪個對象做了什麼具體動作』並附引用；"
-               "名單中沒出現在本週新聞的對象就不用提，若整份都沒有名單相關動態，"
-               "該節就據實寫「本週觀察名單無明顯相關動作」。這節是主管最看重的，寫具體。\n"
-               if topic in PEER_SUFFIX else "")
+            "2. sections：分小節寫，heading 見下方 2b；沒指定 2b 的主題自己分 3~4 節、給有意義的 heading。\n"
+            + ("2b. heading 必須『固定用這四個、照這個順序』：\n"
+               "   「政策與法規」— 主管機關、法令、標準、期程要求的變化。\n"
+               "   「市場趨勢」— 產業整體走向、技術與商業模式變化、值得注意的做法。\n"
+               f"   「同業動態」— 只寫競爭對手：{'、'.join(COMPETITORS)}。\n"
+               f"   「客戶動態」— 只寫甲方客戶：{CLIENT_DESC}。\n"
+               "【後兩節寫法】點名『哪個對象做了什麼具體動作』（新成立什麼部門、推出什麼服務、"
+               "導入什麼系統、拿到什麼認證）並附引用。名稱一律照名單上的寫法照抄，不要擴寫成全名、"
+               "不要改簡稱（例：寫「富邦產險」，不要寫「富邦產物保險股份有限公司」）。\n"
+               "本週沒有相關新聞的對象，連名字都不要出現；整節都沒有時只寫一句"
+               "「本週無明顯相關動作」，不要把名單唸一遍。這兩節是主管最看重的，寫具體。\n"
+               "2c. 名單對象出現在前兩節時，也一樣照名單寫法寫（系統會自動標紅）。\n"
+               if topic in WATCH_SUFFIX else "")
             + "3. 每個小節 body 約 150~230 字連貫段落（不要條列），全篇合計約 600~900 字。\n"
             "4. 內容要有深度：補充相關『產業背景知識』（法規要點、標準內涵、盤查/查證常識與實務）。\n"
             "5. 有分析、有觀點，串出脈絡，不要流水帳；讀者想深入會自己點連結。\n"
@@ -520,6 +731,10 @@ sup{line-height:0}
 sup a{font-family:var(--mono);font-size:11.5px;color:var(--accent);text-decoration:none;
   font-weight:700;padding:0 1px}
 sup a:hover{text-decoration:underline}
+/* ── 同業／客戶標記：主管關注對象，內文與來源清單一律標紅 ── */
+mark.watch{background:rgba(179,38,30,.09);color:#A32118;font-weight:700;padding:0 3px;
+  border-radius:3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.refs mark.watch{background:none;padding:0}
 /* ── 參考來源（右欄）── */
 .col-refs{position:sticky;top:24px}
 @media(max-width:1080px){.col-refs{position:static;margin-top:28px}}
@@ -593,6 +808,10 @@ def build_report(data):
             items.append({
                 "title": t, "source": src, "link": it["link"],
                 "date": it["date"].strftime("%Y-%m-%d") if it["date"] else "",
+                # summary/body 一起存進 JSON：未來 RAG 讀得到內容，不只標題
+                "summary": useful_summary(it["title"], it.get("summary", "")),
+                "body": it.get("body", ""),
+                "dupes": it.get("dupes", 1),
             })
         dg = gemini_digest(topic, rows)
         secs = (dg.get("sections") if dg else []) or []
@@ -657,6 +876,7 @@ def render_article(topic, sections, items):
     for sec in sections:
         body_parts.append(f'<h4>{html.escape(sec.get("heading", ""))}</h4>')
         body = re.sub(r"\[\[(\d+)\]\]", repl, html.escape(clean_body(sec.get("body", ""))))
+        body = mark_watch(body)                      # 同業／客戶名稱標紅（主管關注）
         paras = [p.strip() for p in re.split(r"\n{2,}", body) if p.strip()]
         body_parts.append('<div class="body">' + "".join(f"<p>{p}</p>" for p in paras) + "</div>")
     return (f'<div class="cols"><div class="col-body">{"".join(body_parts)}</div>'
@@ -668,9 +888,11 @@ def build_refs(tk, items):
     out = ['<div class="refs"><span class="kicker">References · 參考來源'
            f'（{len(items)} 則）</span><ol>']
     for n, it in enumerate(items, 1):
+        hot = f'　·　{it["dupes"]} 家報導' if it.get("dupes", 1) > 1 else ""
+        title = mark_watch(html.escape(it["title"]))     # 來源清單也標紅，掃一眼就看到同業/客戶
         out.append(f'<li id="ref-{tk}-{n}"><a href="{html.escape(it["link"])}" '
-                   f'target="_blank">{html.escape(it["title"])}</a>'
-                   f'<span class="src">{html.escape(it["source"])} {it["date"]}</span></li>')
+                   f'target="_blank">{title}</a>'
+                   f'<span class="src">{html.escape(it["source"])} {it["date"]}{hot}</span></li>')
     out.append('</ol></div>')
     return "".join(out)
 
@@ -926,7 +1148,40 @@ def week_report_ok(site):
     return False
 
 
+def selftest():
+    """離線自檢（不連網、不燒 API）：關鍵字濾、同事件合併、標紅、摘要複述、期限判斷。
+    跑法：python weekly_report.py --selftest"""
+    assert kw_hit("AI / 企業應用", "台積電導入生成式 AI 提升良率")
+    assert not kw_hit("AI / 企業應用", "TAIWAN 加權指數收紅，台股量能放大")   # AI 不可命中 TAIWAN
+    assert kw_hit("永續 / 企業實務", "金管會擴大碳盤查查證範圍")
+    assert not kw_hit("永續 / 企業實務", "某公司法說會 EPS 創新高")
+    rows = [{"title": "富邦產險導入 AI 理賠 - 視傳媒", "summary": "短", "link": "a"},
+            {"title": "富邦產險導入 AI 理賠系統 - 中央社", "summary": "x" * 80,
+             "link": "b", "direct": True},
+            {"title": "完全不相干的另一則新聞 - 經濟日報", "summary": "", "link": "c"}]
+    m = merge_same_event(rows)
+    assert len(m) == 2, f"同事件沒合併：{[r['title'] for r in m]}"
+    assert m[0]["dupes"] == 2, m[0]
+    assert m[0]["link"] == "b" and m[0]["direct"], "應改留真實媒體網址"
+    assert len(m[0]["summary"]) == 80, "應留較長的摘要"
+    assert '<mark class="watch">富邦產險</mark>' in mark_watch("富邦產險宣布導入")
+    assert '<mark class="watch">USPACE</mark>' in mark_watch("USPACE 新成立 AI 部門")
+    assert '<mark class="watch">富邦產物保險</mark>' in mark_watch("富邦產物保險股份有限公司導入")
+    assert mark_watch("與新光金控合作") == '與<mark class="watch">新光金控</mark>合作', "虛詞要剝到 mark 外"
+    assert mark_watch("從澳洲聯邦銀行來看") == '從<mark class="watch">澳洲聯邦銀行</mark>來看'
+    assert '<mark class="watch">和泰產險</mark>' in mark_watch("和泰產險推新保單"), "真公司名開頭字不可被剝"
+    assert '<mark class="watch">國泰金控</mark>' in mark_watch("國泰金控導入AI"), "名單外金控也要標"
+    assert mark_watch("車商大打折扣戰") == "車商大打折扣戰", "太通用的詞不該標"
+    assert useful_summary("標題就是這一句話沒別的", "標題就是這一句話沒別的") == ""
+    assert deadline_passed("2020-01-01") and not deadline_passed("2099-12-31")
+    assert "when%3A7d" in gnews_url("測試"), "Google News 查詢必須限時間窗"
+    print("[selftest] OK")
+
+
 def main():
+    if "--selftest" in sys.argv:
+        selftest()
+        return None
     site = os.path.join(OUT_DIR, "docs")
     reps = os.path.join(site, "reports")
     os.makedirs(reps, exist_ok=True)
