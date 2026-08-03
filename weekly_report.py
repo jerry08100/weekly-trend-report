@@ -50,19 +50,23 @@ OFFICIAL_HTML = {
 # CSRone/天下CSR/經濟部/國發會 皆 403 或 404，已排除。
 FEEDS = {
     "永續 / 企業實務": [
-        "https://esg.gvm.com.tw/rss",                            # ESG遠見（主題站，不濾）
-        "https://money.udn.com/rssfeed/news/1001?ch=money",      # 經濟日報（綜合，靠關鍵字濾）
-        "https://feeds.feedburner.com/rsscna/finance",           # 中央社 財經
+        "https://esg.gvm.com.tw/rss",                            # ESG遠見（免費內容站）
+        "https://feeds.feedburner.com/rsscna/finance",           # 中央社 財經（免費）
     ],
     "AI / 企業應用": [
-        "https://www.ithome.com.tw/rss",                         # iThome（企業 IT）
-        "https://technews.tw/feed/",                             # 科技新報
-        "https://www.inside.com.tw/feed/rss",                    # Inside
-        "https://feeds.feedburner.com/rsscna/technology",        # 中央社 科技
+        "https://www.ithome.com.tw/rss",                         # iThome（免費）
+        "https://technews.tw/feed/",                             # 科技新報（免費）
+        "https://www.inside.com.tw/feed/rss",                    # Inside（免費）
+        "https://feeds.feedburner.com/rsscna/technology",        # 中央社 科技（免費）
     ],
-    "政府補助 / 計畫": ["https://money.udn.com/rssfeed/news/1001?ch=money"],
+    "政府補助 / 計畫": [],
     "企業獎項 / 競賽": [],
 }
+# PAYWALL：付費牆媒體。這些來源讀者點進去看不到全文，一律不當來源（Google News 依標題尾
+# 「- 媒體」名比對剔除）。要增減直接改。
+PAYWALL = ("工商時報", "經濟日報", "天下雜誌", "天下", "遠見雜誌", "商業周刊", "商周",
+           "今周刊", "財訊", "鏡週刊", "彭博", "Bloomberg", "華爾街日報", "WSJ",
+           "日經", "Nikkei", "金融時報", "哈佛商業評論", "MoneyDJ")
 # 所有來源（含 Google News 查詢結果）一律用主題關鍵字濾。原因實測：綜合型 RSS 會灌股市/EPS、
 # Google News 查詢會飄（「AI 工具 企業」撈回美股特報）、連 ESG遠見 這種主題站也發西班牙野火、
 # 東京短褲之類與企業實務無關的稿。寧可少而準。
@@ -292,6 +296,14 @@ def norm(t):
     return re.sub(r"\s+", "", (t or "")).lower()[:40]   # 去空白+截頭當去重鍵
 
 
+def is_paywall(title):
+    """Google News 標題尾「- 媒體」若是付費牆媒體，回 True（不當來源）。"""
+    _, src = split_source(title)
+    if not src:
+        return False
+    return any(p.lower() in src.lower() for p in PAYWALL)
+
+
 _KW_CACHE = {}
 
 
@@ -408,12 +420,15 @@ def collect():
             except Exception as e:
                 log.append(f"[skip] {label[:60]} -> {type(e).__name__}")
                 continue
-            kept = off_topic = 0
+            kept = off_topic = paywalled = 0
             for it in items:
                 dt = it["date"]
                 if dt is not None and dt.tzinfo is None:
                     dt = dt.replace(tzinfo=timezone.utc)
                 if dt is not None and dt < cutoff:      # 有日期且過期 -> 丟
+                    continue
+                if not direct and is_paywall(it["title"]):   # 付費牆媒體不當來源（讀者看不到全文）
+                    paywalled += 1
                     continue
                 if not kw_hit(topic, it["title"] + " " + it.get("summary", "")):
                     off_topic += 1                      # 股市/EPS/國際生活稿等與主題無關的
@@ -432,7 +447,8 @@ def collect():
                 rows.append(it)
                 kept += 1
             log.append(f"[ok]   {label[:60]} -> {kept} 則"
-                       + (f"（濾掉離題 {off_topic}）" if off_topic else ""))
+                       + (f"（濾離題 {off_topic}）" if off_topic else "")
+                       + (f"（濾付費 {paywalled}）" if paywalled else ""))
         for url, base, pat in OFFICIAL_HTML.get(topic, []):   # 官方入口（.gov 站雲端可能被擋，失敗略過）
             try:
                 offi = scrape_official(url, base, pat)
