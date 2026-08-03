@@ -1089,8 +1089,44 @@ def compose_page(report, sidebar_html, theme=None):
     return page(f'趨勢周報 {report["date"]}', inner, theme)
 
 
-def send_mail(html_body, report):
-    """有設 env 就寄；沒設就跳過。Gmail SMTP -> 收件者(可 Outlook)。"""
+def render_email(report, site):
+    """精簡信件：每主題只給關鍵詞 + 一句摘要 + 連結；不列全部來源，讀者自己上網站看。"""
+    d = report["date"]
+    P = ['<div style="font-family:\'Microsoft JhengHei\',Arial,sans-serif;max-width:640px;'
+         'margin:0 auto;color:#1b2432">'
+         f'<h1 style="font-size:22px;border-bottom:3px solid #234E7D;padding-bottom:8px;margin:0 0 4px">'
+         f'趨勢周報 <span style="color:#94A3B8;font-size:15px">{d}</span></h1>'
+         '<p style="color:#586477;font-size:14px;margin:6px 0 18px">本週重點摘要，點主題看完整內容。</p>']
+    for tp in report["topics"]:
+        tk = tkey(tp["topic"])
+        link = f"{site}#{tk}" if site else "#"
+        P.append(f'<h2 style="font-size:17px;color:#234E7D;margin:20px 0 4px">'
+                 f'{html.escape(tp["topic"])}</h2>')
+        if tp.get("gist"):
+            P.append(f'<p style="margin:2px 0;color:#8a6d3b;font-size:13px">'
+                     f'{html.escape(tp["gist"])}</p>')
+        if tp.get("sections"):                           # 一句摘要（第一節開頭）
+            s = re.sub(r"\[\[\d+\]\]", "", clean_body(tp["sections"][0].get("body", "")))
+            s = re.split(r"[。\n]", s.strip())[0]
+            if s:
+                P.append(f'<p style="margin:6px 0;font-size:15px;line-height:1.7">{html.escape(s)}。</p>')
+        elif tp["topic"] in GRANT_TOPICS:
+            n = len(STANDING.get(tp["topic"], []))
+            P.append(f'<p style="margin:6px 0;font-size:14px;color:#586477">'
+                     f'常態可申請 {n} 項＋本週動態，詳見網站。</p>')
+        P.append(f'<a href="{html.escape(link)}" style="color:#234E7D;font-weight:600;'
+                 f'text-decoration:none;font-size:14px">看完整內容 →</a>')
+    if site:
+        P.append(f'<div style="margin-top:28px;padding-top:16px;border-top:1px solid #dfe3ea">'
+                 f'<a href="{html.escape(site)}" style="display:inline-block;background:#234E7D;'
+                 f'color:#fff;padding:11px 22px;border-radius:6px;text-decoration:none;'
+                 f'font-weight:600">開啟完整週報網站</a></div>')
+    P.append("</div>")
+    return "".join(P)
+
+
+def send_mail(report):
+    """有設 env 就寄精簡版；沒設就跳過。Gmail SMTP -> 收件者(可 Outlook)。"""
     import smtplib
     from email.message import EmailMessage
     user = os.environ.get("GMAIL_USER")
@@ -1099,17 +1135,13 @@ def send_mail(html_body, report):
     if not (user and pw and to):
         print("[mail] 未設 GMAIL_USER/GMAIL_APP_PW/MAIL_TO，跳過寄信")
         return
-    site = os.environ.get("SITE_URL")        # 設了就在信末附網頁連結
-    body = html_body
-    if site:
-        body = body.replace("</body>",
-                            f'<p class="meta">線上看：<a href="{html.escape(site)}">{html.escape(site)}</a></p></body>')
+    site = os.environ.get("SITE_URL")
     msg = EmailMessage()
-    msg["Subject"] = f"趨勢周報 {report['date']}（{report['total']} 則）"
+    msg["Subject"] = f"趨勢周報 {report['date']}"
     msg["From"] = user
     msg["To"] = to
-    msg.set_content("此信為 HTML 格式，請用支援 HTML 的信箱檢視。")
-    msg.add_alternative(body, subtype="html")
+    msg.set_content("此信為 HTML 格式，請用支援 HTML 的信箱檢視。完整內容：" + (site or ""))
+    msg.add_alternative(render_email(report, site), subtype="html")
     with smtplib.SMTP("smtp.gmail.com", 587) as s:
         s.starttls()
         s.login(user, pw)
@@ -1218,9 +1250,7 @@ def main():
 
     rebuild_site(site)                                        # 重畫全站
     print(f"共 {report['total']} 則")
-
-    mail_html = page(f"趨勢周報 {d}", f'<div class="report">{render_report_body(report)}</div>')
-    send_mail(mail_html, report)                             # 寄無側欄窄欄版
+    send_mail(report)                                        # 寄精簡版（摘要+連結）
     return site
 
 
