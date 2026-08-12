@@ -891,6 +891,10 @@ def render_article(topic, sections, items):
         if not (0 <= i < len(items)):
             return ""
         n = i + 1                                    # 編號 = 項目序號（對齊下方清單）
+        link = items[i].get("link", "")
+        if link:                                     # 點引用直接開原文（新分頁）
+            return (f'<sup><a href="{html.escape(link)}" target="_blank" '
+                    f'rel="noopener" title="開啟原文">[{n}]</a></sup>')
         return f'<sup><a href="#ref-{tk}-{n}">[{n}]</a></sup>'
 
     body_parts = []                                  # 左欄：情勢文
