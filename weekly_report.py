@@ -234,6 +234,7 @@ SIM = 0.72                     # 標題相似度 >= 此值視為同事件（跨�
 DIRECT_QUOTA = 12              # CAP 內保留給直連媒體的名額（它們才有摘要/正文，別被熱度擠掉）
 BODY_MAX = 6                   # 每主題最多抓幾篇原文正文餵 AI（只抓直連 RSS 的真實網址）
 BODY_CHARS = 700               # 每篇正文取前幾字
+MAIL_FROM_HOUR = 7             # 幾點後才准寄信（週一有多班接力，太早的那班先讓過，別在清晨吵人）
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 UA = "Mozilla/5.0 (weekly-report-bot)"
 _ctx = ssl.create_default_context()
@@ -864,7 +865,7 @@ def build_report(data):
             "sources": {"queries": QUERIES.get(topic, []), "feeds": FEEDS.get(topic, [])},
         })
     return {
-        "date": datetime.now().strftime("%Y-%m-%d"),
+        "date": report_date(),
         "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
         "total": sum(len(v) for v in data.values()),
         "topics": topics,
@@ -1171,7 +1172,7 @@ def send_mail(report):
     to = os.environ.get("MAIL_TO")
     if not (user and pw and to):
         print("[mail] 未設 GMAIL_USER/GMAIL_APP_PW/MAIL_TO，跳過寄信")
-        return
+        return False
     site = os.environ.get("SITE_URL")
     msg = EmailMessage()
     msg["Subject"] = f"趨勢周報 {report['date']}"
@@ -1184,6 +1185,7 @@ def send_mail(report):
         s.login(user, pw)
         s.send_message(msg)
     print(f"[mail] 已寄至 {to}")
+    return True
 
 
 def rebuild_site(site):
@@ -1209,17 +1211,35 @@ def iso_week(dstr):
     return datetime(y, m, dd).isocalendar()[:2]              # (ISO 年, 週)
 
 
-def week_report_ok(site):
-    """本週(ISO週)是否已有『完整』週報：每個有新聞的非補助主題都有 AI 內容。"""
-    cur = datetime.now().isocalendar()[:2]
+def report_date():
+    """周報日期一律掛該週『週一』：週日備稿算隔天，週二/三補跑也蓋回同一支檔（天然一週一份）。"""
+    n = datetime.now()
+    d = n + timedelta(days=1) if n.weekday() == 6 else n - timedelta(days=n.weekday())
+    return d.strftime("%Y-%m-%d")
+
+
+def complete(rep):
+    """『完整』週報：每個有新聞的非補助主題都有 AI 內容。"""
+    return all(tp["topic"] in GRANT_TOPICS or tp.get("sections") or not tp["items"]
+               for tp in rep["topics"])
+
+
+def week_report(site):
+    """本週已備好的完整週報；沒有或不完整回 None。"""
+    cur = iso_week(report_date())
     for rep in load_all_reports(site):
-        if iso_week(rep["date"]) != cur:
-            continue
-        ok = all(tp["topic"] in GRANT_TOPICS or tp.get("sections") or not tp["items"]
-                 for tp in rep["topics"])
-        if ok:
-            return True
-    return False
+        if iso_week(rep["date"]) == cur and complete(rep):
+            return rep
+    return None
+
+
+def mark_mailed(site, rep):
+    """在 JSON 上蓋『已寄』戳記，讓同週後續班次不會重寄（原子寫入，不冒清空原檔的險）。"""
+    rep["mailed"] = datetime.now().strftime("%Y-%m-%d %H:%M")
+    path = os.path.join(site, "reports", f'{rep["date"]}.json')
+    with open(path + ".tmp", "w", encoding="utf-8") as f:
+        json.dump(rep, f, ensure_ascii=False, indent=2)
+    os.replace(path + ".tmp", path)
 
 
 def selftest():
@@ -1253,6 +1273,12 @@ def selftest():
     assert useful_summary("標題就是這一句話沒別的", "標題就是這一句話沒別的") == ""
     assert deadline_passed("2020-01-01") and not deadline_passed("2099-12-31")
     assert "when%3A7d" in gnews_url("測試"), "Google News 查詢必須限時間窗"
+    assert datetime.strptime(report_date(), "%Y-%m-%d").weekday() == 0, "周報日期必須掛週一"
+    ai, grant = "AI / 企業應用", "政府補助 / 計畫"
+    assert not complete({"topics": [{"topic": ai, "items": [1], "sections": []}]}), "有新聞沒 AI 內容＝不完整"
+    assert complete({"topics": [{"topic": ai, "items": [1], "sections": [{"body": "x"}]}]})
+    assert complete({"topics": [{"topic": ai, "items": [], "sections": []}]}), "沒新聞不算殘"
+    assert complete({"topics": [{"topic": grant, "items": [1], "sections": []}]}), "補助主題本來就沒 sections"
     print("[selftest] OK")
 
 
@@ -1269,25 +1295,38 @@ def main():
         rebuild_site(site)
         return site
 
-    # 一週一份：本週已有完整週報就跳過（週一失敗，週二/三 cron 會補跑）。--force 可強制
-    if "--force" not in sys.argv and week_report_ok(site):
-        print("[skip] 本週已有完整週報，跳過本次執行")
+    force = "--force" in sys.argv
+    report = None if force else week_report(site)             # 週日已備好 -> 週一這班只寄信，不重抓
+    if report is None:
+        data, log = collect()
+        print("\n".join(log))
+        report = build_report(data)
+        d = report["date"]
+        for old in os.listdir(reps):                          # 清同週舊檔(舊命名的殘檔)，保一週一份
+            base = old.rsplit(".", 1)[0]
+            if re.fullmatch(r"\d{4}-\d{2}-\d{2}", base) and base != d and iso_week(base) == iso_week(d):
+                os.remove(os.path.join(reps, old))
+        with open(os.path.join(reps, f"{d}.json"), "w", encoding="utf-8") as f:
+            json.dump(report, f, ensure_ascii=False, indent=2)  # 結構化資料（未來 AI RAG 讀這個）
+        rebuild_site(site)                                    # 重畫全站
+        print(f"共 {report['total']} 則")
+    else:
+        print(f"[ready] 本週 {report['date']} 內容已備好，不重抓")
+
+    if "--prepare" in sys.argv:                               # 週日班：只備稿，寄信留給週一
+        print("[mail] --prepare 只備稿，不寄信")
         return site
-
-    data, log = collect()
-    print("\n".join(log))
-    report = build_report(data)
-    d = report["date"]
-    for old in os.listdir(reps):                              # 清同週舊檔(如週一不完整版)，保一週一份
-        base = old.rsplit(".", 1)[0]
-        if re.fullmatch(r"\d{4}-\d{2}-\d{2}", base) and base != d and iso_week(base) == iso_week(d):
-            os.remove(os.path.join(reps, old))
-    with open(os.path.join(reps, f"{d}.json"), "w", encoding="utf-8") as f:
-        json.dump(report, f, ensure_ascii=False, indent=2)   # 結構化資料（未來 AI RAG 讀這個）
-
-    rebuild_site(site)                                        # 重畫全站
-    print(f"共 {report['total']} 則")
-    send_mail(report)                                        # 寄精簡版（摘要+連結）
+    if report.get("mailed"):
+        print(f"[mail] 本週已於 {report['mailed']} 寄出，跳過")
+        return site
+    if not complete(report) and datetime.now().weekday() < 2:  # 殘的別寄爛信，等週二/三補跑
+        print("[mail] 本週週報不完整，等下一班補跑再寄")
+        return site
+    if not force and datetime.now().hour < MAIL_FROM_HOUR:    # 排程可能被 GitHub 提早叫醒
+        print(f"[mail] 現在 {datetime.now():%H:%M} 早於 {MAIL_FROM_HOUR} 點，等下一班再寄")
+        return site
+    if send_mail(report):                                    # 寄精簡版（摘要+連結）
+        mark_mailed(site, report)                            # 真的寄出去才蓋戳，沒寄成下一班要重試
     return site
 
 

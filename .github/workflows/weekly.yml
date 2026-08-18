@@ -2,9 +2,16 @@ name: weekly-report
 
 on:
   schedule:
-    # 週一/二/三 00:00 UTC = 台北 08:00。程式內建「本週已有完整週報就跳過」，
-    # 所以週一成功 → 週二/三自動跳過；週一失敗 → 週二(或三)補跑。保證一週一份。
-    - cron: '0 0 * * 1,2,3'
+    # cron 一律 UTC，註解寫台北時間(UTC+8)。實測 GitHub 排程會延遲 90~180 分鐘，所以：
+    #   週日先把內容備好（抓新聞+AI，最花時間、可以慢慢來）
+    #   週一清晨起排四班「接力」，每班只做寄信；已寄過就跳過，早於台北 07:00 也跳過。
+    #   → 不管當天延遲多少，都會有一班落在 07:00~08:40 之間把信寄出去。
+    - cron: '10 2 * * 0'      # 週日 10:10 備稿（不寄信）
+    - cron: '40 21 * * 0'     # 週一 05:40 接力一
+    - cron: '40 22 * * 0'     # 週一 06:40 接力二
+    - cron: '40 23 * * 0'     # 週一 07:40 接力三
+    - cron: '40 0 * * 1'      # 週一 08:40 接力四
+    - cron: '40 0 * * 2,3'    # 週二/三 08:40 補跑（週日備稿失敗或週一整套失敗時）
   workflow_dispatch:          # 允許在 Actions 頁手動按鈕觸發（測試/強制）
 
 permissions:
@@ -20,12 +27,13 @@ jobs:
           python-version: '3.12'
       - name: 產周報並寄信
         env:
+          TZ:             Asia/Taipei   # runner 預設 UTC，程式判「今天星期幾／幾點」要用台北時間
           GMAIL_USER:     ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PW:   ${{ secrets.GMAIL_APP_PW }}
           MAIL_TO:        ${{ secrets.MAIL_TO }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SITE_URL:       https://jerry08100.github.io/weekly-trend-report/
-        run: python weekly_report.py
+        run: python weekly_report.py ${{ github.event.schedule == '10 2 * * 0' && '--prepare' || '' }}
       - name: 部署網站（commit docs/ 回 repo）
         run: |
           git config user.name  "github-actions[bot]"
