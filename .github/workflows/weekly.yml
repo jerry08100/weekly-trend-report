@@ -31,6 +31,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: 裝 crawl4ai（正文品質＋跟 Google News 跳轉；失敗不擋周報，程式自動退回 stdlib）
+        run: pip install -q crawl4ai && crawl4ai-setup || true
       - name: 產周報並寄信
         env:
           TZ:             Asia/Taipei   # runner 預設 UTC，程式判「今天星期幾／幾點」要用台北時間

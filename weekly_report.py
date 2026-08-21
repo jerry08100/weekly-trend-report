@@ -232,7 +232,7 @@ DAYS = 7                       # 抓幾天內
 CAP = 30                       # 每主題最多留幾則
 SIM = 0.72                     # 標題相似度 >= 此值視為同事件（跨媒體合併）
 DIRECT_QUOTA = 12              # CAP 內保留給直連媒體的名額（它們才有摘要/正文，別被熱度擠掉）
-BODY_MAX = 6                   # 每主題最多抓幾篇原文正文餵 AI（只抓直連 RSS 的真實網址）
+BODY_MAX = 8                   # 每主題最多抓幾篇原文正文餵 AI（直連優先；crawl4ai 可跟 Google News 跳轉補位）
 BODY_CHARS = 700               # 每篇正文取前幾字
 MAIL_FROM_HOUR = 7             # 幾點後才准寄信（週一有多班接力，太早的那班先讓過，別在清晨吵人）
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -385,6 +385,53 @@ def fetch_body(url):
     return " ".join(paras)[:BODY_CHARS]
 
 
+def _md_to_text(md, limit):
+    """crawl4ai markdown -> 純文字。連結留字、砍圖與標記，段落沿用 >=40 字門檻濾雜訊。"""
+    md = re.sub(r"!\[[^\]]*\]\([^)]*\)", " ", md)
+    md = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", md)
+    lines = [re.sub(r"^[#>*\-\|\s]+", "", ln).strip() for ln in md.splitlines()]
+    paras = [ln for ln in lines if len(ln) >= 40]
+    return re.sub(r"\s+", " ", " ".join(paras))[:limit]
+
+
+def fetch_bodies_c4a(urls):
+    """crawl4ai 批次抓正文（真瀏覽器渲染，Google News 跳轉頁也跟得到原文）。
+    沒裝 crawl4ai / 起不來 -> 回 {}，呼叫端走 fetch_body() stdlib 備援。"""
+    if not urls:
+        return {}
+    try:
+        import asyncio
+        from crawl4ai import AsyncWebCrawler, CrawlerRunConfig, CacheMode
+        from crawl4ai.content_filter_strategy import PruningContentFilter
+        from crawl4ai.markdown_generation_strategy import DefaultMarkdownGenerator
+    except ImportError:
+        return {}
+    md_gen = DefaultMarkdownGenerator(content_filter=PruningContentFilter())
+    cfg = CrawlerRunConfig(cache_mode=CacheMode.BYPASS, page_timeout=25000,
+                           markdown_generator=md_gen)
+    cfg_slow = CrawlerRunConfig(cache_mode=CacheMode.BYPASS, page_timeout=40000,
+                                delay_before_return_html=8.0,   # Google News 跳轉是 JS 導頁，要等它跳完（實測 8s 夠）
+                                markdown_generator=md_gen)
+
+    async def go():
+        out = {}
+        async with AsyncWebCrawler() as c:
+            for u in urls:
+                try:
+                    r = await c.arun(url=u, config=cfg_slow if "news.google" in u else cfg)
+                    md = getattr(r.markdown, "fit_markdown", "") or str(r.markdown or "")
+                    txt = _md_to_text(md, BODY_CHARS)
+                    if r.success and len(txt) >= 80:
+                        out[u] = txt
+                except Exception:
+                    pass
+        return out
+    try:
+        return asyncio.run(go())
+    except Exception:
+        return {}
+
+
 def scrape_official(url, base, pat):
     """從官方補助入口的清單頁抓內文連結（title, link），當作 items 餵給 AI。"""
     noise = ("說明會", "推廣", "核定名單", "得獎", "名單", "工作坊", "座談",
@@ -480,18 +527,18 @@ def collect():
         quota = [r for r in rows if r.get("direct")][:DIRECT_QUOTA]   # 直連媒體保底名額
         qid = {id(r) for r in quota}
         rows = (quota + [r for r in rows if id(r) not in qid])[:CAP]
-        got = 0                                         # 抓原文正文（只碰真實媒體網址，Google News 是跳轉頁不碰）
-        for it in rows:
-            if got >= BODY_MAX:
-                break
-            if not it.get("direct"):
-                continue
-            body = fetch_body(it["link"])
-            if body:
+        cand = [it for it in rows if it.get("direct")][:BODY_MAX]
+        cand += [it for it in rows if not it.get("direct")][:BODY_MAX - len(cand)]
+        bodies = fetch_bodies_c4a([it["link"] for it in cand])   # 一批瀏覽器抓，含 Google News 跳轉
+        got = 0
+        for it in cand:
+            body = bodies.get(it["link"]) or (fetch_body(it["link"]) if it.get("direct") else "")
+            if body:                                    # 非直連不走 stdlib 備援：跳轉頁只抓得到殼
                 it["body"] = body
                 got += 1
         if got:
-            log.append(f"[body] {topic} 取得 {got} 篇原文正文")
+            log.append(f"[body] {topic} 取得 {got} 篇原文正文"
+                       + ("" if bodies else "（crawl4ai 未生效，stdlib 備援）"))
         result[topic] = rows
     return result, log
 
@@ -1271,6 +1318,10 @@ def selftest():
     assert mark_watch("數位銀行浪潮來襲") == "數位銀行浪潮來襲"
     assert mark_watch("車商大打折扣戰") == "車商大打折扣戰", "太通用的詞不該標"
     assert useful_summary("標題就是這一句話沒別的", "標題就是這一句話沒別的") == ""
+    assert _md_to_text("# 標題\n![圖](x.png)\n" + "這是一段超過四十個字的正文內容，" * 3, 200)
+    assert "連結字樣" in _md_to_text(
+        "[連結字樣](https://x)，這一段中文內文要超過四十個字才會被段落濾網留下來，所以多寫一點湊字數通過。", 200)
+    assert _md_to_text("短句\n# 標\n![x](y)", 200) == "", "雜訊行要全濾掉"
     assert deadline_passed("2020-01-01") and not deadline_passed("2099-12-31")
     assert "when%3A7d" in gnews_url("測試"), "Google News 查詢必須限時間窗"
     assert datetime.strptime(report_date(), "%Y-%m-%d").weekday() == 0, "周報日期必須掛週一"
