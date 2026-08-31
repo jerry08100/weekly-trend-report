@@ -1,6 +1,6 @@
 {
   "date": "2026-08-31",
-  "generated_at": "2026-08-31 07:56",
+  "generated_at": "2026-08-31 08:54",
   "total": 67,
   "topics": [
     {
@@ -91,6 +91,15 @@
           "dupes": 3
         },
         {
+          "title": "AI重塑能源與淨零競爭 產業迎戰綠電、永續問責與低碳轉型三大變局",
+          "source": "商傳媒",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQ0cwRUI4dXpJd1BhLU9qTjhoc0RWYkh0NEhCa3NscjVyT1VsWURrSXloX0VzelBTaVk2bWF3NXF0UWNuNmtMNmZXTlNSVE01NXBkZ3JfTVN3N2FWMkNGQnpCMjk3NWQ3NDB1a011UkNIaDd6NFVYVVF4alM0cVlHSktldzZTQmlqVVY0NUR4QWFJbnhLT2s4QQ?oc=5",
+          "date": "2026-08-27",
+          "summary": "",
+          "body": "",
+          "dupes": 3
+        },
+        {
           "title": "亞太暨台灣永續行動獎揭曉 玉山金四大面向績優",
           "source": "UDN",
           "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9WZmxXVmlINzZpWVBjSDZFR055X2VBNFBDcjJKaWg0Yjl1ZzhLTmZBYWtWbjNDS0dHUVROY0c1VVYzTnZWNVJGUzFYQ3FnTmVQ0gFWQVVfeXFMTUJGZ1RwXzZwRmU5UXhsOW0yVXVxcW1VUEZJeng3Y1N6ay1LVS1qLUtCLUE3Nnd4UGFPb3NmeGl3UGNfQUE1b2h3R1pob2J4MEVWTmQ0NVE?oc=5",
@@ -157,15 +166,6 @@
           "title": "金融賦能永續共榮 臺灣企銀獲「2026台灣永續行動獎」雙獎肯定",
           "source": "Taiwan News",
           "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFByZVZSS1U2WFdBdlpVRG1sa1JUQWlvRDFkQmtMWVZEd2IxTVR5c0llQkVWaW9lRUU5TGUtSVc3OV8zTkthWXp4VTh2Q1htRE5KRFY2UWk0WjE?oc=5",
-          "date": "2026-08-28",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "AI重塑能源與淨零競爭 產業迎戰綠電、永續問責與低碳轉型三大變局",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5NWTNTSS1EVVQyem1CSDlKa2dydk9vbGNBT3BRd21OU3ZaUkFxSnl5X3NYOWtFbzU0bVd4aFRkcTlzZTZsRWd4em9KRG5ORkNNWkE?oc=5",
           "date": "2026-08-28",
           "summary": "",
           "body": "",
@@ -297,15 +297,15 @@
     },
     {
       "topic": "AI / 企業應用",
-      "gist": "地端AI代理、企業AI績效瓶頸、數據隱私合規、金融專屬模型",
+      "gist": "AI代理落地、地端運算部署、產地合規查核、企業AI變現",
       "sections": [
         {
           "heading": "政策與法規",
-          "body": "國際上對 AI 訓練資料來源合法性與隱私規範的審查正全面收緊。Google 出價 1,000 萬美元收購破產航空 Spirit Airlines 包含內部郵件與員工訊息的數位資產做為訓練資料，引發工會向法院提出正式異議，凸顯倒閉清算時內部通訊紀錄做為訓練集的法規爭議 [[7]]。政策推動方面，韓國政府宣布斥資 10 兆韓元推動「AI for All」計畫，提供全民免費使用生成式 AI 算力額度，以國家資源降低中小企業與民眾的使用門檻 [[10]]。所以呢：台灣企業若打算利用內部對話紀錄或客戶歷史數據微調模型，法務部門最慢今年第三季前必須完成內部通訊授權與隱私條款盤點，避免面臨侵權與勞資爭議。"
+          "body": "阿聯酋推出全球首套 AI 司法審判平台，引發演算法黑盒子產生幻覺時責任歸屬難以釐清的法律爭議 [[3]]；國內載板廠欣興則因產地標示爭議遭檢調搜索，突顯供應鏈溯源與貿易合規的嚴格監管 [[1]]。這顯示 AI 決策透明度與硬體製造合規正同步受到法規檢視。所以呢，台灣企業在下半年採購 AI 系統與關鍵零組件時，必須把演算法免責條款與原產地履歷查核列入標準合約，預防未來面臨法律訴訟與斷鏈風險。"
         },
         {
           "heading": "市場趨勢",
-          "body": "企業導入生成式 AI 正從盲目跟風轉向檢驗實質回報。研究指出僅 5% 專案能帶來可衡量的投資回報，且高達九成主管坦言未見生產力具體提升 [[1]]。為解決雲端 Token 費用高昂與機密外洩問題，地端與邊緣 AI Agent（能自主執行多步驟任務的代理人軟體）快速興起，安提國際即推出即裝即用的邊緣運算系統 [[15]]，硬體規格焦點也從 NPU 轉向記憶體頻寬與整合式架構 [[0]]。此外，IBM 攜手 OpenAI 協助企業改造舊系統流程 [[6]]，TestMu AI 亦推出 Agent 驗證工具以確保代理程式上線穩定度 [[25]]。所以呢：資訊長在規劃下半年專案時，應立即停掉純展示型的概念驗證，將資源轉向具備明確量化效益的地端工作流程自動化。"
+          "body": "AI 應用正從軟體對話跨入硬體操控，Anthropic 發布 MHS 標準讓 Claude 能夠直接操控雷射與機械手臂 [[0]]，安提國際亦推出即裝即用的邊緣 AI 代理系統 [[14]]。然而研究示警僅 5% 生成式專案能獲利，企業面臨成效難以量化的痛點 [[5]]，促使市場轉向強調記憶體頻寬的地端 AI 來壓低 Token 費用並保障隱私 [[4]]。所以呢，企業編列下年度預算時應停止盲目跟風概念驗證，改聚焦能直接接管實體或邊緣作業流程的專屬 Agent 應用。"
         },
         {
           "heading": "同業動態",
@@ -313,11 +313,47 @@
         },
         {
           "heading": "客戶動態",
-          "body": "金融與傳產客戶加速落地自研專屬 AI 應用。錠嵂保經正式上線自建的 Inforce R6 Gen AI 系統，直接輔助業務員作業流程 [[12]]；公股金融機構也在董總季會中集體聚焦數位轉型與業務賦能實務 [[13]]。調查顯示，年預算逾 10 萬美元並採用微調自研專屬模型的金融機構，已有 40% 實現獲利增長 [[27]]。在傳產方面，台塑石油於官方 APP 推出 AI 虛擬角色「Sunny」短影音，以互動形式提供加油優惠攻略 [[20]]。所以呢：金融與傳產客戶明年編列預算將大幅轉向專屬微調模型，軟體服務廠商提案時必須直接提供能整合客戶既有系統與專屬知識庫的落地架構。"
+          "body": "傳產龍頭台塑旗下的台塑石油在 APP 中導入 AI GIRL「Sunny」短影音互動，主打自動化促銷導流 [[19]]。金融業方面，錠嵂保經正式上線業界首創自建的 Inforce R6 Gen AI 系統優化內部營運 [[12]]，公股金融機構董總季會也將數位與 AI 轉型列為核心討論重點 [[13]]。所以呢，面對大客戶紛紛自建專屬 AI 工具，資訊服務商在下季提案時應針對特定作業流程提供客製化微調模型，才能切入客戶的既有系統。"
         }
       ],
       "grants": [],
       "items": [
+        {
+          "title": "Anthropic 推出 MHS 標準：Claude 開始操控顯微鏡、機械手臂與雷射",
+          "source": "",
+          "link": "https://www.inside.com.tw/article/42245-anthropic-mhs-ai-physical-devices",
+          "date": "2026-08-31",
+          "summary": "Anthropic 發布 Model Hardware Standard（MHS），讓 AI 代理可以直接控制實體科學設備。Claude 在量子電腦雷射校準任務中以 700 次試驗達到 99.3% 成功率，並已在 Genentech 和卡內基梅隆大學完成實驗室自動化任務。",
+          "body": "Anthropic 推出 MHS 標準：Claude 開始操控顯微鏡、機械手臂與雷射 Anthropic 發布 Model Hardware Standard（MHS），讓 AI 代理可以直接控制實體科學設備。Claude 在量子電腦雷射校準任務中以 700 次試驗達到 99.3% 成功率，並已在 Genentech 和卡內基梅隆大學完成實驗室自動化任務。 Anthropic 在 2026 年 8 月 27 日發布了 Model Hardware Standard（MHS），一套讓 AI 代理能夠操控實體設備的開放標準。這次的範疇不是軟體介面或資料工具，而是顯微鏡、機械手臂、液體操作器和雷射，這些科學實驗室、製造現場中實際運轉的機器。 MHS 的邏輯可以用 MCP 來對照理解。Anthropic 的 Model Context Protocol 讓 AI 代理連接軟體工具和資料來源，而 MHS 讓 AI 代理連接實體機器。 具體來說，設備製造商或操作者依 MHS 規格在設備端實作驅動程式，Claude 就能透過協定下達指令、讀取感應器回傳值，並根據結果決定下一步行動，形成完整的控制迴圈。這意思是 AI 代理不再只是「建議人工怎麼操作」，而是直接執行操作本身。 Anthropic 目前以研究預覽形式推出 MHS，合作對象限定在科學研究、機器人與製造領域的特定機構。長期計畫是開源規格，讓設備製造商和開發者社群自行建構生態。 最具代表性的案例，是 Claude 協助量子運算公司 QuEra 校準一台價值 70 萬美元的雷射系統。 量子電腦的效能高度仰賴光學系統的精密對準。傳統上這個步",
+          "dupes": 1
+        },
+        {
+          "title": "欣興涉產地標示爭議遭搜索  AI 載板供需及客戶動向成焦點",
+          "source": "",
+          "link": "https://technews.tw/2026/08/31/unimicron-raid-origin-labeling-dispute-ai-substrate-supply-demand-customer-focus/",
+          "date": "2026-08-31",
+          "summary": "欣興 28 日遭檢調搜索，引發市場高度關注。欣興當日兩度發布重大訊息說明，桃園地方檢察署指揮桃園市調處至公司進 […]",
+          "body": "欣興 28 日遭檢調搜索，引發市場高度關注。欣興當日兩度發布重大訊息說明，桃園地方檢察署指揮桃園市調處至公司進行搜索調查，據檢調單位告知，案件主要涉及妨害農工商罪中的「產地標示爭議」；公司強調，目前營運正常，事件對財務及業務並無重大影響，並將全力配合調查、釐清案情。 桃園地檢署後續說明，案件主要針對部分中國生產PCB產品的產地標示進行調查，28日搜索欣興龜山總公司及中壢廠房，並約談PCB事業處總經理、副總經理、廠長等14名被告及4名證人。經檢方複訊後，其中5人分別以30萬元至1,500萬元交保，其餘被告請回，全案仍在偵辦階段，實際涉案範圍及最終法律責任仍待司法調查釐清。 欣興則針對外界傳出公司涉及做假帳、內線交易等說法發布重訊澄清並表示，目前由檢調告知的調查重點為妨害農工商罪中的產地標示爭議，配合調查對象包括1位總經理、1位副總及相關單位同仁，同時相關資訊仍以公告為準。 欣興今年受惠AI伺服器及高階ABF載板需求強勁，基本面及股價同步走強，欣興去年底收盤價約220元，今年1月2日收219元，至8月28日收盤已達1,110元，今年以來漲幅超過4倍。 就基本面來看，原先外資法人普遍主要看好AI GPU、ASIC等需求，以及ABF載板層數與面積增加帶來的長期成長機會，且欣興下半年載板單月營收仍有機會隨產品組合改善及新增產能開出而持續成長。 業者表示，隨AI晶片對高階ABF載板需求快速增加，供應鏈原本即處於偏緊狀態；若美中科技戰持續升溫，終端客戶對原產地、生產地及材料來源的管控進一步收緊，相對可自由配置的高階載板有效產能可能因此受到更多限制。尤其ABF材料供應、客戶認證及生產地均具有較",
+          "dupes": 1
+        },
+        {
+          "title": "AI 帶旺晶圓代工  台積電 Q2 市占率達 73% 續稱霸",
+          "source": "",
+          "link": "https://technews.tw/2026/08/31/global-pure-foundry-market-share-quarterly/",
+          "date": "2026-08-31",
+          "summary": "AI 晶片需求持續火熱，帶動全球晶圓代工市場高速成長。市場研究機構 Counterpoint Research […]",
+          "body": "AI 晶片需求持續火熱，帶動全球晶圓代工市場高速成長。市場研究機構 Counterpoint Research 最新報告顯示，2026 年第二季，全球專業晶圓代工市場營收較去年同期大增 29%，主要受惠 AI 相關訂單暴增，以及成熟與先進製程供給吃緊，反映在代工價格上。 市占率方面，位居首位的台積電第二季市占率達73%，連續兩季維持相同水準。Counterpoint指出，台積電成長動能主要來自2奈米製程進入量產、3奈米產能持續爬坡，加上8吋、12吋成熟製程與先進封裝產能供不應求，讓台積電掌握更強議價能力，營收能見度同步提升。 三星電子旗下晶圓代工部門Samsung Foundry排名第二，市占率7%，大致持平上季。 Counterpoint指出，三星晶圓代工當前首要之務仍是提升2奈米SF2製程良率，才有機會爭取更多指標性訂單。不過，三星4奈米SF4與5奈米SF5製程需求同步增溫，加上今年上半年調漲晶圓代工製造報價，也成為推升營收的重要動能。 中國晶圓代工龍頭中芯國際（SMIC）以5%的市占表現排名第三，第二季營收更創歷史新高，主要受惠中國本土需求強勁，以及AI熱潮帶來的訂單溢出效應。 展望2026下半年，Counterpoint預期，隨晶圓代工平均售價（ASP）持續走揚，全球專業晶圓代工廠產能利用率可望維持高檔，AI需求仍將是推動市場成長的主要引擎。 請您暫停使用AD Block，以支持我們持續能提供更多新聞資訊與優質的閱讀環境。 請您暫停使用AD Block，以支持我們持續能提供更多新聞資訊與優質的閱讀環境。",
+          "dupes": 1
+        },
+        {
+          "title": "全球第一個 AI 法院上線，阿聯率先挑戰司法新紀元",
+          "source": "",
+          "link": "https://finance.technews.tw/2026/08/31/uae-launch-of-worlds-first-fully-integrated-ai%e2%80%91powered-judicial-platform/",
+          "date": "2026-08-31",
+          "summary": "阿拉伯聯合大公國（UAE）副總統兼總統府主席謝赫曼蘇爾（Sheikh Mansour bin Zayed Al […]",
+          "body": "阿拉伯聯合大公國（UAE）副總統兼總統府主席謝赫曼蘇爾（Sheikh Mansour bin Zayed Al Nahyan 7 月底宣布，將建置全球首個全面整合 AI 的司法平台。這套系統將 AI 用於訴訟程序的各個環節，含自動審閱案卷、即時比對法規與歷年判例、撰寫法律文書草稿，乃至進行深度法律分析並生成判決建議。 當AI提出的法律分析與建議實質影響了法官的最終判決，最核心且棘手的爭議便在「法律責任的歸屬」（Accountability）。傳統法治原則下，審判獨立與裁判責任完全由法官承擔；然而，AI輔助審判的全新架構下，如果演算法因為訓練資料存在偏誤、或是產生了看似合理卻實質錯誤的幻覺推理，進而引導法官做出了不公正的判決，這份責任究竟該由誰來扛？ 如果法官只是形式簽名，而完全照單全收AI生成的分析與訴狀，法官難以用「AI建議如此」作為免責事由，依然必須承擔裁判審查不周的司法過失；但如果瑕疵源於演算法代碼的偏見或系統性漏洞，AI系統開發商與導入該平台的法院機關，是否應承擔類似「產品瑕疵責任」或行政賠償責任？若未能釐清法官的裁量責任與技術提供者的安全責任界線，一旦發生司法冤案，民眾對司法體系的整體信賴將面臨毀滅性的崩解。 為確保司法公正，阿聯酋這套全面整合型AI法院平台的運作，必須面對「透明性」（Transparency）與「正當法律程序」（Due Process）的嚴格檢驗。在現代法治社會中，當事人享有知情權與答辯權，有權知道法院判決背後的完整推理邏輯。然而，許多大型語言模型與深度學習系統具有黑盒子效應（Black Box）特點，連開發者都難以精準還原演算法得出特定推論的每步脈",
+          "dupes": 1
+        },
         {
           "title": "AI PC 的定義該改一改了吧？",
           "source": "",
@@ -351,7 +387,7 @@
           "link": "https://technews.tw/2026/08/31/ai-inference-bottlenecks-breakthrough-from-compute-to-storage-hierarchy-innovation/",
           "date": "2026-08-30",
           "summary": "大模型（LLM）與長文本 KV Cache 持續膨脹，再加上大規模的並發推理需求，使運算的效能瓶頸由算力轉向記 […]",
-          "body": "大模型（LLM）與長文本 KV Cache 持續膨脹，再加上大規模的並發推理需求，使運算的效能瓶頸由算力轉向記憶體架構本身的創新，模型架構設計最佳化，本質是降低依賴 HBM，以減少讀寫、壓縮存取次數為發展方向。 請您暫停使用AD Block，以支持我們持續能提供更多新聞資訊與優質的閱讀環境。 請您暫停使用AD Block，以支持我們持續能提供更多新聞資訊與優質的閱讀環境。",
+          "body": "大模型（LLM）與長文本 KV Cache 持續膨脹，再加上大規模的並發推理需求，使運算的效能瓶頸由算力轉向記憶體架構本身的創新，模型架構設計最佳化，本質是降低依賴 HBM，以減少讀寫、壓縮存取次數為發展方向。 1. HBF 普及後對 HBM 供應鏈將產生哪些衝擊？2. HBF 如何降低開源模型在邊緣端的部署門檻？3. 先進封裝技術如何提升記憶體廠的產業主導權？4. NVIDIA 儲存計畫對第三方硬體商的競爭影響？5. OCP 標準能否打破 AI 儲存架構的封閉生態？ 請您暫停使用AD Block，以支持我們持續能提供更多新聞資訊與優質的閱讀環境。 請您暫停使用AD Block，以支持我們持續能提供更多新聞資訊與優質的閱讀環境。",
           "dupes": 1
         },
         {
@@ -360,7 +396,7 @@
           "link": "https://technews.tw/2026/08/30/ai-power-hungry-nature-forces-global-grid-overhaul-world-scrambles-transformers-taiwanese-firms-emerge-fast-delivery/",
           "date": "2026-08-30",
           "summary": "當電力從營運成本，升級為決定算力高低的戰略要角，站在供應鏈前端的電力設備商，地位也跟著翻轉。對長期被視為傳統產 […]",
-          "body": "當電力從營運成本，升級為決定算力高低的戰略要角，站在供應鏈前端的電力設備商，地位也跟著翻轉。對長期被視為傳統產業的台灣重電業來說，這是一次進軍全球市場的大好機會；只是機會的另一面，也存在台灣自身的缺電考驗。 國際能源總署（IEA）在2026年2月的《Electricity 2026》報告中估計，2026至2030年間，全球電力需求年均成長將達3.6％，正式超越GDP成長；麥肯錫（McKinsey）則預估，至2030年，全球AI基建投資規模可望達7.6兆美元，其中電力相關投資金額將持續攀升，也使全球AI電力相關基金備受市場關注。 需求暴衝的同時，電力基礎建設卻跟不上腳步。美國創投機構Bessemer Venture Partners觀察，一座資料中心的廠房只需12到18個月就能蓋好，但要真正併入既有電網，卻得苦等5到7年；這道時間斷層，已使超過四分之一的新建AI資料中心被迫延宕。為了用電力換取運算時間，部分科技巨頭乾脆繞過公共電網、自建發電機組（Bring Your Own Power，BYOP），把「電力自給」當成搶跑算力競賽的籌碼。 對雲端服務供應商來說，電力可及性已成為「估值地板」：若拿不到穩定電力，再先進的晶片也只是閒置資產。當電力從一筆營運成本，升級為決定企業運算實力的戰略物資，掌握電壓轉換與輸配關鍵設備的重電業者，地位也跟著水漲船高。 即便科技巨頭自建電廠，電力送進機房前仍得靠變壓器完成電壓轉換。這最後一哩路，正是資料中心當前的瓶頸，尤其變壓器的交期變化，更凸顯了劇烈的供需失衡。市場估計，大型電力變壓器的平均交期，已從2021年的約50週（1年），拉長到2024年的1",
+          "body": "",
           "dupes": 1
         },
         {
@@ -369,7 +405,7 @@
           "link": "https://technews.tw/2026/08/30/ai-ideological-chameleon-exacerbates-political-polarization/",
           "date": "2026-08-30",
           "summary": "隨著生成式 AI 普及，人們越來越依賴其獲取資訊與分析。然而，一項發表於《Scientific Reports […]",
-          "body": "隨著生成式 AI 普及，人們越來越依賴其獲取資訊與分析。然而，一項發表於《Scientific Reports》期刊的最新研究指出，現今主流的大型語言模型（LLMs）會展現出「政治變色龍」的特性──自動調整論述以迎合使用者的政治傾向。研究警告，這類隱性的「同溫層」製造機恐將進一步加劇社會的政治兩極化。 這項研究由巴西坎皮納斯州立大學（UNICAMP）的資訊運算研究所團隊執行。該團隊測試了包含 GPT、Grok、Llama、Gemini、Gemma 以及 DeepSeek 在內的 21 款主流模型，藉此觀察它們在面對不同政治立場使用者時的反應差異。 研究團隊設計了涵蓋公共安全、經濟、社會福利、環境、教育文化、民主制度與貪腐司法等 7 大領域的 56 組對立論述（共 112 個句子）。在測試中，研究人員將使用者預設為「左派」、「右傾」或「無政治背景」，並要求 AI 在五分制量表上表達同意程度。在重複進行的實驗中，團隊共分析了 47,376 筆回應。實驗揭露了兩大現象： 預設傾向偏左** ：在未提供使用者政治背景時，21 款模型中有 20 款的預設回應偏向中立偏左；唯一的例外是 Grok 4.1，其初始設定偏向右翼。 變色龍效應** ：當得知使用者的政治傾向後，所有模型皆出現了程度不一的立場偏移，主動迎合使用者觀點。其中，Google 的 Gemma 3 27B 與 OpenAI 的 GPT-5 Nano 展現出最高的「變色龍指數」，立場轉換最為劇烈；而 Meta 的 Llama 3.1 8B 與 DeepSeek V3.2 的轉變幅度較小。研究亦發現，模型參數規模與迎合程度並無絕對",
+          "body": "",
           "dupes": 1
         },
         {
@@ -378,7 +414,7 @@
           "link": "https://infosecu.technews.tw/2026/08/30/ibm-openai-forge-strategic-partnership-accelerate-secure-ai-deployment-enterprise-core-operations/",
           "date": "2026-08-30",
           "summary": "IBM 日前宣布與 OpenAI 建立策略合作夥伴關係。雙方將透過在企業核心營運及複雜工作流程中大規模應用人工 […]",
-          "body": "IBM 日前宣布與 OpenAI 建立策略合作夥伴關係。雙方將透過在企業核心營運及複雜工作流程中大規模應用人工智慧（AI），協助企業實現具體業務成果，並藉由 OpenAI Daybreak 等計畫提升網路防禦能力及安全韌性。此次合作涵蓋聯合行銷推廣，並將為金融服務、政府、電信及零售等產業，以及財務、採購、客戶營運及人力資源等核心企業職能，開發量身打造的產業解決方案。 根據合作協議，OpenAI 的前沿模型（包括 GPT-5.6）及 Codex、ChatGPT Work 等產品，將整合至 IBM Consulting Advantage 平台。該平台是 IBM 專為諮詢服務團隊打造的 AI 平台，結合 AI Agent、產業資產及網路安全能力，旨在協助企業安全地大規模部署 AI，推動業務成果落地，並催生全新商業模式。 IBM 將組建由 OpenAI 合作夥伴網路培訓的專業工程師及顧問團隊，直接與客戶協作，加快 AI 在複雜業務流程及高度監管環境中的部署進程。同時，IBM 亦將成立專責 OpenAI 業務實務團隊，數千名顧問及工程師將透過 OpenAI 合作夥伴網路獲取專家級認證。 IBM 與 OpenAI 的合作旨在協助企業解決 AI 規模化落地的核心挑戰之一，即如何將多年累積、分散的流程、舊有系統（legacy systems）及複雜營運模式，轉型為 AI 驅動的營運體系，進而實現更安全、更可靠的部署。 推動傳統營運模式轉型為 AI 就緒工作流程** ：IBM 將把 GPT-5.6 等 OpenAI 前沿模型，以及 Codex 和 ChatGPT Work 等產品整合至 IBM",
+          "body": "",
           "dupes": 1
         },
         {
@@ -387,42 +423,6 @@
           "link": "https://infosecu.technews.tw/2026/08/30/digital-assets-of-bankrupt-companies-become-hot-targets-for-ai-startup/",
           "date": "2026-08-30",
           "summary": "2026 年 5 月，美國廉航 Spirit Airlines 無預警熄燈，這是過去 25 年來，美國首家完全 […]",
-          "body": "2026 年 5 月，美國廉航 Spirit Airlines 無預警熄燈，這是過去 25 年來，美國首家完全停止營運的大型航空公司。飛機、不動產、航線時刻表，全數被擺上破產拍賣台，其中標出天價的一項，卻是「內部數據」。根據法院文件顯示，Google 出價 1,000 萬美元買下 Spirit 的內部數據，打敗 AI 訓練數據新創 Mercor 的 750 萬美元競標，成為這場拍賣的贏家。 消息一出，立刻引來空服員工會反彈，但也讓業界意識到：公司倒閉清算時，藏在Slack、Email與工單系統裡、沒人想過要處理的數位紀錄，可能才是最值錢的資產。 根據《Forbes》取得的法院文件，Spirit Airlines這批原始數據涵蓋近1,300萬個有效電子郵件地址、近17.6萬筆員工紀錄，以及5億則Microsoft Teams內部訊息。《華爾街日報》則指出，Google標下的數位檔案庫還包含數十年份的薪資、差旅與招募紀錄，合計約1億封電子郵件與8萬個電子郵件帳號。 Google發言人向《Forbes》表示：「我們不會從這批數據集中取得任何個人資訊。」公司強調，任何取得的數據都會先經過第三方徹底清除可識別個人身份的資訊，才會交付使用。 這個說法，沒能說服代表逾5,500名前Spirit Airlines空服員的工會Association of Flight Attendants-CWA（AFA-CWA）。8月18日，該工會向法院提出正式異議，負責審理此案的破產法官Sean Lane因此將原訂的出售聽證會延後至9月9日，讓法院有時間評估工會的主張。 「這太離譜了！我們正式向法院提出異議",
-          "dupes": 1
-        },
-        {
-          "title": "百兆財富傳承潮來襲，台股狂飆後有錢人正悄悄進行的「資產重分配」",
-          "source": "",
-          "link": "https://finance.technews.tw/2026/08/30/taiwan-stock-market-generated-over-nt100-trillion/",
-          "date": "2026-08-30",
-          "summary": "在 AI 浪潮帶動下，上市櫃公司獲利迭創新高，激勵台股漲勢，三年來市值暴增逾百兆，累積的財富效益相當可觀。因此 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "AI 設計「胞內抗體」有望為阿茲海默症、巴金森氏症與漸凍症開啟新療法",
-          "source": "",
-          "link": "https://technews.tw/2026/08/30/ai-designed-intrabodies-could-unlock-new-treatments-for-alzheimers-parkinsons-and-mnd/",
-          "date": "2026-08-29",
-          "summary": "英國艾塞克斯大學（University of Essex）運用人工智慧（AI）重新設計抗體，開發出可直接在人類 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "首創「AI for All」全民免費代幣！韓國豪擲 10 兆韓元實現算力自由",
-          "source": "",
-          "link": "https://finance.technews.tw/2026/08/29/ai-for-all/",
-          "date": "2026-08-29",
-          "summary": "韓國政府最新宣布計劃讓全體民眾免費使用生成式 AI 服務，目標是在讓更多韓國人連結到本土的 AI 聊天機器人， […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "科技巨頭的兩手策略：嚴打「AI 垃圾」，卻加速擁抱生成式未來",
-          "source": "",
-          "link": "https://technews.tw/2026/08/29/tech-giants-ai-slop/",
-          "date": "2026-08-29",
-          "summary": "矽谷近來一面加強清理所謂的「AI 垃圾內容」（AI Slop），一面卻沒有放慢擁抱生成式技術的腳步。從音樂、社 […]",
           "body": "",
           "dupes": 1
         },
@@ -445,18 +445,9 @@
           "dupes": 2
         },
         {
-          "title": "東海智慧臺中論壇 盧秀燕：台中搶下一波Physical AI - 生活新聞 - PChome Online 新聞",
-          "source": "PChome Online 新聞",
-          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbHJXVXFaMWhuZEFPX3RJdzRhNFJnRUJ3Qkt2MjJ3T05yZlBSOHZQc1dfVTVJc0hpSkpLVUN6Q3hSLUs0cTRuLU5rZHRBT2d6RTc1dmk3WjNpN2VpZmFRWW9rbTNUR0R4QldaekRyYkpMVWpXMkJTTEpTNjc2QWlHRzlXWGEySWk3dmVB?oc=5",
-          "date": "2026-08-28",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
           "title": "安提國際推出 MegaEdge AIP-RQ87即裝即用 2U 邊緣AI代理人運算系統，加速企業 AI 部署",
-          "source": "Life 生活網",
-          "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQMmdMVTVoWlFUeHBkN053SGl1SVZwYU5WOWZYNmVNczZ4QXVsaHRMcDZ4WVRySlNMU2t6eEVLckpnRkljQzBPRjNvenM4U0xoRzBKR3NKYm12QXdTSjJLc3FocG9FV0RiSzBmdHhfaFJndUJoUTI0OEJQNHppZUhCalVzVmpEZ3h0ZDlIbkRDdlFfTnE4WXlONXB3WV9sQ0R2QUhhbXhyYkVDbEJ1WmJ5VFo5RnJrQW1qc1VFZ2luY0xhYzlQaXA2c0ZINkFETEt0dUhvQ1VTSHJaQQ?oc=5",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA4TWw2WVFfd0xxLVBlTmlFRDFwbjBkVVJsbzdnSVlGUnJ3SWpsRjF5LU91cHBIamJPeXQ0Q1pkZWpqWTI1M0JDSllLTUVEN2VuS0E?oc=5",
           "date": "2026-08-27",
           "summary": "",
           "body": "",
@@ -508,6 +499,24 @@
           "dupes": 2
         },
         {
+          "title": "日本金融科技市場衝 326 億美元 AI 驅動年複合成長率 13%",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBtd2NHWHBnTDBwODJTZHJpUm1fUVAtYjZ6RU9YLVFsWGFaYjdxeW5VcXUxdVF4Y1N1SVpLM3lIVzYtaG9wNTVmNjMwU1kzMDhzM1E?oc=5",
+          "date": "2026-08-30",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "2026台北國際塑橡膠工業展9/15登場 聚焦智慧製造3大核心",
+          "source": "壹蘋新聞網",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQRzlMbVYybEF3VVpTOWZOeW1SeFB3SlA3TzJWbXpiR0JQeWFLb2hFeDZHdWlnZDMyUjhmaEhMWktzdjBUWDhIM01RZGFjUXc2d1pIdXZ4ZWxWanZIV1l4TFhSa2FYNzFKMXVRVXlQRGc5X1h3MG90YUhyN0tPaFpsT3B3?oc=5",
+          "date": "2026-08-30",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
           "title": "Google 搜尋引擎導入 AI 輔助學習功能 安全疑慮引發討論",
           "source": "Life 生活網",
           "link": "https://news.google.com/rss/articles/CBMirwJBVV95cUxNazZMcHRSUFZUWlFqTWJWZlBRNDl5Tkw1NEo4RFQ1X3c5UmNxZThnejFTVk1FS0c2Yk1lSGl1YXQ2a2NRbmdmWGpsME1TMFFWZ19IQUhUOU8wMGxIcjh1c2ZCVi1IcXlZb0t5cXU5cTVJSHFiMVd1Ni1abkJST0V5akJKdXNWQVZBcFp3WHFWX243M3RkOGh5am9uVHVMRTlkS2NXY3JTUFQzX0lYb2hTTWR3OUtRTTRyazZqVlVKdlQ1WmtZblJwb1k5ZVhjeHNiVWNsN3ExMEE2ZkNnYWNhMVlPdVBmMGhiQnVQRFpiU3ZlcXpZT2p5cmpQSkEtUU9aMTFKX19oZ3ZPUmljYlowc1hSU0d6MTFBZkwtcmhKYzFPVS04ZmZ5S1R6aHEtclk?oc=5",
@@ -535,20 +544,20 @@
           "dupes": 1
         },
         {
-          "title": "從馬匹延伸至加護病房，全新 AI 框架 SHIC-XE 捕捉「無聲的痛」",
+          "title": "百兆財富傳承潮來襲，台股狂飆後有錢人正悄悄進行的「資產重分配」",
           "source": "",
-          "link": "https://technews.tw/2026/08/29/how-ai-identifies-animal-pain/",
-          "date": "2026-08-29",
-          "summary": "當動物或病患無法言語時，我們該如何確知他們正在受苦？近期，由以色列泰爾海學院（Tel-Hai Universi […]",
+          "link": "https://finance.technews.tw/2026/08/30/taiwan-stock-market-generated-over-nt100-trillion/",
+          "date": "2026-08-30",
+          "summary": "在 AI 浪潮帶動下，上市櫃公司獲利迭創新高，激勵台股漲勢，三年來市值暴增逾百兆，累積的財富效益相當可觀。因此 […]",
           "body": "",
           "dupes": 1
         },
         {
-          "title": "TestMu AI 推出 Agent Assurance，驗證 AI 代理程式能否安全上線",
+          "title": "AI 設計「胞內抗體」有望為阿茲海默症、巴金森氏症與漸凍症開啟新療法",
           "source": "",
-          "link": "https://infosecu.technews.tw/2026/08/29/testmu-ai-agent-assurance-validates-safe-ai-agent-deployment/",
+          "link": "https://technews.tw/2026/08/30/ai-designed-intrabodies-could-unlock-new-treatments-for-alzheimers-parkinsons-and-mnd/",
           "date": "2026-08-29",
-          "summary": "全球首個 Agentic AI 原生品質工程平台 TestMu AI（前稱 LambdaTest）今日宣布推出 […]",
+          "summary": "英國艾塞克斯大學（University of Essex）運用人工智慧（AI）重新設計抗體，開發出可直接在人類 […]",
           "body": "",
           "dupes": 1
         },
@@ -576,15 +585,6 @@
           "link": "https://www.cna.com.tw/news/aopl/202608280333.aspx",
           "date": "2026-08-28",
           "summary": "（中央社紐約28日綜合外電報導）美國時代雜誌（TIME）選出2026年全球百大人工智慧（AI）人物，除了AI相關企業高層，榜單也出現一些本業為非相關領域的人士，其中包含好萊塢名媛和聯邦參議員。",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "佳世達獲亞太暨台灣永續行動獎六獎 CIP 結合 AI 創造逾 14 億元效益",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9FWGRoWktlckFjX29rUDRTZV9Na254ZnlGQVhfNnJ2RlowREN3ejFZNlp2cENXTkZNMWU3RkNBbm5Zc3BfV2V0ZjlPSldWamVubmc?oc=5",
-          "date": "2026-08-28",
-          "summary": "",
           "body": "",
           "dupes": 1
         }
@@ -615,7 +615,7 @@
           "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4tbTRIZEN6U21GaERNSUlrdHNJSkFpQXM0NjB1SG90eDdRenVyR3BVb3FGdS1MS3JMMXdoWF9vcWFEMFRUUkliNk9EMkVodw?oc=5",
           "date": "2026-08-27",
           "summary": "",
-          "body": "日經 66405.56 0.41%台股 46331.45 0.77%道瓊 53559.99 -0.02%美元 31.641 -0.01%美債10Yr 4.723 0.13%WTI原油 84.78 1.65% 苗栗縣府推「苗栗縣特定對象青年AI數位職能提升計畫」，補助購買AI相關軟體，共100個名額。縣長鍾東錦表示，「機會是給準備好的人」。（圖/苗栗縣政府） 苗栗縣政府27日舉辦「苗栗縣特定對象青年AI數位職能提升計畫」記者會，宣布符合《就業服務法》第24條規定之特定對象青年，每人最高可獲新臺幣6000元補助購買AI相關軟體，共100個名額。縣長鍾東錦表示，「機會是給準備好的人」，現在已經是AI時代，鼓勵苗栗青年也要跟上AI的浪潮，來提升自己的數位職能和就業競爭力。 縣府勞工及青年發展處指出，近年來人工智慧技術快速發展，AI已廣泛融入各行各業，數位能力更成為未來職場不可或缺的重要競爭力。面對產業數位轉型，青年除了具備專業知識，更要善用AI工具、培養數位思維，才能掌握更多就業機會，迎接未來挑戰。 為協助更多青年提升數位能力、順利接軌職場，也為苗栗產業注入創新能量，苗栗縣政府今天在第一辦公大樓A201會議室舉辦「苗栗縣特定對象青年AI數位職能提升計畫」記者會，並由勞動及青年發展處長王浩中說明計畫內容。 縣長鍾東錦、立委邱鎮軍特助張朋輝、議長李文斌秘書周啟明、副議長張淑芬秘書吳炳禎、議員曾美露、周玉滿、陳碧華、徐筱菁、大湖鄉長黃惠琴、苗栗市長余文忠秘書、苗栗就業中心、各職業工會負責人、育達科技大學校長龍清勇、仁德醫護管理專科學校校長蔡明學、聯合大學代表及多位國高中校長都與會，現場也邀請",
+          "body": "日經 65514.81 -1.34%台股 46331.45 0.77%道瓊 53559.99 -0.02%美元 31.6595 0.05%美債10Yr 4.714 -0.06%WTI原油 84.25 1.02% 苗栗縣府推「苗栗縣特定對象青年AI數位職能提升計畫」，補助購買AI相關軟體，共100個名額。縣長鍾東錦表示，「機會是給準備好的人」。（圖/苗栗縣政府） 苗栗縣政府27日舉辦「苗栗縣特定對象青年AI數位職能提升計畫」記者會，宣布符合《就業服務法》第24條規定之特定對象青年，每人最高可獲新臺幣6000元補助購買AI相關軟體，共100個名額。縣長鍾東錦表示，「機會是給準備好的人」，現在已經是AI時代，鼓勵苗栗青年也要跟上AI的浪潮，來提升自己的數位職能和就業競爭力。 縣府勞工及青年發展處指出，近年來人工智慧技術快速發展，AI已廣泛融入各行各業，數位能力更成為未來職場不可或缺的重要競爭力。面對產業數位轉型，青年除了具備專業知識，更要善用AI工具、培養數位思維，才能掌握更多就業機會，迎接未來挑戰。 為協助更多青年提升數位能力、順利接軌職場，也為苗栗產業注入創新能量，苗栗縣政府今天在第一辦公大樓A201會議室舉辦「苗栗縣特定對象青年AI數位職能提升計畫」記者會，並由勞動及青年發展處長王浩中說明計畫內容。 縣長鍾東錦、立委邱鎮軍特助張朋輝、議長李文斌秘書周啟明、副議長張淑芬秘書吳炳禎、議員曾美露、周玉滿、陳碧華、徐筱菁、大湖鄉長黃惠琴、苗栗市長余文忠秘書、苗栗就業中心、各職業工會負責人、育達科技大學校長龍清勇、仁德醫護管理專科學校校長蔡明學、聯合大學代表及多位國高中校長都與會，現場也",
           "dupes": 2
         },
         {
@@ -633,7 +633,7 @@
           "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBEbVNMdldqWTlGeE85a2hLaGxseUVFSTNrN05nSng5SnNhQ3FOVlJjOG1xMi1PaFNqdllaZjg4ZHJHOW9yQ0NLM3ROWEhUNDlFV0JzWlpkU3BtYzNSMUpJVlFXVE1SZw?oc=5",
           "date": "2026-08-27",
           "summary": "",
-          "body": "",
+          "body": "恭賀 國際獅子會300C-3區 臺中市崇倫獅子會黃筠筑會長代表台灣拿到國際獅子會參加（萬衆一心和平海報）比賽脫穎而出 20250812台南賑災捐贈社福金360萬,實現了愛我臺灣-行善天下的實質行動. 重要快訊：急難救助【丹娜絲重創南台灣!台南、嘉義1.7萬 戶受災】捐款活動, 請全體獅友鼎力發揮愛心扶弱救困-全力支持。 恭賀 國際獅子會300C-3區 臺中市崇倫獅子會黃筠筑會長代表台灣拿到國際獅子會參加（萬衆一心和平海報）比賽脫穎而出 因應人工智慧快速發展，協助青年提升數位職能與就業競爭力，苗栗縣政府27日舉辦「苗栗縣特定對象青年AI數位職能提升計畫」記者會，宣布計畫正式啟動。符合資格的青年購買AI相關軟體，每人最高可申請新台幣6,000元補助，鼓勵青年善用生成式AI及數位工具，提升未來職場所需的核心能力。 縣長鍾東錦、縣府團隊、校長、產業代表及青年代表共同出席記者會，展現苗栗縣推動青年培力及數位轉型的決心。 鍾東錦致詞時表示，AI科技發展快速，功能強大，也為社會帶來新的機會與挑戰。他認為，AI應以「向善」為重要原則，青年在學習及運用AI技術的同時，也應具備正確觀念與使用態度，避免利用AI進行惡意攻擊、造假或醜化他人，以免衍生更多社會糾紛與問題。 鍾東錦指出，AI可以成為協助青年提升能力的重要工具，就像面對未來競爭，必須具備好的裝備，才能迎接挑戰。因此，縣府透過補助方式，希望協助苗栗青年降低使用AI工具的門檻，讓更多年輕人跟上AI浪潮，提升數位能力及未來就業競爭力。 他也提到，隨著科技產業持續發展，苗栗正積極迎接半導體及AI相關產業進駐。縣府持續推動水電等基礎建設，包括天花湖水",
           "dupes": 1
         },
         {
@@ -642,7 +642,7 @@
           "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5UbHVHWnpYMWlHY2s1V3lIdmNCRjI3RHhBZG5OQnIxNDRoWVNEZjlOX05vM1AxTW1QTXVJd0hXVVBXT1lwR0NQSDM2eVNGV3RWdkhNSFVqTWdqa2pSU2RB?oc=5",
           "date": "2026-08-26",
           "summary": "",
-          "body": "財經首頁 財經即時 財經政策 國際財經 證券產業 房產資訊 財經週報 基金查詢 投資理財 自由影音 財富自由 財經 娛樂 藝文 汽車 時尚 體育 3 C 評論 玩咖 食譜 地產 專區 服務 自由電子報 APP 自由電子報粉絲團 自由電子報 Line 自由電子報 X 熱門新訊 經濟部公告115年「補助企業布建海外通路計畫」第一梯次補助名單。（記者林菁樺攝） 〔記者林菁樺／台北報導〕為協助企業因應國際情勢變化、拓展多元海外市場，經濟部貿易署25日公告「115年度補助企業布建海外通路計畫」第一梯次補助名單，共核定7案，涵蓋紡織、供應鏈、工具機、食品機械、美妝保養及AI機器人等領域，布局市場則包括歐美、北美、東協及泰國等。 貿易署表示，本計畫依「經濟部因應國際情勢強化經濟韌性辦法」第9條第2項規定辦理，透過諮詢輔導及專案補助方式，協助企業布建海外行銷通路，降低國際情勢變化對企業出口的影響，進一步提升我國產品國際競爭力。 此次核定的7案中，四九六創新時尚紡織以「496 Fabric Lab 歐美高端紡織品行銷通路布建計畫」布局歐美高端紡織市場；新灃則推動「台美Tier 1供應鏈深化暨北美亞太市場多元商機拓展計畫」，強化台美供應鏈合作並拓展北美、亞太市場。工具機與製造業方面，騰柏科技以「TenproCNC高階刀具管理東協市場拓展計畫」進軍東協市場；永順利食品機械則鎖定歐洲，推動食品加工設備通路拓展及品牌推廣。 美妝保養產業也入選本梯次補助，和潤推動「後生元彩妝保養雙軸轉型品牌拓展行銷計畫」；柏瑞則以「Petite Amie Skincare永續美學品牌美國市場整合營運與通路深化計畫」，深化",
+          "body": "財經首頁 財經即時 財經政策 國際財經 證券產業 房產資訊 財經週報 基金查詢 投資理財 自由影音 財富自由 財經 娛樂 藝文 汽車 時尚 體育 3 C 評論 玩咖 食譜 地產 專區 服務 自由電子報 APP 自由電子報粉絲團 自由電子報 Line 自由電子報 X 熱門新訊 ＜財經週報-遺贈新制＞「傳子不傳女」觀念淡化！拋棄繼承與贈與受贈兩性差距，創統計以來新低 ＜財經週報-遺贈新制＞戰後嬰兒潮世代變老、「等房族」攀升！人口結構轉變催動房產繼承浪潮 ＜財經週報-遺贈新制＞民法與遺贈稅法雙修！刪除兄弟姊妹特留分、「大老婆條款」三讀通過 ＜財經週報-遺贈新制＞繼承族群利多！CPI累計大漲，明年遺產稅免稅額可望突破1,486萬元 經濟部公告115年「補助企業布建海外通路計畫」第一梯次補助名單。（記者林菁樺攝） 〔記者林菁樺／台北報導〕為協助企業因應國際情勢變化、拓展多元海外市場，經濟部貿易署25日公告「115年度補助企業布建海外通路計畫」第一梯次補助名單，共核定7案，涵蓋紡織、供應鏈、工具機、食品機械、美妝保養及AI機器人等領域，布局市場則包括歐美、北美、東協及泰國等。 貿易署表示，本計畫依「經濟部因應國際情勢強化經濟韌性辦法」第9條第2項規定辦理，透過諮詢輔導及專案補助方式，協助企業布建海外行銷通路，降低國際情勢變化對企業出口的影響，進一步提升我國產品國際競爭力。 此次核定的7案中，四九六創新時尚紡織以「496 Fabric Lab 歐美高端紡織品行銷通路布建計畫」布局歐美高端紡織市場；新灃則推動「台美Tier 1供應鏈深化暨北美亞太市場多元商機拓展計畫」，強化台美供應鏈合作並拓展",
           "dupes": 1
         },
         {
@@ -687,7 +687,7 @@
           "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5MSERFV2lGbWxhaUJqQkxLX3VWQXVROEZHMXA5UmhCSUNySXdPOHA3eEt0eU5EM3RvNk5YamQ4M1RoTnBOUXBYWFZSNWhId0hDZmc?oc=5",
           "date": "2026-08-24",
           "summary": "",
-          "body": "第三屆新北企業精典獎8月24日頒獎 表揚32家標竿企業與9位傑出女力 | 蕃新聞 第三屆「新北企業精典獎」頒獎典禮將於8月24日隆重登場！為持續發掘引領產業前行的標竿企業，本屆共吸引近百家企業報名角逐，歷經逾半年的層層選拔，最終選出32家企業及9位傑出女力。將由市長侯友宜親自頒獎，表揚新北企業在各領域的亮眼實績，期盼透過標竿典範帶動產業持續創新、轉型升級，提升整體競爭力。 ▲第三屆「新北企業精典獎」獎盃由藝術家陳凱森所設計，頂端為透明幾何球型水晶，以線條與結點構成連結與合作網路的意象；中部立柱如同企業大樓，代表堅持與拚搏，最終匯聚為團結；底座形狀為新北市地圖，引申為深耕新北，追求卓越。(圖/新北市經發局 提供)** 經發局表示，第三屆「新北企業精典獎」設有「創新投資」、「多元服務」、「永續發展」、「寰宇國際」4大類企業類組及「傑出女力」個人類組，並於企業類組中特設「優質潛力企業」獎項，鼓勵企業持續精進。本屆共97家企業參與，提出127件申請案，由24位來自產、官、學、研代表組成專業審查團隊，不僅親赴企業進行實地訪審，更將環境責任、社會回饋、性別平等及友善職場等企業社會責任指標納入評分，歷經多次嚴謹的審查，最終由32家企業及9位傑出女力脫穎而出。 本屆精典獎獎盃延續象徵最高榮譽與成就的精神，再次邀請知名藝術家陳凱森先生操刀設計。頂端以透明幾何球型水晶搭配線條與節點，構成連結與合作網路的意象；中段立柱宛如企業大樓，象徵企業堅持與拚搏的精神，最終匯聚為團結力量；底座則以新北市地圖為原型結合市府LOGO設計，體現獎項紮根新北、放眼全球的期許，激勵企業深耕新北與追求卓越。 ▲新北市政府經",
+          "body": "第三屆「新北企業精典獎」頒獎典禮將於8月24日隆重登場！為持續發掘引領產業前行的標竿企業，本屆共吸引近百家企業報名角逐，歷經逾半年的層層選拔，最終選出32家企業及9位傑出女力。將由市長侯友宜親自頒獎，表揚新北企業在各領域的亮眼實績，期盼透過標竿典範帶動產業持續創新、轉型升級，提升整體競爭力。 ▲第三屆「新北企業精典獎」獎盃由藝術家陳凱森所設計，頂端為透明幾何球型水晶，以線條與結點構成連結與合作網路的意象；中部立柱如同企業大樓，代表堅持與拚搏，最終匯聚為團結；底座形狀為新北市地圖，引申為深耕新北，追求卓越。(圖/新北市經發局 提供)** 經發局表示，第三屆「新北企業精典獎」設有「創新投資」、「多元服務」、「永續發展」、「寰宇國際」4大類企業類組及「傑出女力」個人類組，並於企業類組中特設「優質潛力企業」獎項，鼓勵企業持續精進。本屆共97家企業參與，提出127件申請案，由24位來自產、官、學、研代表組成專業審查團隊，不僅親赴企業進行實地訪審，更將環境責任、社會回饋、性別平等及友善職場等企業社會責任指標納入評分，歷經多次嚴謹的審查，最終由32家企業及9位傑出女力脫穎而出。 本屆精典獎獎盃延續象徵最高榮譽與成就的精神，再次邀請知名藝術家陳凱森先生操刀設計。頂端以透明幾何球型水晶搭配線條與節點，構成連結與合作網路的意象；中段立柱宛如企業大樓，象徵企業堅持與拚搏的精神，最終匯聚為團結力量；底座則以新北市地圖為原型結合市府LOGO設計，體現獎項紮根新北、放眼全球的期許，激勵企業深耕新北與追求卓越。 ▲新北市政府經發局主辦的第三屆「新北企業精典獎」由 32家企業及9位傑出女力脫穎而出，將於下周8",
           "dupes": 1
         }
       ],
