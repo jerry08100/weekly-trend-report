@@ -179,6 +179,7 @@ WATCH_SUFFIX = {
     "永續 / 企業實務": "永續 淨零 碳",
     "AI / 企業應用": "AI 數位轉型",
 }
+ALL_TOPICS = list(QUERIES) + [t for t in FEEDS if t not in QUERIES]  # 定義順序(永續→AI→補助→獎項)
 # GRANT_TOPICS：這些主題產「條列卡片」（不寫長文）。含政府補助與企業獎項。
 GRANT_TOPICS = {"政府補助 / 計畫", "企業獎項 / 競賽"}
 AWARD_TOPICS = {"企業獎項 / 競賽"}       # 卡片語意換成獎項（主辦/獎項/對象/獎勵/報名截止）
@@ -452,10 +453,11 @@ def scrape_official(url, base, pat):
     return out[:25]
 
 
-def collect():
+def collect(only=None):
+    """only 給定就只抓那幾個主題——逐主題累積用：本週已經有內容的主題不重抓、不重燒 AI 額度。"""
     cutoff = datetime.now(timezone.utc) - timedelta(days=DAYS)
     result, log = {}, []
-    topics = list(QUERIES) + [t for t in FEEDS if t not in QUERIES]  # 保持定義順序(永續→AI→補助)
+    topics = [t for t in ALL_TOPICS if only is None or t in only]
     for topic in topics:
         watch_q = ([f"{p} {WATCH_SUFFIX[topic]}".strip() for p in COMPETITORS + CLIENTS]
                   if topic in WATCH_SUFFIX else [])      # 只有 WATCH_SUFFIX 主題才查同業＋客戶名單
@@ -884,9 +886,10 @@ def page(title, inner, theme=None):
             f'{inner}\n</body></html>')
 
 
-def build_report(data):
-    """跑 AI 摘要，組出結構化 report dict（同時給 HTML/JSON/未來 RAG 用）。"""
-    topics = []
+def build_report(data, prev=None):
+    """跑 AI 摘要，組出結構化 report dict（同時給 HTML/JSON/未來 RAG 用）。
+    prev 給定＝逐主題累積：這次只重跑 data 裡的主題，其餘沿用 prev 既有內容（不重燒 AI）。"""
+    done = {tp["topic"]: tp for tp in (prev or {}).get("topics", [])}
     for topic, rows in data.items():
         items = []
         for it in rows:
@@ -903,20 +906,24 @@ def build_report(data):
         secs = (dg.get("sections") if dg else []) or []
         for s in secs:                                   # 存乾淨版（去 AI 尾端雜字）
             s["body"] = clean_body(s.get("body", ""))
-        topics.append({
+        done[topic] = {
             "topic": topic,
             "gist": (dg.get("gist") if dg else "") or "",
             "sections": secs,
             "grants": (dg.get("grants") if dg else []) or [],
             "items": items,
             "sources": {"queries": QUERIES.get(topic, []), "feeds": FEEDS.get(topic, [])},
-        })
-    return {
+        }
+    topics = [done[t] for t in ALL_TOPICS if t in done]
+    out = {
         "date": report_date(),
         "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
-        "total": sum(len(v) for v in data.values()),
+        "total": sum(len(tp["items"]) for tp in topics),
         "topics": topics,
     }
+    if (prev or {}).get("mailed"):                       # 已寄過的戳記要留著，補內容不等於要再寄一封
+        out["mailed"] = prev["mailed"]
+    return out
 
 
 def tkey(topic):
@@ -929,10 +936,11 @@ def snippet(tp, limit=48):
     """側欄導覽用：優先 AI 給的關鍵詞 gist，否則退回情勢文首段/首則標題。"""
     if tp.get("gist"):
         return tp["gist"].strip()
+    note = STATE_NOTE.get(topic_state(tp))
+    if note:                                      # 沒內容就照實說，別拿首則標題冒充摘要
+        return note
     if tp.get("sections"):
         txt = re.sub(r"\[\[\d+\]\]", "", tp["sections"][0].get("body", ""))
-    elif tp.get("items"):
-        txt = tp["items"][0]["title"]
     else:
         txt = ""
     txt = re.sub(r"\s+", "", txt).strip()
@@ -1102,17 +1110,13 @@ def render_report_body(report, tabs=False):
             parts.append(f'<div class="kicker">{html.escape(kick)}</div>')
         parts.append(f'<h2>{html.escape(tp["topic"])}</h2>'
                      '<div class="hairline"></div>')
-        if tp.get("grants") or tp["topic"] in GRANT_TOPICS:   # 補助：條列卡片
+        note = STATE_NOTE.get(topic_state(tp))
+        if note:                                              # AI 沒生出來/沒新聞：整塊只留這一行，
+            parts.append(f'<p class="note">{note}</p>')       # 不列半殘的新聞卡片（使用者要乾淨）
+        if tp["topic"] in GRANT_TOPICS:                       # 常態清單是固定內容，與本週成敗無關，照顯示
             parts.append(render_grants(tp["topic"], tp.get("grants", []), items))
-        elif tp["sections"]:                                  # 有 AI 長文
+        elif not note:                                        # 有 AI 長文
             parts.append(render_article(tp["topic"], tp["sections"], items))
-        elif items:                                           # 無 AI：直接列全部
-            for it in items:
-                parts.append(f'''<div class="item">
-<a href="{html.escape(it["link"])}" target="_blank">{html.escape(it["title"])}</a>
-<span class="date">{html.escape(it["source"])} {it["date"]}</span></div>''')
-        else:
-            parts.append('<p class="note">本週無相關動態。</p>')
         parts.append('</section>')
     parts.append(f'<p class="meta">自動產生於 {report["generated_at"]}　·　'
                  '資料來源 Google News RSS 等公開來源　·　AI 整理僅供參考，引用請以原文為準</p>')
@@ -1190,7 +1194,10 @@ def render_email(report, site):
         if tp.get("gist"):
             P.append(f'<p style="margin:2px 0;color:#8a6d3b;font-size:13px">'
                      f'{html.escape(tp["gist"])}</p>')
-        if tp.get("sections"):                           # 一句摘要（第一節開頭）
+        note = STATE_NOTE.get(topic_state(tp))
+        if note:                                         # 信裡也要看得出這塊是失敗還是真的沒消息
+            P.append(f'<p style="margin:6px 0;font-size:14px;color:#9b2c2c">{note}</p>')
+        elif tp.get("sections"):                         # 一句摘要（第一節開頭）
             s = re.sub(r"\[\[\d+\]\]", "", clean_body(tp["sections"][0].get("body", "")))
             s = re.split(r"[。\n]", s.strip())[0]
             if s:
@@ -1265,19 +1272,40 @@ def report_date():
     return d.strftime("%Y-%m-%d")
 
 
+STATE_NOTE = {"failed": "本週更新失敗，暫無整理內容。", "empty": "本週無最新消息。"}
+
+
+def topic_state(tp):
+    """單一主題三態：ok=AI 有產出／empty=本週沒抓到新聞／failed=有新聞但 AI 沒生出東西。
+    卡片主題(補助/獎項)拿 gist 當「AI 有跑完」的證據——它可能合理地一個都沒挑出來(grants 空)。"""
+    if not tp.get("items"):
+        return "empty"
+    if tp["topic"] in GRANT_TOPICS:
+        return "ok" if (tp.get("grants") or tp.get("gist")) else "failed"
+    return "ok" if tp.get("sections") else "failed"
+
+
 def complete(rep):
-    """『完整』週報：每個有新聞的非補助主題都有 AI 內容。"""
-    return all(tp["topic"] in GRANT_TOPICS or tp.get("sections") or not tp["items"]
-               for tp in rep["topics"])
+    """信寄不寄得出去：只看長文主題（永續／AI）有沒有卡在 failed。
+    卡片主題（補助／獎項）失敗不扣信——版面與信件都已標示，常態清單也照樣看得到，
+    為它把整封信壓到週三才寄，比缺一塊還糟。"""
+    return all(topic_state(tp) != "failed"
+               for tp in rep["topics"] if tp["topic"] not in GRANT_TOPICS)
 
 
-def week_report(site):
-    """本週已備好的完整週報；沒有或不完整回 None。"""
+def load_week(site):
+    """本週那份周報（不管完不完整）；沒有回 None。逐主題累積就是往這份上面補。"""
     cur = iso_week(report_date())
     for rep in load_all_reports(site):
-        if iso_week(rep["date"]) == cur and complete(rep):
+        if iso_week(rep["date"]) == cur:
             return rep
     return None
+
+
+def todo_topics(prev):
+    """這次要跑哪些主題：本週還沒 ok 的都要（含沒抓到新聞的，隔天可能就有了）。"""
+    state = {tp["topic"]: topic_state(tp) for tp in (prev or {}).get("topics", [])}
+    return [t for t in ALL_TOPICS if state.get(t) != "ok"]
 
 
 def mark_mailed(site, rep):
@@ -1326,10 +1354,30 @@ def selftest():
     assert "when%3A7d" in gnews_url("測試"), "Google News 查詢必須限時間窗"
     assert datetime.strptime(report_date(), "%Y-%m-%d").weekday() == 0, "周報日期必須掛週一"
     ai, grant = "AI / 企業應用", "政府補助 / 計畫"
-    assert not complete({"topics": [{"topic": ai, "items": [1], "sections": []}]}), "有新聞沒 AI 內容＝不完整"
-    assert complete({"topics": [{"topic": ai, "items": [1], "sections": [{"body": "x"}]}]})
-    assert complete({"topics": [{"topic": ai, "items": [], "sections": []}]}), "沒新聞不算殘"
-    assert complete({"topics": [{"topic": grant, "items": [1], "sections": []}]}), "補助主題本來就沒 sections"
+    ok_ai = {"topic": ai, "items": [1], "sections": [{"body": "x"}]}
+    bad_ai = {"topic": ai, "items": [1], "sections": []}
+    none_ai = {"topic": ai, "items": [], "sections": []}
+    assert topic_state(ok_ai) == "ok" and topic_state(bad_ai) == "failed"
+    assert topic_state(none_ai) == "empty", "沒抓到新聞≠失敗，兩種狀態要分得出來"
+    assert topic_state({"topic": grant, "items": [1], "grants": [], "gist": "跑完了"}) == "ok", \
+        "卡片主題 AI 跑完但一個都沒挑出來，是合理結果不是失敗"
+    assert topic_state({"topic": grant, "items": [1], "grants": [], "gist": ""}) == "failed", \
+        "卡片主題 AI 沒生出東西＝失敗（08-18 政府補助留白就是這種）"
+    assert not complete({"topics": [bad_ai]}) and complete({"topics": [ok_ai, none_ai]})
+    assert complete({"topics": [ok_ai, {"topic": grant, "items": [1], "grants": [], "gist": ""}]}), \
+        "卡片主題失敗不可扣住整封信（使用者要週一早上就收到）"
+    assert todo_topics(None) == ALL_TOPICS, "沒有本週檔＝四個主題都要跑"
+    assert todo_topics({"topics": [ok_ai]}) == [t for t in ALL_TOPICS if t != ai], \
+        "已經 ok 的主題不可重跑（重跑＝白燒 Gemini 額度）"
+    merged = build_report({}, {"topics": [ok_ai], "mailed": "2026-01-05 08:00"})
+    assert [tp["topic"] for tp in merged["topics"]] == [ai], "沒重跑的主題要原封不動留著"
+    assert merged["mailed"] == "2026-01-05 08:00", "已寄戳記不可因為補內容而掉"
+    assert snippet(bad_ai) == STATE_NOTE["failed"] and snippet(none_ai) == STATE_NOTE["empty"]
+    page_html = render_report_body({"date": "2026-01-05", "generated_at": "x", "topics": [
+        {"topic": ai, "sections": [], "items": [
+            {"title": "半殘區塊不該出現的標題", "link": "http://x", "source": "s", "date": ""}]}]})
+    assert STATE_NOTE["failed"] in page_html, "失敗主題要寫出『本週更新失敗』"
+    assert "半殘區塊不該出現的標題" not in page_html, "失敗主題連新聞卡片都不顯示"
     print("[selftest] OK")
 
 
@@ -1347,11 +1395,14 @@ def main():
         return site
 
     force = "--force" in sys.argv
-    report = None if force else week_report(site)             # 週日已備好 -> 週一這班只寄信，不重抓
-    if report is None:
-        data, log = collect()
+    prev = None if force else load_week(site)                 # 本週那份（可能只做了一半）
+    todo = ALL_TOPICS if prev is None else todo_topics(prev)  # 只補還沒 ok 的主題，已好的不動
+    report = prev
+    if todo:
+        print(f"[todo] 本週待補主題：{'、'.join(todo)}")
+        data, log = collect(todo)
         print("\n".join(log))
-        report = build_report(data)
+        report = build_report(data, prev)
         d = report["date"]
         for old in os.listdir(reps):                          # 清同週舊檔(舊命名的殘檔)，保一週一份
             base = old.rsplit(".", 1)[0]
@@ -1360,9 +1411,10 @@ def main():
         with open(os.path.join(reps, f"{d}.json"), "w", encoding="utf-8") as f:
             json.dump(report, f, ensure_ascii=False, indent=2)  # 結構化資料（未來 AI RAG 讀這個）
         rebuild_site(site)                                    # 重畫全站
-        print(f"共 {report['total']} 則")
+        bad = [tp["topic"] for tp in report["topics"] if topic_state(tp) == "failed"]
+        print(f"共 {report['total']} 則" + (f"；仍失敗：{'、'.join(bad)}" if bad else "；四主題齊全"))
     else:
-        print(f"[ready] 本週 {report['date']} 內容已備好，不重抓")
+        print(f"[ready] 本週 {report['date']} 四主題都有內容，不重抓")
 
     if "--prepare" in sys.argv:                               # 週日班：只備稿，寄信留給週一
         print("[mail] --prepare 只備稿，不寄信")
