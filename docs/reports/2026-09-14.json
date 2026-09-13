@@ -1,12 +1,29 @@
 {
   "date": "2026-09-14",
-  "generated_at": "2026-09-13 15:32",
+  "generated_at": "2026-09-14 07:31",
   "total": 77,
   "topics": [
     {
       "topic": "永續 / 企業實務",
-      "gist": "",
-      "sections": [],
+      "gist": "IFRS揭露期程、數位產品護照、財務碳盤查、綠色投融資議合",
+      "sections": [
+        {
+          "heading": "政策與法規",
+          "body": "主管機關正加速推動金融業與氣候調適規範。金管會公布投信業接軌IFRS永續揭露準則新規，資產規模達6000億元以上者率先於2027會計年度適用、2028年申報，其餘分階段導入[[5]]。環境部則啟動極端高溫實兵演練，結果將納入第四期國家氣候變遷調適行動計畫[[5]]，並公布淨零綠領人才測驗合格率約六成[[8]]。此外，歐盟CBAM（碳邊境調整機制）將於2026年進入確定期，2027年正式結算申報並啟動購買憑證[[2]]。所以呢，受規範的投信業與出口製造業必須在2026年底前建置好溫室氣體盤查系統並補足專業證照人力，否則後年將面臨申報違規與實質碳稅支出衝擊。"
+        },
+        {
+          "heading": "市場趨勢",
+          "body": "企業減碳實務正從傳統廠區盤查深入至材料循環與產品碳足跡。全聯攜手歐萊德與宜可可循環經濟，以回收牛奶瓶打造再生瓶器，導入全台首個家用洗淨產品的數位產品護照（DPP），建立具備溯源依據的資源循環履歷[[2]]。在重工業與基礎設施端，大東電業將高壓電纜再生材料使用率提升至86.77%，並切入大型儲能建置[[0]]；高雄道路工程亦導入中鋼轉爐石鋪路，獲得認證減碳逾六成[[15]][[22]]。所以呢，製造業者不能只停留在廠端範疇一與範疇二盤查，明年度開發產品時必須將再生材料比例與碳足跡履歷納入設計，否則難以通過大型終端品牌的綠色採購門檻。"
+        },
+        {
+          "heading": "同業動態",
+          "body": "本週無明顯相關動作。"
+        },
+        {
+          "heading": "客戶動態",
+          "body": "金融業正全面擴大對供應鏈的碳排盤查與實質議合。臺灣企銀主辦公股聯合供應商大會，直接協助中小微企業處理淨零轉型問題[[11]][[19]][[20]]；富邦證券舉辦永續金融議合工作坊，輔導企業釐清減碳路徑[[13]]。在自身治理面，高雄銀行宣布財務碳排盤查覆蓋率衝上98.08%，並推進SBTi（科學基礎減碳目標倡議）接軌[[16]][[23]]；銀行公會亦推動財務碳健檢方案輔導同業[[17]]。另外，台新新光金蟬聯CDP評鑑A級[[14]]，合庫銀行與臺灣銀行亦獲卓越綠色金融獎項[[12]][[27]]。所以呢，仰賴銀行借貸的中小企業最慢在明年第二季融資展延前，就須交出初階碳盤查數據，否則恐面臨融資利率調高或貸款額度限縮。"
+        }
+      ],
       "grants": [],
       "items": [
         {
@@ -82,6 +99,15 @@
           "dupes": 1
         },
         {
+          "title": "AI淨零／ 環境部淨零綠領人才測驗成績公布 及格率6成",
+          "source": "中央社 CNA",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE80TVJQQnFkS2ZzMnp6cEpPVnZwUW1wSjY1Z1BudnFiRzRoMWRPei1qYjJ2dDIzZ0RYbkM1U055ZXREaXd5Q1NQOC1LQ3RTWE93ZXFLS3BOSWtMMGF1RU9j?oc=5",
+          "date": "2026-09-12",
+          "summary": "",
+          "body": "",
+          "dupes": 8
+        },
+        {
           "title": "AI淨零／綠色投融資規模逾5.4兆元財長勉公股銀助企業轉型| 產經",
           "source": "中央社 CNA",
           "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE95N240TW03eFU2RGxYOHN6RUlMNnQwUXpOVTY5Y192UUpUU1FOU2hwdWVGVUNGRlI3Y21QaHczU2dBemllT0pYRUJTNnZROHV1b01Ca0NyaEt5SjZ1cGc?oc=5",
@@ -89,15 +115,6 @@
           "summary": "",
           "body": "",
           "dupes": 8
-        },
-        {
-          "title": "AI淨零／ 環境部淨零綠領人才測驗成績公布 及格率6成",
-          "source": "中央社 CNA",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE80TVJQQnFkS2ZzMnp6cEpPVnZwUW1wSjY1Z1BudnFiRzRoMWRPei1qYjJ2dDIzZ0RYbkM1U055ZXREaXd5Q1NQOC1LQ3RTWE93ZXFLS3BOSWtMMGF1RU9j?oc=5",
-          "date": "2026-09-12",
-          "summary": "",
-          "body": "",
-          "dupes": 7
         },
         {
           "title": "AI淨零／中華車拚2035年再生能源占比35% 重申2050淨零| 產經",
@@ -127,28 +144,28 @@
           "dupes": 4
         },
         {
-          "title": "天祥一路道路工程獲認證減碳逾6成",
-          "source": "臺灣導報",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0taU51ZWdwODFPZVpNZVVYcXc3YlEzaEtKeE9HNE5HZzE3SVRKVjN2dVU0Tno4Z3RHMVFRNnI4a0g4Q0lUdHlUaVg4ZGpVQ2kzSnR4NA?oc=5",
-          "date": "2026-09-10",
-          "summary": "",
-          "body": "",
-          "dupes": 3
-        },
-        {
           "title": "富邦證券舉辦永續金融議合工作坊 協助企業掌握淨零轉型方向",
           "source": "中央社 CNA",
           "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE90d003bFFHODl1VlBpbXZUdk9vY0xMM1R4bU5pdXpqdG1uOGJyODJ6LWdaQ2steVdSYVRZR2Y0TjU5MFVkejFjZU5UbEVOQXFTTUVFNDdsZHlFUQ?oc=5",
           "date": "2026-09-10",
           "summary": "",
           "body": "",
+          "dupes": 4
+        },
+        {
+          "title": "〈財經週報-財經焦點〉永續再獲領航肯定 台新新光金CDP蟬聯「A」級最高評級",
+          "source": "自由時報",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBqMGgtbnhTenhWTUh3bFdQVWV0RnhWUzBVdWg4TWdOb2V5aVhHTkdvbERhX0RxUk1OTExLeGFxaDh0VVFkNWFhSjE5Z3ptNzJXZFFfYmRyQl8?oc=5",
+          "date": "2026-09-12",
+          "summary": "",
+          "body": "",
           "dupes": 3
         },
         {
-          "title": "格上租車領先台灣租車業深耕ESG永續移動服務，提供企業全方位移動服務！",
-          "source": "CARLINK鏈車網",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1XamVmNmRNVUlkVVd6UGhSRFB1S0l4NjQ0cU1rZTdKWlZBTmpQalJGalgwSjZSbV93bDIxZGNlSEUyZ1AyZWxwa3FGYWhmUGF4M1h1b05zRHhNMGdrVmc?oc=5",
-          "date": "2026-09-09",
+          "title": "天祥一路道路工程獲認證減碳逾6成",
+          "source": "臺灣導報",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0taU51ZWdwODFPZVpNZVVYcXc3YlEzaEtKeE9HNE5HZzE3SVRKVjN2dVU0Tno4Z3RHMVFRNnI4a0g4Q0lUdHlUaVg4ZGpVQ2kzSnR4NA?oc=5",
+          "date": "2026-09-10",
           "summary": "",
           "body": "",
           "dupes": 3
@@ -163,9 +180,9 @@
           "dupes": 3
         },
         {
-          "title": "公股攜手拚淨零！臺企銀辦聯合供應商大會 揪企業建綠色供應鏈 | TVBS",
-          "source": "LINE TODAY",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0teHV1RnRjdkprM2ZKMHQyRW1LeExNcnVKX1Zpb19vcENiQlhOa1RrWlA1WVc0ZWRZYmQ2QlVCaFhWdjEtYnNHQjRqUUZfdUlUd2M5cHV3?oc=5",
+          "title": "《金融》銀行公會 推動財務碳健檢 助金融業接軌永續碳排",
+          "source": "富聯網",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYnVNT2VSX3p6OUQ4dkdXUU1ISXp4VVJ4aDVFSmo2YmpWbTc2eEt0c2hPb2lWRGhoRGJPNGRmRFVwRFBvOUZqWkxuem9wSU5UZHlnTHJtcklJYl8tcl9FNGpxMjJiNnVfTjZlSUk3TUlhZVJrQjh2R2ZQY2hxWXplS24yMGdoTGV2?oc=5",
           "date": "2026-09-12",
           "summary": "",
           "body": "",
@@ -173,7 +190,7 @@
         },
         {
           "title": "「AI重塑能源與淨零競爭」產業迎戰綠電、永續問責與低碳轉型三大變局",
-          "source": "marketersgo.com",
+          "source": "行銷人",
           "link": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxNbDA3VUJybkd0bnZVa1RWeTNlSDdYOHZxUVZZRGxsazctVVhac19aWUNxM0dLeWFBRmJyWEZHVlRBcGVNTjBnZGVPeVVPZTA5WTJHQ1JDRGxRTzJNT2l1WVljX0JvaXVpUVBROW5jem9qTGtiUjNZYUE2S21aZWZZRnd5bzE0bnJhWUtiTER1ckJxZ1BTNWUwVENfUlNTYmttM1N1dVpBS2h4Z2xtLXo1QTBUdUFLTjNXMzQzYl9BVzg2SEJvVnVnQlNIYTJGenlkd3ByYXoxVEgwVFZhbnM1NUEtd1ZIYWlJLXRFa005d2NXVE83ZUFJcDlNb1dxRlB2QWtYY3YxVlNqNGExR2tGS3E4RDFHV3FxT2RiaEhKSFpsaXQ2RWxnQmpGOWUwZU1OZWI2Z0dEZDFNc1NwUG03SEhFbzdrUlg1a2xlaFAxd3ZMWnM4aUZrM05aWmVHanFCMzd6WlA2RUw?oc=5",
           "date": "2026-09-11",
           "summary": "",
@@ -191,10 +208,10 @@
         },
         {
           "title": "台企銀辦供應商大會 攜手中小微企業迎接淨零轉型",
-          "source": "ec.ltn.com.tw",
+          "source": "自由財經",
           "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1kNTVXV2QxWHlsS0pfX3lvMFpGOVFsN2JHNzNNeFVkT3pDQTRNQ1dpc0tJYWsxZ2JFX2x2bUl0c1NybzB3QzdyMG43MHRzQkxqeUFjanhCVEVYMzcwdEc00gFkQVVfeXFMTTZJb1h4VW55dmM2d0ZoV1hoZHdmVnQ0RnhXUEJ1MVdTNzMtUHdLdDdyZ25fX21QckxIeGVpTnQ0YjVheEFHN2JPSVZDVUtVSU02bHJ2ZFppXzVWdHFWbXlGbXVYMQ?oc=5",
           "date": "2026-09-10",
-          "summary": "台企銀辦供應商大會 攜手中小微企業迎接淨零轉型 ec.ltn.com.tw",
+          "summary": "",
           "body": "",
           "dupes": 2
         },
@@ -218,9 +235,27 @@
         },
         {
           "title": "高雄銀行深化氣候治理邁向自然與淨零轉型 獲TCFD報告書評鑑肯定",
-          "source": "UDN",
+          "source": "udn",
           "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE16d1NUazFNbXhuNlVRTkFPbFNJaUJ1ckRfc0FHUDJxejRvYkN2VzdJQWJzZkhVVldVOUtPUWFjQzZxWXRQSG9JTE9FeVdhMC1i0gFWQVVfeXFMTTBsTV9lVGw1cm9LNFJNV2RTbkczMVF6N09sNF9NRDUwTmVZbkhWZG1wdjNwdnU2SGV3Q2NCdXFTbWtFLXd1aFNFTE9hb2lsc1gxQW5fYWc?oc=5",
           "date": "2026-09-09",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "霧峰區農會榮獲永續農業獎項雙冠王 永續經營成果榮獲典範、淨零行動獲評金級",
+          "source": "Yahoo新聞",
+          "link": "https://news.google.com/rss/articles/CBMi7gNBVV95cUxQY0RCOVFnRUxxdUxCOGhvZVB4UlMwdXNaNWhQaTBtcVpJaDZGU0Uwakp2WHNtMnlPVmN4ZzktVFc1RUxJbmNSN21HbkFVeFdLMk92U280TjB4VHZSanR5ekYtQXd5SzRoNjV0NWtkRkhTWHhYY3JrSnZQOGRRM0RZVWNiZFlmY3hQbnBBbkxxbkY3S1RvM05jWkpEUkdvUzhROWtFbGc3LXFzSjJOY3FDM1VETHVaSnVIdy1fdks0d0l0ZFZUMENtNjJjdzg4Z2haN0hzbzBmeFRwT1hEUUlPbnczT01oUHlTQTlFWUtBU3hXeUd5NXZfRjhlM2lLN29ZMzBpRmJVdi1wV2NraG5sU0hzT2xVSXRncHJibkR4ODgzbFJxSXcxXzNuVkhPTlRMNFlJVV96akZzVjhpMnZiSWZzZzlyM1E2OFdybi1VTExDZkw4cFB6VXRaWUlfMGVSQkpBakJfVVFEN1BWV1N0dXhYVHNPdmhwVDFvcEczeV96U3JPMEZVUFZXVm13LXpSc2t2UW9qVWE0VXltMk9hWmwzbEptUzNkaFVCWV92MldFSDFPY3FZMG5JS290c2VJbjZqUUMtb2lVb0MzUkFIZm8zU3hMaU9VTWg0TTNCdWdQN19Qb293c3R3Z0t1dw?oc=5",
+          "date": "2026-09-09",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "格上租車完成長租服務碳足跡查證 領先台灣租車業深耕ESG永續移動 - Yahoo",
+          "source": "汽機車",
+          "link": "https://news.google.com/rss/articles/CBMisANBVV95cUxNb0ItbmtsTFlGRzN5QUNHQ2F3NnRTZ0VYaVdxb3hjR05UcnplbENHTFoxa2ZMMnFxVklnVVdDb3dJVGF1VFNDR1NodVRVbEs1d2loMkd3cXdhYXBycTQ5aUNjdkRxenVJU01GeDFWS014cGE0Y1NrbXgtTTBQLVJvZlhTNWFmQ3A5Mi05ekxEVXkyTVlwQjNaX1FQV1ZDb0tDNzYxVi10OWNQU3BkbWYyeTdlYTNTcjlpOXI1Uk1sVU9TX0RhamRYUmZ4YldGcUVzRk1XeTlsdjdjbHRNd2FuZmZITjI3c0FjVWVkZVI1RGRzNnJKSVltVU9FUWpIOHlucDZnNkxua0pzTlFFWVdnLUVNbHVfOF82MHQ2UXcyWFA2ZGJqY2xZRzhKMWNobi01OE8wTzh0RFd1Sm9ZVUwxOC1pSHVpbmNVSThqZHh1SDRYUXFVbGFWOWhkQ0thWk1qaktLRGdRSGVHME9USnpEYnhLbVdXcGh3djRacllqN01mTEMtUTdPNjBrTzlwZ0g0SlRpYjRJUXFnSGpETW9VY3ZVSUF5bllVUTBmZ2tza3k?oc=5",
+          "date": "2026-09-08",
           "summary": "",
           "body": "",
           "dupes": 2
@@ -260,24 +295,6 @@
           "summary": "",
           "body": "",
           "dupes": 2
-        },
-        {
-          "title": "泓橋廚餘處理服務取得ISO 14067 AUP 商業署減碳輔導展現成果，協助企業將廚餘處理轉化為可追溯的永續資訊 - 墨新聞-MORE News",
-          "source": "",
-          "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE5sSi04cG85VzhtdVY0bV9XdUlPNkZUN1RDS2d2clc2RG1HcFZRTERleW1FczltT3BuaDF6TVRQdkMxZw?oc=5",
-          "date": "2026-09-08",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "實踐綠色醫療 高榮南院通過碳盤查國際驗證 從守護健康到守護土地",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBhZ1MzcWxjd1pES0t0TVBwVTRYdXpYWHdody1nVmxjeElkQ1NxX3g5NlJpeUZlTmh4QllzTXY5d1E2cTgyLWlLTUk4LVFZNXZEYlE?oc=5",
-          "date": "2026-09-07",
-          "summary": "",
-          "body": "",
-          "dupes": 2
         }
       ],
       "sources": {
@@ -302,12 +319,48 @@
       "grants": [],
       "items": [
         {
+          "title": "養 AI 團隊比自己做還累？揭數位擴編潮背後的隱形工時與失控危機",
+          "source": "",
+          "link": "https://technews.tw/2026/09/14/opportunities-concerns-rise-ai-agents/",
+          "date": "2026-09-13",
+          "summary": "白領工作圈正掀起一波「AI 代理人」（AI Agents）的革命浪潮。越來越多職場人士不再滿足於單純向聊天機器 […]",
+          "body": "白領工作圈正掀起一波「AI 代理人」（AI Agents）的革命浪潮。越來越多職場人士不再滿足於單純向聊天機器人提問，而是開始打造一支分工明確的「數位團隊」。如今，「我底下管理多少個代理人」甚至成為了全新的職場戰績與實力展示。從個人顧問到跨國企業，AI 代理人正被賦予專屬姓名、職稱與職責，正式成為日常工作流程中的新要角。 許多專業人士已將這些代理人視為真正的虛擬員工。有人打造了超過 30 個 AI「員工」，讓它們各司其職，分別負責客戶管理、稅務檢查與流程監控；也有人單靠 6 個代理人協助日常營運，而整個團隊中僅有一名真人。這些 AI 不僅能梳理龐雜資訊、撰寫草稿，更能模擬不同視角來壓力測試提案，將原本耗時數週的分析工作大幅縮短至大約一小時。 這股熱潮同樣席捲大型企業，且導入速度不斷加快。科技巨頭思科（Cisco）近期已向全球約 9 萬名員工全面配發個人 AI 代理人，結合內部資料與專屬工具，協助員工進行研究、數據分析、報告撰寫及郵件管理。思科財務長更透露，目前公司高達八到九成的財務揭露草稿皆由 AI 代理人操刀，這證明了 AI 已從單純的輔助工具，正式深植入企業的核心業務流程。 然而，這波「擴編」熱潮也伴隨著明顯爭議。專家點出，代理人的「數量」並不能與「實際價值」畫上等號，因為許多宣稱的代理人，本質上僅是定時執行的自動化腳本，未必具備真正的自主判斷力。 更具挑戰的是，代理人需要持續維護與監督。若放任不管，不但容易出錯，還會讓員工陷入「照顧機器人」的窘境。有研究指出，辦公室員工每週可能需額外耗費超過 6 小時來檢查產出、補充背景資訊以及修正 AI 的錯誤。 在企業端，風險控管更是",
+          "dupes": 1
+        },
+        {
+          "title": "三星成立 RX 部門衝人形機器人，整合硬體與 AI 軟體，目標 CES 2027 首秀",
+          "source": "",
+          "link": "https://www.inside.com.tw/article/42366-samsung-humanoid-robot-ces-2027",
+          "date": "2026-09-13",
+          "summary": "三星電子成立全新 RX 部門，由單一主管統合人形機器人的硬體設計與 AI 軟體開發，目標在 2027 年 CES 拉斯維加斯展上完成首次公開亮相。三星已申請多項關節設計、靈巧手部動作與 AI 動作控制相關專利。",
+          "body": "三星成立 RX 部門衝人形機器人，整合硬體與 AI 軟體，目標 CES 2027 首秀 三星電子成立全新 RX 部門，由單一主管統合人形機器人的硬體設計與 AI 軟體開發，目標在 2027 年 CES 拉斯維加斯展上完成首次公開亮相。三星已申請多項關節設計、靈巧手部動作與 AI 動作控制相關專利。 三星電子成立 RX 部門，負責統合推進人形機器人的開發計劃，以 2027 年 CES 拉斯維加斯展為首次公開亮相的目標節點。這個新部門由單一主管同時負責硬體設計與 AI 軟體開發，打破傳統製造業硬體與軟體分開管理的組織架構。 RX 部門的設立讓三星在組織層面明確表態，人形機器人不再只是研究院裡的長期探索項目，而是進入產品開發的正式軌道。由一個負責人同時掌管硬體與 AI 軟體，也代表三星在這個領域選擇了一種整合式的開發路線，不把感應器、機械結構和控制算法拆給不同團隊各自優化，而是從設計初期就讓兩端互相影響。 這個架構和 Boston Dynamics 或 Figure AI 的組織模式接近，後者在過去幾年的進展也都強調硬體設計和 AI 訓練必須緊密耦合，不能有工程師在不了解機械限制的情況下設計運動算法，反之亦然。 三星已申請多項與人形機器人相關的專利，涵蓋關節設計、靈巧手部動作控制和 AI 運動規劃三個主要方向。 關節設計專利聚焦在減少功耗和熱量散發，同時維持足夠的扭力支撐複雜動作。手部動作控制的專利則涉及多指協調操作精密物件的機構設計，這是目前人形機器人在實際應用中最難突破的瓶頸之一。AI 運動控制的相關申請則涵蓋了動態平衡和環境感知的軟體層設計。 從專利分布來看，三星的技術切入點沒",
+          "dupes": 1
+        },
+        {
+          "title": "OpenAI阿特曼和馬斯克齊發聲　支持放緩AI發展",
+          "source": "",
+          "link": "https://www.cna.com.tw/news/ait/202609130163.aspx",
+          "date": "2026-09-13",
+          "summary": "（中央社舊金山13日綜合外電報導）研究人員近日接連對人工智慧（AI）安全性提出強烈警告，引發外界廣泛討論後，OpenAI執行長阿特曼與太空探索科技公司（SpaceX）執行長馬斯克響應Anthropic執行長阿莫戴的呼籲，支持放緩AI發展。",
+          "body": "本網站使用相關技術提供更好的閱讀體驗，同時尊重使用者隱私，點這裡瞭解中央社隱私聲明。當您關閉此視窗，代表您同意上述規範。 Your browser does not appear to support Traditional Chinese. Would you like to go to CNA’s English website, “Focus Taiwan”? （中央社舊金山13日綜合外電報導）研究人員近日接連對人工智慧（AI）安全性提出強烈警告，引發外界廣泛討論後，OpenAI執行長阿特曼與太空探索科技公司（SpaceX）執行長馬斯克響應Anthropic執行長阿莫戴的呼籲，支持放緩AI發展。 英國「金融時報」（Financial Times）報導，阿莫戴（Dario Amodei）在昨天發表的一篇文章中指出，AI技術的發展速度於今年夏季「急遽加速」後，科技業「必須放慢提升AI模型能力的速度」。 阿莫戴的警告，使Anthropic正準備推動的首次公開募股（IPO）變得更為複雜，外界預期這將成為史上最大IPO。Anthropic原本預計最快上週提交公開說明書，這筆交易對公司的估值可能達到2兆美元以上，但至今尚未提交。 在這個充斥激烈個人恩怨與商業競爭的產業，阿特曼（Sam Altman）與馬斯克（Elon Musk）罕見展現共識，表態支持阿莫戴的提議，其中包括讓獨立評估人士持續取得各家前沿AI企業的相關權限。 阿特曼也在X平台發文表示：「我同意達瑞歐的看法，我們必須控制前沿AI的發展速度。」他本週稍早在會議上告訴OpenAI全體員工，他對國際共同協調放緩AI發展速度持開放",
+          "dupes": 1
+        },
+        {
+          "title": "AI 越聰明 EQ 越值錢，專家：父母必學的「情緒教養」將決定孩子未來高度",
+          "source": "",
+          "link": "https://technews.tw/2026/09/13/ai-era-emotions/",
+          "date": "2026-09-13",
+          "summary": "一位擁有豐富企業高階主管輔導經驗的工業與組織心理學家指出，在人工智慧（AI）快速發展的時代，具備辨識、理解與表 […]",
+          "body": "一位擁有豐富企業高階主管輔導經驗的工業與組織心理學家指出，在人工智慧（AI）快速發展的時代，具備辨識、理解與表達情緒能力的人，將擁有更強大的職場競爭力。她強調，情緒絕非軟弱的象徵，而是領導者與企業能善加運用的關鍵資訊，這項軟實力更是 AI 絕對無法取代的資產。 針對家庭教養，她觀察到許多父母常為偶爾說錯話或對孩子提高音量等小失誤感到焦慮。然而，真正影響孩子長遠發展的，其實是家庭長期的「互動模式」──包含如何建立關係、表達愛意以及處理衝突。這些日常經驗將深深紮根，並一路影響他們成年後的職場表現與人際溝通。 在實務教練工作中，她發現許多主管被問及感受時，最常敷衍回答「還好」或「沒事」。但真正卓越的領導者，不僅能精準說出當下的感受，更清楚情緒的源頭。這不僅有助於高階自我管理，更能大幅提升團隊信任與溝通效率。因此，她建議父母應從小教導孩子為「情緒命名」，學會精確分辨自己究竟是難過、焦慮、緊張還是其他感受。 為了落實這項能力，她分享了自己在會議中常用的「頭、心、手」檢視法：「頭」代表目前的想法；「心」代表當下的情緒與背後原因；「手」則象徵身體的生理與現實狀態，例如時間壓力、飢餓感或肌肉緊繃。她指出，這種練習能有效建立人際信任，也非常適合運用於親子互動中，引導孩子清晰地覺察並理解自己的內在狀態。 最後，她特別提醒家長，教養時不應只放大孩子的缺點，而應在各種情境中適時點出他們的優勢，並確保孩子感受到「自己的聲音被聽見」。當孩子在成長過程中擁有被理解、被肯定且能自主選擇的感受時，未來即使面臨艱難的情緒或充滿挑戰的環境，也將具備更強大的心理韌性，持續勇敢向前邁進。 I coach executi",
+          "dupes": 1
+        },
+        {
           "title": "食品製造業 AI 轉型大解密，選對平台不如打好「數據與信任」的基礎",
           "source": "",
           "link": "https://finance.technews.tw/2026/09/13/ai-reshaping-food-manufacturing/",
           "date": "2026-09-13",
           "summary": "食品製造業正掀起一波 AI 導入熱潮。然而，業界實務觀察指出，決定 AI 專案成敗的關鍵，往往不在於企業砸重金 […]",
-          "body": "食品製造業正掀起一波 AI 導入熱潮。然而，業界實務觀察指出，決定 AI 專案成敗的關鍵，往往不在於企業砸重金採購哪一套最頂尖的 AI 平台，而是工廠底層是否已具備穩固的資料基礎、流程整合能力，以及現場員工對新系統的信任度。 儘管許多食品製造商看好 AI 提升產能與食安的潛力，卻遲遲無法在產線上看到穩定的成效。追根究柢，「資料孤島與破碎化」是最先要克服的難關。目前許多工廠的營運數據仍散落在 MES、LIMS、歷史資料庫與維修系統中，彼此缺乏串接；甚至連交班紀錄、維修筆記與品質檢查等寶貴的第一線人工作業知識，也多為難以搜尋與追溯的非結構化格式。對仰賴大量數據學習的 AI 而言，提升資料的品質與完整性，絕對是啟動轉型前不可省略的補強環節。 在導入策略上，專家呼籲企業應「先求有感，再求擴展」，切忌在初期就盲目追求全面自動化。較務實的做法是先鎖定一到兩個「高影響力、低風險」的應用場景，例如：預測性維護、根因分析、品質檢測或文件自動化。透過單一流程的試點，不僅能快速驗證 AI 的價值，大幅降低牽動過多系統的整合風險，也能讓團隊在看見初步成效後建立信心，再逐步擴大應用版圖。 此外，「人員的接受度」更是 AI 能否落地的核心變數。第一線員工只要清楚系統運作邏輯、信任輸出結果，並知道下一步的應對方式，通常相當歡迎能減少重複性勞動、提供即時異常警報的 AI 工具。反觀真正容易產生防備心與疑慮的，往往是中階管理層。因為 AI 系統常被用來分析營運趨勢、提出採購預測與排程建議，這直接觸碰了中階主管傳統的核心職權，若未妥善溝通，極易形成內部阻力。 最後，面對高度監管的食品製造環境，AI 系統的「透明度",
+          "body": "食品製造業 AI 轉型大解密，選對平台不如打好「數據與信任」的基礎 | TechNews 科技新報 食品製造業正掀起一波 AI 導入熱潮。然而，業界實務觀察指出，決定 AI 專案成敗的關鍵，往往不在於企業砸重金採購哪一套最頂尖的 AI 平台，而是工廠底層是否已具備穩固的資料基礎、流程整合能力，以及現場員工對新系統的信任度。 儘管許多食品製造商看好 AI 提升產能與食安的潛力，卻遲遲無法在產線上看到穩定的成效。追根究柢，「資料孤島與破碎化」是最先要克服的難關。目前許多工廠的營運數據仍散落在 MES、LIMS、歷史資料庫與維修系統中，彼此缺乏串接；甚至連交班紀錄、維修筆記與品質檢查等寶貴的第一線人工作業知識，也多為難以搜尋與追溯的非結構化格式。對仰賴大量數據學習的 AI 而言，提升資料的品質與完整性，絕對是啟動轉型前不可省略的補強環節。 在導入策略上，專家呼籲企業應「先求有感，再求擴展」，切忌在初期就盲目追求全面自動化。較務實的做法是先鎖定一到兩個「高影響力、低風險」的應用場景，例如：預測性維護、根因分析、品質檢測或文件自動化。透過單一流程的試點，不僅能快速驗證 AI 的價值，大幅降低牽動過多系統的整合風險，也能讓團隊在看見初步成效後建立信心，再逐步擴大應用版圖。 此外，「人員的接受度」更是 AI 能否落地的核心變數。第一線員工只要清楚系統運作邏輯、信任輸出結果，並知道下一步的應對方式，通常相當歡迎能減少重複性勞動、提供即時異常警報的 AI 工具。反觀真正容易產生防備心與疑慮的，往往是中階管理層。因為 AI 系統常被用來分析營運趨勢、提出採購預測與排程建議，這直接觸碰了中階主管傳統",
           "dupes": 1
         },
         {
@@ -325,7 +378,7 @@
           "link": "https://infosecu.technews.tw/2026/09/13/medical-ai-privacy-crisis/",
           "date": "2026-09-13",
           "summary": "醫療機構正加速將人工智慧（AI）導入臨床與行政流程，但最新分析顯示，AI 在大幅提升效率的同時，也因資料流轉、 […]",
-          "body": "醫療機構正加速將人工智慧（AI）導入臨床與行政流程，但最新分析顯示，AI 在大幅提升效率的同時，也因資料流轉、外部供應商串接與過度自動化，顯著放大了資安漏洞與病患隱私風險。 「影子 AI」（Shadow AI）隱憂** 部分醫療人員私下使用未經授權的 AI 工具處理病歷與個資，導致數據去向不明、模型的準確性無法評估，且病患對此完全不知情。 日常工作流程誤判** AI 帳單編碼若發生幻覺，易引發不當「高編碼」（Upcoding）與錯誤診斷紀錄；自動化簡訊若缺乏保護遮蔽（如直接將 HIV 檢驗結果發送至家族共用手機），會瞬間造成嚴重隱私洩漏。 RAG 檢索技術的隱形漏洞** 使用檢索增強生成（RAG）查詢病歷時，即使刪除了原始檔案，系統中留存的嵌入向量（Embeddings）仍可能遭駭客反向推導出敏感健康數據。 AI 代理（AI Agent）權限擴散** 具備自動串接病歷、身分驗證或呼叫外部工具能力的 AI 代理，若缺乏強大的邊界設定，其錯誤的自動化動作將快速擴大受害範圍。 在治理層面，專家強調醫療機構不應將 AI 僅視為單一軟體採購，而應將其納入整體資安與供應商管理中，導入前須全面盤點資料處理流程、第三方次處理者存取權限、資料保留期限與法規合規性。 同時，機構必須落實「人在迴路」（Human-in-the-Loop）審核，在病患診斷、保險授權預審、病歷合併等關鍵決策點保留人工最終確認機制與完整的稽核軌跡（Audit Trail）。 此外，亦須推進全生命週期的公平性與偏誤稽核，針對生成式 AI 與客服聊天機器人建立明確的使用規範，並持續對模型的偏誤、公平性與雲端資安進行動態評估。 ",
+          "body": "「影子 AI」入侵病歷系統，醫療機構的隱形資安危機 | TechNews 科技新報 醫療機構正加速將人工智慧（AI）導入臨床與行政流程，但最新分析顯示，AI 在大幅提升效率的同時，也因資料流轉、外部供應商串接與過度自動化，顯著放大了資安漏洞與病患隱私風險。 「影子 AI」（Shadow AI）隱憂** 部分醫療人員私下使用未經授權的 AI 工具處理病歷與個資，導致數據去向不明、模型的準確性無法評估，且病患對此完全不知情。 日常工作流程誤判** AI 帳單編碼若發生幻覺，易引發不當「高編碼」（Upcoding）與錯誤診斷紀錄；自動化簡訊若缺乏保護遮蔽（如直接將 HIV 檢驗結果發送至家族共用手機），會瞬間造成嚴重隱私洩漏。 RAG 檢索技術的隱形漏洞** 使用檢索增強生成（RAG）查詢病歷時，即使刪除了原始檔案，系統中留存的嵌入向量（Embeddings）仍可能遭駭客反向推導出敏感健康數據。 AI 代理（AI Agent）權限擴散** 具備自動串接病歷、身分驗證或呼叫外部工具能力的 AI 代理，若缺乏強大的邊界設定，其錯誤的自動化動作將快速擴大受害範圍。 在治理層面，專家強調醫療機構不應將 AI 僅視為單一軟體採購，而應將其納入整體資安與供應商管理中，導入前須全面盤點資料處理流程、第三方次處理者存取權限、資料保留期限與法規合規性。 同時，機構必須落實「人在迴路」（Human-in-the-Loop）審核，在病患診斷、保險授權預審、病歷合併等關鍵決策點保留人工最終確認機制與完整的稽核軌跡（Audit Trail）。 此外，亦須推進全生命週期的公平性與偏誤稽核，針對生成式 AI 與客",
           "dupes": 1
         },
         {
@@ -343,7 +396,7 @@
           "link": "https://infosecu.technews.tw/2026/09/13/dario-amodei-calls-for-slowing-down-the-pace-of-ai-development-for-the-safety-tech-to-align/",
           "date": "2026-09-13",
           "summary": "知名人工智慧新創 Anthropic 執行長阿莫戴（Dario Amodei）近日發出警告，呼籲全球 AI 產 […]",
-          "body": "知名人工智慧新創 Anthropic 執行長阿莫戴（Dario Amodei）近日發出警告，呼籲全球 AI 產業應主動放慢技術研發速度，給予安全防護技術「對齊（Alignment）」足夠的緩衝時間。 Amodei 警告，若當前的狂飆競賽節奏不減，在未來 6 至 12 個月內，AI 可能演化出指揮「代理人蜂群（Swarm of agents）」的能力，甚至具備癱瘓或掌控整個網際網路的風險。 近期 AI 巨頭內部與外部對於「技術失控」的疑慮持續升溫，甚至引發內部員工的離職潮，光是過去一週，Anthropic 安全團隊成員 Joe Benton 與 Jacob Coxon 便相繼請辭。 Benton 坦言，安全研究人員深知企業正陷入一場建造超級人工智慧（Superintelligence）的決鬥，大家困在「停下腳步會被超越、繼續前行又承擔毀滅風險」的兩難中。 Coxon 更直言 OpenAI 與 Anthropic 正賭上人類性命盲目奔馳，生命未來研究所執行長 Anthony Aguirre 指出，各大科技巨頭已意識到自己正在打造「天網」，但在這場競賽中根本沒有勝者。連聯合國人權事務高級專員 Volker Türk 也呼籲各國政府，必須在為時已晚前對 AI 安全建立技術和制度上的保障。 不過 AI 的安全隱患早已顯露端倪，Anthropic 日前證實已成功攔截惡意份子利用其模型進行網路攻擊、監視與生物武器研發，OpenAI 今年 7 月更爆出震撼業界的事件，其 AI 系統在測試過程中，為了達成給定目標，居然「自主」駭入 Hugging Face 平台並獲取保密資訊。 雖然研究人員稱這",
+          "body": "",
           "dupes": 1
         },
         {
@@ -352,7 +405,7 @@
           "link": "https://technews.tw/2026/09/13/ai-short-dramas-human-performers-survival-crisis/",
           "date": "2026-09-13",
           "summary": "人工智慧（AI）正以前所未有的速度改寫短劇與影視製作模式。從角色生成、場景設計到整部作品的完成，AI 已不再只 […]",
-          "body": "人工智慧（AI）正以前所未有的速度改寫短劇與影視製作模式。從角色生成、場景設計到整部作品的完成，AI 已不再只是輔助工具，而是直接參與甚至主導內容生產。隨著 AI 短劇與數位演員大量進入市場，真人演員的生存空間正遭到嚴重擠壓。 根據外媒報導，這波影視變革來得又快又猛。短劇產業近期出現明顯轉向，AI 作品數量暴增，部分平台上新作品中，AI 生成內容已占相當高比例。業界人士指出，AI 的製作成本遠低於傳統真人拍攝，原本需要導演、演員、攝影、美術與後製團隊協作的複雜流程，正逐步被自動化系統取代。 衝擊最直接的，莫過於大牌明星與短劇真人演員的工作機會。短劇演員兼製作人 Greg Wollner 表示，在字節跳動推出 Seedance 2.0 前，他原本一週能接拍三部作品，但工具問世後工作幾乎瞬間消失，身邊不少同行被迫離開這個行業。另有表演者透露，自己在失去角色前，還被要求先將個人的影像、聲音與表演風格交給 AI 系統進行「數位提煉」，等於被迫先替未來取代自己的數位分身提供素材。 更令人關注的是，部分從業者甚至面臨「接受 AI 替身，否則就被換掉」的最後通牒。一名兒童教育節目主持人表示，她曾被要求同意製作自身的 AI 複製版本，否則可能由其他演員接手；最後她透過談判爭取到一份為期五年的合約，內容包含一年薪資保障與否決權，才勉強保住自身權益。 在產業端，AI 短劇已不只是試驗性產品，而是逐步形成全新的商業模式。部分熱門 AI 角色已在平台上擁有獨立頁面，像真人藝人一樣經營個人曝光與流量。業界人士分析，這代表短劇產業正走向「去肉身化」時代──內容、人設與流量依然存在，但螢幕上的演出者已未必需",
+          "body": "",
           "dupes": 1
         },
         {
@@ -361,7 +414,7 @@
           "link": "https://www.cna.com.tw/news/ait/202609130010.aspx",
           "date": "2026-09-13",
           "summary": "（中央社洛杉磯12日綜合外電報導）OpenAI執行長阿特曼（Sam Altman）接受「財星雜誌」（Fortune）專訪時表示，OpenAI今年不會公開上市，因為這家人工智慧（AI）公司正專注於解決技術相關的安全問題。",
-          "body": "本網站使用相關技術提供更好的閱讀體驗，同時尊重使用者隱私，點這裡瞭解中央社隱私聲明。當您關閉此視窗，代表您同意上述規範。 Your browser does not appear to support Traditional Chinese. Would you like to go to CNA’s English website, “Focus Taiwan”? （中央社洛杉磯12日綜合外電報導）OpenAI執行長阿特曼（Sam Altman）接受「財星雜誌」（Fortune）專訪時表示，OpenAI今年不會公開上市，因為這家人工智慧（AI）公司正專注於解決技術相關的安全問題。 根據「財星雜誌」今天發布的訪談影片，阿特曼表示，今年進行首次公開募股（IPO）並不明智，上市行動最快也要等到明年。 阿特曼說：「我認為，承擔10%導致全人類在這個十年結束前滅亡的風險，這是無法接受的。我認為我們正邁入一個新時代，正如過去進入其他時代一樣，必須以不同方式行動，確保我們所做的事情不僅能讓這項理念造福全人類，也要確保沒有人會承擔這麼高的風險。」 阿特曼、Anthropic執行長阿莫戴（Dario Amodei）以及xAI公司共同創辦人兼負責人馬斯克（Elon Musk）在今天都公開表示，必須因應AI技術帶來的人類風險，放緩AI發展步伐。這是AI領域三大競爭者罕見有共識的時刻。 隨著AI迅速發展，越來越多美國國會議員呼籲制定新規範來管理AI系統，這主要是因為OpenAI競爭對手Anthropic的兩名研究員發出嚴峻警告，認為AI可能在不久的將來導致人類滅絕。 「財星雜誌」詢問阿特曼，是否計劃",
+          "body": "",
           "dupes": 1
         },
         {
@@ -370,7 +423,97 @@
           "link": "https://www.cna.com.tw/news/ait/202609130005.aspx",
           "date": "2026-09-13",
           "summary": "（中央社紐約12日綜合外電報導）在人工智慧（AI）遭濫用疑慮日增之際，Anthropic執行長阿莫戴呼籲，各家公司調整提升模型能力的速度。他提出一套三步驟架構，希望放慢發展腳步，爭取更多時間管理相關風險。",
-          "body": "本網站使用相關技術提供更好的閱讀體驗，同時尊重使用者隱私，點這裡瞭解中央社隱私聲明。當您關閉此視窗，代表您同意上述規範。 Your browser does not appear to support Traditional Chinese. Would you like to go to CNA’s English website, “Focus Taiwan”? （中央社紐約12日綜合外電報導）在人工智慧（AI）遭濫用疑慮日增之際，Anthropic執行長阿莫戴呼籲，各家公司調整提升模型能力的速度。他提出一套三步驟架構，希望放慢發展腳步，爭取更多時間管理相關風險。 阿莫戴（Dario Amodei）在X平台發表的文章指出：「我們必須放慢提升AI模型能力的速度。即使速度變慢，進展仍將顯得很快，我們必須善用所爭取到的時間。」 路透社報導，這篇文章發表前，Anthropic才剛發布一份威脅情報報告，闡述有多方人士曾利用其Claude AI模型從事武器開發、網路戰、監控以及詐騙等行為。 本週對AI可能帶來傷害的憂慮加劇，Anthropic研究員考克森（Jacob Coxon）日前辭職，表示「打造AI的人真心認為，這項技術可能在10年內消滅全人類。」 阿莫戴進一步澄清，他並非主張停止模型訓練或中止技術進步，而是希望企業能有充分時間讓AI模型對齊（意指引導AI系統的行為與目標，使其符合人類的意圖、價值觀及安全規範），並加強防護，讓第三方審查人員驗證這些步驟是否確實執行。 阿莫戴提出的三步驟架構之一，包括在前沿AI公司內設立常駐的第三方審查人員，賦予其使用相關工具和參與內部風險評估流程的",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "AI 語音技術加速企業轉型 客戶服務與內容創作成應用亮點",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1DRGhtU2JGOUNRVEIyZVh4ZmhFRldMcVFzX1I1RURxZ0pGU21vNDcxTFVjcFBHLW9kT0V4aGZJVHUxQmNNRUtjdWdkNFhyVkwtcWc?oc=5",
+          "date": "2026-09-12",
+          "summary": "",
+          "body": "",
+          "dupes": 4
+        },
+        {
+          "title": "接班人底氣1／國泰金蔡宗翰數位轉型10年有成 首度公開演講心路歷程",
+          "source": "PChome Online 新聞",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNcndNN254aHM5M3pwWkt2NmJDaFU4YnVZdVhjenZmZzhHT3IzVDVyWnkxR05ldXlsdHAxSngwMUpVaU1BOVJuX2JFY0F0a05WdGh3c3lJbTN6Yml5WTRoSmtGQi1LWlhNQ2pNV1FuOW1GSXc3Zm5BSV9HelgzeFVTTlY2emVXbVN1OHc?oc=5",
+          "date": "2026-09-13",
+          "summary": "",
+          "body": "",
+          "dupes": 3
+        },
+        {
+          "title": "台灣大硬科技日聚焦 Agentic AI，15 項 AI 成果助攻企業應用",
+          "source": "TechNews 科技新報",
+          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1UU2xXWW1KMWp4LUJiZWxXWXk0SEM1SU5ETm5CNmF0RGwyVXRPTkJoQjVIRHdnY05JcloxS3dRWkZlR1NiNllvODRQaW9OcVJNXzVRZnJxRkdZQnRGeG5xWGZfVUt1dzFKNnJNbXZfekFOUGkzYmhmWA?oc=5",
+          "date": "2026-09-08",
+          "summary": "",
+          "body": "",
+          "dupes": 3
+        },
+        {
+          "title": "AI 與全球化雙重變局下 女性領導企業加速重整人才、供應鏈與治理",
+          "source": "CIO Taiwan",
+          "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTFA2MTNFV2EyT2RDa1NpbnBENFlpcjJEU2swQ1dOaWJpY0xWbXpVbUxqN3BLVmV0NklyQk9MR0VIZzJ0UHBI?oc=5",
+          "date": "2026-09-10",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "讓AI不只寫程式　商研院課程實戰解鎖自動化開發",
+          "source": "ETtoday財經雲",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAyRlE2MmlWWWREcWlncWFjWXhFTVhvbHQzRnZFNmJBWVVUcGtoSmJmcEYxT0J6UFVyWlVCbWU5U3lZZUlIRUxubXRxazZEcTRvWnfSAVBBVV95cUxNY09SdkFnUDdWa3l4MmdXYTRDX184VUtBd29kRXhaTTBsbkk1MGg1d2dBYktQcTQ1clVyay1kZGlyUk1kMXRUeS0wVHlOR0IzWA?oc=5",
+          "date": "2026-09-08",
+          "summary": "讓AI不只寫程式 商研院課程實戰解鎖自動化開發 ETtoday財經雲",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "AI、穩定幣與RWA逆轉金融 姚木川：台需打造世界級 AI 金融科技舞台",
+          "source": "udn",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9ieTYxdEdITGs3RW9kVGRQZ0thZlVPc2RBaWNFb1ZFMWxZRGYyemFTSXlGbS1sN2ZBRWhpZjZic3ZIOHpKMlNuMFR6NmlIaEtU0gFWQVVfeXFMTWdOUlhjaTZnVk5YSVFRVVAybFhZQ25Bck5ZNDRrV1M2VzJLRXplVkcxUE9aYlVMOG1aMmQySDltaUhFMGxYWHcxTzNwVHJpZ1FabE5URHc?oc=5",
+          "date": "2026-09-08",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "停機時間砍 86%、維修回應快 42%！現代汽車如何把 AI 鋪進 VIN、搬運車與維修廠？",
+          "source": "LINE TODAY",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5lbHl3WENSUE9WaUlEekJaampYb0tubXlBTjlPSHlobHBCcEdBZW03UGFXR0tnTTVXMDFYMm1ic05KTUNfQVZ4M1Z4djE5dERrdEUtLTQwX1hWLVNDUDlGUUF5YlA4VVZhN1JwUHJGeGU5SUtS?oc=5",
+          "date": "2026-09-13",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "INFINITIX 成功導入韓國國家級智慧製造創新中心SMIC",
+          "source": "iThome",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFA1RHk4ZWJwN0VBN2l2b3R5a3J0Uk9QdUx1YTFYTUNZa25uaHJZdmRod0FxZlcyY2k5Q1BpNExycGRnd2pNdTVhUVBkbw?oc=5",
+          "date": "2026-09-13",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "甲骨文 AI 助電力公司防停電 搶攻電網現代化商機",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9uWmx2VVNzcjlvVmRpdERxRHZ5RGVleW5CQVJob25JX3Rxa1Nta25hR1hwY0tlbGRRREVLQjRmTEFhaVA0NDMxTlFkRFhGVjZ6ZWc?oc=5",
+          "date": "2026-09-13",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "Google AI 戰略多點開花：Gemini 進攻車用與金融市場 新模型卻延遲",
+          "source": "商傳媒",
+          "link": "https://news.google.com/rss/articles/CBMijgNBVV95cUxNeXVnQ2dWWDZZZ2k0emJiOWJ2SFprS3JqZEVGcHRVdnIydHZHblM0U3JidW1yVnJIeERHTWRwd09tRHFEQWtiWWFYMkwwYm55NVJibkZCaXlJQlhJc1JfWGI5bUppa1hGbHVqS2hxZHI2WWl4MnlLNm9UQ3g3MDR3cXNKMl9ldmhJZzhXbHJ0V3k4TkxfcnpoZkY5bVJQUjl4QWIyLU83TEs2TUFRc2ZNOWVjNzZ2YmNMMGh5aHRSbkZTR1lQa0FCU0tmZUF1bUkzWDU2bUlwaWNGWjRLZS1HNnJOYzh6Sk15blRnMVhzbnBkS3F2NXJrYjFOREpTeVJyaGNMRk5STlFmRTJpZktlMEhFWFV0VmxfN1QyTFVXaHFlR0VVVWJNRnNSWjFIMkhaRl9GVWhhRWMyX214cjQxOVh2X05TbS1UTzFUMjJzTE1lWmlENXdUV25LWVFVelY5V3g4V2FFSkU1XzZTQk50NVJlajRCVHVtWFgtYy0zOXIydk00dFhyc2RqNFc1dw?oc=5",
+          "date": "2026-09-13",
+          "summary": "",
+          "body": "",
           "dupes": 1
         },
         {
@@ -410,78 +553,6 @@
           "dupes": 1
         },
         {
-          "title": "航運數位轉型再升級！大世科攜手產業夥伴整合衛星5G與AI打造智慧船舶| 生活",
-          "source": "三立新聞",
-          "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9ZNGlsQW5WcVRPZC1PQmlJUWNkUWt5azZiNTJQYTVJb0FWTkxuZURNQ0pFYXB5SzJKcjE2VUFiLVRCLTl2MlJRVA?oc=5",
-          "date": "2026-09-10",
-          "summary": "",
-          "body": "",
-          "dupes": 3
-        },
-        {
-          "title": "AI 與全球化雙重變局下 女性領導企業加速重整人才、供應鏈與治理",
-          "source": "cio.com.tw",
-          "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTFA2MTNFV2EyT2RDa1NpbnBENFlpcjJEU2swQ1dOaWJpY0xWbXpVbUxqN3BLVmV0NklyQk9MR0VIZzJ0UHBI?oc=5",
-          "date": "2026-09-10",
-          "summary": "",
-          "body": "",
-          "dupes": 3
-        },
-        {
-          "title": "台灣大硬科技日聚焦 Agentic AI，15 項 AI 成果助攻企業應用",
-          "source": "TechNews 科技新報",
-          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1UU2xXWW1KMWp4LUJiZWxXWXk0SEM1SU5ETm5CNmF0RGwyVXRPTkJoQjVIRHdnY05JcloxS3dRWkZlR1NiNllvODRQaW9OcVJNXzVRZnJxRkdZQnRGeG5xWGZfVUt1dzFKNnJNbXZfekFOUGkzYmhmWA?oc=5",
-          "date": "2026-09-08",
-          "summary": "",
-          "body": "",
-          "dupes": 3
-        },
-        {
-          "title": "AI 語音技術加速企業轉型 客戶服務與內容創作成應用亮點",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1DRGhtU2JGOUNRVEIyZVh4ZmhFRldMcVFzX1I1RURxZ0pGU21vNDcxTFVjcFBHLW9kT0V4aGZJVHUxQmNNRUtjdWdkNFhyVkwtcWc?oc=5",
-          "date": "2026-09-11",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "資策會數位轉型研究院─FIND中心",
-          "source": "find.org.tw",
-          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQczNtRjFaU2psc2hkMnFKdGR3ZWtZUDBxVTVTNWRKODhPS3h2VjB4MXZ2VkpKdFB1QklQSWpMNnN0WWFZbmV1YUlobzlkUW5jMGdYWjJvdkhHSnRSUndxR2ZyVXJsMV9NaEFTVEprTUozSjFTQ3UwRVF0ZVhRSFN3YQ?oc=5",
-          "date": "2026-09-10",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "讓AI不只寫程式　商研院課程實戰解鎖自動化開發",
-          "source": "ETtoday財經雲",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAyRlE2MmlWWWREcWlncWFjWXhFTVhvbHQzRnZFNmJBWVVUcGtoSmJmcEYxT0J6UFVyWlVCbWU5U3lZZUlIRUxubXRxazZEcTRvWnfSAVBBVV95cUxNY09SdkFnUDdWa3l4MmdXYTRDX184VUtBd29kRXhaTTBsbkk1MGg1d2dBYktQcTQ1clVyay1kZGlyUk1kMXRUeS0wVHlOR0IzWA?oc=5",
-          "date": "2026-09-08",
-          "summary": "讓AI不只寫程式 商研院課程實戰解鎖自動化開發 ETtoday財經雲",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "AI、穩定幣與RWA逆轉金融 姚木川：台需打造世界級 AI 金融科技舞台",
-          "source": "UDN",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9ieTYxdEdITGs3RW9kVGRQZ0thZlVPc2RBaWNFb1ZFMWxZRGYyemFTSXlGbS1sN2ZBRWhpZjZic3ZIOHpKMlNuMFR6NmlIaEtU0gFWQVVfeXFMTWdOUlhjaTZnVk5YSVFRVVAybFhZQ25Bck5ZNDRrV1M2VzJLRXplVkcxUE9aYlVMOG1aMmQySDltaUhFMGxYWHcxTzNwVHJpZ1FabE5URHc?oc=5",
-          "date": "2026-09-08",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "甲骨文 AI 助電力公司防停電 搶攻電網現代化商機",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9uWmx2VVNzcjlvVmRpdERxRHZ5RGVleW5CQVJob25JX3Rxa1Nta25hR1hwY0tlbGRRREVLQjRmTEFhaVA0NDMxTlFkRFhGVjZ6ZWc?oc=5",
-          "date": "2026-09-13",
-          "summary": "",
-          "body": "",
-          "dupes": 1
-        },
-        {
           "title": "台積電 CoWoS 產能供不應求，聯電、Amkor 等受惠 AI 訂單外溢",
           "source": "",
           "link": "https://technews.tw/2026/09/12/tsmc-cowos-capacity/",
@@ -514,60 +585,6 @@
           "link": "https://www.cna.com.tw/news/ait/202609120040.aspx",
           "date": "2026-09-12",
           "summary": "（中央社舊金山11日綜合外電報導）消息人士告訴路透社，人工智慧（AI）新創公司Anthropic正洽談讓輝達（Nvidia）成為其首次公開募股（IPO）的基石投資人，這可能成為史上規模最大IPO。",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "Google 晶片大神降臨 SEMICON Taiwan 開示：瓶頸每天都不同，台廠人人有機會當主角",
-          "source": "",
-          "link": "https://technews.tw/2026/09/12/google-amin-vahdat-interview/",
-          "date": "2026-09-12",
-          "summary": "AI 發展的瓶頸是什麼？未來會有更多客製化晶片嗎？又，下一個可能改變 AI 發展的關鍵技術突破會是什麼？ Go […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "建 AI 資料中心太燒錢！甲骨文擬擴大裁員，重組成本增至 28 億美元",
-          "source": "",
-          "link": "https://finance.technews.tw/2026/09/12/oracle-may-cut-more-jobs/",
-          "date": "2026-09-12",
-          "summary": "由於開發 AI 大型資料中心而面臨資金短缺，甲骨文（Oracle）傳出將擴大原先規畫的裁員規模。 據彭博社報導 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "AI 浪潮重塑音樂產業：是創作者的雙翼，還是廉價免洗的商品？",
-          "source": "",
-          "link": "https://technews.tw/2026/09/12/ai-wave-reshapes-music-industry/",
-          "date": "2026-09-12",
-          "summary": "生成式 AI 正以狂飆之姿席捲音樂圈，從前端的詞曲創作、單曲發行，到後端的真偽辨識，無一不引發激烈論戰。這早已 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "SemiAnalysis 出手收購 Citrini Research，再擴大 AI 研究版圖",
-          "source": "",
-          "link": "https://finance.technews.tw/2026/09/12/semianalysis-buys-citrini-research/",
-          "date": "2026-09-12",
-          "summary": "據彭博社報導，獨立投資研究機構 Citrini Research 創辦人 James van Geelen，已 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "AI 雙雄決戰台灣！輝達與 Google 爭搶供應鏈，台廠迎左右逢源新商機",
-          "source": "",
-          "link": "https://technews.tw/2026/09/12/ai-supply-chain-rivalry-heats-up-taiwan-firms-opportunities/",
-          "date": "2026-09-12",
-          "summary": "全球科技巨頭的 AI 競賽加劇，從輝達與 Google 最近動作頻頻，足以說明台灣正成為 AI 巨頭爭相卡位的 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "因應 AI 讓取得答案變太廉價，教育界須把學習價值重新聚焦「自發性思考」",
-          "source": "",
-          "link": "https://technews.tw/2026/09/12/ai-has-made-answers-cheap-education-must-make-thinking-valuable-again/",
-          "date": "2026-09-12",
-          "summary": "生成式 AI 能在數秒內生產摘要、程式與論述，全球教育界也被迫重新界定「學生究竟學會什麼」。 Excelsof […]",
           "body": "",
           "dupes": 1
         }
