@@ -1,6 +1,6 @@
 {
   "date": "2026-09-14",
-  "generated_at": "2026-09-14 07:31",
+  "generated_at": "2026-09-14 08:23",
   "total": 77,
   "topics": [
     {
@@ -314,10 +314,63 @@
     },
     {
       "topic": "AI / 企業應用",
-      "gist": "",
-      "sections": [],
+      "gist": "AI Agent應用、跨世代落地、安全治理放緩、國泰金數位轉型",
+      "sections": [
+        {
+          "heading": "政策與法規",
+          "body": "國際 AI 巨頭近期罕見齊聚發聲要求放緩模型能力推進，Anthropic 與 OpenAI 執行長相繼表態支持建立獨立評估機制與跨國協調規範，OpenAI 甚至為此暫緩公開上市，突顯模型對齊與自主代理安全失控的風險已逼近臨界點 [[3]][[6]][[22]][[24]][[25]][[27]]。在區域政策上，中國提出建立金磚國家 AI 開源專區以主導技術標準 [[0]]，而醫療等受管制的機敏領域也正浮現「影子 AI」（指員工私自未經 IT 授權使用的 AI 工具）帶來的資安漏洞 [[10]]。這顯示監管機構與產業標準正從早期的鼓勵創新，全面轉向嚴格的「AI 治理」與使用授權。所以呢？台灣企業內部稽核與法遵單位必須在半年內建立「影子 AI」清查與代理權限控管機制，避免員工私接未受管制的模型工具導致核心資料外洩或違法。"
+        },
+        {
+          "heading": "市場趨勢",
+          "body": "企業導入 AI 的模式正從單純的聊天對話，轉變為打造可自主執行特定任務的「AI Agent」（AI 代理人）。以科技大廠思科為例，已向 9 萬名員工配發個人代理人，更有多達八至九成財務草稿由 AI 代理人操刀，但實務上也衍生出每週需花費超過 6 小時除錯與維護的「照顧機器人」隱形成本 [[4]]。另一方面，AI 正快速向跨世代滲透，調查顯示千禧世代透過 AI 節省了約 37% 工作時間，但過度依賴 AI 摘要也可能損害主管對複雜業務脈絡的深度思考 [[1]][[2]]。所以呢？企業在明年推動自動化專案時，不應只評估 AI 代理人節省的工時，還得把維護代理人邏輯與人工校對的隱形人力成本，同步列入 ROI 投資報酬評估。"
+        },
+        {
+          "heading": "同業動態",
+          "body": "本週無明顯相關動作。"
+        },
+        {
+          "heading": "客戶動態",
+          "body": "金融業領頭羊在 AI 轉型上陸續交出具體成果。國泰金控資深副總經理蔡宗翰首度公開演講，剖析集團走過十年的數位轉型心路歷程，展現金融科技架構重塑後的實務底氣 [[13]]。同時，業界與學者亦持續呼籲台灣應積極打造世界級 AI 金融科技舞台，推進 AI 與金融應用的深度結合 [[17]]。所以呢？金融業者已從早期的邊緣場景試驗進入核心架構改寫期，想打入金控供應鏈的科技廠商，必須在今年底前將方案整合至兼具高資安標準與彈性的雲地混和架構，才能符合大型金控的採購門檻。"
+        }
+      ],
       "grants": [],
       "items": [
+        {
+          "title": "習近平：中國將率先建設金磚國家 AI 開源專區",
+          "source": "",
+          "link": "https://technews.tw/2026/09/14/xi-pushes-chinas-open-source-ai-vision-at-brics-summit/",
+          "date": "2026-09-14",
+          "summary": "中國國家主席習近平 13 日在金磚國家領導人會議發表講話，表示中方將率先建設金磚國家人工智慧（AI）開源專區， […]",
+          "body": "中國國家主席習近平 13 日在金磚國家領導人會議發表講話，表示中方將率先建設金磚國家人工智慧（AI）開源專區，展開人工智慧專題研修培訓。他並強調要「壯大全球南方力量」。 新華社報導，習近平13日在印度新德里出席金磚國家領導人第18次會晤第2階段會議，就深化金磚合作提出5項倡議，皆與科技和經貿有關。 首要即是上述倡議，他並指此金磚國家人工智慧開源專區將支持大語言模型開發和應用合作，展開人工智慧專題研修培訓，構建人工智慧開放生態。 二是中方提議建設金磚國家特殊經濟區夥伴關係，設立智慧門戶，展開政策對接。中方將於明年舉辦金磚國家服務貿易論壇，培育經貿合作增長點。 三是數位產業合作倡議。中方將推動建立金磚國家數位產業雲平台，展開數位技能培訓、產業對接。四是智慧製造合作倡議。中方願協助金磚國家建設智慧工廠，打造標準規範體系，共同推動製造業轉型升級。 五是中方提議建立金磚國家工程師培養聯盟，展開工程師聯合培養和能力標準互認。中方將實施金磚國家青年科創交流計畫。 習近平在演講中表示，金磚國家必須把握歷史主動，團結廣大全球南方國家，在國際事務中發揮積極作用。他說，全球南方國家要共同「捍衛國際法治」，確保國際法和國際規則平等適用、不搞雙重標準；要高舉多邊主義旗幟，提高發展中國家代表性和發言權等。 他稱，「大金磚」要實現大發展，就必須築牢務實合作根基。要發揮背靠新興市場、聯結全球南方的優勢，堅持開放合作、互利共贏，維護產業鏈、供應鏈穩定暢通，培育一體化大市場，打造創新孵化器，升級傳統產業，發展新興產業，布局未來產業。 金磚國家合作機制最早在2010年成立，當時只有5國，目前已有11個會員國，各國代",
+          "dupes": 1
+        },
+        {
+          "title": "AI 跨世代使用調查：Z 世代追求效率，X 世代將成職場普及關鍵",
+          "source": "",
+          "link": "https://technews.tw/2026/09/14/how-different-generations-use-ai/",
+          "date": "2026-09-14",
+          "summary": "最新調查顯示，人工智慧（AI）已不再是少數人的嘗鮮工具，而是逐漸滲透各個年齡層的日常服務。過去一年，高達 82 […]",
+          "body": "最新調查顯示，人工智慧（AI）已不再是少數人的嘗鮮工具，而是逐漸滲透各個年齡層的日常服務。過去一年，高達 82% 的受訪者曾使用 AI，其中應用於「個人生活」的比例達 82%，明顯高於「工作用途」的 49%。儘管目前每週在職場使用 AI 的人數僅占 29%，但該比例已較去年幾乎翻倍，顯示 AI 在工作場景的普及速度正在加速，不過整體仍落後於私人生活領域。 Z世代將AI視為生活的一部分，極度重視速度與實用性，只要工具表現不穩定就會迅速汰換。調查指出，30%的Z世代每天使用AI服務，且有15%已為個人AI工具付費。此外，數據顯示高達38%的Z世代幾乎每天使用生成式AI，最常見的用途為「課業與學習」（占62.6%），其次才是搜尋興趣資訊與諮詢個人問題。 千禧世代對AI同樣熟悉，但態度更為務實與挑剔。他們衡量AI的標準非常直接：帶來的效益是否足以抵銷投入的時間、風險與金錢。調查顯示，千禧世代估計AI為他們節省了約37%的工作時間，反映出該族群特別重視「可量化的生產力提升」，並高度要求工具的穩定度與可靠性。 相較之下，X世代目前在職場中的AI參與度較低，45%表示從未在工作上使用過AI。然而，該族群對未來的成長預期卻最為強烈，高達68%的人預期未來一年內會增加個人的AI使用量。這意味著X世代對AI的態度，正從早期的觀望，逐步邁向更廣泛的主流採用階段。 嬰兒潮世代在使用上最為謹慎。目前僅13%表示每天會使用AI處理個人事務，職場採用率也因許多人已離開全職崗位而相對受限。他們接觸AI的情境多半集中在搜尋、解釋與摘要等單純的資訊型任務，重視的是清晰、低風險且用途明確。 整體而言，年輕族群（Z世",
+          "dupes": 1
+        },
+        {
+          "title": "AI 摘要成企業決策雙面刃，專家呼籲在高效率分流與深度思考間取得平衡",
+          "source": "",
+          "link": "https://technews.tw/2026/09/14/ai-summaries-double-edged-sword-corporate-decision-making/",
+          "date": "2026-09-13",
+          "summary": "隨著企業決策節奏日益加快，AI 摘要已成為忙碌高階主管不可或缺的實用利器。業界普遍認為，AI 的價值並非取代人 […]",
+          "body": "隨著企業決策節奏日益加快，AI 摘要已成為忙碌高階主管不可或缺的實用利器。業界普遍認為，AI 的價值並非取代人類的商業判斷，而是扮演高效率的資訊過濾器，協助領導者從大量報告、風險警訊及繁雜的待辦事項中，迅速聚焦真正需要投入注意力的核心議題。 然而，當越來越多企業領袖高度仰賴 AI 摘要時，隱藏的「便利代價」也逐漸浮現。不少觀點警告，若主管過度以摘要取代長篇報告或專業書籍的閱讀，將輕易流失複雜論證中的微小細節、作者語氣與原創觀點，長期下來可能削弱獨立思考與批判能力。為了追求效率，AI 常將嚴謹的推理過程壓縮為寥寥數個重點條列，這無形中剝奪了決策者全面理解事物脈絡的機會。 深入分析指出，AI 最能發揮優勢的領域在於處理結構化、高資料密度及可量化的任務，如資訊彙整、初步探勘與風險標記。相對地，一旦決策牽涉到信任建立、責任歸屬、企業倫理或複雜的人際網絡，依然仰賴人類親自把關。對管理階層而言，AI 摘要的最佳定位是快速「掃描全局」的起手式，絕不能完全取代深度閱讀的最終價值。 目前的最新共識是：企業領袖應將 AI 視為推升工作效率的絕佳輔助，同時刻意維持閱讀長文、深究完整論述的習慣。特別是當決策攸關組織發展方向、員工核心權益或潛在重大風險時，投資時間親自咀嚼完整資訊，仍是維持決策品質與鞏固領導優勢的關鍵所在。 Why AI Summaries May Be The Most Valuable Tool For Busy Executives The Cognitive Cost of Convenience: Why Business Leaders Are Returning to De",
+          "dupes": 1
+        },
+        {
+          "title": "優先處理 AI 安全風險，OpenAI 執行長：2026 年內不會上市",
+          "source": "",
+          "link": "https://finance.technews.tw/2026/09/14/sam-altman-confirms-openai-will-not-go-public-this-year/",
+          "date": "2026-09-13",
+          "summary": "OpenAI 執行長奧特曼（Sam Altman）親口證實，雖然公司已透過保密方式提交 IPO 申請，但今年內 […]",
+          "body": "OpenAI 執行長奧特曼（Sam Altman）親口證實，雖然公司已透過保密方式提交 IPO 申請，但今年內不會公開上市。 Sam Altman 近日接受財富雜誌（Fortune）總編輯 Alyson Shontell 專訪，在 HuggingFace 駭客事件引發後續效應、以及更多 AI 安全相關討論的背景下，Alyson Shontell 詢問 OpenAI 是否仍因 IPO 計畫而感受到必須「跑得更快」的壓力。 「我們並不急著推進 IPO」，Sam Altman 表示，「我其實認為，考量到目前在安全性方面所發生的種種事項，現在並不是一個明智的上市時機。」 Sam Altman 指出，OpenAI 仍有許多工作必須完成，包括強化安全和對齊（alignment）機制，以及思考產業與各國政府之間應如何協調合作。他強調，公司會在業務發展與整體環境皆準備就緒後，才會考慮推進 IPO 計畫。 Sam Altman 同時提到，隨著 AI 能力持續提升，業界可能需要在某些階段放慢開發速度，以便讓研究人員有更多時間投入安全研究。他也表示，OpenAI 與其他 AI 公司可能趨向在安全議題上達成共同協議。 《紐約時報》今年 6 月曾報導，儘管 OpenAI 邀請投資人和律師，目標為 2026 年第三季或第四季公開上市積極準備，但因科技股波動以及公司自身遭遇的財務挑戰，如今傾向延至 2027 年。 Sam Altman confirms OpenAI won’t go public this year, saying an IPO now would come at an ‘ill-advi",
+          "dupes": 1
+        },
         {
           "title": "養 AI 團隊比自己做還累？揭數位擴編潮背後的隱形工時與失控危機",
           "source": "",
@@ -360,7 +413,7 @@
           "link": "https://finance.technews.tw/2026/09/13/ai-reshaping-food-manufacturing/",
           "date": "2026-09-13",
           "summary": "食品製造業正掀起一波 AI 導入熱潮。然而，業界實務觀察指出，決定 AI 專案成敗的關鍵，往往不在於企業砸重金 […]",
-          "body": "食品製造業 AI 轉型大解密，選對平台不如打好「數據與信任」的基礎 | TechNews 科技新報 食品製造業正掀起一波 AI 導入熱潮。然而，業界實務觀察指出，決定 AI 專案成敗的關鍵，往往不在於企業砸重金採購哪一套最頂尖的 AI 平台，而是工廠底層是否已具備穩固的資料基礎、流程整合能力，以及現場員工對新系統的信任度。 儘管許多食品製造商看好 AI 提升產能與食安的潛力，卻遲遲無法在產線上看到穩定的成效。追根究柢，「資料孤島與破碎化」是最先要克服的難關。目前許多工廠的營運數據仍散落在 MES、LIMS、歷史資料庫與維修系統中，彼此缺乏串接；甚至連交班紀錄、維修筆記與品質檢查等寶貴的第一線人工作業知識，也多為難以搜尋與追溯的非結構化格式。對仰賴大量數據學習的 AI 而言，提升資料的品質與完整性，絕對是啟動轉型前不可省略的補強環節。 在導入策略上，專家呼籲企業應「先求有感，再求擴展」，切忌在初期就盲目追求全面自動化。較務實的做法是先鎖定一到兩個「高影響力、低風險」的應用場景，例如：預測性維護、根因分析、品質檢測或文件自動化。透過單一流程的試點，不僅能快速驗證 AI 的價值，大幅降低牽動過多系統的整合風險，也能讓團隊在看見初步成效後建立信心，再逐步擴大應用版圖。 此外，「人員的接受度」更是 AI 能否落地的核心變數。第一線員工只要清楚系統運作邏輯、信任輸出結果，並知道下一步的應對方式，通常相當歡迎能減少重複性勞動、提供即時異常警報的 AI 工具。反觀真正容易產生防備心與疑慮的，往往是中階管理層。因為 AI 系統常被用來分析營運趨勢、提出採購預測與排程建議，這直接觸碰了中階主管傳統",
+          "body": "",
           "dupes": 1
         },
         {
@@ -369,7 +422,7 @@
           "link": "https://finance.technews.tw/2026/09/13/furniture-magnate-no-layoffs-iphones-3-3-billion-ai-factory-employee-care/",
           "date": "2026-09-13",
           "summary": "桃園大園，一座能看到飛機起降的智慧工廠裡，一位做了 20 年的老師傅站在機台的螢幕前，手指還留著早年操作裁板機 […]",
-          "body": "桃園大園，一座能看到飛機起降的智慧工廠裡，一位做了 20 年的老師傅站在機台的螢幕前，手指還留著早年操作裁板機的小疤痕。螢幕上，一張設計圖正從設計師的電腦傳過來，30 秒後，裁切機自己動了起來，老師傅卻沒有碰任何按鈕。 「我們叫它圖轉生產，」歐德傢俱董事長陳國都微笑說。人稱「系統家具大王」的他，打造出全台第一個導入AI切割板材的家具廠。新廠裡神奇AI的核心，便是「圖轉生產」。 要想了解什麼叫圖轉生產？得先說明系統家具廠的傳統下單流程，許多連鎖店因為門市與工廠的資訊語言不對接，設計師畫完圖後，門市得人工下一次板材的單子；到了工廠，後台又得重新再輸入一次單。「二次下單」的折返跑，往往是效率的噩夢。 為此，歐德正全力推動直營體系的「一站式拋轉」，設計圖一輸入系統，便能直接無縫對接至工廠的生產線，徹底消除重複下單的耗損。 面對這項被外界視為神奇的工程，陳國都卻十分坦誠仍有不足之處：「實話實說，現在還做不到百分之百完美。」但他認為這就是AI的精神，可以「Trial and error」。AI答錯了，人們糾正AI，AI就再拿回去重新訓練自己。抓 Bug 是必經的過程，遇到狀況很正常。 大多數人對家具倉儲的印象是滿地的木板、巨大的紙箱，以及開著堆高機四處找貨運貨的工人。但歐德直接把倉庫蓋成了一座高效運轉的「鋼鐵森林」，科技感十足。 實地探訪歐德國際物流中心，甫於2026年7月16日落成的新廠裡，展現出垂直空間的極致利用，全台最大、高達21公尺的自動倉儲，充滿視覺震撼。 21公尺相當於7層樓高。過去需要幾千坪的平面倉庫，現在透過高空垂直堆疊，占地面積縮減了數倍，且完全由「無人自動存取系統」在空",
+          "body": "",
           "dupes": 1
         },
         {
@@ -378,7 +431,7 @@
           "link": "https://infosecu.technews.tw/2026/09/13/medical-ai-privacy-crisis/",
           "date": "2026-09-13",
           "summary": "醫療機構正加速將人工智慧（AI）導入臨床與行政流程，但最新分析顯示，AI 在大幅提升效率的同時，也因資料流轉、 […]",
-          "body": "「影子 AI」入侵病歷系統，醫療機構的隱形資安危機 | TechNews 科技新報 醫療機構正加速將人工智慧（AI）導入臨床與行政流程，但最新分析顯示，AI 在大幅提升效率的同時，也因資料流轉、外部供應商串接與過度自動化，顯著放大了資安漏洞與病患隱私風險。 「影子 AI」（Shadow AI）隱憂** 部分醫療人員私下使用未經授權的 AI 工具處理病歷與個資，導致數據去向不明、模型的準確性無法評估，且病患對此完全不知情。 日常工作流程誤判** AI 帳單編碼若發生幻覺，易引發不當「高編碼」（Upcoding）與錯誤診斷紀錄；自動化簡訊若缺乏保護遮蔽（如直接將 HIV 檢驗結果發送至家族共用手機），會瞬間造成嚴重隱私洩漏。 RAG 檢索技術的隱形漏洞** 使用檢索增強生成（RAG）查詢病歷時，即使刪除了原始檔案，系統中留存的嵌入向量（Embeddings）仍可能遭駭客反向推導出敏感健康數據。 AI 代理（AI Agent）權限擴散** 具備自動串接病歷、身分驗證或呼叫外部工具能力的 AI 代理，若缺乏強大的邊界設定，其錯誤的自動化動作將快速擴大受害範圍。 在治理層面，專家強調醫療機構不應將 AI 僅視為單一軟體採購，而應將其納入整體資安與供應商管理中，導入前須全面盤點資料處理流程、第三方次處理者存取權限、資料保留期限與法規合規性。 同時，機構必須落實「人在迴路」（Human-in-the-Loop）審核，在病患診斷、保險授權預審、病歷合併等關鍵決策點保留人工最終確認機制與完整的稽核軌跡（Audit Trail）。 此外，亦須推進全生命週期的公平性與偏誤稽核，針對生成式 AI 與客",
+          "body": "",
           "dupes": 1
         },
         {
@@ -387,42 +440,6 @@
           "link": "https://technews.tw/2026/09/13/is-ai-making-us-smarter-or-teaching-us-not-to-think/",
           "date": "2026-09-13",
           "summary": "美國中佛羅里達大學團隊主導研究，提出 AI 正念與心理健康照護用的管理框架，試圖為 AI 應用劃出明確界線。團 […]",
-          "body": "美國中佛羅里達大學團隊主導研究，提出 AI 正念與心理健康照護用的管理框架，試圖為 AI 應用劃出明確界線。團隊認為，AI 雖然能協助知識整理、課程設計與練習追蹤，但涉及臨床判斷、危機辨識與人際支持時，仍不能取代有資格的教師或實務工作者。 這項框架將AI可介入的功能分成三個同心區域。**最核心的區域** 為「無法取代的人類功能」，包括冥想練習、內省傳承、即時修正、危機感知、共享脆弱性的僧團關係，以及具身沉默經驗。團隊指出，這些都需要真人在場，因真正的保護作用來自教師即時辨識學員是否出現困擾，即時修正。 第二層** 是受嚴格門檻約束的邊界區，包含 6~12 個月的師徒關係門檻、涵蓋自殺意念、精神病與急性創傷的危機門檻，以及僅能使用教師核准的「保險庫式」規則。**最外層** 才是AI較可能發揮作用的範圍，如協助整合知識、設計課程、提供練習支架、自我追蹤、延伸社群支持、創傷知情調整與穿戴式生理資料整合。 團隊之所以強調管理邊界，與正念介入可能有的負面經驗有關。文獻指出，系統性研究顯示58%參與者曾回報至少一種負面經驗，37%出現功能受影響，包括去人格化、焦慮升高、知覺異常、躁症、精神病與自殺意念等。團隊說，這些數字來自文獻，並非研究的新結果。 團隊也提醒，AI系統若以互動與迎合為優先，可能形成所謂「諂媚─妄想循環」，也就是過度肯定使用者對冥想的錯誤理解，而不是提供必要的挑戰或修正。有公共衛生教育者測試多款AI冥想應用後，也觀察到系統傾向驗證使用者對「冥想愉悅感」的期待。 這套框架對創傷倖存者、嚴重心理健康問題者與青少年尤其重要。研究指出，內感受覺察或開放式觀照練習，可能讓部分創傷倖存",
-          "dupes": 1
-        },
-        {
-          "title": "AI 可能在一年內失控，Anthropic 執行長呼籲放慢腳步等待安全技術跟上",
-          "source": "",
-          "link": "https://infosecu.technews.tw/2026/09/13/dario-amodei-calls-for-slowing-down-the-pace-of-ai-development-for-the-safety-tech-to-align/",
-          "date": "2026-09-13",
-          "summary": "知名人工智慧新創 Anthropic 執行長阿莫戴（Dario Amodei）近日發出警告，呼籲全球 AI 產 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "「不給複製就被換掉！」AI 浪潮洗牌影視產業，真人演員面臨生存危機",
-          "source": "",
-          "link": "https://technews.tw/2026/09/13/ai-short-dramas-human-performers-survival-crisis/",
-          "date": "2026-09-13",
-          "summary": "人工智慧（AI）正以前所未有的速度改寫短劇與影視製作模式。從角色生成、場景設計到整部作品的完成，AI 已不再只 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "OpenAI今年不公開上市　執行長強調安全優先",
-          "source": "",
-          "link": "https://www.cna.com.tw/news/ait/202609130010.aspx",
-          "date": "2026-09-13",
-          "summary": "（中央社洛杉磯12日綜合外電報導）OpenAI執行長阿特曼（Sam Altman）接受「財星雜誌」（Fortune）專訪時表示，OpenAI今年不會公開上市，因為這家人工智慧（AI）公司正專注於解決技術相關的安全問題。",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "AI濫用疑慮升溫　Anthropic執行長籲模型發展減速",
-          "source": "",
-          "link": "https://www.cna.com.tw/news/ait/202609130005.aspx",
-          "date": "2026-09-13",
-          "summary": "（中央社紐約12日綜合外電報導）在人工智慧（AI）遭濫用疑慮日增之際，Anthropic執行長阿莫戴呼籲，各家公司調整提升模型能力的速度。他提出一套三步驟架構，希望放慢發展腳步，爭取更多時間管理相關風險。",
           "body": "",
           "dupes": 1
         },
@@ -464,16 +481,16 @@
         },
         {
           "title": "讓AI不只寫程式　商研院課程實戰解鎖自動化開發",
-          "source": "ETtoday財經雲",
+          "source": "finance.ettoday.net",
           "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAyRlE2MmlWWWREcWlncWFjWXhFTVhvbHQzRnZFNmJBWVVUcGtoSmJmcEYxT0J6UFVyWlVCbWU5U3lZZUlIRUxubXRxazZEcTRvWnfSAVBBVV95cUxNY09SdkFnUDdWa3l4MmdXYTRDX184VUtBd29kRXhaTTBsbkk1MGg1d2dBYktQcTQ1clVyay1kZGlyUk1kMXRUeS0wVHlOR0IzWA?oc=5",
           "date": "2026-09-08",
-          "summary": "讓AI不只寫程式 商研院課程實戰解鎖自動化開發 ETtoday財經雲",
+          "summary": "讓AI不只寫程式 商研院課程實戰解鎖自動化開發 finance.ettoday.net",
           "body": "",
           "dupes": 2
         },
         {
           "title": "AI、穩定幣與RWA逆轉金融 姚木川：台需打造世界級 AI 金融科技舞台",
-          "source": "udn",
+          "source": "UDN",
           "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9ieTYxdEdITGs3RW9kVGRQZ0thZlVPc2RBaWNFb1ZFMWxZRGYyemFTSXlGbS1sN2ZBRWhpZjZic3ZIOHpKMlNuMFR6NmlIaEtU0gFWQVVfeXFMTWdOUlhjaTZnVk5YSVFRVVAybFhZQ25Bck5ZNDRrV1M2VzJLRXplVkcxUE9aYlVMOG1aMmQySDltaUhFMGxYWHcxTzNwVHJpZ1FabE5URHc?oc=5",
           "date": "2026-09-08",
           "summary": "",
@@ -481,9 +498,9 @@
           "dupes": 2
         },
         {
-          "title": "停機時間砍 86%、維修回應快 42%！現代汽車如何把 AI 鋪進 VIN、搬運車與維修廠？",
-          "source": "LINE TODAY",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5lbHl3WENSUE9WaUlEekJaampYb0tubXlBTjlPSHlobHBCcEdBZW03UGFXR0tnTTVXMDFYMm1ic05KTUNfQVZ4M1Z4djE5dERrdEUtLTQwX1hWLVNDUDlGUUF5YlA4VVZhN1JwUHJGeGU5SUtS?oc=5",
+          "title": "伊雲谷從 Cloud 走向 Enterprise AI 首度集結集團量能全面布局企業級 AI 新版圖",
+          "source": "iThome",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9JS19YbFIySXFPc2UwODd4S01RNWZLMUpfMWNMdm5WZFJ3ckVSaEprcDVZb2tyTE1jZGhqWEJ2QTI0WFROX25zRnVJaw?oc=5",
           "date": "2026-09-13",
           "summary": "",
           "body": "",
@@ -513,6 +530,42 @@
           "link": "https://news.google.com/rss/articles/CBMijgNBVV95cUxNeXVnQ2dWWDZZZ2k0emJiOWJ2SFprS3JqZEVGcHRVdnIydHZHblM0U3JidW1yVnJIeERHTWRwd09tRHFEQWtiWWFYMkwwYm55NVJibkZCaXlJQlhJc1JfWGI5bUppa1hGbHVqS2hxZHI2WWl4MnlLNm9UQ3g3MDR3cXNKMl9ldmhJZzhXbHJ0V3k4TkxfcnpoZkY5bVJQUjl4QWIyLU83TEs2TUFRc2ZNOWVjNzZ2YmNMMGh5aHRSbkZTR1lQa0FCU0tmZUF1bUkzWDU2bUlwaWNGWjRLZS1HNnJOYzh6Sk15blRnMVhzbnBkS3F2NXJrYjFOREpTeVJyaGNMRk5STlFmRTJpZktlMEhFWFV0VmxfN1QyTFVXaHFlR0VVVWJNRnNSWjFIMkhaRl9GVWhhRWMyX214cjQxOVh2X05TbS1UTzFUMjJzTE1lWmlENXdUV25LWVFVelY5V3g4V2FFSkU1XzZTQk50NVJlajRCVHVtWFgtYy0zOXIydk00dFhyc2RqNFc1dw?oc=5",
           "date": "2026-09-13",
           "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "AI 可能在一年內失控，Anthropic 執行長呼籲放慢腳步等待安全技術跟上",
+          "source": "",
+          "link": "https://infosecu.technews.tw/2026/09/13/dario-amodei-calls-for-slowing-down-the-pace-of-ai-development-for-the-safety-tech-to-align/",
+          "date": "2026-09-13",
+          "summary": "知名人工智慧新創 Anthropic 執行長阿莫戴（Dario Amodei）近日發出警告，呼籲全球 AI 產 […]",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "「不給複製就被換掉！」AI 浪潮洗牌影視產業，真人演員面臨生存危機",
+          "source": "",
+          "link": "https://technews.tw/2026/09/13/ai-short-dramas-human-performers-survival-crisis/",
+          "date": "2026-09-13",
+          "summary": "人工智慧（AI）正以前所未有的速度改寫短劇與影視製作模式。從角色生成、場景設計到整部作品的完成，AI 已不再只 […]",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "OpenAI今年不公開上市　執行長強調安全優先",
+          "source": "",
+          "link": "https://www.cna.com.tw/news/ait/202609130010.aspx",
+          "date": "2026-09-13",
+          "summary": "（中央社洛杉磯12日綜合外電報導）OpenAI執行長阿特曼（Sam Altman）接受「財星雜誌」（Fortune）專訪時表示，OpenAI今年不會公開上市，因為這家人工智慧（AI）公司正專注於解決技術相關的安全問題。",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "AI濫用疑慮升溫　Anthropic執行長籲模型發展減速",
+          "source": "",
+          "link": "https://www.cna.com.tw/news/ait/202609130005.aspx",
+          "date": "2026-09-13",
+          "summary": "（中央社紐約12日綜合外電報導）在人工智慧（AI）遭濫用疑慮日增之際，Anthropic執行長阿莫戴呼籲，各家公司調整提升模型能力的速度。他提出一套三步驟架構，希望放慢發展腳步，爭取更多時間管理相關風險。",
           "body": "",
           "dupes": 1
         },
@@ -549,42 +602,6 @@
           "link": "https://finance.technews.tw/2026/09/12/ey-invests-human-brain-ai-skills/",
           "date": "2026-09-12",
           "summary": "安永（EY）美國分公司近日宣布，將於本財政年度斥資 1 億美元推出全新的員工獎勵計畫。該計畫旨在表揚於 AI […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "台積電 CoWoS 產能供不應求，聯電、Amkor 等受惠 AI 訂單外溢",
-          "source": "",
-          "link": "https://technews.tw/2026/09/12/tsmc-cowos-capacity/",
-          "date": "2026-09-12",
-          "summary": "根據市場消息，台積電可能在 2028 年將 CoWoS 產能提升至 2026 年水準的兩倍，由於產能擴充需要時 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "OpenAI 暫停 $200 Pro 訂閱，稱 GPT-6 Astra 需求「前所未見」，正加速擴充算力",
-          "source": "",
-          "link": "https://www.inside.com.tw/article/42378-openai-pro-pause-astra-demand",
-          "date": "2026-09-12",
-          "summary": "OpenAI 於 2026 年 9 月 10 日宣布暫時停止 ChatGPT Pro 新訂閱，原因是 GPT-6 Astra 的用量遠超預期，導致算力吃緊。現有 Pro 用戶不受影響，公司正規劃大規模擴充基礎建設，預計恢復新用戶開放後不限速提供 Astra 服務。",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "用電玩數據訓練 AI 反無人機系統：國防科技新創 Mara 開發「Spike」以撞代炸，成本僅對手 1/20",
-          "source": "",
-          "link": "https://technews.tw/2026/09/12/mara-spike/",
-          "date": "2026-09-12",
-          "summary": "總部位於舊金山的國防科技新創 Mara，於 8 月 26 日宣布完成 700 萬美元的 Pre-Seed 輪募 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "路透：傳輝達洽談投資Anthropic　助攻史上最大IPO",
-          "source": "",
-          "link": "https://www.cna.com.tw/news/ait/202609120040.aspx",
-          "date": "2026-09-12",
-          "summary": "（中央社舊金山11日綜合外電報導）消息人士告訴路透社，人工智慧（AI）新創公司Anthropic正洽談讓輝達（Nvidia）成為其首次公開募股（IPO）的基石投資人，這可能成為史上規模最大IPO。",
           "body": "",
           "dupes": 1
         }
@@ -809,5 +826,6 @@
         "feeds": []
       }
     }
-  ]
+  ],
+  "mailed": "2026-09-14 08:23"
 }
