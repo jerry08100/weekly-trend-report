@@ -1,66 +1,128 @@
 {
   "date": "2026-09-21",
-  "generated_at": "2026-09-20 15:50",
-  "total": 66,
+  "generated_at": "2026-09-21 07:35",
+  "total": 68,
   "topics": [
     {
       "topic": "永續 / 企業實務",
-      "gist": "",
-      "sections": [],
+      "gist": "生物炭碳權、冷媒配額削減、TNFD自然正向、ESG基金防漂綠",
+      "sections": [
+        {
+          "heading": "政策與法規",
+          "body": "環境部彭啓明宣布推動生物炭碳權，設定2030年移除百萬噸碳的具體目標[[8]]。國際規範方面，為落實《蒙特婁議定書》吉佳利修正案，台灣預計自2026年起凍結氫氟碳化物（HFCs）消費量，並自2029年起展開分階段削減[[2]]。林保署亦已發布《臺灣TNFD在地操作指引》，協助企業從營運據點到供應鏈盤點生態衝擊[[1]]。HFCs常用於半導體製程與冷凍空調，屬於ISO 14064-1盤查中的範疇一逸散排放源。所以呢，半導體與冷鏈物流業者在今年底編列明年資本支出預算時，必須將替代低GWP冷媒設備升級費用納入規劃，避免三年後遭遇配額削減衝擊。"
+        },
+        {
+          "heading": "市場趨勢",
+          "body": "企業永續邊界正從自身工廠減碳擴展到範疇三供應鏈與數位安全。華航於長程航線首度添加40%永續航空燃油（SAF），反映航空業因應國際減碳要求帶動的低碳燃料採購需求[[14]][[16]][[24]]。富邦媒（momo）則把資訊安全納入ESG供應鏈治理，推動供應商系統導入FIDO無密碼驗證技術，強化營運韌性[[5]]。同時，企業永續指標從單純碳中和轉向自然正向（Nature Positive），單靠植樹已難過關，水資源與棲地衝擊成為防漂綠審查重點[[1]]。所以呢，身為大型品牌供應商的中小企業，明年第一季客戶稽核時將面對資安防護與生物多樣性資料抽檢，現在就得開始準備相關佐證紀錄。"
+        },
+        {
+          "heading": "同業動態",
+          "body": "本週無明顯相關動作。"
+        },
+        {
+          "heading": "客戶動態",
+          "body": "中信金控召開供應商大會號召225家企業落實ESG，將氣候變遷、生物多樣性與自然資本納入管理要求[[10]]，中國信託產險亦動員參與淨灘行動[[11]]。投融資端則面臨嚴格檢驗，民團發布《2026永續金融追蹤報告》，揭露元大臺灣ESG永續ETF與永豐台灣ESG等基金持有台塑化等燃煤排碳大戶，要求金管會建立轉型金融分類與評鑑規範[[4]][[21]][[22]]。兆豐金董事長董瑞斌則倡議借鏡國際混合金融以補足永續轉型資金缺口[[29]]。所以呢，向金融業申請綠色融資或爭取列入ESG投資名單的企業，最晚在明年上半年的永續報告中必須列出明確的燃煤退場或深度脫碳路徑，否則將面臨被剔除投資標的或調高借貸利率的風險。"
+        }
+      ],
       "grants": [],
       "items": [
         {
-          "title": "施振榮：AI發展放緩沒那麼容易　台灣供應鏈只會更強",
+          "title": "2026唐獎〉她修補了南極天空！唐獎永續獎得主索羅門靠「3P行動」搶救臭氧危機",
           "source": "",
-          "link": "https://www.cna.com.tw/news/afe/202609190083.aspx",
+          "link": "https://esg.gvm.com.tw/article/125727",
           "date": "2026-09-19",
-          "summary": "（中央社記者鍾榮峰台北19日電）宏碁集團創辦人施振榮今天表示，人工智慧AI發展放緩沒那麼容易，若AI發展加快，台灣供應鏈產能也不足，不過台灣供應鏈廠商特色就是彈性與速度，面對越多景氣循環，台廠只會愈來愈強，台灣要順勢造勢，在AI大趨勢下打造自己的勢，用新王道推動價值和永續。",
-          "body": "本網站使用相關技術提供更好的閱讀體驗，同時尊重使用者隱私，點這裡瞭解中央社隱私聲明。當您關閉此視窗，代表您同意上述規範。 Your browser does not appear to support Traditional Chinese. Would you like to go to CNA’s English website, “Focus Taiwan”? 王道經營與AI國際論壇19日登場，宏碁集團創辦人施振榮（右）與宏碁董事長暨執行長陳俊聖（左）連袂出席。 中央社記者鍾榮峰攝 115年9月19日 （中央社記者鍾榮峰台北19日電）宏碁集團創辦人施振榮今天表示，人工智慧AI發展放緩沒那麼容易，若AI發展加快，台灣供應鏈產能也不足，不過台灣供應鏈廠商特色就是彈性與速度，面對越多景氣循環，台廠只會愈來愈強，台灣要順勢造勢，在AI大趨勢下打造自己的勢，用新王道推動價值和永續。 針對近日部分AI模型巨頭釋出產業發展應放緩的看法，施振榮接受採訪時指出，正努力把王道精神融入AI，讓AI在追求效率的同時也能做得更正確，這是努力的方向，但整體科技的進步無法停止。 至於AI發展放緩論是否會影響台灣半導體和電子供應鏈，施振榮則說，本質上放緩沒那麼容易，實際上台灣供應鏈產能也不足，無法支撐AI快速發展，若AI發展要更加快，台灣供應鏈產能也沒辦法配合。 施振榮強調，台灣供應鏈的特質是反應速度很快、彈性很大，可面對各種不同情況，若景氣不好的時候少一點損失，好的時候可多掌握一些機會，供應鏈常態就是好壞交替、不斷循環。 此外，施振榮在發表演講時指出，AI趨勢帶動社會革命，而王道精神創造價值發展及永續",
+          "summary": "從臭氧洞到氣候變遷，人類曾證明全球環境危機並非無解。2026年唐獎得主蘇珊．索羅門以40年研究揭示，科學、政策、產業與公民如何共同推動改變。 The post 2026唐獎〉她修補了南極天空！唐獎永續獎得主索羅門靠「3P行動」搶救臭氧危機 appeared first on ESG遠見 - 永續共好.",
+          "body": "從臭氧洞到氣候變遷，人類曾證明全球環境危機並非無解。2026年唐獎得主蘇珊．索羅門以40年研究揭示，科學、政策、產業與公民如何共同推動改變。 1980年代，南極上空臭氧層快速崩解，成為全球重大環境危機。40年後，人類不只找出氟氯碳化物（CFCs）這個元凶，也透過國際合作讓臭氧層逐步復原。站在這場「修復天空」行動核心的，正是2026年唐獎永續發展獎得主、麻省理工學院（MIT）教授蘇珊．索羅門（Susan Solomon）。 索羅門曾深入零下40°C的南極追查臭氧洞成因，提出顛覆當時主流理論的科學解釋，研究也成為《蒙特婁議定書》的重要科學基礎。她的經歷顯示，科學研究不只揭露環境危機，也能推動國際政策與產業轉型。如今全球面對氣候變遷、極端野火與AI能源需求等新挑戰，臭氧洞的成功經驗也再次提出問題：「人類曾經解決一場全球環境危機，今天還能不能再做到一次？」 圖／麻省理工學院（MIT）教授蘇珊．索羅門（Susan Solomon）。黃泓瑜攝 延伸閱讀：2026唐獎永續獎》她解開臭氧層消失之謎！「害羞女孩」索羅門修復天空的科學傳奇** 接近地面的臭氧是空氣汙染來源之一，但臭氧並不全是汙染物，距離地表約15至25公里的平流層臭氧能阻擋有害紫外線，如同地球的天然防曬層，只是臭氧層變薄，會增加皮膚癌與白內障等健康風險。 1974年，科學家馬里歐．莫里納（Mario Molina）與舍伍德．羅蘭（Sherwood Rowland）提出，人造CFCs進入平流層後會釋放氯原子並破壞臭氧。不過，當時主流理論認為反應主要發生在「氣相」環境，即使人類持續大量使用CFCs，一個世紀後臭氧總量可能也只減少5％至",
+          "dupes": 1
+        },
+        {
+          "title": "ESG每週必讀》碳中和之後，「自然正向」成下一個漂綠戰場？種樹不等於自然正向",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/125675",
+          "date": "2026-09-19",
+          "summary": "當「淨零」逐漸成為企業標配，下一場永續競賽已轉向「自然正向」。但自然不是多種幾棵樹就能交差，從汙染、用水到棲地與供應鏈衝擊，都得重新盤點。企業如何避免讓保育淪為漂綠，正成為ESG的新考題。 The post ESG每週必讀》碳中和之後，「自然正向」成下一個漂綠戰場？種樹不等於自然正向 appeared first on ESG遠見 - 永續共好.",
+          "body": "當「淨零」逐漸成為企業標配，下一場永續競賽已轉向「自然正向」。但自然不是多種幾棵樹就能交差，從汙染、用水到棲地與供應鏈衝擊，都得重新盤點。企業如何避免讓保育淪為漂綠，正成為ESG的新考題。 全球企業永續治理正從「淨零減碳」邁向「自然正向（Nature Positive），過去十年，盤查碳排、訂定減碳目標與採購綠電已成企業標配。如今面對生物多樣性流失、水資源壓力與棲地退化，企業不只要減碳，也得正視營運對土壤、水源與生態系的影響。 2022年聯合國生物多樣性大會（CBD COP15）通過《昆明－蒙特婁全球生物多樣性框架》（GBF），其中第15項行動目標要求大型企業與金融機構評估並揭露自然相關影響。隨後，自然相關財務揭露（TNFD）與科學基礎自然目標（SBTN）陸續發展，林保署也於2026年6月發布《臺灣TNFD在地操作指引》，協助企業從營運據點到供應鏈盤點對自然的依賴與衝擊。 然而，碳排可用「公噸二氧化碳當量」衡量，自然界卻沒有全球通用的單一尺度。若企業自身仍持續排放汙染、破壞棲地或過度用水，單靠「種了多少棵樹」或「認養多少公頃森林」，已難證明自然績效，也可能面臨漂綠（Greenwashing）質疑。 企業永續發展協會（BCSD Taiwan）祕書長莫冬立指出，相較氣候治理已有較成熟的碳盤查、減量與目標設定方法，自然議題同時牽涉物種、土地、水資源、棲地與地理位置，評估方法與基礎數據仍不完整。 自然更具有高度「在地性（location-based）」，同樣取用一單位水，在水源充足與缺水流域造成的壓力不同；同樣使用一公頃土地，位於都市或瀕危物種棲地，生態代價也無法等量齊觀。 莫冬立表示",
+          "dupes": 1
+        },
+        {
+          "title": "世界臭氧日〉極端高溫讓冷氣需求暴增，但地球為何愈吹愈熱？",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/125590",
+          "date": "2026-09-18",
+          "summary": "極端高溫推升全球冷氣與冷凍需求，也放大用電與冷媒排放問題。今年9月16日的「世界臭氧日」適逢《吉佳利修正案》10週年，全球正加速管制高暖化潛勢HFCs、推動永續冷卻。台灣也自2026年凍結HFCs消費量，2029年起分階段削減，半導體、冷鏈與冷凍空調產業都將面臨冷媒與節能轉型。 The post 世界臭氧日〉極端高溫讓冷氣需求暴增，但地球為何愈吹愈熱？ ap…",
+          "body": "極端高溫推升全球冷氣與冷凍需求，也放大用電與冷媒排放問題。今年9月16日的「世界臭氧日」適逢《吉佳利修正案》10週年，全球正加速管制高暖化潛勢HFCs、推動永續冷卻。台灣也自2026年凍結HFCs消費量，2029年起分階段削減，半導體、冷鏈與冷凍空調產業都將面臨冷媒與節能轉型。 今年夏天，歐洲遭遇嚴重熱浪，部分地區氣溫逼近45°C，法國已有近8000人因高溫死亡，移動式冷氣也在歐洲多國電商平台出現缺貨。極端高溫推升冷卻需求，冷氣與冷凍設備逐漸成為維持健康、醫療、食品保存與生活安全的重要設施，也同步增加電力使用與冷媒排放問題。 9月16日「世界臭氧日」今年以「Global Action for a Cooler Planet（全球行動，打造更涼爽的地球）」為主題，也是《蒙特婁議定書》「吉佳利修正案」通過10週年。全球過去透過《蒙特婁議定書》逐步淘汰破壞臭氧層的物質，目前進一步管制具有高全球暖化潛勢的氫氟碳化物（HFCs）。 聯合國祕書長古特瑞斯（António Guterres）指出，全球氣溫持續上升，極端高溫更加頻繁，高效率冷卻設備已直接關係民眾健康與生命安全。各國增加冷卻設備使用時，也必須同步降低耗電與高暖化潛勢冷媒排放。 延伸閱讀：本世紀恐升溫2.6°C？川普政策讓電費帳單暴增│COP31主席國澳洲被罵翻** 世界臭氧日源自1987年9月16日簽署的《蒙特婁議定書》。聯合國大會1994年將9月16日訂為「國際臭氧層保護日」，推動各國持續淘汰破壞臭氧層的物質。隨著臭氧層治理逐步取得成果，國際管制範圍也延伸至氣候變遷。 2016年，各國通過《吉佳利修正案》，將HFCs納入管制，",
+          "dupes": 1
+        },
+        {
+          "title": "三項金鐘入圍！舒夢蘭歷時3年，在《水陸之間》直擊極端氣候下的生命悲與喜",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/125422",
+          "date": "2026-09-18",
+          "summary": "金獎導演舒夢蘭歷時三年，從巴西濕地拍回台灣海岸與澎湖。從美洲豹的生死搏鬥，到母綠蠵龜的坎坷歸巢，《守護我們的星球》第二季電視版《水陸之間：相約在島嶼》記錄下生命的奇蹟與悲歌，為無聲的地球敲響警鐘。 The post 三項金鐘入圍！舒夢蘭歷時3年，在《水陸之間》直擊極端氣候下的生命悲與喜 appeared first on ESG遠見 - 永續共好.",
+          "body": "圖╱《守護我們的星球》第二季《水陸之間》，深入探討極度瀕危的黑面琵鷺、綠蠵龜等大洋旅行者和台灣的深厚連結。取自pexels by Belle Co 金獎導演舒夢蘭歷時三年，從巴西濕地拍回台灣海岸與澎湖。從美洲豹的生死搏鬥，到母綠蠵龜的坎坷歸巢，《守護我們的星球》第二季電視版《水陸之間：相約在島嶼》記錄下生命的奇蹟與悲歌，為無聲的地球敲響警鐘。 颱風狂掃之後，台南沿海呈現出一副詭異景象，被暴風吹毀的大片光電板在太陽照射下閃耀刺眼光芒，遠看宛如水域。遠道而來的黑面琵鷺在空中盤旋，誤將光電板當作棲息溼地，最終只能降落在滿是廢棄物與毀損結構的荒涼鹽田中。 繼去年《守護我們的星球》電影在院線上映，票房突破千萬大關，創下紀錄片界的難得成績後，《守護我們的星球》第二季電視版《水陸之間：相約在島嶼》把鏡頭對準上述這幕荒謬卻真實的畫面，揭開極端氣候與人為開發之下，野生動物無處可歸的生存悲歌。 曾拿下七座金鐘獎的《守護我們的星球》導演舒夢蘭指出，溼地被稱為「地球之腎」，擁有高度生物多樣性，卻面臨前所未有的破壞，如巴西溼地遭大火燒毀1／4面積，導致森林樹木被燒毀、砍伐後，無法再把水分蒸散到天空，形成「運送雨水的隱形河流」，導致原本仰賴它降雨的廣大區域面臨乾旱。 「雖然氣候變遷讓生物的處境變得愈來愈艱難，但愈是艱難的環境，往往愈能淬煉生命韌性與奇蹟。」舒夢蘭這次在《守護我們的星球》第二季《水陸之間》之中，從全球最大的巴西潘塔納爾溼地（Pantanal Wetland）一路拍回台灣西南沿海與外島澎湖，深入探討極度瀕危的黑面琵鷺、綠蠵龜等大洋旅行者和台灣間的深厚連結。 她強調，野生動物身處氣候變遷最前線，",
+          "dupes": 1
+        },
+        {
+          "title": "ESG台灣快訊》買ESG基金卻挺排碳大戶？00850、00888等7檔永續基金遭點名",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/125588",
+          "date": "2026-09-17",
+          "summary": "永續政策與產業轉型同步加速，ESG基金遭質疑投資高碳企業，台巴合作則延伸至碳權與綠領人才；能源轉型方面，中火10月啟動燃煤機組拆除，台電也將開放30年海洋生態監測資料。面對旅宿業缺工，晶華首度引進35名印尼技術人力，反映企業在人力、能源與永續治理上的多重調整。 The post ESG台灣快訊》買ESG基金卻挺排碳大戶？00850、00888等7檔永續基金遭…",
+          "body": "ESG台灣快訊》買ESG基金卻挺排碳大戶？00850、00888等7檔永續基金遭點名 圖／《2026永續金融追蹤報告》發現至少7檔ESG基金曾持有燃煤高排放企業。示意圖。取自 pixabay by viarami 永續政策與產業轉型同步加速，ESG基金遭質疑投資高碳企業，台巴合作則延伸至碳權與綠領人才；能源轉型方面，中火10月啟動燃煤機組拆除，台電也將開放30年海洋生態監測資料。面對旅宿業缺工，晶華首度引進35名印尼技術人力，反映企業在人力、能源與永續治理上的多重調整。 綠色公民行動聯盟、台灣氣候行動網絡研究中心及環境法律人協會16日發布《2026永續金融追蹤報告》，檢視52檔境內ESG基金，發現2025年第4季至2026年第2季至少7檔曾持有仍使用燃煤的高排放企業，引發基金永續宣稱與實際投資是否一致的討論。 報告點名元大臺灣ESG永續ETF（00850）今年第2季仍持有5家燃煤排碳大戶，包括台塑化；依持股比例估算，對應企業2025年碳排約4178公噸、用煤947公噸。永豐台灣ESG（00888）則持有2家，分攤碳排約64公噸、用煤11公噸。資料中明確點名的個股為台塑化。 延伸閱讀：本世紀恐升溫2.6°C？川普政策讓電費帳單暴增│COP31主席國澳洲被罵翻** 綠盟研究員張趙指出，目前從永續指數、投信選股到金管會審查，多著重ESG制度、資訊揭露與策略執行，企業實際排放、燃煤使用及高碳設備退場時程，未必直接影響投資資格。 三個團體建議金管會建立ESG與轉型商品分類，並將排放、用煤、燃煤退場、議合成果及資金配置納入基金監理與永續金融評鑑，使高碳企業的轉型進度能實際影響投資決策。 圖",
+          "dupes": 1
+        },
+        {
+          "title": "全台首家！momo將資安納入ESG供應鏈，從永續治理走向「數位信任」",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/124152",
+          "date": "2026-09-17",
+          "summary": "ESG治理正在從減碳、節能，進一步走向「數位信任」。富邦媒（8454）10日舉辦第三屆「momo供應商ESG學苑」，首度以「共築信任 資安聯防」為題，成為全台首家將資安議題納入ESG供應鏈治理的電商業者，攜手近百家供應商伙伴及產學專家，共同面對AI時代的新興風險。 The post 全台首家！momo將資安納入ESG供應鏈，從永續治理走向「數位信任」 app…",
+          "body": "圖／2026 momo ESG 學苑以「共築信任 資安聯防」為主題，邀集產學專家與供應商伙伴共同關注資訊安全議題。富邦媒體科技提供 ESG治理正在從減碳、節能，進一步走向「數位信任」。富邦媒（8454）10日舉辦第三屆「momo供應商ESG學苑」，首度以「共築信任 資安聯防」為題，成為全台首家將資安議題納入ESG供應鏈治理的電商業者，攜手近百家供應商伙伴及產學專家，共同面對AI時代的新興風險。 富邦媒（8454）10日舉辦第三屆「momo供應商ESG學苑」，首度以「共築信任 資安聯防」為題。momo持續推動供應商後台管理系統導入FIDO無密碼驗證機制，將資安從企業內部管理延伸至供應鏈日常作業，從制度、技術到伙伴協作同步強化數位信任與營運韌性。 隨著企業數位化程度持續提高，加上生成式AI快速普及，資安風險已不再只存在於企業內部。世界經濟論壇《Global Cybersecurity Outlook 2026》指出，65%的大型企業將第三方與供應鏈弱點列為實現資安韌性的最大挑戰，較前一年的54%進一步攀升；當企業與供應商之間的系統、資料與服務高度串聯，任何一個環節出現漏洞，都可能沿著供應鏈擴大影響，從營運中斷一路延伸至品牌聲譽與消費者信任。對電商平台而言，資安因此不只是IT議題，更逐漸成為公司治理與永續經營的一環。 「我們希望透過供應商ESG學苑，把新的風險、知識與實務經驗帶給合作伙伴，讓資安從企業內部管理，進一步成為供應鏈共同的治理能力。」富邦媒體科技總經理谷元宏表示，momo每天串聯大量消費者、品牌與供應商伙伴，信任是平台能夠長期經營最重要的基礎。面對AI與數位商務快速發展，資",
+          "dupes": 1
+        },
+        {
+          "title": "流感疫情上升！中秋節流感高峰將至，全家確診怎麼防？",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/125568",
+          "date": "2026-09-16",
+          "summary": "國內流感疫情持續升溫，疾管署公布上週單週死亡人數高達21人，創下近5年同期新高。不僅如此，中秋連假前後更將迎來疫情最高峰，預估單週就診恐飆破16萬人次。 The post 流感疫情上升！中秋節流感高峰將至，全家確診怎麼防？ appeared first on ESG遠見 - 永續共好.",
+          "body": "圖／流感疫情持續上升，預估這波流感疫情會在中秋節前後進最高峰，可能有15萬到16萬人次就診。示意圖。取自unsplash by Arron Choi 國內流感疫情持續升溫，疾管署公布上週單週死亡人數高達21人，創下近5年同期新高。不僅如此，中秋連假前後更將迎來疫情最高峰，預估單週就診恐飆破16萬人次。 流感疫情持續上升，疾管署今天公布，上週流感門急診就診突破13萬人次，新增21例死亡、創5年新高，預估這波流感疫情會在中秋節前後進最高峰，可能有15萬到16萬人次就診。 衛生福利部疾病管制署今天例行疫報公布，國內流感疫情上升且處流行期，第36週（9/6-9/12）類流感門急診就診計13萬6796人次，較前一週上升16.5%。 疫情中心副主任李佳琳簡報說明，依實驗室監測資料顯示，目前社區中流行的流感病毒以A型為主，其中以A型H1N1占82.2%為高。另上週（9/8-9/14）新增92例流感併發重症病例及21例死亡。 李佳琳表示，本流感季已累計1421例重症病例，其中重症病例以65歲以上長者（占65%）及具慢性病史者（占82.7%）為多，68.3%未接種本季流感疫苗。 這次新增1例重症個案為南部1歲多小男孩，防疫醫師林詠青表示，個案本身沒有潛在疾病，去年10、11月曾接種過2劑流感疫苗；今年9月上旬發燒咳嗽就醫，因同住家人在個案發病前兩天也確診了A型流感，經過醫師評估後，就立刻給予流感抗病毒藥物，並收治住院。 林詠青說，個案住院2天後出現抽搐、嗜睡，檢查發現腦水腫，研判為A流感合併腦炎或急性腦水腫轉加護病房，目前意識清楚、病況穩定觀察中；經過地方衛生單位疫調，發現同住接觸者其實有3個人",
+          "dupes": 1
+        },
+        {
+          "title": "近半物種急劇減少！金鐘導演白心儀直擊三大洲《錯亂的遷徙》，紀錄片揭開物種生存悲歌",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/125178",
+          "date": "2026-09-16",
+          "summary": "金鐘導演白心儀歷時近三年、跨越三大洲，以生態紀錄片《錯亂的遷徙》深刻記錄氣候浩劫下動物失序的悲鳴與掙扎，揭露全球近半數遷徙物種面臨的滅絕危機。人類該如何為牠們守住一條平安返家之路？ The post 近半物種急劇減少！金鐘導演白心儀直擊三大洲《錯亂的遷徙》，紀錄片揭開物種生存悲歌 appeared first on ESG遠見 - 永續共好.",
+          "body": "近半物種急劇減少！金鐘導演白心儀直擊三大洲《錯亂的遷徙》，紀錄片揭開物種生存悲歌 圖／白心儀為台灣知名主持人與生態紀錄片製作人，投入野生動物拍攝與保育報導已逾十年。白心儀提供 金鐘導演白心儀歷時近三年、跨越三大洲，以生態紀錄片《錯亂的遷徙》深刻記錄氣候浩劫下動物失序的悲鳴與掙扎，揭露全球近半數遷徙物種面臨的滅絕危機。人類該如何為牠們守住一條平安返家之路？ 烈日直射的蘭陽溪口沙灘上，地表高溫早已超過50°C，熱浪使視線不由得扭曲變形。一隻小燕鷗親鳥，不斷飛往海邊把腹部羽毛沾溼，只為回巢讓熱氣騰騰的鳥蛋降溫。 但幾天後，一場極端暴雨，滾滾洪水一夜間淹沒該地九成以上的鳥巢，使親鳥在泥濘中徒勞地發出焦急悲鳴。這幕畫面，出現在去年第60屆金鐘獎，以《亞洲貓科大復興》勇奪自然科學紀實節目獎的三立電視導演白心儀新作《錯亂的遷徙》。 當極端氣候吹亂千百年來的生存本能，野生動物的遷徙旅程正演變成一場場殘酷的生存賭局。 拍攝動物紀錄片長達10年以上的白心儀，與國際專家皆有定期交流，也不時爬梳各大機構、智庫出版的報告。2024年2月，聯合國環境規劃署（UNEP）底下的《保護野生動物遷徙物種公約》（CMS）在烏茲別克舉辦的大會上，發布史上第一份《全球遷徙物種現況》（State of the World’s Migratory Species）報告，立即吸引她的目光。 延伸閱讀：《我的動物同學》揭露城市保育新希望：聯合國討論的事，台灣校園已做到！** 這份報告直指，全球44％的遷徙物種族群數量正在下降，更有約22％的受公約保護遷徙物種正面臨滅絕威脅，而魚類的處境最令人擔憂，高達97％的公約列管遷徙魚類，",
           "dupes": 1
         },
         {
           "title": "AI淨零／彭啓明：推生物炭碳權目標2030年移除百萬噸碳| 生活",
-          "source": "中央社 CNA",
+          "source": "cna.com.tw",
           "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1MMWJ5UnFCUUVOYTN5MFNTM1lUdWhJLS03ZkJ3RnEtclU5clRhdVJaSGxYN202OHVUc0FQM29IX1NJdkZRZmMyUTlvSXFNYWxpaEtwakdjWjRfVGRUeGtJ?oc=5",
           "date": "2026-09-15",
           "summary": "",
-          "body": "[271.突破減塑與關稅困境 金元福打造循環競爭力[影]](https://www.cna.com.tw/news/afe/202510130037.aspx) 本網站使用相關技術提供更好的閱讀體驗，同時尊重使用者隱私，點這裡瞭解中央社隱私聲明。當您關閉此視窗，代表您同意上述規範。 Your browser does not appear to support Traditional Chinese. Would you like to go to CNA’s English website, “Focus Taiwan”? 環境部15日舉辦「115年生物炭產業跨域交流論壇」，部長彭啓明表示，為了讓生物炭的碳移除效益及延伸價值被看見，將以2030年100萬噸碳移除為目標，回推現階段所需的料源盤點、技術發展、方法建立、驗證及市場布局。（環境部提供）中央社記者張雄風傳真 115年9月15日 數位轉型已是產業進行式，人工智慧、淨零碳排更是政府與企業面對的兩大挑戰，攸關台灣未來競爭力。中央社第一線採訪團隊，深入報導政府與百工百業如何運用AI優化生產流程、驅動綠色創新，見證台灣產業再一次躍升。 （中央社記者張雄風台北15日電）環境部長彭啓明今天表示，為了讓生物炭的價值被看見，正在推動生物炭取得合格碳權，將以2030年達100萬噸碳移除為目標，不讓投入生物炭的業者只是「做功德」。 生物炭是在缺氧或低氧環境中，透過高溫熱裂解，將農業或森林廢棄物如竹木、稻殼、樹葉等，轉化成的固態碳產物。環境部今天舉辦「115年生物炭產業跨域交流論壇」，邀集農業部、學研單位及產業界，就生物炭減碳策略、國際發展、",
-          "dupes": 7
-        },
-        {
-          "title": "全台首波近零碳建築成大開課 跨部會培育淨零人才",
-          "source": "Life 生活網",
-          "link": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxQZ3Qzcm92Y0NJQlhoM09sb1F4S1dqWlEzSElJdUw2WGJKZ0hHTE1HM2pzaTNpckFweDBKTmFJY0t2cXhfTmFCTW9vTGVPQjhTeTZFSy1US3F2NnBQVTg0dVNJU2ROck53bUlfRjVLNElGNlZnNFlJai1FbnBsdG1jMmllNjZ0eUpDRWtkZk91Y0xDSnFNRGR4YVVsZ1I3MHVXdVdsbkhPVVMwYVJ1OEowRHVzN3V3ZkMxdk5KWjJFZXA0aEhVanpXYzRLY3BELUtjYVZmVWdoLUlab1RCMkxhemY1YzhPVkVSd3FIMVFaVENlTGlINWhXVjhWVU5qenE5Y2lQRGhNZUMwUWhIRExieTBDYzFpS1B5cTc2cjRhWEk5UEpiZXAtUExBcmlCa1JWZFJBRHVNWUlyRGZEdzE2cUtCZXdVZnJlVmtXZVNXVTY?oc=5",
-          "date": "2026-09-17",
-          "summary": "全台首波近零碳建築成大開課 攜手環境部與內政部跨部會培育淨零人才 PChome Online 新聞",
-          "body": "● 國立成功大學與內政部、環境部合作，開辦全台首波「近零碳建築」加值課程專班，以培育淨零人才。 ● 此課程吸引近400名學員參加，遠超預期，顯示社會對淨零碳建築專業人才的高度需求。 ● 課程內容涵蓋建築節能、淨零轉型、建築ESG、蘊含碳盤查、建築能效標示與營運碳策略等專業領域。 ● 課程由總統府國家氣候變遷對策委員會委員林子平教授領軍，匯集跨校及跨部會的專業師資。 【勁報記者于郁金/臺南報導】配合國家2050淨零轉型政策，深化建築領域淨零專業人才培育，國立成功大學攜手內政部及環境部跨部會共同推動全台首波「近零碳建築」加值課程專班，17日於成大力行校區綠色魔法學校舉行開訓儀式；成大產學創新總中心主任暨研發長黃良銘、內政部建築研究所王榮進所長與國家環境研究院洪淑幸副院長共同出席，為課程揭開序幕；近零碳建築課程是成大推動淨零綠領人才培育由基礎知能邁向特定專業領域重要布局，課程參加人數近400名，反映各界對近零碳建築專業人才與實務知能高度需求。 全台首波近零碳建築課程深具政策指標意義，課程橫跨建築節能、淨零轉型等專業領域，具備專業資格與實務經驗授課師資整合不易；此次由成功大學匯集建築與淨零領域專業師資，率先開設專班，積極回應國家2050淨零轉型政策，更是政府推動建築淨零轉型從政策布局走向人才培育與實務落地具體行動。 成大產學創新總中心暨研發長黃良銘致詞表示，感謝國家環境研究院長期支持成大推動淨零綠領人才培育，也感謝內政部建築研究所大力支持，讓淨零綠領人才培育進一步延伸至近零碳建築專業領域；他也特別感謝成大規劃與設計學院副院長蔡耀賢特聘教授與建築系林子平特聘教授投入課程規劃，籌備期間多次",
-          "dupes": 4
+          "body": "",
+          "dupes": 6
         },
         {
           "title": "AI永續 童子賢：核綠共存才利台灣經濟",
-          "source": "倡議家",
+          "source": "ubrand.udn.com",
           "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4zaUh0QUFGZGU1ZnJMWmpGZzlYNUhnaHVKN0JlNnA5NUx3eW84eUktMkdENGVtellaUmVmSjlRR1R0clZKV2ZLQ0RMNFZXNGRpVG5GcGRmMndtTjFkYlBr0gFkQVVfeXFMTWhySDg3bGdSN3ZuRThWdjloaC1sMmE2aG5QTlVGVTJnYlVUWU9aMTM4OFowalBhNnloVGZFcWxZNUUwRzFBUC1BMzd2OTBScGtPdDhQMlJxVUo2bVMzVWJ4V1g1cw?oc=5",
           "date": "2026-09-19",
+          "summary": "AI永續 童子賢：核綠共存才利台灣經濟 ubrand.udn.com",
+          "body": "",
+          "dupes": 3
+        },
+        {
+          "title": "中信金控供應商大會號召225家企業力挺ESG 關注氣候變遷、生物多樣性、自然資本議題打造永續影響力",
+          "source": "中天新聞網",
+          "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9ucm5uemJkalN6VHdzd2RUcmVRQzdnM2YwQk5FSVRwRlJrSVJjSUVzY3l4ZlhLQW5PbC1RSEZWaVdfOS13UDFMOU9kVC1XSzc3SFVF?oc=5",
+          "date": "2026-09-17",
           "summary": "",
-          "body": "童子賢在永續論壇中主張以核綠共存補足台灣乾淨電力不足，維持AI與產業競爭力；彭啓明則強調碳費、永續金融與AI治理，促進實質減排。 聯合報七十五周年系列活動之三「AI時代 永續未來共識論壇」，昨請來和碩聯合科技董事長童子賢以「台灣的能源與永續」為題發表演說。 圖／潘俊宏攝影 AI時代下，要如何在經濟發展與環境永續之間平衡點，也成了重要課題。和碩聯合科技董事長童子賢強調，台灣的乾淨電力只占了百分之十六，遠遠落後於世界平均水準，「是shame的」；台灣經濟要維持經濟競爭力，需要乾淨、穩定、經濟電力，只有「核綠共存」才能快速大量減少石化燃料使用。 聯合報昨舉辦「AI 時代 永續未來共識論壇」，左起為上海商業儲蓄銀行協理滕萬里、聯合報總編輯王茂臻、台新新光金控資訊長孫一仕、台灣地方創生基金會董事長陳美伶、環境部部長彭啓明、聯合報社長游美月、蝦皮購物法令遵循部部長許敦凱、日立永大電梯副總經理游如漳、Kantar凱度台灣首席研究總監胡傳玉、聯合線上總經理官振萱。 圖／潘俊宏攝影 聯合報七十五周年，延續社會關懷宗旨，舉辦周年系列活動之三「AI 時代 永續未來共識論壇」，除了童子賢外，還邀請環境部長彭啓明、Kantar凱度台灣首席研究總監胡傳玉、台灣地方創生基金會董事長陳美伶、台新新光金控資訊長孫一仕、蝦皮購物法令遵循部長許敦凱、台灣大哥大總經理林之晨、關渡醫院院長陳亮恭等產官學及不同領域專家，從永續行動、人工智慧（AI）發展、人才教育到超高齡社會展開對話。 聯合報社長游美月致詞時表示，AI時代要面對核心矛盾就是AI帶來極致的效率，但同樣有龐大的電力消耗與碳足跡，AI追求的是算力，但考驗的是永久",
-          "dupes": 3
-        },
-        {
-          "title": "產業：中信金控供應商大會號召225家企業，力挺ESG打造永續影響力",
-          "source": "東森電視",
-          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA2VG54X1RtcHZ0eW00QjBMUU5UcXVSZjUxSkhlNHJVUXM2dTRCUjFJSndlZGFCX1dOTmJWZmU3TXdJUGc4MWZrbC1BUHoxc2tjZXZxUkdnNzBIQQ?oc=5",
-          "date": "2026-09-18",
-          "summary": "中信金控供應商大會號召225家企業力挺ESG 關注氣候變遷、生物多樣性、自然資本議題打造永續影響力| 唐可欣 | 品味生活 風傳媒",
-          "body": "台股 上緯智聯 上緯集團 Swancor 上緯 上緯投控 台智寶 張俊傑 AI 健策 首頁> 財經新聞 > 產業 > 產業：中信金控供應商大會號召225家企業，力挺ESG打造永續影響力 中信金控(2891)昨(17)日舉辦「2026中信金控供應商大會」，號召225家供應商齊聚交流，以「守護水資源共育森林未來」為年度主題，共同關注氣候變遷、生物多樣性保育及自然資本議題。 會中以「消失的溫泉」及「珊瑚礁與海洋永續」為題，邀請專家分析氣候變遷對自然生態帶來的挑戰，並頒發「中信金控供應商評鑑永續卓越獎」表揚績優供應商，鼓勵與中國信託金控合作的供應商從資源循環、節能減碳及永續供應鏈行動著手，共同守護珍貴自然資源。 「2026中信金控供應商大會」由中國信託商業銀行總務處處長陳文榮副總經理、中信金控企業永續部部長孫紀蘭副總經理出席。陳文榮表示，面對氣候變遷與自然資源挑戰，永續發展已成為企業營運重要課題，中信金控攜手供應鏈夥伴共同關注生物多樣性與自然資本議題，打造兼具韌性與永續競爭力的供應鏈生態圈。 中信金控積極關注永續議題，為全臺第一家發布自然相關財務揭露（Taskforce on Nature-related Financial Disclosures, TNFD）報告的企業，充分掌握自然資本的風險與機會，降低營運對自然的負面影響，守護生物多樣性；亦於2022年將2050淨零排放納入集團長期永續發展目標，落實自身營運減碳及綠電布局，以行動實現對環境保護與世代責任的承諾。另一方面，中信金控致力實踐ESG（Environmental, Social, Governance），推動綠色採購並優先",
-          "dupes": 3
-        },
-        {
-          "title": "投資燃煤大戶？　環團：至少7檔ESG基金有漂綠風險",
-          "source": "ETtoday永續雲",
-          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5yYlRZaUl5OUpGZU5ZWlR0YTN6clEyRENWSWsyWGpQTWlkWlhkNXo5OW0zQ2J6R0lFNmtZQ1VrNlZjRzJhWlBxSnRjTFbSAUtBVV95cUxNaGZTTkZNc2l5NXpLMU10WmdrNmpOUUstYnR1TGVOVDJTZjdZVjF3Y1V5TkRlNTZHeW56YUtub1ItcXRGMGtBZ09yVkk?oc=5",
-          "date": "2026-09-16",
-          "summary": "投資燃煤大戶？ 環團：至少7檔ESG基金有漂綠風險 ETtoday永續雲",
-          "body": "ESG NEWS 環境保護 社會共好 企業治理 綠色能源 SDGs 永續城市 永續投資 觀點專欄 ESG影音 永續專題 ▲《2026永續金融追蹤報告》發布記者會。（圖／綠色公民行動聯盟提供，下同）** 綠色公民行動聯盟、台灣氣候行動網絡研究中心與環境法律人協會今（16日）公布《2026永續金融追蹤報告》，檢視國內52檔以ESG或永續為名的基金後發現，2025年第4季至2026年第2季期間，至少有7檔基金曾持有仍使用燃煤的高碳排企業，其中2檔更曾投資台塑化。報告指出，台塑化目前仍是全台碳排與用煤量最高的製造業者之一，但主要燃煤設備至今沒有明確退場時程，引發外界質疑，這類企業為何仍能納入永續基金投資標的。 研究團隊認為，現行永續金融制度雖已建立ESG基金審查、責任投資與永續金融評鑑等機制，但對企業實際碳排、燃煤使用與轉型進度，缺乏足夠約束力。綠盟副秘書長曾虹文表示，永續金融原本應成為推動2050淨零的重要工具，金融機構透過投資與授信，本可引導企業減碳轉型，但如今市場上愈來愈多ESG商品，資金是否真的流向低碳或具轉型能力企業，仍有明顯落差，也凸顯「漂綠」風險。 報告進一步比較兩檔永續ETF持股情況指出，截至2026年第2季，元大臺灣ESG永續ETF（00850）持有5家燃煤排碳大戶，依持股比例換算，分攤企業2025年碳排放量約4178公噸、用煤量約947公噸；另一檔00888則持有2家相關企業，換算碳排約64公噸、用煤量約11公噸，差距相當明顯。 研究員張趙指出，目前ESG基金篩選流程包含指數編製、投信商品設計、金管會審查與投資後議合等環節，但多偏重企業揭露制度與治理架構，未真正將高",
+          "body": "",
           "dupes": 3
         },
         {
@@ -78,24 +140,6 @@
           "link": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE5TeXo3ZXlkdDJTX0ZQQnlUY28tTFdqRlUtdXdrbWlBLU9wbi1SNjEwd0hvQ1luTzNURzgzcEh2QQ?oc=5",
           "date": "2026-09-16",
           "summary": "",
-          "body": "綠色公民行動聯盟、台灣氣候行動網絡研究中心及環境法律人協會，今（16）日共同發布《2026永續金融追蹤報告》檢視國內52檔以ESG或永續為名的基金，發現2025年第4季至2026年第2季間，至少有7檔曾持有仍使用燃煤的排碳大戶，其中2檔曾持有台塑化。台塑化是臺灣碳排量與用煤量最高的製造業者，且主要燃煤設備仍無明確退場時程。 報告指出，高碳燃煤企業仍能進入永續指數與ESG基金，且發行該基金的投信與金控也獲得金管會永續金融評鑑的肯定，反映現行制度雖已建立ESG基金審查、責任投資、議合及永續金融評鑑等機制，卻仍缺乏讓企業實際排放、用煤與轉型表現影響永續投資資格及資金配置的有效機制。呼籲金管會補強ESG基金監理與永續金融評鑑，讓永續金融真正發揮引導企業減碳轉型的作用。 綠色公民行動聯盟副秘書長曾虹文** 表示，永續金融是推動2050淨零轉型的重要工具。臺灣製造部門碳排放量約占全國一半，除了法規與供應鏈要求，金融機構也能透過投資、授信及議合，將減碳與轉型條件帶入企業取得資金的過程，這也是政府將綠色金融列為淨零轉型十二項關鍵戰略之一的重要原因。問題在於，當市場上出現愈來愈多ESG、永續金融商品，資金是否真的流向符合永續條件或正在實質轉型的企業？ 曾虹文指出，永續金融的制度設計之一是鼓勵金融機構發行永續金融商品，而金管會作為監管機關，一方面透過ESG基金審查監理機制把關ESG金融商品，另一方面透過永續金融評鑑檢視及鼓勵金融機構整體的永續金融作為。問題在於，這套看似完整的制度設計，竟出現ESG永續基金投資了高碳排、高用煤、高污染的企業。當「永續宣稱」與「實際投資」出現這樣的落差，就是永續金融需",
-          "dupes": 3
-        },
-        {
-          "title": "7檔ESG基金曾持有燃煤排碳大戶，環團籲金管會強化永續金融把關【圖表】",
-          "source": "Reccessary",
-          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE83QUJydDdYT2xlQjV2a0JrYzlCcUg4Y3NqajU2X1JHWlFjWmZYUnJLZzFaQWpNRG1teDJZVGs1VVZ2RjYzWWo3NlNZM3JwaWFQYzdNUzVkeFMxMGZqUWUzSnhUQkdvMlEwS2E4UXVPR3FsTHFnSFJndlNn?oc=5",
-          "date": "2026-09-16",
-          "summary": "",
-          "body": "",
-          "dupes": 3
-        },
-        {
-          "title": "華航飛阿姆斯特丹「永續航班開箱」！長程航線首度挑戰40％SAF，機上還吃得到米其林綠星蔬食 - esg.businesstoday.com.tw",
-          "source": "",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBUYXVVQm1Bc2tZZXB1djRLajhQczBBZDBpTlU4RU1XWUNHbkwwMnVzbDdSMEl4UVFMOHlLaktUZE9XeklNMEgyems2RjFGSFhmSVJHTUhSREJucmhRUVNpYmQyMTNNQmtpR1NLWWMyenlqeE5EYlY2RnA1cXlUZlk?oc=5",
-          "date": "2026-09-15",
-          "summary": "",
           "body": "",
           "dupes": 3
         },
@@ -105,6 +149,15 @@
           "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE95N3JqcjVqUEdlLVctcXFWcTBmeExfTWdaVlZmOFhLTFRaSkFMZG9zZjVobGpYNW1MNmhiQ01xUDQxbGEtZERHV2NpMUIzMWR1OWc?oc=5",
           "date": "2026-09-15",
           "summary": "",
+          "body": "",
+          "dupes": 3
+        },
+        {
+          "title": "華航再寫永續新局 首度挑戰長程航線使用 40% SAF",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE53WUh5ejAwTEU3N1Vra05FVzVfUFdzYlVlTUktbjFLSUhMdDN5cDRkdmx0OUxVOERTZDRYb1pQN2dmb3FzQ1pLU2tzQWJJNU5HRWc?oc=5",
+          "date": "2026-09-15",
+          "summary": "華航五度參加永續航空飛行挑戰 首度挑戰長程航線使用40%SAF UDN",
           "body": "",
           "dupes": 3
         },
@@ -119,7 +172,7 @@
         },
         {
           "title": "華航長程線首添加40%永續燃油飛荷蘭減碳量達40輛車碳排| 生活",
-          "source": "中央社 CNA",
+          "source": "cna.com.tw",
           "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9UNkxPVTZhdGNUd2l4bVplNmFRNjNOaTN2SkR4WkJzOTdNcy1nQ1F3aGdIVEpUUlhnbXNzMVZwdXd0cTNkcWMyQ3luaVlyTXEzN3FxQjdIUjlqcjJCTExJ?oc=5",
           "date": "2026-09-14",
           "summary": "",
@@ -127,8 +180,17 @@
           "dupes": 3
         },
         {
+          "title": "嘉義市首輛電動垃圾車9月上路 充電一次跑2天 黃敏惠拚2050淨零",
+          "source": "行銷人",
+          "link": "https://news.google.com/rss/articles/CBMiiANBVV95cUxNR2p6OGJPTi13R00tV19JNUdiRkI2d1BHUFlfajB3VHdRX0g0VVdUdXpWTlk4ZVd4Y1p3dTVnTXlyTVVieE5HcTItV3lXQWhIY0F2eXpudkZXN2EzMmtWVDVqWUdCWG9HSUU4QUhYYVZ0QnhnRVl3ZnBUWjl0dlZIQWxoX3ZPRUEyZEdUeG9jSzdOTnNIdlRjdXpZamZuVjIzWlJEbWlZMktuN2NDLTk0dVBlLS1iLXV6Vjk4NUdVT0NFSVpYcVluOE5Ma0VHd0RKTXAyUV93TW1SLVNGeHZTc25qdjl6eUpNMWtPTlhWV2w2WmlaYWJ2VXJBN2dpXy10TzMzMms2aXdRaWhWZ3lQdWpXTm9lU2JheE9HbDlZRVd5dHV5LXF5MC1MMHVrdVI5RlNkc1dkYW9TbVhlMnhYRm9TQlBJcDB0Qkd1Z2J3TjY5dFdDZ3RSMFlLQkc2RlFqV0VKSm40NXg5Mkx1SlJ5UkhRZThBWG9OMTRkM3Y1QkU1bjRocldZRA?oc=5",
+          "date": "2026-09-20",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
           "title": "【永續加】跑出12萬棵樹的馬拉松！金融業如何將ESG內化成企業DNA",
-          "source": "esg.tvbs.com.tw",
+          "source": "TVBS GOOD",
           "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1jdmVGRFNLR29sNWZpQTNWMF9aZThZU2NxQnNaYXBPbWhPN1hhUENyTXZtQVBqMzVKTnVyRlNuMDMyOUMyMWlCRnFNNjBJNXVIWFlN?oc=5",
           "date": "2026-09-18",
           "summary": "",
@@ -136,9 +198,27 @@
           "dupes": 2
         },
         {
+          "title": "全台首波近零碳建築成大開課 跨部會培育淨零人才",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxQZ3Qzcm92Y0NJQlhoM09sb1F4S1dqWlEzSElJdUw2WGJKZ0hHTE1HM2pzaTNpckFweDBKTmFJY0t2cXhfTmFCTW9vTGVPQjhTeTZFSy1US3F2NnBQVTg0dVNJU2ROck53bUlfRjVLNElGNlZnNFlJai1FbnBsdG1jMmllNjZ0eUpDRWtkZk91Y0xDSnFNRGR4YVVsZ1I3MHVXdVdsbkhPVVMwYVJ1OEowRHVzN3V3ZkMxdk5KWjJFZXA0aEhVanpXYzRLY3BELUtjYVZmVWdoLUlab1RCMkxhemY1YzhPVkVSd3FIMVFaVENlTGlINWhXVjhWVU5qenE5Y2lQRGhNZUMwUWhIRExieTBDYzFpS1B5cTc2cjRhWEk5UEpiZXAtUExBcmlCa1JWZFJBRHVNWUlyRGZEdzE2cUtCZXdVZnJlVmtXZVNXVTY?oc=5",
+          "date": "2026-09-17",
+          "summary": "全台首波近零碳建築成大開課 跨部會培育淨零人才 | 勁報 LINE TODAY",
+          "body": "",
+          "dupes": 2
+        },
+        {
           "title": "BCCTaipei「2026優良企業貢獻獎」歡慶十週年新增永續金融卓越獎表揚企業永續實踐與社會影響力",
-          "source": "樂聯網",
+          "source": "leho.com.tw",
           "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5zb3dTVjhZVUhnTXJzbnpMbjJ4cXVSR0MxRDV2a0FHTWF6TnNLTzVJZXVMUk5VNUpCdVpWaWdvc3ktY0Rua1pYZFdVdw?oc=5",
+          "date": "2026-09-17",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "52檔ESG與永續基金七檔持有高碳排企業 民團揭金管會評鑑漏洞",
+          "source": "環境資訊中心",
+          "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBDeG9TaFFjckNLenVfanVDUnFkRkE2U3FpOW5XZDZKSlNSbHRLWjVKcUhRZ3JCUk1YSzczU1NNNWJEamdlRlBtMg?oc=5",
           "date": "2026-09-17",
           "summary": "",
           "body": "",
@@ -163,29 +243,29 @@
           "dupes": 2
         },
         {
-          "title": "凱基證券、凱基期貨發布永續報告書 秉持信任金融創造永續",
-          "source": "UDN",
-          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE92clVMTlhjbmlIUEJCX2RvcDhGTVVnSFRlcmZBYjF4VFd4VjdseHhtakxjQW9qZVBpQldPNzVHTXo0QW9ZYnl3SGxSLXJBMkdKYjRQU0djNDNsUC04Vk9UZl9weEl1TEJ4VHZNS214LXlsUHVnVTNReGQwZ23SAVZBVV95cUxPVlpIMkdBYVlvUmt3dnVBY3dCVDM4UlpJbTMta2FUS0pCQ2M4Mi1CLVR3YlJoVVFlQmhySGJPLU50aVoxRTdOTlJWR1VqQk52NGtOTGlpZw?oc=5",
-          "date": "2026-09-16",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "華航再寫永續新局 首度挑戰長程航線使用 40% SAF",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE53WUh5ejAwTEU3N1Vra05FVzVfUFdzYlVlTUktbjFLSUhMdDN5cDRkdmx0OUxVOERTZDRYb1pQN2dmb3FzQ1pLU2tzQWJJNU5HRWc?oc=5",
-          "date": "2026-09-15",
-          "summary": "華航五度參加永續航空飛行挑戰 首度挑戰長程航線使用40%SAF UDN",
-          "body": "",
-          "dupes": 2
-        },
-        {
           "title": "航空業減碳商機爆發，永續燃油需求上看24萬噸！華航等台廠搶先佈局-財經焦點情報站",
           "source": "CMoney投資網誌",
           "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQbUFFY00yNTE4Y0VKWTFWUDVmZUlobVJUT0RBdlZSOURaTVBjTVVkbnZ6ckVtb01wbnRPTS05WXlRckpwalJnRGgySWFkLTQyeXlnaFBsa2ZhMnE2SnZFcnczX013Z1JJNXhlaHpUM1BHUmZUbXZ1Q0cyM1NtR1M1ZGdR?oc=5",
           "date": "2026-09-14",
           "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "AI淨零／大眾電腦聯手台灣大打造全台首座5G AI智慧地熱電廠| 產經",
+          "source": "cna.com.tw",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9JdFNHWVV5VWF6djBSaVNLOVY5d0kzWWFDdzFFSGEtYmw4VVdYZkxrMUJLZGUzVTc3ZXdwa3FnQTVlODJnclFWeHF3VElfb0NWQ0ZRc2RocWV3RUtwWlE?oc=5",
+          "date": "2026-09-14",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "華航長程航班40％永續燃油 碳吸附量達1／4大安森林公園",
+          "source": "chinatimes.com",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1hbkJVWm5FcmhSS0Y1R1hXUlhLeVJySHVteWk5c05LNjVBbG5ZY1FNMmhQT3hsVUFaaVI5MEttMllubVNDQy1GT3UzVnZ2bFZoSG5MVEd5VVFxXzNGUnFJQy0tZWloZTJDY2JuOUVR?oc=5",
+          "date": "2026-09-14",
+          "summary": "華航長程航班40％永續燃油 碳吸附量達1／4大安森林公園 chinatimes.com",
           "body": "",
           "dupes": 2
         },
@@ -199,85 +279,22 @@
           "dupes": 2
         },
         {
+          "title": "減碳不是打假球！華航長程首度添加永續航空燃油　餐具也減重",
+          "source": "NOWnews今日新聞",
+          "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9yMFN2RENMWkZXNkZUTjFHczRaNkI1bVJjWVVmMk5IUEpfck9Rc3l6SjZ0V2VQaUtNcFJnMktzN2UxWkwtczR4XzkxcDLSAVJBVV95cUxOTlpEN0UyVUM0VFNTdWQ2VW5na2Y2cXF4YWFHWjE0TmZoaDljWGc3NFMzNXR5ZnFiNGhvQWNETjZlSjlOVkVfMWpMTWtKV09uUmtn?oc=5",
+          "date": "2026-09-14",
+          "summary": "減碳不是打假球！華航長程首度添加永續航空燃油 餐具也減重 NOWnews今日新聞",
+          "body": "",
+          "dupes": 2
+        },
+        {
           "title": "董瑞斌：面對永續轉型資金缺口借鏡國際混合金融經驗| 產經",
-          "source": "中央社 CNA",
+          "source": "cna.com.tw",
           "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5FeW4yVjZhVHBBWUY3T1BtTmJSbnJ6aVVEclVCQksxOHZlYUkxYmpTSEJVRXB3NkxoLWtJdlVoNFVqVjBXWjJ3Nkp1Smd3anF4THdKdnY0aUV5Nzk3UUE?oc=5",
           "date": "2026-09-14",
           "summary": "",
           "body": "",
           "dupes": 2
-        },
-        {
-          "title": "富邦人壽發布2025年永續報告書 綠色金融投資規模達1.99兆元",
-          "source": "UDN",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBtRlVCTDhnWUFpb2NRelkyRkZ4Sk5LZUZ6ODBBOUYzUVdQcEk5cGthdHp2MnVINC0tN3VSd2JJZW9TeWVQZmQxR3Y5ZUE2MnJP0gFWQVVfeXFMT016ckFTbWFUSjZXeUlKbllja1JQbDZnQ0g5N1VHdTIwSkFmUlp1b3IydjduUHJYRU1uczNHazZmUmJ6SkFZdmVia2NIODZxd0pwdjdDLWc?oc=5",
-          "date": "2026-09-14",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "部分ESG基金曾投資碳排大戶 金管會：不限制投資特定產業",
-          "source": "公視新聞網PNN",
-          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5HSF9Kd1FnMHlCZFh5bTloVGtmcHI4ck9seDlpUjVydllyOC1wVFBLcS1hajlCMl81ZzBFeFdzSVc3UGVMLXBqWWdnc25ZdzQ?oc=5",
-          "date": "2026-09-14",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "TAISE 2026亞太暨台灣永續行動獎",
-          "source": "中時新聞網",
-          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1VcktRNmxvVDZFX0ZQM3hQdVhobUQxcDZXNk1RbUtCT25Bd3lIazlMVjB4YU92dzBRTGxrVzM2dXlJREg2X2RZbDdtQ29MeUxjOHNQTmd6Y3BhblN6RzFWWGpsWFBZUWstanRUTWhn?oc=5",
-          "date": "2026-09-14",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "屏東新世代企業家聚首交流！信賴台灣永續協會舉辦聯誼餐會洪偉成籲善用協會資源共創永續未來",
-          "source": "民安救護車",
-          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1RNFZUS25zTzQyalNhZmowcGJuLXhaSC1qck9yaVlSY05LaU9LcEc4dFgwZmE5V2lBTVBOU0xXR0tuODA5SE5NYnVlUWxIbko1ZGxEdWxxVVR2UTRaTHFlM3JqaV9GRjROMW5NZQ?oc=5",
-          "date": "2026-09-19",
-          "summary": "",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "中華文教新創交流協會出席2026台灣創新技術博覽會 拓展台日韓科技、文化與永續創新交流",
-          "source": "台灣公益新聞網",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBjM0h0RnI2eEloeElISGE1TjBHZm1XU0p3WHA1UlN1VVdjYWZuTDBqbUxDbWdKOEVuRlFFVURfNE44LTRtLUh3Qk9GTQ?oc=5",
-          "date": "2026-09-19",
-          "summary": "",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "NEAR 協議單日狂飆 21% 激勵計畫與永續期貨引市場關注",
-          "source": "Life 生活網",
-          "link": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxNcloyWXZqZ2lUWTNTcngwNEswdDk3UWptczZLMjBxcUdSYmN6ZnRsTzRqRGJtbmlEUi1ReHR2d2xobWgxR3pLU1FnRXpsaXpyZUp4dU1GSFVoSFVGU0YwNlh0TGdJejFQejZjTlBYYVlwZWRVeUsxSWN6UzhMckpEMDZGRFowemhCckU5UF9Pb3c0bnVsUFIwUDZUQ0g3cFlPU0dpX1l5MHdManc2WVlPOU1DLUdDMk5MWUlSdDNULUNkZ2wxUVpxWWhHc3g2dFJXNzdKLVo5Y0d5Nm5sWm10cXotUExrV192QlNWQThWVVl1cmIxREhfSWJqTl9LV3JqWVlMMEVRMk5zdk9mVmJfSHNsYzlzS0dBbkNmaDF2a3JQSF84bE53V0xDV19kdXJYOHhfQUxUd0hJdGlSRm1LdkFBcw?oc=5",
-          "date": "2026-09-18",
-          "summary": "",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "臺灣港務公司永續講座登場 雲品國際盛治仁談「掌舵者的人生航向」迎向新局",
-          "source": "Life 生活網",
-          "link": "https://news.google.com/rss/articles/CBMimgNBVV95cUxPa2R3bEp0a2tTUVlaX1luZG9zazFVNnJfMkNhSS1UU2V1R3l2LWdpRFBQRWw4WW1QMFlBRUlvSGlxNGlXS3ZXQW0xM2c2UXVOLXJiNVNieG1Lc0REZDc0NS1fNEs5M1Q3clJyRTdPQXNzZHBoNTlmVm01S015UE1HOGljQXMxZ2xOem8tcFpLZ2lHcXVWd2xVeUlJZzQza2NTQ1dVMlFnUllOUUJ1UXlaQ0hhVmVHYXFPOENvcUNKMGhEU3hqcmNRS01VOXE0U0RFd3ItSWUxVjJUa1M4bHM4Z1JGYXhxbGR3Q1FpR3o4eEZiSENPY1FvYm5taEI1akFwakF4cTlFaVlaYy05djgyWDNmSXdjYjdvZXgyQllWT082eE5heG9PSDVXNVlSc1lSdlF1bXhqNXNaY1JweEhGMEFhQ05FTzloT0t4dU8yMzA2dFIzckp0VnA1V3RzeVFfZjRza01BYlZKdWJUdmUxNWJSb1NMSUoxdGQtQnVXaC1WUURCdXVXc25WZDFBMzUyWEhUa05KNEdtUQ?oc=5",
-          "date": "2026-09-18",
-          "summary": "",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "從綠色生態系到循環供應鏈 CPC攜手產業開拓永續成長新商機",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1lUF80UHNTaU9ESXVzUEVJbVVaQmJCajJnZWk4QkxmQUZmenRDSUNtbkFVVTZwUlFXcUVTVkd1bDQ1ZDBUT0ljcElValJ3TmEwX2c?oc=5",
-          "date": "2026-09-18",
-          "summary": "",
-          "body": "",
-          "dupes": 1
         }
       ],
       "sources": {
@@ -605,16 +622,67 @@
     },
     {
       "topic": "政府補助 / 計畫",
-      "gist": "",
+      "gist": "工廠低碳智慧化、地方SBIR、先進衛星應用",
       "sections": [],
-      "grants": [],
+      "grants": [
+        {
+          "agency": "彰化縣政府",
+          "program": "輔導工廠低碳及智慧化轉型改善補助要點",
+          "target": "符合要點規定之工廠業者",
+          "amount": "",
+          "deadline": "",
+          "idx": 0
+        },
+        {
+          "agency": "彰化縣政府",
+          "program": "輔導納管之未登記工廠及特定工廠改善補助要點",
+          "target": "彰化縣輔導納管之未登記工廠及特定工廠",
+          "amount": "",
+          "deadline": "",
+          "idx": 0
+        },
+        {
+          "agency": "新竹縣政府",
+          "program": "新竹縣地方產業創新研發推動計畫（地方SBIR）",
+          "target": "新竹縣在地中小企業",
+          "amount": "最高 100 萬",
+          "deadline": "",
+          "idx": 2
+        },
+        {
+          "agency": "數位發展部數位產業署",
+          "program": "先進衛星多元服務應用解決方案補助計畫",
+          "target": "推動先進衛星多元服務應用解決方案之企業",
+          "amount": "",
+          "deadline": "",
+          "idx": 3
+        }
+      ],
       "items": [
         {
-          "title": "新竹縣SBIR最高補助100萬 縣府協助中小企業拼升級",
-          "source": "dda.hsinchu.gov.tw",
+          "title": "公布「彰化縣政府輔導工廠低碳及智慧化轉型改善補助要點」及「彰化縣政府輔導納管之未登記工廠及特定工廠改善補助要點」",
+          "source": "chcg.gov.tw",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPc2Y1UC1TSmtvUWN5dW1ZSVpjUENMd1FzckotVGhQM19GR1o5ZGtXN0U3Y2RZMzAxSFRnNkxFc2hMY2R5NDFkaFByN21zUWNOdDl1Ym9ObmNETm55QUJrcjdGVWY1OTVQQnl5SUFzZVIyNlhMQVNUSmZEdkNUOUswWXJWRmlCd1FMMjdLc1VkTHNuU1MzbDFKRFpOaGlqVGRoeTBrTw?oc=5",
+          "date": "2026-09-18",
+          "summary": "",
+          "body": "",
+          "dupes": 4
+        },
+        {
+          "title": "提升農業生產效率與市場競爭力 員林市公所舉辦農機補助計畫驗收暨水果套袋發放",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5CSmFhaGlTVVhKckg5R3FVekxHWEIybmVZRmR1MWlLakNLWmFqeGk1U21sNF9WS2V2SUNTX0gtLXcxYm5SR1Z4Z25XN1ByMmhDQ2c?oc=5",
+          "date": "2026-09-17",
+          "summary": "",
+          "body": "提升農業生產效率與市場競爭力 員林市公所舉辦農機補助計畫驗收暨水果套袋發放 | 蕃新聞 儘管天氣稍顯炎熱，仍不減農友們參與活動的熱情，員林市公所今（17）日上午舉辦「115年度農機補助計畫驗收暨水果套袋發放記者會」。現場農民個個眉開眼笑，牽著、扛著獲補助的動力噴霧機、動力割草機、鏈鋸等小型農機具前來辦理驗收，員林市代理市長賴致富、員林市民代表會主席張國良及多位市民代表、彰化縣議會議員曹嘉豪，以及各里里長也共同到場，見證市公所扶植農業發展的具體行動與長年來之堅持。 代理市長賴致富表示，首先感謝張國良主席及各位市民代表對農業政策的鼎力支持，讓公所得以透過預算編列辦理本次農機及套袋補助活動。近年水果及農產品原物料多仰賴進口，導致農業生產成本節節攀升，公所始終將農業發展列為施政重點，小型農機補助計畫自103年推動迄今已邁入第13個年頭。今年計補助200台、總經費60萬元，設籍員林市之農民以戶為單位，每2年可申請1次，每台最高補助3,000元，補助項目涵蓋動力噴霧機、割草機及鏈鋸等，期盼透過機具汰新協助農友減輕人力負擔，從生產端做到「省力、省時、省工」，讓每一分耕耘都能發揮更大效益，全面提升農業生產效率與市場競爭力。 ▲補助項目涵蓋動力噴霧機、割草機及鏈鋸等，期盼透過機具汰新協助農友減輕人力負擔。（圖/記者蕭麗鳳攝)** 至於水果套袋補助，自92年開辦至今已推行23年，累計發送套袋數量已突破3,050萬個。今年開放設籍員林市、農地座落於彰化縣內的農民申請，共計184戶、近39.97公頃果園受惠，採購套袋約52萬個，補助材質包含舒果網328,000組、立體紙袋96,300個、平面紙袋86,",
+          "dupes": 2
+        },
+        {
+          "title": "新竹縣SBIR最高補助100萬 縣府協助中小企業拼升級 - 新竹縣政府-數位發展處",
+          "source": "",
           "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBqZV9Da0JEeEtuWVdzRlpxLWs3VmNKaVI5M21OX0pXZkR0dFRnbEp5ak1VYWd6NlVxYTBHUUdlajNoZnBWS2VtS1R4R0pURVJJajJoY0hxZEFjRnhJYzM2a1NqNlhpT083LTl2VQ?oc=5",
           "date": "2026-09-18",
-          "summary": "新竹縣SBIR最高補助100萬 縣府協助中小企業拼升級 dda.hsinchu.gov.tw",
+          "summary": "",
           "body": "",
           "dupes": 1
         },
@@ -628,21 +696,21 @@
           "dupes": 1
         },
         {
-          "title": "全面提升農業生產效率 員林市農機補助計畫驗收暨水果套袋發放",
-          "source": "Life 生活網",
-          "link": "https://news.google.com/rss/articles/CBMimANBVV95cUxQaEhUMWNyYzBVZEJrUkI4dE9yU2wxYmNyTXBFYmZGOHNGaXJfaFVySnR0aVlVQVVqaTU0c1dQRTVCNVhVUzdlU1FfeTQ2WVQ5SUo1MW0tek9mS05nb3dueUxRcnVvZ0FBMFE3dG8xZzhGNFg1NzlSRG1HQnZRTlRNRHZUY1dxSTAxTFRTMVhSVEp3bm5HUHlyRVp5UElRS2JYQkFCN0J6enN6eVMtOGF1azA0YkhDMjVhYTFCbW1PanlmdmFORW9wN3hKRjdSbmRLajZTVUwxWm9jM3VnNjJYZXVqaG11dER3Q2k2cG1Cb2NRYkV6d1B4UEFTWmRsaUpQLUlNMm5oRDJhbFgtWEdDQTRRLXVIM3UzUHhfRERlQTdSVExwN2FDOFlpMV9FTTQweURWd0YxUHQyOVpUTnY5Yk8tbmU2clp3N3F0eXoxN21STVN6cXYtSmV2R1V1akxZTzhqVEtvWnByaUxULXhadXpleGNpTExNZHZ0c2VORmdfa3RsazJxRmc1N2cyQjFwakVQdXFYMGY?oc=5",
-          "date": "2026-09-17",
-          "summary": "",
-          "body": "● 小型農機補助計畫推動13年，今年補助200台，總經費60萬元，盼減輕農友負擔。 儘管天氣稍顯炎熱，仍不減農友們參與活動的熱情，員林市公所今（17）日上午舉辦「115年度農機補助計畫驗收暨水果套袋發放記者會」。現場農民個個眉開眼笑，牽著、扛著獲補助的動力噴霧機、動力割草機、鏈鋸等小型農機具前來辦理驗收，員林市代理市長賴致富、員林市民代表會主席張國良及多位市民代表、彰化縣議會議員曹嘉豪，以及各里里長也共同到場，見證市公所扶植農業發展的具體行動與長年來之堅持。 代理市長賴致富表示，首先感謝張國良主席及各位市民代表對農業政策的鼎力支持，讓公所得以透過預算編列辦理本次農機及套袋補助活動。近年水果及農產品原物料多仰賴進口，導致農業生產成本節節攀升，公所始終將農業發展列為施政重點，小型農機補助計畫自103年推動迄今已邁入第13個年頭。今年計補助200台、總經費60萬元，設籍員林市之農民以戶為單位，每2年可申請1次，每台最高補助3,000元，補助項目涵蓋動力噴霧機、割草機及鏈鋸等，期盼透過機具汰新協助農友減輕人力負擔，從生產端做到「省力、省時、省工」，讓每一分耕耘都能發揮更大效益，全面提升農業生產效率與市場競爭力。 至於水果套袋補助，自92年開辦至今已推行23年，累計發送套袋數量已突破3,050萬個。今年開放設籍員林市、農地座落於彰化縣內的農民申請，共計184戶、近39.97公頃果園受惠，採購套袋約52萬個，補助材質包含舒果網328,000組、立體紙袋96,300個、平面紙袋86,200個、牛皮紙袋4,800個、PE塑膠網2,250個，以及PE塑膠袋560個，共六種套袋類型，適用於番石榴、",
-          "dupes": 1
-        },
-        {
           "title": "婚假延長至14天！何時上路？2026勞工婚假新制預告、新婚補助總整理",
           "source": "經理人",
           "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1URTNob1B3TVlYVE9Zam1kRmhhaWFKYk5aOVo2MlpiRUpMZ01WWUtuQWMwS1Q0NDlaSkxQQVVlRkZlNG1FZG0wV0tWSjRiM3d0ZkxFR0xuLVJPbjNaZnoxcA?oc=5",
           "date": "2026-09-17",
           "summary": "",
-          "body": "從「營火理論」看成年人的友誼：昔日好友漸行漸遠——不討好任何人，火熄了就體面道別 立即收聽▶︎新北客家局局長專訪：文化也要做品牌定位？「都會客家」到底要說給誰聽？ 台灣婚假確定要變長了！勞動部於2026年9月17日正式預告修正《勞工請假規則》，召開「幸福加碼！勞動部挺成家，婚假升級14日」記者會，宣布將勞工婚假由現行的8天延長至14天，比照軍公教人員的婚假天數，目標最快在今年（2026年）底前正式上路。 這是政府推動「台灣人口對策新戰略—家庭支持篇」18項家庭支持措施中，第一波正式進入修法程序的項目。 這波政策不只多放6天假而已。新增的第9天至第14天薪資，將由政府全額補助，採「雇主先給付、再向政府申領」的方式，一方面讓新人有更充裕的時間籌備婚禮與蜜月，另一方面也不會加重企業的薪資負擔。 除了婚假，這篇文章也把結婚前後能申請到的各項工作與政府補助整理成一份完整清單，方便準備結婚的你一次掌握。 延伸閱讀：台北市青年 AI 工具補助計畫完整教學｜補助金額、申請資格、適用工具一次看 修法進度** ：2026年9月17日，勞動部正式預告修正《勞工請假規則》，將婚假天數由8天延長至14天，追平軍公教人員的婚假天數。 上路時程** ：由於婚假只需修正《勞工請假規則》這項行政命令，不涉及立法院三讀，因此目標最快在2026年底前正式上路，是這波家庭支持措施中推動速度最快的一項。 薪資來源** ：新增的第9至14天共6天薪資，由政府全額補助，實務上採「雇主先給付、再向政府申請等額補助」的模式，企業不需額外負擔這6天的人事成本。 配套措施** ：同一波「台灣人口對策新戰略」也規劃將產假由8週延長至",
+          "body": "從「營火理論」看成年人的友誼：昔日好友漸行漸遠——不討好任何人，火熄了就體面道別 主管的你，平時會議多、追進度難，流程卡住了嗎？【10/5實戰工作坊】掌握主管必備技能 台灣婚假確定要變長了！勞動部於2026年9月17日正式預告修正《勞工請假規則》，召開「幸福加碼！勞動部挺成家，婚假升級14日」記者會，宣布將勞工婚假由現行的8天延長至14天，比照軍公教人員的婚假天數，目標最快在今年（2026年）底前正式上路。 這是政府推動「台灣人口對策新戰略—家庭支持篇」18項家庭支持措施中，第一波正式進入修法程序的項目。 這波政策不只多放6天假而已。新增的第9天至第14天薪資，將由政府全額補助，採「雇主先給付、再向政府申領」的方式，一方面讓新人有更充裕的時間籌備婚禮與蜜月，另一方面也不會加重企業的薪資負擔。 除了婚假，這篇文章也把結婚前後能申請到的各項工作與政府補助整理成一份完整清單，方便準備結婚的你一次掌握。 延伸閱讀：台北市青年 AI 工具補助計畫完整教學｜補助金額、申請資格、適用工具一次看 修法進度** ：2026年9月17日，勞動部正式預告修正《勞工請假規則》，將婚假天數由8天延長至14天，追平軍公教人員的婚假天數。 上路時程** ：由於婚假只需修正《勞工請假規則》這項行政命令，不涉及立法院三讀，因此目標最快在2026年底前正式上路，是這波家庭支持措施中推動速度最快的一項。 薪資來源** ：新增的第9至14天共6天薪資，由政府全額補助，實務上採「雇主先給付、再向政府申請等額補助」的模式，企業不需額外負擔這6天的人事成本。 配套措施** ：同一波「台灣人口對策新戰略」也規劃將產假由8週延",
+          "dupes": 1
+        },
+        {
+          "title": "企業托育補助新制創造企業留才與員工兼顧育兒需求正面效益！申請倒數2週，請雇主把握時間，於9月底前提出申請！",
+          "source": "行銷人",
+          "link": "https://news.google.com/rss/articles/CBMi5wJBVV95cUxPSGJYT05uWmxGTlJNTUJSclgtTzlVVVVhT3VKaGRTNTdQdHZIZUV2MVd0eUJsaUNWMUNiNjNrcHJmVGtBTGV3RG1rdU9CRzlYcGg4ODE3V2txcEZwZ0lSQi1KZUVpN3gyckdLSGJvSGpaQ0xOZUxoWm13c2RBYUNHaFNoNHRzQzJNdllyeEhFdDVwS3lNa2FlVjdWMnplNGZfWE03V1kwaUFUbk42UkZYUm5aMmc3blhWN2N6dFFlTTRsZ3dLdGc0ZWpzaThnVkZ1eDkya1NFRC1oU2ZKdlVlaXJFc3FBZm92Z1JUa1VYSkRybTlLMTFpY3pLVjh3R0NRUDhXT3BIZ2FTdU5Bbkp0SUcxM1BVeF9uVnZUaU5nMkU1dVB2bzRpNWo1ajZyU0R6eHJBOGExNWpEVWJNSXJtMlpsOTdtN1ZtZWtrbFZpeDhkUUtteGJReHBGOGRCdzY0ZjFpaGlzWQ?oc=5",
+          "date": "2026-09-16",
+          "summary": "",
+          "body": "勞動部為鼓勵雇主營造友善育兒職場環境，持續推動企業托育補助，115年度第2期(115年5月1日起計)補助迄今已有800餘家企業提出申請，相當踴躍。勞動部提醒，本年度申請即將於9月30日截止，目前已進入最後2週倒數，有意願設置托兒設施、提供育兒補貼或其他托兒措施的企業，請把握最後申請時間，儘速備妥相關資料提出申請，共同支持員工育兒。 勞動部表示，今年企業托育補助新制自5月1日上路，大幅提高企業辦理托育的支持力道。雇主新興建托兒設施，最高可補助500萬元；已設置托兒設施者，每年最高補助100萬元，並新增營運費、教保及托育人員人事費，以及減免員工收托費用等補助，協助企業減輕設置及營運托兒設施的負擔。企業反映政府補助人事費、營運費，可使設施營運持續外，也能提供更優質的托育人力，讓員工安心。 此外，企業也可以依員工實際需求，選擇較具彈性的托兒措施，每年最高補助100萬元，每位員工育兒補貼最高補助1萬元，且已取消員工子女須送托托兒服務機構的限制；未滿100人企業補助實支數70%、100人至499人企業補助60%、500人以上企業補助50%，讓不同規模企業都能依自身條件參與企業托育。在申請企業中，亦有企業表示，因為政府補助新制規定，讓企業更有意願加碼對員工的補助額度或修改補助辦法，放寬子女年齡到12歲，創造企業留才與員工兼顧育兒需求的正面效益。 勞動部進一步說明，除育兒補貼外，雇主辦理職場居家式托育服務，每年最高補助100萬元，並提供托育人員人事費補助；設置員工哺（集）乳室，最高補助2萬元。企業可依事業規模、工作型態及員工育兒需求，選擇適合的托育方式，不論是自行設置托兒設施或提供托兒措施，都",
           "dupes": 1
         },
         {
@@ -651,7 +719,7 @@
           "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE40RkwySENYdEhmZnl6cEswUmhya2RKUWY4akFfZXpDazV2SzF2eVF0NmNkRDVIalJaOG93NnNydlh0ZW1Tc2ZrQ2dPazU1eEtBYXc?oc=5",
           "date": "2026-09-14",
           "summary": "",
-          "body": "長照3.0從今年起正式實施，衛福部今（14）天公告，針對入住住宿式機構的中、重度失能者，追溯自115年1月1日起每月補助增加5,000元，全年最高可領18萬元，同時身心障礙者住宿式照顧費用補助，每月也提高5,000元，即日起受理申請。 為落實簡政便民，114年度已核有補助資格，且115年度持續入住原住宿式服務機構、補助資格未變更之個案，原則上無須重新提出申請。 不過，衛福部說明，考量115年度補助額度、核發方式及相關申請資料均有調整，上述對象仍請使用新版申請書送機構所在地縣市政府辦理資料補正，確認申請人、受款人、金融機構帳戶及其他必要資料。地方政府後續將依既有核定資料及補件內容辦理資格檢核及補助核算，民眾無須重新辦理完整申請程序。 另外，114年度雖已核有補助，但有以下四種情形之一者，須重新提出申請：第一、申請領取身心障礙者住宿費用加碼補助。第二、已領取身心障礙者住宿費用加碼補助者，更換戶籍所在地。第三、領取住宿式服務機構使用者補助對象更換入住機構。第四、補助資格類別轉換（「中、重度失能」、「既有住民」、「領有身心障礙者日間照顧及住宿式照顧費用補助者」）。 衛福部提醒，新申請個案自9月14日起，可依規定向受理之地方政府提出申請；住宿式服務機構使用者補助原則由最近一次入住機構所在地之直轄市、縣（市）政府受理，身心障礙者住宿費用加碼補助則由原核定身心障礙者住宿式照顧費用補助之地方政府辦理。 邱建富競選總部成立 邱氏宗親五千力挺 藍雀新傳媒 5 天前 ### 台中會展中心二期今簽約！串聯一、二期達4,460展攤 打造全台最大會展量能 5 天前 ### 新竹縣地方型SBIR成果展現創新",
+          "body": "",
           "dupes": 1
         }
       ],
@@ -701,5 +769,6 @@
         "feeds": []
       }
     }
-  ]
+  ],
+  "mailed": "2026-09-21 07:35"
 }
