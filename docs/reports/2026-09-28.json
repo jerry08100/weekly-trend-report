@@ -1,6 +1,6 @@
 {
   "date": "2026-09-28",
-  "generated_at": "2026-09-27 16:07",
+  "generated_at": "2026-09-28 07:58",
   "total": 73,
   "topics": [
     {
@@ -314,10 +314,54 @@
     },
     {
       "topic": "AI / 企業應用",
-      "gist": "",
-      "sections": [],
+      "gist": "代理式AI、IT成本暴增、南山人壽共用模塊、語音AI侵權訴訟",
+      "sections": [
+        {
+          "heading": "政策與法規",
+          "body": "生成式 AI 引發的法規監管與侵權爭議正在全球發酵。微軟創辦人比爾蓋茲公開呼籲政府必須介入 AI 監管，不能只依賴科技業者自我約束，否則可能帶來難以承受的災難風險 [[2]]。在司法實務上，日本知名動畫配音員津田健次郎控告 TikTok 擅自用 AI 仿造其獨特聲線，成為日本首例針對個人聲音特徵保護的 AI 侵權訴訟案 [[9]]；同時，AI 輔助法律與專業服務的責任歸屬規範也引起產業界高度議論 [[29]]。所以呢，台灣企業如果打算導入對外客服語音或行銷生成工具，法務部門在今年第四季前就必須建立內部「生成素材與聲音肖像授權檢核表」，以免踩到侵權賠償與違法紅線。"
+        },
+        {
+          "heading": "市場趨勢",
+          "body": "企業軟體正從被動對話轉向能自主執行任務的代理式 AI，KPMG台灣所宣布自 10 月 1 日起全員啟用付費版 Copilot 與 AI Agent，成為四大會計師事務所中率先全面落地應用的業者 [[12]]。但導入門檻也隨之顯現，最新調查顯示有七成主管面臨導入 AI 後 IT 成本意外暴增的難題 [[17]]。為了解決運算雜亂與費用失控，市場開始出現集中治理工具，例如 A10 Networks 發表 A10 AI Gateway 統一管控企業營運環境 [[15]]，智慧方案也推出企業級代理管理平台 EgentWrX 協助監控流程 [[23]]。所以呢，企業資訊部門今年編列明年預算時，不能只估授權費，必須同步採購 API 流量監控與 Token 成本限額工具，避免自主 Agent 跑出超額帳單。"
+        },
+        {
+          "heading": "同業動態",
+          "body": "本週無明顯相關動作。"
+        },
+        {
+          "heading": "客戶動態",
+          "body": "金融業正加速重整底層技術架構以擴大 AI 效益，南山人壽數轉基地透過整體企業架構設計打造「AI 共用模塊」，讓各業務單位能直接調用標準化元件，加速內部各項創新應用落地 [[16]]。海外金融市場同樣走向自動化流程，Moody's 報告指出美國商業貸款正大規模擁抱 AI 自動化審核，以在作業效率與信用判斷風險間取得平衡 [[13]]。這顯示大型金融客戶不再滿足於單一部門的零星實驗，而是要求具備跨系統整合能力。所以呢，想要爭取金融機構專案的系統整合商與軟體團隊，下半年提案時必須直接備妥能對接客戶既有中台的 API 模組架構與稽核日誌機制，才能通過資安審查。"
+        }
+      ],
       "grants": [],
       "items": [
+        {
+          "title": "AI 越成功硬體越稀缺：晶片、能源成 AI 擴張瓶頸，創投重新看好硬科技",
+          "source": "TechNews 科技新報",
+          "link": "https://technews.tw/2026/09/27/silicon-valley-sees-hard-tech-revival/",
+          "date": "2026-09-27",
+          "summary": "過去幾年，生成式 AI 的投資熱潮席捲全球創投市場。自 ChatGPT 問世後，大量資本湧向 AI 軟體新創， […]",
+          "body": "過去幾年，生成式 AI 的投資熱潮席捲全球創投市場。自 ChatGPT 問世後，大量資本湧向 AI 軟體新創，從 AI 應用、AI 助理（Copilot）到各式各樣的 SaaS 產品，創投爭相尋找下一個 OpenAI。但如今，這波熱潮正在矽谷開始產生轉變。 今年 8 月，曾提出「Software is eating the world」（軟體將席捲世界）的 Andreessen Horowitz（a16z）完成規模高達 11 億美元的 Machine Age 基金，將投資重點聚焦於硬體 / 實體科技以及 AI 基礎建設。 9 月 16 日由凱鵬華盈前合夥人謝文暄（Wen Hsieh）所創立的 Matter Venture Partners 也宣布完成 4.5 億美元的第二期基金（Fund II），其有限合夥人（LP）名單更包含了全球兩大半導體產業龍頭台積電（TSMC）與艾司摩爾（ASML）的參與，投資範圍涵蓋半導體、AI 基礎建設、能源、機器人、先進製造與量子運算等六大領域。 為何過去被視為開發週期長、投資回收慢的硬體新創，如今又重新成為矽谷創投眼中的熱門關鍵字？ 投資人開始轉向硬科技的其中一個關鍵原因，或許在於 AI 市場目前供給與需求的失衡。 a16z 合夥人 Martin Casado 在接受《華爾街日報》專訪時分析，像 OpenAI 與 Anthropic 等 AI 公司雖然迎來史上最快的成長，但目前市場真正的限制並不是「需求端」，而在於「供給端」。 晶片、網路、算力與儲存設備，以及支撐資料中心運轉所需的能源，都正在成為 AI 擴張的瓶頸。換句話說，AI 越成功，對底層",
+          "dupes": 2
+        },
+        {
+          "title": "從供需失衡到高壓規格戰，解析全球 PMIC 市場新格局",
+          "source": "",
+          "link": "https://technews.tw/2026/09/28/global-pmic-market-new-landscape-from-supply-demand-imbalance-to-high-pressure-spec-war/",
+          "date": "2026-09-27",
+          "summary": "AI 晶片功耗逼近甚至超越 1kW，傳統 PCB 走線帶來的寄生電阻與 IR 壓降已成為算力發揮的瓶頸。PMI […]",
+          "body": "AI 晶片功耗逼近甚至超越 1kW，傳統 PCB 走線帶來的寄生電阻與 IR 壓降已成為算力發揮的瓶頸。PMIC 導入次 20 奈米製程並邁向晶片內建與封裝內建，將供電模組直接整合於晶片封裝背面，能將物理距離縮至最短，大幅降低 85% IR 功耗損失並減少 60% 電源雜訊，這標誌著 PMIC 的競爭維度已從傳統外部多相電源控制，轉變為與先進封裝深度綁定的半導體微型化系統設計。 AT&T 與 Amazon Leo 達成合作協議，將 Amazon Leo 衛星服務與企業連網方案整合 請您暫停使用AD Block，以支持我們持續能提供更多新聞資訊與優質的閱讀環境。 請您暫停使用AD Block，以支持我們持續能提供更多新聞資訊與優質的閱讀環境。",
+          "dupes": 1
+        },
+        {
+          "title": "AI能力強大　比爾蓋茲：落入惡人手上可殺害10億人",
+          "source": "",
+          "link": "https://www.cna.com.tw/news/aopl/202609270199.aspx",
+          "date": "2026-09-27",
+          "summary": "（中央社紐約27日綜合外電報導）微軟（Microsoft）創辦人比爾蓋茲（Bill Gates）近日受訪說，人工智慧（AI）公司自我監管並不夠，各國政府也應參與監督，而且AI若落入惡人手中，足以引發10億人死亡的事件。",
+          "body": "本網站使用相關技術提供更好的閱讀體驗，同時尊重使用者隱私，點這裡瞭解中央社隱私聲明。當您關閉此視窗，代表您同意上述規範。 Your browser does not appear to support Traditional Chinese. Would you like to go to CNA’s English website, “Focus Taiwan”? （中央社紐約27日綜合外電報導）微軟（Microsoft）創辦人比爾蓋茲（Bill Gates）近日受訪說，人工智慧（AI）公司自我監管並不夠，各國政府也應參與監督，而且AI若落入惡人手中，足以引發10億人死亡的事件。 比爾蓋茲在23日接受美國國家廣播公司（NBC）節目「會晤新聞界」（Meet the Press）訪問，他指出「沒人認為自我監管就足夠了」，完整專訪內容將於今天播出。 比爾蓋茲表示：「執法部門及政界人士需要共同探討保障措施和監管機制內容，那是必要的。這會為業界帶來一些開支，但不會大幅減緩他們發展速度。」 比爾蓋茲於訪談中沒有淡化AI可能在幾年內毀滅人類的風險，更呼籲美國人民不要忽視AI恐被不法分子利用並造成大規模危害。 他警告：「AI無疑相當強大，你知道，強大到足以引發10億人死亡的事件。」（編譯：陳彥鈞）1150927",
+          "dupes": 1
+        },
         {
           "title": "才兩年就退燒了？微軟 Surface 正淡化 Copilot Plus PC 標籤",
           "source": "",
@@ -369,7 +413,7 @@
           "link": "https://www.inside.com.tw/article/42492-chatgpt-pro-max-500-month-leak-openai-devday-2026",
           "date": "2026-09-27",
           "summary": "研究人員在 ChatGPT 網頁原始碼中找到代號「Pro Max」的訂閱方案，月費 500 美元，主要提供 Work 和 Codex 兩項 Agent 工具的最高速度優先。OpenAI 尚未官方確認，外界預期最快在 9 月 29 日的 DevDay 正式發表。",
-          "body": "原始碼曝光 ChatGPT Pro Max 月費 500 美元方案，傳 OpenAI 將於 9 月 29 日 DevDay 正式發表 研究人員在 ChatGPT 網頁原始碼中找到代號「Pro Max」的訂閱方案，月費 500 美元，主要提供 Work 和 Codex 兩項 Agent 工具的最高速度優先。OpenAI 尚未官方確認，外界預期最快在 9 月 29 日的 DevDay 正式發表。 研究人員 TestingCatalog 與 Tibor Blaho 在 9 月 24 日發現，ChatGPT 網站前端原始碼中藏有一段名為「chatgptpromax」的字串，對應一個月費 500 美元的訂閱方案，是現有 200 美元 Pro 方案的 2.5 倍。這個消息迅速在科技社群發酵，OpenAI 截至目前仍未官方確認任何細節。 根據外洩的程式碼字串，Pro Max 方案的定價在美國為每月 500 美元（稅前），英國版本則為含 20% 增值稅的 445 英鎊。說明文字顯示這個方案提供「最快的 Work 和 Codex 存取速度」、完整的旗艦模型使用權限、最高記憶體容量，以及 100GB 的檔案儲存空間與搶先體驗新功能的資格。 值得注意的是，這些資訊是前端程式碼字串，不等於已上線的產品，方案名稱、定價與功能細節在正式發表前都可能調整或取消。 把 Pro Max 和現行 200 美元 Pro 方案對比，兩者的主要差異集中在速度，而非功能種類。Pro 方案已包含多數模型的完整使用權限，Pro Max 的重點則是 Work 和 Codex 這 2 個 Agent 工具的最高速度優先存取。 W",
+          "body": "",
           "dupes": 1
         },
         {
@@ -378,16 +422,7 @@
           "link": "https://www.cna.com.tw/news/ait/202609270068.aspx",
           "date": "2026-09-27",
           "summary": "（中央社東京27日綜合外電報導）日本知名動畫配音員津田健次郎將TikTok告上法庭，指控TikTok發布的影片使用人工智慧（AI）仿造他「渾厚」的男中音聲線，法院預定於30日宣判。",
-          "body": "本網站使用相關技術提供更好的閱讀體驗，同時尊重使用者隱私，點這裡瞭解中央社隱私聲明。當您關閉此視窗，代表您同意上述規範。 Your browser does not appear to support Traditional Chinese. Would you like to go to CNA’s English website, “Focus Taiwan”? 津田健次郎告TikTok案9/30宣判 日本保護個人聲音特徵免受AI侵害訴訟首例 日本配音員津田健次郎指控TikTok短影音以AI仿造聲音，侵害他的個人聲音特徵權利，要求下架。（示意圖／中央社檔案照片） （中央社東京27日綜合外電報導）日本知名動畫配音員津田健次郎將TikTok告上法庭，指控TikTok發布的影片使用人工智慧（AI）仿造他「渾厚」的男中音聲線，法院預定於30日宣判。 法新社報導，全球演藝人員日益擔心AI仿造聲音的問題，這股威脅也衝擊日本歷史悠久的動漫產業。在日本，配音員有時受到粉絲追捧的程度，甚至不亞於他們所配音的角色。 津田健次郎因為「咒術迴戰」及「遊戲王」等知名系列作品獻聲而廣為人知，他提起的訴訟被認為是日本首宗旨在保護個人聲音特徵，免受AI複製侵害的案件。 津田健次郎要求TikTok下架一系列影片，這些影片使用獨具「深沉」且「渾厚」特色的旁白聲音。這名55歲的配音員表示，這聲音絕對非他莫屬。 根據法新社取得的法庭文件，TikTok平台辯稱該聲音僅為「一般男聲」，並認為外界聲稱其與津田健次郎聲音相似，充其量只是主觀認定。 日本演員工會（Japan Actors Union）專務理事佐佐木優子接受",
-          "dupes": 1
-        },
-        {
-          "title": "AI 越成功硬體越稀缺：晶片、能源成 AI 擴張瓶頸，創投重新看好硬科技",
-          "source": "",
-          "link": "https://technews.tw/2026/09/27/silicon-valley-sees-hard-tech-revival/",
-          "date": "2026-09-27",
-          "summary": "過去幾年，生成式 AI 的投資熱潮席捲全球創投市場。自 ChatGPT 問世後，大量資本湧向 AI 軟體新創， […]",
-          "body": "過去幾年，生成式 AI 的投資熱潮席捲全球創投市場。自 ChatGPT 問世後，大量資本湧向 AI 軟體新創，從 AI 應用、AI 助理（Copilot）到各式各樣的 SaaS 產品，創投爭相尋找下一個 OpenAI。但如今，這波熱潮正在矽谷開始產生轉變。 今年 8 月，曾提出「Software is eating the world」（軟體將席捲世界）的 Andreessen Horowitz（a16z）完成規模高達 11 億美元的 Machine Age 基金，將投資重點聚焦於硬體 / 實體科技以及 AI 基礎建設。 9 月 16 日由凱鵬華盈前合夥人謝文暄（Wen Hsieh）所創立的 Matter Venture Partners 也宣布完成 4.5 億美元的第二期基金（Fund II），其有限合夥人（LP）名單更包含了全球兩大半導體產業龍頭台積電（TSMC）與艾司摩爾（ASML）的參與，投資範圍涵蓋半導體、AI 基礎建設、能源、機器人、先進製造與量子運算等六大領域。 為何過去被視為開發週期長、投資回收慢的硬體新創，如今又重新成為矽谷創投眼中的熱門關鍵字？ 投資人開始轉向硬科技的其中一個關鍵原因，或許在於 AI 市場目前供給與需求的失衡。 a16z 合夥人 Martin Casado 在接受《華爾街日報》專訪時分析，像 OpenAI 與 Anthropic 等 AI 公司雖然迎來史上最快的成長，但目前市場真正的限制並不是「需求端」，而在於「供給端」。 晶片、網路、算力與儲存設備，以及支撐資料中心運轉所需的能源，都正在成為 AI 擴張的瓶頸。換句話說，AI 越成功，對底層",
+          "body": "",
           "dupes": 1
         },
         {
@@ -409,22 +444,13 @@
           "dupes": 1
         },
         {
-          "title": "科技巨頭搶攻 AI 穿戴裝置，偷拍疑慮與雲端資安成最大絆腳石",
-          "source": "",
-          "link": "https://infosecu.technews.tw/2026/09/27/ai-wearable-devices-privacy-cybersecurity-risks/",
+          "title": "4大會計首家！KPMG台灣所10/1起全員啟用付費版Copilot與AI Agent",
+          "source": "TradingView",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1iUnloZk9VbkJ1c2FvMnJjZ1NuZm9WV1FlSmtUeXpzWnMxRTJFQUNGVTlNZzVRZmc1VVo1NU0zV3A0LWlQRkd3dk0zSlEtY1hLSDNZRExqQXYybUN6NEVtblpzVnM?oc=5",
           "date": "2026-09-27",
-          "summary": "科技巨頭正加速研發新一代 AI 穿戴裝置，從智慧眼鏡到各類隨身配件，這些主打「能看、能聽且能即時回饋」的創新設 […]",
+          "summary": "",
           "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "AI 研發生化武器消滅人類？專家：比起末日幻想，現有病原體威脅性更高",
-          "source": "",
-          "link": "https://technews.tw/2026/09/27/why-ai-isnt-likely-to-wipe-out-humanity-with-bioweapons/",
-          "date": "2026-09-27",
-          "summary": "人工智慧持續提升，外界也開始關注 AI 能否協助設計生物武器。但近期研究與專家討論，多數科學家認為，AI 雖然 […]",
-          "body": "",
-          "dupes": 1
+          "dupes": 4
         },
         {
           "title": "美國商業貸款擁抱 AI 自動化 Moody's 報告揭效率與判斷新平衡",
@@ -436,15 +462,6 @@
           "dupes": 4
         },
         {
-          "title": "4大會計首家！KPMG台灣所10/1起全員啟用付費版Copilot與AI Agent",
-          "source": "鉅亨網",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1ETldnVWQ2clAtV19ZeHpUUmFYaUZEQkJYVERSdlMyT3l4SFF3TnFpS0dkeWpLckdhRDhMQTNLalNfdGZkaEF4dklkYw?oc=5",
-          "date": "2026-09-27",
-          "summary": "",
-          "body": "",
-          "dupes": 3
-        },
-        {
           "title": "Talentica 發表 AI 管理服務 助企業優化軟體交付效率",
           "source": "商傳媒",
           "link": "https://news.google.com/rss/articles/CBMixgJBVV95cUxPbi1lalAzSGxtaFRXemFGN01qQllEYkxHd21CSTNpdlVtaURTN3Q3QUxlUWR6TTlQX3I4TEd5bEUzc2JDSXRTNUx6cmJHbTVCQXZhNmk2WktMSENuempiMG1hRUVpSldVVGwtMC00V0RHQmgxdnctaHhVSjV4Rlp5Z19mbXBreWNoWE5QYXhLOWpocW1DbmF6a1ZMLWc3TjQwTzZpdThyTmVwRFFYUTRRRjdZU1VPTVBHMWp6LVY1X0t4M1hUSVB6YXlRYnF6R1kyTVhtckJzSkxOS05IMWl2S0VWYlRsbk1BYzZyd2JtdlJ5ZVJhYnk1SUlXYlpuZ2V0NWg5YUt0c1poeklCSmp6Sng0SDZ5T3VvQWtGQXBFRFdkTkh3NGs2Y0dRMC11cGVaSUtiOVVTaV94Y0l1WFJ3Q3pDSFM1dw?oc=5",
@@ -454,8 +471,17 @@
           "dupes": 3
         },
         {
+          "title": "A10 Networks 推出 A10 AI Gateway，以智慧控制面統一管理所有 AI 營運",
+          "source": "iThome",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBEUlZlMnBEcTB6OWkyWDNGb3owdkdjWmNkeF85TUFJYjUtUGZucHZ6ZDlCWVEzdV9VOHl4dFp5MVMycVFybldQZDRDUQ?oc=5",
+          "date": "2026-09-23",
+          "summary": "",
+          "body": "",
+          "dupes": 3
+        },
+        {
           "title": "【專訪】南山人壽數轉基地：企業架構打造 AI 共用模塊 加速創新應用落地",
-          "source": "cio.com.tw",
+          "source": "CIO Taiwan",
           "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBNNFd1eTN6SkxCZlVKXzJzbG5ydXlLUGtxLU9VNUY1Yk8yRTA4RHczNFlqbjVCb1J6Z1M3Tnp3akk2T3NL?oc=5",
           "date": "2026-09-22",
           "summary": "",
@@ -481,17 +507,35 @@
           "dupes": 2
         },
         {
-          "title": "智馭 AI 浪潮，共創企業安全新局",
-          "source": "cio.com.tw",
-          "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9GQkJ1VmJ2OWF4c1RpSEpGMzhsTWVGTWh1UHVSOGx6V3BVZUpIUGF2bFEzTy1sdG9iNVd0OHJfUTN0VlI3?oc=5",
+          "title": "Ricoh Ignite 2026：全新發佈 InnoIX 引入「智慧層」架構助企業邁向 AI 原生營運",
+          "source": "ezone.hk",
+          "link": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxPWDRwNnlCWmR2cmdSYmlvUkdXRzlJaFNxTE5Mbk1ONkVNUGlTTVJzNmFiOC13dGhxeFVaZG55T0U4aUhRMFJaNEp5cVpHbW5wVXB1UFJkQmhCSGFWMUF6X1J4WG95bVRtTTE5ZzRldC16VUdqdGRBU25Ec2djRFd3OW1sNnVXR1hEVHZjWFltVDcxUUpzQ2JPbTVKblp3UVpXbks5UnljTWlmOVZtSElSM1NMZFlXX3Q5aGNVbGNSTERvUm9UMHVuSkRTSFpteE9EMEhETE5uZUx4bWdhXzNMYXdiMm1vUEc0U3FNYW52UFlaSnVFTG95cVdPdzZCZGhfc3RWaXZWSmpBb20xYWY3Nks5UEt5bi1ydm53bE5vblBkaUdDUmNiV2pqcnJ5NTV3STBJMHlRVkhjQ0FlZkhLYzdscGRQem5hdGJhWTZzQzJTVTlOSTZ4M3VBNmJlOXpRVTUxYw?oc=5",
           "date": "2026-09-24",
           "summary": "",
           "body": "",
           "dupes": 2
         },
         {
+          "title": "智馭 AI 浪潮，共創企業安全新局",
+          "source": "iThome",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5YNy1WQ0VmWVE3WVhybHhqZ2VGUWtHdXByY3lacUhqQ3pKektpMkhtQ0hWRjFKajZyaE96MVVkSnlpQU53THc3aTF3OA?oc=5",
+          "date": "2026-09-23",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "AI 革新創意產業工作流程 提升效率同時面臨人才與資安挑戰",
+          "source": "n.yam.com",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5MRWlNeVBHZzdTVFp4WWkzZDFPTUd2NGxCVDNid3ZNdkVhQUVmNnRVNjRrVEhzTjlrUGs5RmdZR2E5RlVmUW5sY1RsX0R0MU9IcFE?oc=5",
+          "date": "2026-09-23",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
           "title": "微軟 DevDays Asia 2026 匯聚全球 AI 創新能量，攜手台灣共創 Agentic 新時代",
-          "source": "cio.com.tw",
+          "source": "CIO Taiwan",
           "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1NOEZwdVotQ21fTlhVYnlaNWFkY3Z6VmtBcjVUbk40UEtQc1lEelRiOGM2QWJ0VFp3b2VYb21ISVptOTN6?oc=5",
           "date": "2026-09-23",
           "summary": "",
@@ -500,18 +544,9 @@
         },
         {
           "title": "智慧方案發表企業級 Agentic AI 管理平台 EgentWrX",
-          "source": "蕃新聞",
+          "source": "n.yam.com",
           "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE44a1F2UGh2SjQteTEzNWJKQl9rYUcwendNS3RyZC1hY2o0YjVlWTFrbVhEblVXLUkwSlF4amg1WHdvaGZUQ0hVTUtobS1nbnZKWHc?oc=5",
           "date": "2026-09-23",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "寫好 Prompt 還不夠：企業私有資料如何安全地與 LLM 對話？",
-          "source": "iThome",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE8wQzloMlRocGRVSjhNVFJMNGd2ZHdIQkVzNzhDY21ZR2JLLTlUNU94OXFleVVHdkJHN2tLRlBRXzVjZUMwa1AyV0tXaw?oc=5",
-          "date": "2026-09-22",
           "summary": "",
           "body": "",
           "dupes": 2
@@ -527,7 +562,7 @@
         },
         {
           "title": "AI助攻傳產突圍！中市助特登工廠從老師傅經驗走向智慧製造",
-          "source": "蕃新聞",
+          "source": "n.yam.com",
           "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA1bUdKR01jc2ZrS1l4QWtodFZzNF9tekVsVU9fcVhiMmRsZUUxdk9fV0VNVlM2cmdPZ3BlWUFnRm95WDJOZ01vZmhjU0hHYTJ5eGc?oc=5",
           "date": "2026-09-21",
           "summary": "",
@@ -544,47 +579,29 @@
           "dupes": 1
         },
         {
+          "title": "科技巨頭搶攻 AI 穿戴裝置，偷拍疑慮與雲端資安成最大絆腳石",
+          "source": "",
+          "link": "https://infosecu.technews.tw/2026/09/27/ai-wearable-devices-privacy-cybersecurity-risks/",
+          "date": "2026-09-27",
+          "summary": "科技巨頭正加速研發新一代 AI 穿戴裝置，從智慧眼鏡到各類隨身配件，這些主打「能看、能聽且能即時回饋」的創新設 […]",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "AI 研發生化武器消滅人類？專家：比起末日幻想，現有病原體威脅性更高",
+          "source": "",
+          "link": "https://technews.tw/2026/09/27/why-ai-isnt-likely-to-wipe-out-humanity-with-bioweapons/",
+          "date": "2026-09-27",
+          "summary": "人工智慧持續提升，外界也開始關注 AI 能否協助設計生物武器。但近期研究與專家討論，多數科學家認為，AI 雖然 […]",
+          "body": "",
+          "dupes": 1
+        },
+        {
           "title": "AI 輔助法律服務興起 責任歸屬與倫理成關鍵",
           "source": "Life 生活網",
           "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPTWtWNWtORDBMN2ZWcThLNy01dnlBRHhsQ041T25TRFJYSkVvLXJ0V2NXbFJjazdxS2xlNlA2OTFQNVZzRnBhOHhtU0Zkd2E5dnNoU1c1VEp6dER1NGhkYW1xR2hNczJsVm1zNDVQbVdfbUlDY1czVUF0NHRXWWU0blJTMzFLaHptZm9ZSGUxaHZvQ0xOdEQ4dlN6bEJCOFVVS0d1VG5hMUJ3dHMyWU9SY2ZISFlSYWJZa3ZicDVXT3V0Z21TZWFONHNyZ3l1Wm9QVHZmdGEwczdxTGxYOTlqbDZFaHRDT2hEbnlIZ0liOXJKRkI5ZTBNeE9xbVA5LWU4SVlScnd4ZUxNRjR6bkJSZ0FkMm1WR0FxR28zMUVfeFBIZEdV?oc=5",
           "date": "2026-09-26",
           "summary": "",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "OpenAI 揭露更多 AI 代理失控行為：曾接觸政府網站並外傳使用者圖片",
-          "source": "",
-          "link": "https://infosecu.technews.tw/2026/09/26/openai-said-its-rogue-ai-agents-accessed-public-data-from-the-sec/",
-          "date": "2026-09-26",
-          "summary": "OpenAI 今日表示，正在擴大檢視旗下 AI 代理訓練與測試期間的網路活動，並已通知數十家機構，稱這些代理可 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "Dell 點名 HDD 缺貨，硬碟供應持續吃緊",
-          "source": "",
-          "link": "https://technews.tw/2026/09/26/dell-highlights-hdd-shortage-hard-drive-supply-remains-tight/",
-          "date": "2026-09-26",
-          "summary": "AI 基礎設施需求持續擴大，帶動 HBM、DRAM 及 HDD 等關鍵零組件需求升溫。市場消息傳出，Dell […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "AI 音樂訓練資料爭議延燒，唱片巨頭再告 Suno「模型洗白」",
-          "source": "",
-          "link": "https://www.inside.com.tw/article/42494-suno-sony-umg-lawsuit-ai-music",
-          "date": "2026-09-26",
-          "summary": "唱片公司再告 AI 音樂平台 Suno，指控其新模型 v6 透過「模型洗白」延續侵權。爭議核心在於，Suno 雖稱從零訓練，但唱片方質疑其訓練資料包含由舊侵權模型生成的內容。",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "餐飲缺工新解方？燒肉品牌彩豚屋雇 AI 當員工",
-          "source": "",
-          "link": "https://technews.tw/2026/09/26/cai-tun-wu-hires-ai-to-help-make-reservations/",
-          "date": "2026-09-26",
-          "summary": "面對餐飲業長期缺工，燒肉品牌彩豚屋替台北林森店請來一位特別的新員工——「AI」。這位 AI 專門負責餐期忙碌、 […]",
           "body": "",
           "dupes": 1
         }
@@ -812,5 +829,6 @@
         "feeds": []
       }
     }
-  ]
+  ],
+  "mailed": "2026-09-28 07:58"
 }
