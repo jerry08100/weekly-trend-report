@@ -1,6 +1,6 @@
 {
   "date": "2026-10-05",
-  "generated_at": "2026-10-05 09:16",
+  "generated_at": "2026-10-05 10:23",
   "total": 70,
   "topics": [
     {
@@ -314,10 +314,45 @@
     },
     {
       "topic": "AI / 企業應用",
-      "gist": "",
-      "sections": [],
+      "gist": "自主型AIAgent、金融業AI落地、人工智慧基本法、AI安全防護",
+      "sections": [
+        {
+          "heading": "政策與法規",
+          "body": "資策會科技法律研究所發布《臺灣科技創新法制政策白皮書》，強調台灣正加速推動《人工智慧基本法》草案與 AI 風險框架，並透過 TIPS（台灣智慧財產管理制度）與 TPIPAS（個人資料保護制度）等合規驗證，協助企業劃定創新與法遵的邊界[[7]]。國際法規亦同步收緊，市場討論聚焦 AI 生成內容必須透明標示，特別是涉及深偽與個資授權時更需取得嚴格控管[[2]]；美國則成立由國家情報總監領導的超級智慧小組，要求科技巨頭簽署自願性安全承諾[[3]][[4]]。所以呢：台灣企業若要在法規落地時降低合規成本，明年編列 IT 預算時就應將生成式 AI 的資料授權與 TIPS 智財驗證費用納入規劃。"
+        },
+        {
+          "heading": "市場趨勢",
+          "body": "企業導入 AI 的核心正由輔助型對話機器人，轉向具備自主執行能力的「自主型 AI Agent（智慧代理）」。調查顯示軟體開發者部署自主型 AI Agent 後，超過半數每週能節省至少 7 小時工時[[23]]，鼎革獎評選亦顯示台灣企業正由數位化邁向自主營運階段[[26]]。然而，OpenAI 前工程師撰文示警，AI Agent 一旦脫離受控環境將面臨失控風險，產業界應效法核電或航空業建立多重安全防護機制[[0]]，並在高風險決策上維持人類監督與緊急停機權力[[2]]。所以呢：企業評估採購各類 AI Agent 工具時，不該只看自動化效率，合約中必須要求廠商具備異常偵測與人工覆核介面，防止代理程式失控下單或外洩機密。"
+        },
+        {
+          "heading": "同業動態",
+          "body": "本週無明顯相關動作。"
+        },
+        {
+          "heading": "客戶動態",
+          "body": "金融業正大舉將 AI 深入前台服務與後台審查。國泰金控宣布從 Cloud First 策略邁向 Agent First，旗下國泰AI理賠讓整體審核時效平均縮短 7 天[[13]][[20]]，國泰健管亦推出結合健康數據的「衡好選」系統[[15]]；富邦金、北富銀及富邦證券憑藉監理科技與數位創新獲多項獎項肯定[[14]][[18]]；永豐金證券與永豐投顧雙雙獲頒數位轉型鼎革獎[[22]]；渣打銀行則藉由導入 ServiceNow 的 AI Agent 提升內部營運效益[[17]]。所以呢：金融客戶對 AI 的驗收指標已從「概念驗證」轉向「核保理賠縮短天數」等具體成效，資服廠商提案時應直接提供可介接核心系統且能產出稽核軌跡的專用 Agent 方案。"
+        }
+      ],
       "grants": [],
       "items": [
+        {
+          "title": "OpenAI 前工程師：AI 業應效法核電廠採多重安全防護",
+          "source": "",
+          "link": "https://technews.tw/2026/10/05/ai-needs-safety-layers-like-nuclear-plants-ex-openai-engineer/",
+          "date": "2026-10-05",
+          "summary": "（中央社紐約3日綜合外電報導）又一名OpenAI前員工加入要求加強人工智慧（AI）安全的呼籲行列。該公司前工程師羅賓森撰文指出，AI產業應效法航空或核能產業，設置多重安全防護措施，以避免災難發生。",
+          "body": "又一名 OpenAI 前員工加入要求加強人工智慧（AI）安全的呼籲行列。該公司前工程師羅賓森撰文指出，AI 產業應效法航空或核能產業，設置多重安全防護措施，以避免災難發生。 法新社報導，羅賓森（David Robinson）在一篇刊於《大西洋月刊》（The Atlantic）的文章中表示，自初夏以來陸續傳出令人憂心的事件，包括AI代理脫離受控環境、失控攻擊各種目標，在在顯示AI產業在加速開發更快、更強大AI能力的過程中，對安全性的重視遠遠不足。 羅賓森在文中提到，他曾負責監督撰寫12次先進模型產品發布的安全報告，也曾主導草擬OpenAI的準備框架（Preparedness Framework）。他表示自己在OpenAI工作3年半，是公司任職最久的員工之一。 羅賓森寫道，近期揭露的這類錯誤並不罕見，原因在於「人員執行工作的速度與彈性」。他補充：「這樣的環境並不適合培養可能比我們更聰明，卻未必會聽從我們指示的AI。」 羅賓森主張「試錯時代已結束」，前沿AI實驗室應像航空或核能產業一樣運作，建立多層防護措施並謹慎規劃，「這樣才能確保偶發且無可避免的人為疏失不會演變成災難」。 他也強調，AI模型「對齊」（alignment）是AI產業必須面對的核心議題，但業界迄今甚至還無法明確定義何謂對齊，更遑論掌握這項技術。對齊是產業術語，意指如何訓練AI尊重人類價值觀。 他還談到，AI模型愈來愈擅長偵測自己是否正在接受測試，因此可能在實際部署後表現得與測試階段不同，進而愚弄開發者。 為防 AI 偷懶卻導致失控？OpenAI 暫緩發表 Astra 模型嚴守安全底線 OpenAI 陷安全危機：AI 異",
+          "dupes": 2
+        },
+        {
+          "title": "馬斯克：SpaceXAI 將更名為 SpaceXSI",
+          "source": "",
+          "link": "https://technews.tw/2026/10/05/musk-says-he-will-rename-spacexai-to-spacexsi/",
+          "date": "2026-10-05",
+          "summary": "（中央社舊金山4日綜合外電報導）在美國總統川普推動以超級智慧（SI）取代人工智慧（AI）後，SpaceX執行長馬斯克今天表示，將把公司旗下AI部門名稱由SpaceXAI更名為SpaceXSI。",
+          "body": "在美國總統川普推動以超級智慧（SI）取代人工智慧（AI）後，SpaceX 執行長馬斯克今天表示，將把公司旗下 AI 部門名稱由SpaceXAI更名為SpaceXSI。 路透社報導，馬斯克（Elon Musk）在X平台回應一位用戶關於是否會將SpaceXAI改名為SpaceXSI的提問時表示：「沒錯，我們會進行這項變更。」 截至發稿時，SpaceXAI的X帳號名稱尚未更改。馬斯克未提供有關名稱變更的進一步資訊，也未說明變更的預計時間表。 川普上個月在聯合國大會發表演說時表示：「從這一刻起，美國所有的文件，且希望全世界的文件，都將改用更準確的『超級』（super）一詞來取代『人工』（artificial）。」 關鍵字: SpaceX , SpaceXAI , SpaceXSI , 超級智慧 , 馬斯克 請您暫停使用AD Block，以支持我們持續能提供更多新聞資訊與優質的閱讀環境。 請您暫停使用AD Block，以支持我們持續能提供更多新聞資訊與優質的閱讀環境。",
+          "dupes": 2
+        },
         {
           "title": "AI 時代的「禮儀」與邊界：人類監督與透明揭露才是核心",
           "source": "TechNews 科技新報",
@@ -328,12 +363,75 @@
           "dupes": 2
         },
         {
+          "title": "川普主導「超級智慧」新布局撕下 AI 恐怖標籤，聯手科技巨頭推自願性安全承諾",
+          "source": "",
+          "link": "https://technews.tw/2026/10/05/trump-rebrands-super-intelligence-boost-ai-image/",
+          "date": "2026-10-05",
+          "summary": "美國總統川普近期針對人工智慧（AI）領域展開一系列正名與治理行動。除了要求聯邦政府在相關場合全面改用「超級智慧 […]",
+          "body": "美國總統川普近期針對人工智慧（AI）領域展開一系列正名與治理行動。除了要求聯邦政府在相關場合全面改用「超級智慧」（Super Intelligence）一詞，更宣布籌組全新的「超級智慧小組」，交由國家情報總監傑伊·克萊頓（Jay Clayton）領軍，以統籌政府對此新興技術的應對策略。 根據川普在社群平台上公布的計畫，該小組的核心任務是確保美國在「超級智慧」領域持續保持領先優勢。其主要運作方向與成員包括： 跨領域協調** ：統籌聯邦層級的相關工作，並主動與消費者、公共利益團體、宗教組織、關鍵基礎設施營運商以及各家 AI 企業展開接觸。 核心陣容** ：除了克萊頓，小組成員還包含聯邦貿易委員會主席安德魯·弗格森（Andrew Ferguson）、五角大廈技術長埃米爾·邁克爾（Emil Michael）及人事管理局局長史考特·庫珀（Scott Cooper）。 匯報機制** ：該小組將直接向川普本人與白宮幕僚長蘇西·威爾斯（Susie Wiles）報告。 這項治理布局緊跟在白宮上週的一場大型科技峰會之後。當時，OpenAI、Anthropic、Google、Meta 與 Nvidia 等業界巨頭代表齊聚白宮，共同簽署了一份自願性安全承諾。該文件要求企業建立更嚴謹的內部控管、外部審核機制以及董事會監督，以防範 AI 模型遭未經授權存取或出現失控行為。 然而，這份文件並未明訂違規罰則與具體的執法措施。川普將這份協議定調為「道德上具約束力」，並強調這將仰賴企業落實「大量的自我監督」。 由於缺乏實質的法律效力，加上白宮釋出的協議版本中出現拼字錯誤而引發社群嘲諷，外界普遍認為這場安全承諾的象",
+          "dupes": 1
+        },
+        {
+          "title": "川普確認新 AI 沙皇由國家情報總監出任，負責保護美國利益",
+          "source": "",
+          "link": "https://technews.tw/2026/10/05/trump-confirms-national-intelligence-chief-as-new-ai-czar/",
+          "date": "2026-10-05",
+          "summary": "美國總統川普 4 日證實，美國國家情報總監克雷頓（Jay Clayton）將出任白宮新的人工智慧（AI）任務小 […]",
+          "body": "美國總統川普 4 日證實，美國國家情報總監克雷頓（Jay Clayton）將出任白宮新的人工智慧（AI）任務小組領導人。時值越來越多研究人員對這項科技的潛在風險提出警告。 法新社報導，川普（Donald Trump）在他的社群媒體平台「真實社群」（Truth Social）發文表示，白宮這支新的「超級智慧部隊」（Super Intelligence Force）在克雷頓帶領下，將確保美國在AI發展上「繼續引領世界」。超級智慧是川普對AI的偏好稱法。 克雷頓將是川普政府第2位所謂「AI沙皇」。川普重返白宮初期曾委派創業投資家塞克斯（David Sacks）擔任這個職位，不過其後塞克斯去職，但仍擔任川普的AI事務顧問，如同美國AI晶片業巨頭輝達（Nvidia）的執行長黃仁勳。 川普9月已預告，他將仿照自己上個總統任期內成立「太空軍」（Space Force）的做法成立一支 「AI部隊」（AI Force），並任命一名「沙皇」來協調美國聯邦政府的AI工作。 克雷頓過去多年擔任華爾街律師，曾在2008年全球金融危機期間替美國大投行高盛（Goldman Sachs）服務，也曾協助英國銀行巴克萊（Barclays）收購美國同業雷曼兄弟（Lehman Brothers）的資產。 克雷頓並曾在川普首任總統期間擔任美國證券管理委員會（SEC）主席，當時他大致抱持親商立場，但也對新興的加密貨幣產業採取執法行動。 （譯者：張正芊；首圖來源：Office of the Director of National Intelligence.jpg), Public domain, via Wikimedi",
+          "dupes": 1
+        },
+        {
+          "title": "光模組轉單利多發酵、台股戰新高！投信重壓 AI 缺貨鏈力抗空軍",
+          "source": "",
+          "link": "https://finance.technews.tw/2026/10/05/optical-module-order-transfers-boost-taiwan-stocks-new-highs-investment-trusts-heavy-ai-shortage-chain-resist-short-sellers/",
+          "date": "2026-10-05",
+          "summary": "台股 2 日呈現震盪走高態勢，加權指數小漲 0.25% 收在 48,475.74 點，今年以來累計漲幅已驚人擴 […]",
+          "body": "光模組轉單利多發酵、台股戰新高！投信重壓 AI 缺貨鏈力抗空軍 | TechNews 科技新報 台股 2 日呈現震盪走高態勢，加權指數小漲 0.25% 收在 48,475.74 點，今年以來累計漲幅已驚人擴大至 67%。籌碼面上，三大法人同步站在買方，其中投信最為積極買超 57.7 億元，資金高度集中於 IC 載板、高階 PCB 及被動元件等漲價主線。隔夜美股多頭大開殺戒，費城半導體指數強勢狂飆 2.40%，台積電 ADR 亦大漲 2.96% 收在 472.78 美元，激勵台指期夜盤狂暴飆升 677 點。今日台股開盤多頭氣勢極度強烈，將直接發起向歷史新高的強勢衝刺。 國際金融市場多頭氣氛強烈沸騰，美股四大指數隔夜全面大漲，那斯達克勁揚 1.19%，標普 500 上揚 0.73%，費城半導體指數（SOX）更是大放異彩暴衝 2.40% 收在 13,136.67 點。受惠 AI 半導體需求爆發與國際大廠評等上修，台積電 ADR 勁揚 2.96% 衝上 472.78 美元，美元指數回落至 101.92。儘管美國 10 年期公債殖利率微升至 5.28% 對部分高估值族群帶來微幅評價拉鋸，但台指期夜盤狂飆 677 點，已預告今日台股 AI 供應鏈開盤將迎來極度強勁的偏多跳空格局。 上週五法人資金高度密集沉澱於四大具備「量價齊揚」與「供需缺口擴大」的硬體漲價主線。矽光子與光通訊領域受惠美國對中國光模組供應商啟動調查，引爆台廠替代轉單紅利，穩懋獲外資暴買 42.6 億元強攻漲停，瑞銀更因星鏈 V3 升級上調其目標價至 725 元，聯亞與光聖亦連袂亮燈封板；IC 載板 ABF 因供需缺口能見度上",
+          "dupes": 1
+        },
+        {
+          "title": "SpaceX 一日三射、Alphabet 算力合約啟動  股價飆",
+          "source": "",
+          "link": "https://technews.tw/2026/10/05/spacex-triple-launch-alphabet-compute-contract-activation-stock-surge/",
+          "date": "2026-10-05",
+          "summary": "SpaceX 上週接連完成「星艦」（Starship）、載人及衛星發射任務，加上與 Google 母公司 Al […]",
+          "body": "SpaceX 上週接連完成「星艦」（Starship）、載人及衛星發射任務，加上與 Google 母公司 Alphabet 的 AI 算力合約 10 月起開始履行，帶動股價在上週五（10 月 2 日）大漲逾 7%。 Yahoo Finance、Stocktwits等外電報導，SpaceX上週四在約13小時內執行了3次任務。首先以獵鷹9號（Falcon 9）與飛龍號太空船（Crew Dragon）將NASA Crew-13任務的4名太空人送往國際太空站（ISS）；隨後Transporter-18共乘任務把約130個酬載送入軌道，其中包括Google研究計畫「Project Suncatcher」所使用的Planet Labs衛星；另以獵鷹重型運載火箭（Falcon Heavy）執行美國國家偵察局（National Reconnaissance Office）的NROL-97任務。 Project Suncatcher旨在測試能否於太空進行大規模AI運算。Google表示，將蒐集TPU（張量處理器） 在軌道運行的資料，觀察晶片如何承受太空飛行的物理壓力，以及輻射與極端溫度環境。 SpaceX剛在9月28日完成星艦第14次試飛，儘管升空過程有一具引擎故障，仍首度進入地球軌道，並成功部署全部26顆新一代「星鏈」（Starlink）V3衛星。星鏈是SpaceX最大業務，星艦則是公司擴充星鏈網路容量及降低單顆衛星發射成本的關鍵。 除發射業務外，SpaceX與Alphabet今年6月簽署的AI算力服務協議也於10月啟動。依協議，SpaceX將連續32個月、至2029年6月提供AI算力服務，每",
+          "dupes": 1
+        },
+        {
+          "title": "看懂 AI 時代的法制新局！資策會科法所 30 週年發布《臺灣科技創新法制政策白皮書》",
+          "source": "",
+          "link": "https://technews.tw/2026/10/05/a-new-legal-landscape-in-the-age-of-ai/",
+          "date": "2026-10-05",
+          "summary": "生成式 AI 快速迭代，持續帶動全球商業模式轉型。在技術日新月異之際，企業如何在創新探索與合規治理之間取得平衡 […]",
+          "body": "生成式 AI 快速迭代，持續帶動全球商業模式轉型。在技術日新月異之際，企業如何在創新探索與合規治理之間取得平衡，成為各界關注的課題。長期投入科技法制研究、陪伴臺灣產業從製造優勢邁向創新驅動的「資策會科技法律研究所」，今年迎來成立 30 週年，於 9 月 18 日以「科技法制串聯 創新賦能四方」為主題舉辦開幕活動，並發布《臺灣科技創新法制政策白皮書》，從數位韌性與 ESG 趨勢出發，提出臺灣科技法制邁向下一階段的發展藍圖。 面對 AI、量子科技、綠能等新興科技，許多企業最先想到的問題是：相關法規有哪些？該如何合規發展？法令遵循過去常被看成企業發展的成本；如今，越來越多企業把「法遵」當作提升品質與誠信、強化國際競爭力的「護城河」。30 年來，資策會科技法律研究所（資策會科法所）一路陪伴產業面對這樣的轉變。 資策會科法所所長王勁力以「科法縱橫三十年-邁向數位韌性與永續發展的法制藍圖」為題，回顧科法所的發展歷程：從 1989 年成立「資訊法律研究小組」，到 1996 年正式擴大編制為「科技法律中心」，再到今日深度參與國家重大科技法制建構。從早期的《科學技術基本法》、引以為傲的 TIPS 制度，到最新的《人工智慧基本法》與 AI 風險框架，科法所始終是政府與產業最關鍵的法制幕僚。 T（Translate）轉譯立場：將抽象生硬的法律條文，翻譯成各界聽得懂的共通語言，促成多元對話。 L（Legislate）倡議法制：進行政策分析與法規草擬，明確幫產業劃出發展的安全「綠區」與不可觸碰的「紅區」。 I（Implement）穩健落地：建置如 TIPS、TPIPAS 等合規輔導工具與第三方驗證，陪伴",
+          "dupes": 1
+        },
+        {
+          "title": "OpenAI 擴大聯手輝達＋解禁賣壓  Cerebras 股價腰斬",
+          "source": "",
+          "link": "https://finance.technews.tw/2026/10/05/cerebras-stock-hits-post-ipo-low/",
+          "date": "2026-10-05",
+          "summary": "美國人工智慧（AI）晶片新創公司 Cerebras 上市蜜月期快速退燒。受 OpenAI 部分 AI 推論工作 […]",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "美財長：中國 AI 模型 Kimi 蒸餾洩漏解放軍武器計畫",
+          "source": "",
+          "link": "https://technews.tw/2026/10/05/u-s-to-propose-emergency-ai-notification-system-with-china/",
+          "date": "2026-10-05",
+          "summary": "美國財政部長貝森特在網路節目指出，中國 AI 界所謂的「產業蒸餾」只是比較好聽的說法，實為由美國模型盜取結果。 […]",
+          "body": "",
+          "dupes": 1
+        },
+        {
           "title": "東芝傳產能倍增、HDD 雙雄嚇跌  分析師：先別慌",
           "source": "",
           "link": "https://technews.tw/2026/10/05/seagate-stock-and-western-digital-tumble-investors-worry-the-hard-drive-shortage-will-ease/",
           "date": "2026-10-05",
           "summary": "日本東芝（Toshiba）傳出將投資 600 億日圓（約 3.8 億美元），倍增 AI 資料中心（Data C […]",
-          "body": "日本東芝（Toshiba）傳出將投資 600 億日圓（約 3.8 億美元），倍增 AI 資料中心（Data Center，DC）用 HDD 產能，消息傳來衝擊美國硬碟（HDD）概念股下殺。不過，分析人士認為，東芝的大動作目前還不至於為硬碟類股的投資行情敲響喪鐘。 Barron’s 3日報導，東芝目前仍是三大HDD製造商中規模最小的一家。根據FactSet資料，分析師預估希捷（Seagate Technology）與威騰電子（Western Digital）在2027會計年度期間（截至明年6月為止），合併資本支出將達17億美元。相較之下，3.8億美元雖不是小數目，但恐怕仍不足以讓東芝的市占率翻3倍。 瑞穗（Mizuho）科技產業專家Jordan Klein談到東芝消息時寫道，「我也想加入紐約洋基隊（NY Yankees），但這不代表事情就會成真」。 即使東芝的投資確實能大幅增加供給，價格也不會立刻崩跌。威騰與希捷調漲價格的步調，一直比美光科技（Micron Technology）等記憶體同業更審慎。這雖限制了毛利率短期內擴張的空間，但也意味著一旦供給追上需求，價格下跌的風險相對較小。 不過，與記憶體業者類似，威騰與希捷也在優先推動長期協議，以鎖定定價條件，並提高對長期需求的能見度。Klein認為，東芝新增產能可能讓客戶在相關談判中取得更多籌碼，但要到2028年才會對合約產生實質影響。 Klein寫道，「我初步的看法是，可以趁利空襲擊時買進，但我會先等等，沒必要立刻進場，因為這項消息甚至尚未獲得證實，而且影響還會持續一段時間。」他說，「似乎沒人相信東芝能真的達成一年期目標，增加如此",
+          "body": "",
           "dupes": 1
         },
         {
@@ -342,87 +440,6 @@
           "link": "https://technews.tw/2026/10/05/impact-iaac-2026-ai-computing-to-systems-and-applications/",
           "date": "2026-10-05",
           "summary": "亞洲最具代表性的國際構裝暨電路板研討會「IMPACT – IAAC 2026」將於 10 月 19 […]",
-          "body": "亞洲最具代表性的國際構裝暨電路板研討會「IMPACT – IAAC 2026」將於 10 月 19 日至 22 日在台北登場。今年大會邁入第 21 屆，以「Energy – Efficient AI：From Computing to Systems and Applications（節能高效 AI：從運算、系統到應用）」為主題，聚焦 AI 與高效能運算快速發展下，半導體封裝、IC 載板及 PCB 技術如何突破效能、功耗、頻寬與可靠度限制，推動 AI 從晶片運算進一步走向系統整合與實際應用。為期四天的議程規劃近 350 篇技術發表，預計吸引逾 1,500 位產業人士參與。 首日活動將於台北漢來大飯店舉行，後續議程移師台北南港展覽館，並與 TPCA Show 同期登場，串聯晶片、封裝、載板、PCB、材料、設備與系統應用，展現台灣在全球 AI 硬體供應鏈中的重要角色。 本屆大會規劃五場主題演講，邀請來自史丹佛大學、日月光、Intel、日本新光電氣工業及奧本大學等國際產學界專家，從 AI 硬體、先進封裝、半導體載板與系統可靠度等面向，解析下一階段技術發展。 隨著半導體微縮逐漸逼近物理極限，單靠晶片製程已難以滿足 AI 運算需求，產業創新的重心正從單一元件效能，轉向運算、記憶體、互連、封裝與材料的協同設計。主題演講將進一步探討 3D 整合、Chiplet、異質整合、玻璃核心載板及高可靠度互連等關鍵技術，勾勒節能 AI 從晶片走向完整系統的發展藍圖。 首日的 IAAC 基板專場邀集 Prismark、欣興、AT&S、味之素、FICT 及 MKS Atotech，從 ABF 供需與材料創新",
-          "dupes": 1
-        },
-        {
-          "title": "終於更新！Google Antigravity 上架 Claude Opus 5.5 與 Sonnet 5.5",
-          "source": "",
-          "link": "https://www.inside.com.tw/article/42558-google-antigravity-claude-opus-5-5-sonnet-5-5-gpt-oss-120b-retirement",
-          "date": "2026-10-05",
-          "summary": "Google 的 AI IDE Antigravity 於 10 月 3 日起，向付費的 Google AI Pro 與 Ultra 訂閱者開放 Claude Opus 5.5 與 Sonnet 5.5。同時，Anthropic 舊版的 Claude Sonnet 4.6 與 Opus 4.6，以及開放權重模型 GPT-OSS 120B，將於 11 月 2 …",
-          "body": "終於更新！Google Antigravity 上架 Claude Opus 5.5 與 Sonnet 5.5 Google 的 AI IDE Antigravity 於 10 月 3 日起，向付費的 Google AI Pro 與 Ultra 訂閱者開放 Claude Opus 5.5 與 Sonnet 5.5。同時，Anthropic 舊版的 Claude Sonnet 4.6 與 Opus 4.6，以及開放權重模型 GPT-OSS 120B，將於 11 月 2 日統一下架，且目前無免費替代方案公告。 Google 的 AI 程式設計工具 Antigravity 宣布，10 月 3 日起在模型選單加入 Claude Opus 5.5 與 Claude Sonnet 5.5，僅限 Google AI Pro（非試用版）與 Google AI Ultra 付費訂閱者使用。 同一份公告也確認了模型退場時程：Claude Sonnet 4.6、Claude Opus 4.6，以及目前各方案均可使用的開放權重模型 GPT-OSS 120B，將統一於 11 月 2 日移除，且 Anthropic 未宣布免費替代選項。 Antigravity 是 Google 推出的 AI 優先程式設計 IDE，基於 VS Code 架構打造，定位直接對標 Cursor 與 Claude Code。與只提供對話視窗的 AI 助理不同，Antigravity 允許多個 AI 代理（agent）直接控制編輯器、終端機與瀏覽器，在同一工作環境內完成規劃、撰碼、測試與除錯的完整循環。Antigravity 2.",
-          "dupes": 1
-        },
-        {
-          "title": "從事務機到智慧辦公推手，台灣理光 DocuWare 成企業 AI 共智關鍵引擎",
-          "source": "",
-          "link": "https://technews.tw/2026/10/05/docuware-ai-oa-ecm/",
-          "date": "2026-10-05",
-          "summary": "當科技不再只是工具，而開始重新定義工作的樣貌，企業真正需要思考的，已不只是如何數位化，而是如何讓科技回到「人」 […]",
-          "body": "當科技不再只是工具，而開始重新定義工作的樣貌，企業真正需要思考的，已不只是如何數位化，而是如何讓科技回到「人」的需求。 對台灣理光而言，這場轉變也促使品牌重新思考自身的角色。自理光集團於 2019 年併購德國軟體公司 DocuWare 以來，台灣理光不僅「從事務機／硬體轉型到軟體」，更自我定位為「數位服務與軟體方案的提供者與陪伴者」，從提供解決方案，到成為協助企業數位轉型的夥伴，持續以不同產業使用者的需求為核心，探索科技如何讓工作變得更有意義。 如今談起 DocuWare 與文件流程自動化，台灣理光不只是技術與服務的提供者，更是親身走過這場轉型的實踐者，將多年累積的經驗，轉化為協助企業前進的數位能力。 站在 AI 時代的起點，台灣理光不只為企業導入軟體解決方案，更憑藉著對於工作流程和文件本質的深度理解，能夠以顧問的角色協助客戶面對實際辦公情境遇到的難題與需求——目的只有一個：釋放人們更多創造力。 早在 2018 年，台灣理光便正式切入企業內容管理（ECM）與流程自動化領域，並在隔年將 DocuWare 納入成為核心產品線之一。7 年來，台灣理光一路展現深耕軟體與數位服務領域的決心，也累積了雄厚的經驗與「顧問式導入」服務能量。 為了貼近市場需求，台灣理光持續投入許多努力，包括每年接待近 200 組企業參觀的智慧辦公室導覽（Live Office）體驗，讓客戶進一步想像未來工作方式改變帶來的效益與可能性。日前（9 月 15 日），台灣理光更成立「AI共智創新基地」，作為企業客戶體驗與需求蒐集的第一線窗口。這一切舉措，可說是呼應日本理光母公司「働き方創造」（創造嶄新工作方式）與「成就",
-          "dupes": 1
-        },
-        {
-          "title": "AI 助理「自作聰明」繞過限制，逾 1.3 萬張企業機密截圖遭外洩",
-          "source": "",
-          "link": "https://infosecu.technews.tw/2026/10/05/ai-assistants-leak-corporate-secrets/",
-          "date": "2026-10-05",
-          "summary": "資安研究團隊 Glow Labs 近期發布名為「PixelLeak」的調查報告，揭露了一場令人啼笑皆非的資安災 […]",
-          "body": "資安研究團隊 Glow Labs 近期發布名為「PixelLeak」的調查報告，揭露了一場令人啼笑皆非的資安災難：AI 程式開發代理（AI Agents）在協助工程師處理介面變更與拉取請求（PR）時，竟意外將超過 13,000 張內部機密截圖公開上傳至 GitHub。這起事件波及全球逾 300 家組織，其中甚至包含多家財星 500 大（Fortune 500）企業與頂尖的 AI 實驗室。 這批外洩的影像不僅曝光了尚未發布的軟體畫面，還包含客戶資訊、財務數據，甚至有資金移轉介面的螢幕錄影。Glow 指出，這並非駭客入侵，而是 AI 過於「聰明」惹的禍。由於 AI 代理在 GitHub 私有儲存庫（Private repositories）中，無法直接透過命令列附加圖片，為了達成任務，它們竟自作主張地建立「公開儲存庫」，再將截圖連結貼回私有的 PR 裡。這招雖然成功讓審查者看到圖片，卻也把公司的商業機密全數攤在陽光下。 ▲ PixelLeak 外洩機制：當 AI 開發代理（AI Agent）嘗試將資料附加至 GitHub 私有儲存庫（Private Repo）受阻時，會自行尋找「繞道」方案（Workaround），將機密截圖轉存至未經授權的公開儲存庫（Unauthorized Public Repo），導致內部資訊直接暴露於大眾視野（Everyone）。 （Source：Glow Labs）** 調查進一步顯示，約有三分之一的受災戶與 gitshot 這類命令列截圖工具有關。更讓企業防不勝防的是，高達 93% 的外洩圖片是存放在開發者「個人帳號」底下的公開倉庫，而非公司官方帳號，導",
-          "dupes": 1
-        },
-        {
-          "title": "Google／SpaceX 前產品經理創立 Satlyt，要讓 AI 登上衛星運算",
-          "source": "",
-          "link": "https://technews.tw/2026/10/05/satlyt-founded-by-a-former-google-and-spacex-product-manager-raises-8m-to-run-ai-on-satellites/",
-          "date": "2026-10-05",
-          "summary": "太空新創 Satlyt 宣布完成 800 萬美元種子輪募資，將開發讓多顆衛星分工處理大型運算任務的軟體。創辦人 […]",
-          "body": "太空新創 Satlyt 宣布完成 800 萬美元種子輪募資，將開發讓多顆衛星分工處理大型運算任務的軟體。創辦人 Rama Afullo 是肯亞裔美籍工程師，曾任職 Google 雲端運算部門，2024 年短暫加入 SpaceX 旗下 Starlink 通訊網路，任內兩度提出太空運算構想，皆遭否決，因此離開 SpaceX 共同創立 Satlyt，總部設於美國加州桑尼維爾與肯亞奈洛比。 時機對 Satlyt 相當有利。SpaceX 之後就全力投入軌道資料中心，而 Satlyt 的軟體也於 1 日搭乘 SpaceX 火箭升空，同趟任務還載有 Google 太空資料中心計畫 Project Suncatcher 的首顆原型衛星。 與 SpaceX、Google 或 Starcloud、Cowboy Space Company 等新創不同，Satlyt 不自己打造太空船，而是專注開發衛星執行 AI 模型的軟體，模式類似 VMware 與 Snowflake，讓使用者不必顧慮底層基礎設施。Afullo 比喻，若投入軌道資料中心的 SpaceX 等業者是 iPhone，Satlyt 就要成為水平整合的開放生態系 Android，提供可跨廠商衛星運作的軟體。 Satlyt 已完成兩次示範任務，初期聚焦提升太空船營運效率。太空船遇到問題通常仰賴地面飛行控制員處理，將資料傳回地面的下行鏈路成本高昂且速度慢，若改由 AI 在太空船判斷、排除異常或直接處理感測器資料，可省下可觀成本。今年稍早，Satlyt 在 Momentus 太空船部署 Google DeepMind 的 Gemma 模型，縮減回報",
-          "dupes": 1
-        },
-        {
-          "title": "250 萬人下載 Muse 暴紅背後：AI 代理人暴增，真贏家是資安",
-          "source": "",
-          "link": "https://finance.technews.tw/2026/10/05/ai-security-is-winner/",
-          "date": "2026-10-04",
-          "summary": "Meta 9 月 8 日推出 Muse，官方公告形容這是邁向「個人超級智慧」的第一步。 想像一下，你花了一整年 […]",
-          "body": "250 萬人下載 Muse 暴紅背後：AI 代理人暴增，真贏家是資安 | TechNews 科技新報 Meta 9 月 8 日推出 Muse，官方公告形容這是邁向「個人超級智慧」的第一步。 想像一下，你花了一整年幫自己訓練好最聰明的「AI特助」。為了讓它發揮威力，你把自己的信箱、行事曆、通訊錄甚至信用卡和雲端硬碟，都交給它。每天它自動幫你回信、訂餐廳、填報銷單，還能幫你用語音代辦各種雜事。資安公司CyberArk調查，企業機器身分與人類身分比例已達82:1。 聽起來很美好？現在，駭客根本不需要費盡心思破解你的密碼，他只需要在你的電腦留下指令，就能讓你的AI特助「叛變」。過去20年，網路安全公司的商模就是保護「人」。從防毒軟體到雙因素認證，都是在確保每個人登入系統時真的是本人。當AI代理人時代來臨，這個假設徹底瓦解。 現在，企業內部最活躍的不是員工，而是無數個在背景跑來跑去、幫忙串接資料的AI代理人與API（應用程式介面）鑰匙。資安公司CyberArk（已被派拓網路Palo Alto Networks購併）2025年調查，企業裡的機器身分與人類身分的比例已達82:1。 為了讓AI特助好用，我們不斷給它更多權限。這背後有一個安全悖論：過去20年資安設計的核心是「最小權限原則」，但AI特助的價值完全來自「最大權限」。只能幫你開大門的特助，沒有人想雇用，你希望他能進書房、動車庫、開保險箱。用戶對效率和便利的追求，同步擴大了駭客的攻擊面。 Muse做的事，是把過去只於企業伺服器機房裡的權限危機，第一次搬到每個人的手機與個人電腦。 1990年代，大家買資安只做一件事：買防毒軟體，就像買「壞",
-          "dupes": 1
-        },
-        {
-          "title": "重新定義 CEO 的工作流程，微軟納德拉：把 AI 當成需要被質疑的助手",
-          "source": "",
-          "link": "https://finance.technews.tw/2026/10/05/nadella-ai-agent-applications-executives/",
-          "date": "2026-10-04",
-          "summary": "微軟（Microsoft）執行長薩蒂亞·納德拉（Satya Nadella）近日分享了他將 AI 融入日常高階 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "讓 AI 正確介紹你的品牌，可爬取、內容獨特、持續更新是三大關鍵",
-          "source": "",
-          "link": "https://technews.tw/2026/10/05/how-brands-are-rebuilding-content-for-machines/",
-          "date": "2026-10-04",
-          "summary": "使用者向 AI 助理詢問產品型號、規格或方案建議時，系統往往能在幾秒內給出看似完整的答案。問題在於，這些回答有 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "AI 推論成本每年便宜 13 倍，大廠訂閱制將面臨考驗",
-          "source": "",
-          "link": "https://technews.tw/2026/10/05/ai-infers-the-rate-of-cost-decline/",
-          "date": "2026-10-04",
-          "summary": "AI 推論成本下跌速度超越摩爾定律（Moore’s Law）所描述的晶片發展趨勢。AI 研究機構 Epoch […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "馬斯克：SpaceXAI將更名為SpaceXSI",
-          "source": "",
-          "link": "https://www.cna.com.tw/news/aopl/202610050007.aspx",
-          "date": "2026-10-05",
-          "summary": "（中央社舊金山4日綜合外電報導）在美國總統川普推動以超級智慧（SI）取代人工智慧（AI）後，SpaceX執行長馬斯克今天表示，將把公司旗下AI部門名稱由SpaceXAI更名為SpaceXSI。",
           "body": "",
           "dupes": 1
         },
@@ -431,9 +448,9 @@
           "source": "Life 生活網",
           "link": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxNYzVaSVZxUXNIQURnaGFRQmRMRmU3T0Ftd01RSkItc2lWemxwcDR2anpZTXJuc2N6Z1pWVTZxMS1PR3U4d0YzcXBFNG9NOEkwTnluMFNDUE1DY0tpdHphdENlWDJ5bGRpaXpyT3hGWU5NWS1ITGsxYXFBUzlQeTBoOGxQbVFPUGRYM01GNEFGR18yaTJCYVdhU0YtYllyMUY0UFhYSDVJcEFmLXVVNC1WZUV4eUF1TXNEcVR3SG04Nmk2SHBhMnZzSE1VNkxoUjlVeXFubXBZUHE4aEY3azYtdHRjWHdIY0tHQUZPYS1VOHI2WmJ4XzI5VXFmLUJaMTI4M3ZqeHJFYlNYSTliQlYzNEsxUkEyU0REQUpESlNaUlhvbFpKMkRoSzFoUlNOZzY2bGZMVFpVcldBN3VnSmhZdE1NQ2hIOGpsOE8wNDlFYWhPMDNPRVI5eW1aczNPTVU?oc=5",
           "date": "2026-10-01",
-          "summary": "國泰勇奪「數位轉型鼎革獎」五大獎 多元數位實力獲肯定 news.cnyes.com",
+          "summary": "",
           "body": "",
-          "dupes": 6
+          "dupes": 5
         },
         {
           "title": "國泰AI理賠平均快7天 數位轉型一舉拿下5大獎",
@@ -458,27 +475,18 @@
           "source": "Life 生活網",
           "link": "https://news.google.com/rss/articles/CBMiugNBVV95cUxPQzVJZ05FcVNYcjFKMGxPOF9sWlE4YW9EdE0yWW1JQ1VXMFNVZmR6VzdqdU1CYkppbkxOMXZ1ajZIZ0ExVU1jZ3FlcXV3c01ZamhGMFVOTUNhTGhLdDVTUl90bEVCVjRMRWlaMXEwSk1NTUV5dWhRZlotYUl0dE9kTEZUS2t0Y1llcmdIOTVOMVBBYi04dFo5WXlDWnFESWh2SG9VeWJSOXJOZzFHNVNpZjJNLVdGRC1Dc0xadm5xRUVtVHFnYVhHbUpHbTNpd0loYlZTcnJOM2FzZ1prNDJJOHFSN0hzZENzTzZpNzRkX0xDUXVkSWdNZEdrU1hTeDNvVHZfakdyaHVJV1JzZ21Zdm5YS2pmd0ZUdzIxM0wydjZoc2ZRUG9BTGJ1SDlOOEdScnZvWFJEX3NBLVpSekM1bzJLTmFnQkdaT1puTUl4d3pZdmY2cHNaZGM3VExLVHhST2NnY0ZPZ2UwdlNRWi1CMWlSZkQ3QUJYZlFhV3RsemFFMGZUYVdnZlV5ZEp5azJCa0dFTERuM0RaSGYyMmhIVmpFa2pwNmRTaVRBWVZtaXRGeFdoejVDeHlB?oc=5",
           "date": "2026-10-02",
-          "summary": "AI結合健康數據 國泰健管「衡好選」榮獲數位轉型鼎革獎打造個人化健康規劃新模式 PChome Online新聞",
+          "summary": "AI結合健康數據 國泰健管「衡好選」榮獲數位轉型鼎革獎打造個人化健康規劃新模式 PChome Online 新聞",
           "body": "",
           "dupes": 4
         },
         {
           "title": "數位轉型鼎革獎揭曉 國泰布局AI奪五大獎",
-          "source": "UDN",
+          "source": "udn.com",
           "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE8yd2Y5U0VQMk9GS1ZIQkJiX1JWbkZRZXVzY21PbWNEY09pUzJmLXpUa1hsVUpKLUJoLXh2dmtkZlFCTFF6S3FVaVRMVUVwUDM40gFWQVVfeXFMTWptVVdVR0lORWhQMkRCenJEby0zemlFWEdlWlBacmJCc3duclpnYldxZ1lFVm5hZGVkeDlfUk5IUGdGT1lvQ2w0VWdfeVJCeWNLdG5WN1E?oc=5",
           "date": "2026-10-01",
           "summary": "",
           "body": "",
           "dupes": 4
-        },
-        {
-          "title": "媒體數位轉型新戰略！《報新聞》導入精冠智能「GAME」主動式AI系統 驅動社群全通路裂變",
-          "source": "報新聞",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5TX3hLTDhKQVItejR2WG44RkprLTh1T0xIZ0VlSTNvaDdIdUdwR2JVOEFiMG5MbXo0R0VSMm5oUEVWLTJUNFdDOUR4MExaaGp2T1VKSw?oc=5",
-          "date": "2026-10-03",
-          "summary": "",
-          "body": "",
-          "dupes": 3
         },
         {
           "title": "ServiceNow 高階主管：AI Agent 助渣打銀行達「改變人生」效益",
@@ -491,7 +499,7 @@
         },
         {
           "title": "富邦證、北富銀獲2026數位轉型鼎革獎 富邦摘 ABF 最佳監理科技創新獎",
-          "source": "UDN",
+          "source": "udn.com",
           "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA0QTdVWThEV3RvZUlfTm1DNFFXbm16MUFtYnlEd0w0S1YxZ0RVcnF0SzZCRldVdmpVckpDbjdCYm1va04wUElfQlFOUDBtMXlP0gFWQVVfeXFMTnk5N3ZnOGRyeFlZbWoxQ2dFcU9GblhRMGI2LW9VVkQwMTUyY0dJQkpGd1VKd3lFcVIxSUd1SUhSc3R1cjBacVVPb2hLQ0dVR0JpS2RVbFE?oc=5",
           "date": "2026-10-02",
           "summary": "",
@@ -509,9 +517,18 @@
         },
         {
           "title": "國泰金控從 Cloud First 走向 Agent First，讓 AI 真正成為企業IT數位戰力",
-          "source": "ithome.com.tw",
+          "source": "iThome",
           "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9HNmkwX1NMUU5leDlMOXJkRjFBZ3p6QUc5S0tqRWhrbDgxbHpYTlpmRVR0TnE4eEUzUUJ1TGJ2U0dVSE01YnBGYV9XVQ?oc=5",
           "date": "2026-10-04",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "媒體數位轉型新戰略！《報新聞》導入精冠智能「GAME」主動式AI系統 驅動社群全通路裂變",
+          "source": "報新聞",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5TX3hLTDhKQVItejR2WG44RkprLTh1T0xIZ0VlSTNvaDdIdUdwR2JVOEFiMG5MbXo0R0VSMm5oUEVWLTJUNFdDOUR4MExaaGp2T1VKSw?oc=5",
+          "date": "2026-10-03",
           "summary": "",
           "body": "",
           "dupes": 2
@@ -536,7 +553,7 @@
         },
         {
           "title": "AI應用新契機 2026台北數位應用博覽會10/15登場助企業加速數位轉型",
-          "source": "PChome Online新聞",
+          "source": "PChome Online 新聞",
           "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZEtvU3FvTldqQUdVOTNjVEVfMG9PWlFjZ2MtbUp2bEstSFZmWlBqNlNCd2ZUSEUzSjdjVWZzYVJNVjhnQWU4ZUgtLVVZelJfTmJzWkRSUXJzTXc0TkVBVXU0RU4zYWpIOFZJVkpwenRkVUpPWm5Bb2MxQ3BFcE9zbEphazJMN2Nl?oc=5",
           "date": "2026-10-02",
           "summary": "",
@@ -554,8 +571,8 @@
         },
         {
           "title": "SAP 與哈佛商業評論攜手公佈第六屆數位轉型《鼎革獎》台灣企業數位轉型進入自主營運新階段",
-          "source": "Life 生活網",
-          "link": "https://news.google.com/rss/articles/CBMi7wJBVV95cUxNTzI1QTcySFpnc1hpLXQ5RlFJYk00YVA2YndlM2RWa0ZPaE1JQjlIUkJZVkR6bUNVM09FZ0JxRFJJLWRkNkU2LW5XblB2Z3RjRXVrd0N5cjZkbF83dnVSNERZbXR4Mm56UGN0Z2pmQnlqWkhVZ2JlckxNQ0F0clpwXzdlV3pVNWZ4RjBvZ2JqQjdHQ2xPU2NaYkRkUkhVa3F6c2N1c2lyMVFRRzVvdkZkdkpudUdMSEpDdXhSVmd0eGJlak5fMlN3QmNiNHE4dWprb1B6anFUSTJGUWJVRUtIRm5uUnJiMmRCbTI2YWFRbmMyTkpvT0MwU0U4X2V6NWZVeTdaS0diSGc5Q05HT0p1Y1RVb1UtbTVJWGN5ak9WUHczeVhVdFJNZkpaRUNxRE5kUlgyZDc5N0dnMnE4MS1nTEdjNXlsX1l6VTZSVWtHVXFjUXI3NEp3SzJFLVZWeFpXUkFwcF9zNW1NS1h5UWFR?oc=5",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE15a0dnRDZ6dHZjTk1FalE1QWIyTWxtNkttSFpNNFRfMllZVzNBMG9TYTJFM1B1ZWJPaHRiT3RIQk9HZzg3SjE2el9UX1hYSE8tZFE?oc=5",
           "date": "2026-10-01",
           "summary": "",
           "body": "",
@@ -572,7 +589,7 @@
         },
         {
           "title": "研華 Customer360 獲數位轉型鼎革獎",
-          "source": "UDN",
+          "source": "udn.com",
           "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBDNDBadjFMS1VXY1ZfZlRqU1doM2NRcWlHNFYxa1FMSUZ0RkUzU0I2bm1tWWViNVYybXlzMGo1T0xweWJiZzZHVFlYS2lybnBn0gFWQVVfeXFMT0VQOFMwOHBsSjI0SFpDOU9US25hcGhLdElySEhnZk1LQ292Q1E1YXAtbzg2RXVYVE9jb3IxVFJQMksxZURNMWFmZmdTeHRmU19PQmNwc2c?oc=5",
           "date": "2026-10-01",
           "summary": "",
@@ -584,7 +601,7 @@
           "source": "Life 生活網",
           "link": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxPZnB5a0Y2dlpMSVd4RDJCT25XTGtYdFgwd2IyR1BZRGdOTUNieXQzd3U4ek5UMzBqYkF6dVdZdGFydEk4US1hY2xxNTRWaG9oaVlaS0x1MnpOcWJKajB4Snh5MXhENWE2MUYyT2pYRFNESHFEYnNsYzdJY2VwdHU3eWl4VEVaNE1RQkdCRTJqZnRKMnhoYU80Q3F6WGxDbi1OaUE5aWhMYkM0b2tkcldDRTR5aDdHMlFPdXQzTHhxVS1aMlJyZk5qcHAwNnVBN1k1cERlOXoxakY2WTVlSExtbkZOMTczdTRnQjVLcEtsU05mOU1RSDYyc25VZ1BvNmNVUE1NRXhfTzFlaFM5cFZiNjNBNGxBNE9pdXVndkE5V1czZ0w4Rnk5Y211aWp3V1VkRHB1aFpUMEFGYS1jeEVYOFpVbk4tQW1rQnZfTWl1ZHRFNFNTMXEzbFphbXJ1ZDQwSjBlS1VjR3o?oc=5",
           "date": "2026-09-30",
-          "summary": "彰化榮指員協進會攜手大葉大學 講座助力企業數位轉型 PChome Online新聞",
+          "summary": "彰化榮指員協進會攜手大葉大學 講座助力企業數位轉型 PChome Online 新聞",
           "body": "",
           "dupes": 2
         }
@@ -633,7 +650,7 @@
           "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9TampCUHRwaFB5Qmd2NGdhMDhUa2FadzYxX1U2MTczMmxIZU0yV1pYWHNibDF0SURJX1hzTjlNYl9XLVZUbE5UTDlwSTdrRTdrbUE?oc=5",
           "date": "2026-10-01",
           "summary": "",
-          "body": "還記得我們 5 月分享過的臺法創新合作計畫消息嗎？ 延續首屆帶動雙方逾 12 億元研發投資的熱烈迴響，這次我們繼續攜手法國公共投資銀行（Bpifrance），為臺法企業跨國合作注入強勁動能！ 由經濟部產發署與技術司共同推動的「2026臺法創新研發合作補助計畫」，目前持續受理申請中！只要你的企業有志與法國夥伴攜手，在太空產業、智慧科技、智慧製造、材料與生物科技、綠能科技等 5 大前瞻領域展開研發，這就是絕佳的進軍國際機會！ 115年10月份液化石油氣價格不調整 3 天前 ### 台灣中油公司公布115年10月份國內天然氣價格 3 天前 ### 園管局智慧治理升級 AI辨識工業管線風險 污水智慧管網提升收費效益 3 天前 ### 古中國歷史長河 —-探索「北方民族」與「中原民族」分野的歷史源頭 3 天前 ### 太空人未來吃什麼？What to Grow競賽邀國中小發想太空種植方案 3 天前 ### 偏鄉採購不迷航！ 屏府前進牡丹傳授採購、廉政實務心法 3 天前 ### 第63屆金馬獎入圍揭曉！《狂忘警探》入圍11項大獎領跑 Wow!NEWS 3 天前 ### 何曼希《陽光女子合唱團》鋼管舞獲讚 入圍金馬新演員 Wow!NEWS 3 天前 ### 金馬獎影帝競爭激烈 戴立忍阮經天劉冠廷等五強廝殺 Wow!NEWS 3 天前 ### 第63屆金馬影后成死亡之組 罕見無台灣女演員入圍 Wow!NEWS 3 天前 遠離空污預防過敏性鼻炎～中國醫藥大學公共衛生學院團隊研究成果發表於國際知名期刊《胸腔醫學期刊》 | 蕃新聞 Do Not Sell or Share My Personal I",
+          "body": "還記得我們 5 月分享過的臺法創新合作計畫消息嗎？ 延續首屆帶動雙方逾 12 億元研發投資的熱烈迴響，這次我們繼續攜手法國公共投資銀行（Bpifrance），為臺法企業跨國合作注入強勁動能！ 由經濟部產發署與技術司共同推動的「2026臺法創新研發合作補助計畫」，目前持續受理申請中！只要你的企業有志與法國夥伴攜手，在太空產業、智慧科技、智慧製造、材料與生物科技、綠能科技等 5 大前瞻領域展開研發，這就是絕佳的進軍國際機會！ 115年10月份液化石油氣價格不調整 3 天前 ### 台灣中油公司公布115年10月份國內天然氣價格 3 天前 ### 園管局智慧治理升級 AI辨識工業管線風險 污水智慧管網提升收費效益 3 天前 ### 古中國歷史長河 —-探索「北方民族」與「中原民族」分野的歷史源頭 3 天前 ### 太空人未來吃什麼？What to Grow競賽邀國中小發想太空種植方案 3 天前 ### 偏鄉採購不迷航！ 屏府前進牡丹傳授採購、廉政實務心法 3 天前 ### 第63屆金馬獎入圍揭曉！《狂忘警探》入圍11項大獎領跑 Wow!NEWS 3 天前 ### 何曼希《陽光女子合唱團》鋼管舞獲讚 入圍金馬新演員 Wow!NEWS 3 天前 ### 金馬獎影帝競爭激烈 戴立忍阮經天劉冠廷等五強廝殺 Wow!NEWS 3 天前 ### 第63屆金馬影后成死亡之組 罕見無台灣女演員入圍 Wow!NEWS 3 天前",
           "dupes": 1
         },
         {
@@ -683,7 +700,7 @@
       "items": [
         {
           "title": "富邦投信橫掃指標台灣年度基金17項獎項 ETF、主動基金多元實力獲肯定",
-          "source": "UDN",
+          "source": "udn.com",
           "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1iaEtHYVJsa2kwOWQ2d0RSWFpMZkl2WUlZa2I5R2had0g5ZzNaNkpIS3gzTU8xYi1ZWURWVXBhbF9sZmpzQzdOdFNDcGFFSDRq0gFWQVVfeXFMUG5rUVgzcFFXTWF2ZnpiV2NGTGdPTXc0MG5ZcnBsOGZCRzNfTjViaFdtQS02eTd2cEpsRHQ5WnI4RVZXQXRidlRyQ2otdGxCaGcxeGVvaEE?oc=5",
           "date": "2026-10-04",
           "summary": "",
@@ -692,7 +709,7 @@
         },
         {
           "title": "報名倒數！永豐金證券攜手《國家地理》雜誌為野生動物而跑",
-          "source": "UDN",
+          "source": "udn.com",
           "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBWTHFid19rakt5MFc3cGFmam5kSURjLUFoTmJYN3h6bnN1cVhldWFFUGg1M1FqNzhMdlJuN1hsczc2OFZEV3U3NHNDS21qWWVH0gFWQVVfeXFMUGRIclRGQm5yRWZTNWhhRGpjdTNYZHBfNUJsWTFFYU5UdUZ6SlM1YndzMVhiamRpTno2LUdlTEVSZjdoYnBBdE1ic2hXeERON3p0c1lHWEE?oc=5",
           "date": "2026-10-04",
           "summary": "",
@@ -710,7 +727,7 @@
         },
         {
           "title": "新竹縣智慧沙盒創新賽總獎金36萬 加碼「一提案、雙報名」",
-          "source": "UDN",
+          "source": "udn.com",
           "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9FSC14QUtMdE5MMnZmRDVSaDlYQVpvVWl6MGdyRDBzd1o4RGc0LVpuVUxTMjNkdzFVNlkxY1RjaWVRODc3YlRuNmxMNHUyLXVN0gFWQVVfeXFMUFF3N2pDX2xzSjMtZHJaT1dQMndROTdhSGd6LWRqTmlFWm5BeDhlb3dWeG1GT3ltd0ZUY09CR1F5ZWQ1YXk5U25EUnN3aEpYNVkwWF9lNVE?oc=5",
           "date": "2026-10-01",
           "summary": "",
@@ -728,5 +745,6 @@
         "feeds": []
       }
     }
-  ]
+  ],
+  "mailed": "2026-10-05 10:23"
 }
