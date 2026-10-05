@@ -1,12 +1,29 @@
 {
   "date": "2026-10-05",
-  "generated_at": "2026-10-05 08:13",
-  "total": 71,
+  "generated_at": "2026-10-05 09:16",
+  "total": 70,
   "topics": [
     {
       "topic": "永續 / 企業實務",
-      "gist": "",
-      "sections": [],
+      "gist": "綠電4時段月結、IFRS S2智慧判讀、金融業ESG評比、碳中和查證實務",
+      "sections": [
+        {
+          "heading": "政策與法規",
+          "body": "台電宣布10月起推行綠電轉供新制，將現行「綠電市場彈性分配試行計畫」每15分鐘發用電匹配，簡化為尖峰、離峰等4個時間電價時段的月結機制，單一法人與再生能源售電業可跨廠區自由調配轉供量，將各電號每月資料處理量從2880筆驟降至4筆[[1]]。另一方面，行政院核安會完成核三廠再運轉計畫審查並通過589項意見，但台電仍須補足設備老化與耐震安全評估報告，並經現場查證才具備實質重啟條件[[4]]。所以呢，多廠區製造業本月起應立即重新指派各廠綠電分配比例，降低餘電損耗與行政報表作業成本。"
+        },
+        {
+          "heading": "市場趨勢",
+          "body": "碳管理與財務揭露正由人工核對走向自動化工具化。政大永續中心推出AI語意辨識的「Sustain FRE永續財務資訊揭露智慧判讀系統」，依據TCFD與IFRS S2準則自動檢查企業永續報告書缺失，防範「漂綠」風險，並與安永會計師事務所及致茂科技合作，同時發表「C-PVM產品碳足跡系統」以降低產線盤查成本，獲近200家企業導入[[2]][[19]][[20]]。國際查證規範亦出現升級，期交所通過ISO 14068-1碳中和查證，代表驗證標準從傳統碳抵換進一步提升為實質減量優先的嚴格規範[[21]]。所以呢，企業明年編列永續預算時，應將碳盤查軟體系統化與最新ISO 14068-1外部查證費用納入經常性支出。"
+        },
+        {
+          "heading": "同業動態",
+          "body": "本週無明顯相關動作。"
+        },
+        {
+          "heading": "客戶動態",
+          "body": "本週金融業焦點集中於年度永續評比表現。富邦金控拿下「天下永續公民獎」金融業第一名並入選人才永續獎，展現低碳轉型與AI防詐成果[[9]][[14]]；國泰金控同獲該獎肯定，揭露綠色投融資累計金額已達726億元[[15]][[16]]。永豐金控亦獲選天下永續公民獎，顯現大型機構對淨零策略的推動力度[[28]]。所以呢，高碳排供應鏈今年第四季向公股與民營金控申請專案融資時，勢必被嚴格審查投融資碳排盤查數據，必須提前備齊ISO 14064-1盤查與減碳路徑佐證文件。"
+        }
+      ],
       "grants": [],
       "items": [
         {
@@ -122,7 +139,7 @@
           "source": "民眾新聞網",
           "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5nYTdjZGF0R2JqT25lNTJGaWd2TGFteVdhR0dSSnF5WDJ3Rk5hYlMyMkttZXhkTHZTMldMQTFweTNsbEdINS1OTnNrQ05LcXQyOWFB?oc=5",
           "date": "2026-10-02",
-          "summary": "企業拚減碳 新北8企業接受輔導、30學員全數取證 scooptw.com",
+          "summary": "",
           "body": "",
           "dupes": 3
         },
@@ -137,7 +154,7 @@
         },
         {
           "title": "【廣編】富邦金控獲「天下永續公民獎」金融業第一！低碳、人才、AI防詐展現金融影響力",
-          "source": "finance.ettoday.net",
+          "source": "ETtoday財經雲",
           "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE12WmJuSlc2STJMUHB6d2pIY1V5d2VkcElMcDhZbUhKb25WXzFqeElBY0xnYXpNa2s2R2J3Vkl6LTRiYzMtY0luV2IybEJmeVlnZ3fSAVBBVV95cUxNc1ZTMHJmZXVQQVhrc0ZmVW04VkJFbm5UYWJ0TWcta0lPYmZGd3dCa3l4T2pjRXJTM3ZvUkJzQmowOVQwbE1UWXlEWXZ2X1ZOTg?oc=5",
           "date": "2026-10-01",
           "summary": "",
@@ -157,15 +174,6 @@
           "title": "永續金融推動低碳轉型　國泰金控2026再獲「天下永續公民獎」肯定　健康促進與青年培力展成效　綠色投融資累計達726億元 | 生活 | CTWANT",
           "source": "CTWANT",
           "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBBdG5oVkFpZTFSMTV3M2VTV0VpQU1TWEdXcHdPUFhENlNjQXRLTGVTRHozakNoeG0ycmxXVFZpQTdoQ2RaZ09MUExGUmllNVXSAVRBVV95cUxQV096aXhvWGowNGNudHF3VnFZdGdhd0x5WXlkODF0dGVKcmFyQ1dySG9LaEJoTXBKcHBNRU05akdlMVh2QnRRcmRfVV9veVB0aU01Z08?oc=5",
-          "date": "2026-09-30",
-          "summary": "",
-          "body": "",
-          "dupes": 3
-        },
-        {
-          "title": "2026台灣國際淨零永續展與台灣國際智慧能源週聚焦製造低碳轉型- 商情",
-          "source": "ctee.com.tw",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE83WEFDcFRYR0NPdl9VX1U2bmJ6Qngyclc2Nmc5bWlDMmxKbzVhNGZhZWN0T3lTbUtJMVpIZ1pnMEZtREc1UlM4aDFaTVhOMHY5eXVmc1BWUVhNQVJwZ05N?oc=5",
           "date": "2026-09-30",
           "summary": "",
           "body": "",
@@ -218,10 +226,10 @@
         },
         {
           "title": "綠領職缺10年翻3倍！企業如何佈局AI與淨零永續人才？",
-          "source": "blog.104.com.tw",
+          "source": "104職場力",
           "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE8zQV9TbnhXSXFoS0RpeC13c3FzN0FGWkEycVJKaFRjVlhUc1JxbWdoeVM5RFlzM3U3dmxNd2xybDVJZUQ0VkZZUGNPMkV6Qk5GNGN3Z2pacnVYUGNQ?oc=5",
           "date": "2026-10-02",
-          "summary": "綠領職缺10年翻3倍！企業如何佈局AI與淨零永續人才？ blog.104.com.tw",
+          "summary": "",
           "body": "",
           "dupes": 2
         },
@@ -253,11 +261,20 @@
           "dupes": 2
         },
         {
+          "title": "2026「台灣國際淨零永續展」與「台灣國際智慧能源週」即將登場",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE54cWVUREtVSHRvUm5hd3VsZzBGZEd5cGtKa3dxdW9ENzlEbHlQa3VMem5NX1dpdTFkcUtoa3F6WFVzdkJZeGh1NE9hbVhxb1ZJNkE?oc=5",
+          "date": "2026-10-01",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
           "title": "台灣大跨足企業綠電市場 籌設再生能源售電公司",
-          "source": "放言Fount Media",
+          "source": "fountmedia.io",
           "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1ENEJSVWwzTkFyVGRLcDBkekM5VWQ5Ni1reTl0R3BudERiNEFaQnBGN3Fpd3IxVkkyMHY2X1JIdWVsM1dXWWtfd0VkN2tjWGtvX3c?oc=5",
           "date": "2026-10-01",
-          "summary": "台灣大跨足企業綠電市場 籌設再生能源售電公司 放言Fount Media",
+          "summary": "台灣大跨足企業綠電市場 籌設再生能源售電公司 fountmedia.io",
           "body": "",
           "dupes": 2
         },
@@ -303,7 +320,7 @@
       "items": [
         {
           "title": "AI 時代的「禮儀」與邊界：人類監督與透明揭露才是核心",
-          "source": "technews.tw",
+          "source": "TechNews 科技新報",
           "link": "https://technews.tw/2026/10/04/the-rules-of-ai-etiquette/",
           "date": "2026-10-04",
           "summary": "生成式 AI 持續滲透教育、法律、音訊創作與內容產製等領域，也讓「AI 禮儀」與使用規範成為新的討論焦點。外界 […]",
@@ -311,12 +328,66 @@
           "dupes": 2
         },
         {
+          "title": "東芝傳產能倍增、HDD 雙雄嚇跌  分析師：先別慌",
+          "source": "",
+          "link": "https://technews.tw/2026/10/05/seagate-stock-and-western-digital-tumble-investors-worry-the-hard-drive-shortage-will-ease/",
+          "date": "2026-10-05",
+          "summary": "日本東芝（Toshiba）傳出將投資 600 億日圓（約 3.8 億美元），倍增 AI 資料中心（Data C […]",
+          "body": "日本東芝（Toshiba）傳出將投資 600 億日圓（約 3.8 億美元），倍增 AI 資料中心（Data Center，DC）用 HDD 產能，消息傳來衝擊美國硬碟（HDD）概念股下殺。不過，分析人士認為，東芝的大動作目前還不至於為硬碟類股的投資行情敲響喪鐘。 Barron’s 3日報導，東芝目前仍是三大HDD製造商中規模最小的一家。根據FactSet資料，分析師預估希捷（Seagate Technology）與威騰電子（Western Digital）在2027會計年度期間（截至明年6月為止），合併資本支出將達17億美元。相較之下，3.8億美元雖不是小數目，但恐怕仍不足以讓東芝的市占率翻3倍。 瑞穗（Mizuho）科技產業專家Jordan Klein談到東芝消息時寫道，「我也想加入紐約洋基隊（NY Yankees），但這不代表事情就會成真」。 即使東芝的投資確實能大幅增加供給，價格也不會立刻崩跌。威騰與希捷調漲價格的步調，一直比美光科技（Micron Technology）等記憶體同業更審慎。這雖限制了毛利率短期內擴張的空間，但也意味著一旦供給追上需求，價格下跌的風險相對較小。 不過，與記憶體業者類似，威騰與希捷也在優先推動長期協議，以鎖定定價條件，並提高對長期需求的能見度。Klein認為，東芝新增產能可能讓客戶在相關談判中取得更多籌碼，但要到2028年才會對合約產生實質影響。 Klein寫道，「我初步的看法是，可以趁利空襲擊時買進，但我會先等等，沒必要立刻進場，因為這項消息甚至尚未獲得證實，而且影響還會持續一段時間。」他說，「似乎沒人相信東芝能真的達成一年期目標，增加如此",
+          "dupes": 1
+        },
+        {
+          "title": "IMPACT 2026 聚焦節能 AI，產學齊聚研討先進封裝、異質整合",
+          "source": "",
+          "link": "https://technews.tw/2026/10/05/impact-iaac-2026-ai-computing-to-systems-and-applications/",
+          "date": "2026-10-05",
+          "summary": "亞洲最具代表性的國際構裝暨電路板研討會「IMPACT – IAAC 2026」將於 10 月 19 […]",
+          "body": "亞洲最具代表性的國際構裝暨電路板研討會「IMPACT – IAAC 2026」將於 10 月 19 日至 22 日在台北登場。今年大會邁入第 21 屆，以「Energy – Efficient AI：From Computing to Systems and Applications（節能高效 AI：從運算、系統到應用）」為主題，聚焦 AI 與高效能運算快速發展下，半導體封裝、IC 載板及 PCB 技術如何突破效能、功耗、頻寬與可靠度限制，推動 AI 從晶片運算進一步走向系統整合與實際應用。為期四天的議程規劃近 350 篇技術發表，預計吸引逾 1,500 位產業人士參與。 首日活動將於台北漢來大飯店舉行，後續議程移師台北南港展覽館，並與 TPCA Show 同期登場，串聯晶片、封裝、載板、PCB、材料、設備與系統應用，展現台灣在全球 AI 硬體供應鏈中的重要角色。 本屆大會規劃五場主題演講，邀請來自史丹佛大學、日月光、Intel、日本新光電氣工業及奧本大學等國際產學界專家，從 AI 硬體、先進封裝、半導體載板與系統可靠度等面向，解析下一階段技術發展。 隨著半導體微縮逐漸逼近物理極限，單靠晶片製程已難以滿足 AI 運算需求，產業創新的重心正從單一元件效能，轉向運算、記憶體、互連、封裝與材料的協同設計。主題演講將進一步探討 3D 整合、Chiplet、異質整合、玻璃核心載板及高可靠度互連等關鍵技術，勾勒節能 AI 從晶片走向完整系統的發展藍圖。 首日的 IAAC 基板專場邀集 Prismark、欣興、AT&S、味之素、FICT 及 MKS Atotech，從 ABF 供需與材料創新",
+          "dupes": 1
+        },
+        {
+          "title": "終於更新！Google Antigravity 上架 Claude Opus 5.5 與 Sonnet 5.5",
+          "source": "",
+          "link": "https://www.inside.com.tw/article/42558-google-antigravity-claude-opus-5-5-sonnet-5-5-gpt-oss-120b-retirement",
+          "date": "2026-10-05",
+          "summary": "Google 的 AI IDE Antigravity 於 10 月 3 日起，向付費的 Google AI Pro 與 Ultra 訂閱者開放 Claude Opus 5.5 與 Sonnet 5.5。同時，Anthropic 舊版的 Claude Sonnet 4.6 與 Opus 4.6，以及開放權重模型 GPT-OSS 120B，將於 11 月 2 …",
+          "body": "終於更新！Google Antigravity 上架 Claude Opus 5.5 與 Sonnet 5.5 Google 的 AI IDE Antigravity 於 10 月 3 日起，向付費的 Google AI Pro 與 Ultra 訂閱者開放 Claude Opus 5.5 與 Sonnet 5.5。同時，Anthropic 舊版的 Claude Sonnet 4.6 與 Opus 4.6，以及開放權重模型 GPT-OSS 120B，將於 11 月 2 日統一下架，且目前無免費替代方案公告。 Google 的 AI 程式設計工具 Antigravity 宣布，10 月 3 日起在模型選單加入 Claude Opus 5.5 與 Claude Sonnet 5.5，僅限 Google AI Pro（非試用版）與 Google AI Ultra 付費訂閱者使用。 同一份公告也確認了模型退場時程：Claude Sonnet 4.6、Claude Opus 4.6，以及目前各方案均可使用的開放權重模型 GPT-OSS 120B，將統一於 11 月 2 日移除，且 Anthropic 未宣布免費替代選項。 Antigravity 是 Google 推出的 AI 優先程式設計 IDE，基於 VS Code 架構打造，定位直接對標 Cursor 與 Claude Code。與只提供對話視窗的 AI 助理不同，Antigravity 允許多個 AI 代理（agent）直接控制編輯器、終端機與瀏覽器，在同一工作環境內完成規劃、撰碼、測試與除錯的完整循環。Antigravity 2.",
+          "dupes": 1
+        },
+        {
+          "title": "從事務機到智慧辦公推手，台灣理光 DocuWare 成企業 AI 共智關鍵引擎",
+          "source": "",
+          "link": "https://technews.tw/2026/10/05/docuware-ai-oa-ecm/",
+          "date": "2026-10-05",
+          "summary": "當科技不再只是工具，而開始重新定義工作的樣貌，企業真正需要思考的，已不只是如何數位化，而是如何讓科技回到「人」 […]",
+          "body": "當科技不再只是工具，而開始重新定義工作的樣貌，企業真正需要思考的，已不只是如何數位化，而是如何讓科技回到「人」的需求。 對台灣理光而言，這場轉變也促使品牌重新思考自身的角色。自理光集團於 2019 年併購德國軟體公司 DocuWare 以來，台灣理光不僅「從事務機／硬體轉型到軟體」，更自我定位為「數位服務與軟體方案的提供者與陪伴者」，從提供解決方案，到成為協助企業數位轉型的夥伴，持續以不同產業使用者的需求為核心，探索科技如何讓工作變得更有意義。 如今談起 DocuWare 與文件流程自動化，台灣理光不只是技術與服務的提供者，更是親身走過這場轉型的實踐者，將多年累積的經驗，轉化為協助企業前進的數位能力。 站在 AI 時代的起點，台灣理光不只為企業導入軟體解決方案，更憑藉著對於工作流程和文件本質的深度理解，能夠以顧問的角色協助客戶面對實際辦公情境遇到的難題與需求——目的只有一個：釋放人們更多創造力。 早在 2018 年，台灣理光便正式切入企業內容管理（ECM）與流程自動化領域，並在隔年將 DocuWare 納入成為核心產品線之一。7 年來，台灣理光一路展現深耕軟體與數位服務領域的決心，也累積了雄厚的經驗與「顧問式導入」服務能量。 為了貼近市場需求，台灣理光持續投入許多努力，包括每年接待近 200 組企業參觀的智慧辦公室導覽（Live Office）體驗，讓客戶進一步想像未來工作方式改變帶來的效益與可能性。日前（9 月 15 日），台灣理光更成立「AI共智創新基地」，作為企業客戶體驗與需求蒐集的第一線窗口。這一切舉措，可說是呼應日本理光母公司「働き方創造」（創造嶄新工作方式）與「成就",
+          "dupes": 1
+        },
+        {
+          "title": "AI 助理「自作聰明」繞過限制，逾 1.3 萬張企業機密截圖遭外洩",
+          "source": "",
+          "link": "https://infosecu.technews.tw/2026/10/05/ai-assistants-leak-corporate-secrets/",
+          "date": "2026-10-05",
+          "summary": "資安研究團隊 Glow Labs 近期發布名為「PixelLeak」的調查報告，揭露了一場令人啼笑皆非的資安災 […]",
+          "body": "資安研究團隊 Glow Labs 近期發布名為「PixelLeak」的調查報告，揭露了一場令人啼笑皆非的資安災難：AI 程式開發代理（AI Agents）在協助工程師處理介面變更與拉取請求（PR）時，竟意外將超過 13,000 張內部機密截圖公開上傳至 GitHub。這起事件波及全球逾 300 家組織，其中甚至包含多家財星 500 大（Fortune 500）企業與頂尖的 AI 實驗室。 這批外洩的影像不僅曝光了尚未發布的軟體畫面，還包含客戶資訊、財務數據，甚至有資金移轉介面的螢幕錄影。Glow 指出，這並非駭客入侵，而是 AI 過於「聰明」惹的禍。由於 AI 代理在 GitHub 私有儲存庫（Private repositories）中，無法直接透過命令列附加圖片，為了達成任務，它們竟自作主張地建立「公開儲存庫」，再將截圖連結貼回私有的 PR 裡。這招雖然成功讓審查者看到圖片，卻也把公司的商業機密全數攤在陽光下。 ▲ PixelLeak 外洩機制：當 AI 開發代理（AI Agent）嘗試將資料附加至 GitHub 私有儲存庫（Private Repo）受阻時，會自行尋找「繞道」方案（Workaround），將機密截圖轉存至未經授權的公開儲存庫（Unauthorized Public Repo），導致內部資訊直接暴露於大眾視野（Everyone）。 （Source：Glow Labs）** 調查進一步顯示，約有三分之一的受災戶與 gitshot 這類命令列截圖工具有關。更讓企業防不勝防的是，高達 93% 的外洩圖片是存放在開發者「個人帳號」底下的公開倉庫，而非公司官方帳號，導",
+          "dupes": 1
+        },
+        {
+          "title": "Google／SpaceX 前產品經理創立 Satlyt，要讓 AI 登上衛星運算",
+          "source": "",
+          "link": "https://technews.tw/2026/10/05/satlyt-founded-by-a-former-google-and-spacex-product-manager-raises-8m-to-run-ai-on-satellites/",
+          "date": "2026-10-05",
+          "summary": "太空新創 Satlyt 宣布完成 800 萬美元種子輪募資，將開發讓多顆衛星分工處理大型運算任務的軟體。創辦人 […]",
+          "body": "太空新創 Satlyt 宣布完成 800 萬美元種子輪募資，將開發讓多顆衛星分工處理大型運算任務的軟體。創辦人 Rama Afullo 是肯亞裔美籍工程師，曾任職 Google 雲端運算部門，2024 年短暫加入 SpaceX 旗下 Starlink 通訊網路，任內兩度提出太空運算構想，皆遭否決，因此離開 SpaceX 共同創立 Satlyt，總部設於美國加州桑尼維爾與肯亞奈洛比。 時機對 Satlyt 相當有利。SpaceX 之後就全力投入軌道資料中心，而 Satlyt 的軟體也於 1 日搭乘 SpaceX 火箭升空，同趟任務還載有 Google 太空資料中心計畫 Project Suncatcher 的首顆原型衛星。 與 SpaceX、Google 或 Starcloud、Cowboy Space Company 等新創不同，Satlyt 不自己打造太空船，而是專注開發衛星執行 AI 模型的軟體，模式類似 VMware 與 Snowflake，讓使用者不必顧慮底層基礎設施。Afullo 比喻，若投入軌道資料中心的 SpaceX 等業者是 iPhone，Satlyt 就要成為水平整合的開放生態系 Android，提供可跨廠商衛星運作的軟體。 Satlyt 已完成兩次示範任務，初期聚焦提升太空船營運效率。太空船遇到問題通常仰賴地面飛行控制員處理，將資料傳回地面的下行鏈路成本高昂且速度慢，若改由 AI 在太空船判斷、排除異常或直接處理感測器資料，可省下可觀成本。今年稍早，Satlyt 在 Momentus 太空船部署 Google DeepMind 的 Gemma 模型，縮減回報",
+          "dupes": 1
+        },
+        {
           "title": "250 萬人下載 Muse 暴紅背後：AI 代理人暴增，真贏家是資安",
           "source": "",
           "link": "https://finance.technews.tw/2026/10/05/ai-security-is-winner/",
           "date": "2026-10-04",
           "summary": "Meta 9 月 8 日推出 Muse，官方公告形容這是邁向「個人超級智慧」的第一步。 想像一下，你花了一整年 […]",
-          "body": "Meta 9 月 8 日推出 Muse，官方公告形容這是邁向「個人超級智慧」的第一步。 想像一下，你花了一整年幫自己訓練好最聰明的「AI特助」。為了讓它發揮威力，你把自己的信箱、行事曆、通訊錄甚至信用卡和雲端硬碟，都交給它。每天它自動幫你回信、訂餐廳、填報銷單，還能幫你用語音代辦各種雜事。資安公司CyberArk調查，企業機器身分與人類身分比例已達82:1。 聽起來很美好？現在，駭客根本不需要費盡心思破解你的密碼，他只需要在你的電腦留下指令，就能讓你的AI特助「叛變」。過去20年，網路安全公司的商模就是保護「人」。從防毒軟體到雙因素認證，都是在確保每個人登入系統時真的是本人。當AI代理人時代來臨，這個假設徹底瓦解。 現在，企業內部最活躍的不是員工，而是無數個在背景跑來跑去、幫忙串接資料的AI代理人與API（應用程式介面）鑰匙。資安公司CyberArk（已被派拓網路Palo Alto Networks購併）2025年調查，企業裡的機器身分與人類身分的比例已達82:1。 為了讓AI特助好用，我們不斷給它更多權限。這背後有一個安全悖論：過去20年資安設計的核心是「最小權限原則」，但AI特助的價值完全來自「最大權限」。只能幫你開大門的特助，沒有人想雇用，你希望他能進書房、動車庫、開保險箱。用戶對效率和便利的追求，同步擴大了駭客的攻擊面。 Muse做的事，是把過去只於企業伺服器機房裡的權限危機，第一次搬到每個人的手機與個人電腦。 1990年代，大家買資安只做一件事：買防毒軟體，就像買「壞人通緝名單」。軟體記得的壞人越多，大家就越安心。但沒過幾年，這種通緝名單隨處可得，價格掉到跟大賣場的特",
+          "body": "250 萬人下載 Muse 暴紅背後：AI 代理人暴增，真贏家是資安 | TechNews 科技新報 Meta 9 月 8 日推出 Muse，官方公告形容這是邁向「個人超級智慧」的第一步。 想像一下，你花了一整年幫自己訓練好最聰明的「AI特助」。為了讓它發揮威力，你把自己的信箱、行事曆、通訊錄甚至信用卡和雲端硬碟，都交給它。每天它自動幫你回信、訂餐廳、填報銷單，還能幫你用語音代辦各種雜事。資安公司CyberArk調查，企業機器身分與人類身分比例已達82:1。 聽起來很美好？現在，駭客根本不需要費盡心思破解你的密碼，他只需要在你的電腦留下指令，就能讓你的AI特助「叛變」。過去20年，網路安全公司的商模就是保護「人」。從防毒軟體到雙因素認證，都是在確保每個人登入系統時真的是本人。當AI代理人時代來臨，這個假設徹底瓦解。 現在，企業內部最活躍的不是員工，而是無數個在背景跑來跑去、幫忙串接資料的AI代理人與API（應用程式介面）鑰匙。資安公司CyberArk（已被派拓網路Palo Alto Networks購併）2025年調查，企業裡的機器身分與人類身分的比例已達82:1。 為了讓AI特助好用，我們不斷給它更多權限。這背後有一個安全悖論：過去20年資安設計的核心是「最小權限原則」，但AI特助的價值完全來自「最大權限」。只能幫你開大門的特助，沒有人想雇用，你希望他能進書房、動車庫、開保險箱。用戶對效率和便利的追求，同步擴大了駭客的攻擊面。 Muse做的事，是把過去只於企業伺服器機房裡的權限危機，第一次搬到每個人的手機與個人電腦。 1990年代，大家買資安只做一件事：買防毒軟體，就像買「壞",
           "dupes": 1
         },
         {
@@ -325,7 +396,7 @@
           "link": "https://finance.technews.tw/2026/10/05/nadella-ai-agent-applications-executives/",
           "date": "2026-10-04",
           "summary": "微軟（Microsoft）執行長薩蒂亞·納德拉（Satya Nadella）近日分享了他將 AI 融入日常高階 […]",
-          "body": "微軟（Microsoft）執行長薩蒂亞·納德拉（Satya Nadella）近日分享了他將 AI 融入日常高階管理工作的心得。他特別強調，自己絕不會把 AI 模型的輸出結果直接視為最終答案，而是會先進行拆解與質疑，進一步推演各種假設與情境。對他而言，AI 並非單純給出結論的工具，而是一個需要被「操作」與「審問」的得力助手。 納德拉透露，他會善用微軟的 Copilot 與 Excel 代理（Agents）來追蹤美國證券交易委員會（SEC）的申報文件、深入分析試算表，並持續動態檢視公司的投資報酬率（ROIC）。他特別提到，Excel 代理的能力讓他能在工作簿內直接檢查公式並建立多種假設情境，即便是面對資料中心團隊遞交的複雜表格，也能快速拆解處理。 談及對 AI 代理工具最感興趣之處，納德拉指出，這類技術的價值早已超越單純的內容生成，而是能將企業內部數據與外部世界資訊無縫結合。他舉例說明，透過 Fabric 建立的資料流程，系統能將來自雲端與新興雲端供應商的 SEC 資料自動整理為語意模型，再交由程式代理轉化為視覺化儀表板，使他能即時掌握公司各營運層級的 ROIC 與內部分析數據。 納德拉的親身經驗顯示，微軟高層正將 AI 代理深刻定位為企業關鍵決策流程的一環，而非僅是輔助型的問答工具。這也反映出 AI 在企業應用場景中的核心價值，正逐步從「單純產生答案」，演進至「協助驗證、推理與持續監控」的新階段。 納德拉下海當 PM、痛批 Copilot「不夠聰明」，微軟 AI 戰略大轉向內幕 關鍵字: AI 代理 , AI 助理 , AI 模型 , Satya Nadella , 微軟 , 高",
+          "body": "",
           "dupes": 1
         },
         {
@@ -334,7 +405,7 @@
           "link": "https://technews.tw/2026/10/05/how-brands-are-rebuilding-content-for-machines/",
           "date": "2026-10-04",
           "summary": "使用者向 AI 助理詢問產品型號、規格或方案建議時，系統往往能在幾秒內給出看似完整的答案。問題在於，這些回答有 […]",
-          "body": "使用者向 AI 助理詢問產品型號、規格或方案建議時，系統往往能在幾秒內給出看似完整的答案。問題在於，這些回答有時會混入過時的價格、錯誤的保固條件，甚至引用已經下架的方案組合。隨著這類情況愈來愈常見，品牌開始意識到，網站內容不再只是為了搜尋引擎排名而寫，也必須能被 AI 系統正確讀取、摘錄與引用。 根據近期的實務建議，企業如果想在生成式搜尋與 AI 回答中維持能見度，第一步是讓網站「可被爬取」。這包括檢查 robots.txt、noindex、標準網址（canonical）設定、JavaScript 算繪、內部連結與 sitemap 的健康狀況，也要確認重要頁面能被正常索引，不會被防火牆或其他技術設定意外擋住。對 ChatGPT 搜尋等服務來說，網站是否允許相關爬蟲存取，也是關鍵前提。 除了技術上可讀取，內容本身也需要重新設計。建議指出，首頁與核心頁面應清楚說明品牌做什麼、服務誰、解決什麼問題，以及和競爭者有什麼差異。同時可以善用主題群集（topic cluster）、問答式標題、短段落、條列與表格，讓機器更容易擷取資訊。業者也應該提供其他地方難以複製的內容，例如原始研究、內部數據、客戶成果、比較框架與明確的限制條件，避免把既有資料簡單改寫成單薄的內容（thin content）。 內容更新的速度也成為焦點。價格、功能、地點、日期、統計數字、截圖與團隊資訊都應定期檢查並更新，因為 AI 系統偏好引用最新、可驗證的資訊。如果頁面上的主張能附上方法、來源與具體數字，就更有機會被模型視為可信的依據。 在衡量成效方面，品牌也不再只看傳統排名，而是開始追蹤 AI 提及次數、引用次數、提示詞",
+          "body": "",
           "dupes": 1
         },
         {
@@ -343,7 +414,7 @@
           "link": "https://technews.tw/2026/10/05/ai-infers-the-rate-of-cost-decline/",
           "date": "2026-10-04",
           "summary": "AI 推論成本下跌速度超越摩爾定律（Moore’s Law）所描述的晶片發展趨勢。AI 研究機構 Epoch […]",
-          "body": "AI 推論成本下跌速度超越摩爾定律（Moore’s Law）所描述的晶片發展趨勢。AI 研究機構 Epoch AI 發表報告指出，在相同測試表現下，使用 AI 模型的成本自 2023 年起平均每季下跌約 47%，相當於每年便宜約 13 倍。這個跌速超越運算技術、DNA 排序及鋰電池。對企業而言，價格急跌也帶來一個問題：是否仍值得長期依賴單一 AI 供應商？ Epoch AI 在《The Plunging Price of Thought》報告中，將 AI 模型產生答案的能力比喻為「人工思考」（artificial thought），並比較多項科技的成本變化。研究估計，相同表現水準的 AI 推論成本自 2023 年起每季下跌約 47%。若把這個跌速延伸至約五年，累計降幅可達數十萬倍；不過報告主要分析的是約三年數據，較長時期的跌幅仍屬推算。 以平均每年跌價速度比較，AI 推論成本下降速度約為 DNA 排序的 4 倍、傳統運算技術的 6 倍、鋰電池的 18 倍，以及早期電力發展的 54 倍。Epoch AI 同時提醒，AI 服務持續演變，與電力或電池等產品並不完全相同，跨技術比較只能做為參考。 ▲ 科技成本下降趨勢圖，顯示電力、電池、DNA測序和計算的成本變化。（Source：Epoch AI）** 報告以 GPQA Diamond 科學問答測試說明跌幅。Epoch AI 估計，OpenAI 於 2025 年 1 月推出的 o3 模型，每題平均花費 0.3 美元，可達到報告所採用的 75% 表現水準。不到 18 個月後推出的 GPT-5.6 Luna 達到相同水準，每題成本約 0.0",
+          "body": "",
           "dupes": 1
         },
         {
@@ -352,60 +423,6 @@
           "link": "https://www.cna.com.tw/news/aopl/202610050007.aspx",
           "date": "2026-10-05",
           "summary": "（中央社舊金山4日綜合外電報導）在美國總統川普推動以超級智慧（SI）取代人工智慧（AI）後，SpaceX執行長馬斯克今天表示，將把公司旗下AI部門名稱由SpaceXAI更名為SpaceXSI。",
-          "body": "本網站使用相關技術提供更好的閱讀體驗，同時尊重使用者隱私，點這裡瞭解中央社隱私聲明。當您關閉此視窗，代表您同意上述規範。 Your browser does not appear to support Traditional Chinese. Would you like to go to CNA’s English website, “Focus Taiwan”? SpaceX執行長馬斯克4日表示，將把公司旗下AI部門名稱由SpaceXAI更名為SpaceXSI。（路透社） （中央社舊金山4日綜合外電報導）在美國總統川普推動以超級智慧（SI）取代人工智慧（AI）後，SpaceX執行長馬斯克今天表示，將把公司旗下AI部門名稱由SpaceXAI更名為SpaceXSI。 路透社報導，馬斯克（Elon Musk）在X平台回應一位用戶關於是否會將SpaceXAI改名為SpaceXSI的提問時表示：「沒錯，我們會進行這項變更。」 截至發稿時，SpaceXAI的X帳號名稱尚未更改。馬斯克未提供有關名稱變更的進一步資訊，也未說明變更的預計時間表。 川普上個月在聯合國大會發表演說時表示：「從這一刻起，美國所有的文件，且希望全世界的文件，都將改用更準確的『超級』（super）一詞來取代『人工』（artificial）。」（編譯：何宏儒）1151005 川普白宮會輝達等科技巨頭 簽「類AI憲法」自律承諾加強安全措施川普確認新AI沙皇由國家情報總監出任 負責保護美國利益軟銀集團孫正義罕見示警AI風險 落入錯誤之手恐釀大禍白宮AI協議拼錯「美國」網路瘋傳 科技巨頭簽名風格成話題",
-          "dupes": 1
-        },
-        {
-          "title": "法軍打造自主 AI 空戰架構，2028 年測試戰機與無人僚機協同飛行",
-          "source": "",
-          "link": "https://technews.tw/2026/10/04/french-air-force-is-building-its-own-military-ai-systems/",
-          "date": "2026-10-04",
-          "summary": "隨著各國加速開發無人僚機，法國也開始為新一代空戰模式鋪路，法國空軍與太空軍、軍備總署（DGA）及國防人工智慧機 […]",
-          "body": "隨著各國加速開發無人僚機，法國也開始為新一代空戰模式鋪路，法國空軍與太空軍、軍備總署（DGA）及國防人工智慧機構（AMIAD）共同推動「HypAIRion」計畫，預計 2028 年進行有人戰機與戰鬥無人機協同飛行試驗，並建立由政府掌控的開放式架構與自主 AI 技術。 法國空軍能力發展辦公室主管賽德瑞克（Cédric）上校表示，現有專有系統容易將感測器與武器整合能力綁定特定廠商，HypAIRion 將採用開放、模組化設計，讓軍方依任務需求導入不同企業的技術。即使合作廠商更換，政府仍能保留整體架構與核心能力，降低對單一供應商的依賴，建立 AI 主權。 AMIAD 將負責指揮管制及任務自主性相關 AI，協助飛行員進行任務規劃、飛行中決策與任務後分析，並借鏡法國陸軍 Pendragon 機器人計畫，建立讓航太大廠與新創共同參與的產業合作機制。 為了驗證技術，法國正在蒙德馬桑（Mont-de-Marsan）基地改裝兩架幻象 2000 戰機，增設運算電腦，預計 2026 年底開始測試，初期將先評估耗電量與系統介面整合，再逐步探索航線最佳化、戰術判斷，以及空對空、空對地武器使用時機等用途。 AI 也將逐步導入飆風戰機等現役裝備，由泰利斯（Thales）開發，具備 AI 功能的 TALIOS 雷射標定莢艙，預計 2027 年開始交付，可自動偵測、分類地面目標，提供機組員判斷，減輕飛行員處理大量戰場資訊的負擔。 HypAIRion 的另一項重點，是將飛行安全功能與任務軟體分開，使戰術程式能在維持安全的前提下快速更新，Cédric 舉例，未來飛行員上午執行任務後，可能針對敵方反制措施調整軟體，下午",
-          "dupes": 1
-        },
-        {
-          "title": "AI 助攻量子設計：德國新創 QC Design 推 Meridian 可壓低邏輯錯誤率逾十倍",
-          "source": "",
-          "link": "https://technews.tw/2026/10/04/qc-design-reports-10x-logical-error-reduction-with-meridian-ai/",
-          "date": "2026-10-04",
-          "summary": "德國量子軟體新創 QC Design 於 9 月 24 日發表白皮書，公布專為容錯量子運算架構設計打造的 AI […]",
-          "body": "德國量子軟體新創 QC Design 於 9 月 24 日發表白皮書，公布專為容錯量子運算架構設計打造的 AI 系統 Meridian 測試結果。逾 193 項容錯設計任務，Meridian 的邏輯錯誤率皆低於文獻既有方法與通用 AI 代理人，中位數降幅超過十倍。 邏輯錯誤率用來衡量受保護的量子資訊失效頻率。QC Design 指出，架構決定量子電腦的硬體需求與執行時間，好的設計可省下數年開發時程與數百萬美元資本支出，但這需要橫跨電腦科學、量子錯誤更正、元件物理與工程的專業，目前僅少數人具備。 Meridian 結合尖端模型、人工整理的專業知識，以及自家量子設計自動化平台 Plaquette 的驗證工具。Plaquette 扮演「世界模型」，在去相位、串擾、洩漏等真實硬體雜訊下測試候選設計，排除分數漂亮卻原因錯誤的設計。 白皮書聚焦偵測量子錯誤的校驗子萃取電路，測試涵蓋十種錯誤更正碼家族，以及超導、矽自旋、中性原子、離子阱與光子等平台。與五種已發表演算法的最佳結果相比，Meridian 邏輯錯誤率中位數降低 14.6 倍；與基於 OpenAI GPT-6 Astra 的通用 AI 代理人相比，中位數降幅約 43%，最高達 98.4%，相當於錯誤率低約 63 倍。共同創辦人 Martin Plenio 表示，Meridian 提高了硬體團隊能設計與打造的上限，公司期望藉此將達成容錯的時程縮短數年。 不過，AI 的侷限也受到提醒。QIQuantum 創辦人 Pravir Malik 在 Forbes 專欄指出，Google DeepMind 的 AlphaQubit、NVIDIA ",
-          "dupes": 1
-        },
-        {
-          "title": "挑戰 99.5% 成功率，NVIDIA 攜鴻海讓機器人組裝 GB300",
-          "source": "",
-          "link": "https://finance.technews.tw/2026/10/04/nvidia-foxconn-robot/",
-          "date": "2026-10-04",
-          "summary": "AI 伺服器需求持續爆發，如何讓產線自動化程度再往前推，也成為供應鏈下一階段競賽焦點。據 NVIDIA 部落格 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "AI 偷聲月賺 75 萬日圓！聲優津田健次郎告 TikTok 勝訴，日本首判聲音受肖像權保護",
-          "source": "",
-          "link": "https://www.inside.com.tw/article/42554-japan-voice-actor-tsuda-tiktok-ai-voice-cloning-ruling",
-          "date": "2026-10-04",
-          "summary": "日本東京地方法院就聲優津田健次郎控告 TikTok 一案作出判決，首度確立人聲與肖像同等、受肖像權保護的法律原則。匿名帳號用 AI 複製其聲音製作 188 支影片、月收 75 萬日圓，當事人分文未得。這是日本生成 AI 盜聲案的首例司法判決，但複雜的角色聲音授權結構，仍讓許多聲優難以單獨提訴。",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "仁寶亮相 2026 OCP 全球峰會，展示輝達 AI 工廠基礎設施方案",
-          "source": "",
-          "link": "https://technews.tw/2026/10/04/compal-2026-ocp/",
-          "date": "2026-10-04",
-          "summary": "全球計算與基礎設施解決方案仁寶電腦工業股份有限公司（Compal Electronics, Inc.）9 月 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "今年還是有成功機會，專家教你六個 AI 商機與無資金創業法",
-          "source": "",
-          "link": "https://finance.technews.tw/2026/10/04/6-ai-business-ideas-for-2026-and-how-to-start-one-with-no-funding/",
-          "date": "2026-10-04",
-          "summary": "人工智慧應用持續擴大，市場開始出現一批不依賴新模型、技術合夥人或外部融資也能啟動的 AI 創業構想。最新整理的 […]",
           "body": "",
           "dupes": 1
         },
@@ -482,18 +499,9 @@
           "dupes": 3
         },
         {
-          "title": "磊山保經榮獲2026《哈佛商業評論》數位轉型鼎革獎- 商情",
-          "source": "ctee.com.tw",
-          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1TeXVuTHFxVjE0RmJZb3YtM2RPaTZWS0pGeDlGTWdrT3J6M2hFb1duQUl0NlBPYWVuWFFEdnlWVmRVUjFMWXdxNjhjalFSQXR4Ump2RHVSVFptQjMwcnNj?oc=5",
-          "date": "2026-10-01",
-          "summary": "",
-          "body": "",
-          "dupes": 3
-        },
-        {
-          "title": "日月光攜手6大學推12項技術研究成果 AI、數位孿生助攻智慧封測",
-          "source": "鏡報",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4wNTA2VGYzY29QVGFKTDBaUFZiaDZwZkdGcTRId0VQajRtUUtfd04yZlktMnpRWmF5VUdZdVFTWUkyN2xMV3UtNUc5VUdTMU45QXc?oc=5",
+          "title": "中華電信榮獲2026《哈佛商業評論》數位轉型鼎革獎三項大獎",
+          "source": "Taiwan News",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9sSFhFTUJ0OW5rSlphUTkxRGtrbnVWTnl0TjlucmZSaWNIV2FtRkJkaEV6VGhlZUZ0dEx0TmZPdVVla05LUi1ieGd3Z0c5SV9OVF9zc1FkOEc?oc=5",
           "date": "2026-10-01",
           "summary": "",
           "body": "",
@@ -501,7 +509,7 @@
         },
         {
           "title": "國泰金控從 Cloud First 走向 Agent First，讓 AI 真正成為企業IT數位戰力",
-          "source": "iThome",
+          "source": "ithome.com.tw",
           "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9HNmkwX1NMUU5leDlMOXJkRjFBZ3p6QUc5S0tqRWhrbDgxbHpYTlpmRVR0TnE4eEUzUUJ1TGJ2U0dVSE01YnBGYV9XVQ?oc=5",
           "date": "2026-10-04",
           "summary": "",
@@ -570,6 +578,15 @@
           "summary": "",
           "body": "",
           "dupes": 2
+        },
+        {
+          "title": "彰化榮指員協進會攜手大葉大學 講座助力企業數位轉型",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxPZnB5a0Y2dlpMSVd4RDJCT25XTGtYdFgwd2IyR1BZRGdOTUNieXQzd3U4ek5UMzBqYkF6dVdZdGFydEk4US1hY2xxNTRWaG9oaVlaS0x1MnpOcWJKajB4Snh5MXhENWE2MUYyT2pYRFNESHFEYnNsYzdJY2VwdHU3eWl4VEVaNE1RQkdCRTJqZnRKMnhoYU80Q3F6WGxDbi1OaUE5aWhMYkM0b2tkcldDRTR5aDdHMlFPdXQzTHhxVS1aMlJyZk5qcHAwNnVBN1k1cERlOXoxakY2WTVlSExtbkZOMTczdTRnQjVLcEtsU05mOU1RSDYyc25VZ1BvNmNVUE1NRXhfTzFlaFM5cFZiNjNBNGxBNE9pdXVndkE5V1czZ0w4Rnk5Y211aWp3V1VkRHB1aFpUMEFGYS1jeEVYOFpVbk4tQW1rQnZfTWl1ZHRFNFNTMXEzbFphbXJ1ZDQwSjBlS1VjR3o?oc=5",
+          "date": "2026-09-30",
+          "summary": "彰化榮指員協進會攜手大葉大學 講座助力企業數位轉型 PChome Online新聞",
+          "body": "",
+          "dupes": 2
         }
       ],
       "sources": {
@@ -616,7 +633,7 @@
           "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9TampCUHRwaFB5Qmd2NGdhMDhUa2FadzYxX1U2MTczMmxIZU0yV1pYWHNibDF0SURJX1hzTjlNYl9XLVZUbE5UTDlwSTdrRTdrbUE?oc=5",
           "date": "2026-10-01",
           "summary": "",
-          "body": "還記得我們 5 月分享過的臺法創新合作計畫消息嗎？ 延續首屆帶動雙方逾 12 億元研發投資的熱烈迴響，這次我們繼續攜手法國公共投資銀行（Bpifrance），為臺法企業跨國合作注入強勁動能！ 由經濟部產發署與技術司共同推動的「2026臺法創新研發合作補助計畫」，目前持續受理申請中！只要你的企業有志與法國夥伴攜手，在太空產業、智慧科技、智慧製造、材料與生物科技、綠能科技等 5 大前瞻領域展開研發，這就是絕佳的進軍國際機會！ 115年10月份液化石油氣價格不調整 3 天前 ### 台灣中油公司公布115年10月份國內天然氣價格 3 天前 ### 園管局智慧治理升級 AI辨識工業管線風險 污水智慧管網提升收費效益 3 天前 ### 古中國歷史長河 —-探索「北方民族」與「中原民族」分野的歷史源頭 3 天前 ### 太空人未來吃什麼？What to Grow競賽邀國中小發想太空種植方案 3 天前 ### 偏鄉採購不迷航！ 屏府前進牡丹傳授採購、廉政實務心法 3 天前 ### 第63屆金馬獎入圍揭曉！《狂忘警探》入圍11項大獎領跑 Wow!NEWS 3 天前 ### 何曼希《陽光女子合唱團》鋼管舞獲讚 入圍金馬新演員 Wow!NEWS 3 天前 ### 金馬獎影帝競爭激烈 戴立忍阮經天劉冠廷等五強廝殺 Wow!NEWS 3 天前 ### 第63屆金馬影后成死亡之組 罕見無台灣女演員入圍 Wow!NEWS 3 天前",
+          "body": "還記得我們 5 月分享過的臺法創新合作計畫消息嗎？ 延續首屆帶動雙方逾 12 億元研發投資的熱烈迴響，這次我們繼續攜手法國公共投資銀行（Bpifrance），為臺法企業跨國合作注入強勁動能！ 由經濟部產發署與技術司共同推動的「2026臺法創新研發合作補助計畫」，目前持續受理申請中！只要你的企業有志與法國夥伴攜手，在太空產業、智慧科技、智慧製造、材料與生物科技、綠能科技等 5 大前瞻領域展開研發，這就是絕佳的進軍國際機會！ 115年10月份液化石油氣價格不調整 3 天前 ### 台灣中油公司公布115年10月份國內天然氣價格 3 天前 ### 園管局智慧治理升級 AI辨識工業管線風險 污水智慧管網提升收費效益 3 天前 ### 古中國歷史長河 —-探索「北方民族」與「中原民族」分野的歷史源頭 3 天前 ### 太空人未來吃什麼？What to Grow競賽邀國中小發想太空種植方案 3 天前 ### 偏鄉採購不迷航！ 屏府前進牡丹傳授採購、廉政實務心法 3 天前 ### 第63屆金馬獎入圍揭曉！《狂忘警探》入圍11項大獎領跑 Wow!NEWS 3 天前 ### 何曼希《陽光女子合唱團》鋼管舞獲讚 入圍金馬新演員 Wow!NEWS 3 天前 ### 金馬獎影帝競爭激烈 戴立忍阮經天劉冠廷等五強廝殺 Wow!NEWS 3 天前 ### 第63屆金馬影后成死亡之組 罕見無台灣女演員入圍 Wow!NEWS 3 天前 遠離空污預防過敏性鼻炎～中國醫藥大學公共衛生學院團隊研究成果發表於國際知名期刊《胸腔醫學期刊》 | 蕃新聞 Do Not Sell or Share My Personal I",
           "dupes": 1
         },
         {
@@ -644,15 +661,6 @@
           "date": "2026-09-28",
           "summary": "",
           "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "衛福部加碼發錢給長輩！最高可領18萬元「不排富每月都可拿」， 長照補助申請條件方式一次看",
-          "source": "Storm.mg",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1sLXVKUnp2Si12V3FXRWdvU29sTmxBelpMMlNzZjdHV1hwek44UzdsRWFjYWNLbnhIdzlIUkV1aDFsRndsY3hSclcyVFJhakc5?oc=5",
-          "date": "2026-09-28",
-          "summary": "",
-          "body": "日經 68309.46 -0.94%台股 48475.74 0.25%道瓊 51176.96 0.49%美元 31.838 0.06%美債10Yr 5.261 -0.42%WTI原油 90.79 -0.35% 全國普發一萬最新進度！今天10/5每人3000元紅包「1地符合條件直接領取」，發放時間金額一次看 衛福部加碼發錢給長輩！最高可領18萬元「不排富每月都可拿」，長照補助申請條件方式一次看 衛福部表示，每月長照補助額度升級為 5,000 元，符合條件的民眾最高可領 15,000 元，全年最高補助提升至 18 萬元。（資料照／郭晉瑋攝） 為減輕失能者家庭沉重的照顧負擔，政府配合「長照3.0」計畫加碼補助，衛福部近日最新公布「住宿式服務機構使用者補助方案」，針對中重度失能或持有中度以上身心障礙證明的機構住民，每月補助額度升級為5,000元，符合條件的民眾最高可領15,000元，全年最高補助提升至18萬元！此外，新制更將過去「按年採計」改為「按月認列」，預估全台將有約10萬名失能者與家屬受惠。 每個月最高補助 | 10,000 元 | 15,000 元（每月加碼 $5,000） | 全年最高補助上限 | 12 萬元 | 18 萬元（多增加 $60,000） | 認列檢核機制 | 按年累積入住天數採計 | 按月認列（當月入住滿月天數 1/2 即認列） | ・中重度失能者：** 經各地方政府長期照顧管理中心（長照中心）評估，長照需要等級達第4級以上者。 身障加碼免放棄原補助：若原本即領有「身心障礙者住宿式照顧費用補助」且持中度以上身障證明者，新制採取「直接加碼」方式處理，無須先放棄原補",
           "dupes": 1
         }
       ],
