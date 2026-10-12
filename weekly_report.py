@@ -235,7 +235,6 @@ SIM = 0.72                     # 標題相似度 >= 此值視為同事件（跨�
 DIRECT_QUOTA = 12              # CAP 內保留給直連媒體的名額（它們才有摘要/正文，別被熱度擠掉）
 BODY_MAX = 8                   # 每主題最多抓幾篇原文正文餵 AI（直連優先；crawl4ai 可跟 Google News 跳轉補位）
 BODY_CHARS = 700               # 每篇正文取前幾字
-MAIL_FROM_HOUR = 7             # 幾點後才准寄信（週一有多班接力，太早的那班先讓過，別在清晨吵人）
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 UA = "Mozilla/5.0 (weekly-report-bot)"
 _ctx = ssl.create_default_context()
@@ -915,15 +914,12 @@ def build_report(data, prev=None):
             "sources": {"queries": QUERIES.get(topic, []), "feeds": FEEDS.get(topic, [])},
         }
     topics = [done[t] for t in ALL_TOPICS if t in done]
-    out = {
+    return {
         "date": report_date(),
         "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
         "total": sum(len(tp["items"]) for tp in topics),
         "topics": topics,
     }
-    if (prev or {}).get("mailed"):                       # 已寄過的戳記要留著，補內容不等於要再寄一封
-        out["mailed"] = prev["mailed"]
-    return out
 
 
 def tkey(topic):
@@ -1088,7 +1084,7 @@ def render_sources_panel(report):
 
 def render_report_body(report, tabs=False):
     """單份周報內文。tabs=True 時頂部三分頁、一次顯示一個主題（網頁用）；
-    tabs=False 時全部展開（email 用，信箱不跑 JS）。"""
+    tabs=False 時全部展開（不跑 JS 的場合用）。"""
     parts = ['<header class="masthead">'
              '<div class="kicker">Weekly Intelligence Briefing</div>'
              '<h1>趨勢周報</h1>'
@@ -1178,70 +1174,6 @@ def compose_page(report, sidebar_html, theme=None):
     return page(f'趨勢周報 {report["date"]}', inner, theme)
 
 
-def render_email(report, site):
-    """精簡信件：每主題只給關鍵詞 + 一句摘要 + 連結；不列全部來源，讀者自己上網站看。"""
-    d = report["date"]
-    P = ['<div style="font-family:\'Microsoft JhengHei\',Arial,sans-serif;max-width:640px;'
-         'margin:0 auto;color:#1b2432">'
-         f'<h1 style="font-size:22px;border-bottom:3px solid #234E7D;padding-bottom:8px;margin:0 0 4px">'
-         f'趨勢周報 <span style="color:#94A3B8;font-size:15px">{d}</span></h1>'
-         '<p style="color:#586477;font-size:14px;margin:6px 0 18px">本週重點摘要，點主題看完整內容。</p>']
-    for tp in report["topics"]:
-        tk = tkey(tp["topic"])
-        link = f"{site}#{tk}" if site else "#"
-        P.append(f'<h2 style="font-size:17px;color:#234E7D;margin:20px 0 4px">'
-                 f'{html.escape(tp["topic"])}</h2>')
-        if tp.get("gist"):
-            P.append(f'<p style="margin:2px 0;color:#8a6d3b;font-size:13px">'
-                     f'{html.escape(tp["gist"])}</p>')
-        note = STATE_NOTE.get(topic_state(tp))
-        if note:                                         # 信裡也要看得出這塊是失敗還是真的沒消息
-            P.append(f'<p style="margin:6px 0;font-size:14px;color:#9b2c2c">{note}</p>')
-        elif tp.get("sections"):                         # 一句摘要（第一節開頭）
-            s = re.sub(r"\[\[\d+\]\]", "", clean_body(tp["sections"][0].get("body", "")))
-            s = re.split(r"[。\n]", s.strip())[0]
-            if s:
-                P.append(f'<p style="margin:6px 0;font-size:15px;line-height:1.7">{html.escape(s)}。</p>')
-        elif tp["topic"] in GRANT_TOPICS:
-            n = len(STANDING.get(tp["topic"], []))
-            P.append(f'<p style="margin:6px 0;font-size:14px;color:#586477">'
-                     f'常態可申請 {n} 項＋本週動態，詳見網站。</p>')
-        P.append(f'<a href="{html.escape(link)}" style="color:#234E7D;font-weight:600;'
-                 f'text-decoration:none;font-size:14px">看完整內容 →</a>')
-    if site:
-        P.append(f'<div style="margin-top:28px;padding-top:16px;border-top:1px solid #dfe3ea">'
-                 f'<a href="{html.escape(site)}" style="display:inline-block;background:#234E7D;'
-                 f'color:#fff;padding:11px 22px;border-radius:6px;text-decoration:none;'
-                 f'font-weight:600">開啟完整週報網站</a></div>')
-    P.append("</div>")
-    return "".join(P)
-
-
-def send_mail(report):
-    """有設 env 就寄精簡版；沒設就跳過。Gmail SMTP -> 收件者(可 Outlook)。"""
-    import smtplib
-    from email.message import EmailMessage
-    user = os.environ.get("GMAIL_USER")
-    pw = os.environ.get("GMAIL_APP_PW")
-    to = os.environ.get("MAIL_TO")
-    if not (user and pw and to):
-        print("[mail] 未設 GMAIL_USER/GMAIL_APP_PW/MAIL_TO，跳過寄信")
-        return False
-    site = os.environ.get("SITE_URL")
-    msg = EmailMessage()
-    msg["Subject"] = f"趨勢周報 {report['date']}"
-    msg["From"] = user
-    msg["To"] = to
-    msg.set_content("此信為 HTML 格式，請用支援 HTML 的信箱檢視。完整內容：" + (site or ""))
-    msg.add_alternative(render_email(report, site), subtype="html")
-    with smtplib.SMTP("smtp.gmail.com", 587) as s:
-        s.starttls()
-        s.login(user, pw)
-        s.send_message(msg)
-    print(f"[mail] 已寄至 {to}")
-    return True
-
-
 def rebuild_site(site):
     """用現成的 reports/*.json 重畫整個網站（首頁 + 每週存檔頁）。不抓新聞、不呼叫 AI。"""
     reports = load_all_reports(site)
@@ -1285,14 +1217,6 @@ def topic_state(tp):
     return "ok" if tp.get("sections") else "failed"
 
 
-def complete(rep):
-    """信寄不寄得出去：只看長文主題（永續／AI）有沒有卡在 failed。
-    卡片主題（補助／獎項）失敗不扣信——版面與信件都已標示，常態清單也照樣看得到，
-    為它把整封信壓到週三才寄，比缺一塊還糟。"""
-    return all(topic_state(tp) != "failed"
-               for tp in rep["topics"] if tp["topic"] not in GRANT_TOPICS)
-
-
 def load_week(site):
     """本週那份周報（不管完不完整）；沒有回 None。逐主題累積就是往這份上面補。"""
     cur = iso_week(report_date())
@@ -1306,15 +1230,6 @@ def todo_topics(prev):
     """這次要跑哪些主題：本週還沒 ok 的都要（含沒抓到新聞的，隔天可能就有了）。"""
     state = {tp["topic"]: topic_state(tp) for tp in (prev or {}).get("topics", [])}
     return [t for t in ALL_TOPICS if state.get(t) != "ok"]
-
-
-def mark_mailed(site, rep):
-    """在 JSON 上蓋『已寄』戳記，讓同週後續班次不會重寄（原子寫入，不冒清空原檔的險）。"""
-    rep["mailed"] = datetime.now().strftime("%Y-%m-%d %H:%M")
-    path = os.path.join(site, "reports", f'{rep["date"]}.json')
-    with open(path + ".tmp", "w", encoding="utf-8") as f:
-        json.dump(rep, f, ensure_ascii=False, indent=2)
-    os.replace(path + ".tmp", path)
 
 
 def selftest():
@@ -1363,15 +1278,11 @@ def selftest():
         "卡片主題 AI 跑完但一個都沒挑出來，是合理結果不是失敗"
     assert topic_state({"topic": grant, "items": [1], "grants": [], "gist": ""}) == "failed", \
         "卡片主題 AI 沒生出東西＝失敗（08-18 政府補助留白就是這種）"
-    assert not complete({"topics": [bad_ai]}) and complete({"topics": [ok_ai, none_ai]})
-    assert complete({"topics": [ok_ai, {"topic": grant, "items": [1], "grants": [], "gist": ""}]}), \
-        "卡片主題失敗不可扣住整封信（使用者要週一早上就收到）"
     assert todo_topics(None) == ALL_TOPICS, "沒有本週檔＝四個主題都要跑"
     assert todo_topics({"topics": [ok_ai]}) == [t for t in ALL_TOPICS if t != ai], \
         "已經 ok 的主題不可重跑（重跑＝白燒 Gemini 額度）"
-    merged = build_report({}, {"topics": [ok_ai], "mailed": "2026-01-05 08:00"})
+    merged = build_report({}, {"topics": [ok_ai]})
     assert [tp["topic"] for tp in merged["topics"]] == [ai], "沒重跑的主題要原封不動留著"
-    assert merged["mailed"] == "2026-01-05 08:00", "已寄戳記不可因為補內容而掉"
     assert snippet(bad_ai) == STATE_NOTE["failed"] and snippet(none_ai) == STATE_NOTE["empty"]
     page_html = render_report_body({"date": "2026-01-05", "generated_at": "x", "topics": [
         {"topic": ai, "sections": [], "items": [
@@ -1415,21 +1326,6 @@ def main():
         print(f"共 {report['total']} 則" + (f"；仍失敗：{'、'.join(bad)}" if bad else "；四主題齊全"))
     else:
         print(f"[ready] 本週 {report['date']} 四主題都有內容，不重抓")
-
-    if "--prepare" in sys.argv:                               # 週日班：只備稿，寄信留給週一
-        print("[mail] --prepare 只備稿，不寄信")
-        return site
-    if report.get("mailed"):
-        print(f"[mail] 本週已於 {report['mailed']} 寄出，跳過")
-        return site
-    if not complete(report) and datetime.now().weekday() < 2:  # 殘的別寄爛信，等週二/三補跑
-        print("[mail] 本週週報不完整，等下一班補跑再寄")
-        return site
-    if not force and datetime.now().hour < MAIL_FROM_HOUR:    # 排程可能被 GitHub 提早叫醒
-        print(f"[mail] 現在 {datetime.now():%H:%M} 早於 {MAIL_FROM_HOUR} 點，等下一班再寄")
-        return site
-    if send_mail(report):                                    # 寄精簡版（摘要+連結）
-        mark_mailed(site, report)                            # 真的寄出去才蓋戳，沒寄成下一班要重試
     return site
 
 

@@ -2,24 +2,18 @@ name: weekly-report
 
 on:
   schedule:
-    # cron 一律 UTC，註解寫台北時間(UTC+8)。實測 GitHub 排程會延遲 90~180 分鐘，所以：
-    #   週日先把內容備好（抓新聞+AI，最花時間、可以慢慢來）
-    #   週一清晨起排四班「接力」，每班只做寄信；已寄過就跳過，早於台北 07:00 也跳過。
-    #   → 不管當天延遲多少，都會有一班落在台北 07:00~08:40 之間把信寄出去。
-    #   週二起每天補一班：只重跑本週還沒有內容的主題（逐主題累積），四個都齊全就直接跳過。
-    - cron: '10 2 * * 0'      # 週日 10:10 備稿（不寄信）
-    - cron: '40 21 * * 0'     # 週一 05:40 接力一
-    - cron: '40 22 * * 0'     # 週一 06:40 接力二
-    - cron: '40 23 * * 0'     # 週一 07:40 接力三
-    - cron: '40 0 * * 1'      # 週一 08:40 接力四
-    - cron: '40 0 * * 2-6'    # 週二~週六 08:40 每天補一次：只跑本週還沒有內容的主題（都齊全就跳過，零 API）
+    # cron 一律 UTC，註解寫台北時間(UTC+8)。實測 GitHub 排程會延遲 90~180 分鐘。
+    # 每天一班就夠（2026-10-12 起不寄信，週報改放部門平台的「趨勢週報」分頁看）：
+    #   週日那班 = 新的一週，四個主題全跑；
+    #   週一～週六 = 只補本週還沒有內容的主題，四個都齊全就印 [ready] 跳過，零 API。
+    # 排在清晨 05:40，延遲後大約 07:10~08:40 跑完 → 週一早上九點開平台時已是本週內容。
+    - cron: '40 21 * * *'     # 每天台北 05:40
   workflow_dispatch:          # 允許在 Actions 頁手動按鈕觸發（測試/強制）
 
 permissions:
   contents: write             # 允許把產生的 docs/ commit 回 repo
 
-# 兩班接力若被 GitHub 湊在同一時間叫醒，會同時讀到「還沒寄」而各寄一封。
-# 排隊執行（不取消）：後面那班等前一班把「已寄」戳記 push 完再 checkout，就看得到、會跳過。
+# 排程與手動觸發湊在一起時排隊跑，不要兩班同時改同一份本週 JSON
 concurrency:
   group: weekly-report
   cancel-in-progress: false
@@ -34,20 +28,16 @@ jobs:
           python-version: '3.12'
       - name: 裝 crawl4ai（正文品質＋跟 Google News 跳轉；失敗不擋周報，程式自動退回 stdlib）
         run: pip install -q crawl4ai && crawl4ai-setup || true
-      - name: 產周報並寄信
+      - name: 產周報
         env:
-          TZ:             Asia/Taipei   # runner 預設 UTC，程式判「今天星期幾／幾點」要用台北時間
-          GMAIL_USER:     ${{ secrets.GMAIL_USER }}
-          GMAIL_APP_PW:   ${{ secrets.GMAIL_APP_PW }}
-          MAIL_TO:        ${{ secrets.MAIL_TO }}
+          TZ:             Asia/Taipei   # runner 預設 UTC，程式判「今天星期幾」要用台北時間
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          SITE_URL:       https://jerry08100.github.io/weekly-trend-report/
-        run: python weekly_report.py ${{ github.event.schedule == '10 2 * * 0' && '--prepare' || '' }}
+        run: python weekly_report.py
       - name: 部署網站（commit docs/ 回 repo）
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs
           git diff --cached --quiet || git commit -m "周報更新 $(date +%F)"
-          git pull --rebase --autostash origin main   # 「已寄」戳記一定要 push 成功，否則下一班會重寄
+          git pull --rebase --autostash origin main
           git push
