@@ -1189,7 +1189,78 @@ def rebuild_site(site):
     idx_side = build_sidebar(reports, order, base="reports/", active_date=reports[0]["date"])
     with open(os.path.join(site, "index.html"), "w", encoding="utf-8") as f:
         f.write(compose_page(reports[0], idx_side))
+    write_feed(site, reports)
     print(f"[render] 重畫 {len(reports)} 週 -> {site}")
+
+
+# ── 給部門平台讀的資料（2026-10-12 使用者：週報要「直接做在平台裡」，不要嵌網站）──
+# 平台是 file:// 開的單一 HTML，從 GitHub Pages 抓 docs/feed/*.json 自己排版。
+# 標紅、引用、截止過濾、三態都在這裡先算好，平台那端只把片段畫出來，不重寫一套邏輯。
+# 放 docs/feed/ 而不是 docs/reports/：load_all_reports() 會把 reports/ 底下所有 .json 當周報讀。
+def segs(text, items=None):
+    """純文字 → 片段清單：["t", 文字]／["w", 要標紅的公司名]／["c", 編號, 原文網址]。
+    標紅沿用網站那套 mark_watch，平台就不必複製名單與規則。"""
+    h = html.escape(text or "")
+    if items is not None:                                # 先換引用記號，免得 mark_watch 看到 [[12]]
+        h = re.sub(r"\[\[(\d+)\]\]", lambda m: f"\x00{m.group(1)}\x00", h)
+    out = []
+    for part in re.split(r'(<mark class="watch">.*?</mark>|\x00\d+\x00)', mark_watch(h)):
+        if not part:
+            continue
+        if part.startswith("<mark"):
+            out.append(["w", html.unescape(re.sub(r"<[^>]+>", "", part))])
+        elif part.startswith("\x00"):
+            i = int(part.strip("\x00"))
+            if items is not None and 0 <= i < len(items):   # 編號超出範圍就丟掉，跟網站一樣
+                out.append(["c", i + 1, items[i].get("link", "")])
+        else:
+            out.append(["t", html.unescape(part)])
+    return out
+
+
+def feed_week(rep):
+    """一週周報 → 平台用的樣子。"""
+    topics = []
+    for tp in rep["topics"]:
+        t, st, items = tp["topic"], topic_state(tp), tp["items"]
+        f = {"topic": t, "label": TAB_LABEL.get(t, t), "state": st,
+             "note": STATE_NOTE.get(st, ""), "gist": tp.get("gist", "")}
+        if t in GRANT_TOPICS:                            # 常態清單照給，成敗都顯示（跟網站一致）
+            f["award"] = t in AWARD_TOPICS
+            f["standing"] = STANDING.get(t, [])
+            f["news"] = []
+            for g in tp.get("grants") or []:
+                if deadline_passed(g.get("deadline", "")):
+                    continue
+                i = g.get("idx")
+                f["news"].append({
+                    "agency": g.get("agency", ""), "program": g.get("program", ""),
+                    "target": g.get("target", ""), "amount": g.get("amount", "").strip(),
+                    "deadline": g.get("deadline", "").strip() or "詳見公告",
+                    "link": items[i]["link"] if isinstance(i, int) and 0 <= i < len(items) else ""})
+        elif st == "ok":
+            f["sections"] = [{"heading": sec.get("heading", ""),
+                              "paras": [segs(p, items) for p in re.split(r"\n{2,}", clean_body(sec.get("body", "")))
+                                        if p.strip()]}
+                             for sec in tp["sections"]]
+            f["refs"] = [{"title": segs(it["title"]), "link": it["link"], "source": it["source"],
+                          "date": it["date"], "dupes": it.get("dupes", 1)} for it in items]
+        topics.append(f)
+    return {"date": rep["date"], "generated_at": rep["generated_at"], "topics": topics}
+
+
+def write_feed(site, reports):
+    """docs/feed/<週一日期>.json ＋ index.json（週次清單，新的在前）。整夾重寫，舊週刪掉的也跟著消失。"""
+    d = os.path.join(site, "feed")
+    os.makedirs(d, exist_ok=True)
+    for f in os.listdir(d):
+        if f.endswith(".json"):
+            os.remove(os.path.join(d, f))
+    for r in reports:
+        with open(os.path.join(d, f'{r["date"]}.json'), "w", encoding="utf-8") as f:
+            json.dump(feed_week(r), f, ensure_ascii=False, separators=(",", ":"))
+    with open(os.path.join(d, "index.json"), "w", encoding="utf-8") as f:
+        json.dump({"weeks": [r["date"] for r in reports]}, f, ensure_ascii=False)
 
 
 def iso_week(dstr):
@@ -1289,6 +1360,24 @@ def selftest():
             {"title": "半殘區塊不該出現的標題", "link": "http://x", "source": "s", "date": ""}]}]})
     assert STATE_NOTE["failed"] in page_html, "失敗主題要寫出『本週更新失敗』"
     assert "半殘區塊不該出現的標題" not in page_html, "失敗主題連新聞卡片都不顯示"
+    # 平台用的片段：引用變 ["c", 編號, 網址]、公司名變 ["w", 名]、超出範圍的引用丟掉
+    its = [{"link": "http://a"}, {"link": "http://b"}]
+    sg = segs("富邦產險導入 AI[[1]]，見[[9]]。", its)
+    assert ["w", "富邦產險"] in sg, sg
+    assert ["c", 2, "http://b"] in sg, "引用要帶原文網址，平台點了直接開"
+    assert not any(x[0] == "c" and x[1] == 10 for x in sg), "超出範圍的引用要丟掉"
+    assert "".join(x[1] for x in sg if x[0] in "tw") == "富邦產險導入 AI，見。"
+    assert segs("A&B <i>") == [["t", "A&B <i>"]], "片段裡是純文字，不可殘留跳脫字元"
+    fw = feed_week({"date": "2026-01-05", "generated_at": "x", "topics": [
+        bad_ai, ok_ai | {"items": [{"title": "t", "link": "l", "source": "s", "date": ""}]},
+        {"topic": grant, "items": [{"title": "t", "link": "L", "source": "", "date": ""}], "gist": "g",
+         "grants": [{"program": "過期", "deadline": "2020-01-01", "idx": 0},
+                    {"program": "還能報", "deadline": "", "idx": 0}]}]})
+    assert fw["topics"][0]["note"] == STATE_NOTE["failed"] and "sections" not in fw["topics"][0], \
+        "失敗主題給平台的只有那一行，不帶半殘內容"
+    assert fw["topics"][1]["refs"][0]["link"] == "l" and fw["topics"][1]["sections"][0]["paras"]
+    assert [n["program"] for n in fw["topics"][2]["news"]] == ["還能報"], "已截止的補助不給平台"
+    assert fw["topics"][2]["news"][0]["link"] == "L" and fw["topics"][2]["standing"], "常態清單要一起給"
     print("[selftest] OK")
 
 
