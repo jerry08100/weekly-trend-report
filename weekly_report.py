@@ -179,10 +179,14 @@ WATCH_SUFFIX = {
     "永續 / 企業實務": "永續 淨零 碳",
     "AI / 企業應用": "AI 數位轉型",
 }
-ALL_TOPICS = list(QUERIES) + [t for t in FEEDS if t not in QUERIES]  # 定義順序(永續→AI→補助→獎項)
 # GRANT_TOPICS：這些主題產「條列卡片」（不寫長文）。含政府補助與企業獎項。
 GRANT_TOPICS = {"政府補助 / 計畫", "企業獎項 / 競賽"}
 AWARD_TOPICS = {"企業獎項 / 競賽"}       # 卡片語意換成獎項（主辦/獎項/對象/獎勵/報名截止）
+# 2026-10-20 使用者：週報只留永續、AI。補助／獎項停跑，平台的「獎項」改讀固定清單
+# （S 槽 01_平台資料\獎項徵件.json，從信箱整理），不靠新聞也不每天變。
+# ponytail: 兩主題的設定與卡片程式留著畫舊週網站頁；要恢復就把這裡的排除拿掉
+ALL_TOPICS = [t for t in list(QUERIES) + [t for t in FEEDS if t not in QUERIES]
+              if t not in GRANT_TOPICS]
 # STANDING：主題 -> 固定卡片清單（已查證，永遠顯示、不靠 AI）。要增減改這裡。
 STANDING = {
     "政府補助 / 計畫": [
@@ -1219,26 +1223,15 @@ def segs(text, items=None):
 
 
 def feed_week(rep):
-    """一週周報 → 平台用的樣子。"""
+    """一週周報 → 平台用的樣子。補助／獎項不給（舊週也是）——平台的獎項分頁讀 S 槽固定清單。"""
     topics = []
     for tp in rep["topics"]:
         t, st, items = tp["topic"], topic_state(tp), tp["items"]
+        if t in GRANT_TOPICS:
+            continue
         f = {"topic": t, "label": TAB_LABEL.get(t, t), "state": st,
              "note": STATE_NOTE.get(st, ""), "gist": tp.get("gist", "")}
-        if t in GRANT_TOPICS:                            # 常態清單照給，成敗都顯示（跟網站一致）
-            f["award"] = t in AWARD_TOPICS
-            f["standing"] = STANDING.get(t, [])
-            f["news"] = []
-            for g in tp.get("grants") or []:
-                if deadline_passed(g.get("deadline", "")):
-                    continue
-                i = g.get("idx")
-                f["news"].append({
-                    "agency": g.get("agency", ""), "program": g.get("program", ""),
-                    "target": g.get("target", ""), "amount": g.get("amount", "").strip(),
-                    "deadline": g.get("deadline", "").strip() or "詳見公告",
-                    "link": items[i]["link"] if isinstance(i, int) and 0 <= i < len(items) else ""})
-        elif st == "ok":
+        if st == "ok":
             f["sections"] = [{"heading": sec.get("heading", ""),
                               "paras": [segs(p, items) for p in re.split(r"\n{2,}", clean_body(sec.get("body", "")))
                                         if p.strip()]}
@@ -1349,7 +1342,7 @@ def selftest():
         "卡片主題 AI 跑完但一個都沒挑出來，是合理結果不是失敗"
     assert topic_state({"topic": grant, "items": [1], "grants": [], "gist": ""}) == "failed", \
         "卡片主題 AI 沒生出東西＝失敗（08-18 政府補助留白就是這種）"
-    assert todo_topics(None) == ALL_TOPICS, "沒有本週檔＝四個主題都要跑"
+    assert todo_topics(None) == ALL_TOPICS, "沒有本週檔＝每個主題都要跑"
     assert todo_topics({"topics": [ok_ai]}) == [t for t in ALL_TOPICS if t != ai], \
         "已經 ok 的主題不可重跑（重跑＝白燒 Gemini 額度）"
     merged = build_report({}, {"topics": [ok_ai]})
@@ -1376,8 +1369,8 @@ def selftest():
     assert fw["topics"][0]["note"] == STATE_NOTE["failed"] and "sections" not in fw["topics"][0], \
         "失敗主題給平台的只有那一行，不帶半殘內容"
     assert fw["topics"][1]["refs"][0]["link"] == "l" and fw["topics"][1]["sections"][0]["paras"]
-    assert [n["program"] for n in fw["topics"][2]["news"]] == ["還能報"], "已截止的補助不給平台"
-    assert fw["topics"][2]["news"][0]["link"] == "L" and fw["topics"][2]["standing"], "常態清單要一起給"
+    assert len(fw["topics"]) == 2, "補助／獎項不給平台（平台獎項分頁讀 S 槽固定清單）"
+    assert grant not in ALL_TOPICS and len(ALL_TOPICS) == 2, "只跑永續、AI 兩個主題"
     print("[selftest] OK")
 
 
