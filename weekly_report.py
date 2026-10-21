@@ -133,41 +133,33 @@ ALIASES = {
 # （「車商」「銀行業」「產險業」會誤標到無關句子），只標具體公司名。
 WATCH_HL = ([w for w in COMPETITORS + CLIENTS if len(w) >= 3 and w not in ("銀行業", "車商", "產險業")]
             + [a for w in COMPETITORS + CLIENTS for a in ALIASES.get(w, [])])
-# 同類業者也標紅：名單只列得出已知對象，但新聞常出現名單外的同業／甲方（台新金控、裕隆、
-# 新光產險…）。用「公司名長相」補抓——2~6 個中文字接上業別字尾。「銀行業」「產險業」這種
-# 沒有公司名前綴的通稱不會命中，不會誤標。
-INDUSTRY_TAIL = ("產物保險", "產險", "金控", "金融控股", "銀行", "車隊", "租車",
-                 "機場接送", "停車", "客運", "運輸", "汽車")
-# 「XX汽車」樣式會誤中「電動汽車」「自駕汽車」這類技術詞——前綴是這些通用詞就不標。
-_GENERIC_PREFIX = {"電動", "自駕", "無人", "新能源", "燃油", "油電", "二手", "進口",
-                   "國產", "網路", "數位", "傳統", "智慧", "共享"}
+# 同類業者也標紅：名單只列得出已知對象，但新聞常出現名單外的同業／甲方（台新金控、裕隆汽車…）。
+# 🔴 2026-10-21 改成「品牌名＋業別」：原本用「2~6 個中文字接業別字尾」猜公司名，
+# 會把半句話標紅（「查證服務或綠色運輸」「宣布收購裕信銀行」「想打入金控」，使用者反映紅字沒意義）。
+# 品牌沒列到的就不標——寧可少標，不要亂標。台灣有新業者就加進 WATCH_BRANDS。
+WATCH_BRANDS = (
+    # 金控／銀行
+    "台北富邦", "富邦", "國泰世華", "國泰", "中國信託", "中信", "兆豐", "玉山", "元大",
+    "台新新光", "台新", "新光", "永豐", "第一", "華南", "合作金庫", "合庫", "開發", "凱基", "國票",
+    "臺灣中小企業", "台灣中小企業", "臺灣", "台灣", "土地", "土銀", "彰化", "彰銀", "上海", "星展",
+    "渣打", "滙豐", "匯豐", "將來", "樂天", "高雄", "王道", "聯邦", "遠東", "京城", "安泰",
+    "陽信", "板信", "三信", "華泰", "台中",
+    # 產險／壽險
+    "和泰", "明台", "旺旺友聯", "新安東京海上", "泰安", "安達", "南山", "三商美邦", "遠雄",
+    # 租車／車廠
+    "中租", "格上", "和運", "裕隆", "中華", "三陽", "國瑞", "福特六和",
+)
+INDUSTRY_TAIL = ("產物保險", "產險", "人壽", "金融控股", "金控", "商業銀行", "銀行", "商銀",
+                 "證券", "租車", "汽車", "車隊", "客運", "機場接送")
 _WATCH_RE = re.compile(
     "|".join([re.escape(w) for w in sorted(WATCH_HL, key=len, reverse=True)]
-             + [rf"[一-龥]{{2,6}}(?:{'|'.join(INDUSTRY_TAIL)})"]),
+             + [rf"(?:{'|'.join(sorted(WATCH_BRANDS, key=len, reverse=True))})"
+                rf"(?:{'|'.join(sorted(INDUSTRY_TAIL, key=len, reverse=True))})"]),
     re.IGNORECASE)
 
 
-_WATCH_SET = set(WATCH_HL)
-_PARTICLES = set("的了與和及並而從在對向由為跟讓也就仍已如據按含")
-
-
 def _watch_repl(m):
-    """業別字尾比對是貪婪的，會把前面的虛詞吃進來（「與新光金控」「從澳洲聯邦銀行」）。
-    名單精確命中不動；字尾命中的把開頭虛詞剝到 <mark> 外，公司名前綴至少保留 2 字
-    （保護「和泰產險」這類以虛詞字開頭的真公司名）。"""
-    t = m.group(0)
-    if t in _WATCH_SET:
-        return f'<mark class="watch">{t}</mark>'
-    tail = next((x for x in sorted(INDUSTRY_TAIL, key=len, reverse=True)
-                 if t.endswith(x)), "")
-    name = t[:len(t) - len(tail)]
-    lead = ""
-    while len(name) > 2 and name[0] in _PARTICLES:
-        lead += name[0]
-        name = name[1:]
-    if name in _GENERIC_PREFIX:                          # 「電動汽車」是技術詞不是公司
-        return t
-    return f'{lead}<mark class="watch">{name}{tail}</mark>'
+    return f'<mark class="watch">{m.group(0)}</mark>'
 
 
 def mark_watch(frag):
@@ -947,9 +939,16 @@ def snippet(tp, limit=48):
     return (txt[:limit] + "…") if len(txt) > limit else txt
 
 
-def clean_body(text):
-    """去掉 AI 偶爾多吐的尾端雜字（如 Check. / ``` / 說明性收尾）。"""
+NO_NEWS = "本週無明顯相關動作"
+
+
+def clean_body(text, heading=""):
+    """去掉 AI 偶爾多吐的尾端雜字（如 Check. / ``` / 說明性收尾）。
+    同業／客戶動態寫了「本週無明顯相關動作」就只留這一句：prompt 已叫它不要唸名單，
+    它仍會唸一遍（全部標紅，主管以為有事）再硬湊一句「所以呢」（2026-10-21 使用者反映）。"""
     t = (text or "").strip()
+    if heading in ("同業動態", "客戶動態") and NO_NEWS in t:
+        return NO_NEWS + "。"
     t = re.sub(r"\s*(check\.?|done\.?|完成。?|```+)\s*$", "", t, flags=re.IGNORECASE)
     return t.strip()
 
@@ -973,7 +972,7 @@ def render_article(topic, sections, items):
     body_parts = []                                  # 左欄：情勢文
     for sec in sections:
         body_parts.append(f'<h4>{html.escape(sec.get("heading", ""))}</h4>')
-        body = re.sub(r"\[\[(\d+)\]\]", repl, html.escape(clean_body(sec.get("body", ""))))
+        body = re.sub(r"\[\[(\d+)\]\]", repl, html.escape(clean_body(sec.get("body", ""), sec.get("heading", ""))))
         body = mark_watch(body)                      # 同業／客戶名稱標紅（主管關注）
         paras = [p.strip() for p in re.split(r"\n{2,}", body) if p.strip()]
         body_parts.append('<div class="body">' + "".join(f"<p>{p}</p>" for p in paras) + "</div>")
@@ -1233,7 +1232,7 @@ def feed_week(rep):
              "note": STATE_NOTE.get(st, ""), "gist": tp.get("gist", "")}
         if st == "ok":
             f["sections"] = [{"heading": sec.get("heading", ""),
-                              "paras": [segs(p, items) for p in re.split(r"\n{2,}", clean_body(sec.get("body", "")))
+                              "paras": [segs(p, items) for p in re.split(r"\n{2,}", clean_body(sec.get("body", ""), sec.get("heading", "")))
                                         if p.strip()]}
                              for sec in tp["sections"]]
             f["refs"] = [{"title": segs(it["title"]), "link": it["link"], "source": it["source"],
@@ -1316,8 +1315,23 @@ def selftest():
     assert '<mark class="watch">USPACE</mark>' in mark_watch("USPACE 新成立 AI 部門")
     assert '<mark class="watch">富邦產物保險</mark>' in mark_watch("富邦產物保險股份有限公司導入")
     assert mark_watch("與新光金控合作") == '與<mark class="watch">新光金控</mark>合作', "虛詞要剝到 mark 外"
-    assert mark_watch("從澳洲聯邦銀行來看") == '從<mark class="watch">澳洲聯邦銀行</mark>來看'
     assert '<mark class="watch">和泰產險</mark>' in mark_watch("和泰產險推新保單"), "真公司名開頭字不可被剝"
+    # 2026-10-21：句子裡的通稱不能半截標紅
+    assert "<mark" not in mark_watch("查證服務或綠色運輸專案"), mark_watch("查證服務或綠色運輸專案")
+    assert "<mark" not in mark_watch("把握競爭對手在綠色車隊的空窗"), mark_watch("把握競爭對手在綠色車隊的空窗")
+    assert mark_watch("公司與新光金控合作") == '公司與<mark class="watch">新光金控</mark>合作'
+    assert '<mark class="watch">和運租車</mark>' in mark_watch("和運租車推出")
+    assert "<mark" not in mark_watch("爭取欲向銀行借款"), mark_watch("爭取欲向銀行借款")
+    for s in ("身處大眾運輸", "從產品應用切入汽車", "本土車隊", "宣布收購裕信銀行", "想打入金控",
+              "範疇三運輸", "獲得卓越銀行獎", "大型民營金控", "寵物運輸"):
+        assert "<mark" not in mark_watch(s), mark_watch(s)
+    assert '<mark class="watch">中國信託產險</mark>' in mark_watch("中國信託產險推出")
+    assert "<mark" not in mark_watch("轉向，因為金控評選"), mark_watch("轉向，因為金控評選")
+    assert mark_watch("逆襲成台灣大車隊") == '逆襲成<mark class="watch">台灣大車隊</mark>', mark_watch("逆襲成台灣大車隊")
+    assert '<mark class="watch">台北富邦銀行</mark>' in mark_watch("台北富邦銀行推出")
+    assert mark_watch("外商星展銀行累計") == '外商<mark class="watch">星展銀行</mark>累計', mark_watch("外商星展銀行累計")
+    assert clean_body("本週無明顯相關動作。包含USPACE等。所以呢：…", "同業動態") == "本週無明顯相關動作。"
+    assert clean_body("本週無明顯相關動作，但…", "市場趨勢").startswith("本週無明顯相關動作，但"), "只管後兩節"
     assert '<mark class="watch">國泰金控</mark>' in mark_watch("國泰金控導入AI"), "名單外金控也要標"
     assert '<mark class="watch">裕隆汽車</mark>' in mark_watch("裕隆汽車開放參訪"), "車商也要標"
     assert '<mark class="watch">和泰汽車</mark>' in mark_watch("和泰汽車導入AI")
