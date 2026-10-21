@@ -1,14 +1,58 @@
 {
   "date": "2026-10-19",
-  "generated_at": "2026-10-20 08:41",
-  "total": 72,
+  "generated_at": "2026-10-21 08:08",
+  "total": 60,
   "topics": [
     {
       "topic": "永續 / 企業實務",
-      "gist": "",
-      "sections": [],
+      "gist": "碳費生存戰、能源週綠能技術、中油碳盤查、星展綠色融資",
+      "sections": [
+        {
+          "heading": "政策與法規",
+          "body": "國內碳費機制正式開跑，產官學專家於論壇直指排碳成本已直接列入營運帳本，ESG從早期的形象合規升級為牽動現金流與融資的存亡關鍵[[0]]。政府同時定調2035年再生能源發電佔比須衝刺至30%以上，並依立法院通過之法源啟動台電核電重啟相關程序，將核安與核廢料處理列為客觀檢驗條件[[6]]。地方層級方面，嘉義市依能源法規積極輔導在地重點能源用戶落實法定義務[[21]]。在碳定價與能源政策緊縮下，排碳大戶若未在年底前將碳費支出編入明年度財務預算，隔年營運利潤將面臨直接侵蝕。所以呢：排碳大戶必須在今年底前將碳費支出直接編入2025年財務預算，並完成內部碳定價機制建立，否則營業利益率將面臨直接侵蝕。"
+        },
+        {
+          "heading": "市場趨勢",
+          "body": "本週台灣國際淨零永續展與智慧能源週吸引超過1.8萬名買主，焦點全數鎖定AI高算力引發的龐大耗電與散熱痛點[[9]][[18]]。硬體端如康寧推出玻璃橋技術推動矽光子低功耗架構落地[[1]]，是方電訊亦動土興建AI資料中心[[8]]；服務端如必維集團展出新能源與永續整合方案[[22]]，中華電信則跨足協助醫療院所通過溫室氣體盤查與第三方查證[[12]]。企業轉向自然相關財務揭露（TNFD）進行生態保育共生，顯見減碳技術已延伸至供應鏈能耗與生態治理[[4]]。所以呢：製造業與資通訊供應鏈明年將陸續收到國際客戶要求提供資料中心或產線的實質能效數據，企業必須提早導入ISO 14064-1盤查與智慧電表監控設備。"
+        },
+        {
+          "heading": "同業動態",
+          "body": "本週無明顯相關動作。包含USPACE、機場快線、大都會車隊、台灣大車隊、順鋒機場接送、漢聲租車、Uber、肯譯、行遍天下等指名對象，在碳盤查、查證服務或綠色運輸專案上皆無公開業務更新。所以呢：主管應指示業務團隊把握競爭對手在綠色車隊與出行碳足跡認證上的空窗期，加速向企業客戶推銷低碳接送與範疇三減碳方案以搶佔市佔。"
+        },
+        {
+          "heading": "客戶動態",
+          "body": "國營能源龍頭中油在嘉義市府輔導下，已正式完成溫室氣體排放盤查作業，達成重點能源用戶的減碳合規進度[[21]]。金融業方面，外商星展銀行累計已承作永續融資達2.5兆元、台灣綠電融資達400億元，並公開點出中小企業缺乏專業人才與解方的轉型痛點，推動媒合永續專家檢視實質減碳作為[[10]][[20]]。金融端正以資金借貸為籌碼，嚴格審查投融資對象的碳排體質。所以呢：欲向銀行爭取低利永續連結貸款的企業，必須在明年上半年備妥經第三方查證的碳盤查清冊，否則將面臨融資成本提高或額度受限的窘境。"
+        }
+      ],
       "grants": [],
       "items": [
+        {
+          "title": "ESG遠見共好圈〉ESG進入企業生存戰！碳費、AI與能源危機，產官學共商轉型解方",
+          "source": "ESG遠見",
+          "link": "https://esg.gvm.com.tw/article/126938",
+          "date": "2026-10-20",
+          "summary": "ESG已從合規報告的「成本戰」，全面升級為牽動現金流與訂單的「生存戰」。9月底，「遠見共好圈」邀請產官學專家，從治理、COP31、綠色醫療到低碳工程，剖析企業如何從內部碳定價、本業商機驅動全員轉型，築起營運防線。 The post ESG遠見共好圈〉ESG進入企業生存戰！碳費、AI與能源危機，產官學共商轉型解方 appeared first on ESG遠見…",
+          "body": "ESG遠見共好圈〉ESG進入企業生存戰！碳費、AI與能源危機，產官學共商轉型解方 圖／ESG遠見共好圈舉辦「2026 ESG特刊暨趨勢解析」線上講堂。左起為《遠見雜誌》副社長李建興、中鼎集團永續長何麗嫺、衛生福利部醫事司副司長劉玉菁及中華經濟研究院能源與環境研究中心主任劉哲良。遠見雜誌提供 ESG已從合規報告的「成本戰」，全面升級為牽動現金流與訂單的「生存戰」。9月底，「遠見共好圈」邀請產官學專家，從治理、COP31、綠色醫療到低碳工程，剖析企業如何從內部碳定價、本業商機驅動全員轉型，築起營運防線。 極端氣候、能源震盪、碳成本與AI用電需求同步升高，企業談ESG，已不能只停留在揭露與合規。 「ESG遠見共好圈」9月29日舉辦「2026 ESG特刊暨趨勢解析」線上講堂，邀集《遠見雜誌》副社長暨智庫總編輯李建興、中華經濟研究院能源與環境研究中心主任劉哲良、衛生福利部醫事司副司長劉玉菁及中鼎集團永續長何麗嫺，從企業治理、COP31、醫療與工程產業切入，分享最新國內外最新永續轉型趨勢。 今年《遠見》ESG特刊主題是「ESG啟動實戰時代」，把焦點從「企業做了多少ESG」轉向「ESG如何影響生存與競爭」。熱浪、地緣衝突與供應鏈風險接連發生，國內碳費正式進入企業帳本，AI則同時帶來效率提升與能源壓力。永續已從偏向揭露與形象的「成本戰」，轉為牽動現金流、融資、訂單與營運韌性的「生存戰」。 全球相較工業化前已升溫1.43°C，極端高溫、洪災與地緣政治風險交織，氣候衝擊正從單一事件擴大為供應鏈、能源與營運的連鎖風險。李建興指出，今年特刊以「當永續從成本戰變成生存戰」為核心，企業不能再把韌性視為備援",
+          "dupes": 2
+        },
+        {
+          "title": "矽光子下一代節能關鍵元件！康寧「玻璃橋」登場，7大台廠供應鏈全解析",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/127252",
+          "date": "2026-10-20",
+          "summary": "當萬顆GPU激起AI算力海嘯，龐大的電耗成為算力瓶頸。美國玻璃大廠康寧推出「玻璃橋」技術，以微觀突破解決光纖與晶片的對準難題。這座光學天橋不僅助推低功耗矽光子架構落地，更為台灣光通訊供應鏈開啟關鍵升級新契機。 The post 矽光子下一代節能關鍵元件！康寧「玻璃橋」登場，7大台廠供應鏈全解析 appeared first on ESG遠見 - 永續共好.",
+          "body": "由康寧掀起的光學新浪潮，不僅改寫次世代AI資料中心的節能藍圖，更迅速在資本市場掀起話題。示意圖，取自康寧官網 當萬顆GPU激起AI算力海嘯，龐大的電耗成為算力瓶頸。美國玻璃大廠康寧推出「玻璃橋」技術，以微觀突破解決光纖與晶片的對準難題。這座光學天橋不僅助推低功耗矽光子架構落地，更為台灣光通訊供應鏈開啟關鍵升級新契機。 偌大的資料中心內，數以萬計的GPU（圖形處理器）正在高速運轉，機架間發出沉悶轟鳴聲，伴隨而來的是熱氣與電表上不斷往上跳動的數字。 在這座巨型電力吞噬者的心臟深處，一根比頭髮更細的光纖正試圖精準對準奈米級的光子晶片。這道尺寸相差數十倍的微觀鴻溝，正是AI算力瓶頸的根源。 而這也是美國玻璃大廠康寧（Corning）正全力研發的「玻璃橋」（Glassbridge），試圖以晶圓級玻璃強勢搭起光學天橋。它不只是實現高密度傳輸的關鍵元件，更是推動低功耗共同封裝光學（CPO）落地的關鍵要角。 透過削減高頻電訊號的傳輸損耗與廢熱，這座玻璃橋正成為龐大AI資料中心通往低碳永續的關鍵元件。 今年6月，康寧在韓國首爾舉辦的AI資料中心光通訊與互連技術大會上，正式展示新一代玻璃光學互聯元件——玻璃橋，主要鎖定AI資料中心、矽光子與共封裝光學市場。 專家解釋，光纖與光子晶片長期存在顯著的尺寸不匹配問題。光子晶片內部的光波導寬度僅數百奈米，而光纖核心直徑卻達數微米，兩者相差數十倍。過去要連結兩者，仰賴耗時且高成本的精密對準技術，但康寧採用「晶圓級離子交換技術」（IOX），直接在玻璃內部形成光波導，使光訊號能沿著預設路徑精準傳導至晶片。 這項新技術從今年6月起備受討論，主要是因為隨著GPU叢集",
+          "dupes": 1
+        },
+        {
+          "title": "中醫大附醫攜手世展會，啟動「草原小太陽」計畫！ 守護氣候變遷下的蒙古兒童",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/126967",
+          "date": "2026-10-20",
+          "summary": "中國醫藥大學附設醫院持續將醫療專業延伸至國際公益，5日攜手台灣世界展望會正式啟動蒙古「草原小太陽」行動。長期公益伙伴林增連慈善基金會亦共襄盛舉，共同加入防災教育推廣。 The post 中醫大附醫攜手世展會，啟動「草原小太陽」計畫！ 守護氣候變遷下的蒙古兒童 appeared first on ESG遠見 - 永續共好.",
+          "body": "圖／屏科大於「2026世界綠色大學」評比再度奪冠！蟬聯13年全國第一，躍升全球第19名。屏科大提供 中國醫藥大學附設醫院持續將醫療專業延伸至國際公益，5日攜手台灣世界展望會正式啟動蒙古「草原小太陽」行動。長期公益伙伴林增連慈善基金會亦共襄盛舉，共同加入防災教育推廣。 蒙古烏布蘇計畫區是一項長達12至14年的長期治理與陪伴計畫，中醫大附醫將在世展會長期深耕當地的基礎上，透過多元援助與健康、防災教育，協助當地兒童、家庭與社區提升因應極端氣候的能力，為孩子建立更穩定的成長環境。 中醫大附醫與世展會合作已超過十年，從越南的乾淨水源、尼泊爾女孩的健康與教育，到今年走進蒙古，逐步形成一項重要的國際公益模式：**不是先決定要提供什麼，而是先走進現場，了解當地真正需要什麼。** 延伸閱讀：全台首家！momo將資安納入ESG供應鏈，從永續治理走向「數位信任」** 中醫大附醫行政副院長暨永續長楊麗慧，同時擔任企業志工隊隊長，先後帶領團隊走訪越南、尼泊爾及蒙古。 今年6月再次率隊前往蒙古國烏布蘇省，實地了解極端寒冬、乾旱、沙塵暴等氣候風險對家庭生計，以及兒童營養、健康、教育與安全的影響，並將第一線需求帶回醫院，轉化為更符合當地需要的支持方案。 「草原小太陽」支持計畫將從兒童與家庭的基本生活需求、災害應變到社區韌性，推動包括**防災包、食物包、牲畜包、基礎建設及水資源等五大面向** 支持。 中醫大附醫並**結合醫療與健康專業，協助發展健康教育手冊、防災教育手冊及防災教育App** ，將健康促進、防災準備與氣候風險等知識，轉化為孩子與家庭容易理解、學習並實際運用的工具，進一步提升面對氣候與災害風險的因應",
+          "dupes": 1
+        },
         {
           "title": "九合一選舉焦點〉北市遷移松機改建AI園區，可行嗎？專家：４大問題待解",
           "source": "",
@@ -16,15 +60,6 @@
           "date": "2026-10-19",
           "summary": "松山機場變身「台北AI園區」，真能讓天際線解禁、都市空汙遠離？然而當300公頃黃金地遇上北部電網紅線與國安防救災考驗，這項願景究竟是首都轉型的契機，還是難以跨越的現實挑戰？ The post 九合一選舉焦點〉北市遷移松機改建AI園區，可行嗎？專家：４大問題待解 appeared first on ESG遠見 - 永續共好.",
           "body": "松山機場變身「台北AI園區」，真能讓天際線解禁、都市空汙遠離？然而當300公頃黃金地遇上北部電網紅線與國安防救災考驗，這項願景究竟是首都轉型的契機，還是難以跨越的現實挑戰？ 台北市長選戰進入白熱化階段。日前台北市長蔣萬安提出遷移松山機場，並將其改建為「台北AI園區」的構想，預計將整合松山機場與周邊共300公頃土地；其中100公頃規劃為AI產業聚落，90公頃作為住宅用地及支援性公共設施，110公頃開發為公園綠地。 蔣萬安主張，此構想會在桃園機場第三航廈等設施到位後推動，並在10月15日親自列席行政院會向院長卓榮泰遞送公文，表示北市府早在2023年8月便曾行文中央表達支持松山機場遷建有利發展，也可解鎖約570公頃受航高禁限建的都市更新地區發展。 然而，消息一出，行政院表示，松山機場肩負離島疏運、災害救難、醫療後送、國際商務航班與首都中樞防衛的國防任務。此外，桃園機場第三航廈雖預估2027年完工、分階段啟用，但南北跑道仍需整建。 圖／日前台北市長蔣萬安提出遷移松山機場，並將其改建為「台北AI園區」的構想。取自蔣萬安臉書 而部份離島民代與地方也憂心，一旦松山機場遷移，離島居民來台就醫的「黃金10～15分鐘車程內有9大急救責任醫院」優勢與離島交流，恐怕會受到嚴重衝擊。 也有部份人士指出，松山機場遷建，有機會緩解台北市區的空氣與噪音汙染，但改建為台北AI園區之後，用電可能是一大隱憂。到底真相如何？《遠見》從四大面向綜合整理各方專家學者意見，探討這個攸關台北與台灣未來發展的建設案，可能帶來的影響。 延伸閱讀：松山機場遷建AI園區？童子賢不贊成：首都需近市區機場，不如考慮淡海** 台北市政府環",
-          "dupes": 1
-        },
-        {
-          "title": "薔琵颱風動態：週五、六最接近台灣，這2地區侵襲機率逾5成！會放颱風假嗎？",
-          "source": "",
-          "link": "https://esg.gvm.com.tw/article/127722",
-          "date": "2026-10-19",
-          "summary": "今年第29號颱風薔琵已增強為強烈颱風，中央氣象署預估週五、六（10月23、24日）最接近台灣，路徑仍有北轉擦邊與登陸兩種可能。宜蘭、基隆暴風侵襲機率逾五成。本文整理最新動態、警報時程、停班課標準，持續更新。 The post 薔琵颱風動態：週五、六最接近台灣，這2地區侵襲機率逾5成！會放颱風假嗎？ appeared first on ESG遠見 - 永續共好…",
-          "body": "今年第29號颱風薔琵已增強為強烈颱風，中央氣象署預估週五、六（10月23、24日）最接近台灣，路徑仍有北轉擦邊與登陸兩種可能。宜蘭、基隆暴風侵襲機率逾五成。本文整理最新動態、警報時程、停班課標準，持續更新。 依中央氣象署10月19日14時資料，薔琵為強烈颱風，中心位於鵝鑾鼻東南東方約2030公里海面 ，以每小時20公里速度向西北西移動。近中心最大風速每秒55公尺，瞬間最大陣風每秒68公尺；七級風平均暴風半徑250公里，十級風平均暴風半徑100公里。 薔琵於10月15日生成，17日凌晨增強為中度颱風，同日晚間8時再升為強烈颱風，從中颱到強颱不到24小時。 前中央氣象局局長鄭明典19日在臉書指出，薔琵已完成第一輪「眼牆置換」，颱風眼重新變得清晰，「還有一些些增強空間」。氣象署預報員鄭傑仁說明，眼牆置換多見於較強的颱風，有颱風「重整」的意義；薔琵18日晚間至19日清晨曾受中層風切影響稍減弱，但沿途海溫仍有利增強。 氣象署預估薔琵20日（二）、21日（三）前後達到強度巔峰，近中心風速有機會達每秒60公尺；接近台灣時會逐漸減弱，23日（五）上半天前仍維持強颱等級，24日（六）減弱為中度颱風，也就是以中颱上限到強颱的強度接近台灣。 ▋**延伸閱讀：日本賞楓泡湯了？東京連續降雨35天打破140年紀錄！最新楓紅預測、觀賞變數一次看** 氣象署19日下午表示，薔琵持續朝西北西移動，路徑仍以在台灣東方海面北上的機率較大。預報員李孟軒上午指出，約週四、週五因太平洋高壓減弱轉向北行；最新路徑較前兩天「往東修正」，週五、週六較可能朝西北通過宜蘭近海，但仍無法排除中心登陸台灣東半部。 中央大學大氣科學系兼",
           "dupes": 1
         },
         {
@@ -64,46 +99,37 @@
           "dupes": 1
         },
         {
-          "title": "ESG台灣快訊》川普爆台灣加碼美國天然氣｜台泥百億升級焚化廠增發電效率",
-          "source": "",
-          "link": "https://esg.gvm.com.tw/article/127368",
-          "date": "2026-10-15",
-          "summary": "川普拋出台灣採購美國天然氣大單，牽動能源安全與千億投資；台經院則示警，碳費偏低恐讓企業未來付出更高減碳成本。面對能源與環境挑戰，台泥投入百億改建焚化廠，中華電信跨足竹林碳匯，桃園拉拉山也透過改善光害獲國際認證。 The post ESG台灣快訊》川普爆台灣加碼美國天然氣｜台泥百億升級焚化廠增發電效率 appeared first on ESG遠見 - 永續共…",
-          "body": "川普拋出台灣採購美國天然氣大單，牽動能源安全與千億投資；台經院則示警，碳費偏低恐讓企業未來付出更高減碳成本。面對能源與環境挑戰，台泥投入百億改建焚化廠，中華電信跨足竹林碳匯，桃園拉拉山也透過改善光害獲國際認證。 美國總統川普13日公開表示，台灣將採購阿拉斯加液化天然氣（LNG）計畫30%產量。對此，經濟部14日證實，中油自2025年3月簽署合作意向書後，已與美方協商約一年半，初步規劃每年採購600萬噸天然氣，並投入最高44億美元參與開發。 阿拉斯加LNG計畫預計年產2000萬噸，須興建約1287公里輸氣管線，天然氣可直接經太平洋運抵台灣，減少對其他航線的依賴。過去，台灣2025年進口2380萬噸LNG，主要來自澳洲與卡達，若合作落實，將提高美國氣源占比。 不過，計畫仍面臨高額建設成本與融資挑戰，開發商預計2031年開始出口，最快2032年供應台灣。經濟部指出，持股比例、投資條件及採購契約尚未定案，後續仍須完成協商與預算審核，實際供氣時程仍有變數。 全球永續金融面臨標準不一、資金不足等挑戰，台灣經濟研究院董事長吳中書10月12日於金融研訓院論壇指出，國際已有逾600種ESG評比、4500項績效指標，增加企業合規成本與漂綠風險；美國大型金融機構陸續退出氣候聯盟，也為永續金融發展增添變數。 吳中書點出台灣永續金融8大挑戰，包括碳費低於歐盟、新加坡等經濟體，若延後減碳，未來轉型成本恐更高。2025年台灣燃氣、燃煤發電占比分別達47.9%及35.7%，能源轉型壓力仍大；加上跨部會ESG規範缺乏一致性、金融機構引導不足，全台171萬家中小企業也面臨減碳與合規難題。 不過，吳中書認為台灣仍有",
-          "dupes": 1
-        },
-        {
-          "title": "AI淨零／ 台泥文山焚化廠動土 張安平盼垃圾發電支援AI發展",
+          "title": "AI淨零／是方虎尾AI資料中心動土預計117年下半年營運| 產經",
           "source": "中央社 CNA",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9sS1hYUWs5X3FUZ0tNSk5vSWpxa3VVMjFwZi1uNnBfMjFhVXN0ekJiSTZoVTJTbjBSeElxWEVZdTVlWjk2MlJ0MzJMdHlkWFVfZFkyci0zOFUwYnlnUUE?oc=5",
-          "date": "2026-10-14",
-          "summary": "",
-          "body": "[281.突破減塑與關稅困境 金元福打造循環競爭力[影]](https://www.cna.com.tw/news/afe/202510130037.aspx) 本網站使用相關技術提供更好的閱讀體驗，同時尊重使用者隱私，點這裡瞭解中央社隱私聲明。當您關閉此視窗，代表您同意上述規範。 Your browser does not appear to support Traditional Chinese. Would you like to go to CNA’s English website, “Focus Taiwan”? 台泥董事長張安平（圖）14日出席台中市文山焚化廠汰舊換新工程動土儀式，說明新廠規劃。（台泥提供） 中央社記者何秀玲傳真 115年10月14日 數位轉型已是產業進行式，人工智慧、淨零碳排更是政府與企業面對的兩大挑戰，攸關台灣未來競爭力。中央社第一線採訪團隊，深入報導政府與百工百業如何運用AI優化生產流程、驅動綠色創新，見證台灣產業再一次躍升。 （中央社記者何秀玲台北14日電）台中市文山焚化廠汰舊換新工程今天動土，由台泥文山環保科技依BOT案投資興建及營運；台泥表示，新廠發電裝置容量將由15MW提升至43MW，發電效率由15%提高至25%以上。台泥董事長張安平表示，台灣電力不足，盼新廠資源化產生電力，可供未來AI發展運用。 台泥今天發出新聞稿指出，台中市長盧秀燕與張安平今天共同主持文山焚化廠汰舊換新工程動土儀式。 台泥表示，將透過新廠建設，讓每天垃圾更有效率地轉化為電力，單向廢棄物處置能走向資源與能源的雙向循環；新廠發電裝置容量和發電效率都將提升，全廠節水率逾",
-          "dupes": 7
-        },
-        {
-          "title": "Lenovo榮獲最新ISG Provider Lens®數位永續發展報告評選為資訊科技永續發展的雙料領導者",
-          "source": "Yahoo股市",
-          "link": "https://news.google.com/rss/articles/CBMi1wNBVV95cUxORWhNRG5BM0RKMFRfNjF0cjJTUHliM2NzQ3I4aTFDX3dhaXM3UUh2UEZiTlNxdVNsMkhhT25LTnNqTGhKS2h4MDN6U09fcXEwSmVZeFBucjhIQXYydFpaa1J3SUR0WjhPd1Ita3BsWU9xV1pLYzVuNXVUcHNTR0ZTOFdQVDhpODI5OFc3Z2tmcjdxc2pmMU8zUlJKakllcWxRbkh2V3lJQjlQSlNzLWpKRm1YMUUtdU14TDFqUXl0emxmNlQwUjRnSzNzZkw1U0hvQ2pNZGR1SzVzUzNQZGx0YXBQQlByT0lLM3BnQ1hyWWdnQnJfZndycDJsQ3U1clctRWVBUi1BY19DamF2WGxVYThUZWkwUzdmRHJwQ0NJUnd0VkxRd0VWQk1PVkRCSEdmOUNEZzVKcG9UVFloNUhULXdEMWNLc1R6UVV4enZGNmJOZWhjYkhNR3BPRGxLdGpiSF91RWtvbzNWZVBZd1VMTWVRRElTekxCMWh2dFB0LWVWSWZzTmVUZVJjTGpDQVRSckxzUEhnMHh2ZXB6d0tDWXE2TEo2SjdnNjdNU3RwbGgtTHdhX3NMWExuODd1VFdVdXZTY1NYOUdRNlgtbE15UGZ3Mzh0NHc?oc=5",
-          "date": "2026-10-19",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1uNWdjWkxnYUNaSGZMVU10cFJFMGwtWVI0UFdfY2E2Z01xN1pYbm5fem4xWDJPQXhSWF9Ya0ktdTVETmIyTTNuRDBMbldJUjdWd0NVWDR3X0lpY2NtM0E?oc=5",
+          "date": "2026-10-20",
           "summary": "",
           "body": "",
-          "dupes": 3
+          "dupes": 8
         },
         {
           "title": "〈智慧能源週〉淨零展、智慧能源周3天吸引1.8萬專業買主 聚焦AI時代兼顧能源與減碳需求",
-          "source": "鉅亨網",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBjYnRPcVRUZzBaa0hRMEhwZ3RuZlNCTjBxVGlBQVFpeGhIY09GV25idFZZVDhuNGM2MGhHY2NiOXRqbEpUME40UTlOdw?oc=5",
+          "source": "優分析UAnalyze",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBWOXA2azVyMTVHSVVTYmRoUF9ScG9KZ2Q0OTB4N1drbWl4dGpLdVg3SEhJeC1uaWxlSHY5ZE9fX0R5WjU5MG5NSmozQ1FheGZjel9NbGpn?oc=5",
           "date": "2026-10-18",
           "summary": "",
           "body": "",
-          "dupes": 3
+          "dupes": 5
         },
         {
           "title": "星展永續融資2.5兆元、台灣綠電融資400億元 黃偉雄揭中小企淨零轉型4痛點",
           "source": "鉅亨網",
           "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5sU0pBQkpxcjdseUppSjdjUE56VVFaUkJ4cFFiMlVIVHphQ21zZnpNR1d5ZnBsdkptY3dJZlQtS0hHQVpTSkpialNEUHpzYTA?oc=5",
           "date": "2026-10-16",
+          "summary": "",
+          "body": "",
+          "dupes": 5
+        },
+        {
+          "title": "Lenovo榮獲最新ISG Provider Lens® 數位永續發展報告評選為資訊科技永續發展的雙料領導者",
+          "source": "Business Wire",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9XZVJVUkZ2NmJrU0NCOFcyMkEwZDBGRFc0Q0l3aDBEM1hIZi1GQVlfNzV3MVNIdV9WZXJ2TE5oSTU5NmVLWHBEdXNjSzhESXhvR3d5MGJraTZyb3k0U0hJR1Z0S2p6QW5WeVI4?oc=5",
+          "date": "2026-10-19",
           "summary": "",
           "body": "",
           "dupes": 3
@@ -136,27 +162,27 @@
           "dupes": 3
         },
         {
-          "title": "淨零永續展與智慧能源週國際參展商增16%　提淨零與永續解決方案",
-          "source": "ETtoday財經雲",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4zanVnYnpjR2w2bEdEb3A0UFdpbjlud0twejZwZFRoYXh6U1FXZEd1N0ZVNnpMQlowdWdBMVdMbGFJX1RVSElVUHNxMXlXRWlOcVHSAVBBVV95cUxOR1lPYTMyYkhUZjl5QkdvdzZzMU55VFRsZkh0ZmhWYWtKd1ZEcU5iV3lvLW1VSTEtMVhGRWlid3hzVzhOZFZZTVBmZ1VSU2t6RA?oc=5",
+          "title": "台灣國際淨零永續展、台灣國際智慧能源週10月14日登場",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GTTlRenpTekxMazlxTkpIOThnZWlNeU5RVThQdlJ5NlNhMlpRbzJvVEVDZm9qUTFVMGlSbzlwSjZqMW5VNWVyWFV2NHdELVFvWkE?oc=5",
           "date": "2026-10-14",
           "summary": "",
           "body": "",
           "dupes": 3
         },
         {
-          "title": "海大通過ISO 14064-1溫室氣體查驗 推動光電與節能持續減碳",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9jSlFtQjZoeWpRNVFuS3hmOFEtRVpta042enA1emdWRjJLelJnbnhvWlR4VjhsSm5aYXRCdS1lQ0ZZMnUxMzBUeTJPXzRKTGQ2dUE?oc=5",
-          "date": "2026-10-19",
+          "title": "網購愈方便，城市碳排愈難減？台灣宅配通如何用AI改造物流最後一哩路",
+          "source": "城市學",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1neEZYQnM3M2twVC1jbGhMN0lwWEVxMzNNXzdOd0hZeXNYTXU0RG45TzZsc2ptWW5kUWcyQmhzcFZNc2ZJZ2JZd3FQVGdFRFk?oc=5",
+          "date": "2026-10-20",
           "summary": "",
           "body": "",
           "dupes": 2
         },
         {
-          "title": "2026「台灣國際淨零永續展」與「台灣國際智慧能源週」圓滿落幕，亞太永續影響力平台雙展展現科技與永續並進新局",
-          "source": "CARTURE 車勢文化",
-          "link": "https://news.google.com/rss/articles/CBMiuwVBVV95cUxQc2R3NXVNV1NCYWRZWkxZV2oyWEVXNlkxUUh0X1JmMW42em5XYWY5SEZZSlMybE8wYno3aWNNdXJXSF9vWjVURDZ3RDliWE5wMHZfUWFWN0pMT1ZaTDh5MlFiTmlJcENiVjZ4eU1kRE9WR21RU3BMNUFud0pNZTRsR1B6d0VlbXFiUjFQcjJsUVhReWlnbXdKalJMcC0wSUNhMV9pM003dEJIRWxWQW9saEYzLTFMOW80ZF9ybmlBMUxJVmdpNHNCMUtvSGNPUmt0TDZBemM5eThNWGh5djdkLUpLWVJvcEJPRWpkd3haVXpCR2c2eHJvQVdKR2psU2xVUU9yTWxPbFJNNlhjcm9KX3V0WDBDSmIwekVyTkVsamttbG9semEwMkVBWWduQmtXcEg5VDJ2V1RUYjJ1M184cnhTM2VnaUI0NXdJc1ViWllGVUdXVVZ5R1FvSzNhZGJxampqenppRGtyRk9YejNWWVVxSVlzSm55OVV0MzItOEU2VExvZmF6VmFpeU93YXlDQkRMMExYbGpaWHpGVFlxc2ZkMXM2N1R0OEZUVnNnWWJ5YXlBT3FRRzlRZEtMT1pRMG9tOTUwWE9SdkdQMzVENjhJeXNkSHZ0Rk1IWjd6elhRaVJ3d1pVNDVEeEhWdm5pV2NyRS11alByTUQ3cVU3OERNcHZQRDdNSjZjR1ZZSDZheUtOd3F4VVEzM3NXeEZkUzRHeEhpQ0EyT3BmcVNuMjlhV3NQcEMwTVRIQjBWRlFpM2pzT1FhN0NBTFctbE9wYWhzWnBBRHo4TWs3bFVFVUtqemo0TnIxS3pyOWluVVo4cC0yN1dsX2hYTGhxMmNLbVVNQUxrWDlUOEdkSEVVa1liSXgtMi05UWJpcnJzMWk4MHpDSlhKMTEwR0R3R1dobVhRSUs4OTc2Wkk?oc=5",
+          "title": "海大通過ISO 14064-1溫室氣體查驗 推動光電與節能持續減碳",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9jSlFtQjZoeWpRNVFuS3hmOFEtRVpta042enA1emdWRjJLelJnbnhvWlR4VjhsSm5aYXRCdS1lQ0ZZMnUxMzBUeTJPXzRKTGQ2dUE?oc=5",
           "date": "2026-10-19",
           "summary": "",
           "body": "",
@@ -172,24 +198,6 @@
           "dupes": 2
         },
         {
-          "title": "能源週、淨零展吸近1.8萬人！AI用電需求成焦點 明年10/27再登場",
-          "source": "壹蘋新聞網",
-          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVkNQOWI3QXc3WlpqQ1QxeVhRRUZJX3VYcWk3VVNMc1Q0Ri1UUnNLTTVaT3NiWlBTLTVEc044Y3kzcll0VlZPYkdnMHVCZk9YV2lwZmhDTXZFWGR1SkZhSFpjeTNlYUk4NEU2dHJiak9ndGRqbHBmeHJ6X3JnUERoNVd3?oc=5",
-          "date": "2026-10-18",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "時空藝陣熱鬧登場！來大稻埕尋寶、找小人體驗淨零綠生活",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE41Mnl1SDBJV1pQcFFqZ2h1TmR2d3hwcWppSFdSMzJzZ3kzNWtzLVdzd1ZJWXZGTzNZc3JkZzA3UDN6YndrTjJsWE9oUlIyR3B0dkE?oc=5",
-          "date": "2026-10-17",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
           "title": "政策鬆綁不代表ESG 降溫 IR Trust：ESG 已成企業「提升內部管理效率」與「爭取資本市場溢價」雙引擎",
           "source": "台灣民眾電子報",
           "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5lT0l4OGM2eUUybEVIQmc1dDFQazMwb1FBWHZZTS1Ib1o3endPak9kRGJrRi1tb3M1UjlqVWhLa25VeWtEZ2hzVg?oc=5",
@@ -199,27 +207,27 @@
           "dupes": 2
         },
         {
-          "title": "星展永續融資突破2.5兆元 聚焦氣候韌性與淨零轉型",
-          "source": "自由財經",
-          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBtVTNsc011NEhyeWQweURQSFVlOEVDMS1Xa0NSMGlfM3B4WWRQTU5sV2hzcktEWldwMWFySGMyckpsX1MySmx1TG1FRURsc3dwQTBval80TU1mT1hmLUdIMzVWeUjSAWRBVV95cUxQbVUzbHNNdTRIcnlkMHlEUEhVZThFQzEtV2tDUjBpXzNweFlkUE1ObFdoc3JLRFpXcDFhckhjMnJKbF9TMkpsdUxtRUVEbHN3cEEwb2pfNE1NZk9YZi1HSDM1VnlI?oc=5",
+          "title": "星展銀：媒合永續專家檢視減碳需求助中小企業解人才困境| 產經",
+          "source": "中央社 CNA",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9PempON3NPYWRXSVJ0Q0hKTEM3RXZSU29Cb1NPcTV2bkVLWXJwOERtSExjNmN5Q1ZIN3VmZUZTemNENlA4ZEdTYl91YUhlQ0xUSjhGR1d1WjBOSVZtN3c?oc=5",
           "date": "2026-10-16",
           "summary": "",
           "body": "",
           "dupes": 2
         },
         {
-          "title": "星展永續融資規模突破2.5兆 永續長強調創新金融支持亞洲永續轉型",
-          "source": "品觀點",
-          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBJSElKanM2aXVDbjhqOURvUks3MUN6MHN1WTA1ZUJnTEJoTzdmTldESHVWNEpMSjdpUG0zUmdTUUQwME01T0JtRTNBUHI0bnp4YUd3Mg?oc=5",
-          "date": "2026-10-16",
+          "title": "嘉市輔導重點能源用戶 福容中油完成碳盤查",
+          "source": "大紀元",
+          "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE53bUU4Q3BlQlFuX1pkSjcyNDM1R01uYTgzd3VPR0p3UnJZaUhuX2dzc01qZlJiRldweVZXQU1LeTZmeUpCSVFtN2NOZDY2UzBxczVWOHI0TklCSWhoakpaRXdB0gFnQVVfeXFMUGFGejJES2lQR0htQlpHRTdDQzhFdkhjdFhUaW1KbzBMM3NhNlBzTkJBR21lWmgtUDJRN0s2QjQtWVdWbUZGQzI0Uy1vbExrWnhJUTZ0YnZOYWNSZmVCOTFwUkhwVWlhYw?oc=5",
+          "date": "2026-10-15",
           "summary": "",
           "body": "",
           "dupes": 2
         },
         {
-          "title": "2026台灣國際淨零永續展、台灣國際智慧能源週盛大開幕",
+          "title": "必維集團參與台灣國際智慧能源週 聚焦新能源、永續與資安",
           "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9KcjlodEJwOWI0ZXo3X2hGVzRCLVEwWjh6aTlUcTRjcFpXU21NZVlmYVNtYk8yd0VMd01NNTVFVTV0bWZKWFY0X1o2czBfeGxtR1E?oc=5",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBCTkphbDlacG0zdlNXZG5RVllhRy1BSGVpSXo0dHZCZmlQelNOVERJTEEyMkwyQ1o2ZndJZVJYdmVfMDVabVVpX21IbHllRTlRSXc?oc=5",
           "date": "2026-10-15",
           "summary": "",
           "body": "",
@@ -235,9 +243,9 @@
           "dupes": 2
         },
         {
-          "title": "賴清德：減碳能力攸關未來訂單 政府加碼千億相挺中小微企業共推綠色轉型",
-          "source": "鉅亨網",
-          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE8xQno3cGNhSG9tNG95QWtHUTRldWh2SjNDSXBkNDJibVpZOThpUnlpTkdQYTU5V3IweHFhdVh5RzJDQ09JdzE2NzR3aWU1cUE?oc=5",
+          "title": "淨零永續展與智慧能源週國際參展商增16%　提淨零與永續解決方案",
+          "source": "ETtoday財經雲",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4zanVnYnpjR2w2bEdEb3A0UFdpbjlud0twejZwZFRoYXh6U1FXZEd1N0ZVNnpMQlowdWdBMVdMbGFJX1RVSElVUHNxMXlXRWlOcVHSAVBBVV95cUxOR1lPYTMyYkhUZjl5QkdvdzZzMU55VFRsZkh0ZmhWYWtKd1ZEcU5iV3lvLW1VSTEtMVhGRWlid3hzVzhOZFZZTVBmZ1VSU2t6RA?oc=5",
           "date": "2026-10-14",
           "summary": "",
           "body": "",
@@ -245,37 +253,46 @@
         },
         {
           "title": "北市原民會攜手北科大培訓原民「淨零永續增能」拓展新職涯",
-          "source": "臺北市政府全球資訊網",
-          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNRFdncmFlQ0NQaDNHLWdLYnd3NG04TkxxX2tPVlpuNE4yUEgtR216YWtuVjlna2dRS1NtTFpTd0VJVHlkMFNsSDlFbWlnYjBHV0tTUXFxU3pGUUlCdHhaWmVjZGpJRFc2TDdCMWQ3ejQzY3piZlBzcEdvTjFGbTNXdWw3VXY?oc=5",
-          "date": "2026-10-13",
-          "summary": "北市原民會攜手北科大培訓原民「淨零永續增能」拓展新職涯 臺北市政府全球資訊網",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "善良Kindmade循環材料展實力 從企業贈品到永續展場",
-          "source": "勁報",
-          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE56NHZvZEhOWE9WRVNxc2hYdzdvUkdBcG9XUld5d2wyQ3lYN2xJSXRtZW81cWV3dk4tVFRxWjdNMG9CRTIyWnpKOFc4ZUZhUGNYdnBuamJwRGhTZmt0LVl6Qg?oc=5",
-          "date": "2026-10-13",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1XNzhMSHRPVkVRSmgxbzAyem52eDlBSU5xN3U0cFRZUFZFblFWcFBMdnVOWmJGQmRKYlNfSmxRc2lyUUYwSWt2dkhxcFpZSUZJT2c?oc=5",
+          "date": "2026-10-14",
           "summary": "",
           "body": "",
           "dupes": 2
         },
         {
-          "title": "竹縣低碳永續認證率超越六都平均成績 楊文科縣長：讓減碳融入日常",
-          "source": "勁報",
-          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1mbk9naHZMRDJRNkFtb25raHZ3XzNoVFg2RTlmNTZKQldEYkp2SUprR0Q1QUNVS2l3QzIyOWlXMTU4VTF4UjM1OHNBMjRNclI2d3puMEJxYjQ4WUNMM2o2Q2x6SWNzNEFiRVpfaGZoaw?oc=5",
-          "date": "2026-10-19",
+          "title": "醫院也需要健檢：HCWH 如何協助醫療體系因應氣候風險？",
+          "source": "CSRone 永續智庫",
+          "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9EeVJudklTS3JDMEF3MFlONGlhdV9WTEN0OS1CRjNBcHFfR2JTNWREeXE2UHg0U0pzRjRhX2JmTTNBSEJNd3c?oc=5",
+          "date": "2026-10-20",
+          "summary": "醫院也需要健檢：HCWH 如何協助醫療體系因應氣候風險？ CSRone 永續智庫",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "英力士推新低碳技術 烯烴聚合物碳足跡最高減半",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE92V2NaR1F0bnozUDFmeE9hT0ZXYm9zY21ISGxOSHYxQ1dIWDFtRXNCTGMtVUdhYkVPSm94N0xHZHd0M2M2eDJzWFd1S1VRNHNDU2c?oc=5",
+          "date": "2026-10-20",
           "summary": "",
           "body": "",
           "dupes": 1
         },
         {
-          "title": "元晶太陽能立足在地製造迎戰淨零轉型浪潮- 科技新聞",
-          "source": "PChome Online 新聞",
-          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZ3dFbFBXZjVLeHFEZ2VaVm5XZnNmVk94SDE2eVl4V3AyUTJ2Z3FGeXQ1ZnlxQW5nY01RZU1NZnFhV1o5YlE4d0UwSVdWVTFXTjVaS3h5RzdGc19HR3QyMU83QU9FazBMYkNsbkRnTFl5WjZYX21RaWxST1gweUVKUjJPbVFKUEgzN3FjWg?oc=5",
-          "date": "2026-10-19",
-          "summary": "元晶太陽能立足在地製造迎戰淨零轉型浪潮- 科技新聞 PChome Online 新聞",
+          "title": "Lenovo 榮獲兩項ISG永續IT解決方案獎 - Root-Nation.com",
+          "source": "",
+          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9sc1FGYUs1N3pKaGZOQlhXSktRQTdsVWpnVWlfYTZpQ3RHcDNha2xpZ3JsS1dOMFNwOFRGLXFYZ2NpU1RDekRUSGw0SHhRYTNxMlBrQ28xaGt5eVpweUNkNlBBQmN5VHI1SlZPRzZzT21JSTV1ZUJDVzV6VQ?oc=5",
+          "date": "2026-10-20",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "範疇三運輸排放：如何衡量並降低供應鏈碳足跡",
+          "source": "DHL",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQaEQzMWZtckU5cDNuejFINDc5NDc3Q1AtY29yWE00NWRiQXVnbGRkcjFuWmlJZ0oxME02Vmc5cHhCT3NQV0pmcDk5eFdLeU1rNjNkNmtySFI2d2lXcExKZHpEcUZrd1Y5QXJyN01XZkdKd2sxOHNvTkdTZ3RyUG9jdk9aV29FNExwT1lQYnlkOGJDYXNtajl1aUppTndsYzY5OFo3aHQxZzZ3ZXdpaTcwdzl6bXdFUmpKQ1lVNWduTWpaVmg1cmdoanN6UEx3R2M?oc=5",
+          "date": "2026-10-20",
+          "summary": "",
           "body": "",
           "dupes": 1
         }
@@ -601,191 +618,6 @@
           "https://www.inside.com.tw/feed/rss",
           "https://feeds.feedburner.com/rsscna/technology"
         ]
-      }
-    },
-    {
-      "topic": "政府補助 / 計畫",
-      "gist": "商業服務業AI補助、地方產業AI化、跨域深科技研發",
-      "sections": [],
-      "grants": [
-        {
-          "agency": "經濟部商業發展署",
-          "program": "提升商業服務業營運效能強化韌性計畫（個案補助－單店導入）",
-          "target": "符合資格之商業服務業，新導入智慧轉型專區公告之AI解決方案且訂閱滿6個月並使用滿3個月者",
-          "amount": "最高補助方案總額50%，每家店上限10萬元",
-          "deadline": "2027-10-20",
-          "idx": 0
-        },
-        {
-          "agency": "新北市政府經濟發展局",
-          "program": "新北產業AI化輔導計畫",
-          "target": "在新北市完成登記之公司、商業、工廠，或經核定改善計畫之納管工廠與特定工廠",
-          "amount": "補助50%，每家最高4萬元",
-          "deadline": "",
-          "idx": 1
-        },
-        {
-          "agency": "嘉義市政府",
-          "program": "風格店家數位優化補助計畫",
-          "target": "導入數位工具之在地店家",
-          "amount": "每案補助6萬至12萬元，最高補助70%",
-          "deadline": "",
-          "idx": 1
-        },
-        {
-          "agency": "經濟部中小及新創企業署",
-          "program": "深科技驅動中小企業跨域創新計畫－企業跨域研發補助",
-          "target": "至少2家中小企業共同組成研發聯盟，投入代理式AI、永續AI與災防管理、物理AI與服務等主軸",
-          "amount": "",
-          "deadline": "2026-12-07",
-          "idx": 5
-        }
-      ],
-      "items": [
-        {
-          "title": "企業導入AI中央最高補助50%　申請資格與流程一次看",
-          "source": "三立新聞",
-          "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBsZEp0aHlsWmhPbl8yaGtoWVFjUHZmZUltMWJSazZqQUFGelRfelB3ZEQtWG9EbjJTRDdxZUhrc1JwN2lOY1BpetIBTEFVX3lxTE9tVUdBZW5lN2trWmJxUjBjVnEwSnU3VktoTXFaMWtEeWZyUi1KV3BIQWh3OHJ2NUZmRTlxdWVwV1BjcUlISm1PT0tvRnI?oc=5",
-          "date": "2026-10-18",
-          "summary": "",
-          "body": "請點選打勾將「三立新聞網」為首選來源，在 Google 上查看更多我們的精彩報導 請點選打勾將「三立新聞網」為首選來源，在 Google 上查看更多我們的精彩報導 經濟部商業發展署推出個案補助計畫，協助商業服務業導入AI解決方案，最高可申請方案總額50%補助，每家店上限10萬元。企業須先通過資格驗證，選購公告專區方案，訂閱滿6個月並實際使用3個月後，檢附發票與系統紀錄線上請款。本文整理企業資格、6大重點與常見問題，助您掌握申請關鍵。 經濟部商業發展署推出「提升商業服務業營運效能強化韌性計畫」個案補助－單店導入。符合資格的企業與店家，新導入智慧轉型專區公告的AI解決方案，最高可申請方案總額50%的補助，每家店補助上限為10萬元。 申請者須先通過資格驗證，再選購公告方案；方案訂閱至少6個月、實際使用滿3個月並備妥發票、系統使用紀錄與操作畫面後，才能申請補助款。 例如：方案總額為20萬元，最高可申請10萬元；方案費用超過20萬元，補助上限仍為10萬元。這項補助採線上申請，並可能因經費用罄提前截止，仍應以官方最新公告為準。 這項補助不是所有企業或AI工具都適用。申請前要先確認企業本身與準備導入的方案是否符合規定。 ・已辦理公司、商業、有限合夥或稅籍登記，且營業狀態正常。・稅籍營業項目屬於官方公告的適用範圍。・非陸資企業、外國營利事業在臺分公司或本國企業分公司。・受到國際經貿局勢變動的直接或間接影響。 適用資格以稅籍營業項目為準，不能只看公司名稱或主要產品，申請前應核對官方申請須知附件。 ・已公告於商業服務業智慧轉型專區。・屬於企業新導入的AI解決方案。・方案訂閱期間至少6個月。・企業可",
-          "dupes": 2
-        },
-        {
-          "title": "AI落地好時機　2026企業AI補助懶人包：中央及各縣市最高補助12萬",
-          "source": "三立新聞",
-          "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE03TG9KeEhzS0F0LVczdlFoNGNEQ2p1Yzg3U0drZ3d4OC1TNjliSVVnTExiV1RhR2hieXVyTXdBQjdWOEJ5cE1tZdIBTEFVX3lxTE84NDVORUtaZFMzeXF3MXJHNDhvbVZQS3VDa004V2xfaVpwclhjZUM3aHg2X3FyR05TY0NvcFQ2UG5NS0ZHdUpJRFJLTkY?oc=5",
-          "date": "2026-10-16",
-          "summary": "",
-          "body": "請點選打勾將「三立新聞網」為首選來源，在 Google 上查看更多我們的精彩報導 請點選打勾將「三立新聞網」為首選來源，在 Google 上查看更多我們的精彩報導 很多企業都知道AI很重要，但真正卡住的問題通常不是技術，而是兩件事：不知道從哪裡開始，以及擔心花了錢卻沒有成效。 其實，2026年正是企業導入AI的好時機。因為目前除了中央推出的 「提升商業服務業營運效能強化韌性計畫」 外，新北市及嘉義市政府各推出 「新北產業AI化輔導計畫」、「風格店家數位優化補助計畫」。 中央計畫針對商業服務業店家，最高可補助新台幣10萬元；新北輔導計畫提供50%補助、每家最高4萬元；嘉義市則提供每案6萬至12萬元的補助，且補助比例最高達70%，補助內容以數位工具導入為主。這些多元的補助管道大幅降低了企業第一次導入AI與數位工具的門檻。 這項計畫是為了協助商業服務業者因應國際經貿情勢變化所帶來的營運衝擊，鼓勵店家導入AI解決方案，提升營運效率、管理效能、企業韌性與競爭力。店家只要新導入「商業服務業智慧轉型專區」上的AI解決方案，且方案訂閱滿6個月以上，在實際使用滿3個月後，即可依規定申請補助。政府最高補助方案總金額的50%，每家店限申請1次，補助上限為10萬元。受理期間為2026年4月20日至2027年10月20日，或補助經費用罄為止。 如果你的公司設立在新北市，還可以留意新北市經發局推出的「新北產業 AI 化輔導計畫」。根據公告，申請對象包括依法在新北市完成登記的公司、商業、工廠，以及經核定改善計畫的納管工廠與特定工廠。補助方式採企業自籌50%、政府補助50%，每家企業最高補助4萬元，並預計遴選",
-          "dupes": 2
-        },
-        {
-          "title": "AI、淨零雙重挑戰 航港局盤點補助資源助業者轉型",
-          "source": "UDN",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5MUTNOYV93VjFGX0VXYmR3cXczQ3Y3YmY0akEydXNIdkJUMS1rVGltajBzQjJuUXdWeWpNWVJoMkVHSEwyZEJfbDFhLV94UFJN0gFWQVVfeXFMUGdIbXA0X29JNlZEOEU4SjhwbjdOeG0yaVVTeHYwV3A4Y2JDOGdYVWlsQ2NVM0tRMTNIa3NUWWo4QmtWUGEzcGQyU3NzYk40UUNCTFE5RXc?oc=5",
-          "date": "2026-10-13",
-          "summary": "",
-          "body": "不必走1萬步！1天30分鐘「日式健走」歐美爆紅 醫證實：5個月年輕10歲 08:26 Your browser does not support HTML5 Audio! 😢 因應人工智慧（AI）應用加速及國際海運減碳趨勢，交通部**航港局**推動「航運產業升級方案」，鎖定全台1,897家航運業者，整合政府數位轉型補助、減碳輔導及綠色融資資源，協助產業推動數位與綠色雙軸轉型。航港局將於11月6日舉辦數位及綠色轉型輔導說明會，盼降低中小型業者轉型門檻。 航港局表示，「航運產業升級方案」已於今年5月發布，面對全球海運供應鏈數位化及國際排放趨勢，航港局除規劃研訂海運數位轉型手冊與減碳管理指引，也盤點跨部會輔導及補助資源，協助業者釐清轉型方向。 航港局指出，經與航運業者座談發現，中小型業者雖已意識到數位升級及減碳管理的重要性，但仍面臨轉型路徑不明、實務經驗不足及資源有限等問題，因此將扮演跨部會資源整合平台，串接政府輔導措施與金融工具，協助業者掌握可運用的轉型資源。 在數位轉型方面，11月6日說明會將邀請經濟部商業發展署及中小及新創企業署介紹數位轉型補助與輔導措施，並由財團法人資訊工業策進會說明港口社群系統（PCS）推動進程，協助業者了解數據治理及數位工具的應用方向。 綠色轉型方面，則將邀請具實務經驗的業者分享碳足跡產品類別規則（CFP-PCR）申請經驗，並由金融監督管理委員會委辦團隊說明永續金融及綠色融資實務；經濟部商業發展署及中華經濟研究院也將分享企業減碳管理與節能輔導資源，協助業者建立碳盤查及減碳管理路徑。 航港局表示，全球主要海運國家正加速推動產業轉型，例如新加坡透過《海事數位化",
-          "dupes": 2
-        },
-        {
-          "title": "台南中小企業服務團推 AI 數位轉型 產學研合作助企業升級、爭取補助",
-          "source": "UDN",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1wb3RFd2JnRlBSUFhJRUVkTGdvaGRDd2lhNUh1LVppYkFTWkFDNmtDWDEwVDRxUVBrYU9MUnlidjdKZU13N3FvSW9NUElNWVp4RGExRFZR0gFWQVVfeXFMTXBvdEV3YmdGUFJQWElFRWRMZ29oZEN3aWE1SHUtWmliQVNaQUM2a0NYMTBUNHFRUGthT0xSeWJ2N0plTXc3cW9Jb01QSU1ZWnhEYTFEVlE?oc=5",
-          "date": "2026-10-19",
-          "summary": "",
-          "body": "臺南市經發局19日在民治市政中心舉辦媒體互動，展現「臺南中小企業服務團」協助在地企業推動產學研技術鏈結、產業轉型升級與AI技術應用之輔導成果。市府透過專案關懷、資源對接與認證培訓，積極扮演產業後盾，並促成多項產業跨域合作，為在地中小企業注入創新動能，提升競爭力。 市長黃偉哲表示，面對全球供應鏈重組與數位轉型浪潮，中小企業與傳統產業的技術升級是臺南經濟發展的關鍵。市府推動「中小企業服務團」，結合大專院校、研究法人與產業公協會之專家資源，提供中小企業從「需求診斷、技術輔導、資源媒合」的一站式服務，將產學研的研發能量真正轉化為產業落地的實務技術，協助企業降本增效，掌握市場先機。 經發局局長張婷媛表示，臺南中小企業服務團聚焦技術研發、智慧製造、數位轉型與資金爭取四大面向，以符合企業實際營運需求。今年因應AI趨勢，特別辦理AI認證課程與技術應用交流會，協助在地企業培育人才，並透過實務案例分享，加速企業將新興科技導入製程、管理、產品服務，突破產業轉型瓶頸。 在技術輔導成果方面，目前臺南中小企業服務團已促成多項產學研合作，例如：森淨科技引進學界資安技術，強化企業軟體服務防禦能量；佐野設計將廟宇丹青彩繪結合AI筆觸轉譯與UV堆墨立體製程；怡欣達則建立鋁合金調質技術平台提升材料自主研發能量。透過跨域技術媒合，不僅協助企業解決實際生產與研發問題，也促進傳產產業與新興科技融合。 此外，臺南中小企業服務團藉由舉辦技術交流會，邀請AI創新技術廠商、研究法人與產業專家，介紹AI技術的創新研發、分享製造業成功應用案例與導入策略，協助中小企業掌握AI技術發展趨勢，理解可行的導入模式與實際效益，進而降低轉型風險",
-          "dupes": 1
-        },
-        {
-          "title": "參展補助加碼開放第二次申請 青創ERP團隊前進自動化工業展 搶攻企業數位轉型商機",
-          "source": "高雄市政府全球資訊網",
-          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNX1F0RHRfbFFmSndHSzhaRkxsOWRVSEZPOUVyRkloTjFkdUV5OEJxZmszQ3NMWmpUaXhlQjYxT3gzcklGZnJCazNiQUY4SHpWeEpiekZwYk0zckZWYWowY3liNlJHS2xPX3h2aUtkNnlkck1jR2p4TzlNUnRza1dPNXFuR1NrNXFyYTZz?oc=5",
-          "date": "2026-10-13",
-          "summary": "",
-          "body": "Facebook Twitter Pinterest Email LinkedIn Reddit Tumblr WordPress Google Gmail WhatsApp StumbleUpon AIM Amazon Wish List AOL Mail App.net Baidu Balatarin BibSonomy Bitty Browser Blinklist Blogger Post BlogMarks Bookmarks.fr Box.net BuddyMarks Buffer Care2 News CiteULike Copy Link Delicious Design Float Diary.Ru Diaspora Digg diHITT Diigo Douban Draugiem DZone Evernote Facebook Messenger Fark Flipboard Folkd Google Bookmarks Google Classroom Hacker News Hatena Instapaper Jamespot Kakao Kik Kindle It Known Line LiveJournal Mail.Ru Mendeley Meneame Mixi MySpace Netlog Netvouz NewsVine NUjij Odnoklassniki Oknotizie Outlook.com Pinboard Plurk Pocket Print PrintFriendly Protopage Bookmarks Pusha Q",
-          "dupes": 1
-        },
-        {
-          "title": "公告116年度經濟部中小及新創企業署「深科技驅動中小企業跨域創新計畫」企業跨域研發補助申請須知",
-          "source": "",
-          "link": "https://www.sbir.org.tw/news/main_content?id=12468&page=1",
-          "date": "",
-          "summary": "",
-          "body": "公告116年度經濟部中小及新創企業署「深科技驅動中小企業跨域創新計畫」企業跨域研發補助申請須知 一、計畫依據：依據行政院核定「中小微企業多元振興發展計畫」、「AI新十大建設」及「經濟部協助產業創新活動補助獎勵及輔導辦法」，推動「深科技驅動中小企業跨域創新計畫」，辦理「企業跨域研發補助」(以下簡稱本計畫)，鼓勵中小及新創企業跨域共同合作，強化中小企業經營韌性及提升整體競爭力。 二、計畫目的：本計畫之推動，呼應國家重要政策，如AI新十大建設(智慧機器人、全民智慧生活圈、產業AI化)、五大信賴產業推動方案(推動AI、軍工、次世代通訊)等，旨在帶動國內中小及新創企業跨域共創技術或服務價值，運用科技或商業模式創新，加速技術發展、商模落地及開拓新市場商機。 三、計畫主軸：透過補助國內中小企業籌組跨域研發聯盟(以下簡稱聯盟)，並分「代理式AI與領域應用(Agentic AI)」、「永續AI與災防管理(Sustainable AI)」及「物理AI與服務(Physical AI)」等三個主軸，申請企業僅可擇1項主軸申請。(各項主軸補助範圍詳如申請須知) 四、申請資格： (一) 至少由2家(含)以上中小企業共同組成聯盟申請，聯盟成員間應推派其中1家為主導廠商，作為代表全體聯盟成員與本署(及執行單位)就本計畫申請、執行等過程之事實與法律事宜聯繫及商議之窗口，全體聯盟成員同意主導廠商因此所生之法律效力及於全體聯盟成員。 (二) 上述聯盟成員皆須為依法辦理國內公司登記、商業登記、有限合夥登記之營利事業。 五、受理申請時間：公告日起至115年12月7日17時30分止，逾期申請者不予受理。 六、申請方式：採",
-          "dupes": 1
-        }
-      ],
-      "sources": {
-        "queries": [
-          "企業 AI 轉型 補助 計畫 申請",
-          "中小企業 數位轉型 補助 申請 期限",
-          "淨零 永續 轉型 補助 企業 計畫",
-          "研發 補助 SBIR 企業 受理 申請",
-          "產業 升級 輔導 補助 開放申請 金額"
-        ],
-        "feeds": []
-      }
-    },
-    {
-      "topic": "企業獎項 / 競賽",
-      "gist": "國家產業創新獎、經濟部徵件、企業創新、雙軸轉型",
-      "sections": [],
-      "grants": [
-        {
-          "agency": "經濟部",
-          "program": "第10屆經濟部國家產業創新獎",
-          "target": "各產業各規模企業、中小企業及新創企業團隊",
-          "amount": "政府首長公開表揚、成果專輯出版與媒體宣傳推廣",
-          "deadline": "10月30日",
-          "idx": 3
-        }
-      ],
-      "items": [
-        {
-          "title": "國家永續獎報名創新高 公私協力共創永續台灣",
-          "source": "自由時報",
-          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5SVm9Qelo0Z1pobXBwQklGdzc0RlhKYkFpRHNUNzk0UFY5OFJFT0pTZ1dNdG9VUkdjVXdkbnRJem9fekFhdVV2QXhjemlXMWVEU2RDbDN5UkM?oc=5",
-          "date": "2026-10-12",
-          "summary": "",
-          "body": "第22屆國家永續發展獎公開徵選已於6月15日截止，報名件數已逾170件，創近年新高。（國發會提供） 〔記者高嘉和／台北報導〕台灣落實聯合國《2030年永續發展議程》的決心始終堅定不移。近年來，無論在政府治理、企業實踐或民間參與方面，皆展現豐碩成果與強勁動能，並持續獲得國際社會肯定。根據美國標準普爾道瓊指數公司（S&P Dow Jones Indices）最新發布的全球企業永續評鑑，2026年台灣共有38家企業榮登道瓊領先指數（DJBIC），另有79家企業入列S&P Global企業永續評比，展現我國永續發展的堅實基礎。 為鼓勵各界投入永續發展行動，行政院國家永續發展委員會（永續會）每年辦理「國家永續發展獎」評選及表揚活動，透過遴選具指標性與創新性的績優典範，展現台灣推動永續發展的具體成果，並促進各界交流學習，擴大永續影響力。 第22屆國家永續發展獎公開徵選已於6月15日截止。本屆報名情形相當踴躍，報名件數已逾170件，創近年新高，顯示永續發展理念已深植社會各界，並轉化為具體行動。本屆參選單位涵蓋學校與教保服務機構、醫療機構、民間團體、企業及政府機關等多元領域，內容包括防災教育、永續校園、人才培育、健康促進、自然保育、文化傳承、綠色金融、智慧轉型及淨零技術創新等，充分展現公私部門攜手推動永續轉型的豐沛能量。 永續會表示，期盼透過國家永續發展獎發掘更多優秀典範，來帶動社會各界共同提升永續發展能量。本屆評選作業將於7月至9月展開，並預計於第4季舉行頒獎典禮，公開表揚傑出典範。誠摯邀請各界持續關注，共同見證台灣永續發展成果。 點名台積電！外媒曝「現在買進這3檔」長抱 10年後會感謝自己",
-          "dupes": 2
-        },
-        {
-          "title": "不再讓展覽無聲地消失！全台首屆TMEA 博物館展覽獎邀請策展團隊共同響應，以獎項肯定，創造文化永續",
-          "source": "ShoppingDesign",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA4Q1pvZVByOHI5ZFpJbGR1a2ZxOE42MDZZZDFIMVBPUW9uemF5OGs2UWpVaExHbEtuMlRWZGctUjFyd1BZeXNmcDV4QzVmd0NSQjNsaTcybmVwb2R6N3c?oc=5",
-          "date": "2026-10-16",
-          "summary": "",
-          "body": "不再讓展覽無聲地消失！全台首屆 TMEA 博物館展覽獎邀請策展團隊共同響應，以獎項肯定，創造文化永續 立即加入Shopping Design會員，收藏喜歡的文章，把關注的展覽活動加入行事曆！ 立即加入Shopping Design會員，收藏喜歡的文章，把關注的展覽活動加入行事曆！ TMEA徵件倒數！報名期間即日起至今年底，臺灣博物館文教基金會期待藉由獎項，讓幕後策展團隊的投入與專業被看見，藉此打造當代策展資料庫，留下展覽的軌跡。 這幾年，台灣各地的展覽活動發展蓬勃，每到假日不是在看展覽，就是在去看展覽的路上。然而，用心籌備數月甚至數年的展覽，往往隨著展期結束之後便猶如船過水無痕，僅剩回憶留存於心中，不再有被提起討論的機會。 臺灣博物館文教基金會期許現況能夠有所改變，並持續探尋展覽是否還有其他方式能延續影響力。進而，今年成立了第一屆博物館展覽獎 Taiwan Museum Exhibition Awards（以下簡稱 TMEA )，從展覽的研究與評論出發，實踐社群的自我表述，並在評選機制中加入「第三方觀察人制度」實際走入展場進行記錄，讓策展團隊的投入與專業被看見，發揮博物館的價值與社會影響力，促進專業社群的對話與交流。最重要的是，透過獎項設立，創建臺灣第一個「當代策展資料庫」，讓文化永續流傳。 TMEA 期待透過獎項紀錄當代展覽的論述與軌跡，建構屬於臺灣的第一個「當代策展資料庫」。圖為臺博基金會與國立臺灣博物館、法國波爾多建築中心 Arc en Rêve Centre d’Architecture（Bordeaux）、國家電影及視聽文化中心共同策劃之《「氛圍地—影像建築」Atmo",
-          "dupes": 1
-        },
-        {
-          "title": "航港局11月6日舉辦航運雙軸轉型說明會即起開放報名| 中華日報",
-          "source": "LINE TODAY",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1uQzJpeFBDNThXWlRvdUtCaEFpeFowYy10N1BtSFRZeFJpbXNtZHc0eS1BQWZSc1pOS3pVdG40YlRLVms4Y0lYbllFQ29VZHEzN2xoMVZR?oc=5",
-          "date": "2026-10-14",
-          "summary": "",
-          "body": "您使用的瀏覽器版本較舊，已不再受支援。建議您更新瀏覽器版本，以獲得最佳使用體驗。 中華日報更新於 10月13日09:40 • 發布於 10月13日09:40已訂閱訂閱訂閱 航港局副局長饒智平10月13日在記者會中說明11月6日將舉辦的航運雙軸轉型說明會。（記者陳瓊如攝） 航港局副局長饒智平10月13日在記者會中表示，航運六大業別家數共計有一千八百九十家，其中有一千七百四十一家是中小企業，包括船代業，海運承攬運送業等占總家數超過77%，為協助航運產業數位與綠色雙軸轉型，訂於今（115）年11月6日(星期五)於航港局舉辦「航運產業數位轉型」及「航運產業綠色轉型」輔導業者說明會，邀集經濟部相關單位、專業法人及具實務經驗之業者分享政策資源、成功案例及轉型經驗，全力協助航運業者掌握最新轉型資源與政府輔導措施。 為鞏固我國航運產業優勢，並順應全球發展趨勢，航港局提出「航運產業升級方案」協助產業強化創新應用及永續轉型，獲交通部政策支持，已於5月正式發布；其中因應人工智慧與科技加速應用，以及氣候變遷與國際減碳趨勢，航港局已規劃研海運數位轉型手冊與減碳管理指引，並盤點政府輔導與補助資源，積極推動航運產業數位與綠色雙軸轉型。 航港局也提到，面對全球海運供應鏈數位化加速及國際淨零碳排浪潮，全球主要海運國家均加速推動相關產業轉型，以新加坡為例，透過《海事數位化手冊》引導航運企業邁向數位化發展；面對國際競爭，經航港局與航運產業座談，瞭解中小型航運業者雖已掌握數位升級與減碳管理的趨勢，但受限於轉型路徑不明、經驗不足及資源匱乏等因素，轉型動作停滯不前。為協助業者加速轉型，航港局主動扮演跨部會資源整合平臺，整",
-          "dupes": 1
-        },
-        {
-          "title": "經濟部國家產業創新獎徵件倒數- 產業特刊- 工商時報",
-          "source": "中時新聞網",
-          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE40cmd0TFhjaUtsRXU4OVJXRzNZdkd0a1prbjVLVTVEMVNEc00tNDlPSld5Undvck5rTGRUR0phdldNTlBuQmtWaGdOU0I5UXlPSnJZemZMVnctUjVXM3U1TWxFcFdwQ3RZTTZZ?oc=5",
-          "date": "2026-10-13",
-          "summary": "",
-          "body": "第10屆「經濟部國家產業創新獎」將於10月30日下午5時截止收件，這項每兩年辦理一次的國家級獎項，自民國100年開辦以來，已表揚超過400件創新典範。 從歷屆獲獎名單，可看見臺灣企業透過技術研發、經營模式調整與跨域合作，建立競爭優勢的不同路徑，台積電、台達電、上銀科技等企業均曾獲獎，金融、交通與服務領域則有臺灣高鐵、義隆電子、臺北捷運及健豪印刷等。 創新成果的背後，往往涉及市場定位、資源配置與長期能力的累積，此次獲獎對象涵蓋不同產業與企業規模，反映出產業創新的範疇，已延伸至組織經營、服務流程及商業模式。 第九屆獲頒卓越創新的瑞昱半導體，長期投入自主研發，並將系統整合、人才培育與永續管理納入經營布局，同屆獲得中小企業組卓越創新的醫揚科技，則聚焦醫療市場，將嵌入式電腦技術結合臨床需求，透過模組化與標準化縮短開發流程，逐步由關鍵組件供應商走向系統共同開發夥伴。 獎項設有組織、團隊及個人三類獎項，分別對應整體創新策略、具體專案成果與人才貢獻，團隊類本屆則增設中小企業專案組及新創企業專案組。 獲獎者預定於116年接受政府首長公開表揚，相關成果將透過專輯、媒體報導及數位管道推廣，增加企業創新經驗的公共能見度。 徵選全程採網路報名，參選者須於期限內提交完整申請資料，相關辦法可至經濟部國家產業創新獎官網查詢，洽詢電話：（02）2325-6800分機890、885。 中時新聞網對留言系統使用者發布的文字、圖片或檔案保有片面修改或移除的權利。當使用者使用本網站留言服務時，表示已詳細閱讀並完全了解，且同意配合下述規定：** 發言涉及攻擊、侮辱、影射或其他有違社會善良風俗、社會正義、國家安全、政府法令",
-          "dupes": 1
-        },
-        {
-          "title": "彰化縣AI數位 淨零轉型論壇 10月21日在縣農會大樓舉行 即日起受理報名 - 墨新聞-MORE News",
-          "source": "",
-          "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBOeVZodE83MnNIS09TZVJVX0xHQUM2X2dWZi0zTVpQYVNLUW9EMGhtSGE0RmlxRXloRGM2TnduTWlWUQ?oc=5",
-          "date": "2026-10-13",
-          "summary": "",
-          "body": "企業面對數位化與淨零轉型不必再獨自摸索，彰化縣政府與工策會10月21日特別在彰化縣農會大樓舉辦「彰化縣AI數位/淨零轉型論壇」，集結6大實戰夥伴與專業顧問，協助企業找到適合現況的升級方向。即日起受理報名，免費參加。 此次論壇整合從政策資源、實務案例到顧問交流，一次盤點「AI數位/淨零轉型」的可行路徑，適合想轉型又怕門檻太高、想導入AI卻不知道從何開始，以及想帶老工廠轉型的二代接班人。論壇透過6位業界與專家分享，現場問診、借鏡做法，並讓企業帶走政府相關補助資源。 「彰化縣AI數位/淨零轉型論壇」10月21日下午在彰化縣農會14樓舉行，歡迎企業界踴躍參加，報名網址: https://www.surveycake.com/s/VAKlR。 圖/彰化縣政府提供 Previous Article 客家委員會「來上客」全國線上競賽活動即日起至10月30日開跑！135項好禮等你來挑戰 Next Article 伸港公兒四公園「什股探索之森」開工 打造海線全齡共融特色遊戲場！ 為了帶給你更好的瀏覽體驗我們的網站中有使用Cookie，幫助我們改善網站的結構和行銷分析。如果你同意使用請點擊了解，我們會權利提供你更完善的服務！",
-          "dupes": 1
-        },
-        {
-          "title": "台灣傑出永續教育人物獎啟動徵件- 投資理財- 工商時報",
-          "source": "中時新聞網",
-          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBUZGQ4UkVUblRxNElEZmVKRHBsczBkWFJSSE5vX1M4dXpUeWR0RGlvaHhxWDhoQ3hMTVlTMTZ1UnFfMFpyXzE5ZEEwU2lGaHV5Rmp6bG1fTFliNjVFZGFGT1lCMlgzdFN4VDNv?oc=5",
-          "date": "2026-10-12",
-          "summary": "",
-          "body": "TAISE攜手緯創資通推動「2026台灣傑出永續教育人物獎」，今年首度舉辦並正式展開徵件，期盼表揚長期深耕教育現場的實踐者，促進永續理念融入教學，擴大教育影響力。圖／TAISE提供 永續轉型要從理念走向實踐，教育是培育下一世代永續思維的關鍵。台灣永續能源研究基金會（TAISE）首度舉辦「2026台灣傑出永續教育人物獎」，即日起展開徵件，開放學校、教育主管機關推薦及符合資格者自行申請，報名至2026年10月16日（周五）止，頒獎典禮將於12月中、下旬舉行，期盼透過表彰長期深耕教育現場的實踐者，促進永續理念扎根校園，擴大教育與社會的長期影響力。 TAISE董事長簡又新表示，面對淨零轉型與永續發展挑戰，教育不只是知識傳遞，更是培養下一世代價值判斷、系統思考與行動能力的重要基礎。 該獎項由教育部、行政院國家永續發展委員會指導，TAISE與緯創資通共同主辦，分別為「大專校院組」、「中等教育組」以及「國民小學組」，免費報名，參選人必須持續投入永續教育三年以上，並且具有明確、可量化的實踐成果。 獲獎者可獲得新臺幣1萬元「緯創永續教育獎勵金」以及獎狀，並受邀出席頒獎典禮，接受公開表揚。 緯創資通連續三年獲選TCSA台灣十大永續典範企業，此次與TAISE攜手推動獎項，期盼肯定第一線教育工作者的長期投入，促進永續教育經驗交流與傳承。 評選著重教育工作者如何將永續理念融入長期教學與教育實踐，依不同組別，從教育理念與領導、課程創新、學生學習成果、研究與社會影響，到校園及社區推動、跨域合作與典範價值等面向進行評選，並鼓勵將淨零排放、氣候變遷、生物多樣性、循環經濟、AI與永續治理、公正轉型等議題融入教育現",
-          "dupes": 1
-        }
-      ],
-      "sources": {
-        "queries": [
-          "企業 永續獎 ESG獎 報名 徵件",
-          "AI 獎 企業 報名 徵選",
-          "數位轉型 獎 企業 報名",
-          "永續 獎項 徵件 開始 截止"
-        ],
-        "feeds": []
       }
     }
   ]
