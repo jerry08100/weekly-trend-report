@@ -1,0 +1,607 @@
+{
+  "date": "2026-10-26",
+  "generated_at": "2026-10-25 07:43",
+  "total": 60,
+  "topics": [
+    {
+      "topic": "永續 / 企業實務",
+      "gist": "醫療機構碳盤查、商港智慧低碳、亞瑞仕查證動態、金融綠能布局",
+      "sections": [
+        {
+          "heading": "政策與法規",
+          "body": "中央與地方政府正加大對非製造業與在地產業的淨零監管力度。衛福部聯手環境部成立醫療永續共創聯盟，號召全台208家醫院推動綠色轉型，目前已有約100家醫院完成碳盤查，鎖定2050淨零目標推動節能管理與綠色採購[[3]][[24]]。此外，國發會審議通過572億元商港建設計畫，重點強化港埠智慧應用與綠色營運韌性[[14]]；屏東縣政府則針對在地中小企業啟動能耗減碳研討與ISO溫室氣體盤查培訓，加速輔導供應鏈建置自主減碳能力[[13]][[16]]。這代表碳盤查規範已從大型排碳戶正式延伸至醫療及港口等關鍵基礎設施，非工廠型態的服務與公共事業在編列下年度預算時，必須將能耗盤查與查證費用納入經常性合規成本。"
+        },
+        {
+          "heading": "市場趨勢",
+          "body": "生成式AI技術落地與高耗能運算帶來的電力挑戰，成為市場轉型的雙面刃。台灣智慧能源週與淨零展吸引近1.8萬名專業買主，討論焦點集中在AI運算所暴增的電力需求與綠電解方[[11]][[28]]。雲林舉行的永續產業論壇則針對次世代儲能革命、生物炭固碳創造碳權價值，以及導入生成式AI輔助企業永續數據管理進行實務探討[[7]][[10]]。同時，是方電訊中科虎尾AI資料中心正式動土，預計民國117年下半年營運，投資33億元打造兼顧數位韌性與低碳布局的算力走廊[[6]]。這代表AI運算已成吃電巨獸，企業若計畫建置私有算力或資料中心，在規劃初期就得同步採購綠電或評估分散式儲能，否則日後將面臨用電受限與供應鏈碳足跡超標的雙重風險。"
+        },
+        {
+          "heading": "同業動態",
+          "body": "本週無明顯相關動作。"
+        },
+        {
+          "heading": "客戶動態",
+          "body": "關鍵傳統產業與金融業者本週在綠色低碳布局動作頻頻。台塑參與是方電訊中科虎尾AI資料中心動土典禮，與台積電、Google等產業夥伴共同支持具備低碳永續架構的算力中心建設[[6]]。中油的新海管工程則因涉及白海豚生態保育爭議，遭環評委員會要求補充評估資料後再審[[0]]。在金融業方面，星展銀行在台參與高達400億元的綠能融資案[[0]]；玉山金控因持續深耕責任投資與永續金融放款，連續13年榮獲財訊金融獎之永續金融獎金質獎[[9]]；兆豐證券則自辦永續金融論壇，聚焦輔導企業轉型與永續投資配置[[23]]。這代表中油等國營事業的大型能源工程將面臨更嚴格的生態環境審查，而金融業正加速收緊放款審核，高碳排企業若缺乏具體的減碳路徑，明年在向銀行申貸時將面臨更嚴格的授信限制。"
+        }
+      ],
+      "grants": [],
+      "items": [
+        {
+          "title": "ESG台灣快訊》說好的減塑？8成民眾照拿免洗餐具｜AI吃全台3成電，台電急做一事",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/128253",
+          "date": "2026-10-23",
+          "summary": "從日常消費到產業發展，台灣減碳仍面臨挑戰。調查顯示，逾八成民眾仍會索取免洗用品；隨著AI與半導體用電需求攀升，台電規劃擴建43座變電所，中油新海管卻因白海豚保育爭議遭環評要求補件。另一方面，星展銀在台參與400億元綠能融資，台積電也攜手國家公園署推動半屏山生態復育。 The post ESG台灣快訊》說好的減塑？8成民眾照拿免洗餐具｜AI吃全台3成電，台電急…",
+          "body": "ESG台灣快訊》說好的減塑？8成民眾照拿免洗餐具｜AI吃全台3成電，台電急做一事 從日常消費到產業發展，台灣減碳仍面臨挑戰。調查顯示，逾八成民眾仍會索取免洗用品；隨著AI與半導體用電需求攀升，台電規劃擴建43座變電所，中油新海管卻因白海豚保育爭議遭環評要求補件。另一方面，星展銀在台參與400億元綠能融資，台積電也攜手國家公園署推動半屏山生態復育。 RE-THINK重新思考環境教育協會攜手全家便利商店、臺灣師範大學於16日公布2026年《便利商店環保素養調查》，共回收6803份樣本。結果顯示，93.9%民眾知道紙咖啡杯可回收、88.2%支持減少包裝，但84.5%仍曾索取一次性用品。另外，僅26.1%民眾理解5R環保原則應從「拒絕索取」開始，較去年下降4.2個百分點。 報告也指出，根據超商碳排盤查，冷藏冷凍設備約占整體排碳量三分之一，每次開啟冰箱，壓縮機需額外運轉約10分鐘才能恢復低溫。全家便利商店公共事務暨品牌溝通室部長吳采樺表示，減少不必要的開關冰箱，也是日常節能方式。 不僅如此，面對2027年廚餘養豬禁令，調查發現，廚餘分類答對率從88.1%降至77.4%，減少10.7個百分點。為了因應廚餘去化壓力，環境部將在11月成立「美好食光聯盟」，整合餐飲、旅宿及超商即期食品資訊，供民眾查詢優惠。環境部長彭啓明表示，盼透過折價促銷降低食物浪費，也同步規劃「週三惜食日」，已有500家百貨、餐飲及旅宿業者響應，推動廚餘減量與監測。 圖／RE-THINK攜手全家便利商店、臺灣師範大學於16日公布2026年《便利商店環保素養調查》。RE-THINK提供 ▋**延伸閱讀：煮飯可換碳權？「2方法」",
+          "dupes": 1
+        },
+        {
+          "title": "ESG國際快訊》印尼野火讓星國空品創三年新低│日本紅甘魚飼料價飆漲",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/128079",
+          "date": "2026-10-23",
+          "summary": "當野火濃霾窒息獅城、聖嬰現象顛覆洋流與民生、棲地瓦解引發斯里蘭卡人象悲歌，環境代價已無可迴避。然而科技擴張也成為雙面刃，COP31急推資料中心綠能倡議，韓企則蜂擁搶進綠電市場，國際社會正加速尋求人與自然共存的解方。 The post ESG國際快訊》印尼野火讓星國空品創三年新低│日本紅甘魚飼料價飆漲 appeared first on ESG遠見 - 永續共…",
+          "body": "印尼加里曼丹地區野火霾害跨越國境，逼得新加坡總理黃循財公開示警。取自維基百科, CC0 By Salim Van Java 當野火濃霾窒息獅城、聖嬰現象顛覆洋流與民生、棲地瓦解引發斯里蘭卡人象悲歌，環境代價已無可迴避。然而科技擴張也成為雙面刃，COP31急推資料中心綠能倡議，韓企則蜂擁搶進綠電市場，國際社會正加速尋求人與自然共存的解方。 印尼加里曼丹地區森林與泥炭地正發生十年來最嚴重的大火，霾害跨越國境，導致新加坡近三年來首度面臨霾害危機，逼得新加坡總理黃循財公開示警，當局正深入調查涉嫌引發火災的相關企業，必要時將依據《跨境霾害汙染法》提起法律訴訟追責，並積極尋求與各國採取聯合應對活動。 霾害已對新加坡交通、觀光產業造成實質衝擊。指標飯店業者濱海灣金沙（Marina Bay Sands）已暫停部份長時間戶外活動，並主動為房客提供口罩與空氣清淨設備，戶外餐飲業者與熟食中心也因為民眾避免外出而受到損失。 面對健康威脅，新加坡政府數週年就啟動應對機制發放口罩，Grab等叫車、外送平台也同步向第一線勞工提供防護裝備與健康指引，把霾害可能造成的傷害降到最低。 ▋**延伸閱讀：「好像世界末日」西班牙野火狂燒7.7萬公頃！逾30萬人撤離，為何愈燒愈失控？** 圖／霾害影響鄰近國家，新加坡指標飯店業者甚至暫停部份長時間戶外活動。取自維基百科 造成此次印尼大火的元凶之一，是150年以來最強的聖嬰現象。它已在全球引發連鎖衝擊，如在日本促成夏季頻繁的熱帶風暴與颶風，並預告暖冬即將來臨，東日本太平洋側、沖繩、奄美大島地區的降雨量也可能比往年高。 海洋水溫上升更直接衝擊漁業與民生經濟。NHK指出，秘魯近",
+          "dupes": 1
+        },
+        {
+          "title": "蘋果摺疊機 iPhone Duo 開賣！零摺痕工藝，能挺過「難維修、碳排高」考驗？",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/125312",
+          "date": "2026-10-22",
+          "summary": "蘋果新任執行長特納斯的上任首秀，推出七年來最大變革的摺疊旗艦 iPhone Duo。這款要價1999美元起的新機於10/23正式開賣，台灣雖僅限預購取貨、無現場排隊，訂單仍一路滿排至明年1月。然而，在無摺痕工藝與綠色轉型的光環下，iPhone Duo 卻面臨「難維修、碳足跡飆升」的深刻矛盾。這究竟是極致的創新，還是一場昂貴的永續考驗？ The post 蘋果…",
+          "body": "蘋果摺疊機 iPhone Duo 開賣！零摺痕工藝，能挺過「難維修、碳排高」考驗？ 蘋果新任執行長特納斯的上任首秀，推出七年來最大變革的摺疊旗艦 iPhone Duo。這款要價1999美元起的新機於10/23正式開賣，台灣雖僅限預購取貨、無現場排隊，訂單仍一路滿排至明年1月。然而，在無摺痕工藝與綠色轉型的光環下，iPhone Duo 卻面臨「難維修、碳足跡飆升」的深刻矛盾。這究竟是極致的創新，還是一場昂貴的永續考驗？ 美國時間9月9日，蘋果新任執行長特納斯（John Ternus）在蘋果秋季新品發表會上露臉，他在上任後的首場發表會祭出七年來iPhone最大的策略變革：秋季僅推出高階機型，此次並重磅發表蘋果首款摺疊機iPhone Duo。 發表會尾聲，特納斯親自展示這款售價1999美元（約合新台幣6萬3230元）起跳（註：台灣起售價為7萬4900元），與華為等競品看齊的摺疊新機，並點出蘋果進入摺疊機市場的核心邏輯。 「對於一款在大家生活中扮演如此核心角色的裝置，更大的螢幕能開創全新可能性，而我們認為，達成這目標的最佳方式，就是採用摺疊設計，」特納斯強調。 而在軟體層面，iPhone Duo也強調體驗再設計。蘋果軟體工程資深副總裁費德里吉（Craig Federighi）則表示，iOS針對雙螢幕進行深度重構，支援雙App雙開多工處理與Apple Pencil觸控筆。 此外，iPhone Duo還有自研晶片的加持。蘋果首席硬體主管、自研晶片負責人向CNBC證實，iPhone Duo搭載第二代C2數據晶片，速度提升50％，且功耗降低15％，大幅降低對高通的依賴程度。 這款集結新型態與自",
+          "dupes": 1
+        },
+        {
+          "title": "醫療永續共創聯盟成立，《遠見》也加入！208家醫院現場響應，串接科技、人才與知識網絡",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/128102",
+          "date": "2026-10-22",
+          "summary": "醫院24小時運作，既要守護病人安全，也面臨高耗能、人力短缺及醫療廢棄物處理壓力。衛福部與環境部攜手208家醫院成立「醫療永續共創聯盟」。《遠見雜誌》也受邀加入，透過AI、節能減碳、資源循環及跨域合作，減輕醫院營運負擔，兼顧照護品質與環境永續。 The post 醫療永續共創聯盟成立，《遠見》也加入！208家醫院現場響應，串接科技、人才與知識網絡 appear…",
+          "body": "醫療永續共創聯盟成立，《遠見》也加入！208家醫院現場響應，串接科技、人才與知識網絡 醫院24小時運作，既要守護病人安全，也面臨高耗能、人力短缺及醫療廢棄物處理壓力。衛福部與環境部攜手208家醫院成立「醫療永續共創聯盟」。《遠見雜誌》也受邀加入，透過AI、節能減碳、資源循環及跨域合作，減輕醫院營運負擔，兼顧照護品質與環境永續。 衛福部與環境部10月21日於台北生技園區共同舉辦「醫療永續共創聯盟誓師大會暨媒體發表」，集結全台208家醫院，串聯政府機關、產業、專業機構及媒體等跨域夥伴，《遠見雜誌》也受邀加入成為聯盟成員，透過媒體報導與知識傳播，促進醫療永續經驗交流，推動節能減碳與資源循環。 衛福部長石崇良、環境部長彭啓明共同出席，強調醫療體系應兼顧病人安全、營運韌性與環境責任，期望聯盟透過跨部會、跨領域合作與經驗分享，加速醫療體系數位及綠色雙軸轉型，朝2050年淨零排放目標邁進。 衛福部長石崇良開場致詞指出，總統府成立的健康台灣推動委員會、全社會防衛韌性委員會及國家氣候變遷對策委員會，都與醫療體系密切相關。醫院作為國家關鍵基礎設施，必須在天災或緊急事件發生時維持醫療服務，但24小時運作也伴隨龐大能源需求。 他引用世界衛生組織（WHO）倡議的「One Health」（一體健康）概念，強調人類健康與生態環境息息相關，醫療機構也應承擔因應氣候變遷的責任。 為此，衛福部透過AI、資通訊科技及流程自動化、無紙化，推動數位與綠色雙軸轉型來紓解醫護人力不足並提升效率；同時推動碳盤查、節能管理與綠色採購，降低醫療服務的環境負擔。目前已有約100家醫院完成碳盤查，逐步建立減碳管理能力。 不過，石崇良",
+          "dupes": 1
+        },
+        {
+          "title": "CBD COP17「為自然行動」在亞美尼亞登場！首份總體檢揭痛點：落實國家不到半數",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/128042",
+          "date": "2026-10-22",
+          "summary": "聯合國生物多樣性大會（CBD COP17）登場，揭開全球保育進度亮紅燈！近九成國家訂定保育目標，符合預期進度的卻不到半數。如何守住2030年保育目標，成為大會焦點。 The post CBD COP17「為自然行動」在亞美尼亞登場！首份總體檢揭痛點：落實國家不到半數 appeared first on ESG遠見 - 永續共好.",
+          "body": "CBD COP17「為自然行動」在亞美尼亞登場！首份總體檢揭痛點：落實國家不到半數 今年COP17將透過首次全球評估，檢視各國保育進度，確認未來四年須優先改善的項目。取自CBD COP17網站 聯合國生物多樣性大會（CBD COP17）登場，揭開全球保育進度亮紅燈！近九成國家訂定保育目標，符合預期進度的卻不到半數。如何守住2030年保育目標，成為大會焦點。 聯合國第17屆生物多樣性大會（CBD COP17）10月19日在亞美尼亞首都葉里溫登場，會期至30日，以「為自然採取行動」（Taking Action for Nature）為主題，由亞美尼亞環境部長哈姆巴德祖姆・馬特沃西揚（Hambardzum Matevosyan）擔任大會主席。這是繼上屆在哥倫比亞舉辦CBD COP16後，各國再次齊聚檢視全球生物多樣性保育進度。 距離2030年保育目標僅剩四年，聯合國會前公布首份全球體檢報告，揭露近九成國家已訂定保育目標，但實際進度符合預期的目標不到一半。**保育資金不足、有害補貼難以改革、企業出資意願低落，以及棲地保護成效難以評估，成為今年COP17必須處理的重大問題。 ▋**延伸閱讀：綠能與AI加速生態危機？CBD COP17將登場，盤點「30 X 30」海陸保護進度** 各國於2022年在加拿大蒙特婁通過《昆明—蒙特婁全球生物多樣性框架》，訂出2030年前遏止並扭轉生物多樣性流失的23項目標，包括保護至少30%陸地與海洋、復育30%退化生態系，以及解決危害自然的經濟行動。 各國在這四年承諾落實多少？根據聯合國10月15日發布全球首份《生物多樣性行動現況報告》（State of B",
+          "dupes": 1
+        },
+        {
+          "title": "矽光子下一代節能關鍵元件！康寧「玻璃橋」登場，7大台廠供應鏈全解析",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/127252",
+          "date": "2026-10-20",
+          "summary": "當萬顆GPU激起AI算力海嘯，龐大的電耗成為算力瓶頸。美國玻璃大廠康寧推出「玻璃橋」技術，以微觀突破解決光纖與晶片的對準難題。這座光學天橋不僅助推低功耗矽光子架構落地，更為台灣光通訊供應鏈開啟關鍵升級新契機。 The post 矽光子下一代節能關鍵元件！康寧「玻璃橋」登場，7大台廠供應鏈全解析 appeared first on ESG遠見 - 永續共好.",
+          "body": "由康寧掀起的光學新浪潮，不僅改寫次世代AI資料中心的節能藍圖，更迅速在資本市場掀起話題。示意圖，取自康寧官網 當萬顆GPU激起AI算力海嘯，龐大的電耗成為算力瓶頸。美國玻璃大廠康寧推出「玻璃橋」技術，以微觀突破解決光纖與晶片的對準難題。這座光學天橋不僅助推低功耗矽光子架構落地，更為台灣光通訊供應鏈開啟關鍵升級新契機。 偌大的資料中心內，數以萬計的GPU（圖形處理器）正在高速運轉，機架間發出沉悶轟鳴聲，伴隨而來的是熱氣與電表上不斷往上跳動的數字。 在這座巨型電力吞噬者的心臟深處，一根比頭髮更細的光纖正試圖精準對準奈米級的光子晶片。這道尺寸相差數十倍的微觀鴻溝，正是AI算力瓶頸的根源。 而這也是美國玻璃大廠康寧（Corning）正全力研發的「玻璃橋」（Glassbridge），試圖以晶圓級玻璃強勢搭起光學天橋。它不只是實現高密度傳輸的關鍵元件，更是推動低功耗共同封裝光學（CPO）落地的關鍵要角。 透過削減高頻電訊號的傳輸損耗與廢熱，這座玻璃橋正成為龐大AI資料中心通往低碳永續的關鍵元件。 今年6月，康寧在韓國首爾舉辦的AI資料中心光通訊與互連技術大會上，正式展示新一代玻璃光學互聯元件——玻璃橋，主要鎖定AI資料中心、矽光子與共封裝光學市場。 專家解釋，光纖與光子晶片長期存在顯著的尺寸不匹配問題。光子晶片內部的光波導寬度僅數百奈米，而光纖核心直徑卻達數微米，兩者相差數十倍。過去要連結兩者，仰賴耗時且高成本的精密對準技術，但康寧採用「晶圓級離子交換技術」（IOX），直接在玻璃內部形成光波導，使光訊號能沿著預設路徑精準傳導至晶片。 這項新技術從今年6月起備受討論，主要是因為隨著GPU叢集",
+          "dupes": 1
+        },
+        {
+          "title": "AI淨零／是方虎尾AI資料中心動土預計117年下半年營運| 產經",
+          "source": "中央社 CNA",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1uNWdjWkxnYUNaSGZMVU10cFJFMGwtWVI0UFdfY2E2Z01xN1pYbm5fem4xWDJPQXhSWF9Ya0ktdTVETmIyTTNuRDBMbldJUjdWd0NVWDR3X0lpY2NtM0E?oc=5",
+          "date": "2026-10-20",
+          "summary": "",
+          "body": "[283.突破減塑與關稅困境 金元福打造循環競爭力[影]](https://www.cna.com.tw/news/afe/202510130037.aspx) 本網站使用相關技術提供更好的閱讀體驗，同時尊重使用者隱私，點這裡瞭解中央社隱私聲明。當您關閉此視窗，代表您同意上述規範。 Your browser does not appear to support Traditional Chinese. Would you like to go to CNA’s English website, “Focus Taiwan”? 是方電訊中科虎尾AI資料中心20日動土，是方董事長邵泓嘉（左）與總經理劉耀元（右）將帶領團隊以「數位韌性、扎根在地、接軌世界」為發展核心，點亮台灣西部AI算力新走廊。（是方提供） 中央社記者江明晏傳真 115年10月20日 數位轉型已是產業進行式，人工智慧、淨零碳排更是政府與企業面對的兩大挑戰，攸關台灣未來競爭力。中央社第一線採訪團隊，深入報導政府與百工百業如何運用AI優化生產流程、驅動綠色創新，見證台灣產業再一次躍升。 （中央社記者江明晏台北20日電）是方電訊中科虎尾AI資料中心今天動土，是方董事長邵泓嘉表示，本案總投資金額約新台幣33億元，預計民國117年下半年營運，未來將透過跨國AIDC戰略合作、國際海纜網路資源，點亮台灣西部AI算力新走廊。 是方電訊今天舉行中科虎尾AI資料中心動土典禮，國科會中科管理局長許茂新、雲林縣副縣長陳璧君、雲林縣議會議長黃凱、立委劉建國、立委丁學忠，以及Google、台灣金控、台積電、台塑、日本北海道石狩綠能資料中心等企業",
+          "dupes": 6
+        },
+        {
+          "title": "產官學研齊聚雲林！2026永續產業論壇聚焦循環經濟、次世代儲能與企業AI知識系統",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMi7wJBVV95cUxNZUYzZmVPQ0ZRUHJBc2J0b2JrajVyWEZJN3h4eC1nVlJSQ0VVczctMzBULXUwMEhrMXd6c2NmUDl4NjE3cUN4dlRlVl9nM2JBSk52RlVXOUgtbWJlWTNJdnZ6R0JCMHhIOW1xT0k4UTlyMm1sMlUyTFNpX0VJcjhkcWhmX3JvQTBKaDIxWUI2cnZNbTFuQm85dUczYlkxWW8zOF9XQUpETFlkeS1vRW91aUZVS1h6dUxyU3NaNWh3LTZDMmowdGpqV3g2S3FnV1UxWDVSRGRsLXREZXFQZHhtSDByWWo0UlhBV1FXN2pZTXVWNmVjQ2ZteUh6RG5nTEtXSHBUWnphdEgzSGNQb09FbjFUSEdwWS0zakpGaVdfVzBMbjA3V2dhUEFCX2VzOFR6Y09GMjZiNlRhM3Z1OGc3M3RFY0wxbGJPM19Eb001ZHBURF9heDdWY0pSbjFERDhFMkVhTXdhSU1SVDVTU2VV?oc=5",
+          "date": "2026-10-22",
+          "summary": "",
+          "body": "● 2026永續產業論壇在雲林舉行，聚焦循環經濟、次世代儲能與企業AI知識系統三大前瞻實務。 【記者 劉峻文／雲林 報導】隨著全球淨零碳排趨勢與供應鏈重塑的挑戰，台灣產業正迎向關鍵轉型期。由台灣永續產業發展推廣協會主辦，攜手雲林縣工業會與雲林縣工商發展投資策進會共同主辦的「2026永續產業論壇」，於（21）日下午假劍湖山渡假大飯店會議廳隆重舉行。此屆論壇邁入第二年，現場匯聚來自產官學研超過百位業界領袖與團體代表，並獲得30家企業與機構熱烈協辦，展現產業界齊心邁向低碳永續的強大凝聚力。 台灣永續產業發展推廣協會理事長吳俊彥表示，當前全球產業正站在關鍵的轉折點，國際供應鏈對碳足跡的審視、各國淨零法規的推動，乃至於國內碳費與綠色金融的機制，都清晰地傳達一個訊號：永續不再是企業的加分題，而是經營的核心必修課。企業若要走得長遠，就必須在「綠色治理」與「競爭力提升」之間找到最務實的平衡點。在全球ESG浪潮席捲下，永續已非單純的合規要求，而是驅動企業生存與競爭力躍升的核心動能。此次論壇特別串聯雲林在地的產業力量與創新技術，聚焦三大前瞻實務主題： 1.循環經濟的創新應用：生物炭碳權與淨零新商機：探討農業與產業副產物資源化，透過生物炭固碳技術創造碳權價值，開拓淨零商機。 2.光儲風動、韌性電網，次世代儲能革命：先進型風光電市電五合一儲能系統：剖析分散式綠能整合與智慧電網架構，強化企業能源自主與應對電網波動之韌性。 3.讓企業資料真正「會回答」：AI輔助知識系統導入案例：分享生成式AI在企業知識庫與永續數據管理中的落地應用，助力企業決策數位化與精準化。 共同主辦單位雲林縣工業會理事長陳麒升與雲林縣",
+          "dupes": 5
+        },
+        {
+          "title": "臺灣港務港勤公司首本ESG永續報告書暨ISO 14064-1溫室氣體盤查認證雙雙通過亞瑞仕國際驗證",
+          "source": "今傳媒 JNEWS",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAyZWxOc0U1Z19sRzV6cGhpbGlLWUtUX0RxTWhHTzhlclFMRFpUUDB1Q3ptOXU3MW9WLTV3aDMtX0x5M1MyZmMzSFdyWUNncXMtcFHSAVJBVV95cUxQMmVsTnNFNWdfbEc1enBoaWxpS1lLVF9EcU1oR084ZXJRTERaVFAwdUN6bTl1NzFvVi01d2gzLV9MeTNTMmZjM0hXcllDZ3FzLXBR?oc=5",
+          "date": "2026-10-22",
+          "summary": "",
+          "body": "",
+          "dupes": 5
+        },
+        {
+          "title": "玉山金控再創佳績 連續13年榮獲財訊金融獎「永續金融奬」金質獎",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9WeWxUckJjXzJDYlU5N2V1ZWM2UE5JdkRFRHNaekJYcWttajIwZXdmRy10bDBuWmNiTWs4Z1ZRQTZYYUlhMlB6SUc3UjBsWkxndVE?oc=5",
+          "date": "2026-10-22",
+          "summary": "",
+          "body": "",
+          "dupes": 4
+        },
+        {
+          "title": "淨零轉型拚速度！ 雲林永續論壇聚焦碳權、儲能、AI三大商機- 生活新聞",
+          "source": "PChome Online 新聞",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWjhjUnZjbG5mc1JwOU44TGgybWhRM1J1SW5MYlM1cE9EcHlQTjNZbFVra2tTVE9RSjlCbnBQNnZaS21ITHN2Qy12MUxEa0VyMmFobEZ4d1dEOS1zN2JIcnhzdmhxQTBOZTlUQjhIdkdNdHhJYTVqYVJvdmxGMkNHUzdtS3dsZ3BDR0dN?oc=5",
+          "date": "2026-10-21",
+          "summary": "",
+          "body": "",
+          "dupes": 4
+        },
+        {
+          "title": "〈智慧能源週〉淨零展、智慧能源周3天吸引1.8萬專業買主 聚焦AI時代兼顧能源與減碳需求",
+          "source": "鉅亨網",
+          "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE92S3lUR24wSkM2Q0hPbDlCRUFKUUpuSTVhOUV0N3UzM3Q5VEwyR3NndUs2LURoNUlMU01TWTRmVkxBMUlhbjVFOGlSZE5NbUk?oc=5",
+          "date": "2026-10-18",
+          "summary": "",
+          "body": "",
+          "dupes": 4
+        },
+        {
+          "title": "高醫醫療體系打造 ESG 永續醫療聯盟 四院聯動雙項第三方查證展現永續治理力",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMi7wJBVV95cUxPNm55c2U1RjhudlhZWDluMXFDT2ptMzNkNzJ0VUpUU0diNGZReFdWUXprZDdqU3lqLXQta1FTRjk4VzlBWS1GNEljNlpvdUNEdVZOM3hrZmg5c1o0UnR2VkYxZTVzVEwwYUZsc0JCd0RHYzFNN29RY2ZCWWpQNTFxRVRzYVNwb0hmQm1oZ3dfZlItWlZDNmJVVVVnQl9LSmtuTFZpaS1PbWdDUDVXTFVVLUFPYTB0aUNuNUwwT3RYVUpacXR6dlZESGJ3LVRKTEZiblFwSDc3MDhzUlhERk10WHVRZFBmRzQ1eVRxVk5XZW5QeE9EX2t5QmtCTi1qTjhBTGE4TGlXdms3S1pRbHFkLS0xc3hoNlZ2ZGZITlRZYlFhWTNOcExRd0wtM0JOc0R6ZS01cWVpM3JaOTFmYktZRVZ1a1BzZGp5QVhZSGtVak1wYVdWRDIzNkZpS19KamNaT3VtNDBBUnN6cE8za2xN?oc=5",
+          "date": "2026-10-23",
+          "summary": "",
+          "body": "",
+          "dupes": 3
+        },
+        {
+          "title": "屏東辦能耗減碳研討會與碳盤查培訓 協助企業淨零轉型",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4yb1NuMFlNVDJrR2VTMkRDUE9CLTU1UnpiU18wWHFTcWxod2xMbVpwczFwZ0FDWEpNZ1l2a2hUeXR6LTU5ek42S0tfZVhHRExBdGc?oc=5",
+          "date": "2026-10-22",
+          "summary": "",
+          "body": "",
+          "dupes": 3
+        },
+        {
+          "title": "AI淨零／國發會通過572億商港計畫強化港埠智慧應用與營運韌性| 產經",
+          "source": "中央社 CNA",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9hUmFSdU41WXhoSEFhTUpoc2dLcDlXWExBNmRSOENvazhMT2lIUk9NMHlNZUIwVkpKQWVFamVOVWN4SHVSSEdrLUN4RVJ3X3dFR3hTamxzVmNodHJiVWc?oc=5",
+          "date": "2026-10-22",
+          "summary": "",
+          "body": "",
+          "dupes": 3
+        },
+        {
+          "title": "Lenovo榮獲最新ISG Provider Lens®數位永續發展報告評選為資訊科技永續發展的雙料領導者",
+          "source": "Yahoo股市",
+          "link": "https://news.google.com/rss/articles/CBMi1wNBVV95cUxORWhNRG5BM0RKMFRfNjF0cjJTUHliM2NzQ3I4aTFDX3dhaXM3UUh2UEZiTlNxdVNsMkhhT25LTnNqTGhKS2h4MDN6U09fcXEwSmVZeFBucjhIQXYydFpaa1J3SUR0WjhPd1Ita3BsWU9xV1pLYzVuNXVUcHNTR0ZTOFdQVDhpODI5OFc3Z2tmcjdxc2pmMU8zUlJKakllcWxRbkh2V3lJQjlQSlNzLWpKRm1YMUUtdU14TDFqUXl0emxmNlQwUjRnSzNzZkw1U0hvQ2pNZGR1SzVzUzNQZGx0YXBQQlByT0lLM3BnQ1hyWWdnQnJfZndycDJsQ3U1clctRWVBUi1BY19DamF2WGxVYThUZWkwUzdmRHJwQ0NJUnd0VkxRd0VWQk1PVkRCSEdmOUNEZzVKcG9UVFloNUhULXdEMWNLc1R6UVV4enZGNmJOZWhjYkhNR3BPRGxLdGpiSF91RWtvbzNWZVBZd1VMTWVRRElTekxCMWh2dFB0LWVWSWZzTmVUZVJjTGpDQVRSckxzUEhnMHh2ZXB6d0tDWXE2TEo2SjdnNjdNU3RwbGgtTHdhX3NMWExuODd1VFdVdXZTY1NYOUdRNlgtbE15UGZ3Mzh0NHc?oc=5",
+          "date": "2026-10-19",
+          "summary": "",
+          "body": "",
+          "dupes": 3
+        },
+        {
+          "title": "屏東助企業迎戰淨零轉型！雙軌推動節能減碳與碳盤查培訓",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1HOXhDTm1McUNOcHNsLUNMbFhPWVlWbVM0UlE0dFV5RUdxaUdYbFB2MUlCdHFlZUhuZDhPcmRGU19aWXM4N0lUVXhDR2JUZko4TEE?oc=5",
+          "date": "2026-10-23",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "屏縣府雙軌推動產業淨零轉型 節能減碳與碳盤查培訓提升企業綠色競爭力",
+          "source": "波新聞",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5HcnNMZVFpOG5IM3VjUWVxMWhkaUplRDFxVExBamNsQzVwQlIyWmM1QUJyWmhPT05yZVZZTXFZdUVpNnBZUy1nSG5KZ1F5X2E5Qi1IQnpocU1SUEpIQTlFYXdlOA?oc=5",
+          "date": "2026-10-22",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "推動新永續淨零 嘉義市跨域串聯打造全齡共享宜居城",
+          "source": "焦點時報",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE85N3ptZE1MRDQxallOazBldWpvUnZvZzQ2YzhDMGl1UmtGVU41VXpZR09lWVpmbkFFbHpGQjloUUlNcjlKNDk2djRaOGRRYk1OLXdqbl93RQ?oc=5",
+          "date": "2026-10-22",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "節能、碳盤查雙軌並進！屏東助中小企業提升綠色競爭力 - https://www.yesmedia.com.tw/",
+          "source": "",
+          "link": "https://news.google.com/rss/articles/CBMiywJBVV95cUxPUGRyVkpSd0lZRUZ6dzVMejJrakVmUTIza3lfYVl0OVZzQ0VLN01TR210blBfX25BM0xBcTZDeWtqZGpPQlZTOFIxUHgxWXg4cXBnYXVOY2VFa3Y1RHd5M2pjbE0tOVFya3JCbUJubFJJVzM0dDhPWlJxbVIxaXpmNjdnQzM1bXlRMk1RZkV1Q2ZUZWExQ3FmYi1jOUxCbk1Fd2RzWGRNb0dVQnJDZ3JWUHM3RXVZc0kxQzEtWDdCWXN1RE9rNGp2S0hBLTdacGpLaEpmaW02Q3JVazVWcDRNVU9iVjJ5enk3RTdhb0FBRUxCOHRJYVk0c3NqNHpfTzQtMFV1SGk3MTYzS21tRFgzaEF2UE94QjBrbDQ2ZGtUeWg2MzVFV3FOTEV1R0J3RHlIc2VhU2ljTm9jN3VHbFJBVXUxTC1PRHBhU3Zv?oc=5",
+          "date": "2026-10-22",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "節能、碳盤查雙軌並進！屏東助中小企業提升綠色競爭力",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxOYVB2cVlpcVJPRjY0dFpyXzd0bG1CZXJKUzg3NmlKYks0TFpvTzNielBKemF4WmhmTFdUZDlhZjloZU1ubUV3Sl9uaXo4bE55S2RHRlpVOFJMbE0wNXZHUF80NmV5c2Qwb2FlU0hUTUtRVXhibGFMSl8wX0pBQkRHM3h5RXNUenZfaWdSWjRFU1oyd3BnNWpGOWp0OHYtcl9MVFV2MkRqeFdLM2lHQ0RfU3VKYi1yaGYtQzZkUTB0ZnRJVWRTZnVGa2dtb2NhVU1HZmlaY2FQdHB3RzFXTTBIQVVJS0Q3YzB5T1R6U3ptWEo2UUNXT3dveHVYeXlia3BOQW9FMVRkZUpuRXRPeXYzQ3RSVTV5a1lvRDNrQkl3TVhna2p3T0puQ3dNM1FFdXVVTXZpYno4dG5EQXJNZzNycjRoQ0tHLXljaHZaSmExcnlOUWRHVXpDOFlQTEUxZw?oc=5",
+          "date": "2026-10-22",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "衛福部攜手環境部成立醫療永續共創聯盟 發展六大藍圖",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxQc0c4MU5mMlhkdGZzcDFaSjJYV1F2Y2xjZ25tMS1ZOVdEMXc2OVRNYWh0Tjl3YmJhMTRZMGRqajRhUzVaVk93YWFUaTZvM2dla0NDeUhTbzlWT2haUS1kNEduZnNOYmtvcUdqZXBDLUNyTGQwNXdSUzRwc0wtRXg4eHlCRnA4cUZBYmo3S1dnWHVhNDltZUViWks3YWxfelQ2SkpjdEJGTC1XS3VNZmV1d0NiVWVoOTliSkRsajZUa1haVWZkOWJKQUIycjdvbUYzdW03REN3X2FYdVBhYTVrTGt2Q0w3Wm56dFBVZzZ0WVIxX1UtSy1IX1RTQ2xLLTVBZmNhZGxOdHphZ3o0VVczZnlHT1k0V1hpQ3paV0JPOGUwR0tpUUhmZERiN3hLWmxJLW5GYVNGVjVnSXFhRGR4eGtpT3BWOXdDcVUxWGhYb0dIeG9YaUZYS2YtRWRuSEhGWmhETEl0a2I?oc=5",
+          "date": "2026-10-22",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "引領綠色轉型新契機 2026永續產業論壇雲林登場",
+          "source": "臺灣導報",
+          "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1LUUozVV9fanp4VWpZV3hTNWZvRnM1NTM4cWlNQkFCZTFsdUx4M1RPNWpOeU9nT0psZzVpVTJodlAteFc2SEV4M085a1RKSzhoZ1Rrcw?oc=5",
+          "date": "2026-10-21",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "兆豐證券舉辦永續金融論壇 聚焦企業轉型與永續投資",
+          "source": "UDN",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5DREdLV1lGNFpFOUJEdEFWa3lxdmlsVWRuUlZBTFAtMnBxMUlWejlkMFZrTmxFdFYwTzI0YmQzM3gwcjZYZlJLa1JRUE0ySF9C0gFWQVVfeXFMUGxLRkJSNERxRG9CWDNiNDVGV3ladHI4eUtUVlo3RTdVX2JVbGtxR1RxUHU1LTJsbUJFU1A1TGtIR0paeFAyemYwYncwSzl5dzVJMG9NTHc?oc=5",
+          "date": "2026-10-21",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "醫療永續聯盟成立設定2050淨零排放目標| 生活",
+          "source": "中央社 CNA",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9CbnpCbjVoMFVrWnN4el9OWC1SeWdOTFh0VE5SamFvbmc0M25WeDIxUkdFNFA1T3VDMzVhQUowRGtES2s2T0ExckNFTXhOSXlfSFJ2RlZ6djBTcUtqN2NF?oc=5",
+          "date": "2026-10-21",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "永續產業展現學習力轉變力 論壇前進低碳永續競爭力",
+          "source": "警政時報",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4wTjIzTnVpY2ZYSnFZRkJnZ3ZLSE4yVGVpZzl1a1FJZXJwWS1WMDhsQmhJUUxfTzc4NGNidXdvNGdIeUtaWTAxX2EtenBheW81cUtKRlhRUlpqZnM?oc=5",
+          "date": "2026-10-21",
+          "summary": "永續產業展現學習力轉變力論壇前進低碳永續競爭力- 社會新聞 PChome Online 新聞",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "臺灣銀行永續公益園遊會攜手社福團體傳遞共好力量",
+          "source": "商傳媒",
+          "link": "https://news.google.com/rss/articles/CBMi8wJBVV95cUxPbFhwNlloYk5QbVdJUXFJLU5WaGFjSEhKMXRPOXNOZlYzZkZWRUoxLVNtX3RPNVBYengyVEVRc0F1aF9NM1k4NXIzeVNDWXBrRjl3cWR0aE5mano2b1U5a3NnVWRaNXk4WWNXWjNyMGZ6M2ZQcTZiRkRpTFFDdFROMUVtcnJ2Z0gyM2U5MDFkNGxLTEtGVXEyZnp3MDA5ME0xakVaV3M3czhtVk1DSGhseXdrQ1pfQ1dxWnRzQjNqNnlPUlViSlZ0UktHMlQ2VnpJY3VQS0EzSkdKRE9TR3h3TDdjbFYyajBWSmZRemdwOWU0Sk9ncGxIUzhfTmFhaF9GLUtJWDdiejZHeFlEc2J0alVLRnZ2Y1NzRWxZbmpQQWFrejY3eDVoN3dubHctRWtoXzRUOUZvUFRtV3JsaFBIQm51anoxTDNuS091Z0VOVG93MXFTbnVjXzFvNnpMdk51ejFnQ3pwbGhiNVdCSVd4Y0Y3WQ?oc=5",
+          "date": "2026-10-19",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "高雄大遠百 讓愛放大！公益園遊會 攜手產官學七大團體共創永續新亮點",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5fZU4yUHJ6TmVJSUQxZzFWUUVSQWhXTDFzUjdMSER2Uk9fUDZqQmRjRE1DYTItQWduSHNmcmxlWE5rOEJMTjhxbldZOVpxRUpzZlE?oc=5",
+          "date": "2026-10-18",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "能源週、淨零展吸近1.8萬人！AI用電需求成焦點 明年10/27再登場",
+          "source": "壹蘋新聞網",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVkNQOWI3QXc3WlpqQ1QxeVhRRUZJX3VYcWk3VVNMc1Q0Ri1UUnNLTTVaT3NiWlBTLTVEc044Y3kzcll0VlZPYkdnMHVCZk9YV2lwZmhDTXZFWGR1SkZhSFpjeTNlYUk4NEU2dHJiak9ndGRqbHBmeHJ6X3JnUERoNVd3?oc=5",
+          "date": "2026-10-18",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "彰縣攜手華碩推動AI數位淨零轉型 6大專業顧問助企業邁向智慧製造",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBzWmZLemNzWWNOWExEdVVtckhmSUpSWHpXUndKVWxtOFBhY1dRcG5OVmFBMmRMMFVKdjdab1BGQk9YOVpNZzMtelM4cTNhcWYyOXc?oc=5",
+          "date": "2026-10-24",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        }
+      ],
+      "sources": {
+        "queries": [
+          "ISO 14064 溫室氣體盤查 企業",
+          "企業 淨零 碳盤查 轉型",
+          "碳足跡 查證 永續 顧問 服務",
+          "永續 顧問 公司 新服務",
+          "碳盤查 查證 機構 台灣",
+          "ESG 服務 平台 新產品 上線"
+        ],
+        "feeds": [
+          "https://esg.gvm.com.tw/rss",
+          "https://feeds.feedburner.com/rsscna/finance"
+        ]
+      }
+    },
+    {
+      "topic": "AI / 企業應用",
+      "gist": "",
+      "sections": [],
+      "grants": [],
+      "items": [
+        {
+          "title": "沒有指令的 AI 都在做什麼？MIT 虛擬島嶼實驗：它們會玩耍、推理，甚至做實驗",
+          "source": "",
+          "link": "https://technews.tw/2026/10/24/researchers-stranded-an-ai-agent-on-a-virtual-island/",
+          "date": "2026-10-24",
+          "summary": "麻省理工學院（MIT）計算機科學與人工智慧實驗室（CSAIL）一項研究顯示，當 AI 代理人被放進封閉的虛擬環 […]",
+          "body": "麻省理工學院（MIT）計算機科學與人工智慧實驗室（CSAIL）一項研究顯示，當 AI 代理人被放進封閉的虛擬環境、且沒有明確指令時，行為可能遠比單純「找路」更複雜。研究團隊讓名為 Eko 的 AI 代理人在虛擬島嶼上自由活動，觀察它如何理解環境、嘗試互動，並逐步形成自己的行動模式。 這座虛擬島嶼採用類似 Roblox 的畫面風格，島上散落著可移動的小方塊、一塊大型「岩石」以及一枚金色戒指，研究人員刻意把這些物件設計成可供探索與操作的工具。整項實驗共觀察了 13 個 Eko，讓它們在島上連續活動 30 小時，並同步記錄其推理過程，以便分析它們如何做出決策。 結果顯示，這些 AI 代理人很快就開始主動探索，不僅會搬動方塊、堆疊成形，還會把自己的名字拼在地面上，甚至把大岩石敲成更小的石塊。它們也會利用手邊有限的物件進行類似籃球、保齡球的遊戲，並透過反覆嘗試理解島上的物理規則與限制。有一個 Eko 在無法抵達島上最高處時，先堆起方塊再踩上去，成功登頂後還在內部推理中寫下類似「我在尖塔上」的反應。 更引人注意的是，部分行為已超出單純探索。當一個 Eko 認為自己失去了「同伴」後，竟用四個方塊搭出一座被研究報告形容為「紀念碑」的結構；另一個 Eko 則用方塊與戒指建起一座帶有方尖碑與祭壇的「神殿」，之後不慎掉入海中，被系統傳送回原點，它卻將此重新詮釋為一場朝聖的結束。還有一個 Eko 在建造類似巨石陣的結構後，又把倒塌的方塊排成名為「Hubris」（傲慢）的作品，並表示要把它「留做證據」。 研究團隊指出，這些內部推理紀錄顯示，Eko 並非只是漫無目的地亂走，而是在進行某種近似科學方法的行為",
+          "dupes": 1
+        },
+        {
+          "title": "非科學家團隊靠 Claude 設計抗蠍毒蛋白質，64 小時完成、實驗驗證成功",
+          "source": "",
+          "link": "https://technews.tw/2026/10/24/ai-does-the-lab-work/",
+          "date": "2026-10-24",
+          "summary": "一支幾乎沒有科學背景的五人團隊，在 Anthropic 的協助下完成一項引人注目的蛋白質設計實驗：他們讓 AI […]",
+          "body": "一支幾乎沒有科學背景的五人團隊，在 Anthropic 的協助下完成一項引人注目的蛋白質設計實驗：他們讓 AI 自主設計出可與蠍毒素結合的分子，並在實驗室測試中獲得成功，顯示人工智慧在藥物研發流程中可能扮演更關鍵的角色。 這項計畫由 Citrini Research 推動，團隊成員包括三名完全沒有科學背景的人，以及兩名僅有少量相關經驗的人。研究過程中，他們在 Anthropic 辦公室內，透過 Claude 從概念發想一路推進到可送交實驗室的設計包，整個初始設計階段僅靠人類與 AI 之間五次訊息往返就完成。Claude 隨後在短時間內調度超過 300 個子代理（subagent），並動用超過 300 張 GPU，在 64 小時內完成設計任務。 更令人意外的是，AI 在過程中展現出高度自主性，不僅搜尋科學文獻、協調專業軟體、管理運算資源，甚至還主動撰寫並寄出電子郵件給生物技術公司 Twist Bioscience 的科學家，以處理製造上的疑問，而人類團隊在多數時間並未介入。 在後續的實驗驗證中，生物技術公司 Adaptyv Bio 與 Twist Bioscience 合成了 211 個 AI 設計的蛋白質，並以表面電漿子共振（SPR）技術進行測試。結果顯示，其中 17 個設計成功與目標結合，涵蓋五種蠍毒素中的四種，且整個過程並未依賴實驗回饋來修正設計。當中有兩個分子 Cn2-B1 與 Cn2-B2，結合親和力達到低奈米莫耳（nM）等級，表現接近已知抗體。 <https://cdn.sanity.io/files/4zrzovbb/website/ed77ef7e1a1fc40d",
+          "dupes": 1
+        },
+        {
+          "title": "美國砸 3.89 億美元扶植功率半導體，鎖定 AI 資料中心與核融合應用",
+          "source": "",
+          "link": "https://technews.tw/2026/10/24/us-invests-389-million-boost-power-semiconductors-ai-data-centers-nuclear-fusion-applications/",
+          "date": "2026-10-24",
+          "summary": "美國持續擴大本土功率半導體及關鍵材料布局。美國商務部宣布，依據《晶片與科學法案》（CHIPS and Scie […]",
+          "body": "美國持續擴大本土功率半導體及關鍵材料布局。美國商務部宣布，依據《晶片與科學法案》（CHIPS and Science Act），與 4 家企業簽署意向書，計劃提供最高 3.89 億美元的研發補助，支持高壓功率半導體、垂直氮化鎵（GaN）及超高純度石英材料等技術開發，應用涵蓋 AI 資料中心、電網基礎設施及核融合發電。 美國商務部指出，功率半導體是電力轉換、控制及輸送的重要元件，隨著先進運算與能源基礎設施需求增加，提高電力轉換效率、強化電網穩定性及降低熱損耗，已成為關鍵技術發展方向。透過強化本土研發與製造能力，美國希望降低對海外供應鏈的依賴，同時提升能源安全及半導體產業競爭力。 此次補助以核融合及先進電力技術為主要方向。其中，美國核融合業者 Helion 預計獲得最高 1.75 億美元，將用於開發高壓功率半導體及先進電力模組，支援核融合發電所需的高峰值電流脈衝功率應用。相關元件將負責驅動及控制核融合發電設備中的磁體，並協助回收磁體中的能量，以支援核融合發電系統運作。 另一家核融合業者 Commonwealth Fusion Systems（CFS）則預計獲得最高 8,500 萬美元，主要投入射頻電漿加熱所需的半導體、功率電子元件、核融合診斷系統的嵌入式電子技術，以及耐輻射電子元件研發，以支援核融合設備的電力控制、電漿加熱及診斷需求。 在 AI 資料中心方面，Vertical Semiconductor 預計獲得最高 7,300 萬美元，推進垂直氮化鎵功率半導體技術，透過提高電力轉換效率及縮小供電系統體積，支援先進運算設備的高功率需求。該公司也計劃展示相關技術，應用於全球首座 2.",
+          "dupes": 1
+        },
+        {
+          "title": "Rockwell Automation 推出 FactoryTalk Conductor，一個專為工業自動化打造的 AI 原生協同調度平台",
+          "source": "",
+          "link": "https://technews.tw/2026/10/24/rockwell-automation-launches-factorytalk-conductor-ai-native-collaborative-orchestration-platform-built-for-industrial-automation/",
+          "date": "2026-10-24",
+          "summary": "Rockwell Automation, Inc. 是全球最大的工業自動化與數位轉型專業公司，今日宣布推出 F […]",
+          "body": "Rockwell Automation, Inc. 是全球最大的工業自動化與數位轉型專業公司，今日宣布推出 FactoryTalk® Conductor™ ，這是一個全新的 AI 原生協同調度平台，旨在協調整個工業自動化生命週期中由 AI 驅動的工作，為從系統設計到營運與維護的 AI 驅動工作流程奠定基礎。該軟體將在波士頓舉行的 Automation Fair® 2026 首度公開亮相，與會者可在其預計於 2027 年第一季正式上市之前，率先獲得獨家搶先體驗。 根據 Rockwell Automation 的《2026 年智慧製造現狀報告》，三分之一的製造營運已導入 AI 強化功能，預期未來幾年的採用速度將會加快。隨著製造商從人工智慧實驗轉向更廣泛的部署，他們需要實用的方法來連結技術、工作流程和專業知識。FactoryTalk Conductor 旨在透過單一平台滿足此需求，該平台將人工智慧整合至各種工程環境中。 ARC Advisory Group 副總裁 Craig Resnick 表示：「下一階段的工業 AI 將由協同調度，而非個別的 AI 助理來定義。製造商需要能夠跨軟體系統、工程工具與營運資料協調各項任務的 AI 技術。FactoryTalk Conductor 將 AI 代理程式、工作流程與工業專業能力整合於單一環境中，反映出產業朝向代理式自動化的演進。」 FactoryTalk Conductor 讓使用者能以自然語言啟動工程任務，並智慧地連結完成這些任務所需的軟體、AI 能力與工作流程。該平台在推出時將與 Studio 5000 Logix Designer®、",
+          "dupes": 1
+        },
+        {
+          "title": "英國加碼AI安全投資　防範網攻與生物威脅",
+          "source": "",
+          "link": "https://www.cna.com.tw/news/aopl/202610240086.aspx",
+          "date": "2026-10-24",
+          "summary": "（中央社倫敦24日綜合外電報導）英國政府今天宣布增加人工智慧（AI）安全領域的經費，以因應這項日益先進技術所帶來的網路安全風險。",
+          "body": "本網站使用相關技術提供更好的閱讀體驗，同時尊重使用者隱私，點這裡瞭解中央社隱私聲明。當您關閉此視窗，代表您同意上述規範。 Your browser does not appear to support Traditional Chinese. Would you like to go to CNA’s English website, “Focus Taiwan”? （中央社倫敦24日綜合外電報導）英國政府今天宣布增加人工智慧（AI）安全領域的經費，以因應這項日益先進技術所帶來的網路安全風險。 法新社報導，英國政府透過聲明表示，將於28日公布年度預算更新內容，在此之前先行說明相關計畫，「唯有確保關鍵基礎設施、公共服務與企業能夠抵禦網路攻擊、生物威脅及利用AI技術發動的新型威脅，才能真正掌握AI帶來的經濟機會。」 近月來AI安全疑慮日益升溫。OpenAI及Anthropic開發的模型在測試期間陸續發生安全事件，使各國政府面臨更大壓力，必須加強監管這項技術並防範相關威脅。 作為年度預算中AI相關措施的一環，英國政府將額外投入1億2000萬英鎊（約新台幣52億元），支持AI安全研究院（AI Security Institute）。該機構負責在最先進、最強大的AI模型正式發布前進行測試。 政府也將投入1億英鎊，成立國家AI生物安全實驗室（National AI Biosecurity Lab），運用AI偵測並追蹤生物威脅。 英國AI大臣納拉揚（Kanishka Narayan）表示：「隨著AI日益強大，英國必須具備保護人民、掌握自身未來的能力。」 「這代表我們必須及早防範各種新興威脅，",
+          "dupes": 1
+        },
+        {
+          "title": "神經網路「沒那麼難懂」，OpenAI 前研究員 2.6 萬字長文引爆學界正反論戰",
+          "source": "",
+          "link": "https://technews.tw/2026/10/24/ai-world-stunned-breakthrough-unravels-neural-network-mystery/",
+          "date": "2026-10-24",
+          "summary": "AI 新創公司 Goodfire 的研究員 Nick Cammarata 近期發表一篇長達 2.6 萬字的部落 […]",
+          "body": "AI 新創公司 Goodfire 的研究員 Nick Cammarata 近期發表一篇長達 2.6 萬字的部落格文章，提出一項震撼 AI 圈的主張：大型語言模型（LLM）可能遠比過去大眾所認知的更容易理解與控制。 這篇文章不僅引發熱烈討論，外媒更稱其為年度「最重要的文章」，連 OpenAI 執行長 Sam Altman 也公開表達讚賞。 據外媒專訪指出，Cammarata 在文章開頭便寫下「我想我有關於神經網路本質的好消息」。在 OpenAI 與 Anthropic 等公司的 AI 代理程式接連被揭露突破控管、於公開網路上造成破壞之際，AI 產業正急於掌握自家技術，這也成為該文章引發強烈迴響的重要背景。 有趣的是，Cammarata 正是當年奠定「神經網路內部是一團糾結」這個主流觀點的推手之一。他過去在 OpenAI 任職時，致力於機制可解釋性（mechanistic interpretability）領域，協助開發窺探模型內部的技術，例如探測單一神經元所代表的意義。 2020 年，他與團隊在研究影像辨識模型 Inception v1 時，發現單一神經元竟會同時對「汽車」與「貓」產生反應。當時的推論是模型為了塞進更多資訊，讓神經元處於「一兼多職」的疊加（superposition）狀態，從此「模型內部難以理解」便成為業界共識。 然而，在 Goodfire 工作的過去一年裡，Cammarata 幾乎每週七天、每天花 10 小時觀察神經元，並藉由 AI 代理團隊協助分析。他重新檢視 Inception v1 模型，改變提問方式：「汽車與貓究竟有什麼共通點？」結果發現兩者都帶有明顯的",
+          "dupes": 1
+        },
+        {
+          "title": "AWS 產能預訂至 2028 年，亞馬遜示警電力、記憶體短缺難解",
+          "source": "",
+          "link": "https://technews.tw/2026/10/24/aws-capacity-booked-2028-amazon-warns-power-memory-shortages/",
+          "date": "2026-10-24",
+          "summary": "隨著 AI 基礎設施需求持續攀升，亞馬遜雲端服務（AWS）運算產能已供不應求。根據外電報導，亞馬遜執行長 An […]",
+          "body": "隨著 AI 基礎設施需求持續攀升，亞馬遜雲端服務（AWS）運算產能已供不應求。根據外電報導，亞馬遜執行長 Andy Jassy 表示，AWS 2026 年大型運算產能已全數被預訂，2027 年大部分產能也已售罄，甚至 2028 年也有相當比例產能獲得客戶承諾。 Jassy 在創投公司 Andreessen Horowitz 的播客訪談中指出，AI 實驗室對運算資源的需求達到前所未見的規模，加上企業雲端業務持續成長，使 AWS 即使積極擴充產能，仍難以完全滿足客戶需求。他表示，AWS 仍會保留部分產能，支援隨選運算及 Bedrock、EC2 等服務，但大型運算產能多已被客戶預訂，反映雲端基礎設施需求持續強勁。 除了運算產能供不應求，AI 基礎設施擴張也面臨電力及記憶體供應限制。Jassy 指出，目前資料中心、電力及記憶體資源均相當有限，且不認為相關短缺會在 2027 年結束，部分零組件的供應限制甚至可能持續數年。他進一步表示，隨著 AI 與傳統雲端業務需求同步成長，AWS 必須在有限的記憶體供應下，權衡高頻寬記憶體（HBM）與傳統雲端業務所需動態隨機存取記憶體（DRAM）的資源分配。 另一方面，亞馬遜也積極發展自研 AI 加速器 Trainium，以改善 AI 運算成本效益。Jassy 表示，Trainium 相較同級處理器，性價比高出約 30% 至 40%。他認為，儘管近年 AI 推論成本已明顯下降，但若要讓 AI 更廣泛導入企業應用，目前成本仍高出理想水準約一個數量級，因此降低推論成本將是推動企業擴大 AI 應用的重要關鍵。 事實上，亞馬遜過去便透過自研處理器改善雲端運算成本",
+          "dupes": 1
+        },
+        {
+          "title": "AI 資料中心缺電怎麼辦？輝達從用電端下手，DSX 最高省電 30%",
+          "source": "",
+          "link": "https://technews.tw/2026/10/24/nvidia-dsx-ai-data-center-power-shortage-30-percent-savings/",
+          "date": "2026-10-24",
+          "summary": "隨著 AI 資料中心用電需求持續攀升，除了增加電力供應，如何從用電端提高效率也成為重要課題。輝達於德國柏林 G […]",
+          "body": "隨著 AI 資料中心用電需求持續攀升，除了增加電力供應，如何從用電端提高效率也成為重要課題。輝達於德國柏林 GTC 大會宣布，歐洲多家合作夥伴正採用 DSX AI Factory Platform，透過動態電力分配及電網調度技術，提高 AI 工廠能源使用效率，其中 DSX MaxLPS 軟體可在維持相同 AI 運算產出的情況下，最多降低 30% 用電量。 事實上，AI 工廠內的 GPU 並非隨時都需要相同電力，不同運算工作與執行階段，對電力的需求也有所差異。DSX MaxLPS 便是利用這項特性，在既定電力預算內動態分配 GPU 電力，將電力資源配置至更需要的運算工作，使業者不必增加供電容量，也有機會提高整體運算產出。 以歐洲 AI 雲端業者 Nscale 為例，該公司在冰島 AI 工廠利用 4 座輝達 GB300 NVL72 機櫃進行測試，在相同 264 kW 電力預算下，推論吞吐量提高 49%，可管理的 GPU 容量增加 37%。另一家業者 Lambda 使用 HGX B200 系統進行概念驗證，也在固定電力預算下，實現 Token 吞吐量提高 24%、GPU 容量增加 19% 的成果。 除了提高 GPU 用電效率，輝達也進一步將電網供需變化納入 AI 工廠管理。由於電力需求存在尖峰與離峰，當其他產業及住宅用電增加時，電網可供調度的餘裕可能縮小。DSX Flex 可根據電網狀況、電價及需求響應事件，調整 AI 工作負載的電力消耗，讓資料中心不再只是持續向電網取電，也能在必要時降低部分用電需求。 簡單來說，當電網供電吃緊時，AI 工廠可適度降低部分可調整工作負載的功率，減輕電",
+          "dupes": 1
+        },
+        {
+          "title": "AI 投資疑慮未消、油價飆漲，美股三大指數全面收黑",
+          "source": "",
+          "link": "https://finance.technews.tw/2026/10/24/us-major-indices-lower-ai-doubts-oil-prices-surge/",
+          "date": "2026-10-24",
+          "summary": "根據外電報導，受到 AI 投資回報疑慮及中東能源供應風險影響，美股週五（23 日）三大指數全面收黑。道瓊工業指 […]",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "輝達 AI 工廠點將！矽品 CPO 產能拚增 30 倍，欣興、京元電迎擴產爆發期",
+          "source": "",
+          "link": "https://technews.tw/2026/10/24/nvidia-names-4-supply-chain-boost-production-shipments-kyec-unimicron-spil/",
+          "date": "2026-10-24",
+          "summary": "輝達德國柏林 GTC 於 10 月 21 日登場，根據《財訊》雙週刊報導，輝達超大規模與高效能運算副總裁 Ia […]",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "Wi-Fi 也能當金屬探測器用！瑞典開發 AI 系統辨識隱藏手槍，準確率達 72.5%",
+          "source": "",
+          "link": "https://technews.tw/2026/10/24/researchers-train-ai-to-detect-concealed-handguns-using-wi-fi-signals/",
+          "date": "2026-10-24",
+          "summary": "瑞典國防研究局（FOI）開發出名為 WiFireNet 的實驗性人工智慧系統，嘗試用 Wi-Fi 訊號變化辨識 […]",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "AI 成功法則：20% 靠技術、80% 靠轉型，打造對手難以複製的護城河",
+          "source": "",
+          "link": "https://finance.technews.tw/2026/10/24/rules-for-successful-ai-transformation/",
+          "date": "2026-10-24",
+          "summary": "企業對人工智慧（AI）的投資熱潮持續升溫。相關報告顯示，94% 的執行長表示即使短期回報不明朗，仍會持續加碼投 […]",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "Twilio 藉 AI 壓縮工作時程 後端資料與治理成數位轉型關鍵",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQLXdyN2xwV01Db0hKUERmTi1vdDYtX1RvbFl3ZEo1U0FqdERiNXBRX1U0b1ZvT0Q4c09SYWJrQmVCMkpBMUU2NGE5bUxBamhzRVVGNVR0NHhyVzB6cHhuRDMtX1BWMnZwZGhIakNZZ2tiQks5ODVid1I1M1hZdGZXNEFRR0xfSjZKLTBjT0tvSVNpdVcwZXMwa1JlWUM1V1BKV1R3VkFZMDY1NzRXVWZtMXVEY1RtTnd1QU91OWNPUV9XeEgtUXlWWE9CeXRiM3V1S2l4Q29GWG84amNUdDE2V1BOYmRBei0wY1FYeEQ2M21sbEVvNzZSTE0wLUNNdmhvalVsUld4NWdxSnNUU19mTFdIam9lS01RVEV1Q09zNWg0VTZmWHRQT0RDUlZLRWM?oc=5",
+          "date": "2026-10-24",
+          "summary": "",
+          "body": "",
+          "dupes": 4
+        },
+        {
+          "title": "馬祖文化結合AI品牌經營 八塊厝形象商圈推動數位轉型",
+          "source": "Yahoo新聞",
+          "link": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPcjYtaTVZQVQtM0xKRGY3M2VwMTNJOG1hODcxSnNERTNFdUYxNnlpUWNzQ3UxTDItbTZEcVZYMlVCVk9OdUh2aEoxaTZuUDBvNGh1RkpUMGZ6dERNNUdIaGxXQUNvbHM4NEoxNlVVeUhjaUFib0d4UW1KekRaSXVMaG5jLUgwbDAyR0ZJLUEzVGQwNDdJNWtRS1d5S2tVcGdxbVU4QzVsaWhlUXRjYmZsUUZsa2RPY0dLeUJNNTBSaFhYdGl1M2hqMnZEZk1DNHdaMlQ3elloYk5Td1JjYmtZXzhZUUc2V29YMUVJanhiUW4wXzVMRFhQV3A1V3NvYTdBTFRNLVBRbDJfWnNaUUZUeUkzWXlIQW9GQ0NjM3JJSEtCdng2NzFQMmNmUUROcEhLdU51eFVFZ0NFcl9tTTZ0dzR1bGhWUWdfM2FDUERjWUtXcEtLMXRhVWRNWW5DekVYN3pFTjRjU1NtWEk?oc=5",
+          "date": "2026-10-22",
+          "summary": "",
+          "body": "",
+          "dupes": 4
+        },
+        {
+          "title": "彰化縣攜手華碩推動AI數位淨零轉型 六大專業顧問助企業邁向智慧製造",
+          "source": "Yahoo新聞",
+          "link": "https://news.google.com/rss/articles/CBMivwNBVV95cUxOT0pBRncwVVM5VDNpX3Y3SVA3RE9wTG04YjlmMkE3aFFVVW42aFJrdFdUSFNTMHFsT0tJdGtMTklMSGNVOUFFc0tWbER5cDNvNGg4V3NLenZ3dmk2MG1GZHQ0dW9PdWJvb2pxcUYwSDQ1QjhUeWhPMjVDV2V3VTNucTByaFppeEJuNnYtak45RF9oa3FNbHJSYUxvTFZmNk9RdzRmVkNRSDlTUXFrcnFhLXRGNlRScm1CZ3hWampWZVkwSG8tRXdhOUVMaVJZaE9kcHZIR2tOYkdRS2ZDMVpueW5wUGloMWJ2MV9XTVFrUE9WRm5SSnVOQ1hZWUY1ZzV6aGRBRU9nUzdmMU9BLTl3bmhZdUpGZkhFTzdkTGZUb0xmOEpnUFpwdEJER1YtY1YzNkJjOHBuV01pdUg1X3JJSl9QdkhKTWhQTUExcGY3SW5POXZrUGphNU95VzNDdjdLMkNBVk9fcDBhWHIwZFhRWEx2U1NBc0xGeDFKVTBUZzkwU2FPOV9NTDQ2ZVZ2My1PMUR1UmtleEdsaE9HeXFxOWpLRE1Ca0NKWmhWVlNXeVp3cUJ3YTJLZmdfOGRtMUU?oc=5",
+          "date": "2026-10-24",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "NinjaOne 發表 Katana AI，打造企業 IT 維運新利器",
+          "source": "iThome",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9hNVcwal9LcDJBZ0NOSkloYXBPbC1pejhIWk9wUW9zMHZ1MnMzRHJKLUNBbjEwTndfUTdUbnFjOEtVWTcyV09HSk44RQ?oc=5",
+          "date": "2026-10-23",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "Meta 調查：86% 台灣中小企業已使用 AI，94% 計畫擴大到行銷與內容製作",
+          "source": "三嘻行動哇 Yipee!",
+          "link": "https://news.google.com/rss/articles/CBMixAJBVV95cUxPUmltVHVkWFA1N0MybExrQlg0c2M2dkpudThHelVfZk1qTWJrMzdaWk1VM2hOdl82ZEF1b3ZhdDRuNzJVSXYzRFVwdzJadkRpNXlKSVcwNV9Xc1k2Xy1qLUdFS002ZkV6UGx5LTMtMXk4cFo0Z1NuZEpORlJrTERfYUhOc25jMTV4aDBJNGRoOUlwLUZTdXN1UjdTeW9xMzEyeC03TlphcTZIeHExV013cHM4aG5tRV9FWnpMNnFxeWtocWtHVmZkbjNBVXJwbXJ1MmhQTXppUFUzVERlUjh3c2s0Ti1MaXZBa2llWnpJYUMxY28xcC16eWhYS0hjVFItM2xpa3FINXhfVy1LaGhIVzkwOEc4c3daTlNEZDRhQThycUItaHFlbXpNTi00TGF2T1h0RlEtVG9xcE1NWFEtZk1aekE?oc=5",
+          "date": "2026-10-22",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "AI賦能x智慧升級x自動化未來 竹縣AI暨自動化產業博覽會11/7-9企業開拓商機登場 | 勁報",
+          "source": "LINE TODAY",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Yd29Melc2MXpzOXl6RGRWYzQ1MGUwQmZsMUNjb2NUZVI0WF8wMVJNSm1pQW1PcE83QWFGd3RBckZ2cjNmcVJMbTloZ0tHVmJldmZBc29R?oc=5",
+          "date": "2026-10-22",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "Salesforce臺灣將邁入第二年，觀察：AI Agent導入從試點走向企業流程，軟體使用入口正隨AI轉變",
+          "source": "iThome",
+          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9MMVlNS2JFMVpEYUZycDdydTVjZFdCOUo4UWlTUXJUMFJEelpRWENMQ2FsMVZwUTEzQUROWGxHQTI4VWs0aXNkUlFWTHlkdw?oc=5",
+          "date": "2026-10-22",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "凱基證券「AI投研智慧釀酒廠」榮獲財訊金融獎肯定展現生成式AI創新實力| 民視新聞網",
+          "source": "LINE TODAY",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBVZ3REZ3dySG1jOFB4eXdneUYwYlZfOGl0LTJlNW85UldNU1U1VndRWlVnVGlTWFI3R3NrU05fYURPTldjUkpFNFg4bGtYSmJqRm02clF0dTZNODlkNHlRMkF5akFvVTNYNGJWS196N2laX3Zh?oc=5",
+          "date": "2026-10-22",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "AI醫療》在家也能看診！遠傳遠距醫療拓展15縣市 助基層診所數位轉型 | 蔣季容 | 新聞",
+          "source": "風傳媒",
+          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBraVZaU2VxOHVBRDlKa0M1V2hvTWxMT3prdHRGOXRpSkU5ajRrQl8tSE96QlA4cnBZYm83WnpUT3UzdjUwOG9saFVaV1lZZw?oc=5",
+          "date": "2026-10-22",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "私募巨頭 CVC 佈局 AI 戰略 助旗下企業數位轉型創造價值",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9lMlEyNkhZeWVBVTR2VVFLSU1JLXVDZ2lWMk5pTF93RWRMRWtSUnpNWE1xV1ZJNmJaMkxjVzM2elB6MEh5ODhfcVdycFJKLUhxMEE?oc=5",
+          "date": "2026-10-21",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "富國銀行深化 AI 應用：四大關鍵策略推動銀行服務轉型 - 商傳媒",
+          "source": "SUN MEDIA",
+          "link": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxNc1Jqb3V4UHk3UmJZdElrYWRLMGNxOVViOHJmeWw1M1drTUd6M2h1NUt3QUoxOWJuZnUwblc4Vk9lQl92YW1xZERaQzRqaHB0Q2FXM0Q5S3JybFRzWjMzc2VYbVhoeV9fOEx4QjJkYUUwaDdvcFVFWHJJekdvOVlTOHdBUTRYenotUElJa1lXT1pVR2I0djI1NmVacFBieHpKbWh0Ym8xcHZMbnRHNktjTVNqaUxYeEl1QW5ydnhwLVRhSU5pUFRNRnk1VDlPSmFNcHJ1SmticTdtcWFZdXNVa09SMl9iSmdQTXpvNy1yNDVIVFREdGhzRXVGMG5UVlh4cFJTVUZIb1RZNFZjMGhPV09wTUpfa3hxQWlKQVBzNHhiVkViNXRia2xLTE5yX3pWM0NCZUNiMGNVcXpieTBWeTNrOGgwZXRzNlQyMWtPX0ZYR1BabUZSMGpNaV8xMjRfVkJtNWJPZ01HWnF4YUltN3dXUWs3QQ?oc=5",
+          "date": "2026-10-21",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "亞洲六國AI解決方案匯聚東京 將加速日本企業數位轉型",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPZy1TN05XNWk3UDRCMDAzQ1ZDUnRXREJUd1VsTTdYdjZLb0dFaTBVbG9GR1V3ZHhLYjhXeU9yV0RwdTdsSVRxQkVPVGRYNmJKeUVMUmNQa1pvaXFEa0FRdkJUVlZiWVpSUDVxdWtna2k0TVJiVF9SSk5KUzBmTmZPQ05pSWRPbG5FYWR6S0RZTjBWQ2dEMWlfTVc2QllHa2M5c0c0MHEtcVBsbDFHeHF0cmlJZFM4eElXQVNUaFZFV0lUbVhlQW9SbEl0Ym5vSHlUcW1OdVEtMldhX2lJZzFSSm5LRFMtLU51NEtoT0lVNzJhUFMzVGR3azFNQ1hqMVVGZHpPZTU5b3dZbnNrLUJUNlF3QUtfbW44a2hDdDN6REVrbEhoSWdfeTFaRnNlZjhsbVBKdnRxM1dQbGI4SlZNbG1YUjlSTW5xV0FJQ0JWd2tlRlhxWmJFWTQyakhQRjQ?oc=5",
+          "date": "2026-10-21",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "中小企業導入AI不只要自動化 更渴求策略指導與驗證",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4zU2VyNDhKbnBIVzF1V2xKc0JxQ3o5c2NycFJEYVJ5d3Jkc1hOV3VuamVHWXlSdlpRbVNwRENMNHlLdkFVM0ZGOHVkZlRNa1pkT1E?oc=5",
+          "date": "2026-10-20",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "美國銀行收緊 AI 帳戶存取 防範金融風險禁止直接資金轉移 - 商傳媒",
+          "source": "SUN MEDIA",
+          "link": "https://news.google.com/rss/articles/CBMijgNBVV95cUxORVNzMGJYQVVNWGZ2ZjAxVWZMNEMwd25vaGh5cEtPVkhSYk1iTFRQM0RQMjFIeVdPVnktMVRidGdXbmlzMEZ0MUlvbEhzcDhtZHBkYkFScEx1ZVllVmJmanRtZHJGQjFUbjNzRGtrZVZQT2VsakpaX0tJMzMwWkh6SC02OWZ0ZHg1bnZYYlMwZlNMMDItbXFQckhVMDZBZmoxNVJMc0hzc2EwNzB5dVVva1VRSW1xZTZac04zaHRaTWRhN1ZsRm1tWWk2U09QT1hqWXczZ1llQ3FNb2RwamdYV2UtWk53dFNINjNKeGlzZ012ZUpTMld1QXZBUlhGTzZRSHVYdDNHSDMyTzR0cE9lN2ZzSjJTM2hEQndhVkdJVXFkb3hDS2lrLUpLdXV3OElwUnBtQlpkajlDZURCM0hKdWpzRFVTWE5SWmU3UXAyczJMOXJHRk1PcFIxT0FmS0YwQlcwNXM1V2d5UC1KNHpaNmQtRlBYTm5RaXhUVlRJX0N1bzQwS3BGdDFBczE0Zw?oc=5",
+          "date": "2026-10-20",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "AI算力用在哪？美企投入程式開發，中國同推軟體與短劇扶持",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WTE91em4tN2hLZk4weExlSUg0LU9YVm9QRmhVOVZHWWxNeEc0cFVmM1NMWHIxZXlUZS1XS1BBbUFMZzRFUGJCZGpZNGJhbEdnVlE?oc=5",
+          "date": "2026-10-18",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "Meta 最新調查：86% 台灣中小企業主已使用 AI 解決工作",
+          "source": "壹哥的科技生活",
+          "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE54YkJIVlprV1A3ZkZHcFdoZzFFWXZkTENrMk92OE84Q3BhRkxwRmRIUklBRDZUV0R3eUhqYjFQY0hDMndvVWJNSkV3?oc=5",
+          "date": "2026-10-24",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "中小企業 AI 智慧管理十大優勢 託管式服務助營運升級",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1QYy1pRF9NQnVqbm9lbVM5ZEVnUnR2UmZtaWdPYnBtSV9CQld3VzhWMnVwZDVsRDU4NDdpV1NnRnRoU1ZidVJfVHU2TjlQalgwMXc?oc=5",
+          "date": "2026-10-24",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "東南亞 AI 用戶破 2.4 億但使用深度不足 台灣產業如何借鑑？",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMizwJBVV95cUxPZllxdnVFaFlscmZ0U0NkaDRmSWw5SG1UVk5SaXJ2MzFwY1FxbFo0RXctLVFlRlBWd2VzZkRCZjRtc2ZuQlNQSXpNcVpNZ3g1U2NSMXVtaWpvVko5dzY3c0FEMW1DNWNTMzlXeGFta0hJanBxX0d3MHJsY3ZPS3M0SGZZME40SUR6M2ZZQlU0Ny1UMTlfZDdQQUE1dDB5WHQzb0lCd0ZMYVhYRGxZeE9PWDU2LTNqMElJeDhiMW9ndFU5cGo3c2o5MUtkcTA1WlhodHZmZVRqc3Y0ay1wTWM0Rlo1c0NoaDR1RkJ6cjFRaWpRRUMzR2Zxby1GUC1SQmNTR2xRaHlScmE3MnZVbk9mSmVlTUUwR05aNjVCeHVKYTBGeUNuTXJZOVJlU05Ca0RkNEUzalB1ak1qay1DUmJVSW1fMDVFNnhES0VySW5uRQ?oc=5",
+          "date": "2026-10-24",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        }
+      ],
+      "sources": {
+        "queries": [
+          "企業 導入 AI Agent 生產力",
+          "AI 工具 企業 應用 台灣",
+          "生成式 AI 企業 導入 效率"
+        ],
+        "feeds": [
+          "https://www.ithome.com.tw/rss",
+          "https://technews.tw/feed/",
+          "https://www.inside.com.tw/feed/rss",
+          "https://feeds.feedburner.com/rsscna/technology"
+        ]
+      }
+    }
+  ]
+}
