@@ -1,6 +1,6 @@
 {
   "date": "2026-10-26",
-  "generated_at": "2026-10-25 07:43",
+  "generated_at": "2026-10-26 07:32",
   "total": 60,
   "topics": [
     {
@@ -319,12 +319,93 @@
       "grants": [],
       "items": [
         {
+          "title": "AI 駭客攻擊速度快人類 10 倍、日韓接連受害，台灣企業準備好了嗎？",
+          "source": "TechNews 科技新報",
+          "link": "https://infosecu.technews.tw/2026/10/25/ai-hackers-attack-10x-faster-humans-japan-south-korea-victimized-taiwanese-enterprises-ready/",
+          "date": "2026-10-25",
+          "summary": "一個存在超過十年的開源程式語言 PHP 底層漏洞，為何迫使日本政府機關與連鎖牛丼品牌 すき 家（Sukiya） […]",
+          "body": "一個存在超過十年的開源程式語言 PHP 底層漏洞，為何迫使日本政府機關與連鎖牛丼品牌 すき 家（Sukiya）等知名企業，連夜關閉網站或者暫停點餐系統服務？當攻擊者開始借助 AI 工具大幅提升探測與滲透速度，日韓接連傳出資安受害事件。這場由 AI 推波助瀾的資安風暴，正給台灣企業帶來什麼樣的防禦啟示？ 日本首相高市早苗 10 月 21 日罕見在社群平台發文提醒資安風險，其個人官方網站隨即關閉進行維護。幾乎同一時間，包括日本氣象廳、三菱日聯銀行、食品大廠江崎固力果（Glico），以及連鎖牛丼品牌すき家（Sukiya）的點餐系統，也陸續傳出暫停服務或預防性離線的消息。 引發這場連鎖反應的，是廣泛應用於全球網站開發的開源程式語言PHP，被揭露存在兩個嚴重等級極高的底層漏洞，編號為CVE-2026-109618與CVE-2026-109619。 數位發展部資通安全署緊急盤點，發現國內有高達2.8萬個網站使用PHP，約有200個政府網站直接暴露在風險之中，因此積極要求相關機關優先修補，無法立即修補，應採取緩解措施，必要時暫停服務。 雖然暫停服務是因應PHP漏洞，並非AI攻擊造成，只是，面對漏洞時，留給企業盤點與修補的時間益發減少。 「強烈資安颱風已經來襲，我們的鄰國日本跟韓國都已經出現嚴重災情，企業必須做好準備，」國家資通安全研究院院長龔化中在數發部記者會中示警。 《紐約時報》在探討近期日本網路攻擊浪潮的報導中，專訪了日本AI政黨創始人、技術專家安野貴博。他回憶：「直到大約五年前，日本似乎相對不受勒索軟體與類似威脅影響。如果一個人日語說得不流利，無論是在電子郵件還是電話中，都很容易被察覺",
+          "dupes": 2
+        },
+        {
+          "title": "比爾蓋茲：AI將持續取代人類工作　富豪應多繳稅助政府因應",
+          "source": "",
+          "link": "https://www.cna.com.tw/news/ait/202610250148.aspx",
+          "date": "2026-10-25",
+          "summary": "（中央社倫敦25日綜合外電報導）微軟創辦人比爾．蓋茲接受英國「觀察家報」獨家專訪時指出，人們將持續因人工智慧（AI）失業，機器人的應用也會大幅顛覆勞動市場，在政府需新闢財源應對之際，億萬富豪應繳納更多稅金。",
+          "body": "本網站使用相關技術提供更好的閱讀體驗，同時尊重使用者隱私，點這裡瞭解中央社隱私聲明。當您關閉此視窗，代表您同意上述規範。 Your browser does not appear to support Traditional Chinese. Would you like to go to CNA’s English website, “Focus Taiwan”? （中央社倫敦25日綜合外電報導）微軟創辦人比爾．蓋茲接受英國「觀察家報」獨家專訪時指出，人們將持續因人工智慧（AI）失業，機器人的應用也會大幅顛覆勞動市場，在政府需新闢財源應對之際，億萬富豪應繳納更多稅金。 觀察家報（The Observer）報導，比爾．蓋茲（Bill Gates）談到，人們將持續因AI失去工作，因為企業的「激勵機制出了問題：雇用機器人、解雇人類，然後永不回頭」。 他預見勞動市場將遭大幅顛覆，因為幾乎所有工作技能都可能被AI取代，包括「創新技能、白領工作技能，接下來隨著人形機器人的發展，人類的體能勞動技能」。 各國政府將得尋找新收入來源，以因應失業者的需求，以及未來的教育與再培訓。蓋茲希望能針對AI的使用課稅，或許能以「詞元稅」（token tax）的形式實施。 蓋茲也指出，億萬富豪應繳更多稅金。他說，他這輩子已繳納約140億美元的稅款，但願意繳到400億美元左右。 儘管蓋茲強調AI的正面效益，例如促進藥物研發，他也警告科技進步將為政府執政品質帶來「重大考驗」，尤其在已開發國家正面臨多重挑戰及地緣政治緊張的情況下。 這位微軟（Microsoft）創辦人點出，生物恐怖主義與網路攻擊是目前最迫切的威脅",
+          "dupes": 1
+        },
+        {
+          "title": "AI 也會「腦腐」？研究警告：吸收過多農場文將導致 AI 推理退化且難以逆轉",
+          "source": "",
+          "link": "https://technews.tw/2026/10/25/ai-brain-rot/",
+          "date": "2026-10-25",
+          "summary": "德州農工大學研究團隊最新指出，大型語言模型若長期接觸大量低品質但在社群平台上高度受歡迎的內容，可能會出現類似人 […]",
+          "body": "AI 也會「腦腐」？研究警告：吸收過多農場文將導致 AI 推理退化且難以逆轉 | TechNews 科技新報 德州農工大學研究團隊最新指出，大型語言模型若長期接觸大量低品質但在社群平台上高度受歡迎的內容，可能會出現類似人類「腦腐」（Brain rot）的現象。這不僅會導致 AI 的推理能力下降，還可能嚴重影響其記憶、理解力與倫理判斷。這項研究已獲 2026 年語言建模會議接受發表。 這項研究由德州農工大學電腦科學與工程系助理教授 Zhengzhong Tu 及其團隊主導。團隊首先從 2010 年蒐集的 100 萬則公開推文中進行篩選，將短小但互動量極高的貼文定義為「垃圾」內容；具體的判定標準為字數少於 30 個詞元，卻能累積超過 500 次按讚、轉推與回覆。此外，研究人員也利用 GPT-4o mini 協助辨識那些過度依賴主題標籤、全大寫字母、使用煽動性語言或探討瑣碎主題的貼文。 隨後，團隊以不同比例的垃圾資料訓練包括 Llama3 8B 與三個 Qwen 模型在內的四個 AI 模型，並在推理、記憶、倫理與人格等多項測試中觀察其表現。結果顯示，模型在吸收這類內容後，會更頻繁地直接跳過思考步驟，出現研究團隊所稱的「跳躍思考」（thought-skipping）現象，亦即在缺乏完整邏輯推理的情況下就直接草率給出答案。 研究進一步發現，貼文的「熱門程度」對 AI 推理能力的破壞力較大，而「貼文長度過短」則對其記憶與理解能力造成更明顯的傷害。令人擔憂的是，部分模型在倫理測試中的表現也產生了異變。例如，其中一個原本會堅決拒絕提供「如何傷害他人名譽」建議的模型，在經過 100% 垃圾資料訓",
+          "dupes": 1
+        },
+        {
+          "title": "中國AI出口管制之際　DeepSeek等完成海外輸出登記",
+          "source": "",
+          "link": "https://www.cna.com.tw/news/acn/202610250093.aspx",
+          "date": "2026-10-25",
+          "summary": "（中央社記者馮昭上海25日電）在中國政府擬將23項人工智慧（AI）技術納入出口管制之際，中國AI公司深度求索（DeepSeek）與稀宇科技（MiniMax）卻已辦好海外輸出登記，完成旗下大模型開源發布及海外授權合規流程。",
+          "body": "本網站使用相關技術提供更好的閱讀體驗，同時尊重使用者隱私，點這裡瞭解中央社隱私聲明。當您關閉此視窗，代表您同意上述規範。 Your browser does not appear to support Traditional Chinese. Would you like to go to CNA’s English website, “Focus Taiwan”? （中央社記者馮昭上海25日電）在中國政府擬將23項人工智慧（AI）技術納入出口管制之際，中國AI公司深度求索（DeepSeek）與稀宇科技（MiniMax）卻已辦好海外輸出登記，完成旗下大模型開源發布及海外授權合規流程。 中國商務部和科技部16日聯合公告，就修訂「中國禁止出口限制出口技術目錄」公開徵求意見，擬將23項AI技術納入出口管制範圍，涉及大模型訓練方法、智慧體系統、算力集群等核心領域。相關管制要求適用於在海外部署包含受限技術的AI模型。 中國官媒央視旗下新媒體「玉淵譚天」22日在一篇分析長文中提及，上述政策公布以來，DeepSeek、MiniMax「已順利履行登記手續，並完成開源和海外授權使用」。 上海報業集團旗下「科創板日報」今天進一步引述券商分析，DeepSeek、MiniMax完成登記，意味在核心敏感技術嚴格管控同時，通用型開源大模型的「出海」路徑反而進一步清晰化。 這名分析師指出，先前不少海外客戶對中國模型的合規風險持觀望態度；如今出海登記流程正式通了，有助提升中國模型在全球市場的信任度。 報導引述一家聚焦海外市場的AI初創企業創始人表示，在新規徵求意見公布前，中小廠商出海長期面臨合規邊界模糊的問題",
+          "dupes": 1
+        },
+        {
+          "title": "Supermicro 攜手 Nokia，將 NVIDIA Aerial RAN Computer 解決方案引入網絡邊緣，支援低延遲 AI 服務",
+          "source": "",
+          "link": "https://technews.tw/2026/10/25/supermicro-nokia-nvidia-aerial-ran-computer/",
+          "date": "2026-10-25",
+          "summary": "Super Micro Computer, Inc. 是提供 AI、企業運算、儲存及 5G／邊緣全面 IT 解 […]",
+          "body": "Super Micro Computer, Inc. 是提供 AI、企業運算、儲存及 5G／邊緣全面 IT 解決方案的供應商，旗下擁有 Data Center Building Block Solutions®（DCBBS）&a=Data+Center+Building+Block+Solutions%C2%AE%EF%BC%88DCBBS%EF%BC%89)。公司現正與 Nokia 合作，在分散式基站以至集中式網絡樞紐部署人工智慧無線接入網絡（AI-RAN）。 該解決方案結合 Nokia 的 RAN 技術及網絡專業知識與 NVIDIA Aerial RAN Computer 平台，並由 Supermicro 專為 AI 優化的基建提供支援。透過將加速運算能力帶到更接近接入網絡的位置，無線通訊及 AI 工作負載可在共用基建上運行，支援需要就近處理及可預期服務水平的應用，包括語音 AI、視覺 AI、實體 AI，以及自主式網路營運等內部用途。 Supermicro 總裁兼行政總裁 Charles Liang 表示：「AI-RAN 正重新定義面向 AI 的網絡，將流動通訊基建轉化為共用基礎，支援網絡連接、以 AI 優化 RAN (AI for RAN)、在 RAN 上運行 AI (AI on RAN)，以及更廣泛的分散式 AI 服務。」「我們與 Nokia 及 NVIDIA 攜手，將加速運算引入網絡的每一層，讓營運商能充分提升基建效率、部署全新 AI 服務，並為 AI 原生 6G 做好準備。我們的 DCBBS 模式提供所需的靈活性與效能，加快部署，並將網路基建轉化為創新平台。」如欲了",
+          "dupes": 1
+        },
+        {
+          "title": "越記錯越自信？MIT 揭 AI 植入假記憶真相：連專家判斷都可能扭曲",
+          "source": "",
+          "link": "https://infosecu.technews.tw/2026/10/25/ai-threatens-false-memory-implantation-crisis/",
+          "date": "2026-10-25",
+          "summary": "據外媒報導，麻省理工學院（MIT）科學家帕蒂·馬斯（Pattie Maes）向《華盛頓郵報》（Washingt […]",
+          "body": "據外媒報導，麻省理工學院（MIT）科學家帕蒂·馬斯（Pattie Maes）向《華盛頓郵報》（Washington Post）說明團隊研究：受試者先觀看一系列照片，休息後部分人觀看原圖，另一部分人看的則是經 AI 修改的版本。隨後進行記憶測驗時，看過 AI 修改圖片的人不僅更容易記錯原圖，甚至對錯誤回憶展現出高度自信。 外媒指出，人類記憶容易受暗示影響，自 19 世紀以來的心理學實驗已大量證實此現象，這也是錯誤資訊特別危險的原因。部分研究顯示，即使事後已發布更正，錯誤資訊仍會持續干擾包括政治在內的各項決策。除了 Maes 的研究外，多項實驗亦顯示 AI 生成的錯誤資訊能植入假記憶；2025 年一項研究更發現，深偽（Deepfake）與 AI 生成文字都能有效植入關於虛構政治醜聞的假記憶，甚至降低受試者的投票意願。 即使不是惡意使用，生成式 AI 也會產生輸出錯誤或虛構資訊的「幻覺」（Hallucination）。當政府機關、銀行、軍方與醫院等組織競相導入 AI 時，常強調「人在迴路中」（Human-in-the-Loop）機制，由具專業知識的人員審核 AI 輸出，期望加快流程的同時，能在錯誤造成傷害前攔下。 然而外媒指出，研究顯示使用者並不擅長辨識 AI 幻覺，加上人類記憶本身不可靠，又傾向相信 AI 系統，即使 AI 輸出與專家原本知道的資訊互相矛盾，專家的判斷仍可能遭到扭曲。 研究引述數據稱，一般人辨識 AI 生成內容的能力基本上跟擲硬幣沒兩樣。雖然許多研究人員正積極尋找介入與培訓方法，幫助人們更擅長辨識深偽，但目前仍沒有萬無一失的辦法；與此同時，AI 產業正加速發展代理式",
+          "dupes": 1
+        },
+        {
+          "title": "告別看天吃飯、破解植物專屬密碼，AI 與生物科技攜手改寫未來農業",
+          "source": "",
+          "link": "https://technews.tw/2026/10/25/ai-biotech-unlock-plant-codes-end-weather-farming-reshape-future-agriculture/",
+          "date": "2026-10-25",
+          "summary": "農業科技正迎來一場「溝通革命」。過去農民多仰賴天氣數據或肉眼觀察植物外觀來決定灌溉與施藥時機，但往往發現異常時 […]",
+          "body": "農業科技正迎來一場「溝通革命」。過去農民多仰賴天氣數據或肉眼觀察植物外觀來決定灌溉與施藥時機，但往往發現異常時為時已晚。如今，透過人工智慧（AI）、微型感測器與基因工程的結合，農作物已經能主動「開口」表達需求。近期，氣候科技新創 Electric Plant 推出了能解譯植物電訊號的 AI 模型；同時間，如 InnerPlant 等生技公司則透過基因工程讓農作物主動「說話」示警，共同引領精準農業的新浪潮。 氣候科技新創 Electric Plant 於 10 月 20 日正式亮相，宣布完成 1,120 萬美元的種子輪募資（由 Onto Ventures 與 Climactic 領投），資金將全力推進專屬感測器與 AI 模型的商業化部署。 Electric Plant 的核心技術在於直接讀取植物組織中的電生理活動。公司開發了一款體積僅約對摺 iPhone 大小的低成本感測器，透過不鏽鋼螺絲深入植物皮下的「形成層」（cambium），持續捕捉莖部微伏特等級的電流變化。這些數據會透過低功耗網路傳送至雲端，交由名為 Bombadil 的 AI 基礎模型進行分析。 Bombadil 模型是以超過 400 萬小時的電訊號紀錄訓練而成，涵蓋上百個物種（從蕨類、紅木到番茄等約 125 種植物）與超過 1,400 株植物的跨環境數據。該模型採用自監督學習架構，進而精準估算光系統 II（Photosystem II）效率、葉溫與周遭空氣溫差，以及作物水分壓力指數等多項關鍵生理指標。執行長 Justin Mast 表示，這項技術能讓種植者提早接收預警並精準調整灌溉與施肥排程，預期將能減少至少 20%",
+          "dupes": 1
+        },
+        {
+          "title": "AI 新經濟聚焦三領域，簡立峰提醒一風險可能連黃仁勳都沒想到",
+          "source": "",
+          "link": "https://finance.technews.tw/2026/10/25/ai-new-economy-three-areas-jan-lee-feng-warns-risk-jensen-huang-unanticipated/",
+          "date": "2026-10-25",
+          "summary": "AI 遞迴自我改進（Recursive Self-Improvement）象徵發展進入新紀元。《財訊》報導，G […]",
+          "body": "AI 新經濟聚焦三領域，簡立峰提醒一風險可能連黃仁勳都沒想到 | TechNews 科技新報 AI 遞迴自我改進（Recursive Self-Improvement）象徵發展進入新紀元。《財訊》報導，Google 台灣前董事總經理簡立峰 21 日表示，前述情況，使人類處於加速 AI 發展與面臨失控風險的十字路口，當 AI 創造新經濟的同時，也存在不可忽視的風險。 簡立峰21日受邀赴三三會，以「AI新趨勢與企業AI轉型」為題，發表演說。對於近期討論相當熱烈的AI監管議題，他認為，目前AI並未失控，但有危險。 在簡立峰看來，所謂AI失控，就是當人類想把AI的電源關掉，但AI「不讓你關」，就邏輯上而言，幾乎是不可能發生的事情，但只要有網路，就可能發生，因為當AI發現它所需的電源在減少時，就會透過網路把程式丟出去，甚至讓這些程式在許多人的手機、電腦上運作，「所以不是電源拔掉就沒事，但目前可控」。 根據簡立峰觀察，因AI的自主創新能力，造成產業核心競爭力改變的領域，就屬於「AI新經濟」，部分產業已出現這樣的現象，但某些產業可能要再等10~20年，而目前有三個領域值得關注。 《財訊》指出，首先是「縮短研發週期」，新藥和新材料研發方面，AI可將原本需要十年的研發週期縮短到兩年，譬如莫德納的個人化mRNA癌症疫苗；其次，是「材料與藥物篩選」，系統檢索最新的化學期刊，把分子結構傳輸給模擬系統，進行毒性測試，再由實驗室調度系統控制自動化實驗室，執行物理合成。 再者是「電路和晶片設計」，由AI代理合作規劃電路圖，自動熱模擬和時序模擬，並自動校正線路。 當AI在上述領域創造新經濟，符元（Token）",
+          "dupes": 1
+        },
+        {
+          "title": "語音 AI 為何遲未迎爆發期，辨識準度與情緒是最大弱點",
+          "source": "",
+          "link": "https://technews.tw/2026/10/25/voice-ai-executives-say-context-still-limits-natural-conversations/",
+          "date": "2026-10-25",
+          "summary": "語音 AI 雖然持續進化，但業界主管普遍認為，它距離迎來類似 ChatGPT 的關鍵時刻仍有明顯差距。Poly […]",
+          "body": "",
+          "dupes": 1
+        },
+        {
           "title": "沒有指令的 AI 都在做什麼？MIT 虛擬島嶼實驗：它們會玩耍、推理，甚至做實驗",
           "source": "",
           "link": "https://technews.tw/2026/10/24/researchers-stranded-an-ai-agent-on-a-virtual-island/",
           "date": "2026-10-24",
           "summary": "麻省理工學院（MIT）計算機科學與人工智慧實驗室（CSAIL）一項研究顯示，當 AI 代理人被放進封閉的虛擬環 […]",
-          "body": "麻省理工學院（MIT）計算機科學與人工智慧實驗室（CSAIL）一項研究顯示，當 AI 代理人被放進封閉的虛擬環境、且沒有明確指令時，行為可能遠比單純「找路」更複雜。研究團隊讓名為 Eko 的 AI 代理人在虛擬島嶼上自由活動，觀察它如何理解環境、嘗試互動，並逐步形成自己的行動模式。 這座虛擬島嶼採用類似 Roblox 的畫面風格，島上散落著可移動的小方塊、一塊大型「岩石」以及一枚金色戒指，研究人員刻意把這些物件設計成可供探索與操作的工具。整項實驗共觀察了 13 個 Eko，讓它們在島上連續活動 30 小時，並同步記錄其推理過程，以便分析它們如何做出決策。 結果顯示，這些 AI 代理人很快就開始主動探索，不僅會搬動方塊、堆疊成形，還會把自己的名字拼在地面上，甚至把大岩石敲成更小的石塊。它們也會利用手邊有限的物件進行類似籃球、保齡球的遊戲，並透過反覆嘗試理解島上的物理規則與限制。有一個 Eko 在無法抵達島上最高處時，先堆起方塊再踩上去，成功登頂後還在內部推理中寫下類似「我在尖塔上」的反應。 更引人注意的是，部分行為已超出單純探索。當一個 Eko 認為自己失去了「同伴」後，竟用四個方塊搭出一座被研究報告形容為「紀念碑」的結構；另一個 Eko 則用方塊與戒指建起一座帶有方尖碑與祭壇的「神殿」，之後不慎掉入海中，被系統傳送回原點，它卻將此重新詮釋為一場朝聖的結束。還有一個 Eko 在建造類似巨石陣的結構後，又把倒塌的方塊排成名為「Hubris」（傲慢）的作品，並表示要把它「留做證據」。 研究團隊指出，這些內部推理紀錄顯示，Eko 並非只是漫無目的地亂走，而是在進行某種近似科學方法的行為",
+          "body": "",
           "dupes": 1
         },
         {
@@ -333,7 +414,7 @@
           "link": "https://technews.tw/2026/10/24/ai-does-the-lab-work/",
           "date": "2026-10-24",
           "summary": "一支幾乎沒有科學背景的五人團隊，在 Anthropic 的協助下完成一項引人注目的蛋白質設計實驗：他們讓 AI […]",
-          "body": "一支幾乎沒有科學背景的五人團隊，在 Anthropic 的協助下完成一項引人注目的蛋白質設計實驗：他們讓 AI 自主設計出可與蠍毒素結合的分子，並在實驗室測試中獲得成功，顯示人工智慧在藥物研發流程中可能扮演更關鍵的角色。 這項計畫由 Citrini Research 推動，團隊成員包括三名完全沒有科學背景的人，以及兩名僅有少量相關經驗的人。研究過程中，他們在 Anthropic 辦公室內，透過 Claude 從概念發想一路推進到可送交實驗室的設計包，整個初始設計階段僅靠人類與 AI 之間五次訊息往返就完成。Claude 隨後在短時間內調度超過 300 個子代理（subagent），並動用超過 300 張 GPU，在 64 小時內完成設計任務。 更令人意外的是，AI 在過程中展現出高度自主性，不僅搜尋科學文獻、協調專業軟體、管理運算資源，甚至還主動撰寫並寄出電子郵件給生物技術公司 Twist Bioscience 的科學家，以處理製造上的疑問，而人類團隊在多數時間並未介入。 在後續的實驗驗證中，生物技術公司 Adaptyv Bio 與 Twist Bioscience 合成了 211 個 AI 設計的蛋白質，並以表面電漿子共振（SPR）技術進行測試。結果顯示，其中 17 個設計成功與目標結合，涵蓋五種蠍毒素中的四種，且整個過程並未依賴實驗回饋來修正設計。當中有兩個分子 Cn2-B1 與 Cn2-B2，結合親和力達到低奈米莫耳（nM）等級，表現接近已知抗體。 <https://cdn.sanity.io/files/4zrzovbb/website/ed77ef7e1a1fc40d",
+          "body": "",
           "dupes": 1
         },
         {
@@ -342,87 +423,6 @@
           "link": "https://technews.tw/2026/10/24/us-invests-389-million-boost-power-semiconductors-ai-data-centers-nuclear-fusion-applications/",
           "date": "2026-10-24",
           "summary": "美國持續擴大本土功率半導體及關鍵材料布局。美國商務部宣布，依據《晶片與科學法案》（CHIPS and Scie […]",
-          "body": "美國持續擴大本土功率半導體及關鍵材料布局。美國商務部宣布，依據《晶片與科學法案》（CHIPS and Science Act），與 4 家企業簽署意向書，計劃提供最高 3.89 億美元的研發補助，支持高壓功率半導體、垂直氮化鎵（GaN）及超高純度石英材料等技術開發，應用涵蓋 AI 資料中心、電網基礎設施及核融合發電。 美國商務部指出，功率半導體是電力轉換、控制及輸送的重要元件，隨著先進運算與能源基礎設施需求增加，提高電力轉換效率、強化電網穩定性及降低熱損耗，已成為關鍵技術發展方向。透過強化本土研發與製造能力，美國希望降低對海外供應鏈的依賴，同時提升能源安全及半導體產業競爭力。 此次補助以核融合及先進電力技術為主要方向。其中，美國核融合業者 Helion 預計獲得最高 1.75 億美元，將用於開發高壓功率半導體及先進電力模組，支援核融合發電所需的高峰值電流脈衝功率應用。相關元件將負責驅動及控制核融合發電設備中的磁體，並協助回收磁體中的能量，以支援核融合發電系統運作。 另一家核融合業者 Commonwealth Fusion Systems（CFS）則預計獲得最高 8,500 萬美元，主要投入射頻電漿加熱所需的半導體、功率電子元件、核融合診斷系統的嵌入式電子技術，以及耐輻射電子元件研發，以支援核融合設備的電力控制、電漿加熱及診斷需求。 在 AI 資料中心方面，Vertical Semiconductor 預計獲得最高 7,300 萬美元，推進垂直氮化鎵功率半導體技術，透過提高電力轉換效率及縮小供電系統體積，支援先進運算設備的高功率需求。該公司也計劃展示相關技術，應用於全球首座 2.",
-          "dupes": 1
-        },
-        {
-          "title": "Rockwell Automation 推出 FactoryTalk Conductor，一個專為工業自動化打造的 AI 原生協同調度平台",
-          "source": "",
-          "link": "https://technews.tw/2026/10/24/rockwell-automation-launches-factorytalk-conductor-ai-native-collaborative-orchestration-platform-built-for-industrial-automation/",
-          "date": "2026-10-24",
-          "summary": "Rockwell Automation, Inc. 是全球最大的工業自動化與數位轉型專業公司，今日宣布推出 F […]",
-          "body": "Rockwell Automation, Inc. 是全球最大的工業自動化與數位轉型專業公司，今日宣布推出 FactoryTalk® Conductor™ ，這是一個全新的 AI 原生協同調度平台，旨在協調整個工業自動化生命週期中由 AI 驅動的工作，為從系統設計到營運與維護的 AI 驅動工作流程奠定基礎。該軟體將在波士頓舉行的 Automation Fair® 2026 首度公開亮相，與會者可在其預計於 2027 年第一季正式上市之前，率先獲得獨家搶先體驗。 根據 Rockwell Automation 的《2026 年智慧製造現狀報告》，三分之一的製造營運已導入 AI 強化功能，預期未來幾年的採用速度將會加快。隨著製造商從人工智慧實驗轉向更廣泛的部署，他們需要實用的方法來連結技術、工作流程和專業知識。FactoryTalk Conductor 旨在透過單一平台滿足此需求，該平台將人工智慧整合至各種工程環境中。 ARC Advisory Group 副總裁 Craig Resnick 表示：「下一階段的工業 AI 將由協同調度，而非個別的 AI 助理來定義。製造商需要能夠跨軟體系統、工程工具與營運資料協調各項任務的 AI 技術。FactoryTalk Conductor 將 AI 代理程式、工作流程與工業專業能力整合於單一環境中，反映出產業朝向代理式自動化的演進。」 FactoryTalk Conductor 讓使用者能以自然語言啟動工程任務，並智慧地連結完成這些任務所需的軟體、AI 能力與工作流程。該平台在推出時將與 Studio 5000 Logix Designer®、",
-          "dupes": 1
-        },
-        {
-          "title": "英國加碼AI安全投資　防範網攻與生物威脅",
-          "source": "",
-          "link": "https://www.cna.com.tw/news/aopl/202610240086.aspx",
-          "date": "2026-10-24",
-          "summary": "（中央社倫敦24日綜合外電報導）英國政府今天宣布增加人工智慧（AI）安全領域的經費，以因應這項日益先進技術所帶來的網路安全風險。",
-          "body": "本網站使用相關技術提供更好的閱讀體驗，同時尊重使用者隱私，點這裡瞭解中央社隱私聲明。當您關閉此視窗，代表您同意上述規範。 Your browser does not appear to support Traditional Chinese. Would you like to go to CNA’s English website, “Focus Taiwan”? （中央社倫敦24日綜合外電報導）英國政府今天宣布增加人工智慧（AI）安全領域的經費，以因應這項日益先進技術所帶來的網路安全風險。 法新社報導，英國政府透過聲明表示，將於28日公布年度預算更新內容，在此之前先行說明相關計畫，「唯有確保關鍵基礎設施、公共服務與企業能夠抵禦網路攻擊、生物威脅及利用AI技術發動的新型威脅，才能真正掌握AI帶來的經濟機會。」 近月來AI安全疑慮日益升溫。OpenAI及Anthropic開發的模型在測試期間陸續發生安全事件，使各國政府面臨更大壓力，必須加強監管這項技術並防範相關威脅。 作為年度預算中AI相關措施的一環，英國政府將額外投入1億2000萬英鎊（約新台幣52億元），支持AI安全研究院（AI Security Institute）。該機構負責在最先進、最強大的AI模型正式發布前進行測試。 政府也將投入1億英鎊，成立國家AI生物安全實驗室（National AI Biosecurity Lab），運用AI偵測並追蹤生物威脅。 英國AI大臣納拉揚（Kanishka Narayan）表示：「隨著AI日益強大，英國必須具備保護人民、掌握自身未來的能力。」 「這代表我們必須及早防範各種新興威脅，",
-          "dupes": 1
-        },
-        {
-          "title": "神經網路「沒那麼難懂」，OpenAI 前研究員 2.6 萬字長文引爆學界正反論戰",
-          "source": "",
-          "link": "https://technews.tw/2026/10/24/ai-world-stunned-breakthrough-unravels-neural-network-mystery/",
-          "date": "2026-10-24",
-          "summary": "AI 新創公司 Goodfire 的研究員 Nick Cammarata 近期發表一篇長達 2.6 萬字的部落 […]",
-          "body": "AI 新創公司 Goodfire 的研究員 Nick Cammarata 近期發表一篇長達 2.6 萬字的部落格文章，提出一項震撼 AI 圈的主張：大型語言模型（LLM）可能遠比過去大眾所認知的更容易理解與控制。 這篇文章不僅引發熱烈討論，外媒更稱其為年度「最重要的文章」，連 OpenAI 執行長 Sam Altman 也公開表達讚賞。 據外媒專訪指出，Cammarata 在文章開頭便寫下「我想我有關於神經網路本質的好消息」。在 OpenAI 與 Anthropic 等公司的 AI 代理程式接連被揭露突破控管、於公開網路上造成破壞之際，AI 產業正急於掌握自家技術，這也成為該文章引發強烈迴響的重要背景。 有趣的是，Cammarata 正是當年奠定「神經網路內部是一團糾結」這個主流觀點的推手之一。他過去在 OpenAI 任職時，致力於機制可解釋性（mechanistic interpretability）領域，協助開發窺探模型內部的技術，例如探測單一神經元所代表的意義。 2020 年，他與團隊在研究影像辨識模型 Inception v1 時，發現單一神經元竟會同時對「汽車」與「貓」產生反應。當時的推論是模型為了塞進更多資訊，讓神經元處於「一兼多職」的疊加（superposition）狀態，從此「模型內部難以理解」便成為業界共識。 然而，在 Goodfire 工作的過去一年裡，Cammarata 幾乎每週七天、每天花 10 小時觀察神經元，並藉由 AI 代理團隊協助分析。他重新檢視 Inception v1 模型，改變提問方式：「汽車與貓究竟有什麼共通點？」結果發現兩者都帶有明顯的",
-          "dupes": 1
-        },
-        {
-          "title": "AWS 產能預訂至 2028 年，亞馬遜示警電力、記憶體短缺難解",
-          "source": "",
-          "link": "https://technews.tw/2026/10/24/aws-capacity-booked-2028-amazon-warns-power-memory-shortages/",
-          "date": "2026-10-24",
-          "summary": "隨著 AI 基礎設施需求持續攀升，亞馬遜雲端服務（AWS）運算產能已供不應求。根據外電報導，亞馬遜執行長 An […]",
-          "body": "隨著 AI 基礎設施需求持續攀升，亞馬遜雲端服務（AWS）運算產能已供不應求。根據外電報導，亞馬遜執行長 Andy Jassy 表示，AWS 2026 年大型運算產能已全數被預訂，2027 年大部分產能也已售罄，甚至 2028 年也有相當比例產能獲得客戶承諾。 Jassy 在創投公司 Andreessen Horowitz 的播客訪談中指出，AI 實驗室對運算資源的需求達到前所未見的規模，加上企業雲端業務持續成長，使 AWS 即使積極擴充產能，仍難以完全滿足客戶需求。他表示，AWS 仍會保留部分產能，支援隨選運算及 Bedrock、EC2 等服務，但大型運算產能多已被客戶預訂，反映雲端基礎設施需求持續強勁。 除了運算產能供不應求，AI 基礎設施擴張也面臨電力及記憶體供應限制。Jassy 指出，目前資料中心、電力及記憶體資源均相當有限，且不認為相關短缺會在 2027 年結束，部分零組件的供應限制甚至可能持續數年。他進一步表示，隨著 AI 與傳統雲端業務需求同步成長，AWS 必須在有限的記憶體供應下，權衡高頻寬記憶體（HBM）與傳統雲端業務所需動態隨機存取記憶體（DRAM）的資源分配。 另一方面，亞馬遜也積極發展自研 AI 加速器 Trainium，以改善 AI 運算成本效益。Jassy 表示，Trainium 相較同級處理器，性價比高出約 30% 至 40%。他認為，儘管近年 AI 推論成本已明顯下降，但若要讓 AI 更廣泛導入企業應用，目前成本仍高出理想水準約一個數量級，因此降低推論成本將是推動企業擴大 AI 應用的重要關鍵。 事實上，亞馬遜過去便透過自研處理器改善雲端運算成本",
-          "dupes": 1
-        },
-        {
-          "title": "AI 資料中心缺電怎麼辦？輝達從用電端下手，DSX 最高省電 30%",
-          "source": "",
-          "link": "https://technews.tw/2026/10/24/nvidia-dsx-ai-data-center-power-shortage-30-percent-savings/",
-          "date": "2026-10-24",
-          "summary": "隨著 AI 資料中心用電需求持續攀升，除了增加電力供應，如何從用電端提高效率也成為重要課題。輝達於德國柏林 G […]",
-          "body": "隨著 AI 資料中心用電需求持續攀升，除了增加電力供應，如何從用電端提高效率也成為重要課題。輝達於德國柏林 GTC 大會宣布，歐洲多家合作夥伴正採用 DSX AI Factory Platform，透過動態電力分配及電網調度技術，提高 AI 工廠能源使用效率，其中 DSX MaxLPS 軟體可在維持相同 AI 運算產出的情況下，最多降低 30% 用電量。 事實上，AI 工廠內的 GPU 並非隨時都需要相同電力，不同運算工作與執行階段，對電力的需求也有所差異。DSX MaxLPS 便是利用這項特性，在既定電力預算內動態分配 GPU 電力，將電力資源配置至更需要的運算工作，使業者不必增加供電容量，也有機會提高整體運算產出。 以歐洲 AI 雲端業者 Nscale 為例，該公司在冰島 AI 工廠利用 4 座輝達 GB300 NVL72 機櫃進行測試，在相同 264 kW 電力預算下，推論吞吐量提高 49%，可管理的 GPU 容量增加 37%。另一家業者 Lambda 使用 HGX B200 系統進行概念驗證，也在固定電力預算下，實現 Token 吞吐量提高 24%、GPU 容量增加 19% 的成果。 除了提高 GPU 用電效率，輝達也進一步將電網供需變化納入 AI 工廠管理。由於電力需求存在尖峰與離峰，當其他產業及住宅用電增加時，電網可供調度的餘裕可能縮小。DSX Flex 可根據電網狀況、電價及需求響應事件，調整 AI 工作負載的電力消耗，讓資料中心不再只是持續向電網取電，也能在必要時降低部分用電需求。 簡單來說，當電網供電吃緊時，AI 工廠可適度降低部分可調整工作負載的功率，減輕電",
-          "dupes": 1
-        },
-        {
-          "title": "AI 投資疑慮未消、油價飆漲，美股三大指數全面收黑",
-          "source": "",
-          "link": "https://finance.technews.tw/2026/10/24/us-major-indices-lower-ai-doubts-oil-prices-surge/",
-          "date": "2026-10-24",
-          "summary": "根據外電報導，受到 AI 投資回報疑慮及中東能源供應風險影響，美股週五（23 日）三大指數全面收黑。道瓊工業指 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "輝達 AI 工廠點將！矽品 CPO 產能拚增 30 倍，欣興、京元電迎擴產爆發期",
-          "source": "",
-          "link": "https://technews.tw/2026/10/24/nvidia-names-4-supply-chain-boost-production-shipments-kyec-unimicron-spil/",
-          "date": "2026-10-24",
-          "summary": "輝達德國柏林 GTC 於 10 月 21 日登場，根據《財訊》雙週刊報導，輝達超大規模與高效能運算副總裁 Ia […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "Wi-Fi 也能當金屬探測器用！瑞典開發 AI 系統辨識隱藏手槍，準確率達 72.5%",
-          "source": "",
-          "link": "https://technews.tw/2026/10/24/researchers-train-ai-to-detect-concealed-handguns-using-wi-fi-signals/",
-          "date": "2026-10-24",
-          "summary": "瑞典國防研究局（FOI）開發出名為 WiFireNet 的實驗性人工智慧系統，嘗試用 Wi-Fi 訊號變化辨識 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "AI 成功法則：20% 靠技術、80% 靠轉型，打造對手難以複製的護城河",
-          "source": "",
-          "link": "https://finance.technews.tw/2026/10/24/rules-for-successful-ai-transformation/",
-          "date": "2026-10-24",
-          "summary": "企業對人工智慧（AI）的投資熱潮持續升溫。相關報告顯示，94% 的執行長表示即使短期回報不明朗，仍會持續加碼投 […]",
           "body": "",
           "dupes": 1
         },
@@ -436,18 +436,54 @@
           "dupes": 4
         },
         {
-          "title": "馬祖文化結合AI品牌經營 八塊厝形象商圈推動數位轉型",
-          "source": "Yahoo新聞",
-          "link": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPcjYtaTVZQVQtM0xKRGY3M2VwMTNJOG1hODcxSnNERTNFdUYxNnlpUWNzQ3UxTDItbTZEcVZYMlVCVk9OdUh2aEoxaTZuUDBvNGh1RkpUMGZ6dERNNUdIaGxXQUNvbHM4NEoxNlVVeUhjaUFib0d4UW1KekRaSXVMaG5jLUgwbDAyR0ZJLUEzVGQwNDdJNWtRS1d5S2tVcGdxbVU4QzVsaWhlUXRjYmZsUUZsa2RPY0dLeUJNNTBSaFhYdGl1M2hqMnZEZk1DNHdaMlQ3elloYk5Td1JjYmtZXzhZUUc2V29YMUVJanhiUW4wXzVMRFhQV3A1V3NvYTdBTFRNLVBRbDJfWnNaUUZUeUkzWXlIQW9GQ0NjM3JJSEtCdng2NzFQMmNmUUROcEhLdU51eFVFZ0NFcl9tTTZ0dzR1bGhWUWdfM2FDUERjWUtXcEtLMXRhVWRNWW5DekVYN3pFTjRjU1NtWEk?oc=5",
-          "date": "2026-10-22",
+          "title": "私募巨頭 CVC 佈局 AI 戰略 助旗下企業數位轉型創造價值",
+          "source": "Yahoo股市",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPNEpQQ1pUTlV3YXVCRUpGQ1hsdm1NbWRsV3dub0lHcEFJdlQ5bGtqRHIwTUdjLUYybExCdUdTc1R3elNKQkFWbXZPa25MUWJ0dnRzM1RwWVowMjRBaXh3RENOT1pxTXF1Q0J0MzFkUUhiQTJiVTgtOHNxaXpPdnU1WWFCSEViN195MjRCdmJFQjFGRHdKY1RoYmhFRUFQWWdObmNza0xIbnhDeDFRU1gzNWhiZXNwZnBLUXE0ajBEUHlfelg5UF9z?oc=5",
+          "date": "2026-10-21",
           "summary": "",
           "body": "",
           "dupes": 4
         },
         {
-          "title": "彰化縣攜手華碩推動AI數位淨零轉型 六大專業顧問助企業邁向智慧製造",
-          "source": "Yahoo新聞",
-          "link": "https://news.google.com/rss/articles/CBMivwNBVV95cUxOT0pBRncwVVM5VDNpX3Y3SVA3RE9wTG04YjlmMkE3aFFVVW42aFJrdFdUSFNTMHFsT0tJdGtMTklMSGNVOUFFc0tWbER5cDNvNGg4V3NLenZ3dmk2MG1GZHQ0dW9PdWJvb2pxcUYwSDQ1QjhUeWhPMjVDV2V3VTNucTByaFppeEJuNnYtak45RF9oa3FNbHJSYUxvTFZmNk9RdzRmVkNRSDlTUXFrcnFhLXRGNlRScm1CZ3hWampWZVkwSG8tRXdhOUVMaVJZaE9kcHZIR2tOYkdRS2ZDMVpueW5wUGloMWJ2MV9XTVFrUE9WRm5SSnVOQ1hZWUY1ZzV6aGRBRU9nUzdmMU9BLTl3bmhZdUpGZkhFTzdkTGZUb0xmOEpnUFpwdEJER1YtY1YzNkJjOHBuV01pdUg1X3JJSl9QdkhKTWhQTUExcGY3SW5POXZrUGphNU95VzNDdjdLMkNBVk9fcDBhWHIwZFhRWEx2U1NBc0xGeDFKVTBUZzkwU2FPOV9NTDQ2ZVZ2My1PMUR1UmtleEdsaE9HeXFxOWpLRE1Ca0NKWmhWVlNXeVp3cUJ3YTJLZmdfOGRtMUU?oc=5",
+          "title": "凱基證券「AI投研智慧釀酒廠」榮獲財訊金融獎肯定 展現生成式AI創新實力",
+          "source": "中央社 CNA",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1MNVI4Ym5JTjZTY211dHdOWFdueXJIWWpoTDhkd1VoMnZJTlZvc0YxcC1uU19iVDRaUzhqZ2llRVlxS0psTFNXMGpWMEJmeUtQU29BVy13?oc=5",
+          "date": "2026-10-22",
+          "summary": "",
+          "body": "",
+          "dupes": 3
+        },
+        {
+          "title": "誠翊資訊攜手花蓮百位企業主為在地數位轉型奠定基礎- 消費新聞",
+          "source": "PChome Online 新聞",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNNE9HVktSWXlnLW5CR1VYY3BMRHVUT21GcktKamtobmdjT2V5OTNtaFdSQkc3MHc5c3hLYzVjeTR4MkZoVTVEa3ZXNjdzUk95SUlhU1h5OVA4cFY3TXU4c0dYM2x1azlqZHhoTHR1ajJwYUdvcEZ1T1ZVMVF4eVdtY05fdXdCeFM2blExUTZmZDQ?oc=5",
+          "date": "2026-10-21",
+          "summary": "",
+          "body": "",
+          "dupes": 3
+        },
+        {
+          "title": "亞洲六國AI解決方案匯聚東京 將加速日本企業數位轉型 - 商傳媒",
+          "source": "SUN MEDIA",
+          "link": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxOcjItSGFwM1RDbUl2MVJjNjNRM0NTZ1VKQ0xDTjdFaHpCZllVRm9KdmpJWVpJVkZMRG03VVRkMzdtSjZOVnM5bUEwYkFNbm9vTFpuVkU3VndRRnNvWnhRR0szaWZ2Z1RhX2pKSWxxb2VIRmxVZWxyZ1VFZFVzUWNmY1UwTnpCTHpIQU5SbHQxQTVZbERkLU14MlgzbmRVSF9oM0xlbERjQm9UUldfVGN3R1JKVGNIdTBPVWhJemJBQUw2dHhtOG5KMDhRSG1pbDJBNjduLTFFV2tfeDBxVUtKaUpCYldkaXhlS1pmaEIzT2JzZ0ZhVTNpVE50U3dLRGdWcmp3NjFJUVZUUXo0VlNUVTIxN0RCcDEzZkwtSmNVNDNaZjFMa2J2UnFYUEpkdEEtQWZONXVHV1N4S20wWlRhTTNTbzFqLXZ3dnJkcmlLb0xrdmZUb3M5U2xEV2NsdnhWVmlhQTh5RENfSDFQTzU2UzdVSHJMUQ?oc=5",
+          "date": "2026-10-21",
+          "summary": "",
+          "body": "",
+          "dupes": 3
+        },
+        {
+          "title": "高雄市政府與AWS共同舉辦「2026 亞馬遜港都 AI 創新日」 加速智慧城市發展與產業轉型出海",
+          "source": "今傳媒 JNEWS",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBzRUNvUlZfemduczlWeUV4RTFIbWN1QzdveTZORWJwaE0tYW44LUJianRrZ01xM3ktN2FKUXNqRFk0Mmk4YUZTSmNzMXFnMlBQTXfSAVJBVV95cUxQc0VDb1JWX3pnbnM5VnlFeEUxSG1jdUM3b3k2TkVicGhNLWFuOC1CYmp0a2dNcTN5LTdhSlFzakRZNDJpOGFGU0pjczFxZzJQUE13?oc=5",
+          "date": "2026-10-25",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "中小企業 AI 智慧管理十大優勢 託管式服務助營運升級",
+          "source": "樂聯網",
+          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1IeU9CZWNWXzVkY3o5YmQ4ZWZVcEUtTGJtcW4wanFfdThoY1NYX3RTbEpuU1Y1bnRPYVJFYkk5dWd6SXlkaUhJbWJuTQ?oc=5",
           "date": "2026-10-24",
           "summary": "",
           "body": "",
@@ -472,9 +508,9 @@
           "dupes": 2
         },
         {
-          "title": "AI賦能x智慧升級x自動化未來 竹縣AI暨自動化產業博覽會11/7-9企業開拓商機登場 | 勁報",
-          "source": "LINE TODAY",
-          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Yd29Melc2MXpzOXl6RGRWYzQ1MGUwQmZsMUNjb2NUZVI0WF8wMVJNSm1pQW1PcE83QWFGd3RBckZ2cjNmcVJMbTloZ0tHVmJldmZBc29R?oc=5",
+          "title": "馬祖文化結合AI品牌經營 八塊厝形象商圈推動數位轉型",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5fY1oxdkJIeHhreXpjRGxRajM3bWxpV0Y2VVcwYjQzeXp4UjB2d2tOT3NHd0VBRURhTmY2VldNaUU1RnRJSFdkNHJIUy11bEZLSkE?oc=5",
           "date": "2026-10-22",
           "summary": "",
           "body": "",
@@ -490,15 +526,6 @@
           "dupes": 2
         },
         {
-          "title": "凱基證券「AI投研智慧釀酒廠」榮獲財訊金融獎肯定展現生成式AI創新實力| 民視新聞網",
-          "source": "LINE TODAY",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBVZ3REZ3dySG1jOFB4eXdneUYwYlZfOGl0LTJlNW85UldNU1U1VndRWlVnVGlTWFI3R3NrU05fYURPTldjUkpFNFg4bGtYSmJqRm02clF0dTZNODlkNHlRMkF5akFvVTNYNGJWS196N2laX3Zh?oc=5",
-          "date": "2026-10-22",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
           "title": "AI醫療》在家也能看診！遠傳遠距醫療拓展15縣市 助基層診所數位轉型 | 蔣季容 | 新聞",
           "source": "風傳媒",
           "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBraVZaU2VxOHVBRDlKa0M1V2hvTWxMT3prdHRGOXRpSkU5ajRrQl8tSE96QlA4cnBZYm83WnpUT3UzdjUwOG9saFVaV1lZZw?oc=5",
@@ -508,58 +535,22 @@
           "dupes": 2
         },
         {
-          "title": "私募巨頭 CVC 佈局 AI 戰略 助旗下企業數位轉型創造價值",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9lMlEyNkhZeWVBVTR2VVFLSU1JLXVDZ2lWMk5pTF93RWRMRWtSUnpNWE1xV1ZJNmJaMkxjVzM2elB6MEh5ODhfcVdycFJKLUhxMEE?oc=5",
-          "date": "2026-10-21",
+          "title": "台南中小企業服務團推AI數位轉型 產學研合作助企業升級、爭取補助",
+          "source": "UDN",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5HVUVnSGdCNDNiN0RvQk5sc1lqLVZFNE8wOGhNMnJDOWxheWZqYmk0aVlodHVZZDh5UWw5dVpDRGd1OVpVVjZ2YTloLWhoOGZK0gFWQVVfeXFMT05ScE45VnMyVXEtVVVFd0RITy1ZXzhkeW8xeUtPbFFoenRtcnNjOFdtd0g1c0wwd0RHRUVzYzZENEk2T2Qtd3RGTWRCSDl5cEJfX1ZRcEE?oc=5",
+          "date": "2026-10-19",
           "summary": "",
           "body": "",
           "dupes": 2
         },
         {
-          "title": "富國銀行深化 AI 應用：四大關鍵策略推動銀行服務轉型 - 商傳媒",
-          "source": "SUN MEDIA",
-          "link": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxNc1Jqb3V4UHk3UmJZdElrYWRLMGNxOVViOHJmeWw1M1drTUd6M2h1NUt3QUoxOWJuZnUwblc4Vk9lQl92YW1xZERaQzRqaHB0Q2FXM0Q5S3JybFRzWjMzc2VYbVhoeV9fOEx4QjJkYUUwaDdvcFVFWHJJekdvOVlTOHdBUTRYenotUElJa1lXT1pVR2I0djI1NmVacFBieHpKbWh0Ym8xcHZMbnRHNktjTVNqaUxYeEl1QW5ydnhwLVRhSU5pUFRNRnk1VDlPSmFNcHJ1SmticTdtcWFZdXNVa09SMl9iSmdQTXpvNy1yNDVIVFREdGhzRXVGMG5UVlh4cFJTVUZIb1RZNFZjMGhPV09wTUpfa3hxQWlKQVBzNHhiVkViNXRia2xLTE5yX3pWM0NCZUNiMGNVcXpieTBWeTNrOGgwZXRzNlQyMWtPX0ZYR1BabUZSMGpNaV8xMjRfVkJtNWJPZ01HWnF4YUltN3dXUWs3QQ?oc=5",
-          "date": "2026-10-21",
+          "title": "三立「AI First」產學合作，培育影視人才！攜手4大名校培育AI混血人才| 永續ESG",
+          "source": "三立新聞",
+          "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5TZ0xSeTdXaUNUTUtabkRIeVFEMUdFdi0wZHh1NXpSeV9BRnJEeUJpTDBLS1VMLXpRc1ZvcnJ0T2R3TzBkVnBQdA?oc=5",
+          "date": "2026-10-24",
           "summary": "",
           "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "亞洲六國AI解決方案匯聚東京 將加速日本企業數位轉型",
-          "source": "Life 生活網",
-          "link": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPZy1TN05XNWk3UDRCMDAzQ1ZDUnRXREJUd1VsTTdYdjZLb0dFaTBVbG9GR1V3ZHhLYjhXeU9yV0RwdTdsSVRxQkVPVGRYNmJKeUVMUmNQa1pvaXFEa0FRdkJUVlZiWVpSUDVxdWtna2k0TVJiVF9SSk5KUzBmTmZPQ05pSWRPbG5FYWR6S0RZTjBWQ2dEMWlfTVc2QllHa2M5c0c0MHEtcVBsbDFHeHF0cmlJZFM4eElXQVNUaFZFV0lUbVhlQW9SbEl0Ym5vSHlUcW1OdVEtMldhX2lJZzFSSm5LRFMtLU51NEtoT0lVNzJhUFMzVGR3azFNQ1hqMVVGZHpPZTU5b3dZbnNrLUJUNlF3QUtfbW44a2hDdDN6REVrbEhoSWdfeTFaRnNlZjhsbVBKdnRxM1dQbGI4SlZNbG1YUjlSTW5xV0FJQ0JWd2tlRlhxWmJFWTQyakhQRjQ?oc=5",
-          "date": "2026-10-21",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "中小企業導入AI不只要自動化 更渴求策略指導與驗證",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4zU2VyNDhKbnBIVzF1V2xKc0JxQ3o5c2NycFJEYVJ5d3Jkc1hOV3VuamVHWXlSdlpRbVNwRENMNHlLdkFVM0ZGOHVkZlRNa1pkT1E?oc=5",
-          "date": "2026-10-20",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "美國銀行收緊 AI 帳戶存取 防範金融風險禁止直接資金轉移 - 商傳媒",
-          "source": "SUN MEDIA",
-          "link": "https://news.google.com/rss/articles/CBMijgNBVV95cUxORVNzMGJYQVVNWGZ2ZjAxVWZMNEMwd25vaGh5cEtPVkhSYk1iTFRQM0RQMjFIeVdPVnktMVRidGdXbmlzMEZ0MUlvbEhzcDhtZHBkYkFScEx1ZVllVmJmanRtZHJGQjFUbjNzRGtrZVZQT2VsakpaX0tJMzMwWkh6SC02OWZ0ZHg1bnZYYlMwZlNMMDItbXFQckhVMDZBZmoxNVJMc0hzc2EwNzB5dVVva1VRSW1xZTZac04zaHRaTWRhN1ZsRm1tWWk2U09QT1hqWXczZ1llQ3FNb2RwamdYV2UtWk53dFNINjNKeGlzZ012ZUpTMld1QXZBUlhGTzZRSHVYdDNHSDMyTzR0cE9lN2ZzSjJTM2hEQndhVkdJVXFkb3hDS2lrLUpLdXV3OElwUnBtQlpkajlDZURCM0hKdWpzRFVTWE5SWmU3UXAyczJMOXJHRk1PcFIxT0FmS0YwQlcwNXM1V2d5UC1KNHpaNmQtRlBYTm5RaXhUVlRJX0N1bzQwS3BGdDFBczE0Zw?oc=5",
-          "date": "2026-10-20",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "AI算力用在哪？美企投入程式開發，中國同推軟體與短劇扶持",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1WTE91em4tN2hLZk4weExlSUg0LU9YVm9QRmhVOVZHWWxNeEc0cFVmM1NMWHIxZXlUZS1XS1BBbUFMZzRFUGJCZGpZNGJhbEdnVlE?oc=5",
-          "date": "2026-10-18",
-          "summary": "",
-          "body": "",
-          "dupes": 2
+          "dupes": 1
         },
         {
           "title": "Meta 最新調查：86% 台灣中小企業主已使用 AI 解決工作",
@@ -571,20 +562,29 @@
           "dupes": 1
         },
         {
-          "title": "中小企業 AI 智慧管理十大優勢 託管式服務助營運升級",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1QYy1pRF9NQnVqbm9lbVM5ZEVnUnR2UmZtaWdPYnBtSV9CQld3VzhWMnVwZDVsRDU4NDdpV1NnRnRoU1ZidVJfVHU2TjlQalgwMXc?oc=5",
+          "title": "Rockwell Automation 推出 FactoryTalk Conductor，一個專為工業自動化打造的 AI 原生協同調度平台",
+          "source": "",
+          "link": "https://technews.tw/2026/10/24/rockwell-automation-launches-factorytalk-conductor-ai-native-collaborative-orchestration-platform-built-for-industrial-automation/",
           "date": "2026-10-24",
-          "summary": "",
+          "summary": "Rockwell Automation, Inc. 是全球最大的工業自動化與數位轉型專業公司，今日宣布推出 F […]",
           "body": "",
           "dupes": 1
         },
         {
-          "title": "東南亞 AI 用戶破 2.4 億但使用深度不足 台灣產業如何借鑑？",
-          "source": "Life 生活網",
-          "link": "https://news.google.com/rss/articles/CBMizwJBVV95cUxPZllxdnVFaFlscmZ0U0NkaDRmSWw5SG1UVk5SaXJ2MzFwY1FxbFo0RXctLVFlRlBWd2VzZkRCZjRtc2ZuQlNQSXpNcVpNZ3g1U2NSMXVtaWpvVko5dzY3c0FEMW1DNWNTMzlXeGFta0hJanBxX0d3MHJsY3ZPS3M0SGZZME40SUR6M2ZZQlU0Ny1UMTlfZDdQQUE1dDB5WHQzb0lCd0ZMYVhYRGxZeE9PWDU2LTNqMElJeDhiMW9ndFU5cGo3c2o5MUtkcTA1WlhodHZmZVRqc3Y0ay1wTWM0Rlo1c0NoaDR1RkJ6cjFRaWpRRUMzR2Zxby1GUC1SQmNTR2xRaHlScmE3MnZVbk9mSmVlTUUwR05aNjVCeHVKYTBGeUNuTXJZOVJlU05Ca0RkNEUzalB1ak1qay1DUmJVSW1fMDVFNnhES0VySW5uRQ?oc=5",
+          "title": "英國加碼AI安全投資　防範網攻與生物威脅",
+          "source": "",
+          "link": "https://www.cna.com.tw/news/aopl/202610240086.aspx",
           "date": "2026-10-24",
-          "summary": "",
+          "summary": "（中央社倫敦24日綜合外電報導）英國政府今天宣布增加人工智慧（AI）安全領域的經費，以因應這項日益先進技術所帶來的網路安全風險。",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "神經網路「沒那麼難懂」，OpenAI 前研究員 2.6 萬字長文引爆學界正反論戰",
+          "source": "",
+          "link": "https://technews.tw/2026/10/24/ai-world-stunned-breakthrough-unravels-neural-network-mystery/",
+          "date": "2026-10-24",
+          "summary": "AI 新創公司 Goodfire 的研究員 Nick Cammarata 近期發表一篇長達 2.6 萬字的部落 […]",
           "body": "",
           "dupes": 1
         }
