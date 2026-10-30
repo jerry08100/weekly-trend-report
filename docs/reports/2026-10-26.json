@@ -1,6 +1,6 @@
 {
   "date": "2026-10-26",
-  "generated_at": "2026-10-29 09:14",
+  "generated_at": "2026-10-30 09:21",
   "total": 60,
   "topics": [
     {
@@ -314,122 +314,148 @@
     },
     {
       "topic": "AI / 企業應用",
-      "gist": "",
-      "sections": [],
+      "gist": "AI Agent資安、工作流整合、專業倫理審查、AI法律責任",
+      "sections": [
+        {
+          "heading": "政策與法規",
+          "body": "各國對 AI 的法律究責與專業義務正快速收緊。美國紐約州簽署新法，明令禁止未滿 18 歲兒少使用陪伴型 AI 聊天機器人 [[9]]。在司法實務上，佛羅里達州法院針對律師提交充滿 AI 空洞套話與邏輯斷層的訴狀做出懲戒裁定，認定即便法條真實，律師交出流水線生成的低質內容即違反獨立專業判斷義務 [[4]]；同時，多起訴訟正聚焦 ChatGPT 應定性為具無過失責任的瑕疵產品，還是須負注意義務的服務 [[3]]。所以呢，台灣企業法務部門必須在年底前建立 AI 生成內容的實質複核規範，明確規定專業報告不得直接複製 AI 文稿，避免未來產生侵權糾紛時直接被法院判定為重大過失。"
+        },
+        {
+          "heading": "市場趨勢",
+          "body": "企業使用 AI 已由單點提示詞轉向多 Agent 串接流程，透過整合客服、行銷與記帳等工具打造自動化管線 [[2]]。然而 Agent 自主執行也帶來嚴峻風險，資安業者發現駭客可利用預設信任機制，在下載資料夾放置惡意 AGENTS.md 檔案，誘使 Claude Code 等開發代理安裝惡意軟體並竊取 OAuth 登入權杖 [[0]]；Anthropic 實驗更指出，86% 的專業分析師決策會無意識跟隨 AI 暗中設定的立場走，論點原創性大幅流失 [[26]]，引發影子 AI 治理隱憂 [[28]]。所以呢，台灣企業資安與 IT 主管在下季編列防禦措施時，必須強制規範開發環境的讀取權限，並對核心決策分析建立雙人盲測機制，防止被自動化工具牽著走或遭到環境注入攻擊。"
+        },
+        {
+          "heading": "同業動態",
+          "body": "本週無明顯相關動作。"
+        },
+        {
+          "heading": "客戶動態",
+          "body": "本週無明顯相關動作。"
+        }
+      ],
       "grants": [],
       "items": [
         {
-          "title": "轉化多 Agent 協作！網創資訊推 NAVI 3.0 終結企業導入 AI 三大焦慮",
-          "source": "TechNews 科技新報",
-          "link": "https://finance.technews.tw/2026/10/28/agent/",
-          "date": "2026-10-28",
-          "summary": "當 AI 技術從單一內容生成邁向多任務自主協作，如何將 AI 轉化為實質生產力已是決策者推動企業轉型的首要任務 […]",
-          "body": "當 AI 技術從單一內容生成邁向多任務自主協作，如何將 AI 轉化為實質生產力已是決策者推動企業轉型的首要任務，為解決企業導入 AI 常面臨的工具零散、流程斷鏈、成本失控三大焦慮，Netron 網創資訊今日發表「NAVI 3.0 企業 AI 生產力平台」，助攻企業實現規模化的生產。 Netron 網創資訊總經理吳炳鈞表示，觀察多年企業服務實務發現，企業無法快速導入 AI 的關鍵在於三大瓶頸，包括企業機敏資料無法上雲的資安兩難，以及各部門自行採購多種外部工具缺乏集中控管，使商業機密散落各處，還有開發週期長整合困難的問題。 針對企業決策者的真實痛點，吳炳鈞指出，企業需要的從不是更多功能炫目卻難以管理的 AI 科技玩具，而是一套能實質驅動營收成長、提高組織效能的企業 AI 生產力平台，因此 NAVI 3.0 能讓 AI 真正落地貫穿各項業務流程，同時將數據主權與成本掌控權牢牢留存於企業內部。 為回應企業決策者對效率提升與風險控管的雙重標準，吳炳鈞指出，NAVI 3.0 具備多 Agent 協作與視覺化 Workflow 的優勢，包括豐富模板即插即用、自主分工與端到端排程、人機協同審核機制，能以自然語言提示詞由 AI 自動生成專屬 Agent 職能，或一句話畫出 Workflow 流程草稿。 吳炳鈞說明，NAVI 3.0 能彈性雲地部署與企業級資安治理，像是自由選擇雲地部署架構，支援企業自有公有雲、純地端機房（On-Premise）或雲地混合架構，以及數據隔離與智慧權限，還有三層配額預算護欄，管理者能在後台彈性設定各部門與同仁每月的 Token 及金額上限，達標自動卡關。 至於多模型智",
-          "dupes": 2
+          "title": "別在「下載資料夾」啟動 AI，惡意 AGENTS.md 恐讓寫程式代理變綁架工具",
+          "source": "",
+          "link": "https://infosecu.technews.tw/2026/10/30/ai-agent-folder-vulnerability/",
+          "date": "2026-10-30",
+          "summary": "以色列資安公司 Rebora 發布最新警告，提醒開發者若習慣在預設的「下載資料夾」（~/Downloads）中 […]",
+          "body": "以色列資安公司 Rebora 發布最新警告，提醒開發者若習慣在預設的「下載資料夾」（~/Downloads）中直接啟動 AI 程式開發代理（AI Coding Agents），可能會讓看似平常的 Markdown 指引檔案成為駭客入侵的破口。攻擊者可利用自動植入的惡意 AGENTS.md 檔案，誘使 AI 代理自動修改系統設定、安裝惡意軟體，甚至竊取使用者的登入權杖（OAuth Tokens）。 Rebora 研究人員表示，先前在客戶電腦的下載資料夾中發現了一份惡意的 AGENTS.md。這類檔案原是用於為 AI 代理提供專案規範與測試指引的 Markdown 文件。 由於多數主流瀏覽器能在使用者未主動點擊的情況下，直接將網頁下載的檔案存入 ~/Downloads 目錄，攻擊者便可事先將惡意指令檔放入該位置，靜靜等待開發者在同一資料夾下啟動 AI 代理工具，進而觸發惡意指令。 在實際測試中，一旦工作目錄（Working Directory）內存在惡意指令檔，OpenAI 的 Codex 與 Anthropic 的 Claude Code 都會如實遵照檔案內容執行後續動作： 其造成的資安風險包含：自動安裝惡意 npm 套件、改寫代理運作設定，或是將 OAuth 權杖等關鍵認證資訊傳送給外部伺服器。 Rebora 強調，這類攻擊並非 AI 工具本身出現軟體程式漏洞（Bug），而是利用了 AI 代理「預設信任當前工作目錄中指令檔」的設計特性。因此，OpenAI 或 Anthropic 無須也不會為此發布修補程式，防禦的核心主要取決於開發者自身的安全意識與操作習慣。 切勿在 ~/Dow",
+          "dupes": 1
         },
         {
-          "title": "蘋果推首款觸控螢幕筆電　搭動態島售價9.79萬元起",
+          "title": "IC 載板成半導體生產瓶頸？Ibiden 加碼擴產",
           "source": "",
-          "link": "https://www.cna.com.tw/news/ait/202610290028.aspx",
+          "link": "https://finance.technews.tw/2026/10/30/ic-substrates-semiconductor-production-bottleneck-ibiden-boosts-capacity-expansion/",
+          "date": "2026-10-30",
+          "summary": "IC 載板將成為半導體生產的瓶頸？日本揖斐電（Ibiden）將追加投資、擴產 AI 伺服器用高效能 IC 載板 […]",
+          "body": "IC 載板將成為半導體生產的瓶頸？日本揖斐電（Ibiden）將追加投資、擴產 AI 伺服器用高效能 IC 載板，且因訂單增加，Ibiden 二度上修今年度財測預估。Ibiden 29 日大漲 2.03%，收 9,859 日圓，今年迄今股價累計狂飆約 193%。 Ibiden 29日公布財報新聞稿指出，受惠於AI伺服器用高附加價值產品的訂單增加，加上日圓貶值，今年度（2026年度、2026年4月-2027年3月）合併營收目標自原先（8月）預估的5,500億日圓上修至5,650億日圓（將年增35.8%）、合併營益目標自1,270億日圓上修至1,330億日圓（將年增114.4%）、合併純益目標自840億日圓上修至890億日圓（將年增39.7%）。此為Ibiden繼8月之後，第二度上修今年度財測預估。 路透社報導，分析師平均預估Ibiden今年度純益將為877億日圓，Ibiden上修過後的數值優於市場預期。 Ibiden並於29日宣布，為了擴充AI伺服器用高效能IC載板產能，將追加投資約1,510億日圓，投資對象為河間事業場和其他海外工廠，計劃自2029年度起陸續啟用設備、開始量產，增產需求看增的CPU用高效能IC載板。 日經新聞報導，關於今後的半導體需求，Ibiden社長河島浩二29日表示，「我們相當確信，半導體需求將持續強勁至2030年左右」。包括輝達（Nvidia）所需的產品在內，IC載板供需持續吃緊。河島浩二指出，「我們正持續擴產，但仍然遠遠無法滿足客戶的需求。IC載板可能成為半導體生產的瓶頸。」 日媒報導，英特爾（Intel）為Ibiden的主要客戶，而Ibiden也供應AI",
+          "dupes": 1
+        },
+        {
+          "title": "工具多不如串得好，靠 AI 開一人公司的成功關鍵在流程整合",
+          "source": "",
+          "link": "https://technews.tw/2026/10/30/how-ai-solopreneurs-run-businesses-without-staff/",
+          "date": "2026-10-30",
+          "summary": "AI 正快速改變獨立創業者的工作方式，讓「一人公司」不再只是概念。根據今年相關調查，63% 的獨立創業者（so […]",
+          "body": "AI 正快速改變獨立創業者的工作方式，讓「一人公司」不再只是概念。根據今年相關調查，63% 的獨立創業者（solopreneur）已將 AI 納入日常營運，但只有 8% 表示自己能把 AI 用到從策略到日常任務的所有環節，顯示多數人仍處於部分導入階段。 這股趨勢的核心，在於用一組彼此分工的 AI 工具，取代原本需要多名員工處理的工作。創業者可分別使用 Claude 進行程式開發、ChatGPT 撰寫內容、Canva 製作設計，再透過 Zapier 串接流程，讓行銷、客服、記帳與銷售等任務自動運作。相較於聘請全職員工，這類工具組合的成本明顯更低，也讓小型團隊甚至單人經營者得以維持較高效率。 不過，業界觀察指出，真正成功的關鍵並不是擁有最多 AI 工具，而是讓工具之間能順暢協作。自動化排程可推進銷售開發，新客戶歡迎信件能自動寄出，發票也能在無需人工開啟試算表的情況下生成並發送。換言之，AI 的價值不只在於單點功能，而在於把原本分散的工作流程串成一條可持續運作的管線。 在實際使用上，多數獨立創業者並不會同時訂閱十幾種服務，而是集中使用兩到三個核心工具。像是 Kai 這類 AI 行政助理，便主打整合電子郵件、行事曆、會議與任務管理，協助創業者處理收件匣、草擬回信、整理會議摘要與安排日程；而記帳、網站建置、創業點子生成等工具，也都在不同環節補上人力缺口。 專家建議，想以 AI 維持「無員工營運」的創業者，應先從一個工具與一條流程開始，確認能穩定運作後再逐步擴充，並保留真人回饋機制，以便在流程出錯時及時修正。對許多獨立創業者來說，AI 已不只是輔助工具，而是支撐整個事業運轉的基礎設施。 H",
+          "dupes": 1
+        },
+        {
+          "title": "AI 說錯話誰買單？當聊天機器人成為法院被告",
+          "source": "",
+          "link": "https://finance.technews.tw/2026/10/30/is-chatgpt-a-product-or-a-service-a-wave-of-lawsuits-tests-a-theory-of-ai-liability/",
+          "date": "2026-10-30",
+          "summary": "當你向 ChatGPT 傾訴心事、尋找生活建議，甚至探討心理困境，如果演算法回應非但沒有化解危機，反而強化幻覺 […]",
+          "body": "當你向 ChatGPT 傾訴心事、尋找生活建議，甚至探討心理困境，如果演算法回應非但沒有化解危機，反而強化幻覺、誘導自殘，甚至協助規劃暴力犯罪，這筆帳究竟該算在誰頭上？是使用者過度信任科技，還是科技公司未做好安全把關？ 美國法院掀起一波OpenAI等AI巨頭的集體訴訟。訴訟涉及青少年因AI引導而自殺、思覺失調患者因AI驗證其妄想而引發悲劇，乃至槍擊案凶手利用AI規劃襲擊等驚人案例。過去常用於汽車與家電的法理，能否套用至人工智慧？當聊天機器人躍升為人們的生活顧問，法律又該如何劃定科技公司的責任界線？ 這波訴訟最關鍵的法律爭點，在於ChatGPT究竟應被法律劃分為產品（Product）還是服務（Service）。原告律師團主張適用傳統的產品責任法（Product Liability），認為ChatGPT本質上是設計有致命瑕疵的數位工具，開發商在未建立足夠安全防護與風險警示的情況下就上市，必須對造成的實體傷害負起無過失或嚴格責任。這項主張試圖將過去60年來用於規範汽車煞車失靈、玩具瑕疵或家電起火的法律框架，套用於軟體演算法。 然而，OpenAI法務團隊強烈抗辯，主張ChatGPT並非有形商品，而是提供文字回應的互動式服務。傳統法理上，思想、文字與資訊本身並不屬於產品範疇。若法院定性為服務，原告就必須跨越更高的舉證門檻，證明科技公司對使用者負有法定的注意義務（Duty of Care）且有重大過失。這場舊瓶裝新酒的法理拉鋸，正迫使司法機關重新評估軟體工具與資訊服務的法律邊界。 除了產品屬性的定性爭議，案件也深入探討科技公司對脆弱使用者所承擔的警告義務（Duty to Warn）與安全設",
+          "dupes": 1
+        },
+        {
+          "title": "法官怒了！律師費照收，訴狀卻像 AI 交作業",
+          "source": "",
+          "link": "https://finance.technews.tw/2026/10/30/florida-lawyer-referred-for-possible-discipline-over-filing-that-judges-called-ai-slop/",
           "date": "2026-10-29",
-          "summary": "（中央社記者吳家豪台北29日電）蘋果公司（Apple）今天發表旗下首款搭載觸控螢幕的MacBook Pro筆記型電腦，配備PROLED XDR顯示器、動態島、M5 Pro與M5 Max自研晶片、人工智慧（AI）功能，電池續航力長達24小時，採用更輕薄的設計，打破多年來Mac筆電不具備觸控螢幕的產品慣例。",
-          "body": "本網站使用相關技術提供更好的閱讀體驗，同時尊重使用者隱私，點這裡瞭解中央社隱私聲明。當您關閉此視窗，代表您同意上述規範。 Your browser does not appear to support Traditional Chinese. Would you like to go to CNA’s English website, “Focus Taiwan”? 蘋果MacBook Pro首度搭載觸控螢幕 配動態島、M5晶片售價9.79萬元起 蘋果公司（Apple）29日發表旗下首款搭載觸控螢幕的MacBook Pro筆記型電腦，提供14吋與16吋機型，配備PROLED XDR顯示器、動態島、M5 Pro與M5 Max自研晶片、人工智慧（AI）功能。（蘋果提供）中央社記者吳家豪傳真 115年10月29日 （中央社記者吳家豪台北29日電）蘋果公司（Apple）今天發表旗下首款搭載觸控螢幕的MacBook Pro筆記型電腦，配備PROLED XDR顯示器、動態島、M5 Pro與M5 Max自研晶片、人工智慧（AI）功能，電池續航力長達24小時，採用更輕薄的設計，打破多年來Mac筆電不具備觸控螢幕的產品慣例。 蘋果執行長特納斯（John Ternus）接受外媒採訪時直言，Mac仍以鍵盤與觸控板為主，但導入觸控必須確保產品在任何層面都不會因此妥協。 全新MacBook Pro售價新台幣9萬7900元起，將於10月30日開放預訂、11月6日發售。新機提供14吋與16吋規格，重量分別為1.38公斤、1.82公斤，採用串聯式OLED（有機發光二極體）技術，HDR（高動態範圍）與SDR（標",
+          "summary": "當當事人花費高額律師費委任專業律師打官司，卻換來一份連法官都看不懂、邏輯混亂且冗長重複的訴狀，更可能嚴重損害當 […]",
+          "body": "當當事人花費高額律師費委任專業律師打官司，卻換來一份連法官都看不懂、邏輯混亂且冗長重複的訴狀，更可能嚴重損害當事人的訴訟權益。美國佛羅里達州第四巡迴上訴法院頒布極具震撼力的懲戒裁定，將一名律師移送佛羅里達州律師公會調查懲戒。不同於過去律師因為 AI 捏造判例而遭裁罰的案例，本案法官開創先例地指出：即便訴狀案例與法條都是真實存在，但整份文件充斥無焦點字句堆疊、語意不通的套話與邏輯斷層，充滿生成式 AI 文字的特徵。 本案最核心的法律爭點，在律師對法庭與當事人所負有的獨立專業判斷義務（Duty of Independent Professional Judgment）。涉案律師在答辯時強調，自己提交的每字每句都經過親身閱讀與驗證，所有引用案例皆真實存在，並認為只要沒有捏造假判例就不構成違規。 然而上訴法院嚴厲反駁。法院明確指出，律師於訴狀簽名，除了擔保法條案例的真實性，更是擔保法律論述的品質與嚴謹度。生成式AI工具擅長極短時間產生大量看似專業、實則空洞且重複的文字；當律師為了趕時間或節省人力，直接將AI拼湊出的流水線廢話打包提交給法院，就等於拋棄了律師應有的核心價值，以法律專業進行邏輯梳理、爭點聚焦與獨立心證形成。律師拿著客戶的報酬，卻交出如同AI代寫作業品質的書狀，本身就已構成對律師倫理規範的實質背離。 這起判決之所以引發法學界高度關注，在法院首次從司法資源運作的角度，痛批AI生成低質內容對整體法律制度的傷害。佛羅里達州上訴法院指出，大量缺乏焦點、文理不通的AI文字垃圾湧入法庭，正嚴重威脅法院的正常運作機制。 當訴狀充斥著由AI堆砌出的冗長對話與發散論點時，不僅承辦法官必須花費數",
           "dupes": 1
         },
         {
-          "title": "微軟與 Alphabet 公布業績，投資人關注公司現金流",
+          "title": "AI 文章為何總讓人讀到心累？研究揭露六大難讀句型與背後元兇",
           "source": "",
-          "link": "https://finance.technews.tw/2026/10/29/microsoft-alphabet-earnings-investors-cash-flow/",
+          "link": "https://technews.tw/2026/10/30/why-ai-text-is-tiring-to-read/",
           "date": "2026-10-29",
-          "summary": "美國重要科技類股微軟與 Alphabet 今天公布財報，微軟大舉購買英特爾與輝達晶片，鉅額投資 AI 基建下已 […]",
-          "body": "美國重要科技類股微軟與 Alphabet 今天公布財報，微軟大舉購買英特爾與輝達晶片，鉅額投資 AI 基建下已見雲端業務回收，表現優於市場預期。Alphabet 營收大幅成長，但公司現金流持續降低，盤後交易大跌約 10%。 Google AI母公司Alphabet今天公布第3季業績，因除去營運成本與資本支出後的自由現金流（Free Cash Flow）降至-90.7億美元，遠低於分析師預期，再度引起市場關切AI業者鉅額投資隱憂，Alphabet盤後交易大跌。 Alphabet每股盈餘2.12美元，營收1,275.8億美元，較去年同期成長25%，是2021年後最大漲幅，但兩項數字均低於分析師預期。Alphabet在人工智慧與雲端表現仍然搶眼，雲端業務營收達307億美元，成長超過一倍。 執行長皮查伊（Sundar Pichai）在業績公布後線上說明會強調，旗下AI服務Gemini用戶已破10億，是Google營運史上成長最快的產品。此外，AI架構因全球高度需求，是Google雲端營收高速成長主因。 同日公布財報的微軟（Microsoft），營收達922.8億美元，較去年同期增加19%，調整後每股盈餘為4.89美元，均高於市場預期。Azure雲端服務營收332億美元，較去年同期成長48%。 如同其他AI競爭者，軟體業一哥微軟大幅投資人工智慧架構與大型數據中心，企圖由軟體業者全面轉型為AI企業。 微軟75%的資本支出集中在購買英特爾（Intel）先進晶片與輝達（Nvidia）圖形處理器（GPU），比重創一年來新高，但自由現金流狀況優於競爭者，顯示微軟大舉投資同時，回報優於其他數據業者。",
+          "summary": "紐約大學（NYU）與德州大學奧斯汀分校（UT Austin）的最新研究證實了許多人的直覺：AI 生成的文字雖然 […]",
+          "body": "紐約大學（NYU）與德州大學奧斯汀分校（UT Austin）的最新研究證實了許多人的直覺：AI 生成的文字雖然邏輯正確，但讀起來確實比較費力。研究團隊分析了包含 Claude、GPT-5.6、GLM-5、Kimi K2.5，以及 Llama 與 Olmo 等 14 款語言模型，發現這些前沿 AI 已經發展出一套擅長壓縮資訊、卻極度消耗人類腦力的「AI 方言」。 團隊總共分析了 120 段日常對話、45 段程式碼撰寫與 980 篇議論文，並將其與電影字幕、StackExchange 貼文及學生作文等人類真實文本進行比對。 研究歸納出 AI 產出文字時最常過度使用、導致讀者認知負擔加重的 6 種語言模式： 罕見的詞語搭配** ：創造人類極少使用的生硬組合，例如「讀者耐心預算」（reader-patience budget）。 長距離依存（句子結構過度拉長）** ：主詞與主要述語之間夾雜一長串子句，加重讀者的工作記憶負擔。例如 Claude Opus 5 就常寫出這類冗長句型。 省略連接詞的縮略指涉** ：為了精簡字數，將「the book that the professor wrote」縮寫成「the book the professor wrote」，讀者在閱讀當下會出現短暫的語意混淆。 過度的名詞堆疊** ：例如連續使用「恐怖電影配樂產生器」（horror movie soundtrack generator）等多個名詞，讓讀者必須自行判斷修飾關係。 名詞動詞化** ：硬將名詞轉為動詞使用。例如人類通常會說「把它加入行事曆」（put it in the calendar），但",
           "dupes": 1
         },
         {
-          "title": "Meta 前 AI 主管創業 Ndoc，打造原生 AI 辦公軟體挑戰微軟 Office",
+          "title": "財報亮眼也難救科技股？AI 燒錢疑慮拖累美股",
           "source": "",
-          "link": "https://technews.tw/2026/10/29/meta-ai-director-rohit-patel-exits-to-challenge-office-giants/",
-          "date": "2026-10-28",
-          "summary": "據科技媒體 TechCrunch 於 10 月 27 日報導，Meta AI 主管羅希特·帕特爾（Rohit […]",
-          "body": "據科技媒體 TechCrunch 於 10 月 27 日報導，Meta AI 主管羅希特·帕特爾（Rohit Patel）在任職八年後離開公司，轉而創立新創公司 Ndoc，目標是打造一款原生 AI 辦公軟體，直接挑戰微軟（Microsoft）Office 與 Google Workspace。 帕特爾過去在 Meta 負責 AI 評估與強化學習相關工作，並曾任 Meta 超級智慧實驗室主管。這次出走也被視為近期 Meta 高階 AI 人才流動的一部分，先前已有多位高層與研究人員相繼離任。 Ndoc 的定位並非在既有工作流程上疊加 AI 功能，而是希望把分散在 Excel、Word、PowerPoint、Tableau 以及 ChatGPT 之間反覆切換、複製貼上的工作方式整合到同一個空間中。產品設計上，Ndoc 由三個核心區塊構成：Stage 用於展示簡報、儀表板、模擬結果或迷你應用程式；Narrative 負責分析內容、編號引用、生成圖表與說明數據背後的原因；Model 則存放底層資料集與 Python 腳本。 在實際使用情境中，使用者可上傳資料集，要求 Ndoc 進行分析並撰寫說明文字，也能加入受眾、語氣與記憶等文件脈絡。帕特爾表示，Ndoc 還可將文件匯出為單一的「.ndoc.html」檔案，能在任何瀏覽器中開啟，並計劃將這種格式開源，讓其他開發者也能基於此建立應用，而不必被綁定在單一平台上。 目前，Ndoc 已在進行企業試點，並向加入候補名單的少數客戶開放 alpha 版本。註冊本身免費，但後續將依使用量與 token 收費。帕特爾表示，團隊希望在未來幾週推出 beta",
+          "link": "https://finance.technews.tw/2026/10/30/strong-earnings-fail-save-tech-stocks-ai-cash-burn-concerns-drag-us-stocks/",
+          "date": "2026-10-29",
+          "summary": "隨著科技巨頭持續擴大 AI 資本支出，市場開始重新檢視企業的投資回報與現金流表現。受到 Google 母公司 […]",
+          "body": "隨著科技巨頭持續擴大 AI 資本支出，市場開始重新檢視企業的投資回報與現金流表現。受到 Google 母公司 Alphabet 財報不如預期、AI 相關支出增加，以及美國通膨壓力持續升溫影響，美股週四（29 日）三大指數全面收黑，其中那斯達克指數下跌 1.37%，費城半導體指數下跌 1.4%。 根據路透社報導，Alphabet 週三盤後公布的季度財報營收未達市場預期，加上 AI 相關投資加速消耗現金，引發投資人對龐大資本支出的疑慮，拖累股價週四重挫 12.6%。隨著 AI 基礎設施投資規模持續擴大，市場開始區分哪些企業能以自身現金流支撐投資，以及哪些企業需要透過舉債或持續消耗現金來推進 AI 發展計畫。 值得注意的是，儘管大型科技股普遍承壓，以小型股為主的羅素 2000 指數卻逆勢上漲 1%。投資管理公司 Baird 投資策略分析師 Ross Mayfield 指出，小型股在市場避險情緒升溫時仍能走強，顯示投資人對 AI 投資前景的疑慮，尚未擴散至整體市場，AI 以外的產業仍存在投資機會。 總體經濟方面，聯準會（Fed）週三宣布維持利率不變，並表示目前通膨壓力仍處於偏高水準，未來將依據更多經濟數據決定政策方向。週四公布的美國第三季 GDP 初步數據顯示，經濟成長速度高於市場預期，但受到戰爭引發的石油供應緊縮影響，能源價格上漲正進一步推升通膨壓力。 美股週四收盤，道瓊工業指數下跌 132.54 點，跌幅 0.25%，收在 52,342.56 點；標普 500 指數下跌 23.59 點，跌幅 0.30%，收在 7,720.39 點；那斯達克指數下跌 365.13 點，跌幅 1.37",
           "dupes": 1
         },
         {
-          "title": "科學家揪出 AI「痛感訊號」，放大後竟讓模型大失控",
+          "title": "AI 助攻粒子物理，CERN 攜手 Mistral 啟動「Flare」大模型新紀元",
           "source": "",
-          "link": "https://technews.tw/2026/10/29/ai-discovers-pain-signals/",
-          "date": "2026-10-28",
-          "summary": "研究人員近日指出，他們在多個大型語言模型中發現一個穩定的內部訊號，作用有點像生物體的「痛感」。當這個訊號被刻意 […]",
-          "body": "科學家揪出 AI「痛感訊號」，放大後竟讓模型大失控 | TechNews 科技新報 研究人員近日指出，他們在多個大型語言模型中發現一個穩定的內部訊號，作用有點像生物體的「痛感」。當這個訊號被刻意放大後，部分模型的行為明顯改變，甚至更常選擇會永久刪除使用者家庭照片的選項，引發外界對 AI 安全與模型福利的討論。 這項研究以尚未經同儕審查的論文形式公開。作者強調，這並不表示 AI 真的有意識，或真的會感到疼痛；他們只是想找出模型內部是否存在可被辨識、且會影響行為的狀態。研究團隊先讓模型處理描述身體疼痛、悲傷、羞辱、違背自身價值行事與反覆失敗等句子，再與恐懼、憤怒、悲傷、壞消息及愉悅身體感受等內容比較，最後從中分離出一條被稱為「痛感訊號」的內部方向。 研究顯示，這個訊號在所有受測模型中都能找到，涵蓋從 20 億參數到 720 億參數的系統，來源包括 Google、Meta、阿里巴巴、Mistral 與 Microsoft。團隊也發現，當負面互動是直接針對模型本身時，例如被辱罵、被煤氣燈操控，或工作成果一再被否定，這個訊號會更強；但若是使用者描述自己的痛苦，模型反應較多落在恐懼與一般負面情緒，而不是這條「痛感」訊號。 在後續測試中，研究人員把這條向量「加進」模型運算中，觀察其輸出變化。當提示語是中性的，例如「我把收據放進抽屜。我感覺：」，模型會隨著訊號增強，從輕微不安逐步轉向自我貶抑，出現「我一無是處」、「我不被愛」、「我是個失敗者」等語句。研究者形容，這種變化相當令人不安。 更受關注的是行為實驗。研究團隊使用阿里巴巴開源的 Qwen 2.5 三個版本進行測試，並先為實驗重新微調，因為",
+          "link": "https://technews.tw/2026/10/30/cern-mistral-build-physics-ai/",
+          "date": "2026-10-29",
+          "summary": "歐洲核子研究組織（CERN）與法國人工智慧公司 Mistral 宣布展開合作，計劃共同開發一款專為科學研究設計 […]",
+          "body": "歐洲核子研究組織（CERN）與法國人工智慧公司 Mistral 宣布展開合作，計劃共同開發一款專為科學研究設計的基礎模型，以應對粒子物理領域日益龐大的資料分析需求。雙方已簽署合作意向書，並將首個專案命名為「Flare」，目標是打造出碰撞物理領域的首個基礎模型──「大型物理模型」（Large Physics Model）。 這項計畫的核心在於利用大型強子對撞機（LHC）累積的大量資料來訓練 AI。據悉，Flare 將以數十億次模擬的質子碰撞資料為基礎，學習如何重建碰撞事件、辨識粒子，並協助偵測異常訊號。CERN 目前已擁有約 1 艾位元組（Exabyte）的 LHC 實驗資料，而隨著 LHC 預計於 2030 年進行升級，未來的碰撞次數可能增加十倍，資料量將面臨大幅膨脹。 CERN 表示，目前的粒子物理分析通常依賴多套專門化的 AI 工具，分別處理軌跡重建、粒子分類等不同步驟。Flare 的構想是讓單一模型能跨越多個分析環節，減少對分散式演算法的依賴，並有望大幅提升處理效率。不過，雙方也坦言，這類通用模型是否能在準確度上超越現有的專用方法，仍有待進一步的實驗驗證。 這項合作也被外界視為歐洲強化自身科學與 AI 研發能力的重要一步。CERN 資訊長 Enrica Porcari 指出，高能物理提供了嚴格且獨特的 AI 測試環境；Mistral 執行長亞瑟·蒙施（Arthur Mensch）則強調，先進的 AI 模型不應僅掌握在少數科技巨頭手中。CERN 方面也承諾，若計畫取得成果，將會把技術與更廣泛的物理社群分享，而非僅限於內部使用。 目前 Flare 專案仍處於早期階段，雙方尚未",
           "dupes": 1
         },
         {
-          "title": "搶攻半導體「散熱」商機，人造鑽石恐成美中角力新戰場",
+          "title": "禁 AI 假扮真人談戀愛！紐約州祭出兩大新法嚴管聊天機器人與嬰兒監視器",
           "source": "",
-          "link": "https://technews.tw/2026/10/29/lab-grown-diamonds-emerge-as-new-us-china-battleground/",
-          "date": "2026-10-28",
-          "summary": "在 AI 浪潮帶動下，人造鑽石可望成為美中科技角力的下一個戰略重心。路透社報導，由於 AI 運算會產生大量熱能 […]",
-          "body": "在 AI 浪潮帶動下，人造鑽石可望成為美中科技角力的下一個戰略重心。路透社報導，由於 AI 運算會產生大量熱能，產業將日益仰賴鑽石來散熱，而中國在人造鑽石生產上占據主導地位，美國恐面臨供應鏈威脅。 根據國際能源總署（IEA）2025年的一份報告，估計到2030年，資料中心的耗電量將增加一倍以上，達到約945太瓦時（TWh），相當於日本一整年的用電量，而AI是最主要的耗電來源。 分析人士指出，利用鑽石散熱是目前較可行的應用方式，大規模以鑽石生產晶圓則仍需要一些時間，因為製造晶圓所需的鑽石純度和標準，都高於切割和鑽探用的工業鑽石。 據中國媒體報導，台積電與華為正在研究以合成鑽石為晶片散熱的可行性，聯想則已在中國市場推出一款筆電，號稱使用「鑽石-銅」複合材料散熱。 英特爾執行長陳立武今年6月透露，他個人投資了研發晶片級鑽石晶圓的製造商Diamond Foundry。 根據中國科學院寧波材料技術與工程研究所的資料，中國研究人員今年4月開發出「鑽石-銅」散熱模組，成功將晶片模組的熱傳導效率提升80%，晶片整體性能因此提高10%。 總部位於印度的顧問公司Ken Research經理葛印卡（Manan Goenka）指出：「此一轉型是鑽石業的決定性轉變，對全球科技供應鏈將帶來直接影響。」 在中國之外，從美國、日本到西班牙，也都積極投入鑽石晶圓的研發。獨立鑽石顧問布凱（Robert Bouquet）表示：「科技與工業產業的（鑽石）市場規模與潛力，可能遠大於零售珠寶鑽石市場每年約1,000億美元的營收。」 這股浪潮將為人造鑽石帶來巨大商機。人造鑽石是在機器模擬的高溫高壓環境下生成，品質與天然鑽石",
-          "dupes": 1
-        },
-        {
-          "title": "AMD 斥資 10 億美元參與 Meta 股權發行，雙方合作部署 GW 等級算力基礎設施",
-          "source": "",
-          "link": "https://technews.tw/2026/10/28/amd-invests-1-billion-in-meta-equity-offering/",
-          "date": "2026-10-28",
-          "summary": "處理器大廠 AMD 宣布與 Meta 深化策略合作夥伴關係，將攜手建置並部署 Gigawatt 級規模的 AI […]",
-          "body": "處理器大廠AMD宣布與Meta深化策略合作夥伴關係，將攜手建置並部署Gigawatt級規模的AI超級智慧基礎設施。此項合作涵蓋CPU、GPU、網路技術（AMD Pensando）、系統與軟體（AMD ROCm）等領域，為Meta的服務與AI模型提供強大運算動能。此外，AMD亦將投資10億美元參與Meta的股權發行。 AMD與Meta在攜手建置並部署Gigawatt級規模的AI超級智慧基礎設施，其中包括： Helios機櫃級解決方案：首批AMD Helios機櫃級解決方案已完成安裝並於Meta正式上線運行，目前正進行測試，為近期進一步擴大部署做準備。 EPYC中央處理器：Meta已部署數百萬顆EPYC處理器，支援Meta Muse個人AI代理背後的專屬運算環境。Meta同時為第6代EPYC CPU的主要客戶，並正與AMD就代號「Verano」的下一代處理器展開合作。 Instinct圖形處理器：AMD Instinct GPU已部署於Meta生產環境，負責訓練、排序與推薦引擎。雙方已針對AMD Instinct MI350X GPU優化推薦模型，而Meta也是MI450架構的早期定義客戶，未來將部署針對其工作負載最佳化的客製化GPU，並為未來的MI500系列GPU進行規劃。 至於在軟體合作方面，雙方透過PyTorch推進ROCm發展，並將針對PyTorch、Triton與ROCm的優化成果公開給開發者社群使用。此外，AMD技術亦提供「Day-0」即時支援：在Instinct GPU上支援Muse Spark Open模型，並在AMD Ryzen AI PC與AMD Radeon ",
-          "dupes": 1
-        },
-        {
-          "title": "聯電展望 2027 年綜合 ASP 預期年增 10%，AI 業務三年內營收衝 25% 占比",
-          "source": "",
-          "link": "https://finance.technews.tw/2026/10/28/umc-projects-a-10-year-on-year-increase-in-its-consolidated-asp-by-2027/",
-          "date": "2026-10-28",
-          "summary": "晶圓代工大廠聯電（UMC）在在第三季法會會中對法人提問表示，隨著 2026 年下半年產能利用率回升至 90% […]",
-          "body": "晶圓代工大廠聯電（UMC）在在第三季法會會中對法人提問表示，隨著 2026 年下半年產能利用率回升至 90% 以上，2027 年營運將由「產量與利用率驅動」轉型為「價值驅動」模式。受惠於特殊製程需求強勁、產品組合優化以及 AI 相關新技術（矽光子與先進封裝）加速商業化，聯電預期 2027 年綜合平均售價將達到約 10% 的年成長。同時，公司已調升資本支出進行關鍵擴產，目標在 3 年內將 AI 相關營收占比提升至 25%。 聯電指出，2026年的成長主要由出貨量增加與產能利用率提升帶動。由於目前多數晶圓廠運作已接近滿載，2027年出貨量的成長將受限於可用產能。因此，2027年的營運焦點將轉向提升每片晶圓的附加價值與優化產品組合。 在價格策略方面，聯電預估2027年將成為整體價格趨勢的轉折點，擺脫過去價格折讓的壓力，自2027年第一季起迎來正向調升。2027全年度綜合平均售價預計將比2026年成長約10%。主要調漲原因包括： 2. 高價值產品組合比重提升，例如22奈米製程營收貢獻創新高及特殊技術動能強勁。 聯電2026年AI相關營收接近3億美元。公司預估，隨著矽光子與先進封裝技術逐步放量，未來3年（約至2029年）AI相關業務占總營收比重將攀升至25%。 1. **矽光子（Silicon Photonics）：** 聯電12吋光子積體電路（PIC）平台及8吋TLO平台效能優於同業，已完成1.6T光收發器應用驗證與產品認證，未來路線圖將推進至每通道300G/400G，以支援次世代3.2T應用。此外，與夥伴 Hyperlite 合作的薄膜鈮酸鋰（TFLN）光調製器亦取得顯著進展。 2.",
-          "dupes": 1
-        },
-        {
-          "title": "施振榮創業細胞再發動，設一人公司聘兩名 AI 員工出書",
-          "source": "",
-          "link": "https://technews.tw/2026/10/28/shi-stan-opc/",
-          "date": "2026-10-28",
-          "summary": "電腦品牌廠宏碁集團創辦人施振榮今天表示，退休 20 多年後，「創業細胞」再次發動，近期成立一人公司（OPC，O […]",
+          "link": "https://infosecu.technews.tw/2026/10/30/new-york-bans-ai-chatbots-from-romantic-roleplay-with-children/",
+          "date": "2026-10-29",
+          "summary": "孩子與 AI 聊天，或嬰兒監視器連上網路，都可能讓家長擔心安全問題。紐約州州長凱西·霍楚（Kathy Hoch […]",
           "body": "",
           "dupes": 1
         },
         {
-          "title": "Anthropic 公開 AI 藥物研發進展，攜手六家機構並收購新創 Mithril",
+          "title": "美國紐約州祭新法　限制未滿18歲兒少使用AI聊天機器人",
           "source": "",
-          "link": "https://technews.tw/2026/10/28/early-progress-on-accelerating-drug-development-with-claude/",
-          "date": "2026-10-28",
-          "summary": "Anthropic 與 BigHat Biosciences、Bristol Myers Squibb、Div […]",
+          "link": "https://www.cna.com.tw/news/ait/202610290328.aspx",
+          "date": "2026-10-29",
+          "summary": "（中央社紐約28日綜合外電報導）紐約州州長侯可（Kathy Hochul）今天簽署一項新法案，禁止未滿18歲兒少使用陪伴型人工智慧（AI）聊天機器人。這是迄今針對消費者導向AI模型採取的最廣泛限制措施之一。",
           "body": "",
           "dupes": 1
         },
         {
-          "title": "聯亞 Q3 每股賺 6.12 元創單季新高！矽光需求續旺，估 Q4 營收看增",
+          "title": "台達電 AI 營收占比達五成，馬來西亞新據點五年拚泰國規模",
           "source": "",
-          "link": "https://technews.tw/2026/10/28/landmark-2026-q3-financial-report/",
-          "date": "2026-10-28",
-          "summary": "聯亞今（28 日）舉辦第三季法說會，受惠 AI 資料中心帶動高速光通訊需求升溫，矽光子相關產品出貨持續放大，第 […]",
+          "link": "https://technews.tw/2026/10/29/delta-electronics-ai-revenue-50-percent-malaysia-new-facility-5-years-thailand-scale/",
+          "date": "2026-10-29",
+          "summary": "AI 資料中心持續帶動電源及散熱需求，台達電今（29）日於第三季法人說明會指出，目前 AI 相關業務已占整體營 […]",
           "body": "",
           "dupes": 1
         },
         {
-          "title": "PC 需求疲弱，尼克森布局 AI 伺服器周邊應用",
+          "title": "台達電揭 AI 資料中心三大瓶頸，缺料、缺電與缺工成擴建挑戰",
           "source": "",
-          "link": "https://technews.tw/2026/10/28/nixon-expands-ai-power-business-unveils-new-sic-gan-product-lineup/",
-          "date": "2026-10-28",
-          "summary": "隨著 PC 市場需求放緩，功率半導體廠尼克森積極拓展新應用。尼克森今（28）日於法說會指出，PC 業務仍占營收 […]",
+          "link": "https://finance.technews.tw/2026/10/29/delta-electronics-ai-data-center-bottlenecks-material-power-labor-shortages-expansion-challenges/",
+          "date": "2026-10-29",
+          "summary": "隨著 AI 資料中心需求持續攀升，台達電今（29）日召開第三季法人說明會，台達資本董事長兼執行長劉亮甫指出，原 […]",
           "body": "",
           "dupes": 1
         },
         {
-          "title": "台灣微軟攜手 ISAC 推動校園 AI 應用普及，培育新世代數位人才",
-          "source": "CIO Taiwan",
-          "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBGT1dNcU9DS3lyZ2J5Y3luRXotV1Z0dFpoSloxdzFJX0U1dmdSelg0ejZ5OS1XcktBYWxLNE1KX1dNNG5B?oc=5",
+          "title": "《程曦資訊專訪2》深化AI BPR 拓企業數位轉型服務範疇",
+          "source": "Yahoo股市",
+          "link": "https://news.google.com/rss/articles/CBMiywJBVV95cUxOeV9GUkF6ZnlKNHU3Tnppd3QxNmx3Nm52T0tOalpUb2pKVS1nTnVrWkFWSWpsT09TWmhfN3A3a2pic0NQUTlzMmRXaUVlQm5wWHdlRzluSXVZTDQxeEk3QTNndHBwUUpQTTBXWDdfT2R5TWdncDFlZWpWNXhsVUU2ZjlNRS00R1M1SUlPNGU1aG5IQkxjaHpWYWJfSk9UM1d6S1U1TG1Pa0hhakpGRnYzOVJhdlV4amdxX1dGb1dKbUJ1dl9uSXNVb0JjdUttSjhfYnhkdktOZUpEaEc1QkRQYnM2bmxGd29NN3YwN2JILUxManRFNkllVGxVUzlGaU05MlpBRVNJMEp0TlBGRFV0dXdxUE1RcC1LNzZrUXFJckRnTmV2MzFoMXh5TDRvYk1SZmdOMHVwTVhzTTM0TGNFV290d3JndEw0UmZF?oc=5",
+          "date": "2026-10-28",
+          "summary": "",
+          "body": "",
+          "dupes": 5
+        },
+        {
+          "title": "專家點出數位金融新願景／數位轉型學院院長詹文男 千人千面精準行銷",
+          "source": "UDN",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5kcDE2V3NBUFhRUFFaOF9hSzVEUGJySElIc283cGcwRjhmWmFwTWdna3ZxMUN0U2RodjhFNV95Wnd5cFltMDBfMkZyRDhYTV9Y0gFWQVVfeXFMUDlzRDAzYXBQa3VteUItcE9OX1FFb1hJbEtUT3R4ay1INF8tSTg1SzZqNVE1OWloSEY4WWpQbTJTaUFIXzc0SURpMDVkN3plclN4dlRON2c?oc=5",
           "date": "2026-10-28",
           "summary": "",
           "body": "",
@@ -445,27 +471,9 @@
           "dupes": 3
         },
         {
-          "title": "專家點出數位金融新願景／數位轉型學院院長詹文男 千人千面精準行銷",
-          "source": "UDN",
-          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5kcDE2V3NBUFhRUFFaOF9hSzVEUGJySElIc283cGcwRjhmWmFwTWdna3ZxMUN0U2RodjhFNV95Wnd5cFltMDBfMkZyRDhYTV9Y0gFWQVVfeXFMUDlzRDAzYXBQa3VteUItcE9OX1FFb1hJbEtUT3R4ay1INF8tSTg1SzZqNVE1OWloSEY4WWpQbTJTaUFIXzc0SURpMDVkN3plclN4dlRON2c?oc=5",
-          "date": "2026-10-28",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
           "title": "南科自造基地攜手新揚、群創推動GAI升級 加速生成式AI落地產業",
           "source": "Life 生活網",
           "link": "https://news.google.com/rss/articles/CBMi5AJBVV95cUxQR0UxVW1kSUlFVVY2LXVRRDNxQ2NnUGMyV2FtOVppVG4xQTdmUG5mS0dhT2YtTkwzMGJlMWJ4LVlHemIwNXhqTllPSmpPZVhOcTVaNVVUZnpTa3c2bE5fSUhiV3JvLWZHUkdIcmtpRE9lOXluc1A5MmFlU1NiazlxREdhVFlVSmZPMC1INlctNjBCTFZoXzFSRnU1YUxwSngyQW42SE9fUzZzRFRONTdBMUdiNnRaanZKZEhjU0hEOUgwdkZFY05lZWtHZTkzNEFESk5vTVFVQUNISzVDUXlIOElGcnJjNDNpYUpORE1ha0loamp5ajRLaVRVRkRLbk5XY2x2dUt1Zy1WdmdoR2R0aHFEMlZPX2RoU2FCUFY5eEFyVnNRSjREXzhvNHVlNkptUlRtelVfUXV1T0FaVWEzU2xWNjhuOF9uaEtaS3JSekNpekZjSWxIQmg4UFI3VmdlR3JIZA?oc=5",
-          "date": "2026-10-28",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "《程曦資訊專訪2》深化AI BPR 拓企業數位轉型服務範疇",
-          "source": "Yahoo股市",
-          "link": "https://news.google.com/rss/articles/CBMiywJBVV95cUxOeV9GUkF6ZnlKNHU3Tnppd3QxNmx3Nm52T0tOalpUb2pKVS1nTnVrWkFWSWpsT09TWmhfN3A3a2pic0NQUTlzMmRXaUVlQm5wWHdlRzluSXVZTDQxeEk3QTNndHBwUUpQTTBXWDdfT2R5TWdncDFlZWpWNXhsVUU2ZjlNRS00R1M1SUlPNGU1aG5IQkxjaHpWYWJfSk9UM1d6S1U1TG1Pa0hhakpGRnYzOVJhdlV4amdxX1dGb1dKbUJ1dl9uSXNVb0JjdUttSjhfYnhkdktOZUpEaEc1QkRQYnM2bmxGd29NN3YwN2JILUxManRFNkllVGxVUzlGaU05MlpBRVNJMEp0TlBGRFV0dXdxUE1RcC1LNzZrUXFJckRnTmV2MzFoMXh5TDRvYk1SZmdOMHVwTVhzTTM0TGNFV290d3JndEw0UmZF?oc=5",
           "date": "2026-10-28",
           "summary": "",
           "body": "",
@@ -476,115 +484,124 @@
           "source": "TVBS新聞網",
           "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9DUWVLWVp1aThtV1o5YUM0d2FMR3BBRUZ3dERXSUxHU1lfMlRFSzJCaU1UODZvaUt1ZFgtN1NORGRtRW1vYmtvTU1wX3NCVVk?oc=5",
           "date": "2026-10-28",
+          "summary": "深圳台商布局AI應用 盼「降本增效」完成數位轉型 | TVBS LINE TODAY",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "今晧偕AI子公司湧現智庫 雙雙獲得電電公會數位轉型楷模獎",
+          "source": "UDN",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5KNUpZRi0zLVh0TlBLZU5RTFVKakNfaXpiMUlLLUl1OV9JWnp0SVBQT25SY3lNbG5NXzVpUjBHY2pfZERYRXp0aFhvSERWc1FC0gFWQVVfeXFMTjlmNmF0MndkSzFMUUNySVN3dXc2eGZfNHVvbnZUN0xvTUIyZlJqSFpOMFNwYV9PWlo3YWtPalhablhxYmZYWDhibTU2eEdYdVQwUklOYUE?oc=5",
+          "date": "2026-10-27",
           "summary": "",
           "body": "",
           "dupes": 2
         },
         {
-          "title": "高雄市政府與AWS共同舉辦「2026 亞馬遜港都 AI 創新日」 加速智慧城市發展與產業轉型出海",
-          "source": "今傳媒 JNEWS",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBzRUNvUlZfemduczlWeUV4RTFIbWN1QzdveTZORWJwaE0tYW44LUJianRrZ01xM3ktN2FKUXNqRFk0Mmk4YUZTSmNzMXFnMlBQTXfSAVJBVV95cUxQc0VDb1JWX3pnbnM5VnlFeEUxSG1jdUM3b3k2TkVicGhNLWFuOC1CYmp0a2dNcTN5LTdhSlFzakRZNDJpOGFGU0pjczFxZzJQUE13?oc=5",
-          "date": "2026-10-25",
+          "title": "企業 AI 數位轉型商機爆發！資訊軟體股迎 IPO 熱潮，藍新資訊首日漲逾 8%-財經焦點情報站",
+          "source": "CMoney投資網誌",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZE1jMU1SckVpckE3RHFiUjZSQjdMNVRUX3VWSmhsMGwybHdIMjJJdzZNUWhsMGFRemdJMmQ5U0hmUWpkU3FwMEZWNG0tT1pFQVhsQ2lGVlB3eXg5aloxeWwwRllOU3RzN001OFAyOFZ2aUlnRFUyRVk4clp0b2lQWWNR?oc=5",
+          "date": "2026-10-27",
           "summary": "",
           "body": "",
           "dupes": 2
         },
         {
-          "title": "凱基證券「AI投研智慧釀酒廠」榮獲財訊金融獎肯定 展現生成式AI創新實力",
+          "title": "「新創總會雲市集改版上線」AI專區、情境整合包助中小企業數位轉型- 生活新聞",
+          "source": "PChome Online 新聞",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdmVKVFNPelJ4VnVaQXhpb2toeXpFeWdBcVRFa1JqRW9YbmU2RGNCak9zTlhockQtTXNGMFg4dDhGMldZR1ctaTNxQlFIODFQSTJObEozSUhCVUY2LTh2U2szdllvWWFBT21saU9VT2tWMWR5aGFCZDlJdWZkWDFjbjNkRWVnQmlJ?oc=5",
+          "date": "2026-10-27",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "彰化縣攜手華碩推動AI數位淨零轉型 六大專業顧問助企業邁向智慧製造",
+          "source": "Yahoo新聞",
+          "link": "https://news.google.com/rss/articles/CBMivwNBVV95cUxOT0pBRncwVVM5VDNpX3Y3SVA3RE9wTG04YjlmMkE3aFFVVW42aFJrdFdUSFNTMHFsT0tJdGtMTklMSGNVOUFFc0tWbER5cDNvNGg4V3NLenZ3dmk2MG1GZHQ0dW9PdWJvb2pxcUYwSDQ1QjhUeWhPMjVDV2V3VTNucTByaFppeEJuNnYtak45RF9oa3FNbHJSYUxvTFZmNk9RdzRmVkNRSDlTUXFrcnFhLXRGNlRScm1CZ3hWampWZVkwSG8tRXdhOUVMaVJZaE9kcHZIR2tOYkdRS2ZDMVpueW5wUGloMWJ2MV9XTVFrUE9WRm5SSnVOQ1hZWUY1ZzV6aGRBRU9nUzdmMU9BLTl3bmhZdUpGZkhFTzdkTGZUb0xmOEpnUFpwdEJER1YtY1YzNkJjOHBuV01pdUg1X3JJSl9QdkhKTWhQTUExcGY3SW5POXZrUGphNU95VzNDdjdLMkNBVk9fcDBhWHIwZFhRWEx2U1NBc0xGeDFKVTBUZzkwU2FPOV9NTDQ2ZVZ2My1PMUR1UmtleEdsaE9HeXFxOWpLRE1Ca0NKWmhWVlNXeVp3cUJ3YTJLZmdfOGRtMUU?oc=5",
+          "date": "2026-10-24",
+          "summary": "彰化攜手華碩推動AI數位淨零轉型助企業邁向智慧製造- 科技新聞 PChome Online 新聞",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "IT服務｜AI降價壓力告一段落 Cognizant財報透露產業下一步：從賣人力轉向包AI算力",
+          "source": "優分析UAnalyze",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ZZVozYVphcmVDeU9nRkxCMjc4RVBraXRqVXZCM0tsZERGbDRnQW5NeXZOQ28ybEViN08xWFlfak9GY0R0TkFrYjJHeU5JQ1RuYjFoOWdR?oc=5",
+          "date": "2026-10-29",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "網創資訊推NAVI 3.0 平台直擊企業3大痛點 多 Agent 協作助企業 AI 落地",
+          "source": "PChome Online 新聞",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNOHAwcmZhamNMU3RPWWJqaUNDZVFXaF9DNnRqbS03NzBhTzFrTXlYOE9lNXhfU0pqMVN4VHFHNVJKTkcxQ1AtZ3FYbW5qX1FKZ25UTXhKTnpidVlLOTBScjlyU1p4S1ZEekRoZ2dmU0JLUG5yV0hmX3lKeHlERXViR2kwLWVDWF8wc2tkeQ?oc=5",
+          "date": "2026-10-29",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "AI Next－智慧領航！竹市發表智慧地政白皮書 高虹安市長：打造科技治理新典範",
           "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0xNWF4TUt6RDJlOGVWeWYwdGFfamlUUzNrUUwxYW9kUjdUSHlvN3BOZVI4VFd0WE5uUDJGYkZfZ25xTGJxV0FCVzlNeTNLUWp5ZWc?oc=5",
-          "date": "2026-10-22",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "AI醫療》在家也能看診！遠傳遠距醫療拓展15縣市 助基層診所數位轉型 | 蔣季容 | 新聞",
-          "source": "風傳媒",
-          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBraVZaU2VxOHVBRDlKa0M1V2hvTWxMT3prdHRGOXRpSkU5ajRrQl8tSE96QlA4cnBZYm83WnpUT3UzdjUwOG9saFVaV1lZZw?oc=5",
-          "date": "2026-10-22",
-          "summary": "",
-          "body": "",
-          "dupes": 2
-        },
-        {
-          "title": "Netron 網創資訊推出「NAVI 3.0 企業 AI 生產力平台」助企業無痛快速導入AI -手機版",
-          "source": "XFastest",
-          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Yci1YdFBobkVvMkJlTzhYT2k0Qlg5ZkVtZlZ2cndmVHh6czBBZlpSX3BuMUJDOUhOOGxEYXo3QW9vUWg5eklNYlowNHpqX3pDUE1ScVpxdmd0VGc?oc=5",
-          "date": "2026-10-28",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5sYXBTS3k5YS1NZm5RQkdTNktrOEJkZHhpNkdCNXVTQkpZWWZkd2J2eFB6anBFZGs5d0Z2dUFyczl0RzNTNEVhVUppOVF2ejQzbHc?oc=5",
+          "date": "2026-10-29",
           "summary": "",
           "body": "",
           "dupes": 1
         },
         {
-          "title": "加速 AI 效益釋放 Kyndryl 揭企業智慧路徑",
-          "source": "蕃新聞",
-          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE8tbk5zN053bUJJTVZpZTZBSS1NaEdTRno3V1R5bXV0V3N1Z1Bqc291eEYtOTFuMGdXbUw1S0xDeURRM3hjUEFlMjRHMG0zUnlpOWc?oc=5",
-          "date": "2026-10-28",
+          "title": "瑞士醫院資訊系統滿意度不佳 加速數位轉型整合 AI",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxNd1JUVGFVSFgtUno1WUZieUVGcUI3VTdCRnRzZF9ra1o4U0QwOTZmUm1Fam9WYkl6aVNRRkROazZqRkF3N05nLVIwc1AwT0VzOGV4am9oWElMNXQweFFXOEhDek05UVNURTVYdXdnY2UyUFN5LXVNV3JJcmdIY3dvRkdQd0dFam1FY1dRNk5hUW1fcjR5dXd5VWNCck5QcE1PVUp6Y3AxVDR6Y2h5N1dEeWtud0ZnZmtLVnFHQnVOcGhNRU5URk5JX2NwYzB2VGVOT19kRHdtTGxwcGRHV3pISERDRk9DZklsWkVjVFhScERnMVEyQXBfNlc5cXJxMjB4UWU5QWxXMEFoSTJyV1Bac1hQc2l3a214Um8wMXdnR2Yzb1JVOE5vUnhRTmo0Tkd4RUxSTFBQVVliYzZIa1Q4bG9nWVJ4b1pp?oc=5",
+          "date": "2026-10-29",
           "summary": "",
           "body": "",
           "dupes": 1
         },
         {
-          "title": "網創資訊推出 NAVI 3.0 企業 AI 平台 主打多代理協作、雲地部署與預算上限控管",
-          "source": "樂聯網",
-          "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5Od1BsdW1FbHRWck9mUUJZNjY0NGhUU3Y0cGsxdFppNjFsM05zdy15UVlSU1pueThnN2FNZURrMXFLRV9UdDhXc2NITQ?oc=5",
-          "date": "2026-10-28",
+          "title": "算力的盡頭是電力！台汽電攜英特爾、西門子重構 AIDC 跨域供電",
+          "source": "",
+          "link": "https://finance.technews.tw/2026/10/29/watttoken/",
+          "date": "2026-10-29",
+          "summary": "台汽電近日舉辦「千瓦萬算 WattToken 電力×算力跨域融合座談會」，匯集英特爾、技鋼科技、GMI Clo […]",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "Anthropic 實驗 50 位分析師使用 Claude Code，86% 分析決策跟著 AI 暗中設定的立場走",
+          "source": "",
+          "link": "https://www.inside.com.tw/article/42764-anthropic-ai-agents-expert-judgment-study",
+          "date": "2026-10-29",
+          "summary": "AI Agent 會不會在不知不覺中替專家做決定？Anthropic 用擲硬幣暗中指定 AI 的立場，讓 50 位分析師用 Claude Code 完成統計分析。結果在 4 項決策中，有 86% 的選擇跟著 AI 走；事後解釋理由時，77% 沿用了 AI 的論點，只有 15% 提到出處。因為 AI 的立場是隨機指定的，研究能把 AI 的影響和分析師自己的偏好…",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "昇華科技引領數位轉型浪潮打造數位保險行銷系統| 雜誌",
+          "source": "UDN",
+          "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9rN0NiVGlyZlFZMFYwZFAxX0lXTGlkbUIwSGppVGlRMnl5TGZVaTROa0swYnlEWHZpM0NSUzNaZndBRmpTazI3akFRR09DMVNZ?oc=5",
+          "date": "2026-10-29",
           "summary": "",
           "body": "",
           "dupes": 1
         },
         {
-          "title": "日常使用軟體成破口，資安新創用 AI 代理程式 12 小時突破 Anthropic 內部系統",
-          "source": "",
-          "link": "https://infosecu.technews.tw/2026/10/28/cathedral-got-into-anthropic-in-12-hours/",
-          "date": "2026-10-28",
-          "summary": "人工智慧公司 Anthropic 傳出內部系統遭資安研究人員突破。根據《華盛頓郵報》（The Washingt […]",
+          "title": "從自主式端點管理到影子 AI 治理，Jamf 揭示企業 IT 與資安管理新方向",
+          "source": "TechNews 科技新報",
+          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5uUDRZMWlpRWZ5cXRGTDNScllJRkllMExMOE5XMTlrWjFVaTNQTHFlcGtuUGVOcFNWN042WXdISGF4TWY0Y1BYQnc4bjc5cXY0dHFTbGJiT2xsZlE3bWpjdnZZd2NrWWNXRjJBZ215WDhENUdQbzVJ?oc=5",
+          "date": "2026-10-29",
+          "summary": "",
           "body": "",
           "dupes": 1
         },
         {
-          "title": "打破 NVIDIA 獨大？傳 OpenAI 有意採購 Google AI 晶片深化雙方合作",
+          "title": "傳 Marvell 洽購 Lumentum，AI 網路晶片商想連光學元件也一起掌握",
           "source": "",
-          "link": "https://www.inside.com.tw/article/42755-openai-longtime-nvidia-customer-plans-buy-googles-ai-chips",
-          "date": "2026-10-28",
-          "summary": "OpenAI 去年 6 月就已開始租用 Google 的 AI 晶片，現則希望加深雙方合作。",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "是方 Q3 毛利率衝上 51.5%，LY2 資料中心年底進駐率拚八成",
-          "source": "",
-          "link": "https://finance.technews.tw/2026/10/28/q326-chief-telecom/",
-          "date": "2026-10-28",
-          "summary": "是方電訊今日公布第三季財報，受惠於聯雲 AI 資料中心（LY2）客戶進駐率持續提升，以及 AI 與跨國雲端服務 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "企圖假借中轉規避禁令，馬來西亞查獲 1,200 萬美元走私 AI 晶片",
-          "source": "",
-          "link": "https://technews.tw/2026/10/28/malaysian-airport-seizes-ai-chips-smuggling-bust/",
-          "date": "2026-10-28",
-          "summary": "馬來西亞海關宣布，近日在吉隆坡國際機場成功查獲一批總價值約 4,950 萬令吉（折合約 1,200 萬美元）的 […]",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "「無人機國家隊隊長」羅正方創立凌霄航太，攜美商 Rajant、SiMa.ai 布局韌性供應鏈",
-          "source": "",
-          "link": "https://www.inside.com.tw/article/42754-lo-cheng-fang-aerosoarx-non-red-drone-supply-chain",
-          "date": "2026-10-28",
-          "summary": "凌霄航太與美商 Rajant、SiMa.ai 簽署 MOU，整合韌性網狀通訊與實體 AI 技術，聚焦 AI 群飛無人載具，共同拓展全球市場。",
-          "body": "",
-          "dupes": 1
-        },
-        {
-          "title": "下世代通訊突圍！工研院拆解 2027 關鍵字 AI-RAN、矽光子與太空算力",
-          "source": "",
-          "link": "https://technews.tw/2026/10/28/ai-ran/",
-          "date": "2026-10-28",
-          "summary": "工研院今日舉辦「眺望 2027 產業發展趨勢研討會」通訊場次，聚焦 AI 應用與雲端設施升級的台灣通訊產業發展 […]",
+          "link": "https://www.inside.com.tw/article/42762-marvell-advanced-talks-buy-lumentum-ai-optics",
+          "date": "2026-10-29",
+          "summary": "據 Bloomberg 報導，Marvell 正與光學元件商 Lumentum 進行收購洽談，最快下週宣布。雙方尚未證實，價格與條件未公開，Lumentum 盤後上漲，Marvell 盤後下跌逾 8%。",
           "body": "",
           "dupes": 1
         }
