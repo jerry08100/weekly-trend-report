@@ -1,14 +1,302 @@
 {
   "date": "2026-11-02",
-  "generated_at": "2026-11-03 11:29",
-  "total": 25,
+  "generated_at": "2026-11-03 11:34",
+  "total": 55,
   "topics": [
     {
       "topic": "永續 / 企業實務",
-      "gist": "",
-      "sections": [],
+      "gist": "綠能目標延後、自然碳匯專案、TNFD評估解方、金融業綠色授信",
+      "sections": [
+        {
+          "heading": "政策與法規",
+          "body": "經濟部證實原訂2025年再生能源發電占比20%目標無法如期兌現，去年實際占比僅13.3%，因全國用電量大增與部分光電案場卡關，已正式將達標時程延後至2029年，未來推動核心指標也將改以「裝置容量」為準[[5]]；地方層面則有桃園市加速7家汽電共生廠減煤轉型，提前達成階段減煤目標[[20]]。對國內企業而言，綠電供給成長放緩直接衝擊企業外購電力所產生的範疇二碳排放降幅，也推升再生能源憑證取得難度。所以呢，高度依賴公網綠電減碳的製造業，不能再寄望未來兩年電網綠化能自然降低碳排，今年底編列次年資本支出時，必須撥出專款優先投入廠內高能耗設備汰換與屋頂型光電自建自用。"
+        },
+        {
+          "heading": "市場趨勢",
+          "body": "企業永續焦點已從基礎碳盤查迅速延伸至自然資本與在地循環材料。臺師大攜手TEJ推出TNFD（自然相關財務揭露，一套評估企業營運對生態系統衝擊與依賴的架構）評估解方與圖資，協助企業因應生物多樣性揭露需求[[9]][[22]]。屏東縣府則媒合台畜與林農簽署長期合作，緯創資通亦採用森林經營碳匯方法學推動林業專案[[6]]；傳產老牌優織隆則將農業廢棄鳳梨葉轉化為低碳紗線並取得B型企業認證[[0]]。這顯示永續專案正從一次性公關捐款，轉向具備具體減碳效益與生態數據的長期商業投資。所以呢，面對供應鏈大廠未來可能將生物多樣性與低碳資材納入評鑑，企業採購部門在明年第一季前應清查高碳排原物料清單，評估導入低碳替代材可行性。"
+        },
+        {
+          "heading": "同業動態",
+          "body": "本週無明顯相關動作。"
+        },
+        {
+          "heading": "客戶動態",
+          "body": "金融機構本週集中在自然金融與自身營運綠化展現具體動作。玉山首度前進CBD COP17分享自然金融實踐，並拿下菁業獎8項大獎[[17]][[26]]；華南銀行獲國家企業環保獎肯定，打造智慧植物工場並守護5.4公頃私有林[[13]][[14]]；第一銀行奪下臺北市氣候行動獎淨零新生活績優獎[[16]]；合作金庫則透過無限金鑽卡推展綠色消費並與台大合作植林，同時獲得北市府氣候行動獎肯定[[12]][[29]]。金融業者積極將自然正成長與自身減碳綁入品牌形象與ESG評比，實質上也意味著對授信對象的綠色審查力道加劇。所以呢，有對外融資需求的企業，在明年辦理企金續約或爭取永續連結貸款前，必須備妥能被查證的節能成效或綠色採購證明，否則恐面臨融資利率被加碼的處罰。"
+        }
+      ],
       "grants": [],
-      "items": [],
+      "items": [
+        {
+          "title": "用鳳梨葉做成衣服賣爆全球！看台灣40年老紡織廠如何把「農業廢料」變黃金",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/128579",
+          "date": "2026-11-02",
+          "summary": "台灣的鳳梨廢料，竟能化身為國際時尚品牌的永續綠金！當過往只能掩埋、焚燒的翠綠鳳梨葉，遇上成立 40 年的台灣紡織老將「優織隆」（UKL），不僅成功淬鍊出高環保價值的天然紗線——每公噸纖維能省下 2.4 噸碳排、大減 97% 耗水量，更讓這家傳統代工廠成功撕下低價競爭的標籤。 The post 用鳳梨葉做成衣服賣爆全球！看台灣40年老紡織廠如何把「農業廢料」變…",
+          "body": "台灣首條鳳梨葉永續紗線生產線，每公噸鳳梨葉纖維可減少2.4公噸碳排，較傳統棉花製程節水高達97%。取自B型企業協會 台灣的鳳梨廢料，竟能化身為國際時尚品牌的永續綠金！當過往只能掩埋、焚燒的翠綠鳳梨葉，遇上成立 40 年的台灣紡織老將「優織隆」（UKL），不僅成功淬鍊出高環保價值的天然紗線——每公噸纖維能省下 2.4 噸碳排、大減 97% 耗水量，更讓這家傳統代工廠成功撕下低價競爭的標籤。 陽光灑落在南台灣的金鑽鳳梨田，空氣瀰漫著鮮甜果香。過往當金黃果實採收後，翠綠的鳳梨葉只能焚燒或掩埋，加劇空汙和碳排，但在台灣第一條鳳梨葉永續紗線生產線下，每100克葉片，能淬鍊出1克纖維，製成環保永續的衣物包袋，使用一公噸鳳梨葉纖維，就能節省2.4公噸碳排，相較傳統棉花製程更減少高達97%的驚人耗水量。 這項將農業廢棄物化為高值綠金的技術，來自成立近40年的紡織老將「優織隆」（UKL），不僅填補了台灣紡織業在地永續材料的缺口，也讓優織隆從傳統代工走向創新材料研發，在國際舞台上建立強大的品牌力與差異化。這場華麗蛻變，除了來自企業自身的破局重生，更在2024年公司拿到B型企業（B Corps™ ）認證後，找到了清晰的轉型地圖與永續發展架構。 圖／優織隆自2024年起與屏東縣九如鄉農會合作，推動「鳳梨葉纖維」在地循環經濟。取自B型企業協會 ▋**延伸閱讀：助菲律賓可可農挺過極端熱浪！台灣「地底微血管」農法發威：省水八成、產量增八成** 不少中小企業有個迷思，誤解推行永續的成本可能會吞噬利潤，或是永續認證是大公司才負擔得起的行銷遊戲。但二代接班的優織隆執行副總謝煥麒，卻給出了截然不同的答案：獲得B型企",
+          "dupes": 1
+        },
+        {
+          "title": "美臺純電車銷量重挫、油電車暴增！專家指出純電５大關卡",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/127417",
+          "date": "2026-11-02",
+          "summary": "2026年全球車市迎來轉折，補助退場讓純電動車狂熱冷卻，「油電混合車」強勢崛起，為何代表汽車產業正回歸理性，油電與燃油車仍將穩健主導未來數十年版圖？ The post 美臺純電車銷量重挫、油電車暴增！專家指出純電５大關卡 appeared first on ESG遠見 - 永續共好.",
+          "body": "川普政府大幅削弱純電車的價格誘因，多家美國傳統車廠相繼縮減、取消純電動車研發計畫。示意圖，遠見資料照，蘇義傑攝 2026年全球車市迎來轉折，補助退場讓純電動車狂熱冷卻，「油電混合車」強勢崛起，為何代表汽車產業正回歸理性，油電與燃油車仍將穩健主導未來數十年版圖？ 加州早晨的陽光，灑進洛杉磯車展展間，幾款純電動車靜靜躺在角落。少了政府補助，價格牌上的數字顯得有些刺眼，讓消費者望之卻步。 與此情此景大相逕庭的是，隔壁的中古車區人聲鼎沸，幾位買家正為了一台開過兩年的油電混合車爭相競標，成交價竟比新車高出不少。 引擎啟動瞬間，傳來熟悉的低沉運轉聲，不再是寂靜的馬達聲，而是消費者對充電焦慮的現實選擇。燃油引擎並未落幕，它正帶著混合動力的強勁浪潮，重新奪回世界主導權。 時間拉回1990年代末期，賴維信遠赴印尼創業，成立萊信企業，從貿易商一路轉型為在地製造商，深耕汽車售後修配市場，從雨刷、門鎖、方向盤修理包，憑藉高品質零件一點一滴拿下市場，如今旗下品牌在印尼汽車售後修配市場市占率超過50％。 從遠征印尼，到坐穩市場龍頭，再到榮任國策顧問，賴維信站在全球車市零配件市場第一線。他的判斷，背後正是來自這股數十年產業風雲的實戰底氣。 圖／賴維信認為，純電動車技術層面相對簡化，將其視為革新技術並不合邏輯。賴維信提供 首先，** 賴維信認為，傳統燃油引擎涉及極高的機械工程與精密製造門檻，但純電動車本質上是「底盤、四個輪子配上馬達與電池」，技術層面相對簡化，將其視為革新技術並不合邏輯。 其次，** 他觀察，中國因為在燃油引擎技術上難以追趕歐美日百年累積，於是選擇用技術門檻較低的電動車進行「彎道超車」，並透過",
+          "dupes": 1
+        },
+        {
+          "title": "川普能源政策迎變數？美國期中選舉牽動油氣、綠能與關鍵礦產投資",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/129121",
+          "date": "2026-11-02",
+          "summary": "美國11月3日期中選舉登場，國會控制權將牽動川普未來兩年的能源政策。標普全球（S&P Global）分析，若共和黨持續掌權，油氣與礦業開發有望加速；若民主黨奪回至少一院，則可能加強監督化石燃料政策，為再生能源爭取空間。對於油氣開採、離岸風電到核融合與關鍵礦產，選舉結果如何改變美國能源版圖與全球投資方向？ The post 川普能源政策迎變數？美國期中選舉牽動…",
+          "body": "美國11月3日期中選舉登場，國會控制權將牽動川普未來兩年的能源政策。標普全球（S&P Global）分析，若共和黨持續掌權，油氣與礦業開發有望加速；若民主黨奪回至少一院，則可能加強監督化石燃料政策，為再生能源爭取空間。對於油氣開採、離岸風電到核融合與關鍵礦產，選舉結果如何改變美國能源版圖與全球投資方向？ 標普全球（S&P Global）10月22日分析指出，美國期中選舉將牽動未來兩年能源政策走向，從開發許可、稅務優惠到環境法規，都可能影響企業長期投資布局。 若共和黨持續掌握參眾兩院，川普政府將有更大空間擴大化石燃料開發、鬆綁環境管制，包括放寬發電廠溫室氣體排放限制、調整能源效率標準及支持電網擴建。反之，若民主黨奪回至少一院，可能阻擋共和黨部分能源法案，並加強調查政府限制再生能源開發、放寬排放管制等決策。 此外，美國聯邦能源管制委員會（FERC）民主黨籍委員羅斯納（David Rosner）任期將於2027年6月屆滿，相關人事任命及電力監管方向也可能成為兩黨角力焦點。 ▋** 延伸閱讀：愈熱愈不敢講！美國期中選舉「氣候沉默」怪象：一場抗通膨的選票精算** 根據標普全球分析指出，若共和黨持續掌握國會，川普政府可進一步擴大阿拉斯加國家石油儲備區及北極國家野生動物保護區的油氣開採，加速天然氣與液化天然氣（LNG）出口設施審查，並透過貿易談判推廣美國LNG。相對地，風電與太陽能開發許可會持續延宕，潔淨能源支持措施也難以恢復。 圖／若共和黨持續掌握國會，川普政府可進一步擴大油氣開採，並透過貿易談判推廣美國LNG。示意圖。取自ERIA 另一方面，若民主黨掌握眾議院，則可能針對能源企業獲利、價",
+          "dupes": 1
+        },
+        {
+          "title": "ESG每週必讀》下一任台北市長如何挺女力？職場媽媽６大育兒痛點考驗沈伯洋、蔣萬安",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/128899",
+          "date": "2026-10-30",
+          "summary": "民進黨台北市長參選人沈伯洋近日成立「女力後援會」，爭取女性選民支持。同時，尋求連任的現任市長蔣萬安，近期持續推出育兒補助與家庭支持措施。如何看見女力痛點、接住需求，成為晉級下一任台北市長的關鍵考題。 The post ESG每週必讀》下一任台北市長如何挺女力？職場媽媽６大育兒痛點考驗沈伯洋、蔣萬安 appeared first on ESG遠見 - 永續共好…",
+          "body": "ESG每週必讀》下一任台北市長如何挺女力？職場媽媽６大育兒痛點考驗沈伯洋、蔣萬安 民進黨台北市長參選人沈伯洋近日成立「女力後援會」，爭取女性選民支持。同時，尋求連任的現任市長蔣萬安，近期持續推出育兒補助與家庭支持措施。如何看見女力痛點、接住需求，成為晉級下一任台北市長的關鍵考題。 2026年九合一選舉倒數一個月，民進黨台北市長參選人沈伯洋10月26日成立「女力後援會」，副總統蕭美琴到場力挺，肯定他具備「安心、放心、用心、同理心、足感心」五項特質，期許將台北市打造為讓女性安心生活的友善城市。 然而，婦幼團體調查揭露，目前女性仍面臨育兒負擔沉重、職場缺乏彈性及居住壓力等困境，如何讓職業婦女不必在家庭與事業間被迫取捨，成為檢驗下任台北市長女性政策重要考題。 ▋**延伸閱讀：**** 九合一選舉焦點〉北市遷移松機改建AI園區，可行嗎？專家：４大問題待解** 根據行政院主計總處統計台灣女性在2025年勞動參與率指出，25至29歲達91.15%高峰，30至34歲降至87.9%，之後隨著年紀持續下滑。 勞動部長洪申翰10月29日出席「台灣B型企業十週年論壇」表示：「女性進入家庭後，往往承擔育兒與長輩照顧責任，一旦孩子生病、托育機構因腸病毒停托，可能被迫在家庭與事業間取捨。」 兒福聯盟今年5月發布《2026年台灣媽媽育兒情形調查》結果也反映了此職場與家庭難以兼顧困境，這項調查針對783名育有未成年子女的母親，其中68.5%有工作，這些職場媽媽當中有66.3%認為「有孩子讓生活幾乎沒有時間與彈性」，55.9%難以平衡不同責任，更有34%感到「被親職責任壓得喘不過氣」。 其中，92.1%母親認同父",
+          "dupes": 1
+        },
+        {
+          "title": "ESG國際快訊》日本熊出沒，癱瘓城市3天｜COP31元首出席恐銳減",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/128708",
+          "date": "2026-10-29",
+          "summary": "日本熊患警示暖化加劇，國際淨零進程卻步履維艱：美英受政商與民生牽制放寬污染限制，COP31更因大國冷淡蒙上陰影。所幸荷蘭電動客機帶來技術希望。一起來看看本週全球在生態警鐘、政經妥協與科技突圍間的拉鋸。 The post ESG國際快訊》日本熊出沒，癱瘓城市3天｜COP31元首出席恐銳減 appeared first on ESG遠見 - 永續共好.",
+          "body": "去年，日本因熊襲擊的傷亡創下歷史新高，共238人遇襲、13人死亡，凸顯問題急迫性。示意圖，取自秋田縣生活環境部宣導文件 日本熊患警示暖化加劇，國際淨零進程卻步履維艱：美英受政商與民生牽制放寬污染限制，COP31更因大國冷淡蒙上陰影。所幸荷蘭電動客機帶來技術希望。一起來看看本週全球在生態警鐘、政經妥協與科技突圍間的拉鋸。 今年6月，一頭野熊闖入日本栃木縣宇都宮市，導致這座擁有50萬人口的城市陷入長達三天癱瘓，最終由動物園飼養員以麻醉槍將其捕獲。這起引發各界關注的事件，正是日本日益嚴重的「人熊衝突」縮影。去年，日本因熊襲擊的傷亡創下歷史新高，共238人遇襲、13人死亡，凸顯問題急迫性。 為應對此危機，日本政府制定緊急防範策略，把負責捕熊的人員在2030年以前增加至2500名，陷阱數量也翻倍至1萬個，此外也針對東北、關東、中部等亞洲黑熊數量過剩地區，設定把族群數量減少約三成的撲殺目標。 ▋**延伸閱讀：黑熊野放紀錄首公開！鏡頭直擊黑熊翻便當，林保署啟動「4級指引」降低人熊衝突** 但野生動物專家橫山真弓認為，單靠撲殺無法治本。她分析，目前日本極度缺乏精確生態數據與專業人才，例如新潟縣近期才把熊的估計數量一口氣從1400隻上修至8750隻，凸顯過往調查數據嚴重失真與匱乏。因此，她建議，應借鑑兵庫縣長達25年的追蹤與微晶片標記經驗，以科學數據為基礎，進行長期生態管理。 與此同時，氣候變遷與隨之而來的「城市熊出沒」現象，則加劇管理難度。專家警告，暖化可能擾亂作為熊隻主要食物來源的橡實生長週期，當母熊遭撲殺後，留下的幼熊因缺乏野外生存經驗，容易在市區長大，完全適應人類聚落，成為「城市熊」。 ",
+          "dupes": 1
+        },
+        {
+          "title": "台灣再生能源20%目標又跳票？光電卡關、用電量大增，改拚2029年達標",
+          "source": "",
+          "link": "https://esg.gvm.com.tw/article/128870",
+          "date": "2026-10-29",
+          "summary": "台灣能源轉型進度面臨嚴峻考驗！隨著半導體與 AI 產業帶動全國用電量超乎預期地暴增，加上部分地面型光電案場遭遇法規與地方爭議「卡關」，原訂「2025年再生能源發電占比達20%」的承諾確定無法如期兌現。 The post 台灣再生能源20%目標又跳票？光電卡關、用電量大增，改拚2029年達標 appeared first on ESG遠見 - 永續共好.",
+          "body": "台灣再生能源20%目標又跳票？示意圖。unsplash by kurokami04 台灣能源轉型進度面臨嚴峻考驗！隨著半導體與 AI 產業帶動全國用電量超乎預期地暴增，加上部分地面型光電案場遭遇法規與地方爭議「卡關」，原訂「2025年再生能源發電占比達20%」的承諾確定無法如期兌現。 外界關切再生能源推動目標調整，政府原訂2025年再生能源發電占比達20%，但去年占比僅13.3%。經濟部長龔明鑫今天表示，今年再生能源占比可望突破14%，目前預估朝2029年達到20%的目標努力。 立法院經濟委員會邀請經濟部長龔明鑫就「國際能源價格波動下我國發電結構、能源進口依存、國內油氣與電力價格、國營能源事業營運及能源供應韌性之近十年變化、統計分析、政策執行成效與因應策略」進行報告，並備質詢。 民眾黨立委洪毓祥質詢時指出，2025年再生能源發電占比約13.3%，與原訂20%目標仍有落差。龔明鑫表示，今年再生能源發電占比可望超過14%，目前希望朝2029年達到20%的目標努力；部分離岸風場已陸續完工，太陽光電因原本有些地面型案場仍有疑慮，希望排除問題後持續推進。 ▋**延伸閱讀：** 聚恆科技從60萬資本起家，拚到全台最大太陽能統包！如何「三招」力抗光電寒冬？** 能源署會後補充，考量現在大環境不太好，相關法規的推動也不是很順利，且再生能源發電占比涉及分子、分母變動，除發電量增加外，全國用電量成長也會影響占比，因此未來再生能源主要以「裝置容量」作為推動指標。 此外，國民黨立委楊瓊瓔關注台電離岸風電二期的工程進度。龔明鑫指出，目前共有4座風機完成安裝，預計將於明年完工，並強調風場儘速完成、投入發電",
+          "dupes": 1
+        },
+        {
+          "title": "屏東拚產業也拚永續！媒合企業攜手林農打造淨零實績",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9uRVpKaGs1ZDR5ZGV4cjRab3NLOFpXRVdidG41N21IMzNPdUhNUDBrcHdXRnhFdlJPTlN4YlUzeXZ5LXdNdlg0V0tvdkNndGpfX2c?oc=5",
+          "date": "2026-10-29",
+          "summary": "",
+          "body": "發布：2026/10/29 22:47（台灣時間） 資料更新：2026/10/29 23:20（台灣時間） 屏東縣政府積極推動產業發展與環境永續，在持續創造友善投資環境、吸引高科技產業進駐屏東的同時，更積極對接企業的綠色轉型需求。為串聯企業淨零行動與在地森林資源，今(29)日在農業物產館舉辦「永續屏東・綠色共榮—2026屏東縣森林碳匯與企業淨零行動論壇」，邀集企業、林農、專家學者及各界夥伴共同交流，並於論壇中舉行台畜公司與林農合作簽約儀式，展現屏東推動企業參與森林永續、落實淨零行動的具體成果。 屏東擁有豐富森林資源，森林不僅是重要的自然碳匯，更是維繫生物多樣性、涵養水土、提供林業生產及支持地方經濟的重要自然資本。隨著企業逐步強化溫室氣體盤查、加速淨零轉型及並深化ESG資訊揭露，產業界對於森林碳匯、生物多樣性及在地環境行動的需求也日益增加。 「企業永續，森態並行」是縣府近年積極營造產業發展、吸引高科技產業在屏東生根，並為兼顧環境生態的核心精神。縣府強調，企業投資所帶來的不只是廠房與就業機會，更能與在地的土地、森林及社區建立深厚的共生關係。因此，縣府將進一步扮演領航者，建構「政府整合、企業需求、林農資源」三方對接的媒合橋梁，透過盤點縣內森林資源與林地條件，精準理解企業在碳管理與「自然正成長」的訴求，在追求經濟發展與減碳的同時，也須積極維護並復育在地生態與生物多樣性，促成企業與林農從過去「一次性投入」轉變為「長期、具體且可衡量」的戰略合作。 本次論壇以緯創資通與屏東永在林業的合作案例作分享。緯創資通與永在林業於屏東車城推動森林經營碳匯合作，相關專案採用「加強森林經營碳匯專案」方法學，",
+          "dupes": 3
+        },
+        {
+          "title": "Rti精選專題導讀／綠色航空風暴 永續航空燃油的轉型痛點",
+          "source": "Rti 中央廣播電臺",
+          "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE0tcm1IVl9zS0RIOG45RlNBelNZTWZGVHhvWVQxTmF4amU4RnFkWUdsck9ZRThlMzJMcTgyS0FtUnVkNUVadVdXQzQ3dlFZQ1U5RXZPYXdTYw?oc=5",
+          "date": "2026-10-29",
+          "summary": "",
+          "body": "",
+          "dupes": 3
+        },
+        {
+          "title": "推動永續醫療 常春醫院《永續報告書》獲AFNOR認證",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1qcVRBVmo5UUJtZkdUUXZEbjByZU9GSzVJckthUnVCaWpCWjV1QkR0OFJGaVpLT0luQlg5WVZ0dk5WbC1nX1dlWTE3WUVvU2o4V3c?oc=5",
+          "date": "2026-10-28",
+          "summary": "",
+          "body": "",
+          "dupes": 3
+        },
+        {
+          "title": "臺師大永續所與TEJ舉辦TNFD研討會 公私協力共創自然正向",
+          "source": "中央社 CNA",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE10aUlYOTNHTjJscEtvUjg1d2g5dVE4bWxxREFwS0NqenpPTTVmR2VlckhjQmFuVVpSMm1yWDlXZlhrTzJ5SWtDeUhmUlMwbHVRTXlwam93?oc=5",
+          "date": "2026-10-28",
+          "summary": "",
+          "body": "",
+          "dupes": 3
+        },
+        {
+          "title": "第九屆全球企業永續論壇聚焦轉型治理與 AI 數據創新，政府與國際機構共探永續新局",
+          "source": "CSRone 永續智庫",
+          "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE8yRjJxT0NmMHRDWEZPUzdrbTlvOG5iaDU4M0NUZXlMbFJkQXpINVRtbFV6aWszSnd1bGhlNWtoNjMwTHc?oc=5",
+          "date": "2026-11-02",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "金大攜手產界！師生聯手打造淨零低碳新校園 | 勁報",
+          "source": "LINE TODAY",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4xekNFM0JhQlRSVjdvVTZqT0NwUnRvNFpyLU5kWHJ3cnJxWGZEdmNBWkRWcEQ5UzA3bnZYZDNMUTRNQlpCRnVHS1RYRXE2Wk80RFI5TlBR?oc=5",
+          "date": "2026-11-02",
+          "summary": "金大攜手產界！師生聯手打造淨零低碳新校園- 生活新聞 PChome Online 新聞",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "合庫無限金鑽卡公益回饋 與台大共植永續希望林",
+          "source": "udn",
+          "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5yN2NYYWxnOGxMTFVISVhMMkhpVm80cEZsWkVNRzRXWWFKQUUwREx5WFRocHROdGlqRmRTNnVURjE2N2ZQMzBDSUpxc1BiMG1PWFhEb0RR0gFWQVVfeXFMTnI3Y1hhbGc4bExMVUhJWEwySGlWbzRwRmxaRU1HNFdZYUpBRTBETHlYVGhwdE50aWpGZFM2dVRGMTY3ZlAzMENJSnFzUGIwbU9YWERvRFE?oc=5",
+          "date": "2026-11-02",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "國家企業環保獎頒獎、65家企業減碳百萬噸這5家公股行庫也獲獎| 金融",
+          "source": "太報 TaiSounds",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBSaGVJODJ6RjN2MllCQWVITHBqSW1OYlZsSmVaYVBDdElQT0o3TVVqSC1QRHV1M281T3pRd0RZVVJMZ2RES0RjU1g4WUs1QVhyVEJPcy1KWTl2RlRB?oc=5",
+          "date": "2026-11-02",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "華南銀行再獲「國家企業環保獎」肯定！打造智慧植物工場、守護5.4公頃私有林，創新循環經濟創綠色金融新典範",
+          "source": "放言Fount Media",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFAyOUcxQnBQRTFZb251d3NwUEdzanYtbzlaS1k4ZHI2NTByOGNieGFoaVpQY0pCLTdCS1BUZHBTR0dqbm5rVVdhNEp2d1F6blBXYnc?oc=5",
+          "date": "2026-11-02",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "台北市氣候行動獎21個單位獲獎 減碳行動共減約9,634公噸",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE02R1Vsc1ZYMkE1Wi1FMkNaMFVPOVAxTDg2T3AyNGhtQUZKMUp4ZmU0QW9WTDYtdVlwT1JHUWZsSGFYY05IYVl3OGh6RDFSX1hvWUE?oc=5",
+          "date": "2026-10-29",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "領跑金融永續轉型！第一銀行勇奪臺北市氣候行動獎「淨零新生活績優獎」 - 一銀新聞 | 第一銀行",
+          "source": "firstbank.com.tw",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5LSWUtUmJ3RlJXcXN5YzM4YjdmNU42QWFONjhrSVFFUTNncDhlZGhIVTZ5Mm02UkR1aUhsLVdVU0tfRkxjM3hSeW8xeHRjd2JQRW5qVzdXNVQyRjFWVEpscFYySHZjQUVfaWc?oc=5",
+          "date": "2026-10-29",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "玉山首度前進CBD COP17 永續長張綸宇分享自然金融實踐",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMixAJBVV95cUxPc2hQMWtFU21EQ203Wm9FM0M4WW9zMldSV1FXanF3cHJ4X1JZbl95WEFnSTd1TjFOTG5Oek84Z3IxdTFMamg3aUpmdEhLVjFKaXA4eWJkY0hCQnVVT0I2NWVFcmdPa2QtVHQ5NkdDTkFYYm5nUzluNUJXelRRU19RVUxMRWN3OENLQ3NnMU9VbVBaWTY5Mm5NcjFNQU5uQnBGdlhMWko0eVY2V3lET3FIV3p2U0RjNUE1M29XS0JVajNWNi1GZkcwUVJOdjFFeWZncTNoRjFBODVJLWVob3FpZnN6b0Fra0k3Vk9pRGZqUVlWdXdXS0MzSnpGTUhYWjJjR29iUmdXQmZaM2k1cl96ZUV3NmpydjdDTjkwZmpZaUJJS0Zsc3RMM2xJUndTZXhnNDh6bTF3SXd4bG9sSHZsSWdkOUY?oc=5",
+          "date": "2026-10-28",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "推動淨零永續 慈大綠領人才培育課程澎湖、金門開班",
+          "source": "TCnews慈善新聞網",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4yVmdpb3RLWjhhS0lVVXpCQVRKN1JPVzg1ZjdZNjRDOGlKLV9FQUI2aGxfM25lYTd1V3BLblNQS216TWJGVkNaMW11SnE1VGttSFdfQkZpeDRSejVFc3BtLQ?oc=5",
+          "date": "2026-10-28",
+          "summary": "推動淨零永續 慈大綠領人才培育課程澎湖、金門開班 TCnews慈善新聞網",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "桃園攜手企業推動永續行動 從惜食減碳到竹林更新 打造綠色城市",
+          "source": "蕃新聞",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA2QUdMRlJha0lmeEFaWVNsamwyRUJsVHR6Z3lpNTZqR3ZZUUx0NVZ4bkpNMWxBTDJLV1ptWVlxTUYyNWJZV2dVeUdPeE05cVV2YlE?oc=5",
+          "date": "2026-10-27",
+          "summary": "",
+          "body": "",
+          "dupes": 2
+        },
+        {
+          "title": "桃園加速7汽電共生廠能源轉型 減煤超越階段目標落實永續",
+          "source": "newsdaily.tw",
+          "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8yTC1fZ1lxaGNyanRLX0M4cklWUXZNcllZSTdacGVUbHJuc2poamprSkE3amxKMWZfRmVVb0kzblRqdGkyQW1fQXRtcTJ3Zw?oc=5",
+          "date": "2026-11-02",
+          "summary": "桃園加速7汽電共生廠能源轉型 減煤超越階段目標落實永續 newsdaily.tw",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "餐飲店拚節能減碳 新北29家綠店摘星",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNX1NXdHVJU2xPS3Q3YWpfNmxaUVZKckExeXZsZzhvV0UtTzBCeTNoZTNuRXk2YjF5VGhPYWo4QlV4bDN0WVRBQ213ZkpVTnpkQ0w3U0tIWTQ5blhTUmJSUXpxejFQQU44aVBfUG1TR2Q3d25wdGRObTNWY0pGVUVpTzlacm01VjhCMHJsYmRXak1rRFp1al9LV2Z6LWpHMXJIOXlkSWZfWkN2WDNMMGlBSnpmcXE3WGtTS2pKUnJwVm9iZURkUXBibFVJLUtzQjRzZGdDR3ZBTnZ2WEFlQm5sMGFBYjBIN0lxSmk2SHVpUnZHWXNIejVKN2lFSFNQTWM?oc=5",
+          "date": "2026-11-02",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "助攻自然正向轉型！臺師大攜手TEJ推TNFD評估解方與基礎圖資",
+          "source": "ESG永續台灣",
+          "link": "https://news.google.com/rss/articles/CBMiqgNBVV95cUxPRk5iSlZnZEYzRFBKTnBUVWZTWTlWWnpmWWJ1RllQNnhld2VnVlVTa3A0LS1yYjE0YUlCQmdwS1lObWRMNV94bzAyb0hSMDM5QVpqZk93YUtsYnFKTF9WcVFlLUNhNWdLaTBpdElOV0lzQ3RuRUpUWnVoOGZiRFFJMXdXVFRoeC05dDJKMjlmQ0stbWtKNHN4RlF6WHBkdUI1cEUtdTFlWWkxVWhCU0FsXzRibFZScnhoakRLeHZneE4ySlFKVl94d2ZJRjJJUkpPMmp2THl5dm02TEp5UkNkN3FhVFRHZmFBMDZRems2elBnVWI3OWdOZ0R3VHAydHdzdVh3YkUtYWt5LWZyckxncjVNeTJ1NVNhM1BqSkh0X2xnQjJyTE5KQW5Odnl5OENPNHBSSVc3b1YtZTkydjcwLWdqZUtmVUkzem91WVh6TnRDcDQyT3U4ZzFwVnV5UHlHSVNJQVRnWV9RSFZuaHRNcDZjbGpXX2hjNjhtWEJlTnctWDhzR3BpY0Zod09URlAzTnBkR3FqTjJ6cHBHajhNWTAzMllnVG9xTnc?oc=5",
+          "date": "2026-11-02",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "第30屆近代工程技術討論會 聚焦淨零韌性、綠能循環與生醫科技三大領域",
+          "source": "Life 生活網",
+          "link": "https://news.google.com/rss/articles/CBMihANBVV95cUxPZTlqZFNGUjdvU053WUNXZ2RpZjBSQlYySDloMWRMNnB2bjU3ZEJEQ0FUUHF3ZWczNVNtU2NqZDJsd3BoTWdnQTFhaXFWSXRGTEFRNU10NGZZVzBOM0lnZ2NSWHVCSUVPM2liMHlsRGx1U3R1LWdjdUY4eUxSRXhQSW5iYWpESWw0dEJEN1dlNHFWY3g1MW9yeC1uT3ZuNU1aVnVHR2w5dmM3NzhqTlVMZk9vVDNSTjFmTUZQVi1uWEJVUkFwLWE2UTFyQWxKeW14VXM1WVZlSDF0akR3RkJ6QU4tV0pYZzRJaWdqUnRpYlU1QVZIWXQ2MXA4NVFRdlNsRGQzOURwWjh0N2FGd2ktemNsQkQxUUVPQjgtWFJWa3hPV2pvQzRTSlJzTjZzN2Fza0FrRFpCRWthQ3doWlNBVXVVcFBPc2xTdFdzSThPSmVYVHpEd3puTE44UVM2b2lXV0VrQURxRE5LV0NaV0J3ekd4c0k3UlBpUGVyWG5qTG8yOGNZ?oc=5",
+          "date": "2026-11-02",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "豐原醫院榮獲健康永續卓越典範獎 四大構面全獲最高肯定 營運成長12.5%、碳排強度反降10% 展現醫療發展與環境永續雙贏成果",
+          "source": "元丰傳媒",
+          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA5ZWZyb21oZVhvWU56T2Y1RTlNY09wXy1JYUx4Q2JwbVRNUnNKVXctc0REYjNGRnVfYUlrY184a25qZ1FOQ1hJVGlDWVJfdFE2amhVNzdqbkZkY3VwRU1hRjJHQWR5M244a3lBU3hWUmRZeVZlc2tUbnVR?oc=5",
+          "date": "2026-11-02",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "「永續企業・綠色榮耀」企業共創逾百萬公噸減碳效益",
+          "source": "環境部新聞專區",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5uc2FZNmJ5WG93c3JfVVZMNXA2ckFnVHE5SERMOEg0STlPdVUxMXZZeGpfRFFXWVo2eGxLTW9uR2RqaUU0TzhHaHNlc29SenVUdU5PeU1NaHhma19ESmZRZGhtSkI?oc=5",
+          "date": "2026-11-02",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "玉山榮獲菁業獎8項大獎滿貫殊榮 金融創新與永續共榮再獲肯定",
+          "source": "中央社 CNA",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5XLWowdm5td3pmS3RkTkJEN01USktnVWFoTUJnaWxsZUlxaks0R2NFcnJ6LUJXNzBKaTJWcmJwTEoycW1BMTJzZlpUNk0wZmZfTUtmZzYwN1RUZw?oc=5",
+          "date": "2026-11-02",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "環境部長彭啟明：SET FUTURE媒體傳播力讓環保永續被看見並落實為改變| 永續ESG",
+          "source": "三立新聞網SETN.com",
+          "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFB5eVlFUEF0cWlPcnEtVTFhM0lsSjFBdTdOVWEtZjI2Q3FCYUdaUHhQcWZMb1p3TTYyVzFEREtOMF85dWNzTEIxWQ?oc=5",
+          "date": "2026-11-02",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "打破250億雙鞋石油緊箍咒！工研院研發「全聚酯單一材質」綠色創新技術| 永續ESG",
+          "source": "三立新聞網SETN.com",
+          "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9HSVhPbDFkQ3BXVXdsenlCV1pfREZObjI0Q2dqQkxaMVpYelhuSmZJdllXdVhBT0piZDRvNFMxTVRUN3JMUm5GVA?oc=5",
+          "date": "2026-11-01",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        },
+        {
+          "title": "合庫銀落實永續獲北市府肯定- 投資理財- 工商時報",
+          "source": "中時新聞網",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE00ZU95YXlDVndUbHNoQnU2SXc2ZG9VMHlyT0F6X2otUk1fZ0VTWURIQnZVeXJZR3h6TjBDZks1WjlrYS1oNWV2Z0NTZmdiSXV2bkRmU0pRdzIzMkFmZ1RndW9EMTktQzFjN1dN?oc=5",
+          "date": "2026-11-01",
+          "summary": "",
+          "body": "",
+          "dupes": 1
+        }
+      ],
       "sources": {
         "queries": [
           "ISO 14064 溫室氣體盤查 企業",
