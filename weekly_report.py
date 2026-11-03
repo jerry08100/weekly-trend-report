@@ -548,6 +548,12 @@ def split_source(title):
     return (title or "").strip(), ""
 
 
+# 主模型 → 備用模型（2026-11-03 兩把 key 實測：2.5 系列新帳號 404，不列）。
+# 每個模型最多 1+len(GEMINI_BACKOFF) 次；最壞約每主題 3×(3×120+75)s，Actions 撐得住。
+GEMINI_MODELS = ("gemini-flash-latest", "gemini-3.5-flash", "gemini-flash-lite-latest")
+GEMINI_BACKOFF = (15, 60)                                # 秒；塞車類錯誤（429/5xx/逾時）的重試間隔
+
+
 def gemini_digest(topic, rows):
     """呼叫 Gemini 產本週回顧文。回 {sections:[{heading,body}]}，body 內含 [[編號]] 引用標記。
     無 key 或失敗回 None。"""
@@ -676,26 +682,31 @@ def gemini_digest(topic, rows):
             },
         },
     }
-    url = ("https://generativelanguage.googleapis.com/v1beta/models/"
-           "gemini-flash-latest:generateContent?key=" + key)
     data = json.dumps(body).encode("utf-8")
-    for attempt in range(3):                             # 5xx/429 暫時性錯誤重試
-        try:
-            req = urllib.request.Request(
-                url, data=data, headers={"Content-Type": "application/json"})
-            with urllib.request.urlopen(req, timeout=60, context=_ctx) as r:
-                resp = json.loads(r.read())
-            return json.loads(resp["candidates"][0]["content"]["parts"][0]["text"])
-        except urllib.error.HTTPError as e:
-            if e.code in (429, 500, 502, 503, 504) and attempt < 2:
-                print(f"[ai] {topic} {e.code} 重試 {attempt+1}/2…")
-                time.sleep(4 * (attempt + 1))
-                continue
-            print(f"[ai] {topic} 摘要失敗 -> HTTP {e.code}")
-            return None
-        except Exception as e:
-            print(f"[ai] {topic} 摘要失敗 -> {type(e).__name__}: {e}")
-            return None
+    # 2026-11-02 週兩主題全失敗：flash-latest 連續 503（high demand）／逾時，舊版 4、8 秒重試 3 次就放棄。
+    # 改成：塞車類錯誤長退避重試，主模型用盡換備用模型；404 等其他錯誤直接換下一個模型。
+    for model in GEMINI_MODELS:
+        url = (f"https://generativelanguage.googleapis.com/v1beta/models/"
+               f"{model}:generateContent?key={key}")
+        for attempt, wait in enumerate(GEMINI_BACKOFF + (None,)):
+            try:
+                req = urllib.request.Request(
+                    url, data=data, headers={"Content-Type": "application/json"})
+                with urllib.request.urlopen(req, timeout=120, context=_ctx) as r:
+                    resp = json.loads(r.read())
+                return json.loads(resp["candidates"][0]["content"]["parts"][0]["text"])
+            except urllib.error.HTTPError as e:
+                err = f"HTTP {e.code}"
+                if e.code not in (429, 500, 502, 503, 504):
+                    wait = None                          # 非暫時性（如 404 模型下架）：不重試
+            except Exception as e:                       # 逾時、斷線、回傳格式壞
+                err = f"{type(e).__name__}: {e}"
+            if wait is None:
+                print(f"[ai] {topic} {model} 放棄 -> {err}")
+                break
+            print(f"[ai] {topic} {model} {err}，{wait}s 後重試 {attempt+1}/{len(GEMINI_BACKOFF)}…")
+            time.sleep(wait)
+    print(f"[ai] {topic} 摘要失敗（所有模型都不行）")
     return None
 
 
